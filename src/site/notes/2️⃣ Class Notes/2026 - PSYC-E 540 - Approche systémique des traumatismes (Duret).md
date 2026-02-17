@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-17T23:39:36.928+01:00"}
 ---
 
-# PSYC-E 540 - Approche systémique des traumatismes (I. Duret)
+
 
 > [!tldr] Résumé
 > Le cours aborde les questions des liens familiaux et de la transmission intergénérationnelle des traumatismes au sein des groupes et des familles. Elles sont envisagées dans le contexte des couples et familles contemporaines, souvent désignées par les sociologues et les philosophes comme témoignant d'un affaiblissement du lien de filiation et de la capacité à transmettre. Cette caractéristique sera mise en regard du contexte historique et socio-culturel au sein duquel elle émerge. La clinique nous permet de relever des situations où l'organisation même des liens ou de la filiation semble découler de la peur de transmettre. L'impact de cette peur pour le groupe et les individus qui le composent sera analysé à partir de nombreux exemples.   Il sera ensuite question des enjeux psychiques individuels et groupaux consécutifs aux traumatismes. Les pistes thérapeutiques seront abordées à travers de nombreuses situations cliniques. Ces illustrations  permettent d'une part d'explorer et de comprendre les dynamiques individuelles et relationnelles consécutives aux traumatismes, d'autre part de montrer l'intérêt de l'approche systémique dans la clinique du trauma. La psychothérapie est une rencontre inter-culturelle et sociopolitique qui impose au clinicien d'interroger son positionnement et les représentations qui en découlent.  Différents concepts et outils systémiques ( recadrage, génogrammes, objets flottants, éthique relationnelle, partialité multidirectionnelle...) seront présentés pour permettre d'illustrer ce que l'approche systémique constructiviste peut apporter au psychothérapeute qui souhaite s'engager dans la clinique du trauma en s'utilisant lui-même comme activateur du changement.
@@ -27,22 +27,25 @@
 >* OLLIE-DRESSAYRE J. MERIGOT D. (2017) Le génogramme imaginaire. Entre lien de sang et liens de coeur. ESF
 
 📅 Vendredi **6 Février 2026** - Cours magistral I. Duret
+
+L'objectif de ce cours et d'aborder la notion de **transmission** sous l'angle systémique, et la notion de **traumatisme**. Repérer, comprendre, et prendre en charge les dimensions traumatiques.
 ## 🏷️ 1. Introduction
 
-Objectif du cours et d'aborder la notion de **transmission** sous l'angle systémique, et la notion de **traumatisme**. Repérer, comprendre, et prendre en charge les dimensions traumatiques.
-### 1.1 Parcours professionnel et contexte social
+**Parcours professionnel, contexte social**
 
 À la sortie de l’université, elle enchaîne les stages sans emploi rémunéré. Elle est ensuite engagée comme seule psychologue dans le service de pédiatrie d’un hôpital général à Charleroi. On est dans les années 80, au moment de la fermeture des mines et du déclin industriel. La région est frappée par une précarité massive. Elle travaille avec des familles en grande détresse sociale et économique, souvent avant même que la détresse psychologique n’apparaisse comme telle.
 
 Beaucoup de situations sont dramatiques : logements insalubres, absence d’eau ou de chauffage, négligence, violences intrafamiliales, addictions, conduites à risque. Elle parle de « violence sociale » qui se répercute à l’intérieur des familles. À ce moment-là, elle est en formation en thérapie familiale systémique et voit les enfants mais aussi leurs familles. Selon elle la précarité augmente aujourd’hui encore, et que les étudiants seront probablement confrontés à ce type de situations.
-### 1.2 L’émergence de la question des violences intrafamiliales
+
+**L’émergence de la question des violences intrafamiliales**
 
 Elle commence à travailler au moment où les violences intrafamiliales entrent réellement dans le champ de la santé mentale. Avant cela, ces questions étaient considérées comme privées. On “lavait son linge sale en famille”.
 
 Elle participe à la création des premières équipes SOS Enfants en Belgique. À Charleroi, une collaboration étroite se met en place entre l’hôpital, la justice et les services spécialisés. Il faut inventer des dispositifs thérapeutiques, réfléchir aux signalements judiciaires, articuler les interventions. C’est une période de levée du silence. On commence à parler de maltraitance, de violence conjugale, puis progressivement d’abus sexuels et d’inceste. Au début, les signalements concernent surtout la négligence et la violence physique, plus visibles. Puis, en quelques années, les révélations d’abus sexuels augmentent de manière impressionnante.
 
 La société n’était pas prête à entendre ces réalités. Il faut du temps pour voir, entendre et croire. Elle fait un parallèle avec des mouvements plus récents comme MeToo : les faits existaient déjà, mais deviennent soudain visibles.
-### 1.3 Les défis cliniques et institutionnels
+
+**Les défis cliniques et institutionnels**
 
 Identifier une maltraitance ne signifie pas que les parents reconnaissent les faits. Ils sont souvent dans le déni, sur la défensive. Les signalements judiciaires compliquent la relation de confiance : les professionnels sont perçus comme une “antichambre de la justice”.
 
@@ -50,36 +53,42 @@ Elle se forme à la thérapie familiale avec le souci de ne pas réduire les par
 
 Quand les cas d’inceste apparaissent, l’équipe se sent particulièrement démunie. Il n’y a pas de modèles théoriques solides. Les représentations dominantes sont encore marquées par les **théories psychanalytiques du fantasme**.
 
-{encadré sur ces théories, pour moi-meme comprendre...?}
+>[!info]
+>{A faire: encadré sur ces théories, pour moi-même comprendre...?}
 
 C’est dans ce contexte qu’on lui propose un poste d’assistante-chercheuse avec doctorat. Elle choisit de travailler sur l’inceste, en lien direct avec sa pratique clinique. C’est le point de départ de son intérêt pour la transmission intergénérationnelle des traumatismes.
-### 1.4 Freud, le trauma et le poids d’une époque
+
+**Freud, le trauma et le poids d’une époque**
 
 Au départ, Freud élabore la “théorie de la séduction” : il croit ses patientes qui parlent d’abus sexuels subis dans l’enfance et relie leurs symptômes à ces traumatismes réels ([théorie de la séduction](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_s%C3%A9duction), névrose comme étant la conséquence d'un traumatisme infantil), mais cette théorie est mal accueillie par ses pairs intialement. Face à la pression du milieu médical bourgeois, il fait marche arrière, et par là construit la psychanalyse (évènements traumatiques transformés en fantasmes, avec donc une dimension insconsciente). Cette volte-face ouvre la voie à la psychanalyse et à la théorie de l’inconscient.
 
 Elle évoque aussi Farenzi, qui, lui, n’a jamais abandonné l’idée du traumatisme réel. Ces débats ont marqué durablement les représentations cliniques, par exemple autour de l’hystérie, terme encore utilisé de manière péjorative par certains médecins.
 
 Elle souligne combien les théories sont liées à leur époque. Certaines choses sont inaudibles à un moment donné. Il faut que la société soit prête pour entendre.
-### 1.5 Croire les victimes : un enjeu psychologique et éthique
+
+**Croire les victimes : un enjeu psychologique et éthique**
 
 Croire une victime n’est pas simple. Cela implique de partager quelque chose de la déchirure traumatique. Face a un récit de trauma, le mécanisme de déni (ne pas y croire) permet une auto-protection (mécanismes qu'on explorera). Le déni est plus confortable, il protège. S’identifier à l’agresseur peut être psychiquement moins angoissant que s’identifier à la victime.
 
 Elle insiste sur la responsabilité des professionnels. Même quand la société “décide” de rompre le silence, les mécanismes de défense restent puissants. Il est plus facile de ne pas croire.
-### 1.6 Transmission et traumatismes
+
+**Transmission et traumatismes**
 
 Sa thèse sur l’inceste l’amène à travailler plus largement sur la transmission intergénérationnelle : comment les traumatismes se transmettent (ou ne se transmettent pas) d’une génération à l’autre. Par rapport à l'inceste, les cliniciens étaient perdus, sans modèle théorique convenable (Oedipe, fantasmes, filles qui séduisent leur pères... manquant de référants permettant de travailler la question). 
 
 Elle fait son assistanat-doctorat sur l'inceste. Elle élargit ensuite ses recherches aux tentatives de suicide à l’adolescence, aux troubles alimentaires, aux violences de masse, aux génocides (Shoah, Rwanda, Burundi). Elle s’intéresse à la manière dont les groupes se réorganisent après un traumatisme.
 
 Elle rappelle toutefois un point essentiel : tout ne se transmet pas. Beaucoup de personnes sont résilientes. En pratique psychopathologique, on voit surtout les situations les plus graves, mais il ne faut pas généraliser à l’ensemble de la population.
-### 1.7 Ses influences
+
+**Ses influences personnelles**
 
 Elle cite deux grandes figures qui l’ont marquée:
 - G. Bateson (1904 - 1980): anthopologue américain, qui a beaucoup contribué à influencer l'approche systémique. A fait beaucoup de terrain, avec humains et animaux. Vision ethnologique, qui inspire la prof dans sa rencontre avec les familles (observations sans jugement). 
 - [Siegi Hirsh](https://europeanfamilytherapy.eu/siegi-hirsch/) (1924): bruxellois d'origine allemande juive, thérapeute familial systémicien. A peu écrit, transmettait et formait oralement. Avait ouvert un *home* à l'après-guerre qu'il a lui même dirigé, où il s'ccoupait d'enfants orphelins, avec un dispositif propre et très proche de l'approche systémique. A également accompagné beaucoup d'autres survivants de la Shoah et pas que, et d'autres survivants. A travaillé sur le processus de désignation (semblable au concept du *patient designé*, au niveau du groupe).
 
 Ces deux auteurs ont toujours refusé de "faire école", ne voulant pas s'enfermer dans ce que les autres pouvaient avoir comme lecture de soi-même (raison pour laquelle Bateson a quitté Palo Alto). Multiplicité de visions en systémique (ouverture maximale qui permet aux systémiciens de recourir à différents modèles sans que ce soit perçu comme une trahison).
-### 1.8 L’approche systémique et le libre examen
+
+**L’approche systémique et le libre examen**
 
 L’approche systémique, selon elle, n’est pas une école fermée mais une multiplicité de styles. On peut naviguer entre différents modèles (biologiques, sociologiques, anthropologiques, philosophiques) sans trahir une doctrine. Elle rattache cela à l’esprit du libre examen : ne se soumettre ni à un dogme, ni à une autorité, mais aux faits. Garder un esprit critique. Ne pas figer les idées. Elle insiste enfin sur l’humilité nécessaire dans la pratique clinique et scientifique. Ce que l’on tient pour vrai peut être remis en question. Les mentalités évoluent lentement. Il faut rester vigilant.
 
@@ -107,7 +116,6 @@ Enfin, elle est un **lieu de construction identitaire**. On s’y construit pou
 > - **Lieu de constitution de l'identité individuelle et de transmission intergénérationnelle**: la filiation. (On se construit l'identité non pas pour rester dans la famille, mais pour en construire une autre)
 
 Ces différentes dimensions forment le socle de la définition de la famille. Mais, selon Neuburger, l’ensemble est structuré par un « ciment » particulier : le mythe familial.
-
 ### 2.2 Le mythe familial : croyances, récit et identité groupale
 
 Le mythe familial est ce qui donne au groupe son identité spécifique et le différencie du monde extérieur. Il est composé d’un ensemble de **croyances partagées** concernant ce que la famille pense être, ce qu’elle dit d’elle-même.
@@ -135,7 +143,6 @@ Certains membres peuvent **contester** le mythe. Ils dénoncent son caractère i
 #### 2.2.2 Renouvellement du mythe
 
 Le mythe n’est donc pas figé. Il peut **se renouveler** après une crise. Il peut être adapté à une période de la vie familiale et devenir inapproprié plus tard. Par exemple, un mythe d’ultra-unité peut être soutenant lorsque les enfants sont petits, mais devenir contraignant à l’adolescence, quand la différenciation devient nécessaire.
-
 #### 2.2.3 Rigidification du mythe
 
 Lorsque le mythe se rigidifie, qu’il ne se transforme plus, il peut devenir source de souffrance, voire de violence. En clinique, on rencontre souvent des familles où les mythes se sont rigidifiés. C’est cette rigidité, plus que le mythe en lui-même, qui devient problématique.
@@ -280,3 +287,5 @@ Définitions:
   >  Idée inconsciente selon laquelle tout individu serait primitivement pourvu d’un pénis, la petite fille apparais­sant alors comme ayant été castrée ; la femme vit inconscient­ment l’angoisse d’avoir été castrée, l’homme celle d’être castré.
 > 4. **Le fantasme de retour au ventre maternel (ou fantasme intra-utérin)**  
 >    Il exprime le désir de retour à un état fusionnel, protégé, antérieur aux conflits et aux séparations. Il renvoie à la nostalgie d’un état originaire sans manque.
+
+📅 Vendredi **20 Février 2026** - Cours 3 - I. Duret
