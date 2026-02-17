@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<title>2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">My notes</h1>
+</a>
+</div>
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
+</nav>
+<div class="search-container" id="globalsearch" onclick="toggleSearch()">
+<div class="search-box">
+<input type="search" id="term" placeholder="Start typing...">
+<div id="search-results"></div>
+<footer class="search-box-footer">
+<div class="navigation-hint">
+<span>Enter to select</span>
+</div>
+<div class="navigation-hint align-icon">
+<i icon-name="arrow-up" aria-hidden="true"></i>
+<i icon-name="arrow-down" aria-hidden="true"></i>
+<span>to navigate</span>
+</div>
+<div class="navigation-hint">
+<span>ESC to close</span>
+</div>
+</footer>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2026-02-17T23:00:15.840Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2026-02-17T23:00:15.840Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2026-02-17T23:00:15.840Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
+<main class="content cm-s-obsidian">
+<header>
+<h1 data-note-icon="">2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental</h1>
+<div class="header-meta">
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2026-01-22T14:37:36.284+01:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2026-02-17T23:43:32.994+01:00"></span></div></div></div>
+</header>
+<div class="callout" data-callout="tldr"><div class="callout-title"><div class="callout-title-inner"> Résumé</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>Cognitivo-comportemental : les thérapies de la troisième vague. Prof. C.Hauwel-Fantini</li>
+<li>Systémique: théories et fondement de l'approche systémique , les différentes écoles et les pratiques qui en découlent. Prof. I. Duret</li>
+<li>Psychanalyse : théories et fondements de l'approche psychanalytique. Prof. P. Fouchet</li>
+</ul>
+<p></p></div></div>
+<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Évaluation</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>Pour la partie Psychanalyse (P. Fouchet) et la partie Systémique (I. Duret) : Examen écrit à réponses fermées comprenant des VF. L' examen a lieu le même jour.</li>
+<li>Pour la partie Cognitivo-Comportementale (C. Fantini-Hauwel) : examen écrit de type QCM.</li>
+</ul>
+<p></p><p><strong>Construction de la note</strong> (en ce compris, la pondération des notes partielles):<br>
+L'évaluation comprendra 3 parties comptant pour un tiers chacune de la note finale.<br>
+Il s'agit d'une moyenne arithmétique simple à partir des résultats obtenus pour les parties Psychanalyse, Systémique, Cognitivo-comportementale.<br>
+L'étudiant·e devra obtenir une note minimum de 10/20 à l'examen portant sur chaque partie. Toutefois les parties réussies et donc validées, peuvent être reportées à la session suivante.</p>
+</div></div>
+<h1 id="partie-systemique-prof-isabelle-duret" tabindex="-1">Partie Systémique - Prof. Isabelle Duret</h1>
+<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Évaluation et modalités de cours:</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>Le cours est enregistré</li>
+<li>Pas de syllabus, le cours se compose des slides et de quelques articles</li>
+<li><strong>Examen</strong>:
+<ul>
+<li>Vrai/Faux (et peut-être des QRM, elle n'est pas encore sûre)</li>
+<li>Pas de questions ouvertes</li>
+<li>Organisé avec P. Fouchet, Fantini organise son examen à part</li>
+</ul>
+</li>
+</ul>
+<p></p></div></div>
+<div class="callout" data-callout="tip"><div class="callout-title"><div class="callout-title-inner"> Lectures recommandées (pas obligatoires)</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>Elkaïm, Mony (1998). Panorama des thérapies familiales. Seuil.</li>
+<li>Neuburger, Robert (1984). Le mythe familial. ESF.</li>
+<li>Neuburger, Robert (1984). L'autre demande. Psychanalyse et thérapie familiale systémique. ESF.</li>
+<li>Minuchin, Salvatore (1998). Familles en thérapie. Eres.</li>
+<li>Ausloos, G. (1995). La compétence des familles. Eres.</li>
+<li>Bateson, G. (1977 vol. I, 1980 vol II). Vers une écologie de l'esprit. Seuil.</li>
+</ul>
+<p></p></div></div>
+<p>📅 Lundi <strong>2 Février 2026</strong></p>
+<h2 id="chapitre-1-origines" tabindex="-1">🏷️ Chapitre 1 : Origines</h2>
+<h2 id="1-les-sources-de-l-approche-systemique" tabindex="-1">1. Les sources de l'approche systémique</h2>
+<p>Pourquoi cette approche est née? Quelles sont les notions inhérentes à ce paradigme, cette philosophie de soins?</p>
+<p>L’approche systémique naît d’un <strong>mouvement de remise en question des modèles explicatifs dominants</strong>, en particulier des modèles individuels, linéaires et intrapsychiques. Elle émerge dans les années 1950, principalement aux États-Unis, mais de manière <strong>simultanée et indépendante dans plusieurs régions du monde</strong>, portée par des cliniciens qui ne se satisfaisaient plus des cadres théoriques existants.</p>
+<p>Ces praticiens observent que leurs interventions auprès d’un individu ont des <strong>effets inattendus sur son entourage</strong>, et inversement. Peu à peu, ils cessent de considérer le symptôme comme une propriété interne d’un sujet pour l’envisager comme <strong>inscrit dans un réseau de relations</strong>. Le regard se déplace de l’individu vers le groupe auquel il appartient, en premier lieu la famille.</p>
+<p>On va passer en revue les 5 sources principales qui ont inspiré les systémiciens:</p>
+<ol>
+<li>La psychanalyse d'enfants</li>
+<li>La guidance infantile (child guidance)</li>
+<li>La thérapie de groupe</li>
+<li>L'École de Palo Alto (Mental Research Institute, 1959)</li>
+<li>L'anti-psychiatrie (multiples auteurs: Foucault, Laing, Cooper, Basaglia, Castel, Guattari, Oury...)</li>
+</ol>
+<h3 id="1-1-les-psychanalystes-d-enfants" tabindex="-1">1.1 Les psychanalystes d'enfants</h3>
+<p>Les premiers apports viennent de psychiatres et psychanalystes travaillant avec des enfants. Ceux-ci constatent des phénomènes cliniques qui résistent à une lecture strictement intrapsychique.</p>
+<p>Ils observent notamment que l’amélioration d’un enfant peut s’accompagner de la détérioration d’un autre membre de la fratrie, ou encore qu’un changement chez un parent entraîne une modification du symptôme chez l’enfant, parfois dans un sens opposé à celui attendu. Ces phénomènes suggèrent l’existence de <strong>processus interactionnels</strong>, où le symptôme circule ou se transforme au sein du groupe familial.</p>
+<div class="callout" data-callout="example"><div class="callout-title"><div class="callout-title-inner">Example</div></div>
+<div class="callout-content">
+<p>
+Un enfant suivi pour troubles du comportement s’améliore en thérapie individuelle. Quelques semaines plus tard, sa sœur développe des symptômes anxieux importants. Cette « migration du symptôme » suggère une fonction du trouble dans l’économie familiale globale: par exemple, que la fratrie opère un &quot;relais&quot; inconscient pour maintenir l'attention des parents détournée d'un conflit conjugal, soit que le système, déstabilisé par la guérison, cherche à restaurer son homéostasie en désignant un nouveau &quot;porteur d'angoisse&quot;, ou encore que cette anxiété nouvelle vienne combler le vide identitaire laissé par la disparition du rôle de &quot;l'enfant à problèmes&quot;....</p>
+</div></div>
+<p>Face à ces constats, certains cliniciens commencent à expérimenter de nouvelles modalités de travail : faire assister les parents à certaines séances, recevoir les membres de la famille séparément, puis progressivement ensemble. Parmi les pionniers, <a href="https://en.wikipedia.org/wiki/Nathan_Ackerman" target="_blank" class="external-link">Nathan Ackerman</a> (1908–1971), à New York (dont un institut à son nom existe encore), est l’un des premiers à inviter l’ensemble de la famille en séance, rompant avec l’idée selon laquelle la famille serait uniquement la cause du trouble. Chez Ackerman, la famille devient un <strong>levier thérapeutique</strong>, un système à mobiliser plutôt qu’un simple facteur étiologique. Il ne s’agit plus uniquement de « corriger » les parents, mais de <strong>les intégrer activement dans le processus thérapeutique</strong>.</p>
+<div class="callout" data-callout="done"><div class="callout-title"><div class="callout-title-inner"> À retenir<br></div></div>
+<div class="callout-content">
+<p>
+L’apport des psychanalystes d’enfants ouvre la voie à une compréhension <strong>relationnelle et dynamique du symptôme</strong>, et prépare le terrain à l’idée que le patient n’est jamais isolé de son contexte familial.</p>
+</div></div>
+<h3 id="1-2-la-guidance-infantile-parentale-child-guidance-movement" tabindex="-1">1.2 La guidance infantile / parentale (Child Guidance movement)</h3>
+<p>Mouvement qui au départ est un concept plutôt d'origine américaine, utilisé de manière plus importante après la seconde guerre mondiale. Il s’agit d’un dispositif <strong>préventif et thérapeutique</strong>, centré sur les bébés et les jeunes enfants en difficulté, ainsi que sur les parents qui peinent à établir des liens satisfaisants avec eux. L'intérêt est de venir au secours de bébés en difficultés, ou avec lesquels les parents sont en difficultés, pour faire en sorte que ces liens puissent se tisser de manière la plus efficace possible. Le travail est multidisciplinaire, avec des médecins, psychiatres, psychologues, travailleurs sociaux, etc, dans le but de <strong>stimuler la relation parent-bébé</strong>. L’objectif est de soutenir et stimuler la relation parent-enfant, en aidant, &quot;éduquant&quot;, les parents à ajuster leurs comportements et leurs réponses émotionnelles.</p>
+<p>Cependant, ce courant est aussi traversé par des biais culturels importants. À cette époque, la responsabilité des difficultés est très largement attribuée aux mères, tandis que les pères sont souvent absents du dispositif, tant sur le plan théorique que pratique. Cette focalisation peut conduire à des lectures culpabilisantes (&quot;mère toxique&quot;, &quot;mère fusionnelle&quot;, ...), parfois réductrices, qui ne sont pas sans résonance avec certaines dérives contemporaines inversées concernant les pères. L'approche psychanalytique de l'autisme, culpabilisant les mères, en est un exemple flagrant, cf. le film Le Mur de Sophie Robert.</p>
+<div class="callout" data-callout="example"><div class="callout-title"><div class="callout-title-inner"> Échos contemporains: la place des pères<br></div></div>
+<div class="callout-content">
+<p>
+Malgré les évolutions sociétales et les discours actuels sur la coparentalité, il persiste une tendance clinique et institutionnelle à considérer les pères comme périphériques, moins disponibles ou moins importants que les mères. Or, dans les configurations familiales contemporaines, les pères jouent un rôle central, et continuer à les maintenir à l’écart constitue une fausse bonne idée.</p>
+<p>Si l’on peut avoir l’impression que la situation s’est nettement améliorée, il existe encore de nombreuses formes de maltraitance institutionnelle implicite à l’égard de certains parents. Les intervenants capitulent souvent trop vite face à des arguments tels que les contraintes professionnelles du père, ou s’appuient sur le discours d’un parent qui discrédite l’autre (« il ne s’en occupe pas », « la relation est compliquée », « il est agressif »). Dans ces situations, l’exclusion rapide du coparent est fréquente.</p>
+<p>Or, il relève de la responsabilité éthique et clinique des professionnels d’insister pour impliquer l’ensemble de l’équipe parentale. Il ne s’agit pas uniquement du père et de la mère biologiques, mais plus largement de toutes les figures parentales investies auprès de l’enfant, y compris les beaux-parents lorsque leur rôle éducatif est significatif. Entamer une prise en charge sans que l’autre parent soit au minimum informé et ait donné son accord pose d’ailleurs un problème déontologique clair, pourtant encore trop souvent ignoré.</p>
+<p>Le changement des appellations institutionnelles (par exemple, passer d’« unité mère-bébé » à « unité parent-bébé ») ne garantit pas, à lui seul, une transformation réelle des pratiques. Les résistances au changement sont fortes, souvent liées aux habitudes professionnelles, au manque de temps, à la surcharge des équipes et à la tentation de choisir la solution la plus simple plutôt que la plus juste.</p>
+<p>Dans une perspective systémique, lorsqu’un enfant présente une difficulté, c’est l’ensemble de l’équipe parentale qu’il convient de rencontrer et de mobiliser. Ne pas « lâcher le morceau » sur cette question constitue un enjeu clinique majeur.</p>
+</div></div>
+<p>Les cliniciens utilisent des outils novateurs, notamment l’observation directe des interactions parent-bébé, parfois filmées, afin d’analyser finement les microprocessus relationnels.</p>
+<p>Parmi les figures importantes, on peut citer T. Berry Brazelton (1918–2018), professeur pédiatre à la Harvard Medical School, ainsi que Frieda Fromm-Reichmann, connue pour ses travaux auprès de patients psychotiques.</p>
+<div class="callout" data-callout="done"><div class="callout-title"><div class="callout-title-inner"> À retenir<br></div></div>
+<div class="callout-content">
+<p>
+La guidance infantile contribue à ancrer l’idée que les troubles précoces sont <strong>relationnels</strong>, observables et modifiables, et qu’ils nécessitent une approche systémique avant l’heure.</p>
+</div></div>
+<h3 id="1-3-therapeutes-de-groupe" tabindex="-1">1.3 Thérapeutes de groupe</h3>
+<p>Un autre apport majeur provient des thérapeutes de groupe, en particulier dans le contexte hospitalier. Des cliniciens comme <strong>John Bell</strong>, influencés par les travaux de <a href="https://en.wikipedia.org/wiki/John_Bowlby" target="_blank" class="external-link">John Bowlby</a> sur l’attachement, commencent à appliquer des dispositifs groupaux aux familles.</p>
+<p>En utilisant des techniques de groupe, ces cliniciens se rendent compte que certains groupes naturels (et en premier lieu la famille) constituent des <strong>espaces thérapeutiques pertinents</strong>. En réunissant plusieurs personnes confrontées à des <strong>difficultés similaires</strong>, les thérapeutes observent l’émergence de dynamiques relationnelles riches, porteuses de sens et de transformation.</p>
+<p>Cette approche est largement utilisée dans les hôpitaux (plus commun aux États-Unis), sous forme de groupes de parole ou de groupes de parents d’enfants hospitalisés. Elle donnera naissance à deux courants distincts :</p>
+<ol>
+<li>Thérapies familiales d'orientation psychanalytique d'abord, très développées en France (Egger, Tisseron, Lebovici), avec des revues (par ex.: Le Divan Familial, La revue dialogue).</li>
+<li>Le mouvement systémique, avec la thérapie familiale en particulier.</li>
+</ol>
+<p>Par exemple, groupes de parole, groupes de parents pour enfants hospitalisés, alcoliques anonymes, etc. Le travail en groupe, c'est quelque chose qu'on retrouve aussi à partir des différentes paradigmes: TCC, systémique, psychanalyse... Ce n'est pas quelque chose qui se réduit à un type d'orientation.</p>
+<p>Un apport essentiel de ce mouvement est aussi la prise de conscience que <strong>les professionnels eux-mêmes forment un système</strong>, dont les interactions influencent la prise en charge. La naissance de la systémique, c'est aussi la possibilité de travailler en réseau avec les différents intervenants autour d'un patient, d'une patiente et de sa famille. Donc, on n'est pas réduit à travailler en réunissant l'ensemble de la famille ou en réunissant le couple. C'est aussi l'idée de plus on est d'intervenant, plus on réfléchit ensemble, en réseau, autour des situations où des patients sont en difficulté, où parfois il y a de multiples d'ailleurs intervenants engagent un droit.<br>
+L'intérêt d'avoir une vision groupale, c'est de pouvoir aussi de se dire que les intervenants eux-mêmes constituent un groupe sur lequel il est intéressant de miser ou d'activer pour pouvoir trouver des solutions.</p>
+<div class="callout" data-callout="example"><div class="callout-title"><div class="callout-title-inner"> Professionnels = un système, aussi<br></div></div>
+<div class="callout-content">
+<p>
+Isabelle Duret raconte qu'en stage dans les années 80, ils avaient mis en place un groupe de parents pour les adolescents hospitalisés. Alors que les adolescents étaient enthousiastes, les parents ne venaient pas. Et en fait, les parents ne venaient pas parce qu'on ne les prévenait pas, parce que l'équipe infirmière n'étaient pas pour, parce qu'à l'époque, les équipes infirmières voyaient les parents comme étant les mauvais parents qui étaient à l'origine des états psychiques.</p>
+</div></div>
+<div class="callout" data-callout="done"><div class="callout-title"><div class="callout-title-inner"> À retenir<br></div></div>
+<div class="callout-content">
+<p>
+La thérapie de groupe introduit la famille comme <strong>groupe thérapeutique à part entière</strong>, et ouvre la réflexion sur les systèmes imbriqués (famille, institution, équipe).</p>
+</div></div>
+<h3 id="1-4-ecole-de-palo-alto" tabindex="-1">1.4 École de Palo Alto</h3>
+<p>L’École de Palo Alto constitue l’un des socles théoriques majeurs de l’approche systémique et de la thérapie familiale. Elle émerge dans les années 1950 à Palo Alto, en Californie, autour du <strong>Mental Research Institute (MRI)</strong>, dans un contexte de remise en question des modèles psychiatriques et psychothérapeutiques classiques.</p>
+<p>À l’origine, il s’agit d’un <strong>groupe interdisciplinaire</strong> composé de psychiatres, psychologues, anthropologues, sociologues, biologistes, ingénieurs et chercheurs issus de champs très variés. Beaucoup d’entre eux sont initialement formés à la psychanalyse, mais ils en perçoivent rapidement les limites, notamment pour comprendre et traiter certains patients psychiatriques, en particulier des patients psychotiques ou chronicisés.</p>
+<p>Plutôt que de se centrer exclusivement sur l’individu et son monde intrapsychique, ces chercheurs vont déplacer leur regard vers la <strong>communication</strong>, les <strong>interactions</strong> et les <strong>contextes relationnels</strong> dans lesquels les troubles s’inscrivent.</p>
+<h4 id="1-4-1-principaux-membres-et-figures-fondatrices" tabindex="-1">1.4.1 Principaux membres et figures fondatrices</h4>
+<p>Parmi les figures majeures de l’École de Palo Alto, on retrouve notamment :</p>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Gregory_Bateson" target="_blank" class="external-link"><strong>Gregory Bateson</strong></a> (biologiste, anthropologue, ethnologue),</li>
+<li><strong>Don D. Jackson</strong> (psychiatre, fondateur du MRI),</li>
+<li><strong>Paul Watzlawick</strong> (1921–2007), psychologue et sociologue d’origine autrichienne, qui jouera un rôle central dans la diffusion internationale des travaux de Palo Alto, notamment en Europe,</li>
+<li><strong>Jay Haley</strong>, issu des sciences de la communication,</li>
+<li><strong>John Weakland</strong> et <strong>Richard Fisch</strong>.</li>
+</ul>
+<p>Ces chercheurs partagent un style de travail marqué par une grande créativité, un humour très présent — y compris dans les dispositifs thérapeutiques — et une volonté assumée de sortir des cadres thérapeutiques traditionnels européens, souvent plus sérieux et normatifs.</p>
+<h4 id="1-4-2-une-approche-interdisciplinaire-et-ecologique" tabindex="-1">1.4.2 Une approche interdisciplinaire et écologique</h4>
+<p>L’École de Palo Alto se développe dans un <strong>esprit de décloisonnement disciplinaire</strong>. Les chercheurs invitent régulièrement des collègues d’autres domaines (ingénieurs, cybernéticiens, biologistes, physiciens) afin d’enrichir leur compréhension du fonctionnement humain. Cette ouverture est considérée comme indispensable pour penser des phénomènes complexes tels que la communication, la psychopathologie et les relations humaines.</p>
+<p>Ils développent une <strong>perspective écologique</strong>, au sens où les comportements humains sont compris en lien étroit avec leur environnement et leur contexte de vie. Cette vision est fortement influencée par la <strong>théorie de l’évolution</strong>, notamment à travers Gregory Bateson, fils d’un généticien évolutionniste, et par un intérêt marqué pour l’observation du vivant dans toutes ses formes.</p>
+<p>Les membres de Palo Alto récusent le <strong>dualisme cartésien</strong> : l’esprit n’est pas séparable du corps, ni l’individu séparable de son contexte relationnel. Ils introduisent ainsi une <strong>pensée circulaire</strong>, en opposition à la pensée linéaire classique fondée sur la causalité simple (cause → effet). La pensée linéaire explique les phénomènes par une causalité simple, orientée de la cause vers l’effet, tandis que la pensée circulaire considère que les comportements s’influencent mutuellement dans des boucles de rétroaction, rendant la distinction entre cause et conséquence secondaire.</p>
+<p>Plutôt que de le considérer uniquement comme un problème à éliminer, ils proposent de le comprendre comme une <strong>solution trouvée par le système</strong> à un problème donné. Dans cette perspective :</p>
+<ul>
+<li>le symptôme peut être à la fois cause et effet,</li>
+<li>il participe à l’équilibre du système,</li>
+<li>il a une fonction relationnelle.</li>
+</ul>
+<h4 id="1-4-3-gregory-bateson-et-la-communication-dans-le-vivant" tabindex="-1">1.4.3 Gregory Bateson et la communication dans le vivant</h4>
+<p>Gregory Bateson joue un rôle central dans l’élaboration théorique de l’École de Palo Alto, bien que son intérêt dépasse largement le champ de la psychiatrie. Il s’intéresse avant tout à la <strong>communication dans le vivant</strong> et aux <strong>relations entre les êtres vivants</strong>, qu’il s’agisse :</p>
+<ul>
+<li>des relations humaines (familles, groupes, tribus),</li>
+<li>des relations animales (dauphins, baleines, loutres),</li>
+<li>ou même des relations interespèces.</li>
+</ul>
+<p>Avec son épouse, l’anthropologue <a href="https://fr.wikipedia.org/wiki/Margaret_Mead" target="_blank" class="external-link"><strong>Margaret Mead</strong></a>, il mène de nombreux travaux ethnographiques, notamment en Nouvelle-Guinée. Mead met en évidence deux grands types de relations au sein des groupes humains :</p>
+<ul>
+<li>les <strong>relations symétriques</strong> (égalitaires),</li>
+<li>les <strong>relations complémentaires</strong> (hiérarchiques).</li>
+</ul>
+<p>Ces distinctions seront reprises par Bateson et intégrées aux modèles systémiques de la communication.</p>
+<h4 id="1-4-4-relations-symetriques-complementaires-et-escalades-conflictuelles" tabindex="-1">1.4.4 Relations symétriques, complémentaires et escalades conflictuelles</h4>
+<p>À partir de ces observations, Bateson et l’équipe de Palo Alto décrivent deux types principaux de conflits :</p>
+<ul>
+<li><strong>Les escalades symétriques</strong><br>
+Elles surviennent dans des relations égalitaires lorsque chaque protagoniste tente de rétablir une horizontalité perçue comme menacée. Chacun cherche à se placer au même niveau que l’autre, ce qui peut conduire à une montée en intensité du conflit.</li>
+<li><strong>Les escalades complémentaires</strong><br>
+Elles apparaissent dans des relations hiérarchiques, lorsque les positions haute et basse deviennent rigides. Ces situations peuvent être particulièrement préoccupantes, car elles peuvent conduire à des dynamiques d’emprise, de domination et parfois de violence, notamment dans les couples ou les relations parent-enfant.</li>
+</ul>
+<p>Dans la pratique clinique, le repérage de <strong>complémentarités rigides</strong> est un indicateur important de situations potentiellement maltraitantes.</p>
+<h4 id="1-4-5-cybernetique-systemes-et-boucles-de-retroaction" tabindex="-1">1.4.5 Cybernétique, systèmes et boucles de rétroaction</h4>
+<p>Les chercheurs de Palo Alto s’intéressent fortement à la <strong>cybernétique</strong>, science émergente à l’époque, qui étudie les systèmes régulés par des boucles de rétroaction. Ils s’inspirent notamment des travaux de <strong>Ludwig von Bertalanffy</strong>, auteur de <em>La théorie générale des systèmes</em> (1951).</p>
+<p>Ils observent comment les ingénieurs conçoivent des systèmes techniques (par exemple un thermostat) capables de maintenir un équilibre grâce à des <strong>boucles rétroactives circulaires</strong>. Ces modèles sont ensuite transposés à l’étude des systèmes humains.</p>
+<p>Ainsi, la famille, les groupes et les institutions sont conceptualisés comme des <strong>systèmes ouverts en état d’équilibre</strong>, capables de s’autoréguler, de s’adapter et de résister au changement.</p>
+<div class="callout" data-callout="done"><div class="callout-title"><div class="callout-title-inner"> Une révolution dans la compréhension de la psychopathologie<br></div></div>
+<div class="callout-content">
+<p>
+L’École de Palo Alto fonde l’approche systémique en psychiatrie et en thérapie familiale en déplaçant le regard de l’individu vers les interactions, la communication et le contexte. Elle développe une pensée circulaire, écologique et interdisciplinaire, inspirée de la cybernétique et de la théorie des systèmes, et introduit une conception du symptôme comme réponse adaptative plutôt que comme simple pathologie.</p>
+</div></div>
+<h4 id="1-4-6-concepts-fondamentaux-de-la-pensee-systemique" tabindex="-1">1.4.6 Concepts fondamentaux de la pensée systémique</h4>
+<h4 id="1-4-6-1-le-systeme" tabindex="-1">1.4.6.1 Le système</h4>
+<p>Définition de <strong>système</strong> (Von Bertalanffy: <em>La Théorie Générale des Systèmes</em>, 1951):</p>
+<ul>
+<li>Ensemble d'éléments en interaction, regis par un semble de regles qui les gouvernent, avec un aspect structurel et aspect fonctionnel. Système et dit ouvert quand les elements interagisesnt avec un ensemble d'elements exterieurs (systemes peuvent s'ouvrir et se refermer)</li>
+<li>deux fonctions apparemment contradictoires, tendance homeostatique et capacité de transformation (les deux fonction maintiennent un equilibre provision et garanti l'évolution)</li>
+</ul>
+<div class="callout" data-callout="example"><div class="callout-title"><div class="callout-title-inner"> Exemple<br></div></div>
+<div class="callout-content">
+<p>
+La naissance d’un enfant impose une réorganisation du système conjugal, qui doit trouver un nouvel équilibre fonctionnel.</p>
+</div></div>
+<div class="callout" data-callout="done"><div class="callout-title"><div class="callout-title-inner"> À retenir<br></div></div>
+<div class="callout-content">
+<p>
+Un système est un ensemble d’éléments en interaction, organisé selon des règles, et fonctionnant comme une totalité. Les systèmes humains sont ouverts, en interaction avec leur environnement, et cherchent à maintenir un équilibre tout en restant capables de changement et d’adaptation.</p>
+</div></div>
+<h4 id="1-4-6-2-lois-des-systeme" tabindex="-1">1.4.6.2 Lois des système</h4>
+<p>Lois des systèmes:</p>
+<ul>
+<li><strong>Totalité</strong>: <em>une perturbation d'un élément du système induit une modification de tous les autres éléments, que la perturbation vienne de l'intérieur ou de l'extérieur</em></li>
+<li><strong>Non-sommativité</strong>: &quot;un tout est plus que la somme des parties&quot;. Les caractéristiques constitutives ne peuvent s'expliquer à partir des caractéristiques prises isolément. ON ne peut pas énumérer séparément chaque élément du système. (Implication: voir les patients individuellement pour saisir les problématiques n'est pas assez).</li>
+<li><strong>Homéostasie</strong>: relative stabilité à l'intérieur du système qui est maintenu à l'équilibre par des rétroactions positives ou négatives. Plus un système est complexe, plus l'homéostasie peut être forte. {relation avec besoins changeants de cycles de vie?} Bateson parlait de changements de type 1, et changements de type 2:
+<ul>
+<li>Changement de <em>type 1</em>: Un élément est perturbé, système agit pour annuler le changement (rétroaction négative) dans le but de maintenir le système tel qu'il était (peur du changement, e.g. parents vont augmenter controle sur enfant qui veut sortir après l'école. Mais ne rien faire n'est pas bon non plus)</li>
+<li>Changement de <em>type 2</em>: Va au contraire encourager le système à évoluer. Rétroaction qui renforce le changement (rétroaction positive). Par ex,. encourager l'adolescent à évoluer vers un nouveau fonctionnement adapté a ses nouveaux besoins.</li>
+</ul>
+</li>
+<li><strong>Equifinalité</strong>: les objectifs d'un système peuvent être réalisés par différents chemins.</li>
+</ul>
+<div class="callout" data-callout="done"><div class="callout-title"><div class="callout-title-inner"> À retenir<br></div></div>
+<div class="callout-content">
+<p>
+Les systèmes obéissent à plusieurs principes fondamentaux : la totalité (tout changement affecte l’ensemble), la non-sommativité (le tout est différent de la somme des parties), l’homéostasie (tendance à maintenir l’équilibre), l’équifinalité (des chemins différents peuvent mener au même résultat) et la circularité (les causes et les effets s’influencent mutuellement).</p>
+</div></div>
+<h4 id="1-4-6-3-la-double-contrainte" tabindex="-1">1.4.6.3 La double contrainte</h4>
+<p>La <strong>double contrainte</strong> <a href="https://en.wikipedia.org/wiki/Double_bind" target="_blank" class="external-link">(double bind)</a> est un type de communication paradoxale identifié par Bateson en 1956. Elle implique une relation affective significative, une injonction primaire, une injonction secondaire contradictoire (souvent non verbale), et l’impossibilité d’échapper à la situation ou de la commenter.</p>
+<p>Pour la double contrainte, ces éléments doivent être réunis:</p>
+<ul>
+<li>Il faut une relation affective</li>
+<li>Une injonction primaire
+<ul>
+<li>Par ex., adulte dit à l'enfant « Viens me faire un calin »</li>
+</ul>
+</li>
+<li>Qui est contredite par une injonction secondaire (à un niveau plus abstrait)
+<ul>
+<li>Par ex., personne qui esquive ou se montre peu réceptive physiquement</li>
+</ul>
+</li>
+<li>Une injonction négative tertiaire qui interdit a la victime d'échapper à la situation.</li>
+<li>Quoique fasse l'individu, il ne peut être que perdant.
+<ul>
+<li>Exemple: si le fils se détourne, la mère sera désespérée et le critique, au contraire si le fils avait forcé, elle l’aurait rejeté encore plus, donc il peut être que perdant. La deuxième ne doit pas être verbale. Difficile pour un enfant de méta communiquer sur le paradoxe auquel il est soumis.</li>
+</ul>
+</li>
+</ul>
+<p>À ce troisième niveau, il devient impossible d’échapper à la relation ou de <strong>métacommuniquer</strong> sur ce qui se passe. Quelle que soit la réponse apportée, elle est disqualifiée : <em>quoi que l’on fasse, c’est mal</em>. L’individu se retrouve alors pris dans un système où il ne peut être que perdant.</p>
+<p>Les chercheurs de Palo Alto découvrent ces mécanismes en filmant les interactions familiales et en analysant la communication à ses différents niveaux :</p>
+<ul>
+<li>la <strong>dimension digitale</strong>, correspondant au contenu verbal explicite,</li>
+<li>la <strong>dimension analogique</strong>, qui comprend les expressions faciales, la tonalité de la voix, les mimiques, les attitudes corporelles et les manifestations physiologiques.</li>
+</ul>
+<p>Très souvent, la double contrainte repose sur une <strong>contradiction entre ces deux dimensions</strong>, mais elle peut aussi résulter de contradictions à d’autres niveaux du message.</p>
+<p>Progressivement, les chercheurs constatent que ces communications paradoxales ne proviennent pas uniquement d’un parent vers un enfant. Elles circulent dans l’ensemble du système familial : <strong>le patient lui-même, les autres membres de la famille, et même les thérapeutes</strong> peuvent être pris dans ces échanges disqualifiants. La double contrainte n’est donc pas un message isolé, mais un <strong>mode relationnel systémique</strong>.</p>
+<p>Bateson et son équipe font alors l’hypothèse que certains comportements jugés « bizarres » ou « incohérents » chez les patients psychotiques pourraient constituer des <strong>tentatives ingénieuses pour échapper à ces paradoxes</strong>, là où aucune issue directe n’est possible. La schizophrénie est alors envisagée, non comme une cause, mais comme un <strong>mode d’adaptation extrême</strong> à un environnement saturé de contradictions.</p>
+<div class="callout" data-callout="warning"><div class="callout-title"><div class="callout-title-inner"> Révision du concept<br></div></div>
+<div class="callout-content">
+<p>
+L'équipe reconnaîtra par la suite avoir sans doute <strong>surinvesti</strong> le concept de double contrainte, en lui attribuant un pouvoir explicatif trop large. Paul Watzlawick lui-même évoquera une période de fascination presque monomaniaque pour ce concept. Bateson, de son côté, refusera toute réification théorique excessive et se distanciera du groupe lorsque ses observations seront utilisées comme des explications closes ou des recettes thérapeutiques.</p>
+<p>Ce recul critique fait partie intégrante de l’héritage de Palo Alto : les modèles sont utiles pour penser et intervenir, mais ils ne doivent jamais être considérés comme exhaustifs ni définitifs.</p>
+</div></div>
+<div class="callout" data-callout="done"><div class="callout-title"><div class="callout-title-inner"> À retenir<br></div></div>
+<div class="callout-content">
+<p>
+La double contrainte est une forme de communication paradoxale dans laquelle une personne reçoit des messages contradictoires sans possibilité d’y échapper ni de métacommuniquer. Elle place l’individu dans une situation relationnelle sans issue, où toute réponse est disqualifiée, et a été pensée comme un facteur relationnel pouvant contribuer à des comportements psychotiques.</p>
+</div></div>
+<h4 id="1-4-6-3-le-symptome-dans-l-approche-systemique" tabindex="-1">1.4.6.3 Le symptôme dans l'approche systémique</h4>
+<p>Dans l’approche systémique développée par l’École de Palo Alto, le symptôme n’est pas envisagé comme une défaillance individuelle ni comme un simple dysfonctionnement à éliminer. Il est compris comme une <strong>réponse adaptative</strong> à une situation relationnelle particulière et comme une <strong>solution trouvée par le système</strong> pour maintenir son équilibre.</p>
+<p>Le symptôme remplit ainsi une <strong>fonction systémique</strong> : il contribue à préserver l’homéostasie du groupe, notamment familial, en permettant à chacun de s’ajuster à une situation de crise, de tension ou de souffrance partagée. Dans cette perspective, le symptôme est à la fois cause et effet, sans qu’il soit pertinent de chercher à établir une causalité linéaire entre les deux.</p>
+<p>Les systémiciens parlent alors de <strong>patient désigné</strong> ou de <strong>patient identifié</strong>. Cette notion repose sur l’hypothèse que <strong>l’ensemble du système est en souffrance</strong>, mais qu’un de ses membres va porter, incarner et rendre visible cette souffrance collective à travers un symptôme. Ce membre devient le lieu d’expression privilégié du malaise groupal.</p>
+<p>Toutefois, le patient n’est pas uniquement « désigné » de l’extérieur. Il <strong>accepte aussi cette désignation</strong> et y participe activement. Autrement dit, il ne s’agit pas d’un rôle imposé de manière univoque : le patient <strong>s’autodésigne également</strong>, dans la mesure où le symptôme lui procure, consciemment ou non, certains avantages relationnels ou fonctionnels. Le symptôme peut permettre de maintenir une proximité, d’éviter une séparation, de détourner l’attention d’un autre conflit, ou encore de préserver une certaine stabilité familiale.</p>
+<div class="callout" data-callout="example"><div class="callout-title"><div class="callout-title-inner"> Exemple<br></div></div>
+<div class="callout-content">
+<p>
+Ainsi, dans l’exemple d’un enfant qui ne va plus à l’école, le symptôme peut permettre à la mère de ne pas rester seule dans un moment de fragilité, au père de continuer à travailler sans s’inquiéter du climat familial, et à l’enfant de conserver une place centrale dans l’organisation familiale. Le symptôme est alors <strong>fonctionnel pour tous</strong>, y compris pour celui qui le porte.</p>
+</div></div>
+<p>Dans cette optique, le comportement jugé « étrange », « inadapté » ou « pathologique » peut être compris comme une <strong>réponse particulièrement pertinente</strong> à un contexte donné. Cette lecture transforme radicalement la manière de penser la psychopathologie : il ne s’agit plus de supprimer le symptôme, mais d’en comprendre la fonction afin de permettre au système de trouver <strong>d’autres modes d’équilibre</strong>, moins coûteux pour le patient.</p>
+<div class="callout" data-callout="done"><div class="callout-title"><div class="callout-title-inner"> À retenir<br></div></div>
+<div class="callout-content">
+<p>
+Dans l’approche systémique, le symptôme est une réponse adaptative et fonctionnelle à une situation relationnelle, permettant au système de maintenir son équilibre. Le patient dit « désigné » accepte et participe à ce rôle, car le symptôme présente aussi des avantages relationnels pour lui et pour le groupe dont il fait partie.</p>
+</div></div>
+<p>📅 Lundi <strong>16 Février 2026</strong></p>
+<p>Rappel du cours précédent: <strong>la fonction du symptome</strong>: en quoi ce symptôme contribue au système tel qu'il est, à son maintien? Qu'est que le comportement symptomatique permet ? Qu'est-ce qu'il empêche? Patient designé: non seulement passif, pour etre designé il faut en partie le propre &quot;accord&quot; de la personne.</p>
+<p>Question essentielle: Qu'est ce qui se apsserait si ce probleme n'existait plus? (qu'est ce que ça permet, que'est ce que ça empeche... pour avoir une hypothèse fonctionnelle).</p>
+<p>D'après ceux de l'école Palo Alto, un problème est ce qui est vécu comme un problème, peu importe ce que pensent les thérapeutes. Le thérapeute ne décide pas ce qui l'est pour la famille. Se garder de venir avec ses propres valeurs et projections, se focaliser sur ce qui pose problème pour la famille: &quot;En quoi est-ce un problème <strong>pour vous</strong>?&quot; (ou les differents membres du système). (Par exemple: famille preocuppée parce que leur enfant n'a pas plus de 14/20 partout).</p>
+<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Différence entre psychanalyse et systémique<br></div></div>
+<div class="callout-content">
+<p>
+Niveaux logiques differents, niveaux de reflexion differents.</p>
+<p><strong>Le symptôme</strong></p>
+<ul>
+<li>Pour la psychanalyse, le symptôme a un <strong>sens</strong> pour l'individu.</li>
+<li>Dans l'approche systémique, le symptôme a une fonction pour le groupe (famille, club de sport, ou tout autre groupe auquel il est inscrit en tant que membre). Le patient designé ou patient identifié est le nom donné au porteur du symptôme.</li>
+</ul>
+<p><strong>La posture</strong></p>
+<p>Autre différence: la posture, position du thérapeute: La manière dont il va etre plus engagé, plus impliqué dans le systeme lui-même. Métaphore utilisée par Paul Watzlawik: dans l'approche psychanalytique, il était important d'être confronté à la théorie de &quot;l'iceberg&quot; (on a pas accès directement à l'inconscient, etc.), mais en systémique, théorie du &quot;bouchon qui flotte&quot;: il a accès à tout le materiel devant lui pour travail avec le patient et le système avec lequel il interagit.</p>
+</div></div>
+<p>Comment choisir dans quelle orientation adresser un patient (ou encore TCC)? Repérer les specificités de la situation qui nous font pencher vers l'une ou l'autre approche (ces deux approches mises en avant ici car utilisées dans le livre de Neuburger).</p>
+<p>Visionnage d'une video de Paul Watzlawik: Conférence: <em>Quand la solution est le problème</em>. Stuttgart, 1987. <a href="https://www.youtube.com/watch?v=3lx3EjE0Trw" target="_blank" class="external-link">YouTube</a></p>
+<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/3lx3EjE0Trw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>)
+<p>Ce groupe de Palo Alto a été à l'origine d'une revue, &quot;Family Process&quot;, qui dans les années 60 a été une des premières revues dans le domaine, et qui existe encore.</p>
+<p>Quelques références:</p>
+<ul>
+<li>Milton Erickson, hypnose, invité aussi a Palo Alto</li>
+<li>Ecole Wittezaele à Bruge (thérapie brève)</li>
+<li>Thérapie provocative, aussi moins présente en europe (sauf certains en Italie, Andolfi en debut de carrière, l'a ensuite abandonnée).</li>
+</ul>
+<h3 id="1-5-l-approche-anti-psychiatrie" tabindex="-1">1.5 L'approche anti-psychiatrie</h3>
+<p>Dans la &quot;vieille europe&quot;, ce mouvement prend beaucoup d'ampleur, avec une maniere de penser les choses qui a beaucoup influencé les penseurs systemiciens.</p>
+<p>Tëtes de file:</p>
+<ul>
+<li>RD Laing, David Cooper, Franco Basaglia, Castel</li>
+<li>Jean Oury, Félix Guattari, Mony Elkaïm...</li>
+</ul>
+<p>Remise en cause e la psychiatrie traditionnelle (et ses methodes d'enfermement). Foucault: plutot que de considerer qu'il faut &quot;aider les fous a se reintegrer dans la societe&quot;, se demander ce quil se passe dans la société pour considerer que certains individus doivent etre enfermés. Basaglia en tête de file de mouvement amenant a la fermeture d'hopitaux (cf. loi actée en Italie).</p>
+<p>Repercussions dans notre maniere de penser la santé mentale: creation de centres de santé avec l'idee de ne pas exclure les personnes malades de la societe, et travailler a leur reinsertion.</p>
+<p>A Bruxelles, Paul Sivadon, psychiatre d'origine francaise, création d'un premier centre de santé mentale sectorisé (à Anderlecht, en 63(?)), avec Jean Vermeylen: l'<em>Equipe</em>, à Anderlecht, <em>La Gerbe</em>: deux premiers centres créés pour poursuivre ce projet d'aider les personnes à la marge, pour leur éviter la psychiatrisation. Se questionnent donc sur la société, ou la famille, plutôt que l'individu. &quot;Est-ce la société qui est folle?&quot; &quot;Est-ce la famille qui est folle?&quot; (cf film <a href="https://letterboxd.com/film/family-life-1971-1/" target="_blank" class="external-link">Family Life</a>).</p>
+<p>C'est par le biais de ce mouvement que Palo Alto (et par là les thérapies familiales systémiques), s'est fait connaitre en Europe.</p>
+<h2 id="rappel-quatre-notions-cle" tabindex="-1">Rappel: Quatre notions clé</h2>
+<ul>
+<li><strong>Les patterns transactionnels</strong>:
+<ul>
+<li>&quot;La famille est structuree en sous groupes définis par leur relations réciproques. Les relations entre différents membres de ces sous-groupes ou entre un sous groupe et un autre sont définis par des patterns relationnels. Une transaction se rapporte a un acte verbal ou non vernal echangé avec un partneaire et signifie cet echange meme. Le pattern renvoie a la sequence de plusieurs tarnsactions selon une configuration donnee repetitive (ex notes de musique sur une portee = melodie)&quot; (dia)</li>
+<li>Comme dit précédemment, chaque famille est différente, d'où l'importance pour le thérapeute de se mettre en position d'observateur, comme un ethnologue qui visite un groupe dont il n'a pas les codes. Important de s'intéresser a la manière dont le groupe met en place des patterns. Sous-groupes définis par les relations réciproques, et ses relations entre membres ou entre sous-groupes sont définis par des patterns relationnels (= <em>modes</em> de relation, ou <em>codes</em>).</li>
+<li>Par exemple, chau qe fois que pere fait une remarque, un fils l'imite d'une grosse voix, les autres enfants rient, la mere intervient pour dire &quot;vous arretez de rire? personne le prend jamais au serieux&quot;</li>
+<li>Exemple 2: des que le couple parental est en tension, si un partenaire fait un reproche a l'autre, un des enfants fait une betise de maniere a ce que l'un des parents doive interveniir.</li>
+<li>Ex 3: famille où tout le monde tournait en dérision ce que disait l'étranger à la famille.</li>
+<li>Therapeute devra voir ce qui se joue dans ces groupes, afin de decoder le comportement du groupe pour pouvoir interagir avec eux lui aussi (encore metaphone de l'ethnologue qui doit se faire accepter par la tribu qu'il etudie)</li>
+</ul>
+</li>
+<li><strong>La position directive du thérapeute</strong>:
+<ul>
+<li>Pas détaillé en cours.</li>
+</ul>
+</li>
+<li><strong>Les stades de l'évolution ou cycle de vie</strong> de l'individu et de la famille:
+<ul>
+<li>Important d'avoir en tete ces concepts: necessité de renégocier les relations à chaque passage à une nouvelle étape, par ex. la mise en couple, naissance du premier enfant, adolescence, premier travail, etc). Processus d'autonomisation, en particulier, qui implique que toutes les relations se re negocient (pas seulement la famille). Ne s'arrete pas a l'adolescence, quand l'enfant devient adulte persiste tout au long de la vie (se mettre en couple et vivre a l'exterieur, etc).</li>
+<li>Défi marqué pour le groupe de se réorganiser après une crise: le moment de la crise est essentiel - sans crise, pas d'évolution.</li>
+</ul>
+</li>
+<li><strong>L'analyse de la demande</strong>. L'indication d'une thérapie familiale passe par l'analyse de la demande. Lorsque le sujet ne peut formuler une demande et que les éléments de la demande sont réparties dans le groupe familial (cf R. Neuburger). Quand faire appel à un thérapeute?
+<ul>
+<li>R. Neuburger: s'appuyer sur les éléments constitutifs d'une demande (détaillé dans son livre de 1984, <em>L'autre demande</em>)
+<ul>
+<li>Un symptôme</li>
+<li>Une souffrace</li>
+<li>Une allégation (une mise en avant, invocation du problème)</li>
+</ul>
+</li>
+<li>Si ceux-ci sont répartis sur un seule et même personne, ou pas?
+<ul>
+<li>Rassemblés au sein d'une même personne? Psychothérapie individuelle.</li>
+<li>Dispersés au sein d'une famille, couple, équipe? Indication pour une psychothérapie systémique.</li>
+</ul>
+</li>
+<li>Intéressant de voir &quot;qui souffre le plus&quot; dans une situation. Le porteur du symptome n'est pas forcément celui qui souffe le plus. Si par exemple la souffrance portée plus par mère ou père, et symptôme du fils, peut être indication de thérapie systémique.</li>
+<li>Neuburger, venant de la psychanalyse de base, voulait principalement montrer à ses collègues psychanalystes qu'il pouvait y avoir une demande au delà de la demande individuelle.</li>
+<li>Par exemple: les enfants n'expriment souvent pas de volonté de se soigner, d'ou la difficulté de les voir en individuel.</li>
+</ul>
+</li>
+</ul>
+<h2 id="x-modelisation-des-therapies-familiales-neuburger" tabindex="-1">X. Modélisation des thérapies familiales (Neuburger)</h2>
+<p>Visions du monde du thérapeute, sa grille de lecture pour aller vers les patients ou les familles qu'il veut traiter. Comment les thérapies familiales ont été modélisées? Déja une perspective constructiviste: quel est le point de vue du thérapeute?</p>
+<p>Dans les modèles prédictifs, l'effet qu'on veut obtenir est predeterminé, inclus dans le projet thérapeutique. Tandis que dans les non-prédictifs, recherche de <strong>changement</strong> qui permette de solutionner un probleme, mais la nature du changement est inconnu au therapeute. Ici la solition n'est pas contenue dans le projet therapeutique.</p>
+<h3 id="x-1-les-modeles-predictifs" tabindex="-1">x.1 Les modèles prédictifs</h3>
+<p>Influencés par les écrits de <a href="https://en.wikipedia.org/wiki/Heinz_von_Foerster" target="_blank" class="external-link">Von Foerster</a> : &quot;participe au developpement de la theorie de l'information. 1940: n'avons pas acces a la realite du monde .... &quot; (citation dans dia). Role de nos presupposés. Realité codee,&quot;une realité parmis d'autres possibles&quot;.</p>
+<h4 id="a-le-modele-causal-lineaire" tabindex="-1">a. Le modèle causal linéaire</h4>
+<p>Le thérapeute prend son objet d'étude <strong>pour un objet</strong>. Le patient a une existance objective qui est separée du thérapeute. Observable sans etre modifié par l'observation. Ici, on regarderait la famille en etant &quot;objectif&quot;.</p>
+<p>Exemple: Patiente anorexique à cause de comportements inadéquat des parents envers elle.<br>
+Exemple 2: Dépression d'un epoux pour comportements rabaissants de sa femme.</p>
+<p>Si on enlève A, on solutionne B. On a une prédiction de la solution.</p>
+<p>Par exemple: que la patiente anorexique s'éloigne des parents.</p>
+<p>Modèle particulier parce qu'il <strong>ignore le temps</strong>: etat du patient est consideré <strong>reversible</strong> si on traite la cause.</p>
+<p>Type de pensée rappelant la pensée scientifique, ou médicale. Pas a bannir ou laisser tomber, mais important pour nous d'avoir en tête que ce modèle peut ne pas être suffisant pour aider certaines familles. Parfois ces solutions en fonctionnent pas.</p>
+<h4 id="b-le-modele-causal-circulaire-changement-de-paradigme" tabindex="-1">b. Le modèle causal circulaire: changement de paradigme</h4>
+<p>Première revolution epistemologique. Ce mode de pensee est pourtant plus courant dans les modes de pensée orientaux.</p>
+<p>On peut penser causalité mais dans une optique circulaire: A et B sont mutuellement renforcés. E.g. modèles en boucle de retroaction (feedback) en ingenieurie. <mark>Dans cette modélisation, on ne peut plus déterminer lequel est la cause (si A ou si B)</mark>.</p>
+<div class="callout" data-callout="example"><div class="callout-title"><div class="callout-title-inner"> Exemple<br></div></div>
+<div class="callout-content">
+<p>
+Jeune femme est hospitalisée suite à des crises d'asthme. La mere est tres presente a l'hopital. Ils remarquent que plus la mere est presente, au plus s'intensifient les crises. Mere declenche crises d'asthme? (culpabilisation de la mere) ou crises d'asthme declenent presence de mere? (mere inquiete). Ensemble de comportements redondants conduisant a renforcement.<br>
+l'idee devient, dans ce changement de paradigme: comment arreter la boucle? plutot que &quot;comment eloigner la mere&quot;, qui n'arrangerait aucune des deux.</p>
+</div></div>
+<p>En elargissant le contexte, on peut tenir compte aussi de l'<strong>autre parent</strong>:</p>
+<ul>
+<li>Suite de l'exemple: un père qui au plus la mère s'inquiète, au plus elles deviennent proches mere et fille, au plus le pere lui devient absent, est &quot;tenu&quot; a distance, et cette distance du pere inquiete d'autant plus la mere...). (interpretaion lineaire: absence de pere declenche cirises et proximites du la dyade mere-fille, etc, &quot;<strong>ponctuation arbitraire</strong>&quot;, tel qu'appellé par les systémiciens). Donc dans la logique identification Cercles vicieux que le therapeute va essayer de faire rompre.</li>
+</ul>
+<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Ponctuation arbitraire<br></div></div>
+<div class="callout-content">
+<p>
+...</p>
+</div></div>
+<p>📅 Lundi <strong>16 Février 2026</strong></p>
+<h3 id="x-2-les-modeles-non-predictifs" tabindex="-1">x.2 Les modèles non-predictifs</h3>
+<h4 id="c-le-modele-systemique-issu-de-la-premiere-cybernetique-crise-et-changement" tabindex="-1">c. Le modèle systémique issu de la première cybernétique (crise et changement)</h4>
+<h4 id="le-modele-systemique-issue-de-la-deuxieme-cybernetique-auto-organisation" tabindex="-1">Le modèle systémique issue de la deuxieme cybernetique (auto-organisation)</h4>
+</main>
+<aside>
+<div class="sidebar">
+<div class="sidebar-container">
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#partie-systemique-prof-isabelle-duret">Partie Systémique - Prof. Isabelle Duret</a>
+<ol>
+<li><a href="#chapitre-1-origines">🏷️ Chapitre 1 : Origines</a>
+</li>
+<li><a href="#1-les-sources-de-l-approche-systemique">1. Les sources de l'approche systémique</a>
+<ol>
+<li><a href="#1-1-les-psychanalystes-d-enfants">1.1 Les psychanalystes d'enfants</a>
+</li>
+<li><a href="#1-2-la-guidance-infantile-parentale-child-guidance-movement">1.2 La guidance infantile / parentale (Child Guidance movement)</a>
+</li>
+<li><a href="#1-3-therapeutes-de-groupe">1.3 Thérapeutes de groupe</a>
+</li>
+<li><a href="#1-4-ecole-de-palo-alto">1.4 École de Palo Alto</a>
+<ol>
+<li><a href="#1-4-1-principaux-membres-et-figures-fondatrices">1.4.1 Principaux membres et figures fondatrices</a>
+</li>
+<li><a href="#1-4-2-une-approche-interdisciplinaire-et-ecologique">1.4.2 Une approche interdisciplinaire et écologique</a>
+</li>
+<li><a href="#1-4-3-gregory-bateson-et-la-communication-dans-le-vivant">1.4.3 Gregory Bateson et la communication dans le vivant</a>
+</li>
+<li><a href="#1-4-4-relations-symetriques-complementaires-et-escalades-conflictuelles">1.4.4 Relations symétriques, complémentaires et escalades conflictuelles</a>
+</li>
+<li><a href="#1-4-5-cybernetique-systemes-et-boucles-de-retroaction">1.4.5 Cybernétique, systèmes et boucles de rétroaction</a>
+</li>
+<li><a href="#1-4-6-concepts-fondamentaux-de-la-pensee-systemique">1.4.6 Concepts fondamentaux de la pensée systémique</a>
+</li>
+<li><a href="#1-4-6-1-le-systeme">1.4.6.1 Le système</a>
+</li>
+<li><a href="#1-4-6-2-lois-des-systeme">1.4.6.2 Lois des système</a>
+</li>
+<li><a href="#1-4-6-3-la-double-contrainte">1.4.6.3 La double contrainte</a>
+</li>
+<li><a href="#1-4-6-3-le-symptome-dans-l-approche-systemique">1.4.6.3 Le symptôme dans l'approche systémique</a>
+</li>
+</ol>
+</li>
+<li><a href="#1-5-l-approche-anti-psychiatrie">1.5 L'approche anti-psychiatrie</a>
+</li>
+</ol>
+</li>
+<li><a href="#rappel-quatre-notions-cle">Rappel: Quatre notions clé</a>
+</li>
+<li><a href="#x-modelisation-des-therapies-familiales-neuburger">X. Modélisation des thérapies familiales (Neuburger)</a>
+<ol>
+<li><a href="#x-1-les-modeles-predictifs">x.1 Les modèles prédictifs</a>
+<ol>
+<li><a href="#a-le-modele-causal-lineaire">a. Le modèle causal linéaire</a>
+</li>
+<li><a href="#b-le-modele-causal-circulaire-changement-de-paradigme">b. Le modèle causal circulaire: changement de paradigme</a>
+</li>
+</ol>
+</li>
+<li><a href="#x-2-les-modeles-non-predictifs">x.2 Les modèles non-predictifs</a>
+<ol>
+<li><a href="#c-le-modele-systemique-issu-de-la-premiere-cybernetique-crise-et-changement">c. Le modèle systémique issu de la première cybernétique (crise et changement)</a>
+</li>
+<li><a href="#le-modele-systemique-issue-de-la-deuxieme-cybernetique-auto-organisation">Le modèle systémique issue de la deuxieme cybernetique (auto-organisation)</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</nav>
+</div>
+</div>
+<div class="backlinks">
+<div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
+<div class="backlink-list"><div class="backlink-card"><i icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home</a>
+</div></div>
+</div>
+</div>
+</div>
+</aside>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>

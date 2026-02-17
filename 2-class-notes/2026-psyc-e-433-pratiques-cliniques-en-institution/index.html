@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<title>2026 - PSYC-E 433 - Pratiques cliniques en institution</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.ec9fd150.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">My notes</h1>
+</a>
+</div>
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
+</nav>
+<div class="search-container" id="globalsearch" onclick="toggleSearch()">
+<div class="search-box">
+<input type="search" id="term" placeholder="Start typing...">
+<div id="search-results"></div>
+<footer class="search-box-footer">
+<div class="navigation-hint">
+<span>Enter to select</span>
+</div>
+<div class="navigation-hint align-icon">
+<i icon-name="arrow-up" aria-hidden="true"></i>
+<i icon-name="arrow-down" aria-hidden="true"></i>
+<span>to navigate</span>
+</div>
+<div class="navigation-hint">
+<span>ESC to close</span>
+</div>
+</footer>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2026-02-17T23:00:15.840Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2026-02-17T23:00:15.840Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2026-02-17T23:00:15.840Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
+<main class="content cm-s-obsidian">
+<header>
+<h1 data-note-icon="">2026 - PSYC-E 433 - Pratiques cliniques en institution</h1>
+<div class="header-meta">
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2026-01-22T14:21:49.752+01:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2026-02-17T23:59:13.450+01:00"></span></div></div></div>
+</header>
+<div class="callout" data-callout="tldr"><div class="callout-title"><div class="callout-title-inner"> Résumé<br></div></div>
+<div class="callout-content">
+<p>
+Ce cours vise à offrir une présentation des différentes approches cliniques qui s’appuient spécifiquement sur le dispositif institutionnel. D’un point de vue historique, il proposera une analyse de l’évolution de ces pratiques depuis la psychothérapie institutionnelle. Du point de vue clinique et théorique, il s’arrêtera sur les principales questions qui permettent d’éclairer ce type de pratique : le cadre et les modalités d’interventions, le type de patients et de pathologies concernés, les modalités d’évaluation de la pratique, le contexte institutionnel élargi (notamment le travail en réseau), etc.</p>
+</div></div>
+<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Évaluation<br></div></div>
+<div class="callout-content">
+<p>
+Examen à questions fermées de type vrai ou faux (en présentiel). Pas de points négatifs. 20 questions, normalement.</p>
+<ul>
+<li>But est de départager &quot;qui est venu au cours et qui non&quot; (tous les items auront l'air plausibles, il sera nécessaire de comprendre l'approche critique démontrée en cours).</li>
+<li>On se concentrera lors de la dernière rencontre sur la préparation de l'examen, elle amènera des items d'exemple.</li>
+<li></li>
+</ul>
+</div></div>
+<div class="callout" data-callout="tip"><div class="callout-title"><div class="callout-title-inner"> Lectures recommandées (aucun caractère obligatoire)<br></div></div>
+<div class="callout-content">
+<p>
+*</p>
+</div></div>
+<h2 id="introduction-methode-et-modalites-de-travail-pragmatique-evaluation" tabindex="-1">🏷️ Introduction, méthode et modalités de travail, pragmatique, évaluation</h2>
+<p>📅 <strong>9 Février 2026</strong></p>
+<p>Calendrier de cours (le 6 avril est annulé, une séance supplémentaire sera peut-être ajoutée):</p>
+<ul>
+<li>9-16-23 Fev / 2-9-16-23-30 mars / 13-20 avril / 11 mai / 1-8 juin</li>
+</ul>
+<p>Contenu du cours est sur l'UV, mais aussi sur un site externe:</p>
+<ul>
+<li>Le site (créé par Cécile Glineur et Danloy) en général permet d'explorer des concepts psychanalytiques.</li>
+<li>La page réservée aux étudiants du site « Bouts de savoir », à l’onglet « Pratiques cliniques en institutions : cours 2026 » <a href="https://cecemelprod.com" target="_blank" class="external-link">Bouts de Savoir – Quelques concepts lacaniens parlés par des psychanalystes</a>
+<ul>
+<li><a href="https://cecemelprod.com/cours-pratiques-cliniques-en-institution/" target="_blank" class="external-link">https://cecemelprod.com/cours-pratiques-cliniques-en-institution/</a></li>
+<li>Mot de passe: ULB2025</li>
+</ul>
+</li>
+</ul>
+<p>Habituellement, Fouchet travaille a partir de documentaire &quot;Urgences&quot;. Cette fois, le travail sera en plusieurs temps différents:</p>
+<ul>
+<li>Partie 1: 16 février, 23 février, 2 mars. Repères et littérature.</li>
+<li>Partie 2: documentaires, avec un.e invité après chaque diffusion (possible qu'on doive en regarder certains nous-mêmes si la diffusion en cours n'est pas possible)
+<ul>
+<li><strong>État limite</strong> (<a href="https://www.arte.tv/fr/videos/111769-000-A/etat-limite" target="_blank" class="external-link">ARTE</a>) (Nicolas Peduzzi , 2023).</li>
+<li><strong>A ciel ouvert</strong> (Mariana Otero, 2013): réalisé à Tournai, au Courtil. Documentaire qui tente de saisir à quel reel institutionnel sont confrontes les bénéficiaires, résidents soignants... mais montrant aussi des morceaux choisis de ce qui fait le travail en dehors de ce contact avec les bénéficiaires (réunions d'equipe, etc).</li>
+<li><strong>La nef des fous</strong> (Éric D’Agostino, &amp; Patrick Lemy, 2014), avec invité Jonathan Leroy (psychanalyste à Bruxelles travaillant en milieu carcéral, dans la prison où le documentaire a été tourné) .</li>
+</ul>
+</li>
+<li>Partie 3:
+<ul>
+<li>20 avril: Deux intervenantes (cliniciennes responsables d'institutions), qui présenteront leur vision de la pratique en institution</li>
+<li>11 mai: cloture, questions/réponses.</li>
+</ul>
+</li>
+</ul>
+<p>Elle, Cécile Glineur, d'orientation psychanalitque. Remplace Fouchet cette année. Elle travaille au CHU Saint-Pierre, exerce une pratique destinée aux tout venants.<br>
+Ce cours sera d'orientation psychanalytique lacanienne (appliquée), rappel de certaines notions:</p>
+<ul>
+<li><strong>Psychanalyse appliquée</strong>, plutôt que &quot;psychanalyse pure&quot; (qui elle considère les gens <em>un par un</em>, se caractérisant parfois par la position allongée, la fréquence soutenue des seances... ou on s'attache a donner une place centrale a sa propre parole, démarche différente des démarches type problème-solution qu'on trouve souvent dans le domaine de psychologie. Fondement méthodologique est l'association libre, mais constat que l'association libre n'est pas <em>libre</em> (<strong>résistances</strong> - embarras, honte -, <strong>transfert</strong>..., et la <strong>chaîne de signifiant n'est pas libre non plus</strong>. ).</li>
+<li>Lacan a poursuivi le travail de Freud, au depart de la psychanalyse pure, mais s'en est distingue sur certains points, formant deux écoles: Ecole post-Freudienne et école Lacanienne. Lacan est venu faire rupture sur certains points:
+<ul>
+<li>La durée des séances (post-Freudiens respecte les durées, 45 min a l'origine, parfois 40, mais chez les lacaniens la durée depend de ce qu'il se passe pendant la seance, peuvent être écourtées).</li>
+<li>La formation du psychanalyste: Post freudiens, cure didactique, on est ensuite reconnu psychanalyste par son propre psychanalyste et d'autres. Chez les lacaniens, pas de distinction a l'origine. Analysant estime qu'il est suffisamment satisfait de son analyse, sans souhait de devenir psychanalyste lui-meme. Ou choix de mettre fin a une tranche d'analyse. Procédure de la <a href="https://fr.wikipedia.org/wiki/Passe_(psychanalyse)" target="_blank" class="external-link">passe</a>: consiste pour l'analysant de mettre un terme a son analyse, et pouvoir produire une logification de sa trajectoire analytique, et pouvoir émettre un apport théorico-clinique pour la théorie de la psychanalyse.</li>
+<li>Points clés de la méthode lacaniennes:
+<ul>
+<li>Question du désir</li>
+<li>Question du transfert dans la pratique clinique (pas contre transfert, les deux transferts sont consideres de natures similaire)</li>
+<li>Vif souci d'essayer de saisir la logique subjective des patients avec lesquels on est en lien (moins considerer le projet de l'institution, plutôt <em>qui sont les bénéficiaires?</em> (un par un)). La ou beaucoup d'instituions se questionnent sur comment traiter le patient (avec position de connaissance, savoir), on traite sa propre posture, sa propre relation au savoir... pour se faire autant que possible partenaire des personnes dans l'institution.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Prendre appui sur ce corpus pour pour orienter le travail de terrain (essayant de gommer les nominations de savoir spécifique, ne pas distinguer entre disciplines respectives... par exemple les différents métiers d'une equipe multi-disciplinaire). On se réfère aux &quot;intervenants&quot; généralement, partagent les mêmes tâches, ne sectorisent pas leur pratique... tous rapportent leur clinique en réunion d'équipe au même titre que les autres.</li>
+</ul>
+<p>Interview d'Olivier Challe, sur le travail psychanalytique en institution:</p>
+<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/u2IIm0u61gk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>Olivier Challe est responsable clinique au Wops de nuit, un centre thérapeutique de nuit:</p>
+<ul>
+<li>Institution qui répond au malaise de ce que les gens amènent avec eux comme difficultés (sans grille pre établie des difficultés), d'y répondre par un accueil, un accompagnement <strong>au cas-par-cas</strong>. Déceler la vraie difficulté de la personne pour decider au fur et a mesure comment accompagner ces personnes.</li>
+<li>Pari de &quot;possibilité d'une rencontre&quot;, en étant le plus humble possible:
+<ul>
+<li>&quot;<strong>Le symptôme est un travail du sujet</strong>&quot;: Pari qu'ils sont <strong>déjà en train d'essayer</strong> de traiter ce malaise, qu'ils essayent de trouver une solution, mais que s'ils ont besoin d'une institution, c'est que leurs tentatives ne marchent pas. Donc penser à adapter pour que ce soit plus vivable (par exemple, celui/celle qui ne peut pas sortir de chez soi ou voir ses voisins, ce n'est pas une solution à terme..., tenter d'adapter pour rendre le monde dans lequel vit cette personne moins feroce, ou du moins <em>faire exister</em> ce monde qui semble ne pas exister veritablement pour la personne).</li>
+<li><strong>Abord non-déficitaire</strong>: ces personnes qui fréquentent ne sont pas considérées comme déficitaires. La raison que la personne soit là est qu’il ou elle ne peut plus faire autrement. (?).</li>
+<li>Repérer quel est <strong>l'Autre du sujet</strong>: Essayer de le lire à travers de ce que la personne amène. En institution, ceci peut être observé dans différents contextes (sans besoin d'attendre le moment du rendez-vous). <em>Le petit autre</em>: la façon dont le sujet construit son semblable, cliniquement toujours renseignant, écouter comment il construit l'autre, plutôt que deconstruire la veracite de son propos (même syntaxiquement). Moins ce qu'il se passe et plus sa manière de le vivre. <em>Le grand Autre</em>: champ symbolique, qui nous pre-existe. Ce qui caracterise l'humain c'est d'être partiellement attrapé et surdeterminé par le signifiant, le champ symbolique. Plus concrètement, cette determination par le synmbolique qui est très restreignante pour nous tous, même si on la perçoit pas la plupart du temps. Par exemple, le prénom que l'on porte (censé nous représenter, donné par quelqu'un d'autre).
+<ul>
+<li>Exemple de rapport à l'autre, donné par Olivier Challe: quelqu'un qui est dérangé par le bruit du voisin de chambre, il va s'acheter un casque pour écouter de la musique classique.</li>
+<li>Psychanalyse apploquee c'est Aller retour entre ce que les residents nous enseignent sur leur malaise et la lecture qu'on peut en faire.
+<ul>
+<li>par exemple, solution de proposer boules quies, se fache parce qu'on lui propose une solution pour ne pas ecouter plutot que de faire arreter l'autre de renfler. Solutions pleines de bon sens dont il faut parfois s'abastenir.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</main>
+<aside>
+<div class="sidebar">
+<div class="sidebar-container">
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#introduction-methode-et-modalites-de-travail-pragmatique-evaluation">🏷️ Introduction, méthode et modalités de travail, pragmatique, évaluation</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
+<div class="backlinks">
+<div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
+<div class="backlink-list"><div class="backlink-card"><i icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home</a>
+</div></div>
+</div>
+</div>
+</div>
+</aside>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>

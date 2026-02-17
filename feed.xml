@@ -3,20 +3,27 @@
     <title>My notes</title>
     <link href="https://santihago.github.io/feed.xml" rel="self" >
     <link href="https://santihago.github.io" >
-    <updated>2026-02-17T22:54:44Z</updated>
+    <updated>2026-02-17T23:00:15Z</updated>
     <id>https://santihago.github.io</id>
         <entry>
             <title>
                 Home
                 
             </title>
-            <updated>2026-02-17T22:54:33Z</updated>
+            <updated>2026-02-17T22:57:01.506Z</updated>
             <id>https://santihago.github.io/</id>
             <content type="html">
-                &lt;h1 id=&quot;home&quot; tabindex=&quot;-1&quot;&gt;Home&lt;/h1&gt;
-&lt;p&gt;Hi. This is home.&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Cours obligatoires&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://santihago.github.io/2-class-notes/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/&quot;&gt;2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://santihago.github.io/2-class-notes/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/&quot;&gt;2026 - PSYC-E 5013 - Questions spéciales et séminaire d&#39;études de cas cliniques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2026 - PSYC-E 421 - Questions approfondies de psychopathologie&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Cours à option&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://santihago.github.io/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/&quot;&gt;2026 - PSYC-E 540 - Approche systémique des traumatismes (Duret)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://santihago.github.io/2-class-notes/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/&quot;&gt;2026 - PSYC-E 509 - Evaluation critique des interventions cliniques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://santihago.github.io/2-class-notes/2026-psyc-e-433-pratiques-cliniques-en-institution/&quot;&gt;2026 - PSYC-E 433 - Pratiques cliniques en institution&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
             </content>
@@ -274,5 +281,726 @@ Il exprime le désir de retour à un état fusionnel, protégé, antérieur aux 
 
             </content>
             <link href="https://santihago.github.io/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/" >
+        </entry>
+        <entry>
+            <title>
+                2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental
+                
+            </title>
+            <updated>2026-02-17T22:43:32.994Z</updated>
+            <id>https://santihago.github.io/2-class-notes/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/</id>
+            <content type="html">
+                &lt;blockquote&gt;
+&lt;p&gt;[!tldr] Résumé&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cognitivo-comportemental : les thérapies de la troisième vague. Prof. C.Hauwel-Fantini&lt;/li&gt;
+&lt;li&gt;Systémique: théories et fondement de l&#39;approche systémique , les différentes écoles et les pratiques qui en découlent. Prof. I. Duret&lt;/li&gt;
+&lt;li&gt;Psychanalyse : théories et fondements de l&#39;approche psychanalytique. Prof. P. Fouchet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] Évaluation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pour la partie Psychanalyse (P. Fouchet) et  la partie Systémique (I. Duret) : Examen écrit à réponses fermées comprenant des VF. L&#39; examen a lieu le même jour.&lt;/li&gt;
+&lt;li&gt;Pour la partie  Cognitivo-Comportementale (C. Fantini-Hauwel) : examen écrit de type QCM.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Construction de la note&lt;/strong&gt; (en ce compris, la pondération des notes partielles):&lt;br /&gt;
+L&#39;évaluation comprendra 3 parties comptant pour un tiers chacune de la note finale.&lt;br /&gt;
+Il s&#39;agit d&#39;une moyenne arithmétique simple à partir des résultats obtenus pour les parties Psychanalyse, Systémique, Cognitivo-comportementale.&lt;br /&gt;
+L&#39;étudiant·e devra obtenir une note minimum de 10/20 à l&#39;examen portant sur chaque partie. Toutefois les parties réussies et donc validées, peuvent être reportées à la session suivante.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;partie-systemique-prof-isabelle-duret&quot; tabindex=&quot;-1&quot;&gt;Partie Systémique - Prof. Isabelle Duret&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] Évaluation et modalités de cours:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le cours est enregistré&lt;/li&gt;
+&lt;li&gt;Pas de syllabus, le cours se compose des slides et de quelques articles&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Examen&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Vrai/Faux (et peut-être des QRM, elle n&#39;est pas encore sûre)&lt;/li&gt;
+&lt;li&gt;Pas de questions ouvertes&lt;/li&gt;
+&lt;li&gt;Organisé avec P. Fouchet, Fantini organise son examen à part&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip] Lectures recommandées (pas obligatoires)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Elkaïm, Mony (1998). Panorama des thérapies familiales. Seuil.&lt;/li&gt;
+&lt;li&gt;Neuburger, Robert (1984). Le mythe familial. ESF.&lt;/li&gt;
+&lt;li&gt;Neuburger, Robert (1984). L&#39;autre demande. Psychanalyse et thérapie familiale systémique. ESF.&lt;/li&gt;
+&lt;li&gt;Minuchin, Salvatore (1998). Familles en thérapie. Eres.&lt;/li&gt;
+&lt;li&gt;Ausloos, G. (1995). La compétence des familles. Eres.&lt;/li&gt;
+&lt;li&gt;Bateson, G. (1977 vol. I, 1980 vol II). Vers une écologie de l&#39;esprit. Seuil.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;📅 Lundi &lt;strong&gt;2 Février 2026&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;chapitre-1-origines&quot; tabindex=&quot;-1&quot;&gt;🏷️ Chapitre 1 : Origines&lt;/h2&gt;
+&lt;h2 id=&quot;1-les-sources-de-l-approche-systemique&quot; tabindex=&quot;-1&quot;&gt;1. Les sources de l&#39;approche systémique&lt;/h2&gt;
+&lt;p&gt;Pourquoi cette approche est née? Quelles sont les notions inhérentes à ce paradigme, cette philosophie de soins?&lt;/p&gt;
+&lt;p&gt;L’approche systémique naît d’un &lt;strong&gt;mouvement de remise en question des modèles explicatifs dominants&lt;/strong&gt;, en particulier des modèles individuels, linéaires et intrapsychiques. Elle émerge dans les années 1950, principalement aux États-Unis, mais de manière &lt;strong&gt;simultanée et indépendante dans plusieurs régions du monde&lt;/strong&gt;, portée par des cliniciens qui ne se satisfaisaient plus des cadres théoriques existants.&lt;/p&gt;
+&lt;p&gt;Ces praticiens observent que leurs interventions auprès d’un individu ont des &lt;strong&gt;effets inattendus sur son entourage&lt;/strong&gt;, et inversement. Peu à peu, ils cessent de considérer le symptôme comme une propriété interne d’un sujet pour l’envisager comme &lt;strong&gt;inscrit dans un réseau de relations&lt;/strong&gt;. Le regard se déplace de l’individu vers le groupe auquel il appartient, en premier lieu la famille.&lt;/p&gt;
+&lt;p&gt;On va passer en revue les 5 sources principales qui ont inspiré les systémiciens:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;La psychanalyse d&#39;enfants&lt;/li&gt;
+&lt;li&gt;La guidance infantile (child guidance)&lt;/li&gt;
+&lt;li&gt;La thérapie de groupe&lt;/li&gt;
+&lt;li&gt;L&#39;École de Palo Alto (Mental Research Institute, 1959)&lt;/li&gt;
+&lt;li&gt;L&#39;anti-psychiatrie (multiples auteurs: Foucault, Laing, Cooper, Basaglia, Castel, Guattari, Oury...)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;1-1-les-psychanalystes-d-enfants&quot; tabindex=&quot;-1&quot;&gt;1.1 Les psychanalystes d&#39;enfants&lt;/h3&gt;
+&lt;p&gt;Les premiers apports viennent de psychiatres et psychanalystes travaillant avec des enfants. Ceux-ci constatent des phénomènes cliniques qui résistent à une lecture strictement intrapsychique.&lt;/p&gt;
+&lt;p&gt;Ils observent notamment que l’amélioration d’un enfant peut s’accompagner de la détérioration d’un autre membre de la fratrie, ou encore qu’un changement chez un parent entraîne une modification du symptôme chez l’enfant, parfois dans un sens opposé à celui attendu. Ces phénomènes suggèrent l’existence de &lt;strong&gt;processus interactionnels&lt;/strong&gt;, où le symptôme circule ou se transforme au sein du groupe familial.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!example]&lt;br /&gt;
+Un enfant suivi pour troubles du comportement s’améliore en thérapie individuelle. Quelques semaines plus tard, sa sœur développe des symptômes anxieux importants. Cette « migration du symptôme » suggère une fonction du trouble dans l’économie familiale globale: par exemple, que la fratrie opère un &amp;quot;relais&amp;quot; inconscient pour maintenir l&#39;attention des parents détournée d&#39;un conflit conjugal, soit que le système, déstabilisé par la guérison, cherche à restaurer son homéostasie en désignant un nouveau &amp;quot;porteur d&#39;angoisse&amp;quot;, ou encore que cette anxiété nouvelle vienne combler le vide identitaire laissé par la disparition du rôle de &amp;quot;l&#39;enfant à problèmes&amp;quot;....&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Face à ces constats, certains cliniciens commencent à expérimenter de nouvelles modalités de travail : faire assister les parents à certaines séances, recevoir les membres de la famille séparément, puis progressivement ensemble. Parmi les pionniers, &lt;a href=&quot;https://en.wikipedia.org/wiki/Nathan_Ackerman&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Nathan Ackerman&lt;/a&gt; (1908–1971), à New York (dont un institut à son nom existe encore), est l’un des premiers à inviter l’ensemble de la famille en séance, rompant avec l’idée selon laquelle la famille serait uniquement la cause du trouble. Chez Ackerman, la famille devient un &lt;strong&gt;levier thérapeutique&lt;/strong&gt;, un système à mobiliser plutôt qu’un simple facteur étiologique. Il ne s’agit plus uniquement de « corriger » les parents, mais de &lt;strong&gt;les intégrer activement dans le processus thérapeutique&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!done] À retenir&lt;br /&gt;
+L’apport des psychanalystes d’enfants ouvre la voie à une compréhension &lt;strong&gt;relationnelle et dynamique du symptôme&lt;/strong&gt;, et prépare le terrain à l’idée que le patient n’est jamais isolé de son contexte familial.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;1-2-la-guidance-infantile-parentale-child-guidance-movement&quot; tabindex=&quot;-1&quot;&gt;1.2 La guidance infantile / parentale (Child Guidance movement)&lt;/h3&gt;
+&lt;p&gt;Mouvement qui au départ est un concept plutôt d&#39;origine américaine, utilisé de manière plus importante après la seconde guerre mondiale. Il s’agit d’un dispositif &lt;strong&gt;préventif et thérapeutique&lt;/strong&gt;, centré sur les bébés et les jeunes enfants en difficulté, ainsi que sur les parents qui peinent à établir des liens satisfaisants avec eux. L&#39;intérêt est de venir au secours de bébés en difficultés, ou avec lesquels les parents sont en difficultés, pour faire en sorte que ces liens puissent se tisser de manière la plus efficace possible. Le travail est multidisciplinaire, avec des médecins, psychiatres, psychologues, travailleurs sociaux, etc, dans le but de &lt;strong&gt;stimuler la relation parent-bébé&lt;/strong&gt;. L’objectif est de soutenir et stimuler la relation parent-enfant, en aidant, &amp;quot;éduquant&amp;quot;, les parents à ajuster leurs comportements et leurs réponses émotionnelles.&lt;/p&gt;
+&lt;p&gt;Cependant, ce courant est aussi traversé par des biais culturels importants. À cette époque, la responsabilité des difficultés est très largement attribuée aux mères, tandis que les pères sont souvent absents du dispositif, tant sur le plan théorique que pratique. Cette focalisation peut conduire à des lectures culpabilisantes (&amp;quot;mère toxique&amp;quot;, &amp;quot;mère fusionnelle&amp;quot;, ...), parfois réductrices, qui ne sont pas sans résonance avec certaines dérives contemporaines inversées concernant les pères. L&#39;approche psychanalytique de l&#39;autisme, culpabilisant les mères, en est un exemple flagrant, cf. le film Le Mur de Sophie Robert.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!example] Échos contemporains: la place des pères&lt;br /&gt;
+Malgré les évolutions sociétales et les discours actuels sur la coparentalité, il persiste une tendance clinique et institutionnelle à considérer les pères comme périphériques, moins disponibles ou moins importants que les mères. Or, dans les configurations familiales contemporaines, les pères jouent un rôle central, et continuer à les maintenir à l’écart constitue une fausse bonne idée.&lt;/p&gt;
+&lt;p&gt;Si l’on peut avoir l’impression que la situation s’est nettement améliorée, il existe encore de nombreuses formes de maltraitance institutionnelle implicite à l’égard de certains parents. Les intervenants capitulent souvent trop vite face à des arguments tels que les contraintes professionnelles du père, ou s’appuient sur le discours d’un parent qui discrédite l’autre (« il ne s’en occupe pas », « la relation est compliquée », « il est agressif »). Dans ces situations, l’exclusion rapide du coparent est fréquente.&lt;/p&gt;
+&lt;p&gt;Or, il relève de la responsabilité éthique et clinique des professionnels d’insister pour impliquer l’ensemble de l’équipe parentale. Il ne s’agit pas uniquement du père et de la mère biologiques, mais plus largement de toutes les figures parentales investies auprès de l’enfant, y compris les beaux-parents lorsque leur rôle éducatif est significatif. Entamer une prise en charge sans que l’autre parent soit au minimum informé et ait donné son accord pose d’ailleurs un problème déontologique clair, pourtant encore trop souvent ignoré.&lt;/p&gt;
+&lt;p&gt;Le changement des appellations institutionnelles (par exemple, passer d’« unité mère-bébé » à « unité parent-bébé ») ne garantit pas, à lui seul, une transformation réelle des pratiques. Les résistances au changement sont fortes, souvent liées aux habitudes professionnelles, au manque de temps, à la surcharge des équipes et à la tentation de choisir la solution la plus simple plutôt que la plus juste.&lt;/p&gt;
+&lt;p&gt;Dans une perspective systémique, lorsqu’un enfant présente une difficulté, c’est l’ensemble de l’équipe parentale qu’il convient de rencontrer et de mobiliser. Ne pas « lâcher le morceau » sur cette question constitue un enjeu clinique majeur.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Les cliniciens utilisent des outils novateurs, notamment l’observation directe des interactions parent-bébé, parfois filmées, afin d’analyser finement les microprocessus relationnels.&lt;/p&gt;
+&lt;p&gt;Parmi les figures importantes, on peut citer T. Berry Brazelton (1918–2018), professeur pédiatre à la Harvard Medical School, ainsi que Frieda Fromm-Reichmann, connue pour ses travaux auprès de patients psychotiques.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!done] À retenir&lt;br /&gt;
+La guidance infantile contribue à ancrer l’idée que les troubles précoces sont &lt;strong&gt;relationnels&lt;/strong&gt;, observables et modifiables, et qu’ils nécessitent une approche systémique avant l’heure.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;1-3-therapeutes-de-groupe&quot; tabindex=&quot;-1&quot;&gt;1.3 Thérapeutes de groupe&lt;/h3&gt;
+&lt;p&gt;Un autre apport majeur provient des thérapeutes de groupe, en particulier dans le contexte hospitalier. Des cliniciens comme &lt;strong&gt;John Bell&lt;/strong&gt;, influencés par les travaux de &lt;a href=&quot;https://en.wikipedia.org/wiki/John_Bowlby&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;John Bowlby&lt;/a&gt; sur l’attachement, commencent à appliquer des dispositifs groupaux aux familles.&lt;/p&gt;
+&lt;p&gt;En utilisant des techniques de groupe, ces cliniciens se rendent compte que certains groupes naturels (et en premier lieu la famille) constituent des &lt;strong&gt;espaces thérapeutiques pertinents&lt;/strong&gt;. En réunissant plusieurs personnes confrontées à des &lt;strong&gt;difficultés similaires&lt;/strong&gt;, les thérapeutes observent l’émergence de dynamiques relationnelles riches, porteuses de sens et de transformation.&lt;/p&gt;
+&lt;p&gt;Cette approche est largement utilisée dans les hôpitaux (plus commun aux États-Unis), sous forme de groupes de parole ou de groupes de parents d’enfants hospitalisés. Elle donnera naissance à deux courants distincts :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Thérapies familiales d&#39;orientation psychanalytique d&#39;abord, très développées en France (Egger, Tisseron, Lebovici), avec des revues (par ex.: Le Divan Familial, La revue dialogue).&lt;/li&gt;
+&lt;li&gt;Le mouvement systémique, avec la thérapie familiale en particulier.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Par exemple, groupes de parole, groupes de parents pour enfants hospitalisés, alcoliques anonymes, etc. Le travail en groupe, c&#39;est quelque chose qu&#39;on retrouve aussi à partir des différentes paradigmes: TCC, systémique, psychanalyse... Ce n&#39;est pas quelque chose qui se réduit à un type d&#39;orientation.&lt;/p&gt;
+&lt;p&gt;Un apport essentiel de ce mouvement est aussi la prise de conscience que &lt;strong&gt;les professionnels eux-mêmes forment un système&lt;/strong&gt;, dont les interactions influencent la prise en charge. La naissance de la systémique, c&#39;est aussi la possibilité de travailler en réseau avec les différents intervenants autour d&#39;un patient, d&#39;une patiente et de sa famille. Donc, on n&#39;est pas réduit à travailler en réunissant l&#39;ensemble de la famille ou en réunissant le couple. C&#39;est aussi l&#39;idée de plus on est d&#39;intervenant, plus on réfléchit ensemble, en réseau, autour des situations où des patients sont en difficulté, où parfois il y a de multiples d&#39;ailleurs intervenants engagent un droit.&lt;br /&gt;
+L&#39;intérêt d&#39;avoir une vision groupale, c&#39;est de pouvoir aussi de se dire que les intervenants eux-mêmes constituent un groupe sur lequel il est intéressant de miser ou d&#39;activer pour pouvoir trouver des solutions.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!example] Professionnels = un système, aussi&lt;br /&gt;
+Isabelle Duret raconte qu&#39;en stage dans les années 80, ils avaient mis en place un groupe de parents pour les adolescents hospitalisés. Alors que les adolescents étaient enthousiastes, les parents ne venaient pas. Et en fait, les parents ne venaient pas parce qu&#39;on ne les prévenait pas, parce que l&#39;équipe infirmière n&#39;étaient pas pour, parce qu&#39;à l&#39;époque, les équipes infirmières voyaient les parents comme étant les mauvais parents qui étaient à l&#39;origine des états psychiques.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!done] À retenir&lt;br /&gt;
+La thérapie de groupe introduit la famille comme &lt;strong&gt;groupe thérapeutique à part entière&lt;/strong&gt;, et ouvre la réflexion sur les systèmes imbriqués (famille, institution, équipe).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;1-4-ecole-de-palo-alto&quot; tabindex=&quot;-1&quot;&gt;1.4 École de Palo Alto&lt;/h3&gt;
+&lt;p&gt;L’École de Palo Alto constitue l’un des socles théoriques majeurs de l’approche systémique et de la thérapie familiale. Elle émerge dans les années 1950 à Palo Alto, en Californie, autour du &lt;strong&gt;Mental Research Institute (MRI)&lt;/strong&gt;, dans un contexte de remise en question des modèles psychiatriques et psychothérapeutiques classiques.&lt;/p&gt;
+&lt;p&gt;À l’origine, il s’agit d’un &lt;strong&gt;groupe interdisciplinaire&lt;/strong&gt; composé de psychiatres, psychologues, anthropologues, sociologues, biologistes, ingénieurs et chercheurs issus de champs très variés. Beaucoup d’entre eux sont initialement formés à la psychanalyse, mais ils en perçoivent rapidement les limites, notamment pour comprendre et traiter certains patients psychiatriques, en particulier des patients psychotiques ou chronicisés.&lt;/p&gt;
+&lt;p&gt;Plutôt que de se centrer exclusivement sur l’individu et son monde intrapsychique, ces chercheurs vont déplacer leur regard vers la &lt;strong&gt;communication&lt;/strong&gt;, les &lt;strong&gt;interactions&lt;/strong&gt; et les &lt;strong&gt;contextes relationnels&lt;/strong&gt; dans lesquels les troubles s’inscrivent.&lt;/p&gt;
+&lt;h4 id=&quot;1-4-1-principaux-membres-et-figures-fondatrices&quot; tabindex=&quot;-1&quot;&gt;1.4.1 Principaux membres et figures fondatrices&lt;/h4&gt;
+&lt;p&gt;Parmi les figures majeures de l’École de Palo Alto, on retrouve notamment :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://fr.wikipedia.org/wiki/Gregory_Bateson&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;strong&gt;Gregory Bateson&lt;/strong&gt;&lt;/a&gt; (biologiste, anthropologue, ethnologue),&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Don D. Jackson&lt;/strong&gt; (psychiatre, fondateur du MRI),&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Paul Watzlawick&lt;/strong&gt; (1921–2007), psychologue et sociologue d’origine autrichienne, qui jouera un rôle central dans la diffusion internationale des travaux de Palo Alto, notamment en Europe,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Jay Haley&lt;/strong&gt;, issu des sciences de la communication,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;John Weakland&lt;/strong&gt; et &lt;strong&gt;Richard Fisch&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ces chercheurs partagent un style de travail marqué par une grande créativité, un humour très présent — y compris dans les dispositifs thérapeutiques — et une volonté assumée de sortir des cadres thérapeutiques traditionnels européens, souvent plus sérieux et normatifs.&lt;/p&gt;
+&lt;h4 id=&quot;1-4-2-une-approche-interdisciplinaire-et-ecologique&quot; tabindex=&quot;-1&quot;&gt;1.4.2 Une approche interdisciplinaire et écologique&lt;/h4&gt;
+&lt;p&gt;L’École de Palo Alto se développe dans un &lt;strong&gt;esprit de décloisonnement disciplinaire&lt;/strong&gt;. Les chercheurs invitent régulièrement des collègues d’autres domaines (ingénieurs, cybernéticiens, biologistes, physiciens) afin d’enrichir leur compréhension du fonctionnement humain. Cette ouverture est considérée comme indispensable pour penser des phénomènes complexes tels que la communication, la psychopathologie et les relations humaines.&lt;/p&gt;
+&lt;p&gt;Ils développent une &lt;strong&gt;perspective écologique&lt;/strong&gt;, au sens où les comportements humains sont compris en lien étroit avec leur environnement et leur contexte de vie. Cette vision est fortement influencée par la &lt;strong&gt;théorie de l’évolution&lt;/strong&gt;, notamment à travers Gregory Bateson, fils d’un généticien évolutionniste, et par un intérêt marqué pour l’observation du vivant dans toutes ses formes.&lt;/p&gt;
+&lt;p&gt;Les membres de Palo Alto récusent le &lt;strong&gt;dualisme cartésien&lt;/strong&gt; : l’esprit n’est pas séparable du corps, ni l’individu séparable de son contexte relationnel. Ils introduisent ainsi une &lt;strong&gt;pensée circulaire&lt;/strong&gt;, en opposition à la pensée linéaire classique fondée sur la causalité simple (cause → effet). La pensée linéaire explique les phénomènes par une causalité simple, orientée de la cause vers l’effet, tandis que la pensée circulaire considère que les comportements s’influencent mutuellement dans des boucles de rétroaction, rendant la distinction entre cause et conséquence secondaire.&lt;/p&gt;
+&lt;p&gt;Plutôt que de le considérer uniquement comme un problème à éliminer, ils proposent de le comprendre comme une &lt;strong&gt;solution trouvée par le système&lt;/strong&gt; à un problème donné. Dans cette perspective :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;le symptôme peut être à la fois cause et effet,&lt;/li&gt;
+&lt;li&gt;il participe à l’équilibre du système,&lt;/li&gt;
+&lt;li&gt;il a une fonction relationnelle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;1-4-3-gregory-bateson-et-la-communication-dans-le-vivant&quot; tabindex=&quot;-1&quot;&gt;1.4.3 Gregory Bateson et la communication dans le vivant&lt;/h4&gt;
+&lt;p&gt;Gregory Bateson joue un rôle central dans l’élaboration théorique de l’École de Palo Alto, bien que son intérêt dépasse largement le champ de la psychiatrie. Il s’intéresse avant tout à la &lt;strong&gt;communication dans le vivant&lt;/strong&gt; et aux &lt;strong&gt;relations entre les êtres vivants&lt;/strong&gt;, qu’il s’agisse :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;des relations humaines (familles, groupes, tribus),&lt;/li&gt;
+&lt;li&gt;des relations animales (dauphins, baleines, loutres),&lt;/li&gt;
+&lt;li&gt;ou même des relations interespèces.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Avec son épouse, l’anthropologue &lt;a href=&quot;https://fr.wikipedia.org/wiki/Margaret_Mead&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;strong&gt;Margaret Mead&lt;/strong&gt;&lt;/a&gt;, il mène de nombreux travaux ethnographiques, notamment en Nouvelle-Guinée. Mead met en évidence deux grands types de relations au sein des groupes humains :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;les &lt;strong&gt;relations symétriques&lt;/strong&gt; (égalitaires),&lt;/li&gt;
+&lt;li&gt;les &lt;strong&gt;relations complémentaires&lt;/strong&gt; (hiérarchiques).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ces distinctions seront reprises par Bateson et intégrées aux modèles systémiques de la communication.&lt;/p&gt;
+&lt;h4 id=&quot;1-4-4-relations-symetriques-complementaires-et-escalades-conflictuelles&quot; tabindex=&quot;-1&quot;&gt;1.4.4 Relations symétriques, complémentaires et escalades conflictuelles&lt;/h4&gt;
+&lt;p&gt;À partir de ces observations, Bateson et l’équipe de Palo Alto décrivent deux types principaux de conflits :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Les escalades symétriques&lt;/strong&gt;&lt;br /&gt;
+Elles surviennent dans des relations égalitaires lorsque chaque protagoniste tente de rétablir une horizontalité perçue comme menacée. Chacun cherche à se placer au même niveau que l’autre, ce qui peut conduire à une montée en intensité du conflit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Les escalades complémentaires&lt;/strong&gt;&lt;br /&gt;
+Elles apparaissent dans des relations hiérarchiques, lorsque les positions haute et basse deviennent rigides. Ces situations peuvent être particulièrement préoccupantes, car elles peuvent conduire à des dynamiques d’emprise, de domination et parfois de violence, notamment dans les couples ou les relations parent-enfant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dans la pratique clinique, le repérage de &lt;strong&gt;complémentarités rigides&lt;/strong&gt; est un indicateur important de situations potentiellement maltraitantes.&lt;/p&gt;
+&lt;h4 id=&quot;1-4-5-cybernetique-systemes-et-boucles-de-retroaction&quot; tabindex=&quot;-1&quot;&gt;1.4.5 Cybernétique, systèmes et boucles de rétroaction&lt;/h4&gt;
+&lt;p&gt;Les chercheurs de Palo Alto s’intéressent fortement à la &lt;strong&gt;cybernétique&lt;/strong&gt;, science émergente à l’époque, qui étudie les systèmes régulés par des boucles de rétroaction. Ils s’inspirent notamment des travaux de &lt;strong&gt;Ludwig von Bertalanffy&lt;/strong&gt;, auteur de &lt;em&gt;La théorie générale des systèmes&lt;/em&gt; (1951).&lt;/p&gt;
+&lt;p&gt;Ils observent comment les ingénieurs conçoivent des systèmes techniques (par exemple un thermostat) capables de maintenir un équilibre grâce à des &lt;strong&gt;boucles rétroactives circulaires&lt;/strong&gt;. Ces modèles sont ensuite transposés à l’étude des systèmes humains.&lt;/p&gt;
+&lt;p&gt;Ainsi, la famille, les groupes et les institutions sont conceptualisés comme des &lt;strong&gt;systèmes ouverts en état d’équilibre&lt;/strong&gt;, capables de s’autoréguler, de s’adapter et de résister au changement.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!done] Une révolution dans la compréhension de la psychopathologie&lt;br /&gt;
+L’École de Palo Alto fonde l’approche systémique en psychiatrie et en thérapie familiale en déplaçant le regard de l’individu vers les interactions, la communication et le contexte. Elle développe une pensée circulaire, écologique et interdisciplinaire, inspirée de la cybernétique et de la théorie des systèmes, et introduit une conception du symptôme comme réponse adaptative plutôt que comme simple pathologie.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-4-6-concepts-fondamentaux-de-la-pensee-systemique&quot; tabindex=&quot;-1&quot;&gt;1.4.6 Concepts fondamentaux de la pensée systémique&lt;/h4&gt;
+&lt;h4 id=&quot;1-4-6-1-le-systeme&quot; tabindex=&quot;-1&quot;&gt;1.4.6.1 Le système&lt;/h4&gt;
+&lt;p&gt;Définition de &lt;strong&gt;système&lt;/strong&gt; (Von Bertalanffy: &lt;em&gt;La Théorie Générale des Systèmes&lt;/em&gt;, 1951):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensemble d&#39;éléments en interaction, regis par un semble de regles qui les gouvernent, avec un aspect structurel et aspect fonctionnel. Système et dit ouvert quand les elements  interagisesnt avec un ensemble d&#39;elements exterieurs (systemes peuvent s&#39;ouvrir et se refermer)&lt;/li&gt;
+&lt;li&gt;deux fonctions apparemment contradictoires, tendance homeostatique et capacité de transformation (les deux fonction maintiennent un equilibre provision et garanti l&#39;évolution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!example] Exemple&lt;br /&gt;
+La naissance d’un enfant impose une réorganisation du système conjugal, qui doit trouver un nouvel équilibre fonctionnel.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!done] À retenir&lt;br /&gt;
+Un système est un ensemble d’éléments en interaction, organisé selon des règles, et fonctionnant comme une totalité. Les systèmes humains sont ouverts, en interaction avec leur environnement, et cherchent à maintenir un équilibre tout en restant capables de changement et d’adaptation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-4-6-2-lois-des-systeme&quot; tabindex=&quot;-1&quot;&gt;1.4.6.2 Lois des système&lt;/h4&gt;
+&lt;p&gt;Lois des systèmes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Totalité&lt;/strong&gt;:  &lt;em&gt;une perturbation d&#39;un élément du système induit une modification de tous les autres éléments, que la perturbation vienne de l&#39;intérieur ou de l&#39;extérieur&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Non-sommativité&lt;/strong&gt;: &amp;quot;un tout est plus que la somme des parties&amp;quot;.  Les caractéristiques constitutives ne peuvent s&#39;expliquer à partir des caractéristiques prises isolément. ON ne peut pas énumérer séparément chaque élément du système. (Implication: voir les patients individuellement pour saisir les problématiques n&#39;est pas assez).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Homéostasie&lt;/strong&gt;: relative stabilité à l&#39;intérieur du système qui est maintenu à l&#39;équilibre par des rétroactions positives ou négatives. Plus un système est complexe, plus l&#39;homéostasie peut être forte. {relation avec besoins changeants de cycles de vie?} Bateson parlait de changements de type 1, et changements de type 2:
+&lt;ul&gt;
+&lt;li&gt;Changement de &lt;em&gt;type 1&lt;/em&gt;: Un élément est perturbé, système agit pour annuler le changement (rétroaction négative) dans le but de maintenir le système tel qu&#39;il était (peur du changement, e.g. parents vont augmenter controle sur enfant qui veut sortir après l&#39;école. Mais ne rien faire n&#39;est pas bon non plus)&lt;/li&gt;
+&lt;li&gt;Changement de &lt;em&gt;type 2&lt;/em&gt;: Va au contraire encourager le système à évoluer. Rétroaction qui renforce le changement (rétroaction positive). Par ex,. encourager l&#39;adolescent à évoluer vers un nouveau fonctionnement adapté a ses nouveaux besoins.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equifinalité&lt;/strong&gt;: les objectifs d&#39;un système peuvent être réalisés par différents chemins.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!done] À retenir&lt;br /&gt;
+Les systèmes obéissent à plusieurs principes fondamentaux : la totalité (tout changement affecte l’ensemble), la non-sommativité (le tout est différent de la somme des parties), l’homéostasie (tendance à maintenir l’équilibre), l’équifinalité (des chemins différents peuvent mener au même résultat) et la circularité (les causes et les effets s’influencent mutuellement).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-4-6-3-la-double-contrainte&quot; tabindex=&quot;-1&quot;&gt;1.4.6.3 La double contrainte&lt;/h4&gt;
+&lt;p&gt;La &lt;strong&gt;double contrainte&lt;/strong&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Double_bind&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;(double bind)&lt;/a&gt; est un type de communication paradoxale identifié par Bateson en 1956. Elle implique une relation affective significative, une injonction primaire, une injonction secondaire contradictoire (souvent non verbale), et l’impossibilité d’échapper à la situation ou de la commenter.&lt;/p&gt;
+&lt;p&gt;Pour la double contrainte, ces éléments doivent être réunis:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Il faut une relation affective&lt;/li&gt;
+&lt;li&gt;Une injonction primaire
+&lt;ul&gt;
+&lt;li&gt;Par ex., adulte dit à l&#39;enfant « Viens me faire un calin »&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Qui est contredite par une injonction secondaire (à un niveau plus abstrait)
+&lt;ul&gt;
+&lt;li&gt;Par ex., personne qui esquive ou se montre peu réceptive physiquement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Une injonction négative tertiaire qui interdit a la victime d&#39;échapper à la situation.&lt;/li&gt;
+&lt;li&gt;Quoique fasse l&#39;individu, il ne peut être que perdant.
+&lt;ul&gt;
+&lt;li&gt;Exemple: si le fils se détourne, la mère sera désespérée et le critique, au contraire si le fils avait forcé, elle l’aurait rejeté encore plus, donc il peut être que perdant. La deuxième ne doit pas être verbale. Difficile pour un enfant de méta communiquer sur le paradoxe auquel il est soumis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;À ce troisième niveau, il devient impossible d’échapper à la relation ou de &lt;strong&gt;métacommuniquer&lt;/strong&gt; sur ce qui se passe. Quelle que soit la réponse apportée, elle est disqualifiée : &lt;em&gt;quoi que l’on fasse, c’est mal&lt;/em&gt;. L’individu se retrouve alors pris dans un système où il ne peut être que perdant.&lt;/p&gt;
+&lt;p&gt;Les chercheurs de Palo Alto découvrent ces mécanismes en filmant les interactions familiales et en analysant la communication à ses différents niveaux :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;la &lt;strong&gt;dimension digitale&lt;/strong&gt;, correspondant au contenu verbal explicite,&lt;/li&gt;
+&lt;li&gt;la &lt;strong&gt;dimension analogique&lt;/strong&gt;, qui comprend les expressions faciales, la tonalité de la voix, les mimiques, les attitudes corporelles et les manifestations physiologiques.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Très souvent, la double contrainte repose sur une &lt;strong&gt;contradiction entre ces deux dimensions&lt;/strong&gt;, mais elle peut aussi résulter de contradictions à d’autres niveaux du message.&lt;/p&gt;
+&lt;p&gt;Progressivement, les chercheurs constatent que ces communications paradoxales ne proviennent pas uniquement d’un parent vers un enfant. Elles circulent dans l’ensemble du système familial : &lt;strong&gt;le patient lui-même, les autres membres de la famille, et même les thérapeutes&lt;/strong&gt; peuvent être pris dans ces échanges disqualifiants. La double contrainte n’est donc pas un message isolé, mais un &lt;strong&gt;mode relationnel systémique&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Bateson et son équipe font alors l’hypothèse que certains comportements jugés « bizarres » ou « incohérents » chez les patients psychotiques pourraient constituer des &lt;strong&gt;tentatives ingénieuses pour échapper à ces paradoxes&lt;/strong&gt;, là où aucune issue directe n’est possible. La schizophrénie est alors envisagée, non comme une cause, mais comme un &lt;strong&gt;mode d’adaptation extrême&lt;/strong&gt; à un environnement saturé de contradictions.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!warning] Révision du concept&lt;br /&gt;
+L&#39;équipe reconnaîtra par la suite avoir sans doute &lt;strong&gt;surinvesti&lt;/strong&gt; le concept de double contrainte, en lui attribuant un pouvoir explicatif trop large. Paul Watzlawick lui-même évoquera une période de fascination presque monomaniaque pour ce concept. Bateson, de son côté, refusera toute réification théorique excessive et se distanciera du groupe lorsque ses observations seront utilisées comme des explications closes ou des recettes thérapeutiques.&lt;/p&gt;
+&lt;p&gt;Ce recul critique fait partie intégrante de l’héritage de Palo Alto : les modèles sont utiles pour penser et intervenir, mais ils ne doivent jamais être considérés comme exhaustifs ni définitifs.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!done] À retenir&lt;br /&gt;
+La double contrainte est une forme de communication paradoxale dans laquelle une personne reçoit des messages contradictoires sans possibilité d’y échapper ni de métacommuniquer. Elle place l’individu dans une situation relationnelle sans issue, où toute réponse est disqualifiée, et a été pensée comme un facteur relationnel pouvant contribuer à des comportements psychotiques.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-4-6-3-le-symptome-dans-l-approche-systemique&quot; tabindex=&quot;-1&quot;&gt;1.4.6.3 Le symptôme dans l&#39;approche systémique&lt;/h4&gt;
+&lt;p&gt;Dans l’approche systémique développée par l’École de Palo Alto, le symptôme n’est pas envisagé comme une défaillance individuelle ni comme un simple dysfonctionnement à éliminer. Il est compris comme une &lt;strong&gt;réponse adaptative&lt;/strong&gt; à une situation relationnelle particulière et comme une &lt;strong&gt;solution trouvée par le système&lt;/strong&gt; pour maintenir son équilibre.&lt;/p&gt;
+&lt;p&gt;Le symptôme remplit ainsi une &lt;strong&gt;fonction systémique&lt;/strong&gt; : il contribue à préserver l’homéostasie du groupe, notamment familial, en permettant à chacun de s’ajuster à une situation de crise, de tension ou de souffrance partagée. Dans cette perspective, le symptôme est à la fois cause et effet, sans qu’il soit pertinent de chercher à établir une causalité linéaire entre les deux.&lt;/p&gt;
+&lt;p&gt;Les systémiciens parlent alors de &lt;strong&gt;patient désigné&lt;/strong&gt; ou de &lt;strong&gt;patient identifié&lt;/strong&gt;. Cette notion repose sur l’hypothèse que &lt;strong&gt;l’ensemble du système est en souffrance&lt;/strong&gt;, mais qu’un de ses membres va porter, incarner et rendre visible cette souffrance collective à travers un symptôme. Ce membre devient le lieu d’expression privilégié du malaise groupal.&lt;/p&gt;
+&lt;p&gt;Toutefois, le patient n’est pas uniquement « désigné » de l’extérieur. Il &lt;strong&gt;accepte aussi cette désignation&lt;/strong&gt; et y participe activement. Autrement dit, il ne s’agit pas d’un rôle imposé de manière univoque : le patient &lt;strong&gt;s’autodésigne également&lt;/strong&gt;, dans la mesure où le symptôme lui procure, consciemment ou non, certains avantages relationnels ou fonctionnels. Le symptôme peut permettre de maintenir une proximité, d’éviter une séparation, de détourner l’attention d’un autre conflit, ou encore de préserver une certaine stabilité familiale.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!example] Exemple&lt;br /&gt;
+Ainsi, dans l’exemple d’un enfant qui ne va plus à l’école, le symptôme peut permettre à la mère de ne pas rester seule dans un moment de fragilité, au père de continuer à travailler sans s’inquiéter du climat familial, et à l’enfant de conserver une place centrale dans l’organisation familiale. Le symptôme est alors &lt;strong&gt;fonctionnel pour tous&lt;/strong&gt;, y compris pour celui qui le porte.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Dans cette optique, le comportement jugé « étrange », « inadapté » ou « pathologique » peut être compris comme une &lt;strong&gt;réponse particulièrement pertinente&lt;/strong&gt; à un contexte donné. Cette lecture transforme radicalement la manière de penser la psychopathologie : il ne s’agit plus de supprimer le symptôme, mais d’en comprendre la fonction afin de permettre au système de trouver &lt;strong&gt;d’autres modes d’équilibre&lt;/strong&gt;, moins coûteux pour le patient.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!done] À retenir&lt;br /&gt;
+Dans l’approche systémique, le symptôme est une réponse adaptative et fonctionnelle à une situation relationnelle, permettant au système de maintenir son équilibre. Le patient dit « désigné » accepte et participe à ce rôle, car le symptôme présente aussi des avantages relationnels pour lui et pour le groupe dont il fait partie.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;📅 Lundi &lt;strong&gt;16 Février 2026&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Rappel du cours précédent: &lt;strong&gt;la fonction du symptome&lt;/strong&gt;: en quoi ce symptôme contribue au système tel qu&#39;il est, à son maintien? Qu&#39;est que le comportement symptomatique permet ? Qu&#39;est-ce qu&#39;il empêche? Patient designé: non seulement passif, pour etre designé il faut en partie le propre &amp;quot;accord&amp;quot; de la personne.&lt;/p&gt;
+&lt;p&gt;Question essentielle: Qu&#39;est ce qui se apsserait si ce probleme n&#39;existait plus?  (qu&#39;est ce que ça permet, que&#39;est ce que ça empeche... pour avoir une hypothèse fonctionnelle).&lt;/p&gt;
+&lt;p&gt;D&#39;après ceux de l&#39;école Palo Alto, un problème est ce qui est vécu comme un problème, peu importe ce que pensent les thérapeutes. Le thérapeute ne décide pas ce qui l&#39;est pour la famille. Se garder de venir avec ses propres valeurs et projections, se focaliser sur ce qui pose problème pour la famille: &amp;quot;En quoi est-ce un problème &lt;strong&gt;pour vous&lt;/strong&gt;?&amp;quot; (ou les differents membres du système). (Par exemple: famille preocuppée parce que leur enfant n&#39;a pas plus de 14/20 partout).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] Différence entre psychanalyse et systémique&lt;br /&gt;
+Niveaux logiques differents, niveaux de reflexion differents.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Le symptôme&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pour la psychanalyse, le symptôme a un &lt;strong&gt;sens&lt;/strong&gt; pour l&#39;individu.&lt;/li&gt;
+&lt;li&gt;Dans l&#39;approche systémique, le symptôme a une fonction pour le groupe (famille, club de sport, ou tout autre groupe auquel il est inscrit en tant que membre). Le patient designé ou patient identifié est le nom donné au porteur du symptôme.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;La posture&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Autre différence: la posture, position du thérapeute: La manière dont il va etre plus engagé, plus impliqué dans le systeme lui-même. Métaphore utilisée par Paul Watzlawik: dans l&#39;approche psychanalytique, il était important d&#39;être confronté à la théorie de &amp;quot;l&#39;iceberg&amp;quot; (on a pas accès directement à l&#39;inconscient, etc.), mais en systémique, théorie du &amp;quot;bouchon qui flotte&amp;quot;: il a accès à tout le materiel devant lui pour travail avec le patient et le système avec lequel il interagit.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Comment choisir dans quelle orientation adresser un patient (ou encore TCC)? Repérer les specificités de la situation qui nous font pencher vers l&#39;une ou l&#39;autre approche (ces deux approches mises en avant ici car utilisées dans le livre de Neuburger).&lt;/p&gt;
+&lt;p&gt;Visionnage d&#39;une video de Paul Watzlawik: Conférence: &lt;em&gt;Quand la solution est le problème&lt;/em&gt;. Stuttgart, 1987. &lt;a href=&quot;https://www.youtube.com/watch?v=3lx3EjE0Trw&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;youtube-embed&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/3lx3EjE0Trw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;)
+&lt;p&gt;Ce groupe de Palo Alto a été à l&#39;origine d&#39;une revue, &amp;quot;Family Process&amp;quot;, qui dans les années 60 a été une des premières revues dans le domaine, et qui existe encore.&lt;/p&gt;
+&lt;p&gt;Quelques références:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Milton Erickson, hypnose, invité aussi a Palo Alto&lt;/li&gt;
+&lt;li&gt;Ecole Wittezaele à Bruge (thérapie brève)&lt;/li&gt;
+&lt;li&gt;Thérapie provocative, aussi moins présente en europe (sauf certains en Italie, Andolfi en debut de carrière, l&#39;a ensuite abandonnée).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;1-5-l-approche-anti-psychiatrie&quot; tabindex=&quot;-1&quot;&gt;1.5 L&#39;approche anti-psychiatrie&lt;/h3&gt;
+&lt;p&gt;Dans la &amp;quot;vieille europe&amp;quot;, ce mouvement prend beaucoup d&#39;ampleur, avec une maniere de penser les choses qui a beaucoup influencé les penseurs systemiciens.&lt;/p&gt;
+&lt;p&gt;Tëtes de file:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RD Laing, David Cooper, Franco Basaglia, Castel&lt;/li&gt;
+&lt;li&gt;Jean Oury, Félix Guattari, Mony Elkaïm...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remise en cause e la psychiatrie traditionnelle (et ses methodes d&#39;enfermement). Foucault: plutot que de considerer qu&#39;il faut &amp;quot;aider les fous a se reintegrer dans la societe&amp;quot;, se demander ce quil se passe dans la société pour considerer que certains individus doivent etre enfermés. Basaglia en tête de file de mouvement amenant a la fermeture d&#39;hopitaux (cf. loi actée en Italie).&lt;/p&gt;
+&lt;p&gt;Repercussions dans notre maniere de penser la santé mentale: creation de centres de santé avec l&#39;idee de ne pas exclure les personnes malades de la societe, et travailler a leur reinsertion.&lt;/p&gt;
+&lt;p&gt;A Bruxelles, Paul Sivadon, psychiatre d&#39;origine francaise, création d&#39;un premier centre de santé mentale sectorisé (à Anderlecht, en 63(?)), avec Jean Vermeylen: l&#39;&lt;em&gt;Equipe&lt;/em&gt;, à Anderlecht, &lt;em&gt;La Gerbe&lt;/em&gt;: deux premiers centres créés pour poursuivre ce projet d&#39;aider les personnes à la marge, pour leur éviter la psychiatrisation. Se questionnent donc sur la société, ou la famille, plutôt que l&#39;individu. &amp;quot;Est-ce la société qui est folle?&amp;quot; &amp;quot;Est-ce la famille qui est folle?&amp;quot; (cf film &lt;a href=&quot;https://letterboxd.com/film/family-life-1971-1/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Family Life&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;C&#39;est par le biais de ce mouvement que Palo Alto (et par là les thérapies familiales systémiques), s&#39;est fait connaitre en Europe.&lt;/p&gt;
+&lt;h2 id=&quot;rappel-quatre-notions-cle&quot; tabindex=&quot;-1&quot;&gt;Rappel: Quatre notions clé&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Les patterns transactionnels&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;La famille est structuree en sous groupes définis par leur relations réciproques. Les relations entre différents membres de ces sous-groupes ou entre un sous groupe et un autre sont définis par des patterns relationnels. Une transaction se rapporte a un acte verbal ou non vernal echangé avec un partneaire et signifie cet echange meme. Le pattern renvoie a la sequence de plusieurs tarnsactions selon une configuration donnee repetitive (ex notes de musique sur une portee = melodie)&amp;quot; (dia)&lt;/li&gt;
+&lt;li&gt;Comme dit précédemment, chaque famille est différente, d&#39;où l&#39;importance pour le thérapeute de se mettre en position d&#39;observateur, comme un ethnologue qui visite un groupe dont il n&#39;a pas les codes. Important de s&#39;intéresser a la manière dont le groupe met en place des patterns. Sous-groupes définis par les relations réciproques, et ses relations entre membres ou entre sous-groupes sont définis par des patterns relationnels (= &lt;em&gt;modes&lt;/em&gt; de relation, ou &lt;em&gt;codes&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Par exemple, chau qe fois que pere fait une remarque, un fils l&#39;imite d&#39;une grosse voix, les autres enfants rient, la mere intervient pour dire &amp;quot;vous arretez de rire? personne le prend jamais au serieux&amp;quot;&lt;/li&gt;
+&lt;li&gt;Exemple 2: des que le couple parental est en tension, si un partenaire fait un reproche a l&#39;autre, un des enfants fait une betise de maniere a ce que l&#39;un des parents doive interveniir.&lt;/li&gt;
+&lt;li&gt;Ex 3: famille où tout le monde tournait en dérision ce que disait l&#39;étranger à la famille.&lt;/li&gt;
+&lt;li&gt;Therapeute devra voir ce qui se joue dans ces groupes, afin de decoder le comportement du groupe pour pouvoir interagir avec eux lui aussi (encore metaphone de l&#39;ethnologue qui doit se faire accepter par la tribu qu&#39;il etudie)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;La position directive du thérapeute&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Pas détaillé en cours.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Les stades de l&#39;évolution ou cycle de vie&lt;/strong&gt; de l&#39;individu et de la famille:
+&lt;ul&gt;
+&lt;li&gt;Important d&#39;avoir en tete ces concepts: necessité de renégocier les relations à chaque passage à une nouvelle étape, par ex. la mise en couple, naissance du premier enfant, adolescence, premier travail, etc). Processus d&#39;autonomisation, en particulier, qui implique que toutes les relations se re negocient (pas seulement la famille). Ne s&#39;arrete pas a l&#39;adolescence, quand l&#39;enfant devient adulte persiste tout au long de la vie (se mettre en couple et vivre a l&#39;exterieur, etc).&lt;/li&gt;
+&lt;li&gt;Défi marqué pour le groupe de se réorganiser après une crise: le moment de la crise est essentiel - sans crise, pas d&#39;évolution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L&#39;analyse de la demande&lt;/strong&gt;. L&#39;indication d&#39;une thérapie familiale passe par l&#39;analyse de la demande. Lorsque le sujet ne peut formuler une demande et que les éléments de la demande sont réparties dans le groupe familial (cf R. Neuburger). Quand faire appel à un thérapeute?
+&lt;ul&gt;
+&lt;li&gt;R. Neuburger: s&#39;appuyer sur les éléments constitutifs d&#39;une demande (détaillé dans son livre de 1984, &lt;em&gt;L&#39;autre demande&lt;/em&gt;)
+&lt;ul&gt;
+&lt;li&gt;Un symptôme&lt;/li&gt;
+&lt;li&gt;Une souffrace&lt;/li&gt;
+&lt;li&gt;Une allégation (une mise en avant, invocation du problème)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Si ceux-ci sont répartis sur un seule et même personne, ou pas?
+&lt;ul&gt;
+&lt;li&gt;Rassemblés au sein d&#39;une même personne? Psychothérapie individuelle.&lt;/li&gt;
+&lt;li&gt;Dispersés au sein d&#39;une famille, couple, équipe? Indication pour une psychothérapie systémique.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Intéressant de voir &amp;quot;qui souffre le plus&amp;quot; dans une situation. Le porteur du symptome n&#39;est pas forcément celui qui souffe le plus. Si par exemple la souffrance portée plus par mère ou père, et symptôme du fils, peut être indication de thérapie systémique.&lt;/li&gt;
+&lt;li&gt;Neuburger, venant de la psychanalyse de base, voulait principalement montrer à ses collègues psychanalystes qu&#39;il pouvait y avoir une demande au delà de la demande individuelle.&lt;/li&gt;
+&lt;li&gt;Par exemple: les enfants n&#39;expriment souvent pas de volonté de se soigner, d&#39;ou la difficulté de les voir en individuel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;x-modelisation-des-therapies-familiales-neuburger&quot; tabindex=&quot;-1&quot;&gt;X. Modélisation des thérapies familiales (Neuburger)&lt;/h2&gt;
+&lt;p&gt;Visions du monde du thérapeute, sa grille de lecture pour aller vers les patients ou les familles qu&#39;il veut traiter. Comment les thérapies familiales ont été modélisées? Déja une perspective constructiviste: quel est le point de vue du thérapeute?&lt;/p&gt;
+&lt;p&gt;Dans les modèles prédictifs, l&#39;effet qu&#39;on veut obtenir est predeterminé, inclus dans le projet thérapeutique. Tandis que dans les non-prédictifs, recherche de &lt;strong&gt;changement&lt;/strong&gt; qui permette de solutionner un probleme, mais la nature du changement est inconnu au therapeute. Ici la solition n&#39;est pas contenue dans le projet therapeutique.&lt;/p&gt;
+&lt;h3 id=&quot;x-1-les-modeles-predictifs&quot; tabindex=&quot;-1&quot;&gt;x.1 Les modèles prédictifs&lt;/h3&gt;
+&lt;p&gt;Influencés par les écrits de &lt;a href=&quot;https://en.wikipedia.org/wiki/Heinz_von_Foerster&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Von Foerster&lt;/a&gt; : &amp;quot;participe au developpement de la theorie de l&#39;information. 1940: n&#39;avons pas acces a la realite du monde .... &amp;quot; (citation dans dia). Role de nos presupposés. Realité codee,&amp;quot;une realité parmis d&#39;autres possibles&amp;quot;.&lt;/p&gt;
+&lt;h4 id=&quot;a-le-modele-causal-lineaire&quot; tabindex=&quot;-1&quot;&gt;a. Le modèle causal linéaire&lt;/h4&gt;
+&lt;p&gt;Le thérapeute prend son objet d&#39;étude &lt;strong&gt;pour un objet&lt;/strong&gt;. Le patient a une existance objective qui est separée du thérapeute. Observable sans etre modifié par l&#39;observation. Ici, on regarderait la famille en etant &amp;quot;objectif&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Exemple: Patiente anorexique à cause de comportements inadéquat des parents envers elle.&lt;br /&gt;
+Exemple 2: Dépression d&#39;un epoux pour comportements rabaissants de sa femme.&lt;/p&gt;
+&lt;p&gt;Si on enlève A, on solutionne B. On a une prédiction de la solution.&lt;/p&gt;
+&lt;p&gt;Par exemple: que la patiente anorexique s&#39;éloigne des parents.&lt;/p&gt;
+&lt;p&gt;Modèle particulier parce qu&#39;il &lt;strong&gt;ignore le temps&lt;/strong&gt;: etat du patient est consideré &lt;strong&gt;reversible&lt;/strong&gt; si on traite la cause.&lt;/p&gt;
+&lt;p&gt;Type de pensée rappelant la pensée scientifique, ou médicale. Pas a bannir ou laisser tomber, mais important pour nous d&#39;avoir en tête que ce modèle peut ne pas être suffisant pour aider certaines familles. Parfois ces solutions en fonctionnent pas.&lt;/p&gt;
+&lt;h4 id=&quot;b-le-modele-causal-circulaire-changement-de-paradigme&quot; tabindex=&quot;-1&quot;&gt;b. Le modèle causal circulaire: changement de paradigme&lt;/h4&gt;
+&lt;p&gt;Première revolution epistemologique. Ce mode de pensee est pourtant plus courant dans les modes de pensée orientaux.&lt;/p&gt;
+&lt;p&gt;On peut penser causalité mais dans une optique circulaire: A et B sont mutuellement renforcés. E.g. modèles en boucle de retroaction (feedback) en ingenieurie. &lt;mark&gt;Dans cette modélisation, on ne peut plus déterminer lequel est la cause (si A ou si B)&lt;/mark&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!example] Exemple&lt;br /&gt;
+Jeune femme est hospitalisée suite à des crises d&#39;asthme. La mere est tres presente a l&#39;hopital. Ils remarquent que plus la mere est presente, au plus s&#39;intensifient les crises. Mere declenche crises d&#39;asthme? (culpabilisation de la mere) ou crises d&#39;asthme declenent presence de mere? (mere inquiete). Ensemble de comportements redondants conduisant a renforcement.&lt;br /&gt;
+l&#39;idee devient, dans ce changement de paradigme: comment arreter la boucle? plutot que &amp;quot;comment eloigner la mere&amp;quot;, qui n&#39;arrangerait aucune des deux.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;En elargissant le contexte, on peut tenir compte aussi de l&#39;&lt;strong&gt;autre parent&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Suite de l&#39;exemple: un père qui au plus la mère s&#39;inquiète, au plus elles deviennent proches mere et fille, au plus le pere lui devient absent, est &amp;quot;tenu&amp;quot; a distance, et cette distance du pere inquiete d&#39;autant plus la mere...). (interpretaion lineaire: absence de pere declenche cirises et proximites du la dyade mere-fille, etc, &amp;quot;&lt;strong&gt;ponctuation arbitraire&lt;/strong&gt;&amp;quot;, tel qu&#39;appellé par les systémiciens). Donc dans la logique identification Cercles vicieux que le therapeute va essayer de faire rompre.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] Ponctuation arbitraire&lt;br /&gt;
+...&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;📅 Lundi &lt;strong&gt;16 Février 2026&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;x-2-les-modeles-non-predictifs&quot; tabindex=&quot;-1&quot;&gt;x.2 Les modèles non-predictifs&lt;/h3&gt;
+&lt;h4 id=&quot;c-le-modele-systemique-issu-de-la-premiere-cybernetique-crise-et-changement&quot; tabindex=&quot;-1&quot;&gt;c. Le modèle systémique issu de la première cybernétique (crise et changement)&lt;/h4&gt;
+&lt;h4 id=&quot;le-modele-systemique-issue-de-la-deuxieme-cybernetique-auto-organisation&quot; tabindex=&quot;-1&quot;&gt;Le modèle systémique issue de la deuxieme cybernetique (auto-organisation)&lt;/h4&gt;
+
+            </content>
+            <link href="https://santihago.github.io/2-class-notes/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/" >
+        </entry>
+        <entry>
+            <title>
+                2026 - PSYC-E 509 - Evaluation critique des interventions cliniques
+                
+            </title>
+            <updated>2026-02-17T22:59:17.835Z</updated>
+            <id>https://santihago.github.io/2-class-notes/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/</id>
+            <content type="html">
+                &lt;blockquote&gt;
+&lt;p&gt;[!tldr] Résumé&lt;br /&gt;
+Exposé théorique des enjeux épistémologiques particulièrement lisibles dans les modèles cliniques. Mise en contraste, à l&#39;aide des recherches en anthropologie et en ethnopsychologie, de quelques-unes de nos ethnothéories des émotions, de la maladie, de la psyché. Analyse de quelques cas selon les axes théoriques différents.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] Évaluation&lt;br /&gt;
+L&#39;évaluation se fonde sur un &lt;strong&gt;travail&lt;/strong&gt; à rendre en fin d&#39;année. Le travail doit suivre les modalités discutées au cours: il s&#39;agit de proposer une analyse d&#39;un intervention psychologique, au sens large. Cette analyse doit s&#39;appuyer sur un cas, sauf si le type d’intervention choisi ne s’y prête pas.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Les étudiants doivent interviewer un intervenant soit un &amp;quot;psy&amp;quot;, soit un travailleur dans une institution, soit un professionnel dont le travail consiste à modifier des comportements, des attitudes, ou à aider des personnes dans leur vie personnelle ou sociale. Les étudiants doivent interroger leur informateur en lui demandant surtout de préciser les modalités de son intervention et de se focaliser sur un cas. Le cas doit être présenté clairement et faire l&#39;objet d&#39;une analyse, selon un des modèles développés au cours, par exemple il peut viser à dégager les principes épistémologiques, les présupposés, le système de causalité privilégié, la définition de la personne qui ressort de la pratique et de la théorie; les modes de transformation, etc. Il peut également s’interroger sur ce qui définit un professionnel, par contraste avec un non-professionnel, sur les systèmes politiques et législatifs que ce type d’intervention articule, etc.&lt;/li&gt;
+&lt;li&gt;Chaque séance de cours a consacré une tranche horaire importante à envisager tous les cas de figure, se reporter à ces indications pour mener à bien le travail. Parallèlement, pour rédiger ce travail il est impératif de consulter les notes de cours voire de lire un livre de la liste de livres évoqués au cours (facultatif). Ceci doit, en principe, guider l&#39;analyse. En fonction du cas choisi, les étudiants peuvent me demander conseil pour le choix du livre.&lt;/li&gt;
+&lt;li&gt;Le travail ne doit, EN PRINCIPE, pas excéder 15 pages mais une certaine marge est tolérée. Je demande que le travail soit effectué par groupe de 3 à 5 étudiants, ce qui ne peut être transgressé que pour des raisons impératives.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip] Lectures recommandées&lt;br /&gt;
+Une liste de lectures est proposée aux étudiants et destinée à documenter le travail de fin d&#39;année. A titre d&#39;exemple (liste non exhaustive) :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;P. Pignarre &amp;quot;Comment la dépression est devenue une épidémie&amp;quot;&lt;/li&gt;
+&lt;li&gt;V. Despret &amp;quot;Ces émotions qui nous fabriquent&amp;quot;&lt;/li&gt;
+&lt;li&gt;C. Lutz &amp;quot;La dépression est-elle universelle&amp;quot;&lt;/li&gt;
+&lt;li&gt;R. Barret &amp;quot;Latraite des fous. Construction sociale de la schizophrénie&amp;quot;&lt;/li&gt;
+&lt;li&gt;T. Nathan &amp;quot;Nous ne sommes pas seuls au monde&amp;quot;&lt;/li&gt;
+&lt;li&gt;M. Borch Jakobsen &amp;quot;Folie à plusieurs&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;📅 Mercredi &lt;strong&gt;11 février 2026&lt;/strong&gt; - Laura Périchon (avant Fondements méthodes et évaluation de l&#39;intervention psychologique)&lt;/p&gt;
+&lt;h2 id=&quot;introduction&quot; tabindex=&quot;-1&quot;&gt;🏷️ Introduction&lt;/h2&gt;
+&lt;p&gt;Approche philosophique, anthropologique? Réfléchir à la psychotherapie en prenant un regard large. Elle a fait un doctorat avec V. Despret et I. Duret sur le deuil et sur les thérapies sur le deuil (la relation entre la personne endeuillée et la personne défuncte). Formée Approche centrée sur la personne (Rogerienne), approches de pleine conscience, hypnose ericksonienne, EMDR, ICV (Intégration du Cycle de la Vie).&lt;/p&gt;
+&lt;h3 id=&quot;1-est-ce-que-la-therapie-ca-fonctionne&quot; tabindex=&quot;-1&quot;&gt;1. Est-ce que la thérapie, ça fonctionne?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Enjeux: Vaut-il la peine de former des cliniciens, envoyer les gens en thérapie, rembourser les séances (question de santé publique)...?&lt;/li&gt;
+&lt;li&gt;Question de la mesure: fonctionne d&#39;après le rapport subjectif du patient lui-même? selon le psy? selon un tiers extérieur (et comment, observation, questionnaire, à quel moment...?)?&lt;/li&gt;
+&lt;li&gt;Thérapie = phénomème complexe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Oui&lt;/strong&gt;, selon une sorte de évidence empirique, parce que ce sont des pratiques ayant existé partout (dans plusieurs cultures) et depuis longtemps, évidence que &amp;quot;ça aide&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Efficacité des thérapies - la recheche&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;mark&gt;&lt;strong&gt;Efficacité absolue:&lt;/strong&gt; les thérapies (toutes formes confondues) produisent des résultats en or&lt;/mark&gt;.
+&lt;ul&gt;
+&lt;li&gt;Les études quantitatives montrent des tailles d&#39;effet de 0.8 écart-type, c&#39;est-à-dire qu&#39;une personne ayant benéficié d&#39;une intervention psychologique se sent mieux que 80% de celles qui n&#39;ont pas benéficié de traitement.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Pourquoi (ingrédients actifs)&lt;/strong&gt;?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Interventions: Alliance thérapeutique, initier un changement, mecanismes propres à chaque courant...&lt;/li&gt;
+&lt;li&gt;Qui se pose cette question peut avoir un impact sur la réponse: chercheurs? Quels outils?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-strong-les-dispositifs-therapeutiques-strong&quot; tabindex=&quot;-1&quot;&gt;2. &lt;strong&gt;Les dispositifs thérapeutiques&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Dans toutes les cultures humaines, depuis des temps immémoriaux, il existe des &lt;em&gt;désordres&lt;/em&gt; ou des &lt;em&gt;maladies&lt;/em&gt;, et il existe des dispositifs therapeutiques, et des spécialistes de ces dispostiifs.&lt;/p&gt;
+&lt;p&gt;On peut s&#39;intéresser aux:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;interventions de psychologie clinique, dont la psychothérapie&lt;/li&gt;
+&lt;li&gt;dispositifs therapeutiques d&#39;autres cultures&lt;/li&gt;
+&lt;li&gt;dispositifs therapeutiques &amp;quot;alternatifs&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Certaines thérapies sont-elles plus efficaces que d&#39;autres? (peut-on distinguer éfficacité pour certains troubles, certains types de patients?)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Efficacité relative&lt;/strong&gt;: &lt;mark&gt;Les résultats vont dans le sens d&#39;une équivalence des traitements&lt;/mark&gt; (la différence n&#39;est pas très grande dans cette efficacité relative - &lt;strong&gt;le paradoxe d&#39;équivalence&lt;/strong&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] Dodo bird verdict&lt;br /&gt;
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Dodo_bird_verdict&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://en.wikipedia.org/wiki/Dodo_bird_verdict&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Difficultés de mesure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Biais d&#39;allegéance: tendance à privilégier la thérapie propre dans les études (gros effet sur les études selon ce que le chercheur lui même pratique comme thérapie). Au-delà d&#39;un problème méthodologique flagrant, tendance, dans tout le processus, à favoriser ce en quoi on croit (impossibilité d&#39;être un chercheur neutre?).
+&lt;ul&gt;
+&lt;li&gt;En thérapie, l&#39;allegéance est l&#39;un des ingredients actifs de l&#39;efficacité (croire en sa thérapie, être convaincu en sa propre thérapie).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ingredients spécifiques VS facteurs communs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Controverse scientifique:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ingrédients spécifiques et &lt;em&gt;modèle&lt;/em&gt; médical?&lt;/strong&gt; : les techniques adaptées à tel trouble prédominent: &amp;quot;quel est le traitement indiqué pour un trouble donné?&amp;quot; (comme en médecine: tel médicament pour telle maladie). Nous sommes assez héritiers de cette approche, principalement en recherche. Par exemple: EMDR. Traumatisme &amp;gt; traces dans le corps et cerveau &amp;gt; symptômes &amp;gt; retourner dans la scène du trauma et amener elements qui permettent de trouver une amélioration. Métaphores médicales qui d&#39;ailleurs fonctionnent bien avec les patients en général, ils en sortent plus convaincus.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Facteurs communs et &lt;em&gt;modèle contextuel?&lt;/em&gt;&lt;/strong&gt;: les facteurs communs à toutes les thérapies priment sur les techniques. Moins présent dans le secteur médical. Alliance, personnalité du thérapeute, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Intérêt ici dans ce cours à être intégratif, garder un regard large.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] Dodo bird verdict&lt;br /&gt;
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Dodo_bird_verdict&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://en.wikipedia.org/wiki/Dodo_bird_verdict&lt;/a&gt;&lt;br /&gt;
+Recherches pero&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;3-dispositifs-therapeutiques-composants&quot; tabindex=&quot;-1&quot;&gt;3. Dispositifs thérapeutiques: composants&lt;/h3&gt;
+&lt;p&gt;Les théories:&lt;br /&gt;
+- sur la maladie (les conflits psychiques, le traumatisme, les déséquilibres neurophysiologiques, la hantise, cognitions inadaptées...)&lt;br /&gt;
+- sur la guérison (mentaliser, amener à la conscience, exorciser, traiter le traumatisme, modifier le comportement...)&lt;br /&gt;
+- sur le monde (sur la vie, sur la mort, la nature de la réalité, l&#39;invisible...)&lt;br /&gt;
+- sur l&#39;humain (sur le corps, l&#39;esprit, les émotions, les relations, les rêves, les familles, l&#39;enfance, la mémoire, l&#39;âme, le cerveau...)&lt;/p&gt;
+&lt;p&gt;Pas une théorie plus vraie qu&#39;une autre. On peut utiliser beaucoup d&#39;histoires différentes: pas forcément une meilleure qu&#39;une autre, mais besoin de s&#39;ajuster au patient (peut être pour le patient il y en a en effet une &amp;quot;meilleure&amp;quot; qu&#39;une autre). Mais besoin de se décoller de la primauté de la vérité (histoire plus vraie qu&#39;une autre). Certaines histoires  peuvent plus parler à un moment donné {postmodernisme?}. Mais théorie qui soit au minimum cohérente avec l&#39;expression de la maladie, et qui puisse proposer une solution.&lt;/p&gt;
+&lt;p&gt;Voir: &lt;a href=&quot;https://fr.wikipedia.org/wiki/Verdict_de_l%27oiseau_Dodo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://fr.wikipedia.org/wiki/Verdict_de_l&#39;oiseau_Dodo&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!question]&lt;br /&gt;
+reflecion perso: TCC qui va vers travail sur les processus, est-ce similaire aux facteurs contextuels?&lt;br /&gt;
+et quid des choses &amp;quot;tres&amp;quot; prouvees (?), tels que traitements phobie, PTSD, BPD, etc, on garde cette optique de l&#39;equivalence, des verites multiples?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://santihago.github.io/2-class-notes/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/" >
+        </entry>
+        <entry>
+            <title>
+                2026 - PSYC-E 5013 - Questions spéciales et séminaire d&#39;études de cas cliniques
+                
+            </title>
+            <updated>2026-02-17T22:59:26.400Z</updated>
+            <id>https://santihago.github.io/2-class-notes/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/</id>
+            <content type="html">
+                &lt;blockquote&gt;
+&lt;p&gt;[!tldr] Résumé&lt;br /&gt;
+Sans négliger les axes du diagnostic et de l’institution, le séminaire « Questions spéciales et séminaire d’études de cas cliniques » engagera les étudiants dans un processus d&#39;élaboration, de réflexion critique et de construction de cas cliniques, d&#39;une manière qui leur permettent d’approfondir la question de l’accompagnement clinique.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Séminaire du groupe 14&lt;/strong&gt;: Histoire et actualité de la prise en compte de la dimension interculturelle en psychologie clinique. Illustration par l&#39;étude de cas tirés de la pratique clinique du Service de Santé Mentale Ulysse qui reçoit des personnes exilées, dont beaucoup de demandeurs d&#39;asile. L&#39;attention est attirée sur le fait qu&#39;il ne s&#39;agit pas d&#39;un séminaire d&#39;ethnopsychatrie. Cette conception de la clinique interculturelle est analysée parmi d&#39;autre dans le séminaire, mais n&#39;est pas celle privilégiée dans la pratique du centre Ulysse.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] Évaluation&lt;br /&gt;
+Rapport écrit (et présence obligatoire au séminaire pour que l’UE puisse être validée). Trois types de rapport possibles:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Si un stage a déjà été réalisé, on peut faire un rapport (environ 5-6 pages) qui illustre ce qu&#39;on a mis en place, ou ce qu&#39;on aurait pu faire, en faisaint un lien entre le séminaire et le stage (avec des liens bibliographiques ou aux notes). Pas forcément nécessaire d&#39;avoir fait une clinique avec de gens qui viennent d&#39;ailleurs, ça peut être une clinique classique tout-venant. Rapport qui mettra en lien le contenu du séminaire avec le contenu du stage. Pas un calque du rapport de stage, il faut le lien avec le contenu du séminaire.&lt;/li&gt;
+&lt;li&gt;Formule mixte: petit rapport (environ 2-3 pages, un recto-verso) avec réponse à une question par rapport au stage, c&#39;est une question qui sera donnée, pas de choix entre deux questions comme à l&#39;option 3).&lt;/li&gt;
+&lt;li&gt;Formule la plus souvent choisie: on répond à deux questions proposées aux séances après Pâques (obligé de répondre aux deux) (un recto-verso aussi, comme l&#39;option 2).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Un recto-verso c&#39;est OK, selon lui, pas besoin de tourner en rond.&lt;/p&gt;
+&lt;p&gt;Aux environs de Pâques il envoie un portefeuille de lecture qu&#39;on peut utiliser, si l&#39;on veut, pour nos rapports (mais non obligatoire)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip] Lectures recommandées&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;a href=&quot;https://fr.wikipedia.org/wiki/Peau_noire,_masques_blancs&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Peau noire, masques blancs&lt;/a&gt;&lt;/em&gt;. Frantz Fanon. 1952.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.anacaona.fr/boutique/la-race-sur-le-divan-psychanalyse-intersectionnelle/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;La race sur le divan&lt;/em&gt;&lt;/a&gt;. Thamy Ayouch. Anacaona Éditions, Paris, 2024&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;introduction&quot; tabindex=&quot;-1&quot;&gt;🏷️ Introduction&lt;/h2&gt;
+&lt;p&gt;📅 Jeudi &lt;strong&gt;5 Février 2026&lt;/strong&gt; (Cours 1)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nous développerons les termes utilisés: migrant (réserves) vs exilé (dimension de contrainte), la question des &amp;quot;racines&amp;quot;...&lt;/li&gt;
+&lt;li&gt;Objectif du séminaire: déployer la clinique avec le public reçu à Ulysse (usage de la langue, situation de précarité, croisement de besoins psychiques, juridiques, etc., persécution &amp;quot;avec raison&amp;quot;, &amp;quot;névrose traumatique&amp;quot;, mineurs, femmes victimes de violences...)&lt;/li&gt;
+&lt;li&gt;La dimension historique sera travaillée pendant les première semaines, ensuite, nous travaillerons la clinique.&lt;/li&gt;
+&lt;li&gt;Attention: ce n&#39;est pas un séminaire d&#39;ethnopsychiatrie (réserves par rapport à la méthode ethnopsychiatrique). (&lt;a href=&quot;https://shs.cairn.info/revue-vie-sociale-et-traitements-2006-1-page-85?lang=fr&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ref perso&lt;/a&gt; pour plus d&#39;infos sur les critiques à l&#39;ethnopsychiatrie traditionnelle).&lt;/li&gt;
+&lt;li&gt;Une avocate interviendra, ainsi que peut-être une interprète.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;l-alterite&quot; tabindex=&quot;-1&quot;&gt;🏷️ L&#39;altérité&lt;/h2&gt;
+&lt;p&gt;Textes lus en cours, qui précèdent la clinique interculturelle:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!example] Texte 1: Les Scythes&lt;br /&gt;
+&amp;quot; Une autre observation à faire, c&#39;est qu&#39;on rencontre parmi les Scythes beaucoup d&#39;impuissants qui s&#39;occupent aux travaux des femmes et qui ont le même timbre de voix qu&#39;elles. On les appelle anandries (efféminés). Les naturels attribuent ce phénomène à un dieu ; ils vénèrent et adorent cette espèce d&#39;hommes, chacun craignant pour soi une pareille calamité. Quant à moi, je pense que cette maladie est divine aussi bien que toutes les autres, qu&#39;il n&#39;y en a pas de plus divines et de plus humaines les unes que les autres ; mais que toutes sont semblables et que toutes sont divines ; chaque maladie a une cause naturelle et aucune n&#39;arrive sans l&#39;intervention de la nature. Je vais indiquer maintenant ce qu&#39;il me semble de l&#39;origine de cette maladie: l&#39;équitation perpétuelle des Scythes qui produit chez eux des engorgements aux articulations, parce qu&#39;ils ont toujours les jambes pendantes. Chez ceux qui sont gravement atteints, la hanche se retire et ils deviennent boiteux. Ils se traitent de la manière suivante: quand la maladie commence, ils se font ouvrir les deux veines qui sont près des oreilles. Après que le sang a cessé de couler, la faiblesse les assoupit et les endort ; à leur réveil, les uns sont guéris, les autres ne le sont pas. Je présume que c&#39;est justement par ce traitement que la semence est altérée, car près des oreilles il y a des veines qui rendent impuissant lorsqu&#39;elles sont ouvertes ; or, je pense qu&#39;ils coupent précisément ces veines.&lt;/p&gt;
+&lt;p&gt;Lorsque, après cette opération, ils ont commerce avec une femme et qu&#39;ils ne peuvent accomplir l&#39;acte, d&#39;abord ils ne s&#39;en inquiètent point et restent tranquilles ; mais si après deux, trois ou plusieurs tentatives, ils ne réussissent pas mieux ; s&#39;imaginant que c&#39;est une punition d&#39;un dieu qu&#39;ils auraient offensé, ils prennent les habits de femme, déclarent leur impuissance, se mêlent avec les femmes et s&#39;occupent aux mêmes travaux qu&#39;elles. Cette maladie attaque les riches et non les classes inférieures ; [elle attaque] les plus nobles, les plus puissants par leur fortune, parce qu&#39;ils vont à cheval ; [elle épargne] les pauvres par cela même qu&#39;ils ne vont point à cheval. Si cette maladie était plus divine que les autres, elle ne devrait pas indistinctement et plus particulièrement ceux qui possèdent peu de chose et qui, par conséquent, ne font point d&#39;offrandes, s&#39;il est vrai que les dieux se réjouissent des présents des hommes et qu&#39;ils les récompensent par des faveurs ; car il est naturel que les riches usant de leurs trésors, fassent brûler des parfums devant les dieux, leur consacrent des offrandes et les honorent ; ce que les pauvres ne sauraient faire, d&#39;abord parce qu&#39;ils n&#39;en ont pas le moyen, ensuite parce qu&#39;ils se croient en droit d&#39;accuser les dieux de ce qu&#39;ils ne leur ont pas envoyé de richesses. Ainsi les pauvres plutôt que les riches devraient supporter le châtiment de pareilles offenses. Comme je l&#39;ai déjà observé, cette maladie est donc divine comme toutes les autres ; mais chacune arrive également d&#39;après les lois naturelles, et celle-ci est produite chez les Scythes par la cause que je viens de lui assigner. Elle attaque aussi les autres peuples, car partout où l&#39;équitation est l&#39;exercice principal et habituel, beaucoup sont tourmentés d&#39;engorgements aux articulations, de sciatique, de goutte, et sont inhabiles aux plaisirs de l&#39;amour. Ces infirmités sont répandues chez les Scythes, qui deviennent les plus impuissants des hommes, et par les causes déjà signalées, et parce qu&#39;ils ont continuellement des culottes et qu&#39;ils passent à cheval la plus grande partie du temps. Ainsi, ne portant jamais la main aux parties génitales, et distraits par le froid et la fatigue des jouissances sexuelles, ils ne tentent la copulation qu&#39;après avoir perdu entièrement leur virilité. Voilà ce que j&#39;avais à dire sur la nation scythe.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Discussion&lt;/strong&gt;: Texte d&#39;anthropologie, paraît ancien. On remarque le fait de parler &lt;strong&gt;d&#39;un autre&lt;/strong&gt; peuple, avec une position de savoir ce qui est vrai et &lt;strong&gt;qui échappe&lt;/strong&gt; à ce peuple. Position extérieure, de scientificité. Texte universaliste ou culturaliste? Plutôt universaliste: Malgré l&#39;interêt sur la culture, une explication universelle est proposée. (Texte de l&#39;antiquité grecque, Hippocrate).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!example] Texte 2: &lt;strong&gt;Récit du Père Labat aux Antilles&lt;/strong&gt;&lt;br /&gt;
+&amp;quot;Un anglais, habitant de l&#39;ile de Saint-Christophe, appelé le major Crips, fut plus heureux que moi pour conserver ses nègres, dont la plupart étaient mines. Comme cet homme leur était fort rude, ainsi que le sont généralement tous les Anglais, le nombre de ses esclaves diminuait tous les jours; ils se pendaient les uns après les autres. Il fut enfin averti par un de ses engagés que tous ses nègres avaient résolu de s&#39;enfuir le jour suivant dans les bois et de s&#39;y pendre tous de compagnie pour retourner tous ensemble dans leur pays. Il vit bien que les paroles et les châtiments ne feraient que différer de quelques jours l&#39;exécution de leur résolution et qu&#39;il fallait un remède qui eût du rapport à la maladie de leur imagination. Il instruisit ses domestiques blancs de ce qu&#39;ils avaient à faire et leur ordonna de charger sur des charrettes des chaudières à sucre et à eau-de-vie, avec les autres appareils d&#39;une sucrerie, et de le suivre. Il s&#39;en alla dans le bois, il y trouva ses nègres qui disposaient leurs cordes pour se pendre : il s&#39;approcha d&#39;eux en tenant une corde à la main, leur dit de ne rien craindre, qu&#39;il avait su la résolution qu&#39;ils avaient prise de retourner en leur pays et qu&#39;il voulait les y accompagner, parce qu&#39;il y avait acheté une grande habitation où il voulait installer une grande sucrerie, où ils seraient bien plus propres que des nègres qui n&#39;avaient pas encore travaillé au sucre, mais qu&#39;il les avertissait que, n&#39;ayant plus peur qu&#39;ils puissent s&#39;enfuir, il les ferait travailler jour et nuit sans leur donner ni le samedi ni le dimanche ; que l&#39;économe qu&#39;il avait envoyé lui avait mandé qu&#39;il avait fait reprendre ceux qui s&#39;étaient pendus les premiers, et qu&#39;ne attendant ses ordres, il les faisait travailler les fers aux pieds.&lt;/p&gt;
+&lt;p&gt;Là-dessus les charrettes chargées ayant paru, les nègres ne doutèrent plus de la résolution de leur maître, d&#39;autant plus qu&#39;il les pressait de se pendre, feignant qu&#39;il n&#39;attendait que cela pour se pendre aussi et aller avec eux ; il avait même choisi son arbre et attaché sa corde.&lt;/p&gt;
+&lt;p&gt;Les nègres commencèrent alors à parler entre eux; la misère où était leurs compagnons les intimida aussi bien que la résolution de leur maître: ils vinrent se jeter à ses pieds, lui promirent de ne plus penser à retourner en leur pays et le supplièrent de faire revenir leurs camarades. Il fit le difficile pendant quelque temps, mais enfin ses domestiques blancs et ses engagés s&#39;étant aussi mis à genoux pour lui demander la même grâce, l&#39;accommodement se fit, à condition que s&#39;il s&#39;en trouvait un seul qui se pendit, tous les autres seraient pendus le lendemain pour aller travailler à la nouvelle sucrerie de Guinée. Ils le lui promirent avec serment. Ce serment se fait en prenant un peu de terre qu&#39;ils mettent sur leur langue, après avoir levé les yeux et les mains au ciel et frappé leur poitrine. Ils prétendent par cette cérémonie prier Dieu de les réduire en poussière comme la terre qu&#39;ils ont sur la langue, s&#39;ils n&#39;exécutent pas ce qu&#39;ils promettent, ou s&#39;ils ne disent pas la vérité. Le major Crips revint chez lui avec ses nègres, fort content de la réussite de son stratagème. Les nègres lui tinrent parole et ne se pendirent plus ; je ne sais si cette aventure ne l&#39;aura pas rendu plus modéré.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Discussion&lt;/strong&gt;: Récit sur un esclavagiste anglais et ses esclaves guinéens. Imaginaire des esclaves d&#39;un retour possible par la mort (pendaise). Le protagoniste leur enlève cet imaginaire (si vous vous pendez, je me pends avec vous et vous serez mes escalves en Guinée). Dimension de retour/non-retour au pays. Le protagoniste va tenter de &amp;quot;penser comme eux&amp;quot;, pour en - étant provocateur - &amp;quot;proposer un traitement à leur maladie&amp;quot; (le désir de suicide), et le remede paraît efficace. Question pour nous: est-ce que l&#39;efficacité de nos traitements suffit? Ici on voit que soutenue par des conceptions de l&#39;Autre montrueuses (possession, soumission, deshumanisation...).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!example] Texte 3: Texte d&#39;explorateur conquistador espagnol (Cabeza de Vaca) en Amérique.&lt;br /&gt;
+&amp;quot;Dans cette île dont j&#39;ai parlé on voulut nous faire physiciens sans nous faire subir d&#39;examen ni nous demander nos titres; ils soignent en soufflant sur le malade et c&#39;est avec le souffle et les mains qu&#39;ils chassent la maladie; ils nous ordonnèrent de faire de même et de nous rendre utiles ; nous, cela nous faisait rire, nous disions que c&#39;était se moquer de nous et que nous ne savions pas guérir; mais ils nous privèrent de nourriture jusqu&#39;à ce que nous fissions ce qu&#39;ils nous demandaient. Voyant notre entêtement, un Indien me dit que je ne savais pas ce que je disais quand j&#39;affirmais que je ne serais pas bon pour cela, car lui il savait: les pierres et les autres choses que l&#39;on trouve dans la nature ont bien une vertu; lui, avec une pierre chaude, en la passant sur l&#39;estomac, guérissait et chassait la douleur ; nous qui étions des hommes, nous avions sûrement plus de vertu et de pouvoir. Finalement, nous nous vîmes dans un tel besoin qu&#39;il nous fallut nous exécuter, sans craindre que personne nous en fit jamais. le reproche. Voici la façon qu&#39;ils ont de soigner: dès qu&#39;ils se voient malades ils appellent un médecin, et une fois guéris non seulement ils lui donnent tout ce qu&#39;ils possèdent, mais leurs parents aussi cherchent ce qu&#39;ils pourraient luidonner. Ce que le médecin fait consiste à pratiquer des incisions là où ils ont mal et à aspirer tout autour. Ils administrent des cautères de feu, chose qu&#39;ils tiennent pour extrêmement salutaire, je l&#39;ai expérimenté et m&#39;en suis bien trouvé ; après quoi ils soufflent sur l&#39;endroit quiles fait souffrir et ils croient qu&#39;avec cela le mal s&#39;en va. Nous, notre façon de soigner, c&#39;était de leur faire le signe de la croix et de leur souffler dessus, en récitant un Pater et un Ave, et en priant Dieu Notre-Seigneur du mieux que nous pouvions de leur donner la santé et de leur inspirer de bien nous traiter. Dieu Notre-Seigneur, dans sa miséricorde, voulut bien que tous ceux pour lesquels nous le suppliâmes dissent aux autres, après qu&#39;on leur eut fait le signe de la croix, qu&#39;ils étaient guéris et qu&#39;ils se portaient bien; grâce à quoiils nous traitaient bien, se privaient de nourriture pour nous en donner et ils nous offraient des peaux et autres petites choses.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Discussion&lt;/strong&gt;: Texte sur des pratiques de soins d&#39;&amp;quot;Indiens&amp;quot; constatées par un narrateur chrétien. Constate des pratiques de soins &amp;quot;étranges&amp;quot; qu&#39;ils sont obligés d&#39;épouser. On peut dire que celui qui s&#39;adresse au locuteur fait appel à une &amp;quot;efficacité symbolique&amp;quot; (&amp;quot;tu seras le soignant&amp;quot;). Certains soins peuvent être efficaces &lt;em&gt;parce que&lt;/em&gt; la personne vient d&#39;ailleurs. Dimension de respect de l&#39;être humain non retrouvee dans les autres textes (ici on peut parler de &amp;quot;rencontre&amp;quot;, échange sur ce que l&#39;on attend l&#39;un de l&#39;autre, qui n&#39;est pas tu &lt;em&gt;dois&lt;/em&gt; ou je &lt;em&gt;sais&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;📅 Jeudi &lt;strong&gt;12 Février 2026&lt;/strong&gt; (Cours 2)&lt;/p&gt;
+&lt;p&gt;Nous continuons avec l&#39;exploration de la manière de traiter la différence historiquement, comment ça a pu impacter la clinique (et comment ça continue de nos jours?) Exemple simple, traiter le traumatisme de quelqu&#39;un qui vient de Belgique (ou ayant droit au sejour ici) vs quelqu&#39;un qui vient d&#39;ailleurs.&lt;/p&gt;
+&lt;p&gt;Question principale:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;N&#39;y a-t-il pas toujours un poids du passé? Comment ce traitement differencié impacte la santé mentale?&lt;/li&gt;
+&lt;li&gt;Est-ce que des gens arrivent à être moins adaptés à cause de ce trauma subi?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Nous explorerons le lien entre les procédures légales spécifiques en Belgique (épreuves) et les symptômes présentés par les patients.&lt;/p&gt;
+&lt;p&gt;Quelle prise en considération de la différence, l&#39;origine particulière, différence de code, langue... de pays d&#39;où viendrait la personne, dans la clinique? Ça n&#39;a pas 100 ans, comme illustré par les textes de la semaine passée. Tres peu de litterature sur la sante mentale qui vienne d&#39;ailleurs, &amp;quot;ici (on peut trouver des analyses de la sante mentale des autres &amp;quot;chez eux&amp;quot;).&lt;/p&gt;
+&lt;p&gt;Pourquoi ne considérait-on pas la différence? Question de la diversité est récente. Avant la première guerre mondiale, on voyait moins de gens d&#39;ailleurs (vs migration importante deuxième moitié du 20ème siècle du sud de l&#39;europe, du nord d&#39;Afrique, etc.).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tension entre universalisme et particularisme (extrait de texte C. Levi-Strauss, cf article Race et histoire ecrit pour l&#39;UNESCO): l&#39;idée de penser que des gens sont de niveau de civilisation différent, plus digne d&#39;humanité que d&#39;autre, semble etre une propension chez d&#39;autres groupes humains (mais à contraster avec une tendance à la curiosité pour l&#39;autre).
+&lt;ul&gt;
+&lt;li&gt;D&#39;une part, l&#39;autre est different. D&#39;autre part, l&#39;autre doit disparaître (par ex. idéologie nazie).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;L&#39;&lt;em&gt;émotion initiale&lt;/em&gt; de la rencontre avec l&#39;autre (parfois rapidement effacée pour un dessein de pouvoir sur l&#39;autre).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Des types de différentiations peuvent être utiles, nécessaires:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Soi et l&#39;autre&lt;/li&gt;
+&lt;li&gt;Soignant vs. soigné, normal vs. pathologique.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Niveau d&#39;adhésion&lt;/strong&gt; (concept de psychologie sociale): Différences individuelles dans un groupe vis à vis des valeurs du groupe
+&lt;ul&gt;
+&lt;li&gt;On suppose pour les autres des manières de voir liées à leur origine et leur culture, et moins pour les notres.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Degrés d&#39;adhésion&lt;/strong&gt;: Comment la personne adhère à differentes idées du groupe?
+&lt;ul&gt;
+&lt;li&gt;Ex: Antagonisme entre modèles medicaux au sein de la culture occidentale (homéopathie vs. d&#39;autres), mais on minimise ceci pour d&#39;autres cultures (sorte de raccourci de différientiation).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;La rencontre va se faire de maniere privilégiée dans un sens (depuis le 16ème, même groupe qui va vers les autres, qui va &amp;quot;découvrir&amp;quot; les autres, pour plusieurs raisons: moyens techniques et scientifiques, besoins économiques, etc. Resultant en une &amp;quot;acaparation&amp;quot; de la terre entière quasiment par les européens, ce qu&#39;on peut dire influence la relation instaurée, la position prise (démarche de &amp;quot;civilisation&amp;quot; des peuples).&lt;/p&gt;
+&lt;h3 id=&quot;la-science&quot; tabindex=&quot;-1&quot;&gt;La science&lt;/h3&gt;
+&lt;p&gt;Au nom du discours de &lt;strong&gt;la science&lt;/strong&gt; se développe un discours differentialiste, raciste. Ce discours sera plus radical que celui de la religion (&amp;quot;si on se convertit c&#39;est OK). A partir du 18eme siecle deviendra dominant. (cf. Extrait de texte d&#39;Albert Memmi: Utilisation du discours de la science pour justifier ces actes (siècle des lumières).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Transitivisme: quand on applique quelque chose qu&#39;on a découvert quelque part ailleurs. En particulier, une théorie: celle de l&#39;évolution (sélection naturelle, survie du plus apte), son application a été mortifère. (version douce, en humanisme, la &amp;quot;culture&amp;quot; est amenée a disparaître. Plus radicalement, le groupe est amené à disparaitre). Lien avec l&#39;eugénisme (privilégier certaines caracteristiques d&#39;un groupe, essayant d&#39;accélerer de quelque façon la sélection naturelle) (tout ceci sans nécessairement une intention d&#39;élimination - toujours eu des moments qui ont resisté, moments de contradiction... par exemple, mouvement abolitioniste qui se met en place en meme temps que classification des espèces au 18ème).
+&lt;ul&gt;
+&lt;li&gt;Peu de logique de se nourrir de l&#39;autre, quand on est convaincu que stade de développement différents: démarche etait de &lt;em&gt;décrire&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La traite: dure &lt;strong&gt;trois siècles&lt;/strong&gt;, contexte d&#39;ethnocide (culture effacée), restaient peu de caractéristiques d&#39;humanité. Entreprise de traitement et perception de la différence qui est effroyable et dont les conséquences sont inmesurables. Peu de moyens de comprendre l&#39;effet que ces processus on eu psychiquement sur les gens.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le pouvoir de transformation, de survie, de création de culture des sujets humains est aussi intéressant et interpellant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Durant cette seconde colonisation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;décrivent, ramènent des oeuvres...&lt;/li&gt;
+&lt;li&gt;Brèche de la superiorité des savoir-faire occidentaux va commencer à se former: l&#39;&lt;strong&gt;art&lt;/strong&gt;. À partir de la fin du 19ème, on commence à collectionner, reprendre des masques, etc. &amp;quot;école primitiviste&amp;quot; et va se le réapproprier. Ex: &lt;a href=&quot;https://en.wikipedia.org/wiki/Les_Demoiselles_d%27Avignon&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Les demoiselles d&#39;Avignon&lt;/a&gt; de Picasso. On commence à donner de la valeur à des productions d&#39;autres groupes. Avec aussi un pouvoir de transformation.&lt;/li&gt;
+&lt;li&gt;Freud, collectionneur d&#39;art.
+&lt;ul&gt;
+&lt;li&gt;Développe une théorie sur l&#39;universalité de l&#39;inceste et l&#39;Oedipe, se reappropriant de concepts d&#39;anthropologues et faisant sa théorie psychologique (dans &lt;em&gt;Totems et tabous&lt;/em&gt;, 1911-1913).
+&lt;ul&gt;
+&lt;li&gt;Après sa théorie du fantasme. Est ravi de trouver un exemple dans la culture antique. Reprend des récits d&#39;anthropologie évolutionniste. Avec certaines de ces descriptions qui ont de la valeur.&lt;/li&gt;
+&lt;li&gt;Freud retrouve description de pratiques qui se fait aussi bien en amérique du nord qu&#39;en Océanie, la pratique du totemisme (pratique proto religieuse, invitant les membres d&#39;un groupe a choisir un animal comme étant celui dont ils se réclament, erigent un totem en honneur de cet animal: &amp;quot;le clan des élans&amp;quot;, des hibous, etc.). Dans le meme totem, pas de rapports sexuels entre membres.
+&lt;ul&gt;
+&lt;li&gt;Lecture de texte sur les totems: hypothese que tabou mis en place de l&#39;exogamie et interdit de l&#39;inceste et naissance de la religion (culpabilité vis a vis de celui qui est censé incarner la loi et qui a ete immolé) (cf. &lt;em&gt;Moise et monotheisme&lt;/em&gt; de Freud).&lt;/li&gt;
+&lt;li&gt;Lecture de texte (psychanalistes contemporains): Freud abandonnait vue de superiorité vis à vis cultures primitives, il les regardait comme un mode de survivance des religions, sur même pied d&#39;egalité (modèle universel). Projet de regarder l&#39;autre pour apprendre sur nous mêmes, on insiste sur ce qui fait notre humanité commune.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;📅 Jeudi &lt;strong&gt;19 Février 2026&lt;/strong&gt; (Cours 3 - L&#39;état de la psychiatrie coloniale à l&#39;époque (suite sur Freud))&lt;/p&gt;
+&lt;p&gt;📅 Jeudi &lt;strong&gt;26 Février 2026&lt;/strong&gt; (Cours 4 - consacré à l&#39;ethnopsychiatrie)&lt;/p&gt;
+&lt;p&gt;📅 Jeudi &lt;strong&gt;5 mars 2026&lt;/strong&gt; (Cours x - avocate)&lt;/p&gt;
+
+            </content>
+            <link href="https://santihago.github.io/2-class-notes/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/" >
+        </entry>
+        <entry>
+            <title>
+                2026 - PSYC-E 433 - Pratiques cliniques en institution
+                
+            </title>
+            <updated>2026-02-17T22:59:13.450Z</updated>
+            <id>https://santihago.github.io/2-class-notes/2026-psyc-e-433-pratiques-cliniques-en-institution/</id>
+            <content type="html">
+                &lt;blockquote&gt;
+&lt;p&gt;[!tldr] Résumé&lt;br /&gt;
+Ce cours vise à offrir une présentation des différentes approches cliniques qui s’appuient spécifiquement sur le dispositif institutionnel. D’un point de vue historique, il proposera une analyse de l’évolution de ces pratiques depuis la psychothérapie institutionnelle. Du point de vue clinique et théorique, il s’arrêtera sur les principales questions qui permettent d’éclairer ce type de pratique : le cadre et les modalités d’interventions, le type de patients et de pathologies concernés, les modalités d’évaluation de la pratique, le contexte institutionnel élargi (notamment le travail en réseau), etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!info] Évaluation&lt;br /&gt;
+Examen à questions fermées de type vrai ou faux (en présentiel). Pas de points négatifs. 20 questions, normalement.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;But est de départager &amp;quot;qui est venu au cours et qui non&amp;quot; (tous les items auront l&#39;air plausibles, il sera nécessaire de comprendre l&#39;approche critique démontrée en cours).&lt;/li&gt;
+&lt;li&gt;On se concentrera lors de la dernière rencontre sur la préparation de l&#39;examen, elle amènera des items d&#39;exemple.&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!tip] Lectures recommandées (aucun caractère obligatoire)&lt;br /&gt;
+*&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;introduction-methode-et-modalites-de-travail-pragmatique-evaluation&quot; tabindex=&quot;-1&quot;&gt;🏷️ Introduction, méthode et modalités de travail, pragmatique, évaluation&lt;/h2&gt;
+&lt;p&gt;📅 &lt;strong&gt;9 Février 2026&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Calendrier de cours (le 6 avril est annulé, une séance supplémentaire sera peut-être ajoutée):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;9-16-23 Fev / 2-9-16-23-30 mars / 13-20 avril / 11 mai /  1-8 juin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Contenu du cours est sur l&#39;UV, mais aussi sur un site externe:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le site (créé par Cécile Glineur et Danloy) en général permet d&#39;explorer des concepts psychanalytiques.&lt;/li&gt;
+&lt;li&gt;La page réservée aux étudiants du site « Bouts de savoir », à l’onglet « Pratiques cliniques en institutions : cours 2026 » &lt;a href=&quot;https://cecemelprod.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Bouts de Savoir – Quelques concepts lacaniens parlés par des psychanalystes&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://cecemelprod.com/cours-pratiques-cliniques-en-institution/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://cecemelprod.com/cours-pratiques-cliniques-en-institution/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mot de passe: ULB2025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Habituellement, Fouchet travaille a partir de documentaire &amp;quot;Urgences&amp;quot;. Cette fois, le travail sera en plusieurs temps différents:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Partie 1: 16 février, 23 février, 2 mars. Repères et littérature.&lt;/li&gt;
+&lt;li&gt;Partie 2: documentaires, avec un.e invité après chaque diffusion (possible qu&#39;on doive en regarder certains nous-mêmes si la diffusion en cours n&#39;est pas possible)
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;État limite&lt;/strong&gt; (&lt;a href=&quot;https://www.arte.tv/fr/videos/111769-000-A/etat-limite&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;ARTE&lt;/a&gt;) (Nicolas Peduzzi , 2023).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A ciel ouvert&lt;/strong&gt; (Mariana Otero, 2013): réalisé à Tournai, au Courtil. Documentaire qui tente de saisir à quel reel institutionnel sont confrontes les bénéficiaires, résidents soignants... mais montrant aussi des morceaux choisis de ce qui fait le travail en dehors de ce contact avec les bénéficiaires (réunions d&#39;equipe, etc).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;La nef des fous&lt;/strong&gt; (Éric D’Agostino, &amp;amp; Patrick Lemy, 2014), avec invité Jonathan Leroy (psychanalyste à Bruxelles travaillant en milieu carcéral, dans la prison où le documentaire a été tourné) .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Partie 3:
+&lt;ul&gt;
+&lt;li&gt;20 avril: Deux intervenantes (cliniciennes responsables d&#39;institutions), qui présenteront leur vision de la pratique en institution&lt;/li&gt;
+&lt;li&gt;11 mai: cloture, questions/réponses.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Elle, Cécile Glineur, d&#39;orientation psychanalitque. Remplace Fouchet cette année. Elle travaille au CHU Saint-Pierre, exerce une pratique destinée aux tout venants.&lt;br /&gt;
+Ce cours sera d&#39;orientation psychanalytique lacanienne (appliquée), rappel de certaines notions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Psychanalyse appliquée&lt;/strong&gt;, plutôt que &amp;quot;psychanalyse pure&amp;quot; (qui elle considère les gens &lt;em&gt;un par un&lt;/em&gt;, se caractérisant parfois par la position allongée, la fréquence soutenue des seances... ou on s&#39;attache a donner une place centrale a sa propre parole, démarche différente des démarches type problème-solution qu&#39;on trouve souvent dans le domaine de psychologie. Fondement méthodologique est l&#39;association libre, mais constat que l&#39;association libre n&#39;est pas &lt;em&gt;libre&lt;/em&gt; (&lt;strong&gt;résistances&lt;/strong&gt; - embarras, honte -, &lt;strong&gt;transfert&lt;/strong&gt;..., et la &lt;strong&gt;chaîne de signifiant n&#39;est pas libre non plus&lt;/strong&gt;. ).&lt;/li&gt;
+&lt;li&gt;Lacan a poursuivi le travail de Freud, au depart de la psychanalyse pure, mais s&#39;en est distingue sur certains points, formant deux écoles: Ecole post-Freudienne et école Lacanienne. Lacan est venu faire rupture sur certains points:
+&lt;ul&gt;
+&lt;li&gt;La durée des séances (post-Freudiens respecte les durées, 45 min a l&#39;origine, parfois 40, mais chez les lacaniens la durée depend de ce qu&#39;il se passe pendant la seance, peuvent être écourtées).&lt;/li&gt;
+&lt;li&gt;La formation du psychanalyste: Post freudiens, cure didactique, on est ensuite reconnu psychanalyste par son propre psychanalyste et d&#39;autres. Chez les lacaniens, pas de distinction a l&#39;origine. Analysant estime qu&#39;il est suffisamment satisfait de son analyse, sans souhait de devenir psychanalyste lui-meme. Ou choix de mettre fin a une tranche d&#39;analyse. Procédure de la &lt;a href=&quot;https://fr.wikipedia.org/wiki/Passe_(psychanalyse)&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;passe&lt;/a&gt;: consiste pour l&#39;analysant de mettre un terme a son analyse, et pouvoir produire une logification de sa trajectoire analytique, et pouvoir émettre un apport théorico-clinique pour la théorie de la psychanalyse.&lt;/li&gt;
+&lt;li&gt;Points clés de la méthode lacaniennes:
+&lt;ul&gt;
+&lt;li&gt;Question du désir&lt;/li&gt;
+&lt;li&gt;Question du transfert dans la pratique clinique (pas contre transfert, les deux transferts sont consideres de natures similaire)&lt;/li&gt;
+&lt;li&gt;Vif souci d&#39;essayer de saisir la logique subjective des patients avec lesquels on est en lien (moins considerer le projet de l&#39;institution, plutôt &lt;em&gt;qui sont les bénéficiaires?&lt;/em&gt; (un par un)). La ou beaucoup d&#39;instituions se questionnent sur comment traiter le patient (avec position de connaissance, savoir), on traite sa propre posture, sa propre relation au savoir... pour se faire autant que possible partenaire des personnes dans l&#39;institution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Prendre appui sur ce corpus pour pour orienter le travail de terrain (essayant de gommer les nominations de savoir spécifique, ne pas distinguer entre disciplines respectives... par exemple les différents métiers d&#39;une equipe multi-disciplinaire). On se réfère aux &amp;quot;intervenants&amp;quot; généralement, partagent les mêmes tâches, ne sectorisent pas leur pratique... tous rapportent leur clinique en réunion d&#39;équipe au même titre que les autres.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Interview d&#39;Olivier Challe, sur le travail psychanalytique en institution:&lt;/p&gt;
+&lt;div class=&quot;youtube-embed&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/u2IIm0u61gk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;Olivier Challe est responsable clinique au Wops de nuit, un centre thérapeutique de nuit:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Institution qui répond au malaise de ce que les gens amènent avec eux comme difficultés (sans grille pre établie des difficultés), d&#39;y répondre par un accueil, un accompagnement &lt;strong&gt;au cas-par-cas&lt;/strong&gt;. Déceler la vraie difficulté de la personne pour decider au fur et a mesure comment accompagner ces personnes.&lt;/li&gt;
+&lt;li&gt;Pari de &amp;quot;possibilité d&#39;une rencontre&amp;quot;, en étant le plus humble possible:
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;&lt;strong&gt;Le symptôme est un travail du sujet&lt;/strong&gt;&amp;quot;: Pari qu&#39;ils sont &lt;strong&gt;déjà en train d&#39;essayer&lt;/strong&gt; de traiter ce malaise, qu&#39;ils essayent de trouver une solution, mais que s&#39;ils ont besoin d&#39;une institution, c&#39;est que leurs tentatives ne marchent pas. Donc penser à adapter pour que ce soit plus vivable (par exemple, celui/celle qui ne peut pas sortir de chez soi ou voir ses voisins, ce n&#39;est pas une solution à terme..., tenter d&#39;adapter pour rendre le monde dans lequel vit cette personne moins feroce, ou du moins &lt;em&gt;faire exister&lt;/em&gt; ce monde qui semble ne pas exister veritablement pour la personne).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abord non-déficitaire&lt;/strong&gt;: ces personnes qui fréquentent ne sont pas considérées comme déficitaires. La raison que la personne soit là est qu’il ou elle ne peut plus faire autrement. (?).&lt;/li&gt;
+&lt;li&gt;Repérer quel est &lt;strong&gt;l&#39;Autre du sujet&lt;/strong&gt;: Essayer de le lire à travers de ce que la personne amène. En institution, ceci peut être observé dans différents contextes (sans besoin d&#39;attendre le moment du rendez-vous). &lt;em&gt;Le petit autre&lt;/em&gt;: la façon dont le sujet construit son semblable, cliniquement toujours renseignant, écouter comment il construit l&#39;autre, plutôt que deconstruire la veracite de son propos (même syntaxiquement). Moins ce qu&#39;il se passe et plus sa manière de le vivre. &lt;em&gt;Le grand Autre&lt;/em&gt;: champ symbolique, qui nous pre-existe. Ce qui caracterise l&#39;humain c&#39;est d&#39;être partiellement attrapé et surdeterminé par le signifiant, le champ symbolique. Plus concrètement, cette determination par le synmbolique qui est très restreignante pour nous tous, même si on la perçoit pas la plupart du temps. Par exemple, le prénom que l&#39;on porte (censé nous représenter, donné par quelqu&#39;un d&#39;autre).
+&lt;ul&gt;
+&lt;li&gt;Exemple de rapport à l&#39;autre, donné par Olivier Challe: quelqu&#39;un qui est dérangé par le bruit du voisin de chambre, il va s&#39;acheter un casque pour écouter de la musique classique.&lt;/li&gt;
+&lt;li&gt;Psychanalyse apploquee c&#39;est Aller retour entre ce que les residents nous enseignent sur leur malaise et la lecture qu&#39;on peut en faire.
+&lt;ul&gt;
+&lt;li&gt;par exemple, solution de proposer boules quies, se fache parce qu&#39;on lui propose une solution pour ne pas ecouter plutot que de faire arreter l&#39;autre de renfler. Solutions pleines de bon sens dont il faut parfois s&#39;abastenir.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://santihago.github.io/2-class-notes/2026-psyc-e-433-pratiques-cliniques-en-institution/" >
         </entry>
 </feed>
