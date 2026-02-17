@@ -1,8 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-17T23:39:36.928+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-17T23:51:56.897+01:00"}
 ---
-
-
 
 > [!tldr] Résumé
 > Le cours aborde les questions des liens familiaux et de la transmission intergénérationnelle des traumatismes au sein des groupes et des familles. Elles sont envisagées dans le contexte des couples et familles contemporaines, souvent désignées par les sociologues et les philosophes comme témoignant d'un affaiblissement du lien de filiation et de la capacité à transmettre. Cette caractéristique sera mise en regard du contexte historique et socio-culturel au sein duquel elle émerge. La clinique nous permet de relever des situations où l'organisation même des liens ou de la filiation semble découler de la peur de transmettre. L'impact de cette peur pour le groupe et les individus qui le composent sera analysé à partir de nombreux exemples.   Il sera ensuite question des enjeux psychiques individuels et groupaux consécutifs aux traumatismes. Les pistes thérapeutiques seront abordées à travers de nombreuses situations cliniques. Ces illustrations  permettent d'une part d'explorer et de comprendre les dynamiques individuelles et relationnelles consécutives aux traumatismes, d'autre part de montrer l'intérêt de l'approche systémique dans la clinique du trauma. La psychothérapie est une rencontre inter-culturelle et sociopolitique qui impose au clinicien d'interroger son positionnement et les représentations qui en découlent.  Différents concepts et outils systémiques ( recadrage, génogrammes, objets flottants, éthique relationnelle, partialité multidirectionnelle...) seront présentés pour permettre d'illustrer ce que l'approche systémique constructiviste peut apporter au psychothérapeute qui souhaite s'engager dans la clinique du trauma en s'utilisant lui-même comme activateur du changement.
@@ -43,28 +41,24 @@ Elle commence à travailler au moment où les violences intrafamiliales entrent 
 
 Elle participe à la création des premières équipes SOS Enfants en Belgique. À Charleroi, une collaboration étroite se met en place entre l’hôpital, la justice et les services spécialisés. Il faut inventer des dispositifs thérapeutiques, réfléchir aux signalements judiciaires, articuler les interventions. C’est une période de levée du silence. On commence à parler de maltraitance, de violence conjugale, puis progressivement d’abus sexuels et d’inceste. Au début, les signalements concernent surtout la négligence et la violence physique, plus visibles. Puis, en quelques années, les révélations d’abus sexuels augmentent de manière impressionnante.
 
-La société n’était pas prête à entendre ces réalités. Il faut du temps pour voir, entendre et croire. Elle fait un parallèle avec des mouvements plus récents comme MeToo : les faits existaient déjà, mais deviennent soudain visibles.
+La société n’était pas prête à entendre ces réalités. Il faut du temps pour voir, entendre et croire. Elle fait un parallèle avec des mouvements plus récents comme MeToo : les faits existaient déjà, mais deviennent soudain visibles. Elle souligne combien les théories sont liées à leur époque. 
 
 **Les défis cliniques et institutionnels**
 
 Identifier une maltraitance ne signifie pas que les parents reconnaissent les faits. Ils sont souvent dans le déni, sur la défensive. Les signalements judiciaires compliquent la relation de confiance : les professionnels sont perçus comme une “antichambre de la justice”.
 
-Elle se forme à la thérapie familiale avec le souci de ne pas réduire les parents à des “mauvais parents”, mais de **réfléchir à ce qui peut être sauvé, aux liens d’attachement possibles, aux compétences parentales à restaurer**. Certaines situations sont sans issue, mais elles sont rares. La plupart nécessitent un travail complexe et nuancé.
-
-Quand les cas d’inceste apparaissent, l’équipe se sent particulièrement démunie. Il n’y a pas de modèles théoriques solides. Les représentations dominantes sont encore marquées par les **théories psychanalytiques du fantasme**.
-
->[!info]
->{A faire: encadré sur ces théories, pour moi-même comprendre...?}
-
-C’est dans ce contexte qu’on lui propose un poste d’assistante-chercheuse avec doctorat. Elle choisit de travailler sur l’inceste, en lien direct avec sa pratique clinique. C’est le point de départ de son intérêt pour la transmission intergénérationnelle des traumatismes.
+Elle se forme à la thérapie familiale avec le souci de ne pas réduire les parents à des “mauvais parents”, mais de **réfléchir à ce qui peut être sauvé, aux liens d’attachement possibles, aux compétences parentales à restaurer**. Certaines situations sont sans issue, mais elles sont rares. La plupart nécessitent un travail complexe et nuancé. C’est dans ce contexte qu’on lui propose un poste d’assistante-chercheuse avec doctorat. Elle choisit de travailler sur l’inceste, en lien direct avec sa pratique clinique. C’est le point de départ de son intérêt pour la transmission intergénérationnelle des traumatismes.
 
 **Freud, le trauma et le poids d’une époque**
 
+Quand les cas d’inceste apparaissent, l’équipe se sent particulièrement démunie. Il n’y a pas de modèles théoriques solides. Les représentations dominantes sont encore marquées par les **théories psychanalytiques du fantasme** (Oedipe, fantasmes, filles qui séduisent leur pères... manquant de référants solides permettant de travailler la question).
+
 Au départ, Freud élabore la “théorie de la séduction” : il croit ses patientes qui parlent d’abus sexuels subis dans l’enfance et relie leurs symptômes à ces traumatismes réels ([théorie de la séduction](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_s%C3%A9duction), névrose comme étant la conséquence d'un traumatisme infantil), mais cette théorie est mal accueillie par ses pairs intialement. Face à la pression du milieu médical bourgeois, il fait marche arrière, et par là construit la psychanalyse (évènements traumatiques transformés en fantasmes, avec donc une dimension insconsciente). Cette volte-face ouvre la voie à la psychanalyse et à la théorie de l’inconscient.
 
-Elle évoque aussi Farenzi, qui, lui, n’a jamais abandonné l’idée du traumatisme réel. Ces débats ont marqué durablement les représentations cliniques, par exemple autour de l’hystérie, terme encore utilisé de manière péjorative par certains médecins.
+>[!info]
+>A faire: encadré sur ces théories, pour moi-même comprendre...?
 
-Elle souligne combien les théories sont liées à leur époque. Certaines choses sont inaudibles à un moment donné. Il faut que la société soit prête pour entendre.
+Elle évoque aussi Farenzi, qui, lui, n’a jamais abandonné l’idée du traumatisme réel. Ces débats ont marqué durablement les représentations cliniques, par exemple autour de l’hystérie, terme encore utilisé de manière péjorative par certains médecins.
 
 **Croire les victimes : un enjeu psychologique et éthique**
 
@@ -74,11 +68,9 @@ Elle insiste sur la responsabilité des professionnels. Même quand la société
 
 **Transmission et traumatismes**
 
-Sa thèse sur l’inceste l’amène à travailler plus largement sur la transmission intergénérationnelle : comment les traumatismes se transmettent (ou ne se transmettent pas) d’une génération à l’autre. Par rapport à l'inceste, les cliniciens étaient perdus, sans modèle théorique convenable (Oedipe, fantasmes, filles qui séduisent leur pères... manquant de référants permettant de travailler la question). 
+Sa thèse sur l’inceste l’amène à travailler plus largement sur la transmission intergénérationnelle : comment les traumatismes se transmettent (ou ne se transmettent pas) d’une génération à l’autre. Elle élargit ensuite ses recherches aux tentatives de suicide à l’adolescence, aux troubles alimentaires, aux violences de masse, aux génocides (Shoah, Rwanda, Burundi). Elle s’intéresse à la manière dont les groupes se réorganisent après un traumatisme.
 
-Elle fait son assistanat-doctorat sur l'inceste. Elle élargit ensuite ses recherches aux tentatives de suicide à l’adolescence, aux troubles alimentaires, aux violences de masse, aux génocides (Shoah, Rwanda, Burundi). Elle s’intéresse à la manière dont les groupes se réorganisent après un traumatisme.
-
-Elle rappelle toutefois un point essentiel : tout ne se transmet pas. Beaucoup de personnes sont résilientes. En pratique psychopathologique, on voit surtout les situations les plus graves, mais il ne faut pas généraliser à l’ensemble de la population.
+Elle rappelle toutefois un point essentiel : **tout ne se transmet pas**. Beaucoup de personnes sont résilientes. En pratique psychopathologique, on voit surtout les situations les plus graves, mais il ne faut pas généraliser à l’ensemble de la population.
 
 **Ses influences personnelles**
 
