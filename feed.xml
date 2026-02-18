@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://santihago.github.io">
-    <title>My notes</title>
+    <title>📝</title>
     <link href="https://santihago.github.io/feed.xml" rel="self" >
     <link href="https://santihago.github.io" >
-    <updated>2026-02-18T13:20:46Z</updated>
+    <updated>2026-02-18T13:22:46Z</updated>
     <id>https://santihago.github.io</id>
         <entry>
             <title>
