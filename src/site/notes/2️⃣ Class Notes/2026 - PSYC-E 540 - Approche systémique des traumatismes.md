@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T14:19:37.547+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T14:30:24.940+01:00"}
 ---
 
 > [!tldr] Résumé
@@ -421,7 +421,9 @@ Travaux de [Dori Laub](https://en.wikipedia.org/wiki/Dori_Laub). L'[art du traum
 
 ----
 
-📅 Vendredi **12 Février 2026** - JL Brackelaire. **Ce qu'appellent les traumatismes psychosociaux suite aux biolences politiques: des espaces médiateurs de reconnaissance et de recréation de la responsabilité sociale anéantie**.
+## 2. Espaces médiateurs de reconnaissance et de recréation de la responsabilité sociale anéantie
+
+📅 Vendredi **12 Février 2026** - JL Brackelaire. **Ce qu'appellent les traumatismes psychosociaux suite aux violences politiques: des espaces médiateurs de reconnaissance et de recréation de la responsabilité sociale anéantie**.
 
 Rappel de la leçon 1: faire histoire ensemble, est une formule paradoxale mettant l'accent sur un certain type de relation que l'on peut viser dans le travail clinique et dans la vie en général, consitant à mettre l'accent sur la relation ET travailler la relation elle meme (faire travailler la relation sur elle meme). Avec une visée "chorale", en référence à l'expression de Jeanqqch. Hypothèse traversant la leçon: la visée chorale, le "faire histoire ensemble", a un sens pertinent ou approprié dans des situations où on travaille avec des personnes pour qui la sociabilité a été cassée suite à des traumas (psycho)sociaux. Avec une visée politique, quelque soit l'échelle (même dans une relation à deux). Ill a illustré en 3 situations différentes (1. violence interculturelle, 2. comment créer de la culture entre nous et exil sans asile (partager la precarité de l'exil), 3. recréer la sociabilité à partir du trauma) Dans quels espaces? Quelles sont les caractéristiques des espaces méiateurs? (se situant entre le psychique et social): 1. Espaces alternatifs qui offrent un autre point de vue 2. Espaces politiques (faisant porter la relation sur elle même, et moins à agir d'un acteur sur l'autre) 3. Où l'on peu tenter de donner forme au néant du trauma.
 

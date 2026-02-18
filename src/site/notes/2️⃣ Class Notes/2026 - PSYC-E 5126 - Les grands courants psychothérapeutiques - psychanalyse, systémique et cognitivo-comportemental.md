@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","created":"2026-01-22T14:37:36.284+01:00","updated":"2026-02-17T23:43:32.994+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","created":"2026-01-22T14:37:36.284+01:00","updated":"2026-02-18T00:01:30.510+01:00"}
 ---
 
 > [!tldr] Résumé
@@ -17,6 +17,8 @@ Il s'agit d'une moyenne arithmétique simple à partir des résultats obtenus po
 L'étudiant·e devra obtenir une note minimum de 10/20 à l'examen portant sur chaque partie. Toutefois les parties réussies et donc validées, peuvent être reportées à la session suivante.
 
 # Partie Systémique - Prof. Isabelle Duret
+
+
 
 > [!info] Évaluation et modalités de cours:
 > - Le cours est enregistré
@@ -279,7 +281,7 @@ D'après ceux de l'école Palo Alto, un problème est ce qui est vécu comme un 
 
 Comment choisir dans quelle orientation adresser un patient (ou encore TCC)? Repérer les specificités de la situation qui nous font pencher vers l'une ou l'autre approche (ces deux approches mises en avant ici car utilisées dans le livre de Neuburger).
 
-Visionnage d'une video de Paul Watzlawik: Conférence: *Quand la solution est le problème*. Stuttgart, 1987. [YouTube](https://www.youtube.com/watch?v=3lx3EjE0Trw)
+Visionnage d'une video de Paul Watzlawik: Conférence: *Quand la solution est le problème*. Stuttgart, 1987 ([YouTube](https://www.youtube.com/watch?v=3lx3EjE0Trw))
 <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/3lx3EjE0Trw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>)
 
 Ce groupe de Palo Alto a été à l'origine d'une revue, "Family Process", qui dans les années 60 a été une des premières revues dans le domaine, et qui existe encore.
