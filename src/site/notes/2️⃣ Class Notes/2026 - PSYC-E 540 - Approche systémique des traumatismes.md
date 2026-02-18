@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T14:13:24.246+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T14:19:37.547+01:00"}
 ---
 
 > [!tldr] Résumé
@@ -7,12 +7,17 @@
 > 
 > Il sera ensuite question des enjeux psychiques individuels et groupaux consécutifs aux traumatismes. Les pistes thérapeutiques seront abordées à travers de nombreuses situations cliniques. Ces illustrations  permettent d'une part d'explorer et de comprendre les dynamiques individuelles et relationnelles consécutives aux traumatismes, d'autre part de montrer l'intérêt de l'approche systémique dans la clinique du trauma. La psychothérapie est une rencontre inter-culturelle et sociopolitique qui impose au clinicien d'interroger son positionnement et les représentations qui en découlent.  Différents concepts et outils systémiques ( recadrage, génogrammes, objets flottants, éthique relationnelle, partialité multidirectionnelle...) seront présentés pour permettre d'illustrer ce que l'approche systémique constructiviste peut apporter au psychothérapeute qui souhaite s'engager dans la clinique du trauma en s'utilisant lui-même comme activateur du changement.
 > 
-> Les deux cours (celui de I. Duret et celui de J-L Brackelaire) seront enregistrés.
+> Cette année, la Faculté met à l’honneur **Jean-Luc Brackelaire**, Professeur de psychologie clinique et d’anthropologie culturelle et sociale à l’UCLouvain et à L’UNamur, dans le cadre de la **Chaire Francqui au titre belge 2025**. Les étudiant.es inscrit·es au cours **Approche systémique des traumatismes (PSYC-E-540)** de la Professeure Isabelle Duret sont convié·es à suivre l’intégralité de ses leçons.
+
+
+Les deux cours (celui de I. Duret et celui de J-L Brackelaire) seront enregistrés.
 
 > [!info] Évaluation
 >Sur 20 (15 VF + 5 QRM ou QCM)
 
+
 # Partie 1. Cours principal (Isabelle Duret)
+
 
 > [!tip] Lectures
 >  **Lectures obligatoires:**
