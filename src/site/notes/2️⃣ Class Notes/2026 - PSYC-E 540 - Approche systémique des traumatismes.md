@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T14:30:24.940+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T14:36:50.886+01:00"}
 ---
 
 > [!tldr] Résumé
@@ -299,7 +299,7 @@ Définitions:
 ----
 # Partie 2. Invité spécial Chaire Francqui (Jean-Luc Brackelaire)
 
-📅 Lundi **9 Février 2026** - J.L. Brackelaire : Faire histoire ensemble. Comment recréeer la socialité après sa destruction?
+📅 Lundi **9 Février 2026** - Cours 1 - J.L. Brackelaire : Faire histoire ensemble. Comment recréeer la socialité après sa destruction?
 ## 🏷️ Introduction 
 
 Son but est de rassembler une preoccupation principale qui l'a occupé ces 20 dernières annees, dans differents pays impliquant des doctorats de recherche-action. Formule qui renvoit a des terrains de recherche qui ont l'implique des violences extremes, et suites de ces violences: destruction d'une part, et recréation du lien, de l'autre. A quelles conditions ces liens peuvent-ils se recréer? Cette formulation de la problématique est déja un resultat de ce travail. Travail 2006-2016 du cote rwandais. Creation Espaces aux caracteristiques singulieres, des espaces  mediateurs ou de mediation communautaires (en equateur entre 2016-2025). 
@@ -421,9 +421,9 @@ Travaux de [Dori Laub](https://en.wikipedia.org/wiki/Dori_Laub). L'[art du traum
 
 ----
 
-## 2. Espaces médiateurs de reconnaissance et de recréation de la responsabilité sociale anéantie
+## 🏷️ II. Espaces médiateurs de reconnaissance et de recréation de la responsabilité sociale anéantie
 
-📅 Vendredi **12 Février 2026** - JL Brackelaire. **Ce qu'appellent les traumatismes psychosociaux suite aux violences politiques: des espaces médiateurs de reconnaissance et de recréation de la responsabilité sociale anéantie**.
+📅 Vendredi **12 Février 2026** - Cours 2 - JL Brackelaire: **Ce qu'appellent les traumatismes psychosociaux suite aux violences politiques: des espaces médiateurs de reconnaissance et de recréation de la responsabilité sociale anéantie**.
 
 Rappel de la leçon 1: faire histoire ensemble, est une formule paradoxale mettant l'accent sur un certain type de relation que l'on peut viser dans le travail clinique et dans la vie en général, consitant à mettre l'accent sur la relation ET travailler la relation elle meme (faire travailler la relation sur elle meme). Avec une visée "chorale", en référence à l'expression de Jeanqqch. Hypothèse traversant la leçon: la visée chorale, le "faire histoire ensemble", a un sens pertinent ou approprié dans des situations où on travaille avec des personnes pour qui la sociabilité a été cassée suite à des traumas (psycho)sociaux. Avec une visée politique, quelque soit l'échelle (même dans une relation à deux). Ill a illustré en 3 situations différentes (1. violence interculturelle, 2. comment créer de la culture entre nous et exil sans asile (partager la precarité de l'exil), 3. recréer la sociabilité à partir du trauma) Dans quels espaces? Quelles sont les caractéristiques des espaces méiateurs? (se situant entre le psychique et social): 1. Espaces alternatifs qui offrent un autre point de vue 2. Espaces politiques (faisant porter la relation sur elle même, et moins à agir d'un acteur sur l'autre) 3. Où l'on peu tenter de donner forme au néant du trauma.
 
@@ -534,7 +534,26 @@ Fonction (de restauration) publique: mediation necessaire d'une instance de resp
 Narration de scene (tres detaillee) vs scene de la torture (silence, doit etre devinee, indicible, mots allusifs, indirectements, permettant tout de meme le dialogue avec la chercheuse). interessant que les deux scenes soient la, l'inversion de l'une par l'autre.
 
 ### 5. Appels à des espaces de reconnaissance et de recréation de la responsabilité anéantie
+
+plus ou moins sauté en cours, juste résumé vite fait.
 ### 6. Conclusion: ouvertures à propos des espaces cliniques et de recherche dans ce champ
 
-----
+Plus ou moins sauté en cours, juste résumé vite fait.
+
+
+📅 Lundi **23 Février 2026** - Cours 3 - JL Brackelaire: **Rôles des psychologues cliniciens lorsqu'il s'agit d'acommpagner et écouter ce qui est traumatique socialement et psychiquement.**
+## 🏷️ III. 
+
+
+
+
+
+
+
+📅 Lundi **23 Février 2026** - Cours 4 - JL Brackelaire: **Les chercheurs face à la violence destructrice - comment créer des espaces de recherche?**
+## 🏷️ IV. 
+
+📅 Lundi **9 mars 2026** - Cours 5 - JL Brackelaire: **étudiants et doctorants, comment on se forme à ce champ de la recherche ou du travail clinique avec les violences extrêmes?**
+## 🏷️ V. 
+
 
