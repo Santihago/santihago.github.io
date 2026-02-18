@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T12:47:17.040+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T14:11:09.973+01:00"}
 ---
 
 > [!tldr] Résumé
@@ -284,3 +284,249 @@ Définitions:
 >    Il exprime le désir de retour à un état fusionnel, protégé, antérieur aux conflits et aux séparations. Il renvoie à la nostalgie d’un état originaire sans manque.
 
 📅 Vendredi **20 Février 2026** - Cours 3 - I. Duret
+
+
+
+
+
+----
+
+# Partie Jean-Luc Brackelaire - Chaire Francqui
+
+📅 Lundi **9 Février 2026** - J.L. Brackelaire : Faire histoire ensemble. Comment recréeer la socialité après sa destruction?
+## 🏷️ Introduction 
+
+Son but est de rassembler une preoccupation principale qui l'a occupé ces 20 dernières annees, dans differents pays impliquant des doctorats de recherche-action. Formule qui renvoit a des terrains de recherche qui ont l'implique des violences extremes, et suites de ces violences: destruction d'une part, et recréation du lien, de l'autre. A quelles conditions ces liens peuvent-ils se recréer? Cette formulation de la problématique est déja un resultat de ce travail. Travail 2006-2016 du cote rwandais. Creation Espaces aux caracteristiques singulieres, des espaces  mediateurs ou de mediation communautaires (en equateur entre 2016-2025). 
+
+"Faire histoire ensemble" semble etre un paradoxe, "trop beau", un impossible. Nous savons que nous vivons tous des histoires différentes et *dans* des histoires différentes. La notion d'histoire est diverse, divergeante, incomparables, a géometrie variable: est-ce possible de faire histoire ensemble? Et comment?
+
+Expériences extrêmes où il est difficile de distinguer psycho- et socio- pathologie.
+
+Cours 1, aujourd'hui:
+1. placer le concept de faire histoire ensemble comme un objectif particulier, necessaire dans des situations qui attaquent la sociabilité
+2. ouvrir sur des espaces médiateurs comme lieux alternatifs de (re)création des liens avec soi et autrui
+
+I. "FAIRE HISTOIRE ENSEMBLE"
+0. Une relation autre: 
+1. Reconnaître l'alterité au coeur de la relation
+2. Relancer la choeur de la relation
+3. Créer de la culture entre nous
+4. Partager la précarité de l'exil
+5. Recréer la socialité à partir du trauma
+6. Conclusion de la partie I: recréer le
+II. Des espaces médiateurs comme lieux alternatifs de (re)création des liens avec soi et autrui
+7. Introduction
+8. Des espaces alternatifs
+9. Travailler le social comme une oeuvre
+10. Donner forme au néant des traumas
+11. Conclusion de la partie II
+
+- Cours 2 (Vendredi 13 février de 10h30 à 12h30, Auditoire Chavanne)
+- Cours 3 (Lundi 23 février, Chavanne): Roles des psychologues cliniciens lorsqu'il s'agit d'acommpagner et écouter ce qui est traumatique socialement et psychiquement
+- Cours 4 (Vendredi 27 février 10h30 à 12h30, Chavanne): les chercheurs face a la violence destructrice - comment creer des espaces de recherche?
+- Cours 5 (Lundi 9 mars 16 à 18 Auditoire Ferrer): les étudiants et doctorants, comment on se forme a ce champ de la recherche ou du travail clinique avec les violences extremes
+
+## 🏷️ I. Faire histoire ensemble
+
+### I.0 Une relation autre
+
+**Faire histoire ensemble** n'est pas un fait concret, objectivable. C'est "une tendance a organiser la relation d'une maniere singuliere, en la mettant au centre. Avec une visee *politique*, sur le fond d'une alterité (divergeance). Processus humain qui trahit sa contradiction dialectique: faire histoire entre nous contre ce qui infatigablement nous fait autres.
+
+### I.1 Reconnaître l'alterité
+
+On arrive jamais tout a fait a faire histoire ensemble. Parce que toute relation trouve existance dans l'alterite qui sous-tend toute relation. Cette contradiction dynamique entre alterite et relation, sont constitutives de notre humanité. Investir cette alterité creatrice dans la relation c'est faire histoire. Mais avec des visees en tension:
+
+Trois visées majeures:
+1. Tendance à transformer l'autre
+2. Tendance à se transformer vers l'autre
+3. Visée endocentrique et estéthique, visee *chorale*, où la relation est sa propre fin. La relation porte sur elle-même. Une celebration de l'etre ensemble. (visee sur laquelle il met l'accent aujourd'hui)
+### I.2 Relancer le choeur de la relation
+
+{...}
+### I.3 Créer de la culture entre nous
+
+L'interculturel. Denier la culture est aussi ravageur que denier la personne. Culture et personne sont l'envers l'une de l'autre. On ne peut ignorer ou privilegier l'une ou l'autre. Les cultures ne sont pas plus de simples produits des personnes, que l'inverse. Il convient de les voir comme des processus qui se creent l'un par l'autre. Restaurer l'alterite culturelle peut reparer l'alterite de la personne. Mobiliser la singularite personnelle peut reouvrir le rapport a la culture.
+
+On peut parler de Alteration et singulisation, pour souligner l'aspect processuel.
+
+La violence interculturelle. On exproprie d'autrui la capacite de creer de la culture.  une telle violence anhili les processus createurs qui forge alterite et singualrite. une telle violence tente de faire disparaitre l'enjeu interculturel (ce qui se joue entre cultures). l'interculturalite c'est pas un caractere exterieur aux relations, c'est leurs enjeux. ALterite culturelle et relation interculturelles sont une relation interdialectiques permanentes. C'est parce que nous digressons que nous tentons de creer des liens interculturels, tentant de transcender la relation.
+
+"Creer de la culture entre nous, c'est tenter de faire histoire ensemble" Avec le depassement auquel ca nous pousse. y cultiver un nouvel entre nous prend une figure paradoxale et inedite. Creer cet ensemble qui n'existe pas au prealable.
+### I.4 Partager la précarité de l'exil
+
+Relation avec un profesionel de l'humain et la premiere ligne de reconnaissance de vecus d'expropriation et atteinte... Instaurer une relation a habiter ensemble. Si protocole il y a, il est a inventer a chaque fois avec les protagonistes. 
+
+### I.5 Recréer la socialité à partir du trauma
+
+Recréer la sociabilité humaine a partir du trauma qui l'a détruite.
+
+Le traumatisme psychosocial attaque et atteint la dialectique d'alterité. "Comment puis-je encore me relier à toi, si nous ne pouvons plus être autres?" Traumas psychosociaux décapitent la responsabilité qui nos adoss à autrui. Ces traumas appelent a un clinique de la responsabilite sociale.
+
+L'art du trauma
+### I.6 Conclusion Partie I
+
+La conflictualite est inherente aux echanges entre nous
+Art de faire de nos relations la visee meme de nos rencontres. L'art de la sociabilité, portee sur elle meme, oeuvrant a elle meme. Art du social qui peut soigner et reanimer cette dialectique.
+REndre vie au neant, au neant comme vide createur.
+
+On se trompe en pensant la sociabilite en dehors du conflit et de l'alterite. C'est tout sauf un long fleuve tranquile. Alterite et lien qui isolement peuvent nous dissocier ou nous enchainer, mais dans la dialectique fait l'histoire. 
+
+Mettre au centre la relation.
+
+## II. Les espaces médiateurs
+
+Trois caracteristiques constitutives de ces espaces mediateurs:
+1. Alternatifs
+2. Politiques
+3. Donnent forme au néant
+### II.1 Des espaces alternatifs
+
+Faire histoire ensemble n'engange pas seulement des facons de faire, des cadres, d'institutions... Lieux *alternatifs*, de recreation entre soi des liens entre soi et autrui. SUr le fon d'horreurs, de violences destructrices. 
+
+Hypothese que ce qu'on appelle les espaces mediateurs espaes des reconnaissance. Espaces multiples ou varies qui permettent de recreer la dialectique. 
+
+Espace de travail. Groupe de parole. Etc. INteret se porte sur le processus en jeu. Tentons a partir d'une pluralite d'experience de thematiser et eclairer la diversite. Ces espaces autorisent par dedoublement une forme de prise de distance, une analyse de ce que nous sommes et voulons etre.
+
+Espaces alternatifs: permettent de se donner un autre point de vue de ce que nous sommes, une mise en perspective, permettent une réflexion, role d'elaboration de ce qui est en jeu ailleurs.
+
+### II.2  Espaces politiques (travailler le social comme une oeuvre)
+
+Politique au sens *choral* du terme.
+Espaces qui poussent les acteurs a se regarder eux memes avec parfois la distance et l'ironie. Processus ontologique et deontologique (de responsabilites). Accentuent un moment de recul, pour se desapproprier de ce que l'on vit socialement. Les sociologues parlent d'espaces secondaires pour indiquer une operation particuliere.
+
+Visee chorale (alterite suspendue au benefice de la relation mais garder en tete sa presence)
+### II.3 Permettent de donner forme au néant du trauma
+
+Qualite de personne est expropriee lors des violences extrêmes.
+Nos liens contiennent nos divergeances.
+
+Les suites attaquent la responsabilité vis à vis d'autrui (tentent d'anhéantir cette responsabilité). Altèrent les espaces de reconnaissance et collaboration. 
+
+Exemple (il n'aime pas les exemples), travail de these de Patrick travaillant sur restauration de feminite avec groupes de femmes violentées de multiples façon. Animaient groupes de parole réunissant une quinzaine de femmes ayant subi ces violences et acceptant d'etre accompagnees par ce Patrick. Patrick soulignait dans sa these comment le fait d'etre a plusieurs en groupe lors des rencontres progressivement d'une seance a l'autre, s'ecoutant les uns les autres... progressivement un nouveau "groupe" se creeait (au dela du groupe physique). Dialogique dans le sens ou ca a permis de se relier a soi meme et se relier aux autres.
+
+Travaux de [Dori Laub](https://en.wikipedia.org/wiki/Dori_Laub). L'[art du trauma](https://shs.cairn.info/revue-le-coq-heron-2015-2-page-35?lang=fr).
+
+#### Questions & réponses
+
+- Alterité est utilisé en tension à relation. Alterité synonyme de questionnement, prise de distnace, recul, analyse. Alterité au sens de singularisation. Au coeur de la relation avec soi ou autre.
+	- Hypothèse que ce qui est abimé dans le trauma psychosocial c'est cette dialectique là (developpé plus longuement à la prochaine seance)
+- "L'Ensemble" inclut bourreaux et victimes, ou seulement les personnes qui partagent le vecu traumatique?
+	- Ne veut pas forcément dire faire groupe (pas trop compris sa réponse)
+
+----
+
+📅 Vendredi **12 Février 2026** - JL Brackelaire. **Ce qu'appellent les traumatismes psychosociaux suite aux biolences politiques: des espaces médiateurs de reconnaissance et de recréation de la responsabilité sociale anéantie**.
+
+Rappel de la leçon 1: faire histoire ensemble, est une formule paradoxale mettant l'accent sur un certain type de relation que l'on peut viser dans le travail clinique et dans la vie en général, consitant à mettre l'accent sur la relation ET travailler la relation elle meme (faire travailler la relation sur elle meme). Avec une visée "chorale", en référence à l'expression de Jeanqqch. Hypothèse traversant la leçon: la visée chorale, le "faire histoire ensemble", a un sens pertinent ou approprié dans des situations où on travaille avec des personnes pour qui la sociabilité a été cassée suite à des traumas (psycho)sociaux. Avec une visée politique, quelque soit l'échelle (même dans une relation à deux). Ill a illustré en 3 situations différentes (1. violence interculturelle, 2. comment créer de la culture entre nous et exil sans asile (partager la precarité de l'exil), 3. recréer la sociabilité à partir du trauma) Dans quels espaces? Quelles sont les caractéristiques des espaces méiateurs? (se situant entre le psychique et social): 1. Espaces alternatifs qui offrent un autre point de vue 2. Espaces politiques (faisant porter la relation sur elle même, et moins à agir d'un acteur sur l'autre) 3. Où l'on peu tenter de donner forme au néant du trauma.
+
+0. Introduction: traumatisme psycho-social, responsabilité, reconnaissance et élaboration
+1. La responsabilité contre la violence
+2. Écouter la torture: les professionnels de la CNPPT au Chilo
+3. Accompagner les crises d'Ihahamuka lors des commemorations du génocide contre les Tutsis au Rwanda
+
+### 0. Introduction
+
+#### 0.1 Traumatisme  psycho-social:
+
+a) Caractère dialectique (historique et dynamique)
+b) Necessité d'identifier les causes sociales
+c) Caractère traumatique
+
+#### 0.2 Responsabilité
+
+Ce qui est attaqué en premier dans le cas de violences politiques est **la responsabilité sociale**, vis-à-vis d'autrui (plus spécifique de dire sociabilité, un des aspects de la sociabilité).
+
+Toute relation comporte deux faces (Jean Calepin?):
+1. Face d'identité
+2. Face de responsabilité (rôles respectifs, comment on se departage, quels sont les devoirs)
+
+#### 0.3 Reconnaissance et élaboration
+
+Lié a l'identité (en 0.2).
+- Être reconnu comme victime de tel ou tel évènement.
+- Est-ce que ca provoque une transformation?
+- Est-ce elaboré?
+- Est-ce pris en compte?
+- Transforme les rapports entre les acteurs (sont-ils redevables de ce qu'il s'est passé, portent la dette?)?
+
+Recréation de la responsabilité: les **métiers du soin** occupent une place particulière dans ce processus (i.e. métiers cliniques). Ces métiers naissent et se réinventent dans cette fonction. Le fait même d'exercer le métier est la figure même de la responsabilité. Le fait que cette fonction soit officiellement reconnue est essentiel - on y reviendra plus tard.
+
+### 1. La responsabilite contre la violence
+
+**La responsabilité est l'inverse de la violence**. Elle nous met au travail face a toutes les formes de violence, pour les prendre en compte, les eviter, les transformer.
+
+La violence politique attaque le principe humain de l'autrui. C'est un anéantissement au coeur du desastre, aussi dans les causes et les suites. 
+Entre les generations, parents et enfants, toutes parties et prestations de service. Se joue dans trois figures par excellence de la responsabilité:
+- entre générations
+- parentalité: entre le parent et l'enfant se joue la dialectique humaine de la responsabilité.
+- métier
+
+La dialectique est decimée dans des phénomènes de violence politique. Elle est aussi ce qu'il y a lieu de **restaurer** dans le travail de restauration. Afin de restaurer le souci pour autrui - il faut se demander quelles sont les conditions pour obtenir cette restauration de l'atteinte anthropologique. 
+
+Question de **temporalité** ("Ce n'est pas la fin d'un genocide qui finit le génocide", Marie-Odile Godard [cf](https://penserlahaine.hypotheses.org/9131)).
+
+### 2. Écouter la torture: les professionnels de la CNPPT au Chili
+
+Recherches avec Marcela Cornejo. Basé sur [thèse de Ximena Faúndez](https://www.scielo.cl/pdf/psykhe/v22n2/art07.pdf).
+
+Nous en apprend beaucoup dans les processus en jeu dans la reconnaisance du traumatisme, et leur élaboration.
+
+Recherches initiées en 2006 au Chili. **Commission Nationale pour la Prison Politique et la Torture** (CNPPT). Sous Lagos 2003-2004. Dictature 1973-1990. Donc 15 ans plus tard. Avant y avait eu une commission, et d'autres tentatives prealables. Objectif identifier personne victime d'emprisonement et torture durant la dictature de Pinochet.
+
+La commission a recuilli des temoignanges de x personnes. 29000 victimes estimées, privation de liberte et tortures pour motifs politiques. Une reouverture de la commission a conduit a 32000 nouvelles personnes. Chaque personne remplissait un document, ensuite interview avec un professionel (la qu'interviennent les professionels), deposaient personnellement leur temoignage, dans une demarche essentielle pour la reconnaissance de l'etat.
+
+Articles de Marcela Cornejo et xx. La recherche s'est interessé specifiquement aux profesionnels à l'écoute de l'état, quel a été sur eux l'impact des témoignages, le caractère traumatique pour eux? Pour la plupart impactés, bouleversés, mobilisant des processus d'elaboration. Profesionnels devaient porteur de temoignange que la societe même devait prendre en charge. Question du temps: temoignages délivrés 30 ans après les faits, dans pays qui n'avait pas voulu entendre ni écouter : "chaine de l'ecoute". Les professionnels représentaient dans cette recherche les re1cepteurs de témoignages cachés. **La méthodologie du récit de vie** est décrite dans les articles.
+
+**Chaîne de l'écoute**
+
+Sentiment d'etre porteurs d'un secret, celui des horreurs vecus sous la dictature. Se demande qu'en faire, comment en assurer la charge? L'impression d'etre differents, de devoir veiller a ce que l'entreprise de revelation se realise. Souvent avec une angoisse, sentiment de sentir la meme chose que les depositaires (sentiment de persecution...). Crainte (pour les professionnels) d'etre suivi, persecuté.
+
+Qualité d'etre pour autrui. Emprisonnement politique, torture, causait pour la victime de ne plus etre autrui. Détruits au silence, quelque chose est rendu non-partageable. Les professionnels deviennent dès lors, par la fonction qui leur est confiée, le premier échelon officiel. Ils sont institués de cette fonction de recevoir ce qui n'est pas dicible, avec le risque de le faire disparaitre ou de les blesser de nouveau - mais il leur revient de prendre cela en charge, prendre autrui en charge.
+
+Ces professionnels n'avaient pas de fonction de psychothérapeute ou de cliniciens, et ce n'est pas sous cet angle que nous considérons les choses. Pas une fonction clinique au sens stricte, mais ont un caractère clinique tout de même (**leur existence permet de restituer la responsabilité pour autrui destituée par le traumatisme**).
+
+S'interroger sur la fonction des métiers, sur la transformation des métiers cliniques.
+
+(Necessite de maintenir une responsabilite partagee entre le deux partir pour permettre le potentiel transformateur, rendu possible uniquement par la relation elle meme.)
+
+Internvention public: Double fonction des professionnels: Receuil du temognange et calification. preocupation des lors de bien transmettre aux autres instances pour que du credit soit accordé (difficulté et exigeance de leur travail)
+
+### 3. Accompagner les crises d'Ihahamuka lors des commemorations du génocide contre les Tutsis au Rwanda
+
+Section basée sur les recherches apparaissant dans la [thèse de Darius Gishoma](https://dial.uclouvain.be/pr/boreal/fr/object/boreal%3A143580/datastream/PDF_01/view).
+#### 3.1 Restauration de la responsabilité sociale au Rwanda
+
+En 1994, lors du genocide commis contre les Tutsis, plus d'un million de vies humaines. Restauration de la respo sociale a implique creation de metiers inexistants auparavant et reparation d'instit sociales. Face a l'immensite des besoins, organisations humanitaires ont ete premiers a creer espaces d'ecoute (d'abord femmes et enfants). mais financees a court terme, essentiellement travailleurs etrangers, desengagés en 1997 a la fin d'une periode consideree d'urgence.
+etat a ensuite pris les choses en main et creer des lieux propres. cree des lieux de formation en particulier. formation en conseiller traumatisme . infirmier en psychiatrie. formation pour psychologues 1997. 1999 departement psychologie clinique. tout ceci temoigne que dans les suites du genocide, reponses d'une societe qui se responsabilise face a la souffrance de ses membres.
+
+Processus d'elaboration ont eu lieu en dehors du chemin cassique de psy / psychiatre. en 2012 12 millions d'habitants. 2001 a 2014, un jours par semaine habitants se reunissaient pour parler de ce qui s'etait passee (justice sur le gazon). Et d'atures dispositifs, des formes d'espaces mediateurs ont surgi (associations de veuves, familles artificielles pour orphelins, commemorations annuelles du genocide...). Clinique a du s'adapter d'annee en annee au trama qui s'elaborait progressivement. 
+
+#### 3.2 Commémoration annuelle: élaboration progressive, mais rappel du traumatisme (les crises d'Ihahamuka)
+
+Commemoration = processus socio communitaire. Depuis 1995, rwanda commemore le genocide durant 1 semaine (dite de deuil national). Commemoration a une histoire, a parcouru un chemin qui enseigne sur travail de commemoration et ses difficultes. Dans une vue d'ensemble (discours, compositions artistiques, etc) on peut reperer une certaine evolution dans le processus commemoratif. Informe sur volonte des rescapes de x ainsi que de l'etat rwandais de se defaire des pieges du genocide. Redefinition et reposition des communautés. 
+
+Mais ces moments de commemoration peuvent aussi se reveler traumatiques. Flashbacks, crises avec gestes visant a s'echaper, se cachent sous chaises, elevent les mains pour se proteger la tete contre possible, perte temporaire d'orientatio spatiale. Large eventail de symptomes (hoquet avec suffocation). Etat de perte de sensibilite et motricite tout en restant consciente... Se reveille aussi par des facteurs en apparence neutres (silence, chute de pluie rappelant un souvenir...)..
+
+Phenomene de contagion dans ces crises. Jusqu'a attendre une 50aine ou 100aine de personnes sur un seul lieu de commemoration. Crises de 30 min a 2h. Les crises d'Ihahamuka ("comme si les poumonns sortaient a l'exterieur"). 
+
+### 4. Expropriation et restauration d'autrui: clinique, recherche
+
+Genere en retour formes de creation ou recretion des métiers de la clinqiue.
+Quand Autrui devient "à exterminer", il vient ensuite hanter la scene des crimes comme un revenant comme il revient aux survivants d'entendre la voix.
+
+Etudier ces crises revient a etudier simultanement le contexte officiel de leur survenie, et le contexte de leur accompagnement officiel. Le travail décrit l'evolution du processus commemoratif au Rwanda. Dualité entre x et x.
+
+Role specifique de la recherche clinique. Mobilisation de la responsabilite du chercheur, des universites, face a l'ecrasement de xx.
+
+La recherche au Chili contribue a sa facon a la reparation des effets de l'emprisonnement et la torture, revele l'obligation de retablir officliement la fonction fondamentale de reconnaisance d'autrui.
+
+Fonction (de restauration) publique: mediation necessaire d'une instance de responsabilité. Ce qui a été tu, etouffe, rejeté, enquisté.
+
+--
+Narration de scene (tres detaillee) vs scene de la torture (silence, doit etre devinee, indicible, mots allusifs, indirectements, permettant tout de meme le dialogue avec la chercheuse). interessant que les deux scenes soient la, l'inversion de l'une par l'autre.
+
+### 5. Appels à des espaces de reconnaissance et de recréation de la responsabilité anéantie
+### 6. Conclusion: ouvertures à propos des espaces cliniques et de recherche dans ce champ
+
+----
+
