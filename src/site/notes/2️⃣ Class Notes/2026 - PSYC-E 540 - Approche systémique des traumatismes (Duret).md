@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T12:44:43.669+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T12:47:17.040+01:00"}
 ---
 
 > [!tldr] Résumé
@@ -167,10 +167,11 @@ La filiation renvoie (P. Benghozi,1999):
 - aux ascendants (parents, grands-parents…),
 - aux descendants (enfants, petits-enfants…),
 - et même aux générations futures anticipées.
+
 Elle constitue une sorte de **colonne vertébrale transgénérationnelle**.
 ### 3.3 Reconnaisance réciproque et appartenance
 
-Chez **Kaës**, le point fort est la **reconnaissance réciproque et l’appartenance psychique**. Il insiste sur le fait qu’il ne suffit pas d’être biologiquement ou juridiquement rattaché à une famille : il faut encore être reconnu par elle et la reconnaître en retour: donc, considérée par ces auteurs avant tout comme une **construction psychique**. Il ne suffit pas qu’un enfant soit juridiquement rattaché à une famille ; encore faut-il qu’il se sente reconnu et qu’il reconnaisse à son tour ceux qui se présentent comme ses parents. René Kaës insiste sur cette idée en affirmant qu’*il ne suffit pas de naître dans une famille, il faut aussi naître de la famille*. La filiation engage donc un processus d’appartenance psychique.
+Chez **Kaës**, le point fort est la **reconnaissance réciproque et l’appartenance psychique**. Il insiste sur le fait qu’il ne suffit pas d’être biologiquement ou juridiquement rattaché à une famille : il faut encore être reconnu par elle et la reconnaître en retour: donc, considérée par ces auteurs avant tout comme une **construction psychique**. Il ne suffit pas qu’un enfant soit juridiquement rattaché à une famille ; encore faut-il qu’il **se sente** reconnu et qu’il reconnaisse à son tour ceux qui se présentent comme ses parents. René Kaës insiste sur cette idée en affirmant qu’"*il ne suffit pas de naître dans une famille, il faut aussi naître de la famille*". La filiation engage donc un processus d’appartenance psychique.
 
 Kaës (2000): 
 - Lien de filiation implique le rapport d'au moins trois générations successives reconnues comme telles et la référence commune à un mythe originant. 
