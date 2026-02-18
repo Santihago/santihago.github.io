@@ -62,12 +62,12 @@ CTRL + K
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2026-02-18T11:47:46.560Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2026-02-18T11:47:46.560Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2026-02-18T11:47:46.560Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2026-02-18T13:11:36.555Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2026-02-18T13:11:36.555Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2026-02-18T13:11:36.555Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
 <h1 data-note-icon="">2026 - PSYC-E 540 - Approche systémique des traumatismes (Duret)</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2026-01-22T14:38:06.245+01:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2026-02-18T12:47:17.040+01:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2026-01-22T14:38:06.245+01:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2026-02-18T14:11:09.973+01:00"></span></div></div></div>
 </header>
 <div class="callout" data-callout="tldr"><div class="callout-title"><div class="callout-title-inner"> Résumé<br></div></div>
 <div class="callout-content">
@@ -322,6 +322,182 @@ Il exprime le désir de retour à un état fusionnel, protégé, antérieur aux 
 </ol>
 </div></div>
 <p>📅 Vendredi <strong>20 Février 2026</strong> - Cours 3 - I. Duret</p>
+<hr>
+<h1 id="partie-jean-luc-brackelaire-chaire-francqui" tabindex="-1">Partie Jean-Luc Brackelaire - Chaire Francqui</h1>
+<p>📅 Lundi <strong>9 Février 2026</strong> - J.L. Brackelaire : Faire histoire ensemble. Comment recréeer la socialité après sa destruction?</p>
+<h2 id="introduction" tabindex="-1">🏷️ Introduction</h2>
+<p>Son but est de rassembler une preoccupation principale qui l'a occupé ces 20 dernières annees, dans differents pays impliquant des doctorats de recherche-action. Formule qui renvoit a des terrains de recherche qui ont l'implique des violences extremes, et suites de ces violences: destruction d'une part, et recréation du lien, de l'autre. A quelles conditions ces liens peuvent-ils se recréer? Cette formulation de la problématique est déja un resultat de ce travail. Travail 2006-2016 du cote rwandais. Creation Espaces aux caracteristiques singulieres, des espaces mediateurs ou de mediation communautaires (en equateur entre 2016-2025).</p>
+<p>&quot;Faire histoire ensemble&quot; semble etre un paradoxe, &quot;trop beau&quot;, un impossible. Nous savons que nous vivons tous des histoires différentes et <em>dans</em> des histoires différentes. La notion d'histoire est diverse, divergeante, incomparables, a géometrie variable: est-ce possible de faire histoire ensemble? Et comment?</p>
+<p>Expériences extrêmes où il est difficile de distinguer psycho- et socio- pathologie.</p>
+<p>Cours 1, aujourd'hui:</p>
+<ol>
+<li>placer le concept de faire histoire ensemble comme un objectif particulier, necessaire dans des situations qui attaquent la sociabilité</li>
+<li>ouvrir sur des espaces médiateurs comme lieux alternatifs de (re)création des liens avec soi et autrui</li>
+</ol>
+<p>I. &quot;FAIRE HISTOIRE ENSEMBLE&quot;<br>
+0. Une relation autre:</p>
+<ol>
+<li>Reconnaître l'alterité au coeur de la relation</li>
+<li>Relancer la choeur de la relation</li>
+<li>Créer de la culture entre nous</li>
+<li>Partager la précarité de l'exil</li>
+<li>Recréer la socialité à partir du trauma</li>
+<li>Conclusion de la partie I: recréer le<br>
+II. Des espaces médiateurs comme lieux alternatifs de (re)création des liens avec soi et autrui</li>
+<li>Introduction</li>
+<li>Des espaces alternatifs</li>
+<li>Travailler le social comme une oeuvre</li>
+<li>Donner forme au néant des traumas</li>
+<li>Conclusion de la partie II</li>
+</ol>
+<ul>
+<li>Cours 2 (Vendredi 13 février de 10h30 à 12h30, Auditoire Chavanne)</li>
+<li>Cours 3 (Lundi 23 février, Chavanne): Roles des psychologues cliniciens lorsqu'il s'agit d'acommpagner et écouter ce qui est traumatique socialement et psychiquement</li>
+<li>Cours 4 (Vendredi 27 février 10h30 à 12h30, Chavanne): les chercheurs face a la violence destructrice - comment creer des espaces de recherche?</li>
+<li>Cours 5 (Lundi 9 mars 16 à 18 Auditoire Ferrer): les étudiants et doctorants, comment on se forme a ce champ de la recherche ou du travail clinique avec les violences extremes</li>
+</ul>
+<h2 id="i-faire-histoire-ensemble" tabindex="-1">🏷️ I. Faire histoire ensemble</h2>
+<h3 id="i-0-une-relation-autre" tabindex="-1">I.0 Une relation autre</h3>
+<p><strong>Faire histoire ensemble</strong> n'est pas un fait concret, objectivable. C'est &quot;une tendance a organiser la relation d'une maniere singuliere, en la mettant au centre. Avec une visee <em>politique</em>, sur le fond d'une alterité (divergeance). Processus humain qui trahit sa contradiction dialectique: faire histoire entre nous contre ce qui infatigablement nous fait autres.</p>
+<h3 id="i-1-reconnaitre-l-alterite" tabindex="-1">I.1 Reconnaître l'alterité</h3>
+<p>On arrive jamais tout a fait a faire histoire ensemble. Parce que toute relation trouve existance dans l'alterite qui sous-tend toute relation. Cette contradiction dynamique entre alterite et relation, sont constitutives de notre humanité. Investir cette alterité creatrice dans la relation c'est faire histoire. Mais avec des visees en tension:</p>
+<p>Trois visées majeures:</p>
+<ol>
+<li>Tendance à transformer l'autre</li>
+<li>Tendance à se transformer vers l'autre</li>
+<li>Visée endocentrique et estéthique, visee <em>chorale</em>, où la relation est sa propre fin. La relation porte sur elle-même. Une celebration de l'etre ensemble. (visee sur laquelle il met l'accent aujourd'hui)</li>
+</ol>
+<h3 id="i-2-relancer-le-choeur-de-la-relation" tabindex="-1">I.2 Relancer le choeur de la relation</h3>
+<p css-module="."></p>
+<h3 id="i-3-creer-de-la-culture-entre-nous" tabindex="-1">I.3 Créer de la culture entre nous</h3>
+<p>L'interculturel. Denier la culture est aussi ravageur que denier la personne. Culture et personne sont l'envers l'une de l'autre. On ne peut ignorer ou privilegier l'une ou l'autre. Les cultures ne sont pas plus de simples produits des personnes, que l'inverse. Il convient de les voir comme des processus qui se creent l'un par l'autre. Restaurer l'alterite culturelle peut reparer l'alterite de la personne. Mobiliser la singularite personnelle peut reouvrir le rapport a la culture.</p>
+<p>On peut parler de Alteration et singulisation, pour souligner l'aspect processuel.</p>
+<p>La violence interculturelle. On exproprie d'autrui la capacite de creer de la culture. une telle violence anhili les processus createurs qui forge alterite et singualrite. une telle violence tente de faire disparaitre l'enjeu interculturel (ce qui se joue entre cultures). l'interculturalite c'est pas un caractere exterieur aux relations, c'est leurs enjeux. ALterite culturelle et relation interculturelles sont une relation interdialectiques permanentes. C'est parce que nous digressons que nous tentons de creer des liens interculturels, tentant de transcender la relation.</p>
+<p>&quot;Creer de la culture entre nous, c'est tenter de faire histoire ensemble&quot; Avec le depassement auquel ca nous pousse. y cultiver un nouvel entre nous prend une figure paradoxale et inedite. Creer cet ensemble qui n'existe pas au prealable.</p>
+<h3 id="i-4-partager-la-precarite-de-l-exil" tabindex="-1">I.4 Partager la précarité de l'exil</h3>
+<p>Relation avec un profesionel de l'humain et la premiere ligne de reconnaissance de vecus d'expropriation et atteinte... Instaurer une relation a habiter ensemble. Si protocole il y a, il est a inventer a chaque fois avec les protagonistes.</p>
+<h3 id="i-5-recreer-la-socialite-a-partir-du-trauma" tabindex="-1">I.5 Recréer la socialité à partir du trauma</h3>
+<p>Recréer la sociabilité humaine a partir du trauma qui l'a détruite.</p>
+<p>Le traumatisme psychosocial attaque et atteint la dialectique d'alterité. &quot;Comment puis-je encore me relier à toi, si nous ne pouvons plus être autres?&quot; Traumas psychosociaux décapitent la responsabilité qui nos adoss à autrui. Ces traumas appelent a un clinique de la responsabilite sociale.</p>
+<p>L'art du trauma</p>
+<h3 id="i-6-conclusion-partie-i" tabindex="-1">I.6 Conclusion Partie I</h3>
+<p>La conflictualite est inherente aux echanges entre nous<br>
+Art de faire de nos relations la visee meme de nos rencontres. L'art de la sociabilité, portee sur elle meme, oeuvrant a elle meme. Art du social qui peut soigner et reanimer cette dialectique.<br>
+REndre vie au neant, au neant comme vide createur.</p>
+<p>On se trompe en pensant la sociabilite en dehors du conflit et de l'alterite. C'est tout sauf un long fleuve tranquile. Alterite et lien qui isolement peuvent nous dissocier ou nous enchainer, mais dans la dialectique fait l'histoire.</p>
+<p>Mettre au centre la relation.</p>
+<h2 id="ii-les-espaces-mediateurs" tabindex="-1">II. Les espaces médiateurs</h2>
+<p>Trois caracteristiques constitutives de ces espaces mediateurs:</p>
+<ol>
+<li>Alternatifs</li>
+<li>Politiques</li>
+<li>Donnent forme au néant</li>
+</ol>
+<h3 id="ii-1-des-espaces-alternatifs" tabindex="-1">II.1 Des espaces alternatifs</h3>
+<p>Faire histoire ensemble n'engange pas seulement des facons de faire, des cadres, d'institutions... Lieux <em>alternatifs</em>, de recreation entre soi des liens entre soi et autrui. SUr le fon d'horreurs, de violences destructrices.</p>
+<p>Hypothese que ce qu'on appelle les espaces mediateurs espaes des reconnaissance. Espaces multiples ou varies qui permettent de recreer la dialectique.</p>
+<p>Espace de travail. Groupe de parole. Etc. INteret se porte sur le processus en jeu. Tentons a partir d'une pluralite d'experience de thematiser et eclairer la diversite. Ces espaces autorisent par dedoublement une forme de prise de distance, une analyse de ce que nous sommes et voulons etre.</p>
+<p>Espaces alternatifs: permettent de se donner un autre point de vue de ce que nous sommes, une mise en perspective, permettent une réflexion, role d'elaboration de ce qui est en jeu ailleurs.</p>
+<h3 id="ii-2-espaces-politiques-travailler-le-social-comme-une-oeuvre" tabindex="-1">II.2 Espaces politiques (travailler le social comme une oeuvre)</h3>
+<p>Politique au sens <em>choral</em> du terme.<br>
+Espaces qui poussent les acteurs a se regarder eux memes avec parfois la distance et l'ironie. Processus ontologique et deontologique (de responsabilites). Accentuent un moment de recul, pour se desapproprier de ce que l'on vit socialement. Les sociologues parlent d'espaces secondaires pour indiquer une operation particuliere.</p>
+<p>Visee chorale (alterite suspendue au benefice de la relation mais garder en tete sa presence)</p>
+<h3 id="ii-3-permettent-de-donner-forme-au-neant-du-trauma" tabindex="-1">II.3 Permettent de donner forme au néant du trauma</h3>
+<p>Qualite de personne est expropriee lors des violences extrêmes.<br>
+Nos liens contiennent nos divergeances.</p>
+<p>Les suites attaquent la responsabilité vis à vis d'autrui (tentent d'anhéantir cette responsabilité). Altèrent les espaces de reconnaissance et collaboration.</p>
+<p>Exemple (il n'aime pas les exemples), travail de these de Patrick travaillant sur restauration de feminite avec groupes de femmes violentées de multiples façon. Animaient groupes de parole réunissant une quinzaine de femmes ayant subi ces violences et acceptant d'etre accompagnees par ce Patrick. Patrick soulignait dans sa these comment le fait d'etre a plusieurs en groupe lors des rencontres progressivement d'une seance a l'autre, s'ecoutant les uns les autres... progressivement un nouveau &quot;groupe&quot; se creeait (au dela du groupe physique). Dialogique dans le sens ou ca a permis de se relier a soi meme et se relier aux autres.</p>
+<p>Travaux de <a href="https://en.wikipedia.org/wiki/Dori_Laub" target="_blank" class="external-link">Dori Laub</a>. L'<a href="https://shs.cairn.info/revue-le-coq-heron-2015-2-page-35?lang=fr" target="_blank" class="external-link">art du trauma</a>.</p>
+<h4 id="questions-and-amp-reponses" tabindex="-1">Questions &amp; réponses</h4>
+<ul>
+<li>Alterité est utilisé en tension à relation. Alterité synonyme de questionnement, prise de distnace, recul, analyse. Alterité au sens de singularisation. Au coeur de la relation avec soi ou autre.
+<ul>
+<li>Hypothèse que ce qui est abimé dans le trauma psychosocial c'est cette dialectique là (developpé plus longuement à la prochaine seance)</li>
+</ul>
+</li>
+<li>&quot;L'Ensemble&quot; inclut bourreaux et victimes, ou seulement les personnes qui partagent le vecu traumatique?
+<ul>
+<li>Ne veut pas forcément dire faire groupe (pas trop compris sa réponse)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>📅 Vendredi <strong>12 Février 2026</strong> - JL Brackelaire. <strong>Ce qu'appellent les traumatismes psychosociaux suite aux biolences politiques: des espaces médiateurs de reconnaissance et de recréation de la responsabilité sociale anéantie</strong>.</p>
+<p>Rappel de la leçon 1: faire histoire ensemble, est une formule paradoxale mettant l'accent sur un certain type de relation que l'on peut viser dans le travail clinique et dans la vie en général, consitant à mettre l'accent sur la relation ET travailler la relation elle meme (faire travailler la relation sur elle meme). Avec une visée &quot;chorale&quot;, en référence à l'expression de Jeanqqch. Hypothèse traversant la leçon: la visée chorale, le &quot;faire histoire ensemble&quot;, a un sens pertinent ou approprié dans des situations où on travaille avec des personnes pour qui la sociabilité a été cassée suite à des traumas (psycho)sociaux. Avec une visée politique, quelque soit l'échelle (même dans une relation à deux). Ill a illustré en 3 situations différentes (1. violence interculturelle, 2. comment créer de la culture entre nous et exil sans asile (partager la precarité de l'exil), 3. recréer la sociabilité à partir du trauma) Dans quels espaces? Quelles sont les caractéristiques des espaces méiateurs? (se situant entre le psychique et social): 1. Espaces alternatifs qui offrent un autre point de vue 2. Espaces politiques (faisant porter la relation sur elle même, et moins à agir d'un acteur sur l'autre) 3. Où l'on peu tenter de donner forme au néant du trauma.</p>
+<ol start="0">
+<li>Introduction: traumatisme psycho-social, responsabilité, reconnaissance et élaboration</li>
+<li>La responsabilité contre la violence</li>
+<li>Écouter la torture: les professionnels de la CNPPT au Chilo</li>
+<li>Accompagner les crises d'Ihahamuka lors des commemorations du génocide contre les Tutsis au Rwanda</li>
+</ol>
+<h3 id="0-introduction" tabindex="-1">0. Introduction</h3>
+<h4 id="0-1-traumatisme-psycho-social" tabindex="-1">0.1 Traumatisme psycho-social:</h4>
+<p>a) Caractère dialectique (historique et dynamique)<br>
+b) Necessité d'identifier les causes sociales<br>
+c) Caractère traumatique</p>
+<h4 id="0-2-responsabilite" tabindex="-1">0.2 Responsabilité</h4>
+<p>Ce qui est attaqué en premier dans le cas de violences politiques est <strong>la responsabilité sociale</strong>, vis-à-vis d'autrui (plus spécifique de dire sociabilité, un des aspects de la sociabilité).</p>
+<p>Toute relation comporte deux faces (Jean Calepin?):</p>
+<ol>
+<li>Face d'identité</li>
+<li>Face de responsabilité (rôles respectifs, comment on se departage, quels sont les devoirs)</li>
+</ol>
+<h4 id="0-3-reconnaissance-et-elaboration" tabindex="-1">0.3 Reconnaissance et élaboration</h4>
+<p>Lié a l'identité (en 0.2).</p>
+<ul>
+<li>Être reconnu comme victime de tel ou tel évènement.</li>
+<li>Est-ce que ca provoque une transformation?</li>
+<li>Est-ce elaboré?</li>
+<li>Est-ce pris en compte?</li>
+<li>Transforme les rapports entre les acteurs (sont-ils redevables de ce qu'il s'est passé, portent la dette?)?</li>
+</ul>
+<p>Recréation de la responsabilité: les <strong>métiers du soin</strong> occupent une place particulière dans ce processus (i.e. métiers cliniques). Ces métiers naissent et se réinventent dans cette fonction. Le fait même d'exercer le métier est la figure même de la responsabilité. Le fait que cette fonction soit officiellement reconnue est essentiel - on y reviendra plus tard.</p>
+<h3 id="1-la-responsabilite-contre-la-violence" tabindex="-1">1. La responsabilite contre la violence</h3>
+<p><strong>La responsabilité est l'inverse de la violence</strong>. Elle nous met au travail face a toutes les formes de violence, pour les prendre en compte, les eviter, les transformer.</p>
+<p>La violence politique attaque le principe humain de l'autrui. C'est un anéantissement au coeur du desastre, aussi dans les causes et les suites.<br>
+Entre les generations, parents et enfants, toutes parties et prestations de service. Se joue dans trois figures par excellence de la responsabilité:</p>
+<ul>
+<li>entre générations</li>
+<li>parentalité: entre le parent et l'enfant se joue la dialectique humaine de la responsabilité.</li>
+<li>métier</li>
+</ul>
+<p>La dialectique est decimée dans des phénomènes de violence politique. Elle est aussi ce qu'il y a lieu de <strong>restaurer</strong> dans le travail de restauration. Afin de restaurer le souci pour autrui - il faut se demander quelles sont les conditions pour obtenir cette restauration de l'atteinte anthropologique.</p>
+<p>Question de <strong>temporalité</strong> (&quot;Ce n'est pas la fin d'un genocide qui finit le génocide&quot;, Marie-Odile Godard <a href="https://penserlahaine.hypotheses.org/9131" target="_blank" class="external-link">cf</a>).</p>
+<h3 id="2-ecouter-la-torture-les-professionnels-de-la-cnppt-au-chili" tabindex="-1">2. Écouter la torture: les professionnels de la CNPPT au Chili</h3>
+<p>Recherches avec Marcela Cornejo. Basé sur <a href="https://www.scielo.cl/pdf/psykhe/v22n2/art07.pdf" target="_blank" class="external-link">thèse de Ximena Faúndez</a>.</p>
+<p>Nous en apprend beaucoup dans les processus en jeu dans la reconnaisance du traumatisme, et leur élaboration.</p>
+<p>Recherches initiées en 2006 au Chili. <strong>Commission Nationale pour la Prison Politique et la Torture</strong> (CNPPT). Sous Lagos 2003-2004. Dictature 1973-1990. Donc 15 ans plus tard. Avant y avait eu une commission, et d'autres tentatives prealables. Objectif identifier personne victime d'emprisonement et torture durant la dictature de Pinochet.</p>
+<p>La commission a recuilli des temoignanges de x personnes. 29000 victimes estimées, privation de liberte et tortures pour motifs politiques. Une reouverture de la commission a conduit a 32000 nouvelles personnes. Chaque personne remplissait un document, ensuite interview avec un professionel (la qu'interviennent les professionels), deposaient personnellement leur temoignage, dans une demarche essentielle pour la reconnaissance de l'etat.</p>
+<p>Articles de Marcela Cornejo et xx. La recherche s'est interessé specifiquement aux profesionnels à l'écoute de l'état, quel a été sur eux l'impact des témoignages, le caractère traumatique pour eux? Pour la plupart impactés, bouleversés, mobilisant des processus d'elaboration. Profesionnels devaient porteur de temoignange que la societe même devait prendre en charge. Question du temps: temoignages délivrés 30 ans après les faits, dans pays qui n'avait pas voulu entendre ni écouter : &quot;chaine de l'ecoute&quot;. Les professionnels représentaient dans cette recherche les re1cepteurs de témoignages cachés. <strong>La méthodologie du récit de vie</strong> est décrite dans les articles.</p>
+<p><strong>Chaîne de l'écoute</strong></p>
+<p>Sentiment d'etre porteurs d'un secret, celui des horreurs vecus sous la dictature. Se demande qu'en faire, comment en assurer la charge? L'impression d'etre differents, de devoir veiller a ce que l'entreprise de revelation se realise. Souvent avec une angoisse, sentiment de sentir la meme chose que les depositaires (sentiment de persecution...). Crainte (pour les professionnels) d'etre suivi, persecuté.</p>
+<p>Qualité d'etre pour autrui. Emprisonnement politique, torture, causait pour la victime de ne plus etre autrui. Détruits au silence, quelque chose est rendu non-partageable. Les professionnels deviennent dès lors, par la fonction qui leur est confiée, le premier échelon officiel. Ils sont institués de cette fonction de recevoir ce qui n'est pas dicible, avec le risque de le faire disparaitre ou de les blesser de nouveau - mais il leur revient de prendre cela en charge, prendre autrui en charge.</p>
+<p>Ces professionnels n'avaient pas de fonction de psychothérapeute ou de cliniciens, et ce n'est pas sous cet angle que nous considérons les choses. Pas une fonction clinique au sens stricte, mais ont un caractère clinique tout de même (<strong>leur existence permet de restituer la responsabilité pour autrui destituée par le traumatisme</strong>).</p>
+<p>S'interroger sur la fonction des métiers, sur la transformation des métiers cliniques.</p>
+<p>(Necessite de maintenir une responsabilite partagee entre le deux partir pour permettre le potentiel transformateur, rendu possible uniquement par la relation elle meme.)</p>
+<p>Internvention public: Double fonction des professionnels: Receuil du temognange et calification. preocupation des lors de bien transmettre aux autres instances pour que du credit soit accordé (difficulté et exigeance de leur travail)</p>
+<h3 id="3-accompagner-les-crises-d-ihahamuka-lors-des-commemorations-du-genocide-contre-les-tutsis-au-rwanda" tabindex="-1">3. Accompagner les crises d'Ihahamuka lors des commemorations du génocide contre les Tutsis au Rwanda</h3>
+<p>Section basée sur les recherches apparaissant dans la <a href="https://dial.uclouvain.be/pr/boreal/fr/object/boreal%3A143580/datastream/PDF_01/view" target="_blank" class="external-link">thèse de Darius Gishoma</a>.</p>
+<h4 id="3-1-restauration-de-la-responsabilite-sociale-au-rwanda" tabindex="-1">3.1 Restauration de la responsabilité sociale au Rwanda</h4>
+<p>En 1994, lors du genocide commis contre les Tutsis, plus d'un million de vies humaines. Restauration de la respo sociale a implique creation de metiers inexistants auparavant et reparation d'instit sociales. Face a l'immensite des besoins, organisations humanitaires ont ete premiers a creer espaces d'ecoute (d'abord femmes et enfants). mais financees a court terme, essentiellement travailleurs etrangers, desengagés en 1997 a la fin d'une periode consideree d'urgence.<br>
+etat a ensuite pris les choses en main et creer des lieux propres. cree des lieux de formation en particulier. formation en conseiller traumatisme . infirmier en psychiatrie. formation pour psychologues 1997. 1999 departement psychologie clinique. tout ceci temoigne que dans les suites du genocide, reponses d'une societe qui se responsabilise face a la souffrance de ses membres.</p>
+<p>Processus d'elaboration ont eu lieu en dehors du chemin cassique de psy / psychiatre. en 2012 12 millions d'habitants. 2001 a 2014, un jours par semaine habitants se reunissaient pour parler de ce qui s'etait passee (justice sur le gazon). Et d'atures dispositifs, des formes d'espaces mediateurs ont surgi (associations de veuves, familles artificielles pour orphelins, commemorations annuelles du genocide...). Clinique a du s'adapter d'annee en annee au trama qui s'elaborait progressivement.</p>
+<h4 id="3-2-commemoration-annuelle-elaboration-progressive-mais-rappel-du-traumatisme-les-crises-d-ihahamuka" tabindex="-1">3.2 Commémoration annuelle: élaboration progressive, mais rappel du traumatisme (les crises d'Ihahamuka)</h4>
+<p>Commemoration = processus socio communitaire. Depuis 1995, rwanda commemore le genocide durant 1 semaine (dite de deuil national). Commemoration a une histoire, a parcouru un chemin qui enseigne sur travail de commemoration et ses difficultes. Dans une vue d'ensemble (discours, compositions artistiques, etc) on peut reperer une certaine evolution dans le processus commemoratif. Informe sur volonte des rescapes de x ainsi que de l'etat rwandais de se defaire des pieges du genocide. Redefinition et reposition des communautés.</p>
+<p>Mais ces moments de commemoration peuvent aussi se reveler traumatiques. Flashbacks, crises avec gestes visant a s'echaper, se cachent sous chaises, elevent les mains pour se proteger la tete contre possible, perte temporaire d'orientatio spatiale. Large eventail de symptomes (hoquet avec suffocation). Etat de perte de sensibilite et motricite tout en restant consciente... Se reveille aussi par des facteurs en apparence neutres (silence, chute de pluie rappelant un souvenir...)..</p>
+<p>Phenomene de contagion dans ces crises. Jusqu'a attendre une 50aine ou 100aine de personnes sur un seul lieu de commemoration. Crises de 30 min a 2h. Les crises d'Ihahamuka (&quot;comme si les poumonns sortaient a l'exterieur&quot;).</p>
+<h3 id="4-expropriation-et-restauration-d-autrui-clinique-recherche" tabindex="-1">4. Expropriation et restauration d'autrui: clinique, recherche</h3>
+<p>Genere en retour formes de creation ou recretion des métiers de la clinqiue.<br>
+Quand Autrui devient &quot;à exterminer&quot;, il vient ensuite hanter la scene des crimes comme un revenant comme il revient aux survivants d'entendre la voix.</p>
+<p>Etudier ces crises revient a etudier simultanement le contexte officiel de leur survenie, et le contexte de leur accompagnement officiel. Le travail décrit l'evolution du processus commemoratif au Rwanda. Dualité entre x et x.</p>
+<p>Role specifique de la recherche clinique. Mobilisation de la responsabilite du chercheur, des universites, face a l'ecrasement de xx.</p>
+<p>La recherche au Chili contribue a sa facon a la reparation des effets de l'emprisonnement et la torture, revele l'obligation de retablir officliement la fonction fondamentale de reconnaisance d'autrui.</p>
+<p>Fonction (de restauration) publique: mediation necessaire d'une instance de responsabilité. Ce qui a été tu, etouffe, rejeté, enquisté.</p>
+<p>--<br>
+Narration de scene (tres detaillee) vs scene de la torture (silence, doit etre devinee, indicible, mots allusifs, indirectements, permettant tout de meme le dialogue avec la chercheuse). interessant que les deux scenes soient la, l'inversion de l'une par l'autre.</p>
+<h3 id="5-appels-a-des-espaces-de-reconnaissance-et-de-recreation-de-la-responsabilite-aneantie" tabindex="-1">5. Appels à des espaces de reconnaissance et de recréation de la responsabilité anéantie</h3>
+<h3 id="6-conclusion-ouvertures-a-propos-des-espaces-cliniques-et-de-recherche-dans-ce-champ" tabindex="-1">6. Conclusion: ouvertures à propos des espaces cliniques et de recherche dans ce champ</h3>
+<hr>
 </main>
 <aside>
 <div class="sidebar">
@@ -378,6 +554,72 @@ On this page
 <li><a href="#4-2-transmission-intergenerationnelle-et-transgenerationnelle">4.2 Transmission intergenérationnelle et transgénérationnelle</a>
 </li>
 <li><a href="#4-3-l-auto-engendrement-refus-d-heriter">4.3 L'auto-engendrement : refus d'hériter</a>
+</li>
+</ol>
+</li>
+<li><a href="#partie-jean-luc-brackelaire-chaire-francqui">Partie Jean-Luc Brackelaire - Chaire Francqui</a>
+<ol>
+<li><a href="#introduction">🏷️ Introduction</a>
+</li>
+<li><a href="#i-faire-histoire-ensemble">🏷️ I. Faire histoire ensemble</a>
+<ol>
+<li><a href="#i-0-une-relation-autre">I.0 Une relation autre</a>
+</li>
+<li><a href="#i-1-reconnaitre-l-alterite">I.1 Reconnaître l'alterité</a>
+</li>
+<li><a href="#i-2-relancer-le-choeur-de-la-relation">I.2 Relancer le choeur de la relation</a>
+</li>
+<li><a href="#i-3-creer-de-la-culture-entre-nous">I.3 Créer de la culture entre nous</a>
+</li>
+<li><a href="#i-4-partager-la-precarite-de-l-exil">I.4 Partager la précarité de l'exil</a>
+</li>
+<li><a href="#i-5-recreer-la-socialite-a-partir-du-trauma">I.5 Recréer la socialité à partir du trauma</a>
+</li>
+<li><a href="#i-6-conclusion-partie-i">I.6 Conclusion Partie I</a>
+</li>
+</ol>
+</li>
+<li><a href="#ii-les-espaces-mediateurs">II. Les espaces médiateurs</a>
+<ol>
+<li><a href="#ii-1-des-espaces-alternatifs">II.1 Des espaces alternatifs</a>
+</li>
+<li><a href="#ii-2-espaces-politiques-travailler-le-social-comme-une-oeuvre">II.2 Espaces politiques (travailler le social comme une oeuvre)</a>
+</li>
+<li><a href="#ii-3-permettent-de-donner-forme-au-neant-du-trauma">II.3 Permettent de donner forme au néant du trauma</a>
+<ol>
+<li><a href="#questions-and-amp-reponses">Questions & réponses</a>
+</li>
+</ol>
+</li>
+<li><a href="#0-introduction">0. Introduction</a>
+<ol>
+<li><a href="#0-1-traumatisme-psycho-social">0.1 Traumatisme psycho-social:</a>
+</li>
+<li><a href="#0-2-responsabilite">0.2 Responsabilité</a>
+</li>
+<li><a href="#0-3-reconnaissance-et-elaboration">0.3 Reconnaissance et élaboration</a>
+</li>
+</ol>
+</li>
+<li><a href="#1-la-responsabilite-contre-la-violence">1. La responsabilite contre la violence</a>
+</li>
+<li><a href="#2-ecouter-la-torture-les-professionnels-de-la-cnppt-au-chili">2. Écouter la torture: les professionnels de la CNPPT au Chili</a>
+</li>
+<li><a href="#3-accompagner-les-crises-d-ihahamuka-lors-des-commemorations-du-genocide-contre-les-tutsis-au-rwanda">3. Accompagner les crises d'Ihahamuka lors des commemorations du génocide contre les Tutsis au Rwanda</a>
+<ol>
+<li><a href="#3-1-restauration-de-la-responsabilite-sociale-au-rwanda">3.1 Restauration de la responsabilité sociale au Rwanda</a>
+</li>
+<li><a href="#3-2-commemoration-annuelle-elaboration-progressive-mais-rappel-du-traumatisme-les-crises-d-ihahamuka">3.2 Commémoration annuelle: élaboration progressive, mais rappel du traumatisme (les crises d'Ihahamuka)</a>
+</li>
+</ol>
+</li>
+<li><a href="#4-expropriation-et-restauration-d-autrui-clinique-recherche">4. Expropriation et restauration d'autrui: clinique, recherche</a>
+</li>
+<li><a href="#5-appels-a-des-espaces-de-reconnaissance-et-de-recreation-de-la-responsabilite-aneantie">5. Appels à des espaces de reconnaissance et de recréation de la responsabilité anéantie</a>
+</li>
+<li><a href="#6-conclusion-ouvertures-a-propos-des-espaces-cliniques-et-de-recherche-dans-ce-champ">6. Conclusion: ouvertures à propos des espaces cliniques et de recherche dans ce champ</a>
+</li>
+</ol>
 </li>
 </ol>
 </li>
