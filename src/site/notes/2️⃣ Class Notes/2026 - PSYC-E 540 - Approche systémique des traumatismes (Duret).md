@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-17T23:53:19.738+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes-duret/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T12:44:43.669+01:00"}
 ---
 
 > [!tldr] Résumé
@@ -94,6 +94,13 @@ Comment définit-on, se représent-on la **famille**? On considérera ici le car
 
 Pour introduire la notion de famille, la professeure s’appuie sur Robert Neuburger, notamment sur son ouvrage _Le mythe familial_. Il propose une définition structurée autour de plusieurs fonctions essentielles.
 
+> [!info] La famille
+> D'après R. Neuburger, 1995, *Le mythe familial*. 
+> - **Unité fonctionnelle**, donnant confort et hygiène. 
+> - **Lieu de communication**, matrice relationnelle pour l'individu.
+> - **Lieu de stabilité**, **de pérennité**, malgré ou grâce aux changements que le groupe peut opérer.
+> - **Lieu de constitution de l'identité individuelle et de transmission intergénérationnelle**: la filiation. (On se construit l'identité non pas pour rester dans la famille, mais pour en construire une autre)
+
 D’abord, la famille est une **unité fonctionnelle**. Avant toute dimension psychologique, elle constitue un espace matériel : un toit, un lieu où l’on reçoit les soins primaires, où l’on bénéficie de confort et d’hygiène. Plusieurs étudiants avaient évoqué cette idée d’espace sécurisant, de base concrète d’existence.
 
 Ensuite, la famille est un **lieu de communication**, une _matrice relationnelle_ pour l’individu. C’est là que l’on apprend à parler, à interagir, à décoder les règles implicites de la relation. On y apprend les manières d’être et de faire avec autrui. D’une famille à l’autre, les styles interactionnels varient énormément : le niveau sonore, l’expression des émotions, la place du conflit, la distance ou la proximité. On est souvent plus frappé par ces différences lorsqu’on entre dans une autre famille que la sienne.
@@ -101,13 +108,6 @@ Ensuite, la famille est un **lieu de communication**, une _matrice relationnel
 La famille est aussi un **lieu de stabilité et de pérennité**. Même si le groupe évolue, se transforme, traverse des crises, il demeure en principe un point d’ancrage. Cette continuité contribue au sentiment de sécurité.
 
 Enfin, elle est un **lieu de construction identitaire**. On s’y construit pour pouvoir un jour s’en séparer partiellement et aller ailleurs : créer d’autres liens, éventuellement fonder une autre famille. La famille est également un espace de **transmission intergénérationnelle**, via la filiation. Cette transmission passe par des liens visibles mais aussi par des loyautés invisibles, parfois complexes ou contraignantes.
-
-> [!help] La famille
-> D'après R. Neuburger, 1995, *Le mythe familial*. 
-> - **Unité fonctionnelle**, donnant confort et hygiène. 
-> - **Lieu de communication**, matrice relationnelle pour l'individu.
-> - **Lieu de stabilité**, **de pérennité**, malgré ou grâce aux changements que le groupe peut opérer.
-> - **Lieu de constitution de l'identité individuelle et de transmission intergénérationnelle**: la filiation. (On se construit l'identité non pas pour rester dans la famille, mais pour en construire une autre)
 
 Ces différentes dimensions forment le socle de la définition de la famille. Mais, selon Neuburger, l’ensemble est structuré par un « ciment » particulier : le mythe familial.
 ### 2.2 Le mythe familial : croyances, récit et identité groupale
