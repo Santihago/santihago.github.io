@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-19T17:45:56.254+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-19T19:12:07.308+01:00"}
 ---
 
 > [!tldr] Résumé
@@ -266,20 +266,22 @@ Attention attirée vers parents se comportant de manière pas habituelle par rap
 
 Dans l'auto-engendrement, le sujet tente de se créer lui-même, niant sa dépendance aux origines parentales.
 
->[!example] Daniel
+>[!example] Daniel et sa demande d'une nouvelle famille
 >Garçon de 14 ans, se comportait comme si sa famille n'avait rien à voir avec lui. Il demandait à ce qu'on lui trouve une "vraie" famille, avec des personnes qui seraient dignes pour lui d'être des modèles identificatoires. Il avait été voir une juge pour demander une bonne famille, il a cependant vite déchanté, voyant qu'aucun interlocuteur ne prenait sa demande suffisament au serieux. Sa démarche contraste avec d'autres enfants faisant tout le possible pour ne pas laisser leur famille, pour maintenir le lien, coûte que coûte, dans des situations compliquées. Dans ce cas précis, les parents n'étaient pas indignés par cette position de leur fils ("s'il veut partir, qu'il parte").
 
->[!example] Oscar
->Garçon, décrit comme éteint, complètement déprimé. Il vivait tout seul dans un studio avec son frère de 11 ans dans lequel sa mère les avait installés. La mère ne comprenait pas pourquoi elle devait être là, venir avec son fils à l'entretien... et elle soulignait le fait qu'elle s'était "faite toute seule", ne devait rien à personne, s'attendait à la meme chose de la part de ses fils, afin qu'ils puissent s'autonomiser, se "faire tout seuls". Elle déclare n'avoir rien en commun avec son fils, posture apparaissant comme non-negotiable (telle une représentation particulière de ce qu'est la transmission pour une personne). Oscar se disait livré a lui-même, vet oulait qu'on lui explique le bien, le mal... mais sa mère était dans le refus, disait que ce n'était pas son job à elle. Le père, lui, habitait au fin-fond des Ardennes, mais a pu être vu en séance plus tard.
+>[!example] Oscar et sa maman autonome
+>Oscar était un garçon décrit comme éteint, complètement déprimé. Il vivait tout seul dans un studio avec son frère de 11 ans dans lequel sa mère les avait installés. La mère ne comprenait pas pourquoi elle devait être là, venir avec son fils à l'entretien... et elle soulignait le fait qu'elle s'était "faite toute seule", ne devait rien à personne, s'attendait à la meme chose de la part de ses fils, afin qu'ils puissent s'autonomiser, se "faire tout seuls". Elle déclare n'avoir rien en commun avec son fils, posture apparaissant comme non-negotiable (telle une représentation particulière de ce qu'est la transmission pour une personne). Oscar se disait livré a lui-même, voulait qu'on lui explique le bien, le mal... mais sa mère était dans le refus, disait que ce n'était pas son job à elle. Le père, lui, habitait au fin-fond des Ardennes, mais a pu être vu en séance plus tard.
+>
+>(Cet exemple n'est pas plutôt un cas de non-engendrement de la part de la mère?)
 
 Ce comportement d'auto-engendrement peut être compris comme une solution pour échapper au traumatisme de la génération des parents.
 
-Que faire aussi de ce qu'on **n'a pas** herité, ce qu'on **ne veut pas** hériter? Que faire de "n'avoir rien reçu", le cas de patients pauvres en appartenance, qui parfois n'ont pas connu leur parents...?
+Réflexion: Que faire aussi de ce qu'on **n'a pas** herité, ce qu'on **ne veut pas** hériter? Que faire de "n'avoir rien reçu", le cas de patients pauvres en appartenance, qui parfois n'ont pas connu leur parents...?
 
 Définitions:
 - **Engendrer**: se reproduire, passer du statut d'adulte à celui de parents, se mettre dans une perspective de filiation verticale, renier la mort ou la transcender en devenant capable de se projeter dans sa propre descendance.
-- **L'auto-engendrement**: Logique du clonage, qui permet de se reproduire sans passer à un statut de parent, sans qu'il y ait de parents géniteurs. Logique du même et de l'identique, de l'**indifférenciation** ou de la fusion. Filiation horizontale. Négation des différences. Pas d'histoire ni de chaîne des générations. Pas de lien entre présent et passé (métaphore de l'ortensia, mode de reproduction en biologie végétale).
-	- Une autrice dans la littérature psychanalytique (Elisabeth Bizouard, [Le cinquième fantasme, 1995](https://shs.cairn.info/le-cinquieme-fantasme--9782130470786?lang=fr)): selon elle, 5ème fantasme organisateur du psychique humain. "Engendrer l'inpredictible" (?) (Oscar).
+- **L'auto-engendrement**: Logique du clonage, qui permet de se reproduire sans passer à un statut de parent, sans qu'il y ait de parents géniteurs. Logique du même et de l'identique, de l'**indifférenciation** ou de la fusion. Filiation horizontale. Négation des différences. Pas d'histoire ni de chaîne des générations. Pas de lien entre présent et passé (métaphore de l'ortensia, mode de reproduction en biologie végétale par la *totipotentialité*).
+	- Une autrice dans la littérature psychanalytique, Elisabeth Bizouard, avait aussi proposé cette idée de l'auto-engendrement dans [Le cinquième fantasme, 1995](https://shs.cairn.info/le-cinquieme-fantasme--9782130470786?lang=fr). Elle le propose comme le 5ème fantasme organisateur du psychique humain. "Engendrer l'inpredictible". Ce serait le fantasme de se produire soi-même, de s’auto-engendrer. C’est une tentative psychique de se dégager de la dépendance originaire et de la passivité d’avoir été créé par d’autres.
 
 >[!info] Les quatre fantasmes originaires de Freud (rappel perso)
 >Pour Freud, ce sont des scénarios inconscients universels qui structurent la vie psychique ([cf](https://fr-academic.com/dic.nsf/frwiki/616612)):
@@ -291,6 +293,7 @@ Définitions:
   >  Idée inconsciente selon laquelle tout individu serait primitivement pourvu d’un pénis, la petite fille apparais­sant alors comme ayant été castrée ; la femme vit inconscient­ment l’angoisse d’avoir été castrée, l’homme celle d’être castré.
 > 4. **Le fantasme de retour au ventre maternel (ou fantasme intra-utérin)**  
 >    Il exprime le désir de retour à un état fusionnel, protégé, antérieur aux conflits et aux séparations. Il renvoie à la nostalgie d’un état originaire sans manque.
+
 
 📅 Vendredi **20 Février 2026** - Cours 3 - I. Duret
 
@@ -389,7 +392,7 @@ Trois caracteristiques constitutives de ces espaces mediateurs:
 3. Donnent forme au néant
 ### II.1 Des espaces alternatifs
 
-Faire histoire ensemble n'engange pas seulement des facons de faire, des cadres, d'institutions... Lieux *alternatifs*, de recreation entre soi des liens entre soi et autrui. SUr le fon d'horreurs, de violences destructrices. 
+Faire histoire ensemble n'engange pas seulement des facons de faire, des cadres, d'institutions... Lieux *alternatifs*, de recreation entre soi des liens entre soi et autrui. Sur le fon d'horreurs, de violences destructrices. 
 
 Hypothese que ce qu'on appelle les espaces mediateurs espaes des reconnaissance. Espaces multiples ou varies qui permettent de recreer la dialectique. 
 
