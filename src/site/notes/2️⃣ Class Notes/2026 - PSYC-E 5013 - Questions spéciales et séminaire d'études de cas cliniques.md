@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","created":"2026-01-22T14:40:49.440+01:00","updated":"2026-02-17T23:59:26.400+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","created":"2026-01-22T14:40:49.440+01:00","updated":"2026-02-19T11:52:48.159+01:00"}
 ---
 
 > [!tldr] Résumé
@@ -92,23 +92,86 @@ Au nom du discours de **la science** se développe un discours differentialiste,
 La traite: dure **trois siècles**, contexte d'ethnocide (culture effacée), restaient peu de caractéristiques d'humanité. Entreprise de traitement et perception de la différence qui est effroyable et dont les conséquences sont inmesurables. Peu de moyens de comprendre l'effet que ces processus on eu psychiquement sur les gens.
 - Le pouvoir de transformation, de survie, de création de culture des sujets humains est aussi intéressant et interpellant.
 
+### L'art, *Totems et tabous*, Freud
+
 Durant cette seconde colonisation:
 - décrivent, ramènent des oeuvres...
 - Brèche de la superiorité des savoir-faire occidentaux va commencer à se former: l'**art**. À partir de la fin du 19ème, on commence à collectionner, reprendre des masques, etc. "école primitiviste" et va se le réapproprier. Ex: [Les demoiselles d'Avignon](https://en.wikipedia.org/wiki/Les_Demoiselles_d%27Avignon) de Picasso. On commence à donner de la valeur à des productions d'autres groupes. Avec aussi un pouvoir de transformation.
-- Freud, collectionneur d'art.
-	- Développe une théorie sur l'universalité de l'inceste et l'Oedipe, se reappropriant de concepts d'anthropologues et faisant sa théorie psychologique (dans *Totems et tabous*, 1911-1913).
+- Freud, collectionneur d'art:
+	- Développe une théorie sur l'universalité de l'inceste et l'Oedipe, se réappropriant de concepts d'anthropologues et faisant sa théorie psychologique (dans *Totems et tabous*, 1911-1913).
 		- Après sa théorie du fantasme. Est ravi de trouver un exemple dans la culture antique. Reprend des récits d'anthropologie évolutionniste. Avec certaines de ces descriptions qui ont de la valeur. 
-		- Freud retrouve description de pratiques qui se fait aussi bien en amérique du nord qu'en Océanie, la pratique du totemisme (pratique proto religieuse, invitant les membres d'un groupe a choisir un animal comme étant celui dont ils se réclament, erigent un totem en honneur de cet animal: "le clan des élans", des hibous, etc.). Dans le meme totem, pas de rapports sexuels entre membres.
-			- Lecture de texte sur les totems: hypothese que tabou mis en place de l'exogamie et interdit de l'inceste et naissance de la religion (culpabilité vis a vis de celui qui est censé incarner la loi et qui a ete immolé) (cf. *Moise et monotheisme* de Freud).
-			- Lecture de texte (psychanalistes contemporains): Freud abandonnait vue de superiorité vis à vis cultures primitives, il les regardait comme un mode de survivance des religions, sur même pied d'egalité (modèle universel). Projet de regarder l'autre pour apprendre sur nous mêmes, on insiste sur ce qui fait notre humanité commune.
+		- Freud retrouve description de pratiques qui se fait aussi bien en amérique du nord qu'en Océanie, la pratique du totemisme (pratique proto religieuse, invitant les membres d'un groupe à choisir un animal comme étant celui dont ils se réclament, érigent un totem en honneur de cet animal: "le clan des élans", des hibous, etc.). Dans le même totem, **pas de rapports sexuels** entre membres.
+			- Lecture de texte sur les totems: hypothèse que tabou mis en place de l'exogamie et interdit de l'inceste et naissance de la religion (culpabilité vis à vis de celui qui est censé incarner la loi et qui a été immolé) (cf. *Moise et monothéisme* de Freud).
+			- Lecture de texte (psychanalistes contemporains): Freud abandonnait vue de superiorité vis à vis cultures primitives, il les regardait comme un mode de survivance des religions, sur même pied d'égalité (modèle universel). Projet de regarder l'autre pour apprendre sur nous mêmes, on insiste sur ce qui fait notre humanité commune.
 
 
 📅 Jeudi **19 Février 2026** (Cours 3 - L'état de la psychiatrie coloniale à l'époque (suite sur Freud))
 
+Nous aurons des notes complètes des cours précédents.
 
+Nous revenons sur *Totems et tabous* (y voit une ébauche de religion, avec des pratiques d'interdits, pour Freud les prémisses de ce qui va se déployer dans la culture moderne par l'intermédiaire de troubles associés au développement sexuel, cf complexe d'Oedipe). Universalité d'une fonction paternelle interdictrice.Aujourd'hui theorie pas vraiment considerée, faut pas y voir une consistance historique.
 
+Evolution de ces théories:
+Freud se base sur anthropologues "de bureau". Chez eux théorisaient sur base d'informations reçues de seconde main. Anthopologie aussi de comparaison entre cultures (souvent/toujours pour mettre en évidence superiorité de la notre sur la leur). Début 21ème, ça change, on se focalise sur comment une société se construit, quelle est la fonctionnalité sociale d'un groupe, des règles que la société propose... Donc ça devient des *monographies*, plutôt que comparaisons, Rites, regles, etc au sein de ce groupe. Avec plus une etude de terrain: *l'observation participante*. Et la tenue d'un carnet d'anthropologue (avec leurs émotions, leurs constats... une dimension intersubjective et une reconnaissance de la subjectivite de celui qui observe et rencontre).
+
+Travail de Bronislav Malinowski, *Les argonautes du Pacifique*, dans lequel il critique l'hypothèse de Freud de l'universalité d'une fonction paternelle interdictrice. En effet, dit Malinowsky, dans certaines cultures, pas ce rapport la ou le pire dicte la loi, le pere est juste un partenaire de jeu. Certains psychanalystes se forment à l'anthropologie pour prouver hypothèses Freudiennes. Hypothese apportée ensuite par certains aussi proposant que quelqu'un d'autre dans le système familial peut incarner la fonction paternelle, d'autoriser ce qui est autorisé ou non (autre que le père).
+
+**Anthropologie fonctionnaliste -> anthropologie culturaliste**
+
+Le point fort ici est le concept de la personnalité ethnique. Partant du principe que la manière dont se fonde la personnailté de l'ensemble des sujets dépend de leur culture. 
+
+Hypothèse qui fige fort le rapport et les possibilités de lien entre le sujet et le groupe. Risque aussi de retourner a une forme de naturalisation des rapports sociax et ce que sont les sujets humains. Relativisme, aussi: "cela dépend de la norme du groupe". "C'est normal chez les x, chez eux c'est comme ça". Ce qu'ils produistent comme comportement est relié a une explication valide pour l'ensemble des membres du groupe.
+## 🏷️ xx
+
+Comment la question de la norme est traitée pour les sujets colonisés?
+
+Ecole de Psychiatrie d'Alger. Antoine Porot. Lecture d'extraits. 
+Personnalité immorale, immature.
+Vernis scientifique pour dire des horreurs (déni d'humanité, justifie la violence qu'on impose).
+Se questionner sur l'impact actuel de ces idées.
+Impacte l'image de soi-même du colonisé.
+
+>[!info] École d'Alger
+>https://fr.wikipedia.org/wiki/École_d%27Alger
+
+Comment ca a pu changer/bouger?
+
+Similaire aux changements socio-politiques du 21: non pas le corps intellectuel, academique, mais plutot processus collectifs permettant que ça bouge.
+
+guerres premiere guerre mondiale, utilisation de soldats issus des colonies
+
+hanna arendt
+
+Existence de deux moments des colonies:
+1. Economie basée sur la traite d'esclaves, "traite negrière". Colonies alimentant l'économie d'europe pendant 2-3 siècles. Amenant à remise en question milieu 19ème. Pendant ce temps, noter que sujets francais anglophones obtiennent des le 18/19eme statut de citoyens
+	- Dans la clinique: controverse annees 50 entre Octave Manoni et psychiatre originaire du monde colonial, Frantz Fanon ()
+2. ?
+
+### Révolte années 50: Mannoni, Fanon
+
+46,47. L'ile de Madagascar. Episodes de tres grande violence de populations et groupes colonisés contre espaces commerciaux et plantations tenues par des colons. Sorte de progroms - des lieux tenus par des français feront objet de destruction, assassinats. 100aine de colons disparaissent dans ces émeutes. Suite à quoi France réagit en réprimant de manière féroce (30 a 40000 morts).
+
+Un auteur, pedagogue, administrateur... [Octave Mannoni](https://en.wikipedia.org/wiki/Octave_Mannoni) ecrit dessus, s'inspire de psychanalsyse et antrhopologe culturaliste:
+- D'un coté, peuple qui depuis qu'il est enfant se développe avec une perception des relations aux ancêtres ancrées sur la soumission: obéir et être très attentif à ce que les ancêtres souhaitent, et l'idée des offrandes et rester soumis pour acquérir la prosperité. Et autre mythe du Malgache: les ancêtres peuvent se manifester d'ailleurs, venir par la mer.
+- De l'autre, le colon français, avec sa personnalité: souvent des cadets de famille, des gens qui chez eux ont ete expropriés ou n'avaient pas accès à la terre et avait une logique de revanche.
+- Du coup, pour Mannoni, le mélange de deux personnalités crée la violence.
+- "Tous les peuples ne sont pas aptes à être colonisés, seulement ceux qui en éprouvent ce besoin... Presque partout où les européens ont fondé des colonies, on peut dire qu'ils étaient attendus, ou même désirés, inconsciemment".
+
+Conseille de lire Fanon, "Peau noire, masques blancs"
+
+Fanon: psychiatre, provient de la bourgeoisie antillaise. Etudie médecine. Dédie un chapitre de son ouvrage à critiquer la vision de Mannoni. Pour lui, relation coloniale produit une image miroir telle que "je ne suis pas ce que je devrais être", soit renvoyant à un idéal à atteindre (l'idéal du blanc, colon), soit une image de soi étant comme un déchet.
+
+(**Psychothérapie institutionnelle. François Tosquelles.**
+Créé de la suite de la deuxième guerre mondiale. Pour la survie des institutions, on faisait participer les usagers aux differentes taches. Se rendent compte que les patients se portent mieux. François Tosquelles est affecté à un hopital en Antilles françaises (deux aires, aire des femmes, aire des indigènes). Crée un café dans ces espaces tenu par les malades. Au début, écrit-il, ça ne marche pas avec les autoctones. 
+{pas sur du lien avec cette partie})
+
+Fanon: Démissionne de son poste en Algérie, écrit lettre expliquant qu'il ne peut pas faire clinique dans ce contexte. Retourne à Tunis pour travailler comme psychiatre et dans le même temps devient idéologue/promoteur des mouvements de révolution décoloniale.
+
+Engagement (dernier enseignement de Fanon). Clinique qui se veut engagée. C'est une absurdité de parler de neutralité dans ce cadre.
 
 
 📅 Jeudi **26 Février 2026** (Cours 4 - consacré à l'ethnopsychiatrie)
 
-📅 Jeudi **5 mars 2026** (Cours x - avocate)
+📅 Jeudi **5 Mars 2026** (Cours 5 - avocate, maybe)
+
+📅 Jeudi **12 Mars 2026**: pas cours, grève générale
