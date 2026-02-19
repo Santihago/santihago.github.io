@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-18T14:36:50.886+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-19T17:45:56.254+01:00"}
 ---
 
 > [!tldr] Résumé
@@ -230,34 +230,36 @@ Rappel/suite du cours précédent:
 
 ## 🏷️  4. Dispositifs pour éviter la transmission de traumatisme
 
-"Ces familles qui n'ont rien à transmettre et celles qui ne veulent pas transmettre"
+"Ces familles qui n'ont rien à transmettre, et celles qui ne veulent pas transmettre"
 
-Situations d'extraction de la civilité, perte de la dignité humaine. Quelles formes de tentatives de solutions sont mises en places par ces familles, individus, frappées par ces situations traumatiques?
-Pistes de dispositifs mis en place pour travailler avec eux.
+On parlera maintenant de situations d'extraction de la civilité, avec perte de la dignité humaine. Quelles formes de tentatives de solutions sont mises en places par ces familles, individus, frappées par ces situations traumatiques?
+Nous explorerons ici des pistes de dispositifs mis en place pour travailler avec eux.
 
-Cas de figure de types de stratégies, type de solutions,m pour eviter la transmisison de traumatisme (non exaustif)
-- L'auto-engendrement (refus d'hériter)
-- Le non-engendrement (refus de transmettre)
-- La "génophobie" (peur de transmettre certains gênes)
+Cas de figure de types de stratégies, type de solutions, pour éviter la transmisison de traumatisme (non-exaustif):
+1. L'auto-engendrement (refus d'hériter)
+2. Le non-engendrement (refus de transmettre)
+3. La "génophobie" (peur de transmettre certains gênes)
 ### 4.1 Transmettre
 
 Que veut dire transmettre?
-Transmettre:
-1. Communiquer un message qu'on a recu a quelqu'un (transmettre un message)
-2. Faire passer, agir comme un intermédiaire (métaphore de la courroie de transmission, permettre que quelque choise soit renvoyé).
-3. Faire passer dans un autre organisme (transmettre un savoir, une maladie (contaminer)).
-4. Mettre en possession de quelq'un d'autre ce qu'on a reçu (transmettre un héritage, léguer).
-Nous on va questionner les pheneomenes de transmission d'une generation a une autre, mais ces metaphores vont éclairer **les représentations** que les personnes peuvent avoir elles-memes de ces questions de transmission (on y reviendra).
+
+> [!info] Transmettre
+> Définitions possibles
+> 1. Communiquer un message qu'on a reçu à quelqu'un (transmettre un message)
+> 2. Faire passer, agir comme un intermédiaire (métaphore de la courroie de transmission, permettre que quelque choise soit renvoyé).
+> 3. Faire passer dans un autre organisme (transmettre un savoir, une maladie (contaminer)).
+> 4. Mettre en possession de quelqu'un d'autre ce qu'on a reçu (transmettre un héritage, léguer).
+
+Nous, on va questionner les phénomènes de **transmission d'une génération à une autre**, mais les métaphores ci-dessus vont éclairer **les représentations** que les personnes peuvent avoir elles-mêmes de ces questions de transmission (on y reviendra).
 
 ### 4.2 Transmission intergenérationnelle et transgénérationnelle
 
-Distinction importante pour nous cliniciens:
-- Transmission **inter**générationnelle: heritages conscients accessibles, -> mentalisation
-- Transmission **transgénérationnelle**: heritages inconscients, inaccessibles, inappropriables -> Non représentables (dans le sens de non representé, mais pourrait être représenté).
+Distinction importante pour nous, cliniciens:
+- Transmission **inter**générationnelle: les héritages conscients accessibles, -> mentalisation
+- Transmission **transgénérationnelle**: héritages inconscients, inaccessibles, inappropriables -> Non représentables (dans le sens de non representé, mais pourrait éventuellement être représenté).
 
-Une perspective de refus de transmission. 
-Parents disant ne pas vouloir transmettre.
-Lui semblait paradoxal? Faire en enfant et ne pas vouloir transmettre quelque chose. Comment faire famille sans "rien" transmettre? Potentiel d'aspects cognitifs, de bloquages cognitifs.
+Dans sa clinique, elle a observé des personnes dans une perspective de refus de transmission. 
+Par exemple, des parents disant ne pas vouloir transmettre. Ça lui semblait paradoxal: Faire en enfant mais ne pas vouloir transmettre quelque chose. Ce qui amenait pour elle la question: Comment faire famille sans "rien" transmettre? Potentiel engagement d'aspects cognitifs, de bloquages cognitifs.
 ### 4.3 L'auto-engendrement : refus d'hériter
 
 Attention attirée vers parents se comportant de manière pas habituelle par rapport à l'idée habituelle, classique, de la transmission, se comportent comme s'ils n'avaient eux mêmes rien reçu de leur parents ("je ne reconnais pas ces parents", "ils ne m'ont rien legué", pas de reconnaissance d'héritage psychique non plus, tel que règles, manières de se comporter, etc).
@@ -265,14 +267,14 @@ Attention attirée vers parents se comportant de manière pas habituelle par rap
 Dans l'auto-engendrement, le sujet tente de se créer lui-même, niant sa dépendance aux origines parentales.
 
 >[!example] Daniel
->14 ans, se comportait comme si sa famille n'avait rien a voir avec lui. Demandait à ce qu'on lui trouve une "vraie" famille, personnes qui seraient dignes pour lui d'être des modèles identificatoires. Il avait été voir une juge demandant une bonne famille, a vite déchanté, voyant qu'aucun interlocuteur ne prenait sa demande suffisament au serieux. Sa démarche contraste avec d'autres enfants faisant tout pour ne pas laisser leur famille, pour maintenir le lien coûte que coûte dans des situations compliquées. Ici, les parents n'étaient pas indignés par cette position de leur fils ("s'il veut partir, qu'il parte").
+>Garçon de 14 ans, se comportait comme si sa famille n'avait rien à voir avec lui. Il demandait à ce qu'on lui trouve une "vraie" famille, avec des personnes qui seraient dignes pour lui d'être des modèles identificatoires. Il avait été voir une juge pour demander une bonne famille, il a cependant vite déchanté, voyant qu'aucun interlocuteur ne prenait sa demande suffisament au serieux. Sa démarche contraste avec d'autres enfants faisant tout le possible pour ne pas laisser leur famille, pour maintenir le lien, coûte que coûte, dans des situations compliquées. Dans ce cas précis, les parents n'étaient pas indignés par cette position de leur fils ("s'il veut partir, qu'il parte").
 
 >[!example] Oscar
->Garcón éteint, complètement déprimé. Était tout seul dans un studio avec son frère de 11 ans dans lequel sa mère les avait installés. La mère ne comprenait pas pourquoi elle devait être là, venir avec son fils à l'entretien, souligner le fait qu'elle s'était faite toute seule, ne devait rien à personne, s'attendait à la meme chose de la part de ses fils pour qu'ils puissent s'autonomiser, se "faire tout seuls". Elle dit qu'elle n'a rien en commun avec son fils, posture appareissant comme non-negotiable (telle une représentation particulière de ce qu'est la transmission pour une personne). Oscar se disait livré a lui-même, voulait qu'on lui explique le bien, le mal... mère était dans le refus (disait que ce n'était pas son job à elle), père lui habitait au fin-fond des Ardennes (mais a pu être vu plus tard).
+>Garçon, décrit comme éteint, complètement déprimé. Il vivait tout seul dans un studio avec son frère de 11 ans dans lequel sa mère les avait installés. La mère ne comprenait pas pourquoi elle devait être là, venir avec son fils à l'entretien... et elle soulignait le fait qu'elle s'était "faite toute seule", ne devait rien à personne, s'attendait à la meme chose de la part de ses fils, afin qu'ils puissent s'autonomiser, se "faire tout seuls". Elle déclare n'avoir rien en commun avec son fils, posture apparaissant comme non-negotiable (telle une représentation particulière de ce qu'est la transmission pour une personne). Oscar se disait livré a lui-même, vet oulait qu'on lui explique le bien, le mal... mais sa mère était dans le refus, disait que ce n'était pas son job à elle. Le père, lui, habitait au fin-fond des Ardennes, mais a pu être vu en séance plus tard.
 
-Peut être compris comme une solution pour échapper au traumatisme de la génération des parents.
+Ce comportement d'auto-engendrement peut être compris comme une solution pour échapper au traumatisme de la génération des parents.
 
-Que faire aussi de ce qu'on **n'a pas** herité, ce qu'on **ne veut pas** heriter? Que faire de "n'avoir rien reçu", le cas de patients pauvres en appartenance, qui parfois n'ont pas connu leur parents...?
+Que faire aussi de ce qu'on **n'a pas** herité, ce qu'on **ne veut pas** hériter? Que faire de "n'avoir rien reçu", le cas de patients pauvres en appartenance, qui parfois n'ont pas connu leur parents...?
 
 Définitions:
 - **Engendrer**: se reproduire, passer du statut d'adulte à celui de parents, se mettre dans une perspective de filiation verticale, renier la mort ou la transcender en devenant capable de se projeter dans sa propre descendance.
