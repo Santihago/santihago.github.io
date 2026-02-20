@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-19T19:12:07.308+01:00"}
+{"dg-publish":true,"permalink":"/2-class-notes/2026-psyc-e-540-approche-systemique-des-traumatismes/","created":"2026-01-22T14:38:06.245+01:00","updated":"2026-02-20T13:06:28.540+01:00"}
 ---
 
 > [!tldr] Résumé
@@ -281,7 +281,7 @@ Réflexion: Que faire aussi de ce qu'on **n'a pas** herité, ce qu'on **ne veut 
 Définitions:
 - **Engendrer**: se reproduire, passer du statut d'adulte à celui de parents, se mettre dans une perspective de filiation verticale, renier la mort ou la transcender en devenant capable de se projeter dans sa propre descendance.
 - **L'auto-engendrement**: Logique du clonage, qui permet de se reproduire sans passer à un statut de parent, sans qu'il y ait de parents géniteurs. Logique du même et de l'identique, de l'**indifférenciation** ou de la fusion. Filiation horizontale. Négation des différences. Pas d'histoire ni de chaîne des générations. Pas de lien entre présent et passé (métaphore de l'ortensia, mode de reproduction en biologie végétale par la *totipotentialité*).
-	- Une autrice dans la littérature psychanalytique, Elisabeth Bizouard, avait aussi proposé cette idée de l'auto-engendrement dans [Le cinquième fantasme, 1995](https://shs.cairn.info/le-cinquieme-fantasme--9782130470786?lang=fr). Elle le propose comme le 5ème fantasme organisateur du psychique humain. "Engendrer l'inpredictible". Ce serait le fantasme de se produire soi-même, de s’auto-engendrer. C’est une tentative psychique de se dégager de la dépendance originaire et de la passivité d’avoir été créé par d’autres.
+	- Une autrice dans la littérature psychanalytique, Elisabeth Bizouard, avait aussi proposé cette idée de l'auto-engendrement dans [Le cinquième fantasme, 1995](https://shs.cairn.info/le-cinquieme-fantasme--9782130470786?lang=fr). Elle le propose comme le 5ème fantasme organisateur du psychique humain. "Engendrer l'inpredictible". Ce serait le fantasme de se produire soi-même, de s’auto-engendrer (soite à l'identique: a. faire des enfants qui me ressemblent en tout point de vue, ou b. faire des enfants qui ne me ressemblent pas mais qui poursuivent ma lignée). C’est une tentative psychique de se dégager de la dépendance originaire et de la passivité d’avoir été créé par d’autres.
 
 >[!info] Les quatre fantasmes originaires de Freud (rappel perso)
 >Pour Freud, ce sont des scénarios inconscients universels qui structurent la vie psychique ([cf](https://fr-academic.com/dic.nsf/frwiki/616612)):
@@ -296,6 +296,122 @@ Définitions:
 
 
 📅 Vendredi **20 Février 2026** - Cours 3 - I. Duret
+
+*Dans la suite de auto-engendrement*
+
+Exemple: la famille "ortensia", illustrant ce type d'investissement particulier de la filiation, de l'autoengendrement.
+- Famille composée de 3 parents: 2 mamans, 1 père, et 11 enfants, vivant sous le même toit. Respectivement 5 et 6 enfants avec le même père géniteur. Ces enfants étaient tous appelés pareillement, Marcel (ou Marcèle, pour les filles). Le nom de famille les distingue, celui de la mère. Utilisation aussi de surnoms (The King, Kiddy, etc)
+- Totipotentialité: cette caractéristique qui fait que **la différence entre le tout et la partie devient tres compliquée**. 
+- Enfants comme petites boutures., nommées de manière identique. 
+- Tentative de **renforcer l'appartenance familiale**, peut-être dans le but de faire rupture avec le passé? On peut imaginer que pour ces familles ça ne se passait pas comme ca dans les générations précédentes.
+- Occultation de la filiation parentale, aussi: dans cette famille, le nom du père n'est pas donné. Choix intéressant. Pere considere comme geniteur mais enfants pas vraiment inscrit dans sa filiation. Il y avait eu de la maltraitance vécue par les mères (abus sexuel à l'intérieur de leur famille), donc ce choix s'inscrit dans quelque chose qu'elles ne souhaientent pas faire revivre à leurs enfants (hypothèse). A defaut d'avoir pu parler du traumatisme, élaboré, elles agissent de cette manière.
+- (Parenthèse: Cas de fausses allégations d'abus sexuel du père sur l'enfant: raconte son experience personnelle en debut de carriere, rencontrant parfois des fausses allegations. Se sont rendu compte que dans certains cas, s'apparentait a des "Fausses allegations par procuration": de n'avoir pas pu soi meme devoler son propre abus (les mères), elle accusait la personne qui n'avait pas realisé l'abus (telescopage). Peut amener aussi à par exemple accuser son prof de gym alors qu'on a été abusé par son grand père, etc.)
+
+==Auto-engendrement = tourner le dos aux origines==. 
+#### Contexte social et culturel de transmission
+
+Est-ce que ca ne révèle pas quelque chose aussi du mythe social, de l'ambiance sociétale?
+
+1. Elle constate dans cette société un **affaiblissment** de la perception du lien de filiation, de l'axe vertical. Processus débute avec la révolution industrielle et siècle des lumières. Se réclamant de l'innovation et progrès, moins d'identification absolue aux générations précédentes. Beaucoup de choses se sont horizontalisées dnas les perspectives de vivre et d'appréhender le monde, e.g. choix des métiers, progrès de la procréation assistée, représentation plus ouverte de la famille (recomposées)... Cette horizontalisation qu'un psychiatre bruxellois, Fouret, met en lien à l'abandon de l'authoritarisme. Cet affaiblissement (pas disparition), peut etre cause l'affaiblissement au niveau individuel de du lien de filiation.
+
+2. **Dramatisation**: elle trouve que très souvent on a évoqué les risques de répétition, comme existant une sorte de déterminisme dans certaines familles, où tout serait voué à se répeter d'une génération à une autre. Énormement de travaux ont eclairé ce type de répétitions, mais peut-être mettant trop l'accent sur ces répétitions là. Nous sommes sortis de là par l'avenant du concept de la **résilience**, idées venant des EEUU, arrivant chez nous par [Cyrulnik](https://fr.wikipedia.org/wiki/Boris_Cyrulnik). Comme l'ont montré Reynaldo Perrone ou Stefano Cirilo, ce n'est pas vrai que tous les enfants maltraités deviennent des enfants maltraitants: oui, ils peuvent avoir peur d'avoir des enfants pour cette raison là, mais ce déterminisme ne se confirme pas. Parents qui n'ont pas envie de se montrer comme exemple, ne veulent pas être une figure identificatoire. Sorte aussi de grande prudence: "Ne pas vouloir induire l'enfant", comme si c'était dangereux de donner trop de règles, trop de repères. E.g. cas d'Oscar ci-dessus. 
+
+3. Fascination moderne pour **messages anti-engendrement**, et anti-gratitude.
+	-  [Professeurs de désespoir](https://fr.wikipedia.org/wiki/Professeurs_de_désespoir), de Nancy Huston, 2004: cette écrivaine examine les messages pronant l'anti-transmission dans notre littérature et culture. Elle, d'origine canadienne, est venue en France à Paris à l'âge de 20 ans. À 40 ans elle s'interroge sur ce qu'elle a transmis à sa fille, constate qu'elle a transmis un message plutôt nihiliste, néantiste, "noir", et se demande comment certaines influences européennes avaient pu l'influencer, qu'elle développe dans son essai examinant de nombreux auteurs: Arthur Schopenhauer, Samuel Beckett, Emil Cioran, Jean Améry, Charlotte Delbo, Imre Kertész, Thomas Bernhard, Milan Kundera, Elfriede Jelinek, Michel Houellebecq, Sarah Kane, Christine Angot, et Linda Lê. 
+	- Selon elle, 3 facteurs associés a cette ambiance d'anti-transmission:
+		- Un nouveau rapport au temps lié au postmodernisme caractérisé par l'**effacement des origines** (accélération, immédiateté). Pas de projet ancré sur le passé, le passé n'intéresse plus. Nous sommes dans un présent qui "se justifie par lui-meme", où l'autorité des anciens s'est dissoute. Parce que les anciens ont été défaillants (e.g. colonialisme, destructrion écologique, guerres, génocides...). Instauration progressive du modèle de l'homme libre, autonome, non determiné par un passé, un dieu... 
+			- Concept du "Self-made man" américain (dias avec photos d'Obama, Steve Jobs), et photos de Michael Jackson et ses opérations, illustrant l'effacement des propres origines.
+		- La **mysoginie** liée à l'émancipation des femmes et au mythe de l'égalité induisant le déni des différences:
+			- Selon, elle sacralisation du néantisme. Ce néantisme traduirait un sursaut de virilisme. "Si les hommes ont dominé les femmes dans les sociétés et religions, c'est parce qu'elles portent leurs enfants". Un homme ne peut pas porter son enfant, ce qui crée un désequilibre majeur, qu'ils n'arrivent pas à pouvoir surmonter. Mythe d'égalité, "on est les mêmes": on aurait l'impression qu'en niant les différences, on aura accès aux mêmes droits. Mais ceci pourrait créer des animosités à d'autres niveaux. Réflexion sur l'utérus artificiel, condition selon une autrice à l'atteinte d'une veritable égalité.
+		- Les traumatismes de la deuxième guerre mondiale et de l'histoire du XXème siècle.
+	- Pourquoi cette fascination, selon elle? Peut-être le cote déculpabilisateur. Dire que l'homme est un monstre permet de ne pas trop se sentir avec le poids d'une responsabilité. Soulage ce public de pouvoir etre au contact de cette vision néantiste. 
+	- Elle se penche sur la biographie de ces auteurs anti-transmission (elle n'est pas psychologue mais):
+		- Etre né dans un pays humilié comme l'Allemagne ou un pays continental traumatisé par les horreurs auxquelles il a participé (honte de l'appartenance groupale).
+		- Avoir passé son enfance dans un carcan idéologique ou religieux.
+		- Avoir cumulé des malheurs familiaux (abandons, deuils précoces, ou répétés, violences parentales, abus sexuels, ...).
+		- Mais surtout, trait fondamental, **la peur d'engendrer**.
+
+
+> [!info] Contexte social et culturel
+> 1. **Affaiblissement** du lien de filiation
+> 2. **Dramatisation** de la répétition trans générationnel des traumatismes et de la maltraitance.
+> 3. **Fascination** pour les messages allant à l'encontre de la transmission et de l'engendrement. repérable dans la culture et en particuler dans la litterature europeenne contemporaine.
+
+Perspective de nouveau: être le nouveau maillon.
+
+- **Premiere stratégie de survie: l'auto-engendrement pour échapper au destin familial. Considere la sienne non suffisamment frequentable et bien pour lui.**
+
+*Duret I. (2000). L'auto-engendrement: une solution pour échapper au destin familial? Considérations systémiques sur les répercussions transgénérationnelles des traumatismes et les solutions imaginées par les familles pour les contourner, Thérapie familiale, vol. 21, n2, p 129-140, Med & hygiene, Geneve.*
+
+*Duret I. Lefebvre A. (1997). "Cherche vraie famille a tout prix" Histoire d'une filiation honteuse, Cahier de Psychologie clinique, 9, p.55-69, de Boeck.*
+
+Histoire de Daniel, deja evoquee dessus: Daniel et sa "vraie" famille. Enquete sociale démontre que famille offrait ce que l'enfant avait besoin de recevoir, parents ne sont pas les monstres qu'il decirt. Decrit pere comme alcolique, mere feme facile prostitué qui a des relations avec pleins d'hommes. Il va errer, quitter souvent le domicile paternel et maternel, demande à être hébergé dans hopitaux et institutions dans lesquels il passe quelques jours.
+
+Il arrive dans le service d'hôpital où elle travaillait. Est pas dans un tres bon état, est délirant. Dit que sa belle-mère est sorcière, et qu'elle a déjà tué plein de gens de sa famille, et qu'elle a jeté des sorts sur lui. Il entend des voix qui l'en avertissent. Fait des crises de catatonie, dans lequelles il reste immobilisé, dit etre possedé par la belle mere.
+
+Les décrit comme des étrangers, des êtres amoraux, avec qui il n'a rien en commun, pourrait etre contaminé par ces mauvaises personnes. Dit qu'il a trouvé une vraie famille, chez qui il a été plusieurs fois, qui lui a été presentée par un curé d'un village. C'est une famille avec laquelle il dit se sentir bien.
+
+Elle appelle les parents (mère et tome sur la belle-mère) qui refusent de venir le voir, disent en avoir vu de toutes les couleurs avec lui. Elle contacte la "nouvelle" famille, qui eux sont d'accord de venir le voir.
+
+**Chez Daniel, ce qui frappe est sa volonté de s'exclure (auto et hétéro-exclusion) de sa filiation réelle pour en trouver une de substitution, qui n'est pas imaginaire: il les a rencontrés, les reconnait comme vrais parents et famille potentielle.**
+
+La belle-mère ne comprend pas comment il en arrive à les traiter de cette façon là, dit s'en être beaucoup occupé. Plutôt fachée, dans une perspective de "maintenant il est chez vous, démerdez-vous".
+
+Elle insiste pour voir les parents biologiques: les parents viennent à deux, alors qu'ils sont séparés. Ils vont faire garder les enfants de madame par la belle-mère de Daniel. 
+
+**Hypothèse 1: promouvoir l'auto-engendrement est une tentative de solution pour permettre à ces enfants de survivre, c'est-à-dire d'échapper au destin familial. On le retrouve chez certains parents qui ont le sentiment d'être les victimes d'un jeu familial ou social et de ne plus être maîtres de leur destinée.**
+
+Dans le service, Daniel met la moitié des travailleurs "dans sa poche", l'autre moitié aimerait le renvoyer en psychiatrie, disant qu'il a besoin d'une aide adaptée. C'est un clivage qu'il a suscité lui même. Pour elle, s'est dit qu'il est utile de comprendre ses symptômes sans les stopper, de comprendre son délire, pour comprendre son roman familial. Les délires "viennent toujours de quelque chose".
+
+Avec les parents, elle réalise un exercice de cartographie de la famille, avec un génogramme (voir dia). En les accueillant, elle est surprise par la complicité entre les deux parents séparés, qu'elle comprendra mieux plus tard. Il a été possible de faire ce génogramme seulement en dehors de la présence de Daniel. Parents ne voulaient pas parler de tout ça à leurs fils.
+- Discussion, anomalies constatées dans ce génogramme:
+	- Grand nombre de décès dans la famille du père.
+	- Frère (du même parent biologique) porte le nom de famille du beau-père.
+	- Mère porte le nom de famille du beau père et pas du père biologique.
+
+Daniel n'a jamais eu de réponses à ses questions. C'est devenu obsessif pour lui.
+
+L'histoire, a laquelle Daniel n'a pas accès initialement:
+- Les parents sont bien les parents biologiques des deux frères. Luc (frère de Daniel) est présenté comme le fils du beau-père M. Lebrun, alors qu'il ressemble fort physiquement au père biologique, Durand. Ceci accentue pour Daniel le non-sens, l'aburdité.
+- Il y a une perception propre de ces parents comme honteux.
+- Le papa est issu d'une fratrie avec un grand nombre d'enfants morts à la naissance, presqu'une alternance d'un enfant mort sur deux (sauf lui, qui vient "briser la règle"). Ce père se présente comme "celui qui n'aurait pas dû exister". Il y a chez cet homme la sensation d'avoir transgressé les lois familiales, dit par lui-même. Il a en effet toujours eu un doute sur la paternité de son père: était-il son fils, ou était-il issu d'une relation extra-conjugale de sa mère? Le doute planait, il n'a jamais pu le clarifier. Il avait vécu son père comme rejettant, l'avait traité comme un batard. Il aura deux fils, Daniel et Luc, mais n'assumera la paternité que d'un sur les deux. Lors de la grossesse du deuxième enfant, la mère avait eu une relation passagère avec un autre homme, et s'est donc dit que son enfant ne devait pas être de son mari: elle a pris la décision qu'il n'allait pas etre le père, lui a accepté, ne voulant pas répeter ce que lui avait vécu en tant que fils. Mais à la naissance, ils se rendent compte qu'il lui ressemble et qu'il est bien son pere, mais ne font jamais marche arrière.
+- La mère, issue de relation "adultérine" (terme qu'on n'utilise plus). La maman avait demandé à son mari de faire un desaveu légal pour la fille qui va naitre, mais Dupont refuse de faire ce desaveux qu'elle lui supplie de faire. Mais ces deux parents biologiques meurent dans un accident de voiture quand elle est adolescente, donc elle reste avec son pere légal (Dupont). Il va abuser sexuellement d'elle pendant deux années. **On comprend pourquoi elle essaye de ne pas faire vivre a son deuxième enfant quelque chose de similaire**. 
+
+On constate un mécanisme de part la tendance à vouloir réparer, sorte de téléscopage de ce que l'on essaye de reparer (les paternités erronées, qui etaient lourdes de consequences pour les deux parents), ce qu'on a pas pu elaborer soi-meme. Mécanisme qui explique comment ils ont pu agir.
+
+Elle apprend aussi que Daniel n'adresse plus la parole à son père (furieux de son comportement envers Luc).
+
+Il y a aussi les parents qui veulent quelque chose de mieux pour les enfants (par la protection). Parents ne veulent pas exclure, punir... veulent juste quelque chose d'autre, de méilleur, que ce qu'ils ont eu pour eux-mêmes. 
+
+Explication de leur complicité: ils se sont trouvés pour *faire différemment*, faire quelque chose de réparateur.
+
+Daniel, lui, a besoin de sens pourtant. En tant qu'adolescent, surtout, besoin de s'inscrire dans une histoire pour pouvoir se développer en tant qu'adulte en devenir.
+
+Famille d'accueil: acceptent de l'accueillir, disent avoir réfléchi, l'avoir trouvé touchant. Ne "demandent pas mieux" que de devenir des parents réparateurs. Mais ne se sont pas rendus compte des liens de loyauté invisibles de Daniel, au bout de plusieurs weekends c'est devenu plus compliqué.
+
+Possibilités d'interventions ici:
+- **Parentectomie**: conseil de couper les liens avec les parents d'origine.
+- Recadrage (**travail d'élaboration du passé**), si cet auto engendrement était une tentative d'echapper au traumatisme familial... Option suivie ici. Besoin latent des adolescents de compréhension de leur histoire. 
+	- Donc travail d'une part avec les parents pour qu'ils voient leur histoire comme autre chose que seulement honteuse, dramatique (il y a aussi de belles choses dans leur histoire). 
+	- Travail pour d'aider Daniel a se repérer dans sa transmission.
+		- Dire à Daniel devant ses parents: ce que les parents ont pu transmettre c'est la competence. Operation: parents ont transmis l'importance de compter sur soi meme pour se construire. Avec ce recadrage, nouvelle prespective: pas une perspective de rupture de lien (cut-off), mais de transmission. Parents vus comme transmettant des choses, usant de leur competences parentales pour proteger les generations suivants.
+		- Sous forme d'entretiens familiales pour parler de l'histoire, mais pas sous forme tragique, dramatique, mais comme histoire de vie les amenant a prendre les decisions qu'ils ont prises. **Re-explorer le passé différemment**.
+			- Heritage plutot qu'optique des "repetitions". Que'setce quils ont reussi a transformer, a faire de ce quils ont recu de douloureux.!
+
+
+
+
+
+📅 Vendredi **X Février 2026** - Cours 4 - I. Duret
+
+### 4.4 Le non-engendrement : refus de transmettre
+
+
+
+
+
+
+
 
 
 
