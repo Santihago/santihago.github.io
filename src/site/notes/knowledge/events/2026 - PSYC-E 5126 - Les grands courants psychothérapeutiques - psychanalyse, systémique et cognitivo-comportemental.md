@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-09T17:16:52.485+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-12T21:42:24.820+02:00"}
 ---
 
 
@@ -467,7 +467,6 @@ Tous les groupes ne sont pas des **groupes d'appartenance**. Certains sont des *
 - Groupes d'inclusion: ne sont pas des supports pour l'identité des individus. Les individus regroupés partagent un trait commun. Par ex: l'age, promotion de master de psycho, trait physique... Ils ne créent pas de fait un groupe d'appartenance, avec une identité. Mais peut le devenir. Par ex diagnostics (être bipolaire), mais rien de valorisant a priori en termes d'identité.
 	- Les gens se voient désignés par l'extérieur. Ce ne sont pas nécessairement eux qui vont s'inclure. Lien avec racisme (danger a venir designer un groupe en fonction d'une caractéristique, parfois réductrice: juifs, arabes, homosexuels, etc.).
 - Groupe d'appartenance: inclus un sentiment de solidarité, on va participer à des rituels venant renforcer ces dimensions là.
-
 ### x.3 Les modèles constructivistes
 
 #### e. Les modèles constructivistes : Modèle constructiviste 1
