@@ -1,7 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"2026-03-04T17:27:33.190+01:00","updated":"2026-04-12T21:15:25.263+02:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"2026-03-04T17:27:33.190+01:00","updated":"2026-04-12T21:28:55.096+02:00"}
 ---
-
 
 
 **Cours obligatoires**
