@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<title>2026 - PSYC-E 509 - Évaluation critique des interventions cliniques</title>
+<title>Évaluation critique des interventions cliniques</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -65,9 +65,9 @@ CTRL + K
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2026-04-12T19:16:43.965Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2026-04-12T19:16:43.965Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2026-04-12T19:16:43.965Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">2026 - PSYC-E 509 - Évaluation critique des interventions cliniques</h1>
+<h1 data-note-icon="">Évaluation critique des interventions cliniques</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.115+01:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2026-03-04T17:59:55.839+01:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.115+01:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2026-04-10T20:20:34.883+02:00"></span></div></div></div>
 </header>
 <p>Cours donné par Laura Périchon cette année (avant appelé Fondements méthodes et évaluation de l'intervention psychologique, de Vinciane Despret)</p>
 <div class="callout" data-callout="tldr"><div class="callout-title"><div class="callout-title-inner"> Résumé<br></div></div>
@@ -78,21 +78,18 @@ Exposé théorique des enjeux épistémologiques particulièrement lisibles dans
 <div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Évaluation<br></div></div>
 <div class="callout-content">
 <p>
-L'évaluation se fonde sur un <strong>travail</strong> à rendre, par groupes de 4-5 etudiants. Rencontrer 1 personne. entretien(s) A enregisrer, eventuellement observer aussi, que la personne decrive sa pratique et donne un exemple (sorte de cas clinqiue, raconter une seance,etc). analyser son dispositif thérapeutique. aussi: qui sont les patients? issus d'une certaine demographie? certaine culture? (pas un travail sociologique pour autant). pour le 1 juin 2026. 7/8eme cours: presenter avancement du travail en groupe. 15 a 20 pages.</p>
+L'évaluation se fonde sur un <strong>travail</strong> à rendre, par groupes de 4-5 etudiants. Rencontrer 1 personne. entretien(s) A enregisrer, eventuellement observer aussi, que la personne decrive sa pratique et donne un exemple (sorte de cas clinqiue, raconter une seance,etc). analyser son dispositif thérapeutique. aussi: qui sont les patients? issus d'une certaine demographie? certaine culture? (pas un travail sociologique pour autant). pour le 1 juin 2026. 7/8eme cours: presenter avancement du travail en groupe. Max 15 a 20 pages.</p>
 </div></div>
-<div class="callout" data-callout="tip"><div class="callout-title"><div class="callout-title-inner"> Lectures recommandées 2024<br></div></div>
-<div class="callout-content">
-<p>
-Une liste de lectures est proposée aux étudiants et destinée à documenter le travail de fin d'année. A titre d'exemple (liste non exhaustive) :</p>
+<p>L'idée est d'interroger sur la pratique, sur les formations, comment elle comprend son travail, comment elle comprend que ca fonctionne, etc. Et expliciter à travers un cas clinique comment ça peut fonctionner. Déceler quelles sont les théories que mobilise le dispositif thérapeutique, théories mobilisées pour agir dans le dispositif. Exemple: hypnose n'est pas une théorie, c'est une technique qui peut être mobilisée dans différentes théories. Par ex hypnose amène changement de conscience, mais important qu'est-ce qu'on fait dans cet état de conscience different?</p>
+<blockquote>
 <ul>
-<li>P. Pignarre &quot;Comment la dépression est devenue une épidémie&quot;</li>
-<li>V. Despret &quot;Ces émotions qui nous fabriquent&quot;</li>
-<li>C. Lutz &quot;La dépression est-elle universelle&quot;</li>
-<li>R. Barret &quot;Latraite des fous. Construction sociale de la schizophrénie&quot;</li>
-<li>T. Nathan &quot;Nous ne sommes pas seuls au monde&quot;</li>
-<li>M. Borch Jakobsen &quot;Folie à plusieurs&quot;</li>
+<li>Décrire ce que la personne a décrit.</li>
+<li>Ensuite, nous rajouter une réflexion/étude pour un niveau meta/clinique supplémentaire.</li>
+<li>Références: Cours, références du cours, et d'autres références c'est OK aussi.<br>
+Présentation:</li>
+<li>plus c'est clair et structuré au mieux pour qu'elle donne son feedback.</li>
 </ul>
-</div></div>
+</blockquote>
 <p>📅 Mercredi <strong>11 février 2026</strong></p>
 <h2 id="introduction" tabindex="-1">🏷️ Introduction</h2>
 <p>Approche philosophique, anthropologique? Réfléchir à la psychotherapie en prenant un regard large. Elle a fait un doctorat avec V. Despret et I. Duret sur le deuil et sur les thérapies sur le deuil (la relation entre la personne endeuillée et la personne défuncte). Formée Approche centrée sur la personne (Rogerienne), approches de pleine conscience, hypnose ericksonienne, EMDR, ICV (Intégration du Cycle de la Vie).</p>
@@ -288,7 +285,7 @@ Dans l'heritage du modele biomedical, cette variable serait a exclure.</p>
 </ul>
 </li>
 </ul>
-<h4 id="1-cadre-culturel-destine-a-amener-la-em-guerison-em" tabindex="-1">1. Cadre culturel destiné à amener la <em>guérison</em></h4>
+<h3 id="1-cadre-culturel-destine-a-amener-la-em-guerison-em" tabindex="-1">1. Cadre culturel destiné à amener la <em>guérison</em></h3>
 <ul>
 <li>Hutte d'un shaman ou hopital occidental, le cadre dans lequel il prend place impregne le processus de puissance et de prestige, tout en rappelant aux <a href="http://participant.es" target="_blank" class="external-link">participant.es</a> les croyances culturelles prédominantes concernant des soins efficaces et la guérison. C'est quoi <em>aller mieux</em>?</li>
 <li>Pour etre convaincante, toute intervention doit tout d'abord etre clairement reliée aux croyances communes partagées:
@@ -299,19 +296,12 @@ Dans l'heritage du modele biomedical, cette variable serait a exclure.</p>
 </ul>
 <p>📅 Mercredi <strong>4 Mars 2026</strong> - Cours 4</p>
 <p>Rappel des cours précédents.</p>
-<h4 id="2-le-mythe-ou-l-expose-raisonne" tabindex="-1">2. Le mythe ou l'exposé raisonné</h4>
+<h3 id="2-le-mythe-ou-l-expose-raisonne" tabindex="-1">2. Le mythe ou l'exposé raisonné</h3>
 <ul>
-<li>
-<p>(voir texte de la slide 1)</p>
-</li>
-<li>
-<p>Il est nécessaire pour les cliniciens d'etre conscients des nombreux mythes culturels significatifs disponibles, mais egalement d'etre prets a modifier leur technique, leur style et le type d'approche pour mieux s'accorder avec le client.</p>
-</li>
-<li>
-<p>Importance de prendre en compte la culture</p>
-</li>
-<li>
-<p>Selon Jerome Frank (ou encore Tobie Nathan), <strong>la guérison opérerait donc par adhésion, affiliation, initiation ou conversion à la théorie du thérapeute.</strong></p>
+<li>(voir texte de la slide 1)</li>
+<li>Il est nécessaire pour les cliniciens d'être conscients des nombreux mythes culturels significatifs disponibles, mais également d'être prêts à modifier leur technique, leur style et le type d'approche pour mieux s'accorder avec le client.</li>
+<li>Importance de prendre en compte la culture</li>
+<li>Selon Jerome Frank (ou encore Tobie Nathan), <strong>la guérison opérerait donc par adhésion, affiliation, initiation ou conversion à la théorie du thérapeute.</strong>
 <ul>
 <li><strong>Adhésion</strong>: Différentes théories peuvent engager differement l'adhésion. Exemple: psychotrauma, trauma a laissé des traces dans le psychisime, ou explicaion plus neuro encore, dans certaines zones du cerveau, et du coup ces traces font que des symptomes se manifestent plusieurs mois apres, et que ces symptomes sont du aux effets de l'evenement, etc. On peut présenter cette théorie au patient pour apres presenter l'intervention. Le patient peut adherer (etre d'accord), et si elle est d'accord, ne fut ce que le temps de l'intervention. Ca ne doit pas forcement devenir la representation du monde tout le temps a laquelle la personne croit, mais seulement pendant l'intervention est suffisant.</li>
 </ul>
@@ -322,12 +312,12 @@ Dans l'heritage du modele biomedical, cette variable serait a exclure.</p>
 <li>Hypnose</li>
 <li>Discussion:
 <ul>
-<li>Personne qui arrive de la compagne, 19ème siècle. ARrive a la Salpetriere a Pars. Pour le patient, être possédé = sa théorie à lui de pourquoi il va pas bien.</li>
+<li>Personne qui arrive de la compagne, 19ème siècle. Arrive a la Salpetriere a Pars. Pour le patient, être possédé = sa théorie à lui de pourquoi il va pas bien.</li>
 <li>Janet(?) ne lui fait pas un exorcisme magique, par contre il parle d'exorcisme moderne. Il lui propose une autre théorie, et le patient va être &quot;converti&quot; à cette théorie, part en se disant que le probleme n'est pas la sorcellerie mais sa culpabilité et le regret.</li>
 </ul>
 </li>
 </ul>
-<h4 id="3-une-relation-de-confiance-chargee-emotionnellement" tabindex="-1">3. Une relation de confiance chargée émotionnellement</h4>
+<h3 id="3-une-relation-de-confiance-chargee-emotionnellement" tabindex="-1">3. Une relation de confiance chargée émotionnellement</h3>
 <ul>
 <li>Il y a peu de débat autour de l'importance de la relation thérapeutique, mais bien autour de sa puissance et de sa place. E.g. Rogers, ce serait l'élément de traitement.
 <ul>
@@ -335,28 +325,200 @@ Dans l'heritage du modele biomedical, cette variable serait a exclure.</p>
 <li>D'autres</li>
 </ul>
 </li>
-<li>Le modele contextuel met l'accent sur l'action coordonnee et synchronisee des facteurs techniques et relationnels : les deux sont inextricablement liés ...
+<li>Le modele contextuel met l'accent sur l'action coordonnée et synchronisée des facteurs techniques et relationnels : les deux sont inextricablement liés ...
 <ul>
-<li>Comme si on ne pouvait pas totalement separer alliance, relation, traitement... mais le traitement ne se reduit pas a la relation</li>
+<li>Comme si on ne pouvait pas totalement séparer alliance, relation, traitement... mais le traitement ne se réduit pas a la relation</li>
 </ul>
 </li>
 <li>&quot;Le succès de toutes les méthodes dépend de la conviction des patients que les thérapeutes se soucient d'eux et sont capables de les aider&quot; (Frank et Frank, 1991, p.154).</li>
 </ul>
-<h4 id="4-le-rituel-ou-la-technique" tabindex="-1">4. Le rituel ou la technique</h4>
+<h3 id="4-le-rituel-ou-la-technique" tabindex="-1">4. Le rituel ou la technique</h3>
 <ul>
 <li>Mise en actes d'une mythologie thérapeutique culturelle (qui explique le pourquoi du trouble et le comment de la guérison).</li>
-<li>Selon le modele contextuel, aucune différence d'efficacité n'existe entre les différentes approches thérapeutiques.</li>
+<li>Selon le modèle contextuel, aucune différence d'efficacité n'existe entre les différentes approches thérapeutiques.</li>
 <li>Ce qui compte est que le traitement ait du sens pour le client, soit accepté par lui et favorise son engagement actif.</li>
 <li>Les techniques fonctionneraient donc en grande partie par l'activation de l'espoir, de l'attente, de l'engagement du client.</li>
-<li>ET par les effets de l'allégence du thérapeute sur le résultat du traitement:
+<li>ET par les effets de l'allégeance du thérapeute sur le résultat du traitement:
 <ul>
-<li>&quot; Un therapeute convaincu par son expérience personnelle de la validité d'une méthode particulière peut etre extremement efficace pour persuader les patients qu'eux aussi en bénéficieront&quot; (Frank et Fank, 1991, p.161)
+<li>&quot; Un thérapeute convaincu par son expérience personnelle de la validité d'une méthode particulière peut être extrémement efficace pour persuader les patients qu'eux aussi en bénéficieront&quot; (Frank et Fank, 1991, p.161)
 <ul>
-<li>&quot;Guériseur gueri&quot;, souvent psys qui ont fait eux aussi un parcours therapeutique, convaincus, convertis, à cette methode. Ceci peut les rendre encore plus persuasifs.</li>
+<li>&quot;Guériseur guéri&quot;, souvent psys qui ont fait eux aussi un parcours thérapeutique, convaincus, convertis, à cette méthode. Ceci peut les rendre encore plus persuasifs.</li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+<p>📅 Mercredi <strong>18 Mars 2026</strong> - Cours 5</p>
+<div class="callout" data-callout="warning"><div class="callout-title"><div class="callout-title-inner"> Présentation intermédiaire<br></div></div>
+<div class="callout-content">
+<p>
+15 avril: jour de la présentation. Ça ne fait pas partie de l'evaluation, c'est plus pour nous aider dans le processus. Les 12 groupes présentent, à priori.<br>
+Tous les membres du groupe ne doivent pas être presents, forcément (c'est pour nous).<br>
+Idéal de faire la rencontre avant.<br>
+a<br>
+Travail: idee est de décrire ce qu'elle dit, ensuite nos interpretations, explications... d'après le modele des facteurs communs.</p>
+</div></div>
+<p>Hello, tu as eu de nouvelles? si elle veut avant de s'engager on peut lui expliquer ce qu'on cherche, si elle a des questions, sans engagement,</p>
+<hr>
+<p><em>(Suite 4. Le rituel ou la technique)</em></p>
+<ul>
+<li>Les techniques/méthodes constituent une composante nécessaire d'un soin efficace</li>
+<li>MAIS les résultats montrent qu'il ne faut pas LE bon traitement pour un trouble particulier</li>
+<li>Les meilleures méthodes sont alors celles qui:
+<ol>
+<li>Ont pour but, ou dnt on pense qu'elles ont pour but d'etre therapeutiques, et sont administrees avec un expose raisonne pertinent et convaincant</li>
+<li>Et, qui conviennent au client - qu'il peut accepter</li>
+</ol>
+</li>
+</ul>
+<h3 id="exemple-possession-sous-ayahuasca" tabindex="-1">Exemple: possession sous Ayahuasca</h3>
+<p>&quot;Ayahuasca et son ombre. L'apprentissage de la possession dans un centre chamanique d'Amazonie péruvienne&quot;. David Dupuis. Journal de la Societe des americanistes. 104-2. 2018</p>
+<p>Conference de David Dupuis sur le sujet: <a href="http://youtube.com/watch?v=basNpRsLrkY" target="_blank" class="external-link">youtube.com/watch?v=basNpRsLrkY</a></p>
+<p>Anthropologue. S'intéresse a ces occidentaux qui viennent pour 15 jours (inclus diete, activites, ayahuasca...)</p>
+<p>contexte: gros mouvement pour etre requalifiés comme traitement pour sante mentale.<br>
+iteressant pour nous de se demander quel role peuvent avoir les psychedeliques dans ce dispositif.</p>
+<p>Modele assez medical, du coup. On essaye de comprendre comment prise de psychedeliques a un effet sur la neurophysiologie qui eput etre benefique (comme on donne des antidepresseurs).</p>
+<p>Cet anthropologue dit que le modele reste un modele medical, pharmacologique, et neurocentriste. Mais cet anthropologue étudie aussi l'importance du set and setting (importance du contexte). Experience semble etre grandement associee au contecte dans lequel on prend, donc faire des RCT peut ne pas etre ideal, psychedeliques se pretent pas super bien. Ou effets bad trip potentiels si mauvais contexte (medecin, neons, etc)</p>
+<p>dans le renouveau, nouvelle vague, on les considere importantes pas forcement pour les memes raisons.</p>
+<p objectifs="" antagonistes?="" plus="" cest="" medical="" moins="" cest="" underground="" et="" mystique?="">(a tenir compte: consommation aujourd'hui avec affiliation a certains groupes, faisant partie de la contre culture, ... cote underground peut faire du dispositif. contrairement aux groupes plus médicaux, modernes, qui veulent ramener leur usage thérapeutique).</p>
+<p>Idee de sortir d'un automatisme pharmacologique, penser aux effets pharmaco et oublier le contexte. Peut-etre que c'est l'interaction des deux qui façonne, produit l'experience.</p>
+<p>Profil des gens qui viennent: personnes qui cherchent un certain cote animiste, etc. Arrivent en plus avec problemes de sante mentale, pas severe mais parfois on voyage a travers institutions. Utilisent cosmonomie chretienne, le medecin qui set mobilise aussi le pantheon chretien. Rapport au monde chretien, occident, europe (prieres, utilisation de crucifix, mobilisation d'entites comme christ, marie, saints...)<br>
+Les personnes on leur explique en arrivant comment fonctionnent les ceremonies en groupe, dans un espace specifique, et comment elles vont vivre les choses.<br>
+Idee de la possession: cerataines personnes, leur problemes sont dus a la possession. Ca va se manifester a voir pendant la session d'ayahuasca.</p>
+<p><strong>Cas de Violaine, 19 ans, de Paris</strong></p>
+<p>&quot;Je me suis sentie tres mal, tres deprimée, tres triste, ...&quot;<br>
+Medecin avec sa perspective, par ces interrogations, les mots qu'il met, propose sa theorie.<br>
+au fur et a mesure elle incorpore le langage du medecin (elle explique son experience par l'infestation, possession). Hypothese que psychedelique agit comme amplificateur de theories, pas seulement mentalement, mais aussi comme experience.<br>
+Ici, pas seulement qu;'on lui explique les choses differement, mais qu'elle le VIT different, y a l'experience qui rajoute qqch.</p>
+<p>-&gt; inverse que le cas discute précédemment. dans l'autre, le gars arrive avec les theories de son village avec theories chrétiennes (mal agi, etait possedé), et le dispositif de Janet lui avait fait comprendre que c'était dans son inconscient. Ici, 150 ans plus tard, a peu près le meme endroit, mais ca s'inverse. dans une société occidentale qui ne voit pas l'humain comme habite par forces étrangères, vient revoir ces croyances sur l'origine des problèmes, et la qst de l'agentivité, qui est aux commandes a l'intérieur de soi.</p>
+<p>📅 Mercredi <strong>25 Mars 2026</strong> - Cours 6</p>
+<p>Discours de la possession est assez courant. Peut-être parce qu'histoire efficace sur l'agentivité.</p>
+<p>Important aussi quand on offre une explication, offrir aussi une explication. Sinon, risque d'effet nocebo.</p>
+<blockquote>
+<p><strong>Psychédéliques et thérapie alternative</strong> (David Dupuis)</p>
+<ul>
+<li>Théorie thérapeutique local transmise par les conférences, les dispositifs rituels et les groupes de parole. En resumé: les troubles viennent d'une manifestation qui fait suite a des actes problématiques, et il faut se purger, purifier et protéger de diverses manières ET parallèles avec la vie quotidienne</li>
+<li>Théorie transmise aussi sur le plan de l'expérience via les psychédéliques (voir/sentir/percevoir les etres invisibles en particulier)</li>
+<li>Les perceptions hallucinogènes sont pleinement façonnées par les savoirs, attentes et croyances antérieurs à l'expérience</li>
+<li>Effets thérapeutiques du dispositif selon l'auteur:
+<ul>
+<li><strong>Reconfiguration de l'identité</strong>: unité du soi, individu imperméable et maître de lui-même VS hétérogénéité du soi, perméabilité du soi, influences extérieures</li>
+<li><strong>Recadrage narratif</strong>: &quot;maintenant je sais ce que c'est, et je sais quoi faire&quot;</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>Ces méthodes et nos méthodes (diagnostiquer en psychiatrie, par ex.) devraient être pensés plus comme des dispositifs thérapeutiques et moins comme souvent prétendu, des dispositifs descriptifs. Catégories telles que Borderline, etc. en médecine, prétendument descriptives. Mais il y a un effet qui façonne, qui fabrique... En tant que psy, on a moins à faire à des diagnostiques, mais ça fait quand meme partie de notre pratique, ce rapport que les patients ont à leur diagnostic.</p>
+<hr>
+<h2 id="travail-de-groupe" tabindex="-1">Travail de groupe</h2>
+<p><strong>Notes travail de groupe</strong></p>
+<p>Pratiquante choisie: Pauline Ezan (Travaille avec des psychédéliques)<br>
+Rendez-vous le 6 avril à 16h. Son site personnel:<br>
+<a href="https://khoroskollective.be/guides/pauline-ezan/" target="_blank" class="external-link">https://khoroskollective.be/guides/pauline-ezan/</a></p>
+<p>Brainstorming de groupe 📅 25 mars 18:00:</p>
+<ol>
+<li><strong>Son parcours et formation</strong>
+<ol>
+<li>Comment elle est passée de sage-femme à thérapeute psychédélique?</li>
+<li>Qu'est-ce qu'elle hérite de sa formation et expérience de sage-femme?</li>
+<li></li>
+</ol>
+</li>
+<li><strong>Le cadre conceptuel / l'exposé raisonné</strong> (<mark>IMPORTANT</mark>):
+<ul>
+<li>Concrètement, l'exposé raisonné comprend plusieurs couches de théories, que le cours détaille :
+<ul>
+<li><strong>Des théories sur la maladie</strong>: qu'est-ce qui cause la souffrance ? Les conflits psychiques inconscients (psychanalyse) ? Un traumatisme qui a laissé des traces neurophysiologiques (EMDR, psychotrauma) ? Des cognitions inadaptées (TCC) ? Un déséquilibre énergétique ? Une possession par des esprits ? Des schémas relationnels dysfonctionnels ? Chaque dispositif a sa réponse, et cette réponse n'est pas neutre — elle oriente tout le reste.</li>
+<li><strong>Des théories sur la guérison</strong>: comment on passe de &quot;ça ne va pas&quot; à &quot;ça va mieux&quot; ? Il faut mentaliser, rendre conscient l'inconscient ? Retraiter le souvenir traumatique ? Modifier les comportements ? Exorciser ? Se reconnecter à quelque chose de plus grand ? Purifier le corps ? Chaque théorie de la maladie implique logiquement une théorie de la guérison.</li>
+<li><strong>Des théories sur l'humain</strong>: qu'est-ce qu'une personne ? Un corps avec un cerveau ? Un psychisme avec un inconscient ? Une âme incarnée ? Un être traversé par des forces ? Un système nerveux ? Ce sont des présupposés souvent implicites mais qui structurent profondément la pratique.</li>
+<li><strong>Des théories sur le monde</strong>: quelle est la nature de la réalité ? Y a-t-il un invisible, un sacré, des forces ? Quel rapport entre le corps et l'esprit ? Quel rapport entre l'individu et le collectif, la nature, le cosmos ?</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Questions-type : Comment expliques-tu à quelqu'un qui vient te voir <em>pourquoi</em> il va mal et <em>comment</em> ça va l'aider? Est-ce que tu utilises un vocabulaire médical (neuroplasticité, système nerveux, trauma), spirituel (énergie, connexion, purification), ou les deux? Est-ce que ça dépend du client? Quand quelqu'un arrive avec une souffrance, quelle &quot;histoire&quot; lui proposes-tu pour comprendre ce qui se passe?</li>
+<li><strong>La tension modèle médical vs. modèle chamanique/spirituel</strong>: elle a un pied dans le modèle médical (sage-femme, clinicienne) et un pied dans quelque chose de plus chamanique/spirituel (plantes médicinales, traditions). La question est : quelle mythologie thérapeutique mobilise-t-elle avec ses clients?</li>
+</ol>
+</li>
+<li><strong>Le dispositif concret: le rituel/la procédure</strong>
+<ul>
+<li>Frank &amp; Frank parlent d'un rituel qui requiert l'implication conjointe du guérisseur et du client. Il faut comprendre très concrètement ce qui se passe : la préparation, la session, l'intégration.
+<ul>
+<li>Quel psychédelique?</li>
+<li>Set and setting: comment il est?</li>
+</ul>
+</li>
+<li>Questions-type : Peux-tu décrire concrètement comment se déroule un accompagnement, de A à Z? Qu'est-ce qui se passe avant la session (préparation, diète, entretien)? Pendant? Après (intégration)? Quel est le rôle du set and setting dans ta pratique? Comment tu structures l'espace physique?</li>
+</ul>
+</li>
+<li><strong>La relation de confiance émotionnellement chargée</strong>
+<ul>
+<li>Comment se positionne-t-elle dans la relation? Le cours insiste sur l'alliance thérapeutique et la variabilité due au thérapeute.</li>
+<li>Le site du collectif Khoros parle de &quot;guides&quot; et de &quot;space-holders&quot;, pas de &quot;thérapeutes&quot; (ce choix lexical veut déjà dire quelque chose).</li>
+<li>Questions-type : Comment décrirais-tu ta relation avec les personnes que tu accompagnes? Te vois-tu comme guide, thérapeute, facilitatrice? Comment tu gères la confiance, surtout dans un état modifié de conscience où la personne est très vulnérable? Est-ce que ta posture change pendant la session vs. avant/après?</li>
+</ul>
+</li>
+<li><strong>Un cas clinique concret</strong>:</li>
+<li><strong>Autres</strong>:
+<ol>
+<li><strong>Le public / les patients</strong>:
+<ul>
+<li>Quel type de personnes vient te voir? Pour quelles raisons (parcours d'itinérance clinique, dernier recours, cherchent &quot;quelque chose d'autre&quot;?)? Y a-t-il un profil récurrent (prédisposition aux thérapies alternatives, comprehensions spirituelles...)?</li>
+</ul>
+</li>
+<li><strong>La question de la légalité</strong>: Le site parle d'&quot;expériences psychédéliques légales&quot; — ça veut probablement dire truffles (psilocybine en vente libre aux Pays-Bas), ou sessions aux Pays-Bas, ou breathwork intense. Pour comprendre comment le cadre légal contraint ou façonne le dispositif.</li>
+</ol>
+</li>
+</ol>
+<p>lui dire qu'important d'avoir le cas clinique.</p>
+<hr>
+<p>Note: Video conseillée en cours: <a href="https://www.youtube.com/watch?v=basNpRsLrkY" target="_blank" class="external-link">https://www.youtube.com/watch?v=basNpRsLrkY</a> (David Dupuis)</p>
+<ul>
+<li>Approche anthropologique</li>
+<li>Modèles plus récents &quot;neurocentriques&quot;:
+<ul>
+<li>Carhartt-Harris et Friston</li>
+<li>Entropic brain, priors: efficace parce que mode Mode par défaut... psychédélique change le cerveau, substance -&gt; effet sur cerveau -&gt; amélioration</li>
+</ul>
+</li>
+<li>Idée de psychédélique comme vecteur de transformation sociale (nous rappelle années 70, LSD):
+<ul>
+<li>Vertus: Pensé aussi pour la société occidentale, pas seulement santé mentale: présentés comme solution (climat, extinction rebellion, créer shifts de neuro-représentation de relation à la nature, au non-humain, nous rendrait de gauche...)</li>
+<li>Mais aussi, on dit, versant négatif: ca nous rendrait manipulables: brainwashing (narratif après 2eme guerre mondiale, anticommuniste, abandonné aux Etats-Unis), mais en France vu comme outil potentiellement utilisable par groupes sectaires pour manipulation, perte d'agentivité (et en Belgique, quelque chose de similaire).</li>
+</ul>
+</li>
+</ul>
+<p>Deux étapes de l'experience psychédélique</p>
+<ul>
+<li>Etape perception géométriques: universelle</li>
+<li>Formes figuratives: plus façonnées par culture<br>
+Déjà identifié par Claude-Levi Strauss 1970 (amplificateurs de discours latent que chaque discours tient en réserve).</li>
+<li>Mais on a moins explore le fond social et son impact sur le contenu psychédélique.</li>
+</ul>
+<p>Cas ici, centre chamanique amazonie Péruvienne (Takiwasi, fondé par un medecin français), gens qui arrivent d'europe principalement:</p>
+<ul>
+<li>Recherche thérapeutique</li>
+<li>Pistes pour relations d'un type un peu différent (animisme, apprendre qqch sur maniere de relation au non-humain)</li>
+<li>Motifs spirituels</li>
+</ul>
+<p>Dispositifs de 2 semaines (adapté aux congés des occidentaux)</p>
+<ul>
+<li>Purge, vomissement volontaire (avec plantes vomitives)</li>
+<li>Groupes de discussion</li>
+</ul>
+<p>Interprétation de l'experience psychédélique</p>
+<ul>
+<li>Les participants organisent leur expérience autour de ce que l'on entend/comprend des groupes de parole. Notamment avec présence d'autorités épistémiques (le médecin-guide, etc)</li>
+<li>Proprieté des psychedeliques: Perceptions halucinogènes pas perçues comme divagations de l'esprit, mais perçu comme accès à éléments d'une réalité plus réelle encore que la réalité réelle.
+<ul>
+<li>Sert de bases à reconstructions narratives, reconfiguration identitaire</li>
+</ul>
+</li>
+</ul>
+<p>Efficacité thérapeutique:</p>
+<ul>
+<li>se sentent soignés. meme si symptomes restent la. mais probablement du au recadrage narratif: maintenant la personne &quot;sait la cause du sens du mal&quot; (les démons a l'intérieur, etc), et on a des comportements pour lutter (priere, etc).</li>
+<li>Vs. modeles pharma: ici psychedelique production de sens, cristallisation de sens, nouvelles valeurs, etc, et que ceci est au coeur du changement therapeutique (je me demande s'il a pas trop simplifié modeles pharma/neurophysio au debut? modele friston/carhart inclut surement changement de valeur, epistemique, prise d perspective, etc)</li>
 </ul>
 </main>
 <aside>
@@ -411,7 +573,11 @@ On this page
 </li>
 <li><a href="#4-le-rituel-ou-la-technique">4. Le rituel ou la technique</a>
 </li>
+<li><a href="#exemple-possession-sous-ayahuasca">Exemple: possession sous Ayahuasca</a>
+</li>
 </ol>
+</li>
+<li><a href="#travail-de-groupe">Travail de groupe</a>
 </li>
 </ol>
 </nav>
@@ -419,7 +585,8 @@ On this page
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><i icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>

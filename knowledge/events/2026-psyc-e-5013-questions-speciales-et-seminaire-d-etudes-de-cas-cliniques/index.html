@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<title>2026 - PSYC-E 5013 - Questions spéciales et séminaire d&#39;études de cas cliniques</title>
+<title>Questions spéciales et séminaire d&#39;études de cas cliniques</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -65,9 +65,9 @@ CTRL + K
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2026-04-12T19:16:43.965Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2026-04-12T19:16:43.965Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2026-04-12T19:16:43.965Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">2026 - PSYC-E 5013 - Questions spéciales et séminaire d&#39;études de cas cliniques</h1>
+<h1 data-note-icon="">Questions spéciales et séminaire d&#39;études de cas cliniques</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.113+01:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2026-03-05T11:50:20.858+01:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.113+01:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2026-04-09T10:30:17.470+02:00"></span></div></div></div>
 </header>
 <div class="callout" data-callout="tldr"><div class="callout-title"><div class="callout-title-inner"> Résumé<br></div></div>
 <div class="callout-content">
@@ -80,7 +80,7 @@ Sans négliger les axes du diagnostic et de l’institution, le séminaire « Qu
 <p>
 Rapport écrit (et présence obligatoire au séminaire pour que l’UE puisse être validée). Trois types de rapport possibles:</p>
 <ol>
-<li>Si un stage a déjà été réalisé, on peut faire un rapport (environ 5-6 pages) qui illustre ce qu'on a mis en place, ou ce qu'on aurait pu faire, en faisaint un lien entre le séminaire et le stage (avec des liens bibliographiques ou aux notes). Pas forcément nécessaire d'avoir fait une clinique avec de gens qui viennent d'ailleurs, ça peut être une clinique classique tout-venant. Rapport qui mettra en lien le contenu du séminaire avec le contenu du stage. Pas un calque du rapport de stage, il faut le lien avec le contenu du séminaire.</li>
+<li>Si un stage a déjà été réalisé, on peut faire un rapport (environ 5-6 pages) qui illustre ce qu'on a mis en place, ou ce qu'on aurait pu faire, en faisaint un lien entre le séminaire et le stage (avec des liens bibliographiques ou aux notes). (Ou éventuellement d'une autre pratique professionnelle, et qui nous concerne). Pas forcément nécessaire d'avoir fait une clinique avec de gens qui viennent d'ailleurs, ça peut être une clinique classique tout-venant. Rapport qui mettra en lien le contenu du séminaire avec le contenu du stage. Pas un calque du rapport de stage, il faut le lien avec le contenu du séminaire.</li>
 <li>Formule mixte: petit rapport (environ 2-3 pages, un recto-verso) avec réponse à une question par rapport au stage, c'est une question qui sera donnée, pas de choix entre deux questions comme à l'option 3).</li>
 <li>Formule la plus souvent choisie: on répond à deux questions proposées aux séances après Pâques (obligé de répondre aux deux) (un recto-verso aussi, comme l'option 2).</li>
 </ol>
@@ -396,7 +396,125 @@ En Belgique, logique d'etat pour inviter ces travailleurs a faire venir ces fami
 </ul>
 </li>
 </ul>
-<p>📅 Jeudi <strong>19 Mars 2026</strong> (Cours 6 - intervention d'une avocate en droits des étrangers)</p>
+<p>📅 Jeudi <strong>19 Mars 2026</strong> (Cours 6 - Début des cas cliniques )</p>
+<p>Nous invite a reflechir au sens de la phrase: &quot;Craindre avec raison d'être persécuté&quot;</p>
+<p>au depart d'une construction qui est la sienne, il y a 20 ans.<br>
+germe qui est la sienne.<br>
+Travaillait comme objecteur de confiance (service civil, cadre legal pour eviter service militaire)<br>
+s'est formé avec Zenoni, pour une pratique a plusieurs<br>
+but de faire une alternative a l'hopital, moins contraignant, et alternative aussi au cadre de la psychotherapie individuelle</p>
+<p>COmment mettre en place une logique de travail avec ces sujets, malgre tout, qu'ils aient encore dans cet espace une certaine aptitude, reconnaissance a leur parole?</p>
+<p>Logique de participation des patients aux activités, taches, fonctionnement (tosqueyes)<br>
+Mais qd meme difference avec l'anti psychiatrie, ici on considere quand meme qu'il y a des troubles a traiter.</p>
+<p>Se mettre aux cote du patient/pensionnaire pour &quot;faire barrage&quot; contre ce a quoi il a faire a l'exterieur, ce qui l'envahit. Le proteger de ca.</p>
+<p>Neutralité ne fonctionne pas dans la clinique post traumatique -&gt; ne reconnait pas le rapport de dephasage par rapport a la possibilite de rentrer en relation.</p>
+<p>pour beacuoup de personnes, la premiere experience de souffrance date, est ancienne, et est souvent localisee ailleurs. Donc difference avec la logiqie de la psychose</p>
+<p>Lecture d'une situation.</p>
+<ul>
+<li>Patient hospitalise, psychiatre cherche une solution alternative. Symptomes psychotiques envahissants.</li>
+<li>Connait peu sur lui. Vient du Liberia (pays anglophone, d'Afrique du Sud Ouest)</li>
+<li>Famille nombreuse de confession musulmane</li>
+<li>Haut niveau de responsabilite dans la compagnie ou il travaillait.</li>
+<li>Activisme defense droits des homosexuels, mariage organisé par pere avec une femme (pays ou homosexualite est punie). Jeune a ete lynché par un groupe de jeunes.</li>
+<li>Poste d'expert en Suisse et en voyage pour la Suisse arrive en Belgique et decompense sous un mode spectaculaire.</li>
+<li>N'urine plus de maniere volontaire et ca lui rappelle ses tortures
+<ul>
+<li>(Mais &quot;ca colle pas&quot;, l'ont vu rouler a velo, etc. Ca sollicite les soignants du cote de la verité)</li>
+</ul>
+</li>
+<li>Implication communautaire (participe au colloque Ullyse preesntant l'importance du soin communautaire pour stress post traumatique)
+<ul>
+<li>a incarné le lien entre psychotherapie communataire et accompagnement personnes en exil</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<p>La verite?</p>
+<ul>
+<li>s'appuyer qd meme sur ce que la personne dit. poser de questions sur ce qu'elle dit meme si on sait pas si vrai ou pas.</li>
+</ul>
+<p>📅 Jeudi <strong>26 Mars 2026</strong> (Cours 7 - intervention d'une avocate en droits des étrangers)</p>
+<p><strong>Demandeurs d'asile</strong> - 1ère demande</p>
+<p>Avocats: souvent payés par l'état, aide juridique gratuite pour les demandeurs.</p>
+<p>En principe, on a droit a l'accueil temporaire, dans un centre Fedasil. Hommes entre 18 et 3X, généralement pas, pour manque de place (système de liste d'attente, se retrouvent plusieurs semaines à la rue). Fedasil invoque que pas assez de place, mais y a pas de mesure pour ouvrir de nouveaux centres, certains sont fermés ces années.</p>
+<p>Quand la personne rentre dans le territoire, elle a 8 jours en principe pour faire la demande d'asile. Si pas fait dans un délai court, les autorités pourraient dire que danger n'est pas reel. Mais exceptions si personne victime de violences ou dans un mal-être psychologique.</p>
+<p>Autorités checkent si empreintes deja dans un autre pays, ou introduit une demande dans un autre pays. Si empreintes prises = on rentre dans le reglement Dublin, les delais commencent.<br>
+Si pas d'empreintes dans un autres pays, peuvent obtenir Annexe 26 en belgique, puis carte organe a la commune<br>
+Reglement de Dublin:</p>
+<ul>
+<li>a partir du moment ou pays concerné a accepte la prise en charge (ou accord tacite si pas de réponse en 2 mois), il y a un délai de 6 mois pour transférer. sinon parcours classique</li>
+<li>Demandeur d'asile: souvent sortent du parcours.</li>
+<li>Conseillent de ne pas aller dans les centres sous Dublin (Fedasyl?) (parce que poussent les gens a rentrer dans le pays: cellule ICAM (spécialisée dans les retours) avec 3 rdv, a partir du 2eme risque d'arrestation)
+<ul>
+<li>L'état demande une adresse.</li>
+<li>Mais donc, conseillent: certains centres spécifiques dans des régions où le tribunal du travail compétent en matière d'hébergement décide de ne pas &quot;respecter&quot; Dublin (e.g. Liège, si on fait valoir une vulnérabilité), sinon adresse privée (soit une adresse est donnée a l'Office des étrangers, mais pas obligé que la personne y vive, combiné a un autre hébergement... pour que l'OE ne considère pas la personne en fuite, ce qui ferait passer le délai de 6 a 18 mois, &quot;garder une image de collaboration&quot;)</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://www.cire.be/wp-content/uploads/2021/01/Reglement-Dublin_QR_Schema-10092020.jpg" target="_blank" class="external-link"><img src="https://www.cire.be/wp-content/uploads/2021/01/Reglement-Dublin_QR_Schema-10092020-1024x576.jpg" alt=""></a></p>
+<p>Situation actuelle en droit des étrangers en Belgique: état condamné par les tribunaux à plusieurs reprises, mais &quot;aucun problème&quot;, ne sont pas exécutés, condamnations mais argent n'est pas déversé.</p>
+<p>Pendant ce temps, les max 6 mois, attendant la decision, personne peut etre arrétée et demandée de quitter le territoire, elle conseille aux clients de rester discret, etc. Actuellement, l'état n'a pas de fonds pour réaliser les transferts Dublin (l'avocate n'en a pas vu de sa carrière).</p>
+<p>Fedasil reste compétent pendant 6 mois pour les soins médicaux (aide matérielle). Mais une personne en séjour irrégulier a droit a l'aide médicale urgente du CPAS.</p>
+<p>Quand Dublin &quot;tombe&quot;(délais passés)</p>
+<ul>
+<li>Entretien a l'OE sans avocat (présente composition familiale, parcours d'études, parcours d'exil, problèmes avec autorités, raison de la fuite, etc). Beaucoup utilisé par le CGRA pour reprocher a la personne un défaut de crédibilité. La personne reçoit le PV de sa partie.</li>
+<li>Rencontre CGRA (version longue): données familiales, parcours d'études, exil et passeport (voir que tout matche). Deuxième partie: questions sur le récit, &quot;approfondissement&quot;, essayent d'évaluer la crédibilité (&quot;piéger&quot; pour l'avocate)</li>
+</ul>
+<p>--<br>
+Quels critères pour faire la demande d'asile?</p>
+<ul>
+<li>Crainte avec raison (partie subjective et objective) (rattaché à convention de Genève)
+<ul>
+<li>minorité non protégée</li>
+<li>être opposant politique ou apparenté à un opposant</li>
+<li>ethnique (Rwanda, Guinée (si cumulé à d'autres problèmes))</li>
+</ul>
+</li>
+</ul>
+<p>Statut M:</p>
+<ul>
+<li>personnes avec statut de refugié obtenu ailleurs en UE, par ex souvent en Grèce, et qui ont ensuite continué leur chemin. Là, pas de procédure Dublin, c'est une procédure d'asile classique, mais CGRA analyse les craintes par rapport à la Grèce (pas par rapport au pays d'origine). Par ex degnement materiel extreme en Grèce peut être une raison (être 100% dépendant d'aide publique).</li>
+</ul>
+<p>Protection subsidiaire:</p>
+<ul>
+<li>plus temporaire que statut réfugié</li>
+<li>quand c'est aps un ciblage contre une personne mais une situation générale défavorable (par ex guerre)</li>
+</ul>
+<p>📅 Jeudi <strong>2 Avril 2026</strong> (Cours 8)</p>
+<p>Ce qui préoccupe le plus souvent les patients: <strong>la procédure</strong> de reconnaissance au droit au séjour. Comment on peut venir en aide en tant que psy?</p>
+<p><strong>La procédure</strong>: pourquoi cette procedure ne va pas</p>
+<p><strong>Vignette 1</strong>: Monsieur avec signes de détresse psychologique. S'inquiète pour fille restee en Guinée. Se soustrait à l'espace relationnel pour rester dans ses pensées. Revoit sans cesse événements de massacre, s'en rappelle en détail de manière obsessionelle: &quot;ça ne veut pas partir, c'est toujours là&quot;. Reflexion: Comment se siter face aux exigences de la procedure?</p>
+<p><strong>Vignette 2</strong>: Monsieur K. Symptômes dissociatifs, hallucinations, convictions d'être surveillé, soliloques. Demande un casque pour ne pas se blesser. Demande a se renseigner sur l'euthanasie. Se plaint de séquelles de torture, l'évocation des tortures est impossible. Évoque des trouble de la miction. Ecrit pour le groupe journal. L'evolution est remarquable mais au bout de 4 ans on en sait pas grand chose de factuel sur lui. Reflexion: comment esperer qu'il puisse répondre aux exigences de la procedure?</p>
+<p><strong>Vignette 3</strong>: Madame ayant perdu son père. Enlevée et séquestrée pour etre marie de force a un vieil homme. Regulièrement violée par lui et son fils. Ne sait pas ou elle a été séquestrée. Elle a peur pour ceux qui l'ont aidée à fuir. Ne connait pas les dates, les circonstances. Mère en France, soeur en Belgique. Sa mere la séquestrée pour la protéger de ses crises. L'équipe craint qu'elle soit envoyée chez la mere suivant la procedure Dublin.</p>
+<p><strong>Vignette 4</strong>: Originaire de l'Est du Congo. Tutsis du Kivu, ayant fui au Rwanda. Plutôt que d'accueillir ces &quot;frères&quot; persécutés, se font place en camps de réfugiés. Enfant de réfugiés, armés et poussés par le Rwanda à reprendre leurs terre, leur place. Avait réussi etudes d'informatique. Avait fait un voyage en Europe, avec visa touristique. Envoyé de force pour une formation-combat. Ne peut plus entendre sa langue amternelle, sinon il dissocie. Ne peut pas manger d'aliments liquides de couleur rouge. En France il tombe sur des gens lui rappelant les gens qui l'ont séquestré, arrive en Belgique.</p>
+<p><strong>Vignette 5:</strong> Monsieur arrive à Ulysse pour recherche de logement. Homme corpulent, d'une quarantaine d'années. Se plain de discriminations depuis son depart du Soudan. Récit se perd dans details et elements de scenes improbables. Se plaint d'un complot géneralisé dont il est victime. Autorités belges de mèche avec autorités soudanaises. Voit des signes partout. Veut porter plainte contre le Belgique. 4 demandes d'asile sanctionnée car non vraisemblable. Equipe obtient protection internationale, car argumentant non-auditionnable pour ses raisons psychiatries, ne peuvent pas s'attendre de lui de récits cohérents.</p>
+<p><strong>Objectif des autorités d'établir la justification au droit au séjour</strong></p>
+<p>Procédure se base sur ce crédo, qui ne se discute pas: administration peut évaluer si protection est justifiée ou pas sur base d'une seule intervention.<br>
+Mais:</p>
+<ul>
+<li><strong>Mémoire</strong>: pas un bon moyen, pas suffisant, de revenir sur la vérité. Situation d'examen peut faire stresser, perdre les moyens. Et les troubles en jeu ici ont un impact sur la mémoire (autorités peuvent dire: vous parlez de reviviscences, hyper-vigileance, donc memoire est préservée - mais dans mémoire traumatique, certains détails sont enregistrés comme un flash, mais pas d'autres).
+<ul>
+<li>Ou parfois, on se souvient, mais ne peuvent pas en parler, ou refus sinon risque de déclencher crise (comme en PTSD). Omission pas toujours pour frauder, mais pour éviter de dire quelque chose qui est soit trop intime, ou trop difficile à mettre en mots.</li>
+</ul>
+</li>
+<li><strong>La raison</strong>: caractéristique de certains troubles est de perdre la raison, avoir une vue n'allant pas de soi, etc.</li>
+<li><strong>Présence d'interprète</strong>: parfois empêche de parler. On ne dit as certaines choses devant quelqu'un de sa propre communauté. Et &quot;interprète va pouvoir répéter ce que j'ai dit&quot;. Est-ce qu'il connait quelqu'un que je connais? Est-ce qu'il fait partie du regime persécuteur? Exemple: interprète travaillant au x suspectée d'être associée au régime Rwandais.</li>
+</ul>
+<p><strong>Vignette</strong></p>
+<p>Comment representer les patients, dans l'accompagnement on peut être en conflit, en contradiction effective avec les autorités?</p>
+<ul>
+<li>Lecture: rapport autorités belges de motivation négative, compte-rendu d'un entretien/interrogation.</li>
+<li>Lecture:</li>
+</ul>
+<p>📅 Jeudi <strong>9 Avril 2026</strong> (Cours 9)</p>
+<p>Lecture de texte:</p>
+<ul>
+<li>Aucun ne se présente comme migrant, ou pour qui être migrant est son identité.</li>
+<li>Le terme migrant / issu de l'immigration = critère de démarquage, differentiation, illégitime (combien de temps on le reste?)</li>
+<li>L'idéal sédentaire est récent.</li>
+<li>Réf: Au commencement était</li>
+<li>Réf Bruce Chatwin: represente recit de voyage, vertus de nomadisme, valeur d'humanité qui se developpe en voyageant. En Patagonie, Eloge des modes de vie et de pensées des aborigenes australiens. &quot;Etre humain serait mieux s'il ne s'était pas sédentarisé&quot;</li>
+</ul>
 </main>
 <aside>
 <div class="sidebar">
@@ -436,7 +554,8 @@ On this page
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><i icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>

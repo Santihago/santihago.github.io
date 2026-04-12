@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<title>2026 - PSYC-E 540 - Approche systémique des traumatismes</title>
+<title>Approche systémique des traumatismes</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -65,9 +65,9 @@ CTRL + K
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2026-04-12T19:16:43.965Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2026-04-12T19:16:43.965Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2026-04-12T19:16:43.965Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">2026 - PSYC-E 540 - Approche systémique des traumatismes</h1>
+<h1 data-note-icon="">Approche systémique des traumatismes</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.118+01:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2026-03-06T12:44:16.971+01:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.118+01:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2026-04-12T14:37:34.455+02:00"></span></div></div></div>
 </header>
 <div class="callout" data-callout="tldr"><div class="callout-title"><div class="callout-title-inner"> Résumé<br></div></div>
 <div class="callout-content">
@@ -427,9 +427,9 @@ Il exprime le désir de retour à un état fusionnel, protégé, antérieur aux 
 <p>Explication de leur complicité: ils se sont trouvés pour <em>faire différemment</em>, faire quelque chose de réparateur.</p>
 <p>Daniel, lui, a besoin de sens pourtant. En tant qu'adolescent, surtout, besoin de s'inscrire dans une histoire pour pouvoir se développer en tant qu'adulte en devenir.</p>
 <p>Famille d'accueil: acceptent de l'accueillir, disent avoir réfléchi, l'avoir trouvé touchant. Ne &quot;demandent pas mieux&quot; que de devenir des parents réparateurs. Mais ne se sont pas rendus compte des liens de loyauté invisibles de Daniel, au bout de plusieurs weekends c'est devenu plus compliqué.</p>
-<p><picture src="/img/user/Screenshot%202026-03-05%20at%2018.33.29.png" alt="Screenshot 2026-03-05 at 18.33.29.png"><source media="(max-width:480px)" srcset="/img/optimized/fFLDpvlB6V-500.webp" type="image/webp">
+<p><picture src="/img/user/__assets/media/Screenshot%202026-03-05%20at%2018.33.29.png" alt="Screenshot 2026-03-05 at 18.33.29.png"><source media="(max-width:480px)" srcset="/img/optimized/fFLDpvlB6V-500.webp" type="image/webp">
 <source media="(max-width:480px)" srcset="/img/optimized/fFLDpvlB6V-500.jpeg">
-<source media="(max-width:1920px)" srcset="/img/optimized/fFLDpvlB6V-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/fFLDpvlB6V-700.jpeg"><img class="" src="/img/user/Screenshot%202026-03-05%20at%2018.33.29.png" alt="Screenshot 2026-03-05 at 18.33.29.png" width=""></picture></p>
+<source media="(max-width:1920px)" srcset="/img/optimized/fFLDpvlB6V-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/fFLDpvlB6V-700.jpeg"><img class="" src="/img/user/__assets/media/Screenshot%202026-03-05%20at%2018.33.29.png" alt="Screenshot 2026-03-05 at 18.33.29.png" width=""></picture></p>
 <p>Possibilités d'interventions ici:</p>
 <ul>
 <li><strong>Parentectomie</strong>: conseil de couper les liens avec les parents d'origine.</li>
@@ -538,11 +538,58 @@ Question sur la traumatisation secondaire: oui, on peut parler de retraumatisati
 <ul>
 <li>Autonomie: Droit de gouverner par ses propres lois. Etymologie: autos (soi-même) et nomos (loi). C'est se donner soi-même sa propre loi (voir aussi le cours Grands Courants...). Capacité à choisir ses appartenances alors que l'on est pris dans un extraordinaire réseau de dépendances. L'autonomie, ce n'est pas l'indépendance.</li>
 <li>Plus un système vivant est autonome, plus il dépendant. Plus il s'enrichit en complexité et entretient par la-même des relations multiples avec son environnement, plus il accroit son autonomie en se créant une multiplicité de dépendances.</li>
+<li>Marika Mooisseeff: à propos de l'adolescence. Est-ce qu'interventions ne viennent pas combler un manque de rituels, de rites de passage? Permet de voir notre rôle plutôt comme celui de médiateur, permettant, favorisant un passage ritualisé. Comment quitter l'enfance tout en restant l'enfant de ses parents? Transformation, continuité, pas une &quot;rupture du cordon&quot;... c'est une suite, on reste appartenant à son groupe. Elle parle de deux types de dépendances: 1) Fonction nourricière, ou <em>Parenthood</em>, répond aux besoins primaires: nourriture, amour, protection. 2) Fonction filiative ou <em>Kinship</em>: répond au besoin d'être inscrit dans un cadre symbolique: généalogie, filiation, lien... (-&gt; appartenance).</li>
+<li>Par exemple, Daniel n'a pas reçu les éléments de son histoire familiale lui permettant son autonomisation. Besoin de <strong>restaurer le composant filiatif.</strong></li>
 </ul>
 </li>
 </ul>
 <p></p></div></div>
-<h3 id="4-5-la-genophobie" tabindex="-1">4.5 La génophobie</h3>
+<p>Faire le deuil, acter la coupure de loin est parfois la solution (situations d'emprise, de domination, etc). Mais situations rares. Beaucoup de professionnels partent trop vite dans une vision négative de la famille.</p>
+<h3 id="4-5-la-genophobie-la-peur-de-transmettre-des-genes-de-maladie-mentale" tabindex="-1">4.5 La génophobie: la peur de transmettre des gènes de maladie mentale</h3>
+<blockquote>
+<p>La <strong>génophobie</strong>: certains parents porteurs d'une maladie mentale dite à transmission génétique se représentent la transmisison comme une forme de contamination. POur empêcher celle-ci d'opérer, ils activent des processus anxieux contagieux qui les inhibent dans leur capacité à transmettre (hypothèse 3)</p>
+</blockquote>
+<p><strong>Troisième illustration clinique: Arthur et le poison dans ses tartines, 7 ans</strong> (Duret, 2009)</p>
+<p>Arthur, a peur d'etre empoisonné par ses tartines, a aussi des hallucinations (se dit possédé par le diable, et que le diable va lui faire faire des choses graves). La famille arrive à travers le psychiatre de la maman (traitée pour psychose maniaco-dépressive).</p>
+<p>La patiente est dans une angoisse par peur d'avoir transmis son probleme psychiatrique à son enfant. Un frère (de la femme) avait une symptomatologie similaire mort par suicide à l'age de 17 ans. Le père de la maman et deux oncles aussi porteurs de la maladie, suggere un bilan diagnostique, pour savoir si Arthur est lui aussi touché par la maniaco-dépression?</p>
+<p>Isabelle voit l'enfant seul d'abord, pour faire des tests projectifs, dessin. Maman demande de la voir seule d'abord, ne veut pas non plus faire venir le reste de la famille (mari, etc), disant qu'ils n'ont rien a voir avec la maladie.</p>
+<p>Arthur depuis 15 jours dit etre possédé par le diable, entend des voix qui lui dictent ce qu'il doit faire. Revient avec sa boite à tartines remplie. Sa plus grande angoisse à lui c'est la peur d'être empoisonné, mêmes symptômes que le frère de la maman, dépressif depuis l'enfance, qui avait aussi fait de la restriction alimentaire. Et qu'elle s'est jamais pardonnée de ne pas avoir su le protéger.</p>
+<p>Ne voulait pas d'enfant, le mari en voulait. A la naissance d'Arthur, frappée par la ressemblance entre Arthur et son frère à elle. Pour Isabelle, intéressant de se demander qui ressemble a qui (physiquement et psychiquement), parce que ça connote les représentations qu'on a de quelqu'un.</p>
+<p>Elle raconte que hier, l'enfant jouait et puis est revenu parce qu'il se sentait &quot;possedé&quot;. Elle a appelé son mari pour venir l'aider et a donné un crucifix a Arthur pour qu'il se protège, il part jouer sans problème. Elle dit en entretien qu'elle trouve ça tôt à 7 ans de se préoccuper de la mort (Isabelle pense: mort sujet tabou dans cette famille?). Mari banalise les préoccupations de la maman, donc elle est un peu seule face au problème qu'elle perçoit.</p>
+<p>Isabelle se demande si les angoisses de la maman ne sont pas reforcées dans le travail avec le psychiatre qui travaille l'aspect héréditaire. Elle n'ignore cependant pas le cote hereditaire possible dans cette situation.<br>
+Elle se demande si dans un autre contexte ses peurs n'auraient pas pu etre facilement desamorcées, s'il n'y avait pas cette angoisse de la maman? Par exemple la possession est vite desamorcée par la croix, la maman n'en est pas plus préoccupée. Par contre, le cote empoisonnement et restriction, ca la preoccupe fort.</p>
+<p>En realisant des tests projectifs Rorschach, il voit des animaux qui font peur. Isabelle ne trouve pas d'éléments clairement psychotiques. Ce qui lui fait peur, il raconte, sont les cours de cathéchisme, où on lui a parlé du diable.</p>
+<p>Elle voit la famille: le papa, la maman, Arthur et le frère Thomas, ensemble. En salle d'attente, ils regardent une affiche sur le suicide et la mère leur raconte pour la première fois que son frère est mort de suicide. En séance, elle entend que Thomas provoque Arthur en mettant des photos sous son lit. Thomas raconte qu'ils ont vu ensemble pendant les vacances un film qui parle de possession, Exorcisme, ils s'en moquent un peu. On aperçoit: tâche aveugle de la maman: ne met pas en lien les éléments de la vie quotidienne sur le comportement d'Arthur, alors que le mari et le frère le font facilement. La mère est dans une système de représentations différent, influencé par son vecu. Avec nottament une culpabilite à l'égard de son frère, d'abord, d'Arthur, ensuite.</p>
+<p>Il y a quelque chose dans l'élaboration du symptome qui vient deja dire qqch: Arthur va essayer de comprendre ce qui n'a pas pu être dit. <strong>On peut voir les comportements symptomatiques comme des tentatives d'en savoir plus</strong>.</p>
+<ul>
+<li>Thisseron: parfois, quand il y a des secrets, à la génération suivante il y a un enfant qui va s'emparer de miettes de symbolisation (parce que tout n'est pas completement occulté). Pour attendre des parents qu'ils aillent plus loin dans ce qui n'a pas été dit.</li>
+</ul>
+<p>Arthur: intervention rapide a permis un dégagement d'Arthur qui n'est plus libre de se développer dans une identité propre parce qu'il est prisonnier des représentations de sa mère. Intervention: on dépathologise les choses, la mère en est soulagée.</p>
+<p><strong>Processus anxieux contagieux</strong> entre mère, enfant, et peut-etre même le psychiatre. Ce qui hante l'enfant c'est ce qui lui a transmis sa mère en termes de peur, peur de lui avoir transmis un mauvais gène.</p>
+<blockquote>
+<ol>
+<li>S'il n'est pas facile de faire la part entre ce qui serait de l'ordre d'une hérédité génétique ou d'un héritage psychique, on observe un processus anxieux contagieux (N Georgieff 2008 <em>L'empathie aujourd'hui: au croisement des neurosciences, de la psychopathologie et de la psychanalyse</em>) fréquemment en oeuvre dans les familles dont un parent est malade.</li>
+<li>Ce processus anxieux peut faire courir à l'enfant le risque de se retrouver enfermé dans le déterminisme d'un diagnostic medical à caractère inéluctable.</li>
+<li>Les familles ont des représentations de leur heritage familial (relevant du mythe familial) qui peuvent entrer en collusion avec les représentations des soignants (le modele medical hereditaire). Ces representations peuvent inclure l'idee d'une transmission d'un trouble psychique ou d'une maladie mentale, au meme titre que des competences ou des dons particuliers.</li>
+<li>Il est important de pouvoir <strong>dialoguer</strong> et bien <strong>coordonner</strong> nos interventions entre thérapeutes consultés pour les enfants et les équipes thérapeutiques (psychiatres, travailleurs sociaux, médecins traitants, éducateurs, infirmières...) qui soigent leurs parents. Ceci implique qu'il sera préférable de <strong>ne pas travailler avec un cadre pré-établi</strong> mais au contraire d'inventer un dispositif privilégiant les collaborations.</li>
+</ol>
+</blockquote>
+<p>Sortir d'une lecture univoque du symptome. Cette lecture peut enfermer le symptome, le maintenir.</p>
+<blockquote>
+<p>L'ambiance positive de &quot;recherche de sens&quot; autour d'une préoccupation commune a permis de sortir d'une lecture univoque d'un symptôme qui portait aussi en lui &quot;le potentiel resilient&quot; nécessaire pour relance la famille dans sa capacité à transmettre.</p>
+</blockquote>
+<p><strong>Conclusions</strong></p>
+<p>Il existe différents mécanismes de survie ou stratégies adaptatives utilisés par certains individus ou certains groupes blessés pour échapper aux traumatismes. L'auto-engedrement, le refus d'engendrer et la &quot;génophobie&quot;.</p>
+<p><strong>Pistes thérapeutiques</strong></p>
+<p>Pour ne pas se laisser gagner par le désespoir:</p>
+<ul>
+<li><strong>Recardrer</strong> la mise hors filiation ou la frilosité à transmettre comme une compétence qu'ont les parents à <strong>proteger les géne1rations futures</strong></li>
+<li>Rester en contact avec l'imprédictibe, repérer les nuances, les dissonances, et les paradoxes.</li>
+<li>Re-susciter la filiation. Montrer que le symptôme interroge et re-inscrit dejà dans la généalogie, dans l'appartenance verticale.</li>
+<li>Aider les familles et ses membres a retrouver leur capacité à donner, à transmettre en transformant l'héritage.</li>
+</ul>
+<p>Métaphore de la perle: grain de sable provoque bijou.</p>
+<p>📅 Vendredi <strong>17 avril 2026</strong> - Cours 6 - I. Duret</p>
 <hr>
 <h1 id="partie-2-invite-special-chaire-francqui-jean-luc-brackelaire" tabindex="-1">Partie 2. Invité spécial Chaire Francqui (Jean-Luc Brackelaire)</h1>
 <p>📅 Lundi <strong>9 Février 2026</strong> - Cours 1 - J.L. Brackelaire : Faire histoire ensemble. Comment recréeer la socialité après sa destruction?</p>
@@ -649,7 +696,7 @@ Nos liens contiennent nos divergeances.</p>
 <ol start="0">
 <li>Introduction: traumatisme psycho-social, responsabilité, reconnaissance et élaboration</li>
 <li>La responsabilité contre la violence</li>
-<li>Écouter la torture: les professionnels de la CNPPT au Chilo</li>
+<li>Écouter la torture: les professionnels de la CNPPT au Chili</li>
 <li>Accompagner les crises d'Ihahamuka lors des commemorations du génocide contre les Tutsis au Rwanda</li>
 </ol>
 <h3 id="0-introduction" tabindex="-1">0. Introduction</h3>
@@ -771,8 +818,115 @@ Exemples: les réunions cliniques, pour autant qu'on y arrive. Séminaire de lec
 <p>(Fini a 17:37)</p>
 <p>📅 Vendredi <strong>27 Février 2026</strong> - Cours 4 - JL Brackelaire: <strong>Les chercheurs face à la violence destructrice - comment créer des espaces de recherche?</strong></p>
 <h2 id="iv" tabindex="-1">🏷️ IV.</h2>
+<p>Absent.</p>
 <p>📅 Lundi <strong>9 mars 2026</strong> - Cours 5 - JL Brackelaire: <strong>étudiants et doctorants, comment on se forme à ce champ de la recherche ou du travail clinique avec les violences extrêmes?</strong></p>
-<h2 id="v" tabindex="-1">🏷️ V.</h2>
+<h2 id="v-entrer-dans-la-chaine-de-l-ecoute-chemin-de-formation-professionnelle-necessaire-contre-les-chaines-du-silence" tabindex="-1">🏷️ V. Entrer dans la chaîne de l'écoute: chemin de formation professionnelle nécessaire contre les chaines du silence</h2>
+<p>Plan du cours d'aujourd'hui:</p>
+<blockquote>
+<p><em>Rappel du parcours suivi.</em><br>
+0. Introduction: défis de la formation</p>
+<ol>
+<li>Voie d'entrée: avec des étudiants en psychologie clinique</li>
+<li>La notion de &quot;chaîne de l'écoute&quot; (M. Cornejo et al.)</li>
+<li>&quot;Entrer dans la chaîne de l'écoute&quot;, &quot;faire histoire ensemble&quot;</li>
+<li>Un cours comme &quot;espace médiateur&quot;?</li>
+<li>Partage de deux expériences: lectures, commentaires, éclairages:<br>
+a. &quot;Art et trauma&quot; (Laub et Podell, 1995)<br>
+Extraits de Shoah (Lanzmann, 1985)<br>
+Travail de Ziva Postec (Catherine Hébert, 2018; Evelyne Chauvet, 2020)<br>
+b. Le prix du silence et le temps de la créativité (Munyandamutsa, 2008)<br>
+Maillons de la chaine de l'écoute<br>
+Tiers social et tiers thérapeutique</li>
+</ol>
+</blockquote>
+<h3 id="v-0-rappel-du-parcours-suivi" tabindex="-1">V. 0 Rappel du parcours suivi</h3>
+<ol start="0">
+<li><strong>Introduction: défis de la formation</strong>:
+<ul>
+<li>Les défis dans nos professions: comment rester ouvert à l'écoute des silences?</li>
+<li>3 défis principaux de la formation dans ce champ-ci.
+<ol>
+<li><strong>Circularité anthropologique:</strong> faire l'experience de ce que sont les effets des traumatismes psychosociaux, reconnaitre l'effet que ça a sur nous, et etre prets a élaborer cela.</li>
+<li><strong>Création, créativité</strong>: Se donner une conception, concevoir, pour l'analyser avec la distance nécessaire, de façon à pouvoir assumer notre responsabilité. Pouvoir porter la responsabilité qui est la notre.</li>
+<li>?</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><strong>Voie d'entrée: avec des étudiants en psychologie clinique:</strong>
+<ul>
+<li>Il a souvent travaillé avec des étudiants en Master 2, étudiants ayant deja fait un stage généralement, ayant fait une experience de vie. Il a prévu pour aujourd'hui une ou deux illustrations.</li>
+</ul>
+</li>
+<li><strong>La notion de &quot;chaîne de l'écoute&quot; (M. Cornejo et al.)</strong>
+<ul>
+<li>Politiques au Chili visant a faire taire, creant une impossibilte a parler. Ca provoque des chaines du silence. On se tait, on n'en parle ni a ses proches, pour se proteger et proteger les autres. Aussi parce que la menace continue d'exister de nos jours. Jusqu'aux commissions de verité, avec une autre forme d'écoute: de l'etat, par l'état.</li>
+<li>Cette recherche était auprès de professionnels qui avaient ecouté. Donc une écoute de l'écoute, donc chaine de l'écoute. Rejoint l'idée aussi que le clinicien doit etre suivi, sous diverses formes. Devient une necesité personnelle et professionnelle face aux mécanismes qui empechent l'écoute et l'échange.</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>
+<ol start="3">
+<li><strong>&quot;Entrer dans la chaîne de l'écoute&quot;, &quot;faire histoire ensemble&quot;</strong></li>
+</ol>
+<ul>
+<li>C'est un enjeu de notre formaiton comme psychologue clinicien, d'entrer dans la chaine de l'ecoute. D'entrer dans des enchainement, enchassements, sous diverses formes qui fait qu'on est ecoute et qu'on mobilise d'autres pour écouter ce dont il s'agit.</li>
+<li>Pour ne pas etre ecrase, pour ne pas etre seul et rester en contact avec l'autre et avec soi, a l'inverse de ce qu'il se passe dans un génocide.</li>
+<li>Pour lui, entrer dans la chaine de l'écoute peut etre traité comme synonyme <em>de faire histoire ensemble</em>.</li>
+<li>Faire l'experience que d'ecouter des choses inaudibles, c'est se transformer, entrer dans un espace particulier (un espace mediateur), ou les choses peuvent se jouer autrement.</li>
+</ul>
+</li>
+<li>
+<ol start="4">
+<li><strong>Un cours comme &quot;espace médiateur&quot;?</strong></li>
+</ol>
+<ul>
+<li>Un cours peut etre une forme d'espace mediateur. Un cours peut repondre a ces 3 caracteristqies soulignees des espaces mediateurs:</li>
+</ul>
+<ol>
+<li>Un lieu alternatif, un lieu ou les choses se jouent autrement. QUi peut nous donner un point de vue different</li>
+<li>Espace choral: l'espace est mis sur notre relation commune avec ce dont on parle.</li>
+<li>On se donne une certaine forme de repreesntation du trauma social: de maniere indirecte par un auteur,</li>
+</ol>
+</li>
+</ul>
+<h3 id="v-5-partage-de-deux-experiences-lectures-commentaires-eclairages" tabindex="-1">V. 5 Partage de deux expériences: lectures, commentaires, éclairages</h3>
+<h4 id="a-and-quot-art-et-trauma-and-quot-laub-et-podell-1995-a-href-https-shs-cairn-info-article-cohe-221-0035-pdf-lang-fr-target-blank-class-external-link-pdf-a" tabindex="-1">a. &quot;Art et trauma&quot; (Laub et Podell, 1995) (<a href="https://shs.cairn.info/article/COHE_221_0035/pdf?lang=fr" target="_blank" class="external-link">PDF</a>)</h4>
+<ul>
+<li>L'article inclut des extraits du documentaire <em>Shoah</em> (Lanzmann, 1985)</li>
+<li>Travail de Ziva Postec (Catherine Hébert, 2018; Evelyne Chauvet, 2020)</li>
+</ul>
+<p>Il a une façon de recueillir des témoignages qui allie deux principes contradictoires: l'impératif de pouvoir en parler, et l'extrême délicatesse de ce que ça représente. Permettre à qqun de parler à son rythme, s'il le veut, quand il le veut.</p>
+<p>Lecture de l'article en cours.</p>
+<ul>
+<li>Effacement du &quot;lien empathique primaire&quot;, expression que l'auteur utilise souvent.</li>
+<li>Perdre la communication avec quelqu'un externe important provoque la perte de contact avec l'autre en soi / soi-même.</li>
+<li>L'art pour commencer à représenter l'évènement ou l'expérience traumatique.</li>
+<li>&quot;Le cercle vide&quot;</li>
+<li>Descriptions et visonnage de scènes du documentaire Shoah
+<ul>
+<li>Réalisateur cherche l'explicitation par ses questions</li>
+<li>Sur fond-decor de l'endroit de l'horreur</li>
+</ul>
+</li>
+<li>Visionnage de scène de Ziva Postec: The Editor Behind the Film Shoah, 2020.
+<ul>
+<li>Travail de montage pour que &quot;ça reste audible&quot; pour le public: rajoute des silences, par exemple.</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h4 id="b-le-prix-du-silence-et-le-temps-de-la-creativite-munyandamutsa-2008" tabindex="-1">b. Le prix du silence et le temps de la créativité (Munyandamutsa, 2008)</h4>
+<ul>
+<li>Maillons de la chaine de l'écoute</li>
+<li>Tiers social et tiers thérapeutique</li>
+</ul>
+<p>(Vu brièvement en cours)<br>
+Ce texte comporte de nombreux maillons.<br>
+Texte écrit pour être lu, il prend soin du lecteur.<br>
+Deux situations evoquées sont difficiles a lire, mais il accompagne le lecteur.<br>
+Ecrit a partir de ce que lui ont rapporté deux jeunes cliniciennes en supervision clinique, en situation de travail. Leur a été rapporté 15 ans après les évènements.</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -842,7 +996,7 @@ On this page
 </li>
 </ol>
 </li>
-<li><a href="#4-5-la-genophobie">4.5 La génophobie</a>
+<li><a href="#4-5-la-genophobie-la-peur-de-transmettre-des-genes-de-maladie-mentale">4.5 La génophobie: la peur de transmettre des gènes de maladie mentale</a>
 </li>
 </ol>
 </li>
@@ -932,7 +1086,19 @@ On this page
 </li>
 <li><a href="#iv">🏷️ IV.</a>
 </li>
-<li><a href="#v">🏷️ V.</a>
+<li><a href="#v-entrer-dans-la-chaine-de-l-ecoute-chemin-de-formation-professionnelle-necessaire-contre-les-chaines-du-silence">🏷️ V. Entrer dans la chaîne de l'écoute: chemin de formation professionnelle nécessaire contre les chaines du silence</a>
+<ol>
+<li><a href="#v-0-rappel-du-parcours-suivi">V. 0 Rappel du parcours suivi</a>
+</li>
+<li><a href="#v-5-partage-de-deux-experiences-lectures-commentaires-eclairages">V. 5 Partage de deux expériences: lectures, commentaires, éclairages</a>
+<ol>
+<li><a href="#a-and-quot-art-et-trauma-and-quot-laub-et-podell-1995-a-href-https-shs-cairn-info-article-cohe-221-0035-pdf-lang-fr-target-blank-class-external-link-pdf-a">a. "Art et trauma" (Laub et Podell, 1995) (PDF)</a>
+</li>
+<li><a href="#b-le-prix-du-silence-et-le-temps-de-la-creativite-munyandamutsa-2008">b. Le prix du silence et le temps de la créativité (Munyandamutsa, 2008)</a>
+</li>
+</ol>
+</li>
+</ol>
 </li>
 </ol>
 </li>
@@ -942,7 +1108,8 @@ On this page
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><i icon-name="link"></i><a href="/" data-note-icon="" class="backlink">Home</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>
