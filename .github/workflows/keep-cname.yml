@@ -2,7 +2,6 @@ name: Keep CNAME Stable
 
 on:
   push:
-    branches: [gh-pages]
 
 jobs:
   fix-cname:
