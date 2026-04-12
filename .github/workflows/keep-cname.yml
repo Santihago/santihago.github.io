@@ -1,0 +1,23 @@
+name: Keep CNAME Stable
+
+on:
+  push:
+    branches: [gh-pages]
+
+jobs:
+  fix-cname:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore CNAME
+        run: echo "notes.chirimbolo.org" > CNAME
+
+      - name: Commit if needed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add CNAME
+          git commit -m "restore CNAME" || exit 0
+          git push
