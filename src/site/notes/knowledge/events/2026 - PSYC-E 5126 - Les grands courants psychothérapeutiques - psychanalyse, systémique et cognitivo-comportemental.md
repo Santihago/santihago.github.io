@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-12T21:46:11.265+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-12T21:48:37.944+02:00"}
 ---
 
 
@@ -989,7 +989,6 @@ Exemples:
 
 Assez pratique, facile à utiliser avec des patients. 
 On va explorer avec le patient les situations qui génèrent des reactions émotionnelles et les comportements associés.
-
 
 (voir dia 96)
 
