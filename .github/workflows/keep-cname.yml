@@ -2,21 +2,33 @@ name: Keep CNAME Stable
 
 on:
   push:
+    branches: [gh-pages]
+
+permissions:
+  contents: write
 
 jobs:
   fix-cname:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Restore CNAME
+      - name: Write CNAME
         run: echo "notes.chirimbolo.org" > CNAME
 
-      - name: Commit if needed
+      - name: Commit changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add CNAME
           git commit -m "restore CNAME" || exit 0
-          git push
+
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin gh-pages
