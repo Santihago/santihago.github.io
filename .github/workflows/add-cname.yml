@@ -2,7 +2,10 @@ name: Keep CNAME Stable
 
 on:
   push:
-    branches: [gh-pages]
+    branches: [main, gh-pages]
+  schedule:
+    - cron: '*/10 * * * *'  # every 10 minutes as fallback
+  workflow_dispatch:          # manual trigger button in GitHub UI
 
 permissions:
   contents: write
