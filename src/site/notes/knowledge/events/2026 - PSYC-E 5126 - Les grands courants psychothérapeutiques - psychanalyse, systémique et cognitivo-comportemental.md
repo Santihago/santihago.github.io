@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-13T19:33:42.102+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-13T19:59:44.293+02:00"}
 ---
 
 
 > [!tldr] Résumé
-> * Cognitivo-comportemental : les thérapies de la troisième vague. Prof. C.Hauwel-Fantini
+> * Cognitivo-comportemental : les thérapies de la troisième vague. Prof. Benedicte Thonon
 >* Systémique: théories et fondement de l'approche systémique , les différentes écoles et les pratiques qui en découlent. Prof. I. Duret
 >* Psychanalyse : théories et fondements de l'approche psychanalytique. Prof. P. Fouchet
 
@@ -25,9 +25,8 @@ L'étudiant·e devra obtenir une note minimum de 10/20 à l'examen portant sur c
 > - Le cours est enregistré
 > - Pas de syllabus, le cours se compose des slides et de quelques articles
 > - **Examen**: 
-> 	- Vrai/Faux (et peut-être des QRM, elle n'est pas encore sûre)
+> 	- Vrai/Faux (confirmé au dernier cours)
 > 	- Pas de questions ouvertes
-> 	- Organisé avec P. Fouchet, Fantini organise son examen à part
 
 > [!tip] Lectures recommandées (pas obligatoires)
 > * Elkaïm, Mony (1998). Panorama des thérapies familiales. Seuil.

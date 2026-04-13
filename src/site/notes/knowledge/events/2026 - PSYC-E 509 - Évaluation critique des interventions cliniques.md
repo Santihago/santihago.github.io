@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-10T20:20:34.883+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-13T21:04:00.337+02:00"}
 ---
 
 
@@ -13,12 +13,10 @@ L'évaluation se fonde sur un **travail** à rendre, par groupes de 4-5 etudiant
 >
 L'idée est d'interroger sur la pratique, sur les formations, comment elle comprend son travail, comment elle comprend que ca fonctionne, etc. Et expliciter à travers un cas clinique  comment ça peut fonctionner. Déceler quelles sont les théories que mobilise le dispositif thérapeutique, théories mobilisées pour agir dans le dispositif. Exemple: hypnose n'est pas une théorie, c'est une technique qui peut être mobilisée dans différentes théories. Par ex hypnose amène changement de conscience, mais important qu'est-ce qu'on fait dans cet état de conscience different?
 > - Décrire ce que la personne a décrit.
-> - Ensuite, nous rajouter une réflexion/étude pour un niveau meta/clinique supplémentaire.
+> - Ensuite, nous, rajouter une réflexion/étude pour un niveau meta/clinique supplémentaire.
 > - Références: Cours, références du cours, et d'autres références c'est OK aussi.
 > Présentation:
-> - plus c'est clair et structuré au mieux pour qu'elle donne son feedback.
-
-
+> - plus c'est clair et structuré au mieux, pour qu'elle donne son feedback.
 
 
 
@@ -74,19 +72,18 @@ Ingredients spécifiques VS facteurs communs:
 >Recherches pero
 
 >[!question]
->reflecion perso: TCC qui va vers travail sur les processus, est-ce similaire aux facteurs contextuels?
->et quid des choses "tres" prouvees (?), tels que traitements phobie, PTSD, BPD, etc, on garde cette optique de l'equivalence, des verites multiples?
-
+>Question perso: quid d'outils avec une base de preuves solide (?), tels que traitements pour phobie, PTSD, BPD, etc. - on garde cette optique de l'équivalence?
 
 Rappel, resumé (cours 2): c'est compliqué de savoir comment les thérapies fonctionnent:
-	- Tres complexe a etudier. 
-	- bcp d'ingredients actifs, qui en plus interagissent entre eux.
-Meme avec protocoles de recherche rigoureux, isoler les ingredients est tres complexe, voire impossible. On constate que les interactions humaines ne sont pas le meilleur objet de la science. Peut-etre pour ca qu'on pare plus l'art de la therapie que science de la therapie...
-Mais on a quand meme envie d'en dire quelque chose dans ce cours, de les isoler un tant que soi peu, pour comprendre comment les dispositifs therapeutiques fonctionnent.
+	- Très complexe è étudier. 
+	- Beaucoup d'ingrédients actifs, qui, en plus, intéragissent entre eux.
+
+Même avec protocoles de recherche rigoureux, isoler les ingredients est très complexe, voire impossible. On constate que les interactions humaines ne sont pas le meilleur objet de la science. Peut-être pour ça qu'on parle plus de l'"art de la thérapie" que de "science de la thérapie"...
+Cependant, on a quand meme envie d'en dire quelque chose dans ce cours, de les isoler un tant que soi peu, pour comprendre comment les dispositifs thérapeutiques fonctionnent.
 
 ### 3. Dispositifs thérapeutiques: composants
 
-#### 3.1 Les theories
+#### 3.1 Les théories
 
 Il existe une variété de théories sur plusieurs dimensions.
 
@@ -131,23 +128,22 @@ Le.a thérapeute et le.a patient.e/client.e.
 Dans quel ecosystème socio-économique-culturel s'inscrit le dispositif therapeutique?
 Dans le but de comprendre les interactions entre environnement et dispositif.
 
-
 ### 4. Ingrédients spécifiques et modèle médical
 
-Efficacité des thérapies: ingrédients spècifiques et modèle médical
+Efficacité des thérapies: ingrédients spécifiques et modèle médical
 - Le modèle médical: historiquement, le premier modèle, relié a la médecine et aux traitements des maladies. Au départ, la psychothérapie "scientifique" est en relation intime avec la médecine, et pratiquée par des médecins uniquement.
 
 Exemple du modèle medical appliqué a la psychothérapie:
 1. Un trouble, un problème, une plainte.
-2. L'explication par ces problemes: produire une explication par ce modele, pas juste d'identifier les symptomes (neurophysio, neurobio, qui s'inscrit dans le corps.)
+2. L'explication par ces problèmes: produire une explication par ce modele, pas juste d'identifier les symptômes (neurophysio, neurobio, qui s'inscrit dans le corps.)
 3. Mécanismes de changement cohérents avec l'explication théorique du trouble.
-4. Ces mécanismes de changement impliquent que des actions thérapeutiques précises peuvent etre utilisées.
+4. Ces mécanismes de changement impliquent que des actions thérapeutiques précises peuvent être utilisées.
 5. Cette action thérapeutique est responsable des effets/des bienfaits de la psychothérapie (et aucun autre facteur ne l'est) => *la spécificité*.
 
 On agit par l'axe de l'éthiologie, de l'explication. 
 
 On a besoin de méthodes qui permettent de prouver cet effet.
-- -> le plan experimental randomisé en double aveugle avec groupe controle ayant recu le placebo: essai controlé randomisé (ECR). Commentaire prof: Sauf que pour thérapie, c'est assez complexe, c'est difficile d'avoir un groupe de *thérapie* placebo. A quoi correspondrait une thérapie placebo? On peut comparer à une autre thérapie mais là on constate le paradoxe d'équivalence. Peut être un groupe de juste soutien, ou discussion? Du coup problèmes méthodologiques.
+- -> le plan experimental randomisé en double aveugle avec groupe contrôle ayant reçu le placebo: essai controlé randomisé (ECR). Commentaire prof: Sauf que pour thérapie, c'est assez complexe, c'est difficile d'avoir un groupe de *thérapie* placebo. A quoi correspondrait une thérapie placebo? On peut comparer à une autre thérapie mais là on constate le paradoxe d'équivalence. Peut être un groupe de juste soutien, ou discussion? Du coup problèmes méthodologiques.
 - Les thérapies nécessiteraient alors une validaiton au moyen de l'ECR: traitements validés empiriquement aujourd'hui appelés 'traitements psychologiques appuyés empiriquement' (ou empirically supported treatments, ESTs).
 - Les criteres deviennent les memes que pour l'approbation d'un médicament.
 - Héritage historique.
@@ -155,27 +151,27 @@ On a besoin de méthodes qui permettent de prouver cet effet.
 ### 4. Facteurs communs
 
 Modèle médical remis (au moins en partie) en question par le modèle des facteurs communs:
-- Les ingrédients spécifiques des traitements auraient peu d'importance
+- Les ingrédients spécifiques des traitements auraient peu d'importance.
 - La primauté est donnée à l'engagement du thérapeute et du patient dans un processus de guérison:
 	- -> Accent sur le travail de collaboration du thérapeute et du patient.e
 	- -> Se centrent sur le thérapeute, le client et les transactions entre eux
 
-Des qu'on a un patient **motivé**, un therapeute **motivé**, qui se rencontrent dans ce but, quelque chose a lieu. Pas tant "faire quelque chose de précis", mais "se mettre ensemble à faire quelque chose".
+Des qu'on a un patient **motivé**, un thérapeute **motivé**, qui se rencontrent dans ce but, quelque chose a lieu. Pas tant "faire quelque chose de précis", mais "se mettre ensemble à faire quelque chose".
 
-L'accent mis sur ces facteurs communs permet de sortir des querelles "d'école", et revaloriser tous les courants, et pratiques memes celles qui n'ont pas le cachet scientifique, du style alternatives, etc (e.g. energeticiens, esprits, therapies du deuil). Meme si nous pas dans ce cadre, nos futurs patients auront ete ou seront en contact avec d'autre dispositifs therapeutiques, d'autres manieres de voir le monde. Parfois meme pouvoir envoyer des patients vers d'autres praticiens (e.g. medium). Mais aspect ethique a tenir compte: domaines moins regulés, donc le faire de maniere consciente, regulee.
+L'accent mis sur ces facteurs communs permet de sortir des querelles "d'école", et revaloriser tous les courants, et pratiques memes celles qui n'ont pas le cachet scientifique, du style alternatives, etc (e.g. enérgéticiens, esprits, thérapies du deuil). Même si nous ne sommes pas dans ce cadre, nos futurs patients auront été ou seront en contact avec d'autre dispositifs thérapeutiques, d'autres manières de voir le monde. On peut même envisager de pouvoir envoyer des patients vers d'autres praticiens (e.g. medium). Mais aspect éthique à tenir compte: ce sont des domaines moins régulés, donc le faire de manière consciente, régulée.
 
 #### 4.1 Facteurs communs : quels sont-t-ils?
 
-a. **Le client/patient**: avec quoi le client vient? a deja vu des psys avant? comment ca s'est passe? il se passe des choses dans sa vie? on a pas bcp de controle dessus mais joue un role fort dans les resultats de la therapie. il faut pas s'attribuer tous les echecs, tous les merites, toute la responsabailité. On offre un espace mais on controle pas tout.
+a. **Le client/patient**: avec quoi le client vient? a-t-il déjà vu des psys avant? comment ça s'est passé? il se passe des choses dans sa vie? on a pas bcp de contôole dessus mais joue un role fort dans les résultats de la thérapie. Il faut pas s'attribuer tous les échecs, tous les mérites, toute la responsabilité. On offre un espace, mais on ne contrôle pas tout.
 
-b.  **L'alliance thérapeutique**: concept très actif, très discuté. La relation, mais aussi la collaboration. L'objectif thérapeutique peut etre placé ici aussi.
+b.  **L'alliance thérapeutique**: concept très actif, très discuté. La relation, mais aussi la collaboration. L'objectif thérapeutique peut être placé ici aussi.
 
 c. **Le/la thérapeute**: 
 Dans l'heritage du modele biomedical, cette variable serait a exclure.
-- On constante **une grande variabilité des resultats en therapie due au thérapeute** (! vaut mieux se former en tant que therapeute, personne, plutot que s'ameliorer sur le technique. par exemple la **présence** (concept herité de Rogers), peut aussi s'entrainer.
-- Et les **thérapeutes les moins bons** peuvent avoir des effets néfastes sur leurs patient.es. Des personnes qui de part des choses proipres a elle vonta voir plus frequemment des resultats negatifs, voir etre nefastes pour leur patient.es.
+- On constante **une grande variabilité des résultats en thérapie due au thérapeute** (! vaut mieux se former en tant que thérapeute, personne, plutôt que s'améliorer sur le technique. par exemple la **présence** (concept hérité de Rogers), peut aussi s'entrainer.
+- Et les **thérapeutes les moins bons** peuvent avoir des effets néfastes sur leurs patient.es. Des personnes qui de part des choses propres à elles vont avoir plus fréquemment des résultats négatifs, voire être néfastes pour leur patient.es.
 
-d. **Autres facteurs**: facteurs extra-thérapeutiques, les modèles/techniques (pourraient n'expliquer que quelques pourcents de al variance des résultats). metaphore de la recette de cuisine qui n'est jamais pareille, meme avec les memes ingredients qu'on essaye de mettre. Toujours un peu different: deja, c'est jamais le meme patient a chaque fois. Et meme si meme paatient, chaque séance demande une autre concotion...
+d. **Autres facteurs**: facteurs extra-thérapeutiques, les modèles/techniques (pourraient n'expliquer que quelques pourcents de la variance des résultats). metaphore de la recette de cuisine qui n'est jamais pareille, meme avec les memes ingredients qu'on essaye de mettre. Toujours un peu different: deja, c'est jamais le meme patient a chaque fois. Et meme si meme paatient, chaque séance demande une autre concotion...
 
 IMPORTANT DE CONSIDÉRER l'INTERDEPENDANCE DES FACTEURS (ainsi que leur caractère fluide et dynamique): **==Intrication==**.
 
@@ -268,8 +264,6 @@ Cas dans "Médecine de l'âme", article *Le secret pathogène*, de Henri X (psyc
 > a
 > Travail: idee est de décrire ce qu'elle dit, ensuite nos interpretations, explications... d'après le modele des facteurs communs.
 
-Hello, tu as eu de nouvelles? si elle veut avant de s'engager on peut lui expliquer ce qu'on cherche, si elle a des questions, sans engagement,
-
 ----
 
 *(Suite 4. Le rituel ou la technique)*
@@ -284,14 +278,14 @@ Hello, tu as eu de nouvelles? si elle veut avant de s'engager on peut lui expliq
 
 "Ayahuasca et son ombre. L'apprentissage de la possession dans un centre chamanique d'Amazonie péruvienne". David Dupuis. Journal de la Societe des americanistes. 104-2. 2018
 
-Conference de David Dupuis sur le sujet: youtube.com/watch?v=basNpRsLrkY
+Conference de David Dupuis sur le sujet: youtube.com/watch?v=basNpRsLrkY (notes à la fin de ces notes)
 
-Anthropologue. S'intéresse a ces occidentaux qui viennent pour 15 jours (inclus diete, activites, ayahuasca...)
+David Dupuis, anthropologue. S'intéresse à ces occidentaux qui viennent pour 15 jours (inclus diète, activités, Ayahuasca...)
 
-contexte: gros mouvement pour etre requalifiés comme traitement pour sante mentale.
-iteressant pour nous de se demander quel role peuvent avoir les psychedeliques dans ce dispositif.
+Contexte: gros mouvement actuel pour être requalifiés comme traitement pour santé mentale.
+Interessant pour nous de se demander quel rôle peuvent avoir les psychédéliques dans ce dispositif.
 
-Modele assez medical, du coup. On essaye de comprendre comment prise de psychedeliques a un effet sur la neurophysiologie qui eput etre benefique (comme on donne des antidepresseurs).
+Modele assez medical, du coup. On essaye de comprendre comment prise de psychedeliques a un effet sur la neurophysiologie qui peut être benefique (comme on donne des antidepresseurs).
 
 Cet anthropologue dit que le modele reste un modele medical, pharmacologique, et neurocentriste. Mais cet anthropologue étudie aussi l'importance du set and setting (importance du contexte). Experience semble etre grandement associee au contecte dans lequel on prend, donc faire des RCT peut ne pas etre ideal, psychedeliques se pretent pas super bien. Ou effets bad trip potentiels si mauvais contexte (medecin, neons, etc)
 
@@ -330,57 +324,20 @@ Important aussi quand on offre une explication, offrir aussi une explication. Si
 
 Ces méthodes et nos méthodes (diagnostiquer en psychiatrie, par ex.) devraient être pensés plus comme des dispositifs thérapeutiques et moins comme souvent prétendu, des dispositifs descriptifs. Catégories telles que Borderline, etc. en médecine, prétendument descriptives. Mais il y a un effet qui façonne, qui fabrique... En tant que psy, on a moins à faire à des diagnostiques, mais ça fait quand meme partie de notre pratique, ce rapport que les patients ont à leur diagnostic.
 
+📅 Mercredi **8 avril 2026** - Cours 7
+
+Absent
+
+📅 Mercredi **13 avril 2026** - Cours 8
 
 
 
-
-
-____
-
-## Travail de groupe
-
-**Notes travail de groupe**
-
-Pratiquante choisie: Pauline Ezan (Travaille avec des psychédéliques)
-Rendez-vous le 6 avril à 16h. Son site personnel:
-https://khoroskollective.be/guides/pauline-ezan/
-
-Brainstorming de groupe 📅  25 mars 18:00:
-1. **Son parcours et formation**
-	1. Comment elle est passée de sage-femme à thérapeute psychédélique? 
-	2. Qu'est-ce qu'elle hérite de sa formation et expérience de sage-femme?
-	3. 
-2. **Le cadre conceptuel / l'exposé raisonné** (==IMPORTANT==): 
-	- Concrètement, l'exposé raisonné comprend plusieurs couches de théories, que le cours détaille :
-		- **Des théories sur la maladie**: qu'est-ce qui cause la souffrance ? Les conflits psychiques inconscients (psychanalyse) ? Un traumatisme qui a laissé des traces neurophysiologiques (EMDR, psychotrauma) ? Des cognitions inadaptées (TCC) ? Un déséquilibre énergétique ? Une possession par des esprits ? Des schémas relationnels dysfonctionnels ? Chaque dispositif a sa réponse, et cette réponse n'est pas neutre — elle oriente tout le reste.
-		- **Des théories sur la guérison**: comment on passe de "ça ne va pas" à "ça va mieux" ? Il faut mentaliser, rendre conscient l'inconscient ? Retraiter le souvenir traumatique ? Modifier les comportements ? Exorciser ? Se reconnecter à quelque chose de plus grand ? Purifier le corps ? Chaque théorie de la maladie implique logiquement une théorie de la guérison.
-		- **Des théories sur l'humain**: qu'est-ce qu'une personne ? Un corps avec un cerveau ? Un psychisme avec un inconscient ? Une âme incarnée ? Un être traversé par des forces ? Un système nerveux ? Ce sont des présupposés souvent implicites mais qui structurent profondément la pratique.
-		- **Des théories sur le monde**: quelle est la nature de la réalité ? Y a-t-il un invisible, un sacré, des forces ? Quel rapport entre le corps et l'esprit ? Quel rapport entre l'individu et le collectif, la nature, le cosmos ?
-	1. Questions-type : Comment expliques-tu à quelqu'un qui vient te voir _pourquoi_ il va mal et _comment_ ça va l'aider? Est-ce que tu utilises un vocabulaire médical (neuroplasticité, système nerveux, trauma), spirituel (énergie, connexion, purification), ou les deux? Est-ce que ça dépend du client? Quand quelqu'un arrive avec une souffrance, quelle "histoire" lui proposes-tu pour comprendre ce qui se passe?
-	2. **La tension modèle médical vs. modèle chamanique/spirituel**: elle a un pied dans le modèle médical (sage-femme, clinicienne) et un pied dans quelque chose de plus chamanique/spirituel (plantes médicinales, traditions). La question est : quelle mythologie thérapeutique mobilise-t-elle avec ses clients?
-3. **Le dispositif concret: le rituel/la procédure**
-	- Frank & Frank parlent d'un rituel qui requiert l'implication conjointe du guérisseur et du client. Il faut comprendre très concrètement ce qui se passe : la préparation, la session, l'intégration.
-		- Quel psychédelique?
-		- Set and setting: comment il est?
-	- Questions-type : Peux-tu décrire concrètement comment se déroule un accompagnement, de A à Z? Qu'est-ce qui se passe avant la session (préparation, diète, entretien)? Pendant? Après (intégration)? Quel est le rôle du set and setting dans ta pratique? Comment tu structures l'espace physique?
-4. **La relation de confiance émotionnellement chargée**
-	- Comment se positionne-t-elle dans la relation? Le cours insiste sur l'alliance thérapeutique et la variabilité due au thérapeute. 
-	- Le site du collectif Khoros parle de "guides" et de "space-holders", pas de "thérapeutes" (ce choix lexical veut déjà dire quelque chose).
-	- Questions-type : Comment décrirais-tu ta relation avec les personnes que tu accompagnes? Te vois-tu comme guide, thérapeute, facilitatrice? Comment tu gères la confiance, surtout dans un état modifié de conscience où la personne est très vulnérable? Est-ce que ta posture change pendant la session vs. avant/après?
-5. **Un cas clinique concret**:
-6. **Autres**:
-	1. **Le public / les patients**:
-		- Quel type de personnes vient te voir? Pour quelles raisons (parcours d'itinérance clinique, dernier recours, cherchent "quelque chose d'autre"?)? Y a-t-il un profil récurrent (prédisposition aux thérapies alternatives, comprehensions spirituelles...)? 
-	2. **La question de la légalité**: Le site parle d'"expériences psychédéliques légales" — ça veut probablement dire truffles (psilocybine en vente libre aux Pays-Bas), ou sessions aux Pays-Bas, ou breathwork intense. Pour comprendre comment le cadre légal contraint ou façonne le dispositif.
-
-
-lui dire qu'important d'avoir le cas clinique.
 
 
 
 -----
 
-Note: Video conseillée en cours: https://www.youtube.com/watch?v=basNpRsLrkY (David Dupuis)
+Notes: Video conseillée en cours: https://www.youtube.com/watch?v=basNpRsLrkY (David Dupuis)
 
 - Approche anthropologique
 - Modèles plus récents "neurocentriques":
@@ -396,9 +353,9 @@ Deux étapes de l'experience psychédélique
 Déjà identifié par Claude-Levi Strauss 1970 (amplificateurs de discours latent que chaque discours tient en réserve).
 - Mais on a moins explore le fond social et son impact sur le contenu psychédélique.
 
-Cas ici, centre chamanique amazonie Péruvienne (Takiwasi, fondé par un medecin français), gens qui arrivent d'europe principalement:
+Cas ici, centre chamanique en Amazonie péruvienne (Takiwasi, fondé par un médecin français), gens qui arrivent d'Europe principalement:
 - Recherche thérapeutique
-- Pistes pour relations d'un type un peu différent (animisme, apprendre qqch sur maniere de relation au non-humain)
+- Pistes pour relations d'un type un peu différent (animisme, apprendre quelque chose sur la manière d'être en relation au non-humain)
 - Motifs spirituels
 
 Dispositifs de 2 semaines (adapté aux congés des occidentaux)
@@ -407,9 +364,9 @@ Dispositifs de 2 semaines (adapté aux congés des occidentaux)
 
 Interprétation de l'experience psychédélique
 - Les participants organisent leur expérience autour de ce que l'on entend/comprend des groupes de parole. Notamment avec présence d'autorités épistémiques (le médecin-guide, etc)
-- Proprieté des psychedeliques: Perceptions halucinogènes pas perçues comme divagations de l'esprit, mais perçu comme accès à éléments d'une réalité plus réelle encore que la réalité réelle. 
-	- Sert de bases à reconstructions narratives, reconfiguration identitaire
+- Propriété des psychédéliques: Perceptions hallucinogènes pas perçues comme divagations de l'esprit, mais perçu comme accès à éléments d'une réalité plus réelle encore que la réalité réelle. 
+	- Sert de bases à reconstructions narratives, reconfiguration identitaire...
 
 Efficacité thérapeutique:
-- se sentent soignés. meme si symptomes restent la. mais probablement du au recadrage narratif: maintenant la personne "sait la cause du sens du mal" (les démons a l'intérieur, etc), et on a des comportements pour lutter (priere, etc). 
-- Vs. modeles pharma: ici psychedelique production de sens, cristallisation de sens, nouvelles valeurs, etc, et que ceci est au coeur du changement therapeutique (je me demande s'il a pas trop simplifié modeles pharma/neurophysio au debut? modele friston/carhart inclut surement changement de valeur, epistemique, prise d perspective, etc)
+- Se sentent soignés. Même si les symptômes restent là. Mais probablement dû au recadrage narratif: maintenant la personne "sait la cause du sens du mal" (les démons à l'intérieur, etc), et on a des comportements pour lutter (prière, etc). 
+- vs. modèles pharma: ici psychédélique production de sens, cristallisation de sens, nouvelles valeurs, etc, et que ceci est au coeur du changement thérapeutique (question: je me demande s'il a pas trop simplifié modèles pharma/neurophysio au début? les modèles Friston/Carhart-Harris incluent très certainement changement de valeur, épistémique, prise de perspective, etc).

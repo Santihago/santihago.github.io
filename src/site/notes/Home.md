@@ -1,7 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"2026-03-04T17:27:33.190+01:00","updated":"2026-04-12T21:39:12.835+02:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"2026-03-04T17:27:33.190+01:00","updated":"2026-04-13T19:41:41.236+02:00"}
 ---
-
 
 **Cours obligatoires**:
 1. [[knowledge/events/2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental\|2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental]]
