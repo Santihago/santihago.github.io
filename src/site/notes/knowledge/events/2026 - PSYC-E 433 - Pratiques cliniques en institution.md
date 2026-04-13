@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-433-pratiques-cliniques-en-institution/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-04T17:27:33.116+01:00","updated":"2026-03-17T01:10:22.503+01:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-433-pratiques-cliniques-en-institution/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-04T17:27:33.116+01:00","updated":"2026-04-13T22:17:44.838+02:00"}
 ---
 
 
@@ -227,3 +227,7 @@ Discussion avec l'intervenant. J'étais absent.
 📅 **23 Mars 2026** - Cours 6
 
 Normalement, le film sera montré.
+
+📅 **13 avril 2026** - Cours x
+
+Discussion Nef des fous. Absent.
