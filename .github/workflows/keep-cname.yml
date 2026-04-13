@@ -28,4 +28,4 @@ jobs:
           git add CNAME
           git diff --cached --quiet || git commit -m "restore CNAME"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git push origin gh-pages
+          git push origin HEAD:gh-pages --force
