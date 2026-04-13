@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-04-12T20:24:35.679+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-04-13T21:12:48.860+02:00"}
 ---
 
 
@@ -7,14 +7,16 @@
 > .
 
 > [!info] Évaluation
-> Partie Kotsou: pas encore définie, ce sera un QCM (4 réponses). Il donnera des exemples. 
-La présence sera prise en compte, permet une note minimale.
-Il enverra supports: articles scientifiques. Aussi un examen blanc. Pas de piege, ce sera facile il dit. Peut etre fera QCM avec des cas cliniques (mais sans pieges non plus). Une proposition d'évitement, et 1 qui ressemble a de l'acceptation... ce sera tres clair. Exemple: psychopathologie fonctionnelle vs categorielle.
+> - Partie Kotsou: pas encore définie, ce sera un QCM (4 réponses). Il donnera des exemples. 
+Il enverra supports: articles scientifiques. Aussi un examen blanc. Pas de pièges, ce sera facile il dit. Peut être fera QCM avec des cas cliniques (mais sans pièges non plus). Par exemple, dans les réponses, une proposition parle d'évitement, et 1 qui ressemble à de l'acceptation... ce sera très clair. Exemple: psychopathologie fonctionnelle vs catégorielle?
+> - Partie Meriaux (systémique): ?
+> - Partie Fouchet: VF?
+
 
 > [!tip] Lectures recommandées (aucun caractère obligatoire)
 > * 
 
-Il y aura interventions des differentes approches:
+Il y aura interventions des différentes approches:
 - Philippe Fouchet: 
 - Ilios Kotsou: approches comportementales.
 - Systémique: Mathilde Meriaux.
@@ -262,18 +264,16 @@ Rigidité: metaphore variabilité cardiaque: variabilité est un marqueur de bon
 Cf Yrvin Yalom.
 CF Christian Bobin (poésie). Rumi. Tador
 
-
 [Milton Ericksson](https://en.wikipedia.org/wiki/Milton_H._Erickson), psychiatre-psychothérapeute américain.
 - Exemples: 
 	- Personne qui parle en salade de mots. Il lui parle "en salade de mots" aussi.
 	- Signe du bras nazi,, lui cause des problemes avec d'autres, Ericksson l'imite, modifie le mouvement et le symptome converti en mouvement de menuiserie.
 	- Utilise l'environnement (ville, montagne)
-- -> **Rejoindre pour guider**. (différent de donner raison)
+- -> **Rejoindre pour guider** (différent de donner raison)
 - Resistance: pas resistance de la patiente mais symptome qu'on l'a pas rejoint.
 - Si resistance on ne pousse pas. On accuille la resistance, on la comprend, on l'utilise, c'est une information sur la relation entre le personne et son probleme, sur la relation entre la personne et le therapeute... c'est une information.
 Livres: Ericksson n'en a pas écrit. "Ma voix t'accompagnera" ou "Un therapeute hors du commun" (les deux eleves de Ericksson).
 Utilisation de la metaphore, des histoires. Si c'etait un jardinier, il lui parlait de jardins, pas de processus techniques.
-
 
 
 ## Partie Systémique - Mathilde Meriaux

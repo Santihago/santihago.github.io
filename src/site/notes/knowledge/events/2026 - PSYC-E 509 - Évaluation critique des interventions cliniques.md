@@ -1,29 +1,29 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-13T21:08:42.267+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-13T21:23:51.845+02:00"}
 ---
 
-
-Cours donné par Laura Périchon cette année (avant appelé Fondements méthodes et évaluation de l'intervention psychologique, de Vinciane Despret)
+Cours donné par Laura Périchon cette année (avant appelé *Fondements méthodes et évaluation de l'intervention psychologique*, de Vinciane Despret)
 
 > [!tldr] Résumé
 > Exposé théorique des enjeux épistémologiques particulièrement lisibles dans les modèles cliniques. Mise en contraste, à l'aide des recherches en anthropologie et en ethnopsychologie, de quelques-unes de nos ethnothéories des émotions, de la maladie, de la psyché. Analyse de quelques cas selon les axes théoriques différents.
 
 > [!info] Évaluation
-L'évaluation se fonde sur un **travail** à rendre, par groupes de 4-5 etudiants. Rencontrer 1 personne. entretien(s) A enregisrer, eventuellement observer aussi, que la personne decrive sa pratique et donne un exemple (sorte de cas clinqiue, raconter une seance,etc). analyser son dispositif thérapeutique. aussi: qui sont les patients? issus d'une certaine demographie? certaine culture? (pas un travail sociologique pour autant). pour le 1 juin 2026. 7/8eme cours: presenter avancement du travail en groupe. Max 15 a 20 pages. 
+Voir instructions sur l'UV. L'évaluation se fonde sur un **travail** à rendre, par groupes de 4-5 etudiants. Rencontrer 1 personne, entretien à enregistrer, éventuellement observer aussi, que la personne décrive sa pratique et donne un exemple (sorte de cas clinique, raconter une séance, etc). Analyser son dispositif thérapeutique. Aussi: qui sont les patients? issus d'une certaine démographie? Certaine culture? (pas un travail sociologique pour autant). Pour le 1 juin 2026. 7/8eme cours: présenter l'avancement du travail en groupe. Max 15 à 20 pages. 
 >
-L'idée est d'interroger sur la pratique, sur les formations, comment elle comprend son travail, comment elle comprend que ca fonctionne, etc. Et expliciter à travers un cas clinique  comment ça peut fonctionner. Déceler quelles sont les théories que mobilise le dispositif thérapeutique, théories mobilisées pour agir dans le dispositif. Exemple: hypnose n'est pas une théorie, c'est une technique qui peut être mobilisée dans différentes théories. Par ex hypnose amène changement de conscience, mais important qu'est-ce qu'on fait dans cet état de conscience different?
+L'idée est d'interroger sur la pratique, sur les formations, comment elle comprend son travail, comment elle comprend que ça fonctionne, etc. Et expliciter à travers un cas clinique comment ça peut fonctionner. Déceler quelles sont les théories que mobilise le dispositif thérapeutique, théories mobilisées pour agir dans le dispositif. Exemple: hypnose n'est pas une théorie, c'est une technique qui peut être mobilisée dans différentes théories. Par ex., l'hypnose amène changement de conscience, mais important qu'est-ce qu'on fait dans cet état de conscience different?
 > - Décrire ce que la personne a décrit.
 > - Ensuite, nous, rajouter une réflexion/étude pour un niveau meta/clinique supplémentaire.
 > - Références: Cours, références du cours, et d'autres références c'est OK aussi.
 > Présentation:
 > - plus c'est clair et structuré au mieux, pour qu'elle donne son feedback.
-
+> 
+> Pour le travail: idée est de décrire ce qu'elle dit, ensuite nos interpretations, explications... d'après le modele des facteurs communs.
 
 
 📅 Mercredi **11 février 2026** 
 ## 🏷️ Introduction
 
-Approche philosophique, anthropologique? Réfléchir à la psychotherapie en prenant un regard large. Elle a fait un doctorat avec V. Despret et I. Duret sur le deuil et sur les thérapies sur le deuil (la relation entre la personne endeuillée et la personne défuncte). Formée Approche centrée sur la personne (Rogerienne), approches de pleine conscience, hypnose ericksonienne, EMDR, ICV (Intégration du Cycle de la Vie).
+Approche philosophique, anthropologique? Réfléchir à la psychothérapie en prenant un regard large. Elle a fait un doctorat avec V. Despret et I. Duret sur le deuil et sur les thérapies sur le deuil (la relation entre la personne endeuillée et la personne défuncte). Formée Approche centrée sur la personne (Rogerienne), approches de pleine conscience, hypnose ericksonienne, EMDR, ICV (Intégration du Cycle de la Vie).
 ### 1. Est-ce que la thérapie, ça fonctionne?
 
 - Enjeux: Vaut-il la peine de former des cliniciens, envoyer les gens en thérapie, rembourser les séances (question de santé publique)...? 
@@ -32,9 +32,9 @@ Approche philosophique, anthropologique? Réfléchir à la psychotherapie en pre
 
 **Oui**, selon une sorte de évidence empirique, parce que ce sont des pratiques ayant existé partout (dans plusieurs cultures) et depuis longtemps, évidence que "ça aide".
 
-**Efficacité des thérapies - la recheche**:
+**Efficacité des thérapies - la recherche**:
 - ==**Efficacité absolue:** les thérapies (toutes formes confondues) produisent des résultats en or==.
-	- Les études quantitatives montrent des tailles d'effet de 0.8 écart-type, c'est-à-dire qu'une personne ayant benéficié d'une intervention psychologique se sent mieux que 80% de celles qui n'ont pas benéficié de traitement.
+	- Les études quantitatives montrent des tailles d'effet de 0.8 écart-type, c'est-à-dire qu'une personne ayant bénéficié d'une intervention psychologique se sent mieux que 80% de celles qui n'ont pas bénéficié de traitement.
 
 **Pourquoi (ingrédients actifs)**?
 
@@ -66,17 +66,12 @@ Ingredients spécifiques VS facteurs communs:
 	- **Facteurs communs et *modèle contextuel?***: les facteurs communs à toutes les thérapies priment sur les techniques. Moins présent dans le secteur médical. Alliance, personnalité du thérapeute, etc.
 - Intérêt ici dans ce cours à être intégratif, garder un regard large.
 
-
->[!info] Dodo bird verdict
->https://en.wikipedia.org/wiki/Dodo_bird_verdict
->Recherches pero
-
 >[!question]
 >Question perso: quid d'outils avec une base de preuves solide (?), tels que traitements pour phobie, PTSD, BPD, etc. - on garde cette optique de l'équivalence?
 
 Rappel, resumé (cours 2): c'est compliqué de savoir comment les thérapies fonctionnent:
 	- Très complexe è étudier. 
-	- Beaucoup d'ingrédients actifs, qui, en plus, intéragissent entre eux.
+	- Beaucoup d'ingrédients actifs, qui, en plus, interagissent entre eux.
 
 Même avec protocoles de recherche rigoureux, isoler les ingredients est très complexe, voire impossible. On constate que les interactions humaines ne sont pas le meilleur objet de la science. Peut-être pour ça qu'on parle plus de l'"art de la thérapie" que de "science de la thérapie"...
 Cependant, on a quand meme envie d'en dire quelque chose dans ce cours, de les isoler un tant que soi peu, pour comprendre comment les dispositifs thérapeutiques fonctionnent.
@@ -184,17 +179,16 @@ Théories et modèles qu'on utilise: avoir une orientation, sur ce qu'il se pass
 ## 5.  Le modèle contextuel
 
 Livre source que la prof conseille:
-*L'essence du changement: Utiliser les facteurs communs aux différentes psychotherapies*. Barry Duncan, Mark Hubble, Scott Miller, Bruce Wampold. 2012. [De Boeck](https://www.deboecksuperieur.com/livre/9782804171773-l-essence-du-changement). Original: 
-
-	*The Heart and Soul of Change. Delivering What Works in Therapy, Second Edition*.
+- VF: *L'essence du changement: Utiliser les facteurs communs aux différentes psychotherapies*. Barry Duncan, Mark Hubble, Scott Miller, Bruce Wampold. 2012. [De Boeck](https://www.deboecksuperieur.com/livre/9782804171773-l-essence-du-changement).
+- Original: *The Heart and Soul of Change. Delivering What Works in Therapy, Second Edition*.
 
 Se base sur un autre livre:
 
-Un métamodèle de la psychothérapie: le modèle contextuel (Frank & Frank). "L'essence du changement", p.180.
+Un méta-modèle de la psychothérapie: le modèle contextuel (Frank & Frank). "L'essence du changement", p.180.
 
 	Frank, J. D., & Frank, J. B. (1991). Persuasion and healing: A comparative study of psychotherapy (3rd ed.). Baltimore, MD: Johns Hopkins University Press.
 
-**Facteurs partagés par toutes les psychothérapies**, selon ce modele:
+**Facteurs partagés par toutes les psychothérapies**, selon ce modèle:
 1. Un dispositif destiné *à guérir*. 
 	- Guerir est un mot chargé. "Avoir une prise sur quelque chose", propose la prof. Ou pourrait être "soutenir" dans d'autres courants et philosophies.
 2. Un exposé raisonné, un mythe ou un cadre conceptuel qui fournit une explication des plaintes du client ET une méthode pour les résoudre.
@@ -202,25 +196,22 @@ Un métamodèle de la psychothérapie: le modèle contextuel (Frank & Frank). "L
 3. Une relation de confiance, émotionnellement chargée, avec une personne aidante.
 4. Un rituel ou une procédure qui requiert l'implication conjointe du guérisseur et du client pour amener guérison ou résolution.
 
-- Selon le modèle contextuel, les specificités de la théoeie et des techniques sont à tous égards sans importance
+- Selon le modèle contextuel, les specificités de la théorie et des techniques sont à tous égards sans importance
 
 - La clé réside dans l'***existence impérative***:
 	- D'un ensemble de techniques ou de rituels qui sont cohérents avec les croyances culturelles partagées
-	- D'une théorie qui est comprse et acceptée par le patient/client (thérapeut qui doit s'adapteur un peu/beaucoup à l'univers de la personne)
+	- D'une théorie qui est comprise et acceptée par le patient/client (thérapeute qui doit s'adapteur un peu/beaucoup à l'univers de la personne)
 	- D'un traitement qui est implémenté d'une manière qui encourage un résultat positif
 
-{Débat sur le besoin du psy d'être de la même "culture" que le patient (que Louis et Lucia ont gagné)}
+{Débat sur le besoin du psy d'être de la même "culture" que le patient}
 
 ### 1. Cadre culturel destiné à amener la *guérison*
 
-- Hutte d'un shaman ou hopital occidental, le cadre dans lequel il prend place impregne le processus de puissance et de prestige, tout en rappelant aux participant.es les croyances culturelles prédominantes concernant des soins efficaces et la guérison. C'est quoi *aller mieux*?
-- Pour etre convaincante, toute intervention doit tout d'abord etre clairement reliée aux croyances communes partagées:
+- Hutte d'un shaman ou hôpital occidental, le cadre dans lequel il prend place imprègne le processus de puissance et de prestige, tout en rappelant aux participant.es les croyances culturelles prédominantes concernant des soins efficaces et la guérison. C'est quoi *aller mieux*?
+- Pour etre convaincante, toute intervention doit tout d'abord être clairement reliée aux croyances communes partagées:
 	- "La puissance de conviction de tout exposé thérapeutique raisonné est influencée par la culture dont il provient. Dans les cultures pieuses, ce sont les exposés raisonnés issus de la religion qui ont le plus grand pouvoir thérapeutique. Dans notre société laïque, une telle puissance vient de la science." (Frank & Frank, 1991, p. 590)
 
 📅 Mercredi **4 Mars 2026** - Cours 4
-
-Rappel des cours précédents.
-
 ### 2. Le mythe ou l'exposé raisonné
 
 - (voir texte de la slide 1)
@@ -232,16 +223,16 @@ Rappel des cours précédents.
 Cas dans "Médecine de l'âme", article *Le secret pathogène*, de Henri X (psychiatre):
 - Hypnose
 - Discussion:
-	- Personne qui arrive de la compagne, 19ème siècle. Arrive a la Salpetriere a Pars. Pour le patient, être possédé = sa théorie à lui de pourquoi il va pas bien.
-	- Janet(?) ne lui fait pas un exorcisme magique, par contre il parle d'exorcisme moderne. Il lui propose une autre théorie, et le patient va être "converti" à cette théorie, part en se disant que le probleme n'est pas la sorcellerie mais sa culpabilité et le regret.
+	- Personne qui arrive de la compagne, 19ème siècle. Arrive à la Salpétrière à Paris. Pour le patient, être possédé = sa théorie à lui de pourquoi il va pas bien.
+	- Janet(?) ne lui fait pas un exorcisme magique, par contre, il parle d'exorcisme moderne. Il lui propose une autre théorie, et le patient va être "converti" à cette théorie, part en se disant que le problème n'est pas la sorcellerie mais sa culpabilité et regret.
 
 ### 3. Une relation de confiance chargée émotionnellement
 
 - Il y a peu de débat autour de l'importance de la relation thérapeutique, mais bien autour de sa puissance et de sa place. E.g. Rogers, ce serait l'élément de traitement.
 	- Nécessaire
-	- D'autres
-- Le modele contextuel met l'accent sur l'action coordonnée et synchronisée des facteurs techniques et relationnels : les deux sont inextricablement liés ...
-	- Comme si on ne pouvait pas totalement séparer alliance, relation, traitement... mais le traitement ne se réduit pas a la relation
+	- D'autres {...}
+- Le modèle contextuel met l'accent sur l'action coordonnée et synchronisée des facteurs techniques et relationnels : les deux sont inextricablement liés ...
+	- Comme si on ne pouvait pas totalement séparer alliance, relation, traitement... mais le traitement ne se réduit pas à la relation
 - "Le succès de toutes les méthodes dépend de la conviction des patients que les thérapeutes se soucient d'eux et sont capables de les aider" (Frank et Frank, 1991, p.154).
 
 ### 4. Le rituel ou la technique
@@ -249,29 +240,23 @@ Cas dans "Médecine de l'âme", article *Le secret pathogène*, de Henri X (psyc
 - Mise en actes d'une mythologie thérapeutique culturelle (qui explique le pourquoi du trouble et le comment de la guérison).
 - Selon le modèle contextuel, aucune différence d'efficacité n'existe entre les différentes approches thérapeutiques.
 - Ce qui compte est que le traitement ait du sens pour le client, soit accepté par lui et favorise son engagement actif.
-- Les techniques fonctionneraient donc en grande partie par l'activation de l'espoir, de l'attente, de l'engagement du client.
+- Les techniques fonctionneraient donc en grande partie par l'**activation de l'espoir, de l'attente, de l'engagement du client.**
 - ET par les effets de l'allégeance du thérapeute sur le résultat du traitement:
-	- " Un thérapeute convaincu par son expérience personnelle de la validité d'une méthode particulière peut être extrémement efficace pour persuader les patients qu'eux aussi en bénéficieront" (Frank et Fank, 1991, p.161)
+	- " Un thérapeute convaincu par son expérience personnelle de la validité d'une méthode particulière peut être extrêmement efficace pour persuader les patients qu'eux aussi en bénéficieront" (Frank et Fank, 1991, p.161)
 		- "Guériseur guéri", souvent psys qui ont fait eux aussi un parcours thérapeutique, convaincus, convertis, à cette méthode. Ceci peut les rendre encore plus persuasifs.
 
 
 📅 Mercredi **18 Mars 2026** - Cours 5
 
 > [!warning] Présentation intermédiaire
-> 15 avril: jour de la présentation. Ça ne fait pas partie de l'evaluation, c'est plus pour nous aider dans le processus. Les 12 groupes présentent, à priori. 
-> Tous les membres du groupe ne doivent pas être presents, forcément (c'est pour nous). 
-> Idéal de faire la rencontre avant.
-> a
-> Travail: idee est de décrire ce qu'elle dit, ensuite nos interpretations, explications... d'après le modele des facteurs communs.
-
-----
+> 15 avril: jour de la présentation intermédiaire. Ça ne fait pas partie de l'évaluation, c'est plus pour nous aider dans le processus. Les 12 groupes présentent, à priori. Tous les membres du groupe ne doivent pas être presents, forcément (c'est pour nous). Idéal est d'avoir fait la rencontre avant. 
 
 *(Suite 4. Le rituel ou la technique)*
 
 - Les techniques/méthodes constituent une composante nécessaire d'un soin efficace
 - MAIS les résultats montrent qu'il ne faut pas LE bon traitement pour un trouble particulier
 - Les meilleures méthodes sont alors celles qui:
-	1. Ont pour but, ou dnt on pense qu'elles ont pour but d'etre therapeutiques, et sont administrees avec un expose raisonne pertinent et convaincant
+	1. Ont pour but, ou dont on pense qu'elles ont pour but d'être thérapeutiques, et sont administrées avec un expose raisonne pertinent et convaincant
 	2. Et, qui conviennent au client - qu'il peut accepter
 
 ### Exemple: possession sous Ayahuasca 
