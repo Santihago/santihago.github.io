@@ -3,7 +3,7 @@
   <title>📝</title>
   <link href="https://notes.chirimbolo.org/feed.xml" rel="self"/>
   <link href="https://notes.chirimbolo.org"/>
-  <updated>2026-04-13T19:24:17Z</updated>
+  <updated>2026-04-13T20:24:27Z</updated>
   <id>https://notes.chirimbolo.org</id><entry>
     <title>2026 - PSYC-E 540 - Approche systémique des traumatismes</title>
     <updated>2026-04-12T12:37:34.455Z</updated>
@@ -2714,7 +2714,7 @@ Moteur: transfert est ce qui fait émerger le sujet-supposé-savoir (SsS) (c&#39
     <link href="https://notes.chirimbolo.org/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/"/>
   </entry><entry>
     <title>2026 - PSYC-E 509 - Évaluation critique des interventions cliniques</title>
-    <updated>2026-04-13T19:23:51.845Z</updated>
+    <updated>2026-04-13T20:23:44.128Z</updated>
     <id>https://notes.chirimbolo.org/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/</id>
     <content type="html">&lt;p&gt;Cours donné par Laura Périchon cette année (avant appelé &lt;em&gt;Fondements méthodes et évaluation de l&#39;intervention psychologique&lt;/em&gt;, de Vinciane Despret)&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2737,9 +2737,9 @@ Présentation:&lt;/li&gt;
 &lt;p&gt;Pour le travail: idée est de décrire ce qu&#39;elle dit, ensuite nos interpretations, explications... d&#39;après le modele des facteurs communs.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;📅 Mercredi &lt;strong&gt;11 février 2026&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;introduction&quot; tabindex=&quot;-1&quot;&gt;🏷️ Introduction&lt;/h2&gt;
+&lt;h1 id=&quot;introduction&quot; tabindex=&quot;-1&quot;&gt;🏷️ Introduction&lt;/h1&gt;
 &lt;p&gt;Approche philosophique, anthropologique? Réfléchir à la psychothérapie en prenant un regard large. Elle a fait un doctorat avec V. Despret et I. Duret sur le deuil et sur les thérapies sur le deuil (la relation entre la personne endeuillée et la personne défuncte). Formée Approche centrée sur la personne (Rogerienne), approches de pleine conscience, hypnose ericksonienne, EMDR, ICV (Intégration du Cycle de la Vie).&lt;/p&gt;
-&lt;h3 id=&quot;1-est-ce-que-la-therapie-ca-fonctionne&quot; tabindex=&quot;-1&quot;&gt;1. Est-ce que la thérapie, ça fonctionne?&lt;/h3&gt;
+&lt;h2 id=&quot;1-est-ce-que-la-therapie-ca-fonctionne&quot; tabindex=&quot;-1&quot;&gt;1. Est-ce que la thérapie, ça fonctionne?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Enjeux: Vaut-il la peine de former des cliniciens, envoyer les gens en thérapie, rembourser les séances (question de santé publique)...?&lt;/li&gt;
 &lt;li&gt;Question de la mesure: fonctionne d&#39;après le rapport subjectif du patient lui-même? selon le psy? selon un tiers extérieur (et comment, observation, questionnaire, à quel moment...?)?&lt;/li&gt;
@@ -2759,7 +2759,7 @@ Présentation:&lt;/li&gt;
 &lt;li&gt;Interventions: Alliance thérapeutique, initier un changement, mecanismes propres à chaque courant...&lt;/li&gt;
 &lt;li&gt;Qui se pose cette question peut avoir un impact sur la réponse: chercheurs? Quels outils?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;2-strong-les-dispositifs-therapeutiques-strong&quot; tabindex=&quot;-1&quot;&gt;2. &lt;strong&gt;Les dispositifs thérapeutiques&lt;/strong&gt;&lt;/h3&gt;
+&lt;h2 id=&quot;2-les-dispositifs-therapeutiques&quot; tabindex=&quot;-1&quot;&gt;2. Les dispositifs thérapeutiques&lt;/h2&gt;
 &lt;p&gt;Dans toutes les cultures humaines, depuis des temps immémoriaux, il existe des &lt;em&gt;désordres&lt;/em&gt; ou des &lt;em&gt;maladies&lt;/em&gt;, et il existe des dispositifs therapeutiques, et des spécialistes de ces dispostiifs.&lt;/p&gt;
 &lt;p&gt;On peut s&#39;intéresser aux:&lt;/p&gt;
 &lt;ul&gt;
@@ -2802,8 +2802,8 @@ Question perso: quid d&#39;outils avec une base de preuves solide (?), tels que 
 - Beaucoup d&#39;ingrédients actifs, qui, en plus, interagissent entre eux.&lt;/p&gt;
 &lt;p&gt;Même avec protocoles de recherche rigoureux, isoler les ingredients est très complexe, voire impossible. On constate que les interactions humaines ne sont pas le meilleur objet de la science. Peut-être pour ça qu&#39;on parle plus de l&#39;&amp;quot;art de la thérapie&amp;quot; que de &amp;quot;science de la thérapie&amp;quot;...&lt;br /&gt;
 Cependant, on a quand meme envie d&#39;en dire quelque chose dans ce cours, de les isoler un tant que soi peu, pour comprendre comment les dispositifs thérapeutiques fonctionnent.&lt;/p&gt;
-&lt;h3 id=&quot;3-dispositifs-therapeutiques-composants&quot; tabindex=&quot;-1&quot;&gt;3. Dispositifs thérapeutiques: composants&lt;/h3&gt;
-&lt;h4 id=&quot;3-1-les-theories&quot; tabindex=&quot;-1&quot;&gt;3.1 Les théories&lt;/h4&gt;
+&lt;h2 id=&quot;3-dispositifs-therapeutiques-composants&quot; tabindex=&quot;-1&quot;&gt;3. Dispositifs thérapeutiques: composants&lt;/h2&gt;
+&lt;h2 id=&quot;3-1-les-theories&quot; tabindex=&quot;-1&quot;&gt;3.1 Les théories&lt;/h2&gt;
 &lt;p&gt;Il existe une variété de théories sur plusieurs dimensions.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;[!info] Les théories&lt;/p&gt;
@@ -2823,21 +2823,21 @@ Cependant, on a quand meme envie d&#39;en dire quelque chose dans ce cours, de l
 &lt;p&gt;&lt;strong&gt;Psychanalyse&lt;/strong&gt;: conscientisation, nécessité de mettre des mots... (theorie sur la guerison). OU conception de l&#39;humain avec sa part incosciente (theories sur l&#39;humain).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Esprits&lt;/strong&gt;: forces invisibles, mauvais esprits qui viennent embeter la personne. Solution proposée inclue cette histoire, par exemple exorciser pour gerer l&#39;interaction avec l&#39;invisible. (exemple de theories sur le monde)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&quot;3-2-les-methodes&quot; tabindex=&quot;-1&quot;&gt;3.2 Les méthodes&lt;/h4&gt;
+&lt;h3 id=&quot;3-2-les-methodes&quot; tabindex=&quot;-1&quot;&gt;3.2 Les méthodes&lt;/h3&gt;
 &lt;p&gt;Les techniques, les outils, les objets, les symboles, les lieux, le cadre, les paroles...&lt;br /&gt;
 E.g. l&#39;endroit ou ca va se passer: le cabinet du therapeute? Le cade, comment on va s&#39;asseoir. Qu&#39;estce quy aura sur les mures? Qu&#39;estce que qu&#39;on va dire, quand, comment?&lt;/p&gt;
-&lt;h4 id=&quot;3-3-les-effets&quot; tabindex=&quot;-1&quot;&gt;3.3 Les effets&lt;/h4&gt;
+&lt;h3 id=&quot;3-3-les-effets&quot; tabindex=&quot;-1&quot;&gt;3.3 Les effets&lt;/h3&gt;
 &lt;p&gt;Qu&#39;est-ce qui se passe avant, pendant et après une intervention?&lt;br /&gt;
 C&#39;est LE but ou le but principal du dispositif thérapeutique. C&#39;est donc un prisme central de l&#39;observation des dispositifs thérapeutiques, presque sa raison d&#39;être.&lt;br /&gt;
 Effets souhaités et effets non-souhaités.&lt;br /&gt;
 Ces effets souhaités sont ce que les dispositifs essayent de maximiser. Parfois, meme avant d&#39;essayer de comprendre les effets, on cherche a faire que &amp;quot;ça marche&amp;quot;.&lt;br /&gt;
 Parfois, au moment de s&#39;engager dans le processus (&amp;quot;je vais voir telle personne, faire une telle intervention&amp;quot;) on peut voir des effets. (Parfois meme avant ca, interessant du point de vue des ingredients actifs).&lt;/p&gt;
-&lt;h4 id=&quot;3-4-les-personnes&quot; tabindex=&quot;-1&quot;&gt;3.4 Les personnes&lt;/h4&gt;
+&lt;h3 id=&quot;3-4-les-personnes&quot; tabindex=&quot;-1&quot;&gt;3.4 Les personnes&lt;/h3&gt;
 &lt;p&gt;Le.a thérapeute et le.a patient.e/client.e.&lt;/p&gt;
-&lt;h4 id=&quot;3-5-le-milieu&quot; tabindex=&quot;-1&quot;&gt;3.5 Le milieu&lt;/h4&gt;
+&lt;h3 id=&quot;3-5-le-milieu&quot; tabindex=&quot;-1&quot;&gt;3.5 Le milieu&lt;/h3&gt;
 &lt;p&gt;Dans quel ecosystème socio-économique-culturel s&#39;inscrit le dispositif therapeutique?&lt;br /&gt;
 Dans le but de comprendre les interactions entre environnement et dispositif.&lt;/p&gt;
-&lt;h3 id=&quot;4-ingredients-specifiques-et-modele-medical&quot; tabindex=&quot;-1&quot;&gt;4. Ingrédients spécifiques et modèle médical&lt;/h3&gt;
+&lt;h2 id=&quot;4-ingredients-specifiques-et-modele-medical&quot; tabindex=&quot;-1&quot;&gt;4. Ingrédients spécifiques et modèle médical&lt;/h2&gt;
 &lt;p&gt;Efficacité des thérapies: ingrédients spécifiques et modèle médical&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Le modèle médical: historiquement, le premier modèle, relié a la médecine et aux traitements des maladies. Au départ, la psychothérapie &amp;quot;scientifique&amp;quot; est en relation intime avec la médecine, et pratiquée par des médecins uniquement.&lt;/li&gt;
@@ -2858,7 +2858,7 @@ Dans le but de comprendre les interactions entre environnement et dispositif.&lt
 &lt;li&gt;Les criteres deviennent les memes que pour l&#39;approbation d&#39;un médicament.&lt;/li&gt;
 &lt;li&gt;Héritage historique.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;4-facteurs-communs&quot; tabindex=&quot;-1&quot;&gt;4. Facteurs communs&lt;/h3&gt;
+&lt;h2 id=&quot;5-les-facteurs-communs&quot; tabindex=&quot;-1&quot;&gt;5. Les facteurs communs&lt;/h2&gt;
 &lt;p&gt;Modèle médical remis (au moins en partie) en question par le modèle des facteurs communs:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Les ingrédients spécifiques des traitements auraient peu d&#39;importance.&lt;/li&gt;
@@ -2871,7 +2871,7 @@ Dans le but de comprendre les interactions entre environnement et dispositif.&lt
 &lt;/ul&gt;
 &lt;p&gt;Des qu&#39;on a un patient &lt;strong&gt;motivé&lt;/strong&gt;, un thérapeute &lt;strong&gt;motivé&lt;/strong&gt;, qui se rencontrent dans ce but, quelque chose a lieu. Pas tant &amp;quot;faire quelque chose de précis&amp;quot;, mais &amp;quot;se mettre ensemble à faire quelque chose&amp;quot;.&lt;/p&gt;
 &lt;p&gt;L&#39;accent mis sur ces facteurs communs permet de sortir des querelles &amp;quot;d&#39;école&amp;quot;, et revaloriser tous les courants, et pratiques memes celles qui n&#39;ont pas le cachet scientifique, du style alternatives, etc (e.g. enérgéticiens, esprits, thérapies du deuil). Même si nous ne sommes pas dans ce cadre, nos futurs patients auront été ou seront en contact avec d&#39;autre dispositifs thérapeutiques, d&#39;autres manières de voir le monde. On peut même envisager de pouvoir envoyer des patients vers d&#39;autres praticiens (e.g. medium). Mais aspect éthique à tenir compte: ce sont des domaines moins régulés, donc le faire de manière consciente, régulée.&lt;/p&gt;
-&lt;h4 id=&quot;4-1-facteurs-communs-quels-sont-t-ils&quot; tabindex=&quot;-1&quot;&gt;4.1 Facteurs communs : quels sont-t-ils?&lt;/h4&gt;
+&lt;h2 id=&quot;5-1-facteurs-communs-quels-sont-t-ils&quot; tabindex=&quot;-1&quot;&gt;5.1 Facteurs communs : quels sont-t-ils?&lt;/h2&gt;
 &lt;p&gt;a. &lt;strong&gt;Le client/patient&lt;/strong&gt;: avec quoi le client vient? a-t-il déjà vu des psys avant? comment ça s&#39;est passé? il se passe des choses dans sa vie? on a pas bcp de contôole dessus mais joue un role fort dans les résultats de la thérapie. Il faut pas s&#39;attribuer tous les échecs, tous les mérites, toute la responsabilité. On offre un espace, mais on ne contrôle pas tout.&lt;/p&gt;
 &lt;p&gt;b.  &lt;strong&gt;L&#39;alliance thérapeutique&lt;/strong&gt;: concept très actif, très discuté. La relation, mais aussi la collaboration. L&#39;objectif thérapeutique peut être placé ici aussi.&lt;/p&gt;
 &lt;p&gt;c. &lt;strong&gt;Le/la thérapeute&lt;/strong&gt;:&lt;br /&gt;
@@ -2885,7 +2885,7 @@ Dans l&#39;heritage du modele biomedical, cette variable serait a exclure.&lt;/p
 &lt;p&gt;📅 Mercredi &lt;strong&gt;25 février 2026&lt;/strong&gt; - Cours 3&lt;/p&gt;
 &lt;p&gt;Rappel du cours précédents: les composants des dispositifs thérapeutiques: les théories, les méthodes, les effets, les personnes, le milieu. Concepts situés culturellement qu&#39;il faut faire attention de ne pas appliquer au monde entier, ne pas universaliser les choses. Ingredients specifiques et modèle medical. Facteurs communs.&lt;/p&gt;
 &lt;p&gt;Théories et modèles qu&#39;on utilise: avoir une orientation, sur ce qu&#39;il se passe, sur la transformation... Avoir l&#39;intention d&#39;avoir une prise sur quelque chose qui semble faire souffrance, etc.&lt;/p&gt;
-&lt;h2 id=&quot;5-le-modele-contextuel&quot; tabindex=&quot;-1&quot;&gt;5.  Le modèle contextuel&lt;/h2&gt;
+&lt;h2 id=&quot;6-le-modele-contextuel&quot; tabindex=&quot;-1&quot;&gt;6.  Le modèle contextuel&lt;/h2&gt;
 &lt;p&gt;Livre source que la prof conseille:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;VF: &lt;em&gt;L&#39;essence du changement: Utiliser les facteurs communs aux différentes psychotherapies&lt;/em&gt;. Barry Duncan, Mark Hubble, Scott Miller, Bruce Wampold. 2012. &lt;a href=&quot;https://www.deboecksuperieur.com/livre/9782804171773-l-essence-du-changement&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;De Boeck&lt;/a&gt;.&lt;/li&gt;
@@ -2922,7 +2922,7 @@ Dans l&#39;heritage du modele biomedical, cette variable serait a exclure.&lt;/p
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;1-cadre-culturel-destine-a-amener-la-em-guerison-em&quot; tabindex=&quot;-1&quot;&gt;1. Cadre culturel destiné à amener la &lt;em&gt;guérison&lt;/em&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;6-1-cadre-culturel-destine-a-amener-la-em-guerison-em&quot; tabindex=&quot;-1&quot;&gt;6.1 Cadre culturel destiné à amener la &lt;em&gt;guérison&lt;/em&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Hutte d&#39;un shaman ou hôpital occidental, le cadre dans lequel il prend place imprègne le processus de puissance et de prestige, tout en rappelant aux &lt;a href=&quot;http://participant.es/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;participant.es&lt;/a&gt; les croyances culturelles prédominantes concernant des soins efficaces et la guérison. C&#39;est quoi &lt;em&gt;aller mieux&lt;/em&gt;?&lt;/li&gt;
 &lt;li&gt;Pour etre convaincante, toute intervention doit tout d&#39;abord être clairement reliée aux croyances communes partagées:
@@ -2932,7 +2932,7 @@ Dans l&#39;heritage du modele biomedical, cette variable serait a exclure.&lt;/p
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;📅 Mercredi &lt;strong&gt;4 Mars 2026&lt;/strong&gt; - Cours 4&lt;/p&gt;
-&lt;h3 id=&quot;2-le-mythe-ou-l-expose-raisonne&quot; tabindex=&quot;-1&quot;&gt;2. Le mythe ou l&#39;exposé raisonné&lt;/h3&gt;
+&lt;h3 id=&quot;6-2-le-mythe-ou-l-expose-raisonne&quot; tabindex=&quot;-1&quot;&gt;6.2 Le mythe ou l&#39;exposé raisonné&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;(voir texte de la slide 1)&lt;/li&gt;
 &lt;li&gt;Il est nécessaire pour les cliniciens d&#39;être conscients des nombreux mythes culturels significatifs disponibles, mais également d&#39;être prêts à modifier leur technique, leur style et le type d&#39;approche pour mieux s&#39;accorder avec le client.&lt;/li&gt;
@@ -2953,7 +2953,7 @@ Dans l&#39;heritage du modele biomedical, cette variable serait a exclure.&lt;/p
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;3-une-relation-de-confiance-chargee-emotionnellement&quot; tabindex=&quot;-1&quot;&gt;3. Une relation de confiance chargée émotionnellement&lt;/h3&gt;
+&lt;h3 id=&quot;6-3-une-relation-de-confiance-chargee-emotionnellement&quot; tabindex=&quot;-1&quot;&gt;6.3 Une relation de confiance chargée émotionnellement&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Il y a peu de débat autour de l&#39;importance de la relation thérapeutique, mais bien autour de sa puissance et de sa place. E.g. Rogers, ce serait l&#39;élément de traitement.
 &lt;ul&gt;
@@ -2968,7 +2968,7 @@ Dans l&#39;heritage du modele biomedical, cette variable serait a exclure.&lt;/p
 &lt;/li&gt;
 &lt;li&gt;&amp;quot;Le succès de toutes les méthodes dépend de la conviction des patients que les thérapeutes se soucient d&#39;eux et sont capables de les aider&amp;quot; (Frank et Frank, 1991, p.154).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;4-le-rituel-ou-la-technique&quot; tabindex=&quot;-1&quot;&gt;4. Le rituel ou la technique&lt;/h3&gt;
+&lt;h3 id=&quot;6-4-le-rituel-ou-la-technique&quot; tabindex=&quot;-1&quot;&gt;6.4 Le rituel ou la technique&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Mise en actes d&#39;une mythologie thérapeutique culturelle (qui explique le pourquoi du trouble et le comment de la guérison).&lt;/li&gt;
 &lt;li&gt;Selon le modèle contextuel, aucune différence d&#39;efficacité n&#39;existe entre les différentes approches thérapeutiques.&lt;/li&gt;
@@ -3000,24 +3000,21 @@ Dans l&#39;heritage du modele biomedical, cette variable serait a exclure.&lt;/p
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;exemple-possession-sous-ayahuasca&quot; tabindex=&quot;-1&quot;&gt;Exemple: possession sous Ayahuasca&lt;/h3&gt;
-&lt;p&gt;&amp;quot;Ayahuasca et son ombre. L&#39;apprentissage de la possession dans un centre chamanique d&#39;Amazonie péruvienne&amp;quot;. David Dupuis. Journal de la Societe des americanistes. 104-2. 2018&lt;/p&gt;
-&lt;p&gt;Conference de David Dupuis sur le sujet: &lt;a href=&quot;http://youtube.com/watch?v=basNpRsLrkY&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;youtube.com/watch?v=basNpRsLrkY&lt;/a&gt; (notes à la fin de ces notes)&lt;/p&gt;
-&lt;p&gt;David Dupuis, anthropologue. S&#39;intéresse à ces occidentaux qui viennent pour 15 jours (inclus diète, activités, Ayahuasca...)&lt;/p&gt;
-&lt;p&gt;Contexte: gros mouvement actuel pour être requalifiés comme traitement pour santé mentale.&lt;br /&gt;
-Interessant pour nous de se demander quel rôle peuvent avoir les psychédéliques dans ce dispositif.&lt;/p&gt;
-&lt;p&gt;Modele assez medical, du coup. On essaye de comprendre comment prise de psychédéliques a un effet sur la neurophysiologie qui peut être bénéfique (comme on donne des antidépresseurs).&lt;/p&gt;
-&lt;p&gt;Cet anthropologue dit que le modele reste un modèle medical, pharmacologique, et neurocentriste. Mais cet anthropologue étudie aussi l&#39;importance du set and setting (importance du contexte). Experience semble être grandement associée au contexte dans lequel on prend, donc faire des RCT peut ne pas être ideal, psychédéliques se prêtent pas super bien. Ou effets bad trip potentiels si mauvais contexte (médecin, néons, etc).&lt;/p&gt;
-&lt;p&gt;Dans le renouveau, nouvelle vague, on les considère importantes pas forcément pour les mêmes raisons.&lt;/p&gt;
-&lt;p objectifs=&quot;&quot; antagonistes?=&quot;&quot; plus=&quot;&quot; cest=&quot;&quot; medical=&quot;&quot; moins=&quot;&quot; underground=&quot;&quot; et=&quot;&quot; mystique?=&quot;&quot;&gt;(à tenir compte: consommation aujourd&#39;hui avec affiliation à certains groupes, faisant partie de la contre culture, ... côté underground peut faire du dispositif. contrairement aux groupes plus médicaux, modernes, qui veulent ramener leur usage thérapeutique).&lt;/p&gt;
-&lt;p&gt;Idee de sortir d&#39;un automatisme pharmacologique, penser aux effets pharmaco et oublier le contexte. Peut-être que c&#39;est l&#39;interaction des deux qui façonne, produit l&#39;expérience.&lt;/p&gt;
+&lt;h3 id=&quot;illustration-possession-sous-ayahuasca&quot; tabindex=&quot;-1&quot;&gt;Illustration: possession sous Ayahuasca&lt;/h3&gt;
+&lt;p&gt;Conférence de David Dupuis sur le sujet: &lt;a href=&quot;http://youtube.com/watch?v=basNpRsLrkY&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;youtube.com/watch?v=basNpRsLrkY&lt;/a&gt; (notes à la fin de ces notes).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;&lt;em&gt;Ayahuasca et son ombre. L&#39;apprentissage de la possession dans un centre chamanique d&#39;Amazonie péruvienne&lt;/em&gt;&amp;quot;. David Dupuis. Journal de la Societe des américanistes. 104-2. 2018&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;David Dupuis, anthropologue. S&#39;intéresse à ces occidentaux qui viennent pour 15 jours (inclus diète, activités, Ayahuasca...). Contexte: gros mouvement actuel pour être requalifiés comme traitement pour santé mentale. Intéressant pour nous de se demander quel rôle peuvent avoir les psychédéliques dans ce dispositif.&lt;/p&gt;
+&lt;p&gt;Modèle assez médical, du coup. On essaye de comprendre comment prise de psychédéliques a un effet sur la neurophysiologie qui peut être bénéfique (comme on donne des antidépresseurs). Cet anthropologue dit que le modele reste un modèle medical, pharmacologique, et neurocentriste. Mais cet anthropologue étudie aussi l&#39;importance du set and setting (importance du contexte). Experience semble être grandement associée au contexte dans lequel on prend, donc faire des RCT peut ne pas être ideal, psychédéliques se prêtent pas super bien. Ou effets bad trip potentiels si mauvais contexte (médecin, néons, etc).&lt;/p&gt;
+&lt;p&gt;Dans le renouveau, nouvelle vague, on les considère importantes pas forcément pour les mêmes raisons. À tenir compte aussi: consommation aujourd&#39;hui avec affiliation à certains groupes, faisant partie de la contre culture, ... côté underground peut faire du dispositif. contrairement aux groupes plus médicaux, modernes, qui veulent ramener leur usage thérapeutique. {objectifs antagonistes? plus c&#39;est medical moins c&#39;est underground et mystique?}. Idée de sortir d&#39;un automatisme pharmacologique, penser aux effets pharmaco et oublier le contexte. Peut-être que c&#39;est l&#39;interaction des deux qui façonne, produit l&#39;expérience.&lt;/p&gt;
 &lt;p&gt;Profil des gens qui viennent: personnes qui cherchent un certain côté animiste, etc. Arrivent en plus avec problèmes de santé mentale, pas sévères mais parfois on a voyagé à travers institutions. Utilisent cosmonomie chrétienne, le médecin qui mobilise aussi le panthéon chrétien. Rapport au monde chrétien, occident, Europe (prières, utilisation de crucifix, mobilisation d&#39;entités comme Christ, Marie, saints...)&lt;br /&gt;
 Les personnes, on leur explique en arrivant comment fonctionnent les cérémonies en groupe, dans un espace spécifique, et comment elles vont vivre les choses.&lt;br /&gt;
 Idée de la possession: certaines personnes, leur problèmes sont dûs à la possession. Ca va se manifester a voir pendant la session d&#39;Ayahuasca.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Cas de Violaine, 19 ans, de Paris&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&amp;quot;Je me suis sentie tres mal, tres déprimée, tres triste, ...&amp;quot;&lt;br /&gt;
 Médecin avec sa perspective, par ces interrogations, les mots qu&#39;il met, propose sa theorie.&lt;br /&gt;
-au fur et a mesure elle incorpore le langage du medecin (elle explique son experience par l&#39;infestation, possession). Hypothèse que psychédélique agit comme amplificateur de théories, pas seulement mentalement, mais aussi comme expérience. &lt;mark&gt;Ici, pas seulement qu&#39;on lui explique les choses différemment, mais qu&#39;elle le VIT different, y a l&#39;experience qui rajoute qqch.&lt;/mark&gt;&lt;/p&gt;
+au fur et a mesure elle incorpore le langage du médecin (elle explique son experience par l&#39;infestation, possession). Hypothèse que psychédélique agit comme amplificateur de théories, pas seulement mentalement, mais aussi comme expérience. &lt;mark&gt;Ici, pas seulement qu&#39;on lui explique les choses différemment, mais qu&#39;elle le VIT different, y a l&#39;experience qui rajoute qqch.&lt;/mark&gt;&lt;/p&gt;
 &lt;p&gt;-&amp;gt; inverse que le cas discuté précédemment. Dans l&#39;autre, le gars arrive avec les théories de son village avec theories chrétiennes (avait mal agi, était possédé), et le dispositif de Janet lui avait fait comprendre que c&#39;était dans son inconscient. Ici, 150 ans plus tard, a peu près le même endroit, mais ça s&#39;inverse. Dans une société occidentale qui ne voit pas l&#39;humain comme habité par forces étrangères, vient revoir ces croyances sur l&#39;origine des problèmes, et la question de l&#39;agentivité, qui est aux commandes à l&#39;intérieur de soi.&lt;/p&gt;
 &lt;p&gt;📅 Mercredi &lt;strong&gt;25 Mars 2026&lt;/strong&gt; - Cours 6&lt;/p&gt;
 &lt;p&gt;Discours de la possession est assez courant. Peut-être parce qu&#39;histoire efficace sur l&#39;agentivité.&lt;/p&gt;
@@ -3039,7 +3036,8 @@ au fur et a mesure elle incorpore le langage du medecin (elle explique son exper
 &lt;p&gt;Ces méthodes et nos méthodes (diagnostiquer en psychiatrie, par ex.) devraient être pensés plus comme des dispositifs thérapeutiques et moins comme souvent prétendu, des dispositifs descriptifs. Catégories telles que Borderline, etc. en médecine, prétendument descriptives. Mais il y a un effet qui façonne, qui fabrique... En tant que psy, on a moins à faire à des diagnostiques, mais ça fait quand meme partie de notre pratique, ce rapport que les patients ont à leur diagnostic.&lt;/p&gt;
 &lt;p&gt;📅 Mercredi &lt;strong&gt;8 avril 2026&lt;/strong&gt; - Cours 7&lt;/p&gt;
 &lt;p&gt;Absent&lt;/p&gt;
-&lt;p&gt;📅 Mercredi &lt;strong&gt;13 avril 2026&lt;/strong&gt; - Cours 8&lt;/p&gt;
+&lt;p&gt;📅 Mercredi &lt;strong&gt;15 avril 2026&lt;/strong&gt; - Cours 8&lt;/p&gt;
+&lt;p&gt;Présentation.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;Notes: Video conseillée en cours: &lt;a href=&quot;https://www.youtube.com/watch?v=basNpRsLrkY&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;https://www.youtube.com/watch?v=basNpRsLrkY&lt;/a&gt; (David Dupuis)&lt;/p&gt;
 &lt;ul&gt;
@@ -3538,7 +3536,7 @@ Mais:&lt;/p&gt;
     <link href="https://notes.chirimbolo.org/knowledge/events/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/"/>
   </entry><entry>
     <title>2026 - PSYC-E 433 - Pratiques cliniques en institution</title>
-    <updated>2026-03-17T00:10:22.503Z</updated>
+    <updated>2026-04-13T20:17:44.838Z</updated>
     <id>https://notes.chirimbolo.org/knowledge/events/2026-psyc-e-433-pratiques-cliniques-en-institution/</id>
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;[!tldr] Résumé&lt;br /&gt;
@@ -3843,6 +3841,8 @@ Livre de Jean-Noel Missa: comment la conception physiologique, cerebrale, s&#39;
 &lt;p&gt;Discussion avec l&#39;intervenant. J&#39;étais absent.&lt;/p&gt;
 &lt;p&gt;📅 &lt;strong&gt;23 Mars 2026&lt;/strong&gt; - Cours 6&lt;/p&gt;
 &lt;p&gt;Normalement, le film sera montré.&lt;/p&gt;
+&lt;p&gt;📅 &lt;strong&gt;13 avril 2026&lt;/strong&gt; - Cours x&lt;/p&gt;
+&lt;p&gt;Discussion Nef des fous. Absent.&lt;/p&gt;
 </content>
     <link href="https://notes.chirimbolo.org/knowledge/events/2026-psyc-e-433-pratiques-cliniques-en-institution/"/>
   </entry><entry>
