@@ -3,7 +3,7 @@
   <title>📝</title>
   <link href="https://notes.chirimbolo.org/feed.xml" rel="self"/>
   <link href="https://notes.chirimbolo.org"/>
-  <updated>2026-04-13T20:24:27Z</updated>
+  <updated>2026-04-13T20:31:03Z</updated>
   <id>https://notes.chirimbolo.org</id><entry>
     <title>2026 - PSYC-E 540 - Approche systémique des traumatismes</title>
     <updated>2026-04-12T12:37:34.455Z</updated>
@@ -2714,7 +2714,7 @@ Moteur: transfert est ce qui fait émerger le sujet-supposé-savoir (SsS) (c&#39
     <link href="https://notes.chirimbolo.org/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/"/>
   </entry><entry>
     <title>2026 - PSYC-E 509 - Évaluation critique des interventions cliniques</title>
-    <updated>2026-04-13T20:23:44.128Z</updated>
+    <updated>2026-04-13T20:30:19.857Z</updated>
     <id>https://notes.chirimbolo.org/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/</id>
     <content type="html">&lt;p&gt;Cours donné par Laura Périchon cette année (avant appelé &lt;em&gt;Fondements méthodes et évaluation de l&#39;intervention psychologique&lt;/em&gt;, de Vinciane Despret)&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2798,10 +2798,9 @@ Présentation:&lt;/li&gt;
 Question perso: quid d&#39;outils avec une base de preuves solide (?), tels que traitements pour phobie, PTSD, BPD, etc. - on garde cette optique de l&#39;équivalence?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Rappel, resumé (cours 2): c&#39;est compliqué de savoir comment les thérapies fonctionnent:&lt;br /&gt;
-- Très complexe è étudier.&lt;br /&gt;
+- Très complexe à étudier.&lt;br /&gt;
 - Beaucoup d&#39;ingrédients actifs, qui, en plus, interagissent entre eux.&lt;/p&gt;
-&lt;p&gt;Même avec protocoles de recherche rigoureux, isoler les ingredients est très complexe, voire impossible. On constate que les interactions humaines ne sont pas le meilleur objet de la science. Peut-être pour ça qu&#39;on parle plus de l&#39;&amp;quot;art de la thérapie&amp;quot; que de &amp;quot;science de la thérapie&amp;quot;...&lt;br /&gt;
-Cependant, on a quand meme envie d&#39;en dire quelque chose dans ce cours, de les isoler un tant que soi peu, pour comprendre comment les dispositifs thérapeutiques fonctionnent.&lt;/p&gt;
+&lt;p&gt;Même avec protocoles de recherche rigoureux, isoler les ingredients est très complexe, voire impossible. On constate que les interactions humaines ne sont pas le meilleur objet de la science. Peut-être pour ça qu&#39;on parle plus de l&#39;&amp;quot;art de la thérapie&amp;quot; que de &amp;quot;science de la thérapie&amp;quot;... Cependant, on a quand meme envie d&#39;en dire quelque chose dans ce cours, de les isoler un tant que soi peu, pour comprendre comment les dispositifs thérapeutiques fonctionnent.&lt;/p&gt;
 &lt;h2 id=&quot;3-dispositifs-therapeutiques-composants&quot; tabindex=&quot;-1&quot;&gt;3. Dispositifs thérapeutiques: composants&lt;/h2&gt;
 &lt;h2 id=&quot;3-1-les-theories&quot; tabindex=&quot;-1&quot;&gt;3.1 Les théories&lt;/h2&gt;
 &lt;p&gt;Il existe une variété de théories sur plusieurs dimensions.&lt;/p&gt;
@@ -2854,8 +2853,8 @@ Dans le but de comprendre les interactions entre environnement et dispositif.&lt
 &lt;p&gt;On a besoin de méthodes qui permettent de prouver cet effet.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;-&amp;gt; le plan experimental randomisé en double aveugle avec groupe contrôle ayant reçu le placebo: essai controlé randomisé (ECR). Commentaire prof: Sauf que pour thérapie, c&#39;est assez complexe, c&#39;est difficile d&#39;avoir un groupe de &lt;em&gt;thérapie&lt;/em&gt; placebo. A quoi correspondrait une thérapie placebo? On peut comparer à une autre thérapie mais là on constate le paradoxe d&#39;équivalence. Peut être un groupe de juste soutien, ou discussion? Du coup problèmes méthodologiques.&lt;/li&gt;
-&lt;li&gt;Les thérapies nécessiteraient alors une validaiton au moyen de l&#39;ECR: traitements validés empiriquement aujourd&#39;hui appelés &#39;traitements psychologiques appuyés empiriquement&#39; (ou empirically supported treatments, ESTs).&lt;/li&gt;
-&lt;li&gt;Les criteres deviennent les memes que pour l&#39;approbation d&#39;un médicament.&lt;/li&gt;
+&lt;li&gt;Les thérapies nécessiteraient alors une validation au moyen de l&#39;ECR: traitements validés empiriquement aujourd&#39;hui appelés &#39;traitements psychologiques appuyés empiriquement&#39; (ou empirically supported treatments, ESTs).&lt;/li&gt;
+&lt;li&gt;Les critères deviennent les memes que pour l&#39;approbation d&#39;un médicament.&lt;/li&gt;
 &lt;li&gt;Héritage historique.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;5-les-facteurs-communs&quot; tabindex=&quot;-1&quot;&gt;5. Les facteurs communs&lt;/h2&gt;
@@ -2871,7 +2870,7 @@ Dans le but de comprendre les interactions entre environnement et dispositif.&lt
 &lt;/ul&gt;
 &lt;p&gt;Des qu&#39;on a un patient &lt;strong&gt;motivé&lt;/strong&gt;, un thérapeute &lt;strong&gt;motivé&lt;/strong&gt;, qui se rencontrent dans ce but, quelque chose a lieu. Pas tant &amp;quot;faire quelque chose de précis&amp;quot;, mais &amp;quot;se mettre ensemble à faire quelque chose&amp;quot;.&lt;/p&gt;
 &lt;p&gt;L&#39;accent mis sur ces facteurs communs permet de sortir des querelles &amp;quot;d&#39;école&amp;quot;, et revaloriser tous les courants, et pratiques memes celles qui n&#39;ont pas le cachet scientifique, du style alternatives, etc (e.g. enérgéticiens, esprits, thérapies du deuil). Même si nous ne sommes pas dans ce cadre, nos futurs patients auront été ou seront en contact avec d&#39;autre dispositifs thérapeutiques, d&#39;autres manières de voir le monde. On peut même envisager de pouvoir envoyer des patients vers d&#39;autres praticiens (e.g. medium). Mais aspect éthique à tenir compte: ce sont des domaines moins régulés, donc le faire de manière consciente, régulée.&lt;/p&gt;
-&lt;h2 id=&quot;5-1-facteurs-communs-quels-sont-t-ils&quot; tabindex=&quot;-1&quot;&gt;5.1 Facteurs communs : quels sont-t-ils?&lt;/h2&gt;
+&lt;h3 id=&quot;5-1-facteurs-communs-quels-sont-t-ils&quot; tabindex=&quot;-1&quot;&gt;5.1 Facteurs communs : quels sont-t-ils?&lt;/h3&gt;
 &lt;p&gt;a. &lt;strong&gt;Le client/patient&lt;/strong&gt;: avec quoi le client vient? a-t-il déjà vu des psys avant? comment ça s&#39;est passé? il se passe des choses dans sa vie? on a pas bcp de contôole dessus mais joue un role fort dans les résultats de la thérapie. Il faut pas s&#39;attribuer tous les échecs, tous les mérites, toute la responsabilité. On offre un espace, mais on ne contrôle pas tout.&lt;/p&gt;
 &lt;p&gt;b.  &lt;strong&gt;L&#39;alliance thérapeutique&lt;/strong&gt;: concept très actif, très discuté. La relation, mais aussi la collaboration. L&#39;objectif thérapeutique peut être placé ici aussi.&lt;/p&gt;
 &lt;p&gt;c. &lt;strong&gt;Le/la thérapeute&lt;/strong&gt;:&lt;br /&gt;
@@ -3060,7 +3059,7 @@ au fur et a mesure elle incorpore le langage du médecin (elle explique son expe
 &lt;li&gt;Etape perception géométriques: universelle&lt;/li&gt;
 &lt;li&gt;Formes figuratives: plus façonnées par culture&lt;br /&gt;
 Déjà identifié par Claude-Levi Strauss 1970 (amplificateurs de discours latent que chaque discours tient en réserve).&lt;/li&gt;
-&lt;li&gt;Mais on a moins explore le fond social et son impact sur le contenu psychédélique.&lt;/li&gt;
+&lt;li&gt;Mais on a moins exploré le fond social et son impact sur le contenu psychédélique.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Cas ici, centre chamanique en Amazonie péruvienne (Takiwasi, fondé par un médecin français), gens qui arrivent d&#39;Europe principalement:&lt;/p&gt;
 &lt;ul&gt;
