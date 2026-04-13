@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-12T21:55:19.379+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-13T19:01:20.888+02:00"}
 ---
 
 
@@ -531,10 +531,63 @@ Video, lecture de Maurizio Andolfi: à propos de la considération des pères da
 
 📅 Lundi **13 Avril 2026** - Cours 5
 
+Exemple de théorie systémique: Salvatore Minuchin (approche structuraliste)
 
+Voyait adolescents aller mieux, mais très vite retombaient dans la délinquence et la transgression. Minuchin s'est dit que la meilleure chose a faire était de non pas écarter les parents, mais d'être partenaire des parents, leur permettre de reprendre une palce dans lesqueles ils se sentiraient respectés, et de construire des cartes familiales, lui permettant de trouver les types de dysfonctionnements dans chaque famille.
 
+Schéma avec l'idée du système familial ideal (ou plutôt "fonctionnel") selon Minuchin (Minuchin: prédictif, il sait ou il veut aller)
 
+Idée des frontières claires et souples, avec perméabilité. Avec des règles définissant qui fait partie de chaque sous-système, et comment on se comporte dans chaque sous système (intimité des enfants, intimité des parents).
 
+Exemple: Enfant parentifié: enfant pas "à sa place" dans la structure.
+
+Processus thérapeutique en 3 étapes
+1. **Affiliation ou joining**
+2. **Découvrir et décrire la structure familiale**
+		Il va etre a la recherche de quelle carte il va dessiner a propos de cette famille, va voir comment se comportent les membres les uns avec les autres, les fronteires sont elles claire ou diffuses entre personnes et sous-systèmes, bons degrés de differentiation ou pas?
+3. **Créer des conditions pour permettre la transformation**
+
+Moyens thérapeutiques:
+- **Recadrage** (donner un sens nouveau au problème pour lequel la famille consulte, proposer une autre vision des choses que celle que donne la famille, **souvent plus positive** ou optimiste)
+- **Réorganisation spatiale**
+	- par ex: demander à l'enfant de venir s'asseoir a coté de lui, séparé de ses parents... jouant sur l'espace pour provoquer des changements dans cette carte/territoire, sur ces frontières. Et que le thérapeute n'ait pas une place prédéterminée, places flexibles, chaises vides, etc.
+- **Délimitation des frontières**
+- **Prescription de taches thérapeutiques** 
+	- par ex: se protéger dans la famille nucléaire dans intrusions de la famille élargie, ou inverse, les inviter à être plus proches de cousins/familles pour une famille très rigide et fermée dans leur noyau
+	- Pour leur redonner vite leur compétences, pour que la famille ne dépende pas du thérapeute. Et pour qu'ils expérimentent aussi des choses entre les séances, pas seulement pendant les séances.
+	- Autres thérapeutes font aussi: Mara Salvini: renforcer les frontières, ou e.g. prescrire aux parents de disparaître.
+- **Mise en acte** (enactment)
+	- Faire vivre des choses en présence du thérapeute, qui soient dans la modification de comportements et dans le partage d'émotions. Intervenir avec pour objectif de permettre aux membres de la famille **d'expérimenter un changement**, expérimenter un autre comportement. 
+	- Par ex: membre anorexique: aller manger au restaurant avec la famille, vu que c'est un moment délicat pour faire une mise en acte de comportements différents dans un setting réel.
+
+Familles psychosomatiques (19xx)
+1. Enchêvetrement
+2. Surprotection
+3. Absence de resolution des conflits (évitement)
+4. Rigidité (peur du changement)
+
+Il avait mis en évidence **3 configurations d'évitement des conflits**:
+1. Triangulation (l'enfant est placé de telle manière que des qu'il s'exprime, il semble s'allier à un des parents contre l'autre)
+2. La coalition parent-enfant (l'enfant à une relation stable avec un des parents qui exclut l'autre parent)
+3. Le détournement (la dyade conjugale est ostensiblement unie. Les parents blâment leur enfant ce qui leur permet de dissimuler leur conflit... L'unique problème est l'enfant qui porte le symptôme). Permet de ne pas négocier le conflit là où il se trouve.
+
+**Conclusion**
+L'approche systémique peut s'appliquer à des groupes ou des familles: elle n'est pas forcément destinée a des problématiques d'enfants.
+Elle est une manière de penser le probleme, le symptôme quelque soit la génération de la personne qui porte celui-ci. Une grande importance est donnée **au contexte** qui maintient le symptôme en place.
+- Le symptome signale qu'il y a une difficulté, un malaise. Il est de tout ordre: enuresie, insomnie, vomissements, agitation, addictions, depression, angoisses, violence, passage a l'acte... il n'y a pas forcément de Patient désigné,
+- Exemple : un couple présentant un pb de communication, une famille, une communauté ou une equipe professionnelle n'arrivant pas à négocier des conflits, n'arrive pas a surmonter une difficulté..
+
+Exemples de questions d'examen (Vrai/Faux):
+
+1. Vrai. (3 dimansions: si demande, symptome et allegation sont reunis sur meme personne,  plutot individuel, vs les 3 sont dispatchés: famille)
+2. Dans les modèles non prédictifs, la solution est contenue dans le projet thérapeutique.
+	Faux. On ne sait pas ce que ca va donner, on mise sur activation des ressources de la famille pour qu'elle trouve ses auto-solutions.
+3. La crise... Vrai. Crise comme indispensable pour provoquer un changement.
+4. Le recadrage est une technique... Faux. Important qu'il y ait qqch de connoté positif dans le nouveau sens.
+	
+
+Video: thérapie de famille Andolfi (Closed Doors)
+FIls en consultation pour: retrait, passe de longues heures seul dans sa chambre a jouer des jeux video. Pere absent en thérapie, loyauté fils envers mere.
 
 
 # Partie Thérapies Cognitivo-Comportementales - B. Thonon
