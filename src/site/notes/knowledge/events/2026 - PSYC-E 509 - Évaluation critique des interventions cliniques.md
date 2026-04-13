@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-13T21:04:00.337+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-13T21:08:42.267+02:00"}
 ---
 
 
@@ -285,34 +285,33 @@ David Dupuis, anthropologue. S'intéresse à ces occidentaux qui viennent pour 1
 Contexte: gros mouvement actuel pour être requalifiés comme traitement pour santé mentale.
 Interessant pour nous de se demander quel rôle peuvent avoir les psychédéliques dans ce dispositif.
 
-Modele assez medical, du coup. On essaye de comprendre comment prise de psychedeliques a un effet sur la neurophysiologie qui peut être benefique (comme on donne des antidepresseurs).
+Modele assez medical, du coup. On essaye de comprendre comment prise de psychédéliques a un effet sur la neurophysiologie qui peut être bénéfique (comme on donne des antidépresseurs).
 
-Cet anthropologue dit que le modele reste un modele medical, pharmacologique, et neurocentriste. Mais cet anthropologue étudie aussi l'importance du set and setting (importance du contexte). Experience semble etre grandement associee au contecte dans lequel on prend, donc faire des RCT peut ne pas etre ideal, psychedeliques se pretent pas super bien. Ou effets bad trip potentiels si mauvais contexte (medecin, neons, etc)
+Cet anthropologue dit que le modele reste un modèle medical, pharmacologique, et neurocentriste. Mais cet anthropologue étudie aussi l'importance du set and setting (importance du contexte). Experience semble être grandement associée au contexte dans lequel on prend, donc faire des RCT peut ne pas être ideal, psychédéliques se prêtent pas super bien. Ou effets bad trip potentiels si mauvais contexte (médecin, néons, etc).
 
-dans le renouveau, nouvelle vague, on les considere importantes pas forcement pour les memes raisons.
+Dans le renouveau, nouvelle vague, on les considère importantes pas forcément pour les mêmes raisons.
 
-(a tenir compte: consommation aujourd'hui avec affiliation a certains groupes, faisant partie de la contre culture, ... cote underground peut faire du dispositif. contrairement aux groupes plus médicaux, modernes, qui veulent ramener leur usage thérapeutique). {objectifs antagonistes? plus c'est medical moins cest underground et mystique?}
+(à tenir compte: consommation aujourd'hui avec affiliation à certains groupes, faisant partie de la contre culture, ... côté underground peut faire du dispositif. contrairement aux groupes plus médicaux, modernes, qui veulent ramener leur usage thérapeutique). {objectifs antagonistes? plus c'est medical moins cest underground et mystique?}
 
-Idee de sortir d'un automatisme pharmacologique, penser aux effets pharmaco et oublier le contexte. Peut-etre que c'est l'interaction des deux qui façonne, produit l'experience.
+Idee de sortir d'un automatisme pharmacologique, penser aux effets pharmaco et oublier le contexte. Peut-être que c'est l'interaction des deux qui façonne, produit l'expérience.
 
-Profil des gens qui viennent: personnes qui cherchent un certain cote animiste, etc. Arrivent en plus avec problemes de sante mentale, pas severe mais parfois on voyage a travers institutions. Utilisent cosmonomie chretienne, le medecin qui set mobilise aussi le pantheon chretien. Rapport au monde chretien, occident, europe (prieres, utilisation de crucifix, mobilisation d'entites comme christ, marie, saints...)
-Les personnes on leur explique en arrivant comment fonctionnent les ceremonies en groupe, dans un espace specifique, et comment elles vont vivre les choses.
-Idee de la possession: cerataines personnes, leur problemes sont dus a la possession. Ca va se manifester a voir pendant la session d'ayahuasca.
+Profil des gens qui viennent: personnes qui cherchent un certain côté animiste, etc. Arrivent en plus avec problèmes de santé mentale, pas sévères mais parfois on a voyagé à travers institutions. Utilisent cosmonomie chrétienne, le médecin qui mobilise aussi le panthéon chrétien. Rapport au monde chrétien, occident, Europe (prières, utilisation de crucifix, mobilisation d'entités comme Christ, Marie, saints...)
+Les personnes, on leur explique en arrivant comment fonctionnent les cérémonies en groupe, dans un espace spécifique, et comment elles vont vivre les choses.
+Idée de la possession: certaines personnes, leur problèmes sont dûs à la possession. Ca va se manifester a voir pendant la session d'Ayahuasca.
 
 **Cas de Violaine, 19 ans, de Paris**
 
-"Je me suis sentie tres mal, tres deprimée, tres triste, ..."
-Medecin avec sa perspective, par ces interrogations, les mots qu'il met, propose sa theorie.
-au fur et a mesure elle incorpore le langage du medecin (elle explique son experience par l'infestation, possession). Hypothese que psychedelique agit comme amplificateur de theories, pas seulement mentalement, mais aussi comme experience.
-Ici, pas seulement qu;'on lui explique les choses differement, mais qu'elle le VIT different, y a l'experience qui rajoute qqch.
+"Je me suis sentie tres mal, tres déprimée, tres triste, ..."
+Médecin avec sa perspective, par ces interrogations, les mots qu'il met, propose sa theorie.
+au fur et a mesure elle incorpore le langage du medecin (elle explique son experience par l'infestation, possession). Hypothèse que psychédélique agit comme amplificateur de théories, pas seulement mentalement, mais aussi comme expérience. ==Ici, pas seulement qu'on lui explique les choses différemment, mais qu'elle le VIT different, y a l'experience qui rajoute qqch.==
 
--> inverse que le cas discute précédemment. dans l'autre, le gars arrive avec les theories de son village avec theories chrétiennes (mal agi, etait possedé), et le dispositif de Janet lui avait fait comprendre que c'était dans son inconscient. Ici, 150 ans plus tard, a peu près le meme endroit, mais ca s'inverse. dans une société occidentale qui ne voit pas l'humain comme habite par forces étrangères, vient revoir ces croyances sur l'origine des problèmes, et la qst de l'agentivité, qui est aux commandes a l'intérieur de soi.
+-> inverse que le cas discuté précédemment. Dans l'autre, le gars arrive avec les théories de son village avec theories chrétiennes (avait mal agi, était possédé), et le dispositif de Janet lui avait fait comprendre que c'était dans son inconscient. Ici, 150 ans plus tard, a peu près le même endroit, mais ça s'inverse. Dans une société occidentale qui ne voit pas l'humain comme habité par forces étrangères, vient revoir ces croyances sur l'origine des problèmes, et la question de l'agentivité, qui est aux commandes à l'intérieur de soi.
 
 📅 Mercredi **25 Mars 2026** - Cours 6
 
 Discours de la possession est assez courant. Peut-être parce qu'histoire efficace sur l'agentivité.
 
-Important aussi quand on offre une explication, offrir aussi une explication. Sinon, risque d'effet nocebo.
+Important aussi quand on offre une explication, offrir aussi une solution. Sinon, risque d'effet nocebo.
 
 > **Psychédéliques et thérapie alternative** (David Dupuis)
 > - Théorie thérapeutique local transmise par les conférences, les dispositifs rituels et les groupes de parole. En resumé: les troubles viennent d'une manifestation qui fait suite a des actes problématiques, et il faut se purger, purifier et protéger de diverses manières ET parallèles avec la vie quotidienne
