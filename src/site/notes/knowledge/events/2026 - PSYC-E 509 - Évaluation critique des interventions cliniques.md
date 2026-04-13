@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-13T22:23:44.128+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-13T22:30:19.857+02:00"}
 ---
 
 Cours donné par Laura Périchon cette année (avant appelé *Fondements méthodes et évaluation de l'intervention psychologique*, de Vinciane Despret)
@@ -70,11 +70,10 @@ Ingredients spécifiques VS facteurs communs:
 >Question perso: quid d'outils avec une base de preuves solide (?), tels que traitements pour phobie, PTSD, BPD, etc. - on garde cette optique de l'équivalence?
 
 Rappel, resumé (cours 2): c'est compliqué de savoir comment les thérapies fonctionnent:
-	- Très complexe è étudier. 
+	- Très complexe à étudier. 
 	- Beaucoup d'ingrédients actifs, qui, en plus, interagissent entre eux.
 
-Même avec protocoles de recherche rigoureux, isoler les ingredients est très complexe, voire impossible. On constate que les interactions humaines ne sont pas le meilleur objet de la science. Peut-être pour ça qu'on parle plus de l'"art de la thérapie" que de "science de la thérapie"...
-Cependant, on a quand meme envie d'en dire quelque chose dans ce cours, de les isoler un tant que soi peu, pour comprendre comment les dispositifs thérapeutiques fonctionnent.
+Même avec protocoles de recherche rigoureux, isoler les ingredients est très complexe, voire impossible. On constate que les interactions humaines ne sont pas le meilleur objet de la science. Peut-être pour ça qu'on parle plus de l'"art de la thérapie" que de "science de la thérapie"... Cependant, on a quand meme envie d'en dire quelque chose dans ce cours, de les isoler un tant que soi peu, pour comprendre comment les dispositifs thérapeutiques fonctionnent.
 
 ## 3. Dispositifs thérapeutiques: composants
 
@@ -139,8 +138,8 @@ On agit par l'axe de l'éthiologie, de l'explication.
 
 On a besoin de méthodes qui permettent de prouver cet effet.
 - -> le plan experimental randomisé en double aveugle avec groupe contrôle ayant reçu le placebo: essai controlé randomisé (ECR). Commentaire prof: Sauf que pour thérapie, c'est assez complexe, c'est difficile d'avoir un groupe de *thérapie* placebo. A quoi correspondrait une thérapie placebo? On peut comparer à une autre thérapie mais là on constate le paradoxe d'équivalence. Peut être un groupe de juste soutien, ou discussion? Du coup problèmes méthodologiques.
-- Les thérapies nécessiteraient alors une validaiton au moyen de l'ECR: traitements validés empiriquement aujourd'hui appelés 'traitements psychologiques appuyés empiriquement' (ou empirically supported treatments, ESTs).
-- Les criteres deviennent les memes que pour l'approbation d'un médicament.
+- Les thérapies nécessiteraient alors une validation au moyen de l'ECR: traitements validés empiriquement aujourd'hui appelés 'traitements psychologiques appuyés empiriquement' (ou empirically supported treatments, ESTs).
+- Les critères deviennent les memes que pour l'approbation d'un médicament.
 - Héritage historique.
 
 ## 5. Les facteurs communs
@@ -155,7 +154,7 @@ Des qu'on a un patient **motivé**, un thérapeute **motivé**, qui se rencontre
 
 L'accent mis sur ces facteurs communs permet de sortir des querelles "d'école", et revaloriser tous les courants, et pratiques memes celles qui n'ont pas le cachet scientifique, du style alternatives, etc (e.g. enérgéticiens, esprits, thérapies du deuil). Même si nous ne sommes pas dans ce cadre, nos futurs patients auront été ou seront en contact avec d'autre dispositifs thérapeutiques, d'autres manières de voir le monde. On peut même envisager de pouvoir envoyer des patients vers d'autres praticiens (e.g. medium). Mais aspect éthique à tenir compte: ce sont des domaines moins régulés, donc le faire de manière consciente, régulée.
 
-## 5.1 Facteurs communs : quels sont-t-ils?
+### 5.1 Facteurs communs : quels sont-t-ils?
 
 a. **Le client/patient**: avec quoi le client vient? a-t-il déjà vu des psys avant? comment ça s'est passé? il se passe des choses dans sa vie? on a pas bcp de contôole dessus mais joue un role fort dans les résultats de la thérapie. Il faut pas s'attribuer tous les échecs, tous les mérites, toute la responsabilité. On offre un espace, mais on ne contrôle pas tout.
 
@@ -175,6 +174,7 @@ IMPORTANT DE CONSIDÉRER l'INTERDEPENDANCE DES FACTEURS (ainsi que leur caractè
 Rappel du cours précédents: les composants des dispositifs thérapeutiques: les théories, les méthodes, les effets, les personnes, le milieu. Concepts situés culturellement qu'il faut faire attention de ne pas appliquer au monde entier, ne pas universaliser les choses. Ingredients specifiques et modèle medical. Facteurs communs.
 
 Théories et modèles qu'on utilise: avoir une orientation, sur ce qu'il se passe, sur la transformation... Avoir l'intention d'avoir une prise sur quelque chose qui semble faire souffrance, etc.
+
 ## 6.  Le modèle contextuel
 
 Livre source que la prof conseille:
@@ -322,7 +322,7 @@ Deux étapes de l'experience psychédélique
 - Etape perception géométriques: universelle
 - Formes figuratives: plus façonnées par culture
 Déjà identifié par Claude-Levi Strauss 1970 (amplificateurs de discours latent que chaque discours tient en réserve).
-- Mais on a moins explore le fond social et son impact sur le contenu psychédélique.
+- Mais on a moins exploré le fond social et son impact sur le contenu psychédélique.
 
 Cas ici, centre chamanique en Amazonie péruvienne (Takiwasi, fondé par un médecin français), gens qui arrivent d'Europe principalement:
 - Recherche thérapeutique
