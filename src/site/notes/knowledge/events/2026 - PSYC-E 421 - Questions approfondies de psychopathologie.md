@@ -1,34 +1,26 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-04-13T21:12:48.860+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-04-13T22:56:47.522+02:00"}
 ---
 
 
 > [!tldr] Résumé
-> .
+> Il y aura interventions des différentes approches:
+> - Philippe Fouchet: psychanalyse Lacanienne.
+> - Ilios Kotsou: approches comportementales.
+> - Mathilde Meriaux: systémique.
 
 > [!info] Évaluation
-> - Partie Kotsou: pas encore définie, ce sera un QCM (4 réponses). Il donnera des exemples. 
+> - **Partie Kotsou** (ACT): pas encore définie, ce sera un QCM (4 réponses). Il donnera des exemples. 
 Il enverra supports: articles scientifiques. Aussi un examen blanc. Pas de pièges, ce sera facile il dit. Peut être fera QCM avec des cas cliniques (mais sans pièges non plus). Par exemple, dans les réponses, une proposition parle d'évitement, et 1 qui ressemble à de l'acceptation... ce sera très clair. Exemple: psychopathologie fonctionnelle vs catégorielle?
-> - Partie Meriaux (systémique): ?
-> - Partie Fouchet: VF?
+> - **Partie Meriaux** (systémique): ?
+> - **Partie Fouchet**: VF?
 
-
-> [!tip] Lectures recommandées (aucun caractère obligatoire)
-> * 
-
-Il y aura interventions des différentes approches:
-- Philippe Fouchet: 
-- Ilios Kotsou: approches comportementales.
-- Systémique: Mathilde Meriaux.
-
-## Partie Psychanalyse - P. Fouchet
-
-## 🏷️ ...
+# 🏷️  1. Partie Psychanalyse - P. Fouchet
 
 📅 **18 Mars 2026** - Cours 1
 
-
-## Partie TCC - Ilios Kotsou
+Absent.
+# 🏷️  2. Partie Thérapies cognitivo-comportementales de 3ème vague - Ilios Kotsou
 
 -> Un support écrit sera donné, "pas besoin de prendre note"
 
@@ -44,14 +36,14 @@ ex compte de Monte Cristo. Même question. Haine et jalousie qui le dirige.
 
 Évidemment, contexte (social, neurobiologique, etc) est important aussi, ce n'est pas seulement une question de volonté personnelle. Parfois les conditions de vie sont difficiles et le contexte est averse a ce travail (-> humilité du thérapeute).  
 
-### Intro: 3ème vague TCC / thérapies contextuelles
+## Intro: 3ème vague TCC / thérapies contextuelles
 
 Les 3 vagues.
 - Vague 1: la pensée n'est pas directement cible. Mais apport essentiel de la question de l'**apprentissage**.
 - Vague 2: revolution cognitive de Beck. Idée de base que cognitions peuvent etre distordues, amènent à souffrir, et on essaye de corriger ça avec le patient.
 	- Fonctionne mais etudes montrer qu'enlever l'aspect cognitif ne reduit pas les resultats. **Activation comportementale** semble fonctionner tout aussi bien. Fonctionne, mais quels ingredients. Partie cognitive non-nécessaire? Comment et pourquoi elles fonctionnent? Besoin de démantèlement complet.
 - Vague 3: Vont réintégrer la question de l'émotion de manière centrale (chez les praticiens). Et surtout, on ne tente pas de changer les cognitions, mais la relation aux cognitions, aux états intérieurs.
-### Intro: ACT
+## Intro: ACT
 
 Modèle transdiagnostique.
 Avantage de connaître les "ingredients actifs" du modèle: du point de vue pragmatique, les processus peuvent être mobilisés de manière créative, on doit pas se suffire de protocoles déjà créés, mais on peut imaginer de nouveaux protocoles sur base des ingrédients connus. Ex psy interculturelle: on peut se demander: dans cette culture, comment ce processus est mobilisé? Et partir de là pour développer l'approche de manière créative.
@@ -96,7 +88,7 @@ Question du libre arbitre. Ref [Determinism](https://en.wikipedia.org/wiki/Deter
 
 En 3ème vague, la question n'est pas "Est-ce que la personne se sent bien?", la question est "Est-ce que la personne vit une vie qui a du sens pour elle?"
 
-### Modèle ACT
+## Modèle ACT
 
 Exemple de situation difficile: la mort d'un proche. Quand est-ce un problème? Question du fonctionnement "normal" {mais réf. à norme?}. **Motivation première est souvent de ne pas ressentir la douleur** (éviter). Suivi de mise en place de stratégies pour ne pas ressentir.
 
@@ -146,7 +138,7 @@ Ce qui nous reste, qui dépend (un petit peu) de nous: nos comportements et nos 
 
 Processus ACT: Diriger son attention autrement -> Flexibilité -> aller vers ce qui est important pour la personne.
 
-#### L'évitement expérientiel
+### L'évitement expérientiel
 
 Image des sables mouvants: on lutte, on s'enfonce.
 Vouloir se débarrasser de l'anxiété: peur de la peur, cree une boucle montante.
@@ -205,7 +197,6 @@ Mais, recherche: 6000 pensées env., et la plupart sont positives contrairement 
 
 - Approche fonctionnelle: dépend de la fonction, memes pensées "positives" peuvent être au service de l'évitement ou d'aller vers ce qui est important pour la personne.
 
-
 📅 **8 Avril 2026** - Cours 4 - Ilios Kotsou (3)
 
 **L'attention**
@@ -244,7 +235,6 @@ Singer, Ricard: état de compassion, antidote la détresse empathique ([[Empathy
 
 Steven Hayes: exercice jeu de rôle: prendre un patient, une problématique, et démarrer avec un des 6 concepts de l'ACT au hasard. 
 
-
 **Sens de soi**
 
 Plus ouvert, plus flexible, plus adapté.
@@ -259,7 +249,7 @@ Exercice: passage du moi au je, plus difficile pour les personnes si on a pas d'
 But ici: sens d'identité moins fermé. Question d'observateur.
 Soi-comme-contexte ([[knowledge/wiki/Self-as-Context (ACT)\|Self-as-Context (ACT)]]) vs. Soi-comme-objet
 
-Rigidité: metaphore variabilité cardiaque: variabilité est un marqueur de bonne santé, un coeur qui bat regulierement est preoccupant.
+Rigidité: métaphore variabilité cardiaque: variabilité est un marqueur de bonne santé, un coeur qui bat regulièrement est préoccupant.
 
 Cf Yrvin Yalom.
 CF Christian Bobin (poésie). Rumi. Tador
@@ -267,13 +257,23 @@ CF Christian Bobin (poésie). Rumi. Tador
 [Milton Ericksson](https://en.wikipedia.org/wiki/Milton_H._Erickson), psychiatre-psychothérapeute américain.
 - Exemples: 
 	- Personne qui parle en salade de mots. Il lui parle "en salade de mots" aussi.
-	- Signe du bras nazi,, lui cause des problemes avec d'autres, Ericksson l'imite, modifie le mouvement et le symptome converti en mouvement de menuiserie.
+	- Signe du bras nazi,, lui cause des problemes avec d'autres, Ericksson l'imite, modifie le mouvement et le symptôme converti en mouvement de menuiserie.
 	- Utilise l'environnement (ville, montagne)
 - -> **Rejoindre pour guider** (différent de donner raison)
-- Resistance: pas resistance de la patiente mais symptome qu'on l'a pas rejoint.
-- Si resistance on ne pousse pas. On accuille la resistance, on la comprend, on l'utilise, c'est une information sur la relation entre le personne et son probleme, sur la relation entre la personne et le therapeute... c'est une information.
-Livres: Ericksson n'en a pas écrit. "Ma voix t'accompagnera" ou "Un therapeute hors du commun" (les deux eleves de Ericksson).
-Utilisation de la metaphore, des histoires. Si c'etait un jardinier, il lui parlait de jardins, pas de processus techniques.
+- Resistance: pas resistance de la patiente mais symptôme qu'on l'a pas rejoint.
+- Si resistance on ne pousse pas. On accueille la résistance, on la comprend, on l'utilise, c'est une information sur la relation entre le personne et son problème, sur la relation entre la personne et le thérapeute... c'est une information.
+Livres: Ericksson n'en a pas écrit. "Ma voix t'accompagnera" ou "Un thérapeute hors du commun" (les deux élèves de Ericksson).
+Utilisation de la métaphore, des histoires. Si c'était un jardinier, il lui parlait de jardins, pas de processus techniques.
+
+# 🏷️  3. Partie Systémique - Mathilde Meriaux
+
+📅 **15 Avril 2026** - Cours 1 - Mathilde Meriaux
 
 
-## Partie Systémique - Mathilde Meriaux
+
+
+📅 **6 Mai 2026** - Cours 2 - Mathilde Meriaux
+
+
+
+📅 **13 Mai 2026** - Cours 3 - Mathilde Meriaux
