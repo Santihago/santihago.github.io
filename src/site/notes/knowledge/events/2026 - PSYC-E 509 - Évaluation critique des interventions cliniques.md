@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-13T22:30:19.857+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-13T22:36:42.921+02:00"}
 ---
 
 Cours donné par Laura Périchon cette année (avant appelé *Fondements méthodes et évaluation de l'intervention psychologique*, de Vinciane Despret)
@@ -7,18 +7,33 @@ Cours donné par Laura Périchon cette année (avant appelé *Fondements méthod
 > [!tldr] Résumé
 > Exposé théorique des enjeux épistémologiques particulièrement lisibles dans les modèles cliniques. Mise en contraste, à l'aide des recherches en anthropologie et en ethnopsychologie, de quelques-unes de nos ethnothéories des émotions, de la maladie, de la psyché. Analyse de quelques cas selon les axes théoriques différents.
 
-> [!info] Évaluation
-Voir instructions sur l'UV. L'évaluation se fonde sur un **travail** à rendre, par groupes de 4-5 etudiants. Rencontrer 1 personne, entretien à enregistrer, éventuellement observer aussi, que la personne décrive sa pratique et donne un exemple (sorte de cas clinique, raconter une séance, etc). Analyser son dispositif thérapeutique. Aussi: qui sont les patients? issus d'une certaine démographie? Certaine culture? (pas un travail sociologique pour autant). Pour le 1 juin 2026. 7/8eme cours: présenter l'avancement du travail en groupe. Max 15 à 20 pages. 
->
-L'idée est d'interroger sur la pratique, sur les formations, comment elle comprend son travail, comment elle comprend que ça fonctionne, etc. Et expliciter à travers un cas clinique comment ça peut fonctionner. Déceler quelles sont les théories que mobilise le dispositif thérapeutique, théories mobilisées pour agir dans le dispositif. Exemple: hypnose n'est pas une théorie, c'est une technique qui peut être mobilisée dans différentes théories. Par ex., l'hypnose amène changement de conscience, mais important qu'est-ce qu'on fait dans cet état de conscience different?
+> [!info] Évaluation : travail de groupe (4-5 étudiant.es)
+> 
+> Rencontrer un.e praticien.ne de thérapie/intervention psychologique au sens large pour un ou plusieurs entretiens (à enregistrer) et éventuellement des observations participantes.
+> 
+> L’entretien avec le.a praticien.ne est centré sur la description de la pratique et sur un cas clinique. Analyser ce dispositif thérapeutique selon les dimensions vues lors du cours.
+> 
+> - Les théories (c’est-à-dire les exposés raisonnés ou mythes thérapeutiques) mobilisées au sein du dispositif _et_ comment celles-ci sont incarnées au sein de celui-ci _et_ les conceptions de l’humain, du changement, du monde dans lesquelles elles sont ancrées
+> - Les méthodes utilisées - rituels, gestes, objets, histoires, etc.
+> - Les personnes impliquées (praticien.nes et patient.es généralement)
+> - Les effets implicites et explicites potentiels associés à divers composantes du dispositif étudié
+> - Situer le dispositif dans son milieu (dimensions sociologiques, culturelles, démographiques, historiques), quels sont ses héritages théoriques, philosophiques, historiques,...
+> 
+> **Il est nécessaire de conduire une analyse méta du dispositif étudié en s’appuyant de manière significative sur le cours, des sources mentionnées au cours et d’autres sources.** Il faut aller au-delà de la simple description du dispositif étudié.
+> 
+> - Date de remise 1ère session : 1er juin 2026 par mail, sous format pdf avant minuit
+> - Envoi à mon adresse laura.perichon@ulb.be (avec les autres étudiant.es du groupe en copie)
+> - 15 à 20 pages (sans compter titre, table des matières, biblio et annexes). Police et interligne normaux. Lors du cours du **mercredi 15 avril 2026**, présentation de l’état d’avancement de votre réflexion (important d’ensuite intégrer les retours dans l’élaboration de votre analyse).
+
+
+>L'idée est d'interroger sur la pratique, sur les formations, comment elle comprend son travail, comment elle comprend que ça fonctionne, ... Et expliciter à travers un cas clinique comment ça peut fonctionner. Déceler quelles sont les théories que mobilise le dispositif thérapeutique, théories mobilisées pour agir dans le dispositif. Exemple: hypnose n'est pas une théorie, c'est une technique qui peut être mobilisée dans différentes théories. Par ex., l'hypnose amène changement de conscience, mais important qu'est-ce qu'on fait dans cet état de conscience different?
 > - Décrire ce que la personne a décrit.
 > - Ensuite, nous, rajouter une réflexion/étude pour un niveau meta/clinique supplémentaire.
 > - Références: Cours, références du cours, et d'autres références c'est OK aussi.
 > Présentation:
 > - plus c'est clair et structuré au mieux, pour qu'elle donne son feedback.
 > 
-> Pour le travail: idée est de décrire ce qu'elle dit, ensuite nos interpretations, explications... d'après le modele des facteurs communs.
-
+> L'idée est de décrire ce qu'elle dit, ensuite nos interpretations, explications... d'après le modele des facteurs communs.
 
 📅 Mercredi **11 février 2026** 
 # 🏷️ Introduction
