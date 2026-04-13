@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-13T19:17:34.690+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-13T19:28:52.736+02:00"}
 ---
 
 
@@ -588,7 +588,6 @@ Exemples de questions d'examen (Vrai/Faux):
 
 Video: thérapie de famille Andolfi ([Closed Doors](https://www.accademiapsico.it/shop/en/product/closed-doors-a-difficult-search-for-father/))
 - Fils en consultation avec mere, et grands-parents maternels, pour: retrait, passe de longues heures seul dans sa chambre a jouer des jeux video. Pere absent en thérapie, loyauté fils envers mere est remise en question.
-
 
 # Partie Thérapies Cognitivo-Comportementales - B. Thonon
 
