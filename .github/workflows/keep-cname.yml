@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout gh-pages
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Write CNAME
@@ -26,6 +26,6 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add CNAME
-          git commit -m "restore CNAME" || exit 0
+          git diff --cached --quiet || git commit -m "restore CNAME"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git push origin gh-pages
