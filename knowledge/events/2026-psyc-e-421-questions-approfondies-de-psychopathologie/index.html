@@ -79,12 +79,12 @@
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-04-13T20:57:18.034Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-04-16T08:18:17.424Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
 <main class="content cm-s-obsidian print">
 <header>
 <h1 data-note-icon="">Pratiques cliniques en institution</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-17T01:10:22.503+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-04-13T22:56:47.522+02:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-17T01:10:22.503+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-04-15T15:50:18.978+02:00"></span></div></div></div>
 </header>
 <div class="callout" data-callout="tldr"><div class="callout-title"><div class="callout-title-inner"> Résumé<br></div></div>
 <div class="callout-content">
@@ -301,6 +301,189 @@ Utilisation de la métaphore, des histoires. Si c'était un jardinier, il lui pa
 </ul>
 <h1 id="3-partie-systemique-mathilde-meriaux" tabindex="-1">🏷️ 3. Partie Systémique - Mathilde Meriaux</h1>
 <p>📅 <strong>15 Avril 2026</strong> - Cours 1 - Mathilde Meriaux</p>
+<p>Idee de complexifier la pensée avec les différents theories, pas se réduire à l'une.<br>
+Examen VF.</p>
+<p>Lectures conseillées (non obligaroires):</p>
+<ul>
+<li>Ka magie de l'enfant dans la therapie familiale (Andolfi)</li>
+<li>La competence des familles (Guy Ausloos)</li>
+</ul>
+<p>Structure du cours<br>
+I. Introduction<br>
+II. La famille comme système complexe<br>
+III. Diagnostic et compétences<br>
+IV. L'enfant comme ressource thérapeutique<br>
+V. L'interêt du travail en famille</p>
+<h2 id="i-introduction" tabindex="-1">I. Introduction</h2>
+<p>Idée centrale:<br>
+Enfant comme RESSOURCE pour entrer dans le système familial.<br>
+Au niveau diagnostic et thérapeutique, pour comprendre les familles</p>
+<p>Mise en situation:<br>
+enfant de 8 ans, conflit permanent sur les adultes.<br>
+mere épuisée, père absent. souffre surtout après weekends.<br>
+importance du contexte nous fait bouger les lignes du diagnostic: comportements situés dans un contexte.</p>
+<p>-&gt; lecture qui integres les relations, contextes...</p>
+<h3 id="travail-travailler-sur-nos-representations" tabindex="-1">Travail: travailler sur nos représentations</h3>
+<ul>
+<li>On ne rencontre jamais la personne, mais la représentation que l'on s'en fait. Remettre en question nos certitudes, nos préjugés, nos aprioris... (Meriaux, 2021)</li>
+<li>On ne rencontre pas la famille, mais des representations de familles, d'ou l'interet de se creer des representations positives.</li>
+</ul>
+<h3 id="stigmatisation-de-la-sante-mentale" tabindex="-1">Stigmatisation de la santé mentale.</h3>
+<p>Extrait video.</p>
+<p><strong>Accueil</strong></p>
+<ul>
+<li>Coeur du métier. Moment décisif.</li>
+<li>But: génerer poursuite pour le soin, favoriser sa mise en place</li>
+<li>Pas de techniques spécifiques, mais aptitudes singulières (?).
+<ul>
+<li>Peremière communication: importance du sensoriel pour le patient (gestes, attitudes percues, etc)</li>
+<li>Mise en suspension de ses preconceptions, ses representations, ses jugements hatifs...</li>
+<li>Une ouverture interne</li>
+<li>Ouverture externe</li>
+</ul>
+</li>
+</ul>
+<p><strong>Curiosité</strong></p>
+<ul>
+<li>Mise à mal par recherche de relations linéaire, causalités linéaires</li>
+</ul>
+<h3 id="histoire-breve-de-la-therapie-familiale" tabindex="-1">Histoire breve de la thérapie familiale</h3>
+<ul>
+<li>Avant années 50 Ackerman et Whittaker: commencent a rencontrer familles (principalement tradition psychanalytique)</li>
+<li>Années 50, se développent theories des systèmes von Bertalanffy), cybernétiques (Wiener), information (Shannon), communication (Bateson),
+<ul>
+<li>D'abord autour de schizophrénie!</li>
+<li>Précurseur, Pas de thérapie familiale en tant que telle dans cette approche.</li>
+<li>Systèmes:
+<ul>
+<li>principe d'homéostasie: symptômes comme manières de réguler les systèmes.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Constructivisme (annes 60): ce qui est perçu est appréhendé en fonction des constructions. mentales préexistantes</li>
+<li>Ecole de Milan (Selvini et al 1982) (hypothétisation, circularité, neutralité)</li>
+<li>Approches post-modernes</li>
+</ul>
+<h2 id="ii-la-famille-comme-systeme-complexe" tabindex="-1">II. La famille comme système complexe</h2>
+<h3 id="qu-est-ce-qu-une-famille" tabindex="-1">Qu'est-ce qu'une famille?</h3>
+<p>Un système complexe:</p>
+<ul>
+<li>Principe d'interdépendance</li>
+<li>Principe de totalité</li>
+<li>Principe de rétroaction</li>
+<li><strong>Principe d'homéostasie</strong>: e.g. crise d'un enfant qui évite une dispute, car ils se concentrent sur l'enfant.</li>
+<li><strong>Principe d'équifinalité</strong>: e.g. deux symptomatologies de depression, peuvent avoir des origines différentes (dans un cas parents en processus de divorce, pour l'autre un père qui souffre d'alcohol). Et memes origines peuvent mener a des symptomatologies différentes.</li>
+</ul>
+<h3 id="un-systeme-avec-une-organisation" tabindex="-1">Un système avec une organisation</h3>
+<p>Chaque famille fonctionne avec:</p>
+<ul>
+<li>des rôles</li>
+<li>des règles implicites</li>
+<li>des frontières<br>
+Les dysfonctionnements sont liés à une transgression des frontières séparant les sous-sysèmes (Minuchin, 1979). I.e. systèmes perméables, frontières diffuses: e.g. maman qui partage ses problèmes de couples à l'enfant. La parentification de l'enfant est un exemple-type.</li>
+</ul>
+<h3 id="un-systeme-avec-des-fonctions" tabindex="-1">Un système avec des fonctions</h3>
+<p>Les 3 fonctions de la famille:</p>
+<ul>
+<li>Comme contexte d'<strong>apprentissage</strong></li>
+<li>Comme matrice de <strong>pensée</strong></li>
+<li>Comme système intériorisé de <strong>relations</strong></li>
+</ul>
+<p>Enfants avec relations sécurisantes: relations avec les autres avec confiance. Si climat conflictuel: méfiance et évitement.</p>
+<h3 id="un-systeme-en-evolution-cycle-de-vie" tabindex="-1">Un système en évolution: cycle de vie</h3>
+<p>Utile pour comprendre pourquoi certains symptômes apparaissent à un moment plutôt qu'un autre. Passage d'étapes demande beaucoup d'adaptation du système. <strong>Symptôme: difficulté de passer à une étape du cycle</strong>.</p>
+<p>Stades classiques:</p>
+<ul>
+<li>Formation du couple</li>
+<li>Naissance de l'enfant</li>
+<li>Constitution fratrie</li>
+<li>Adolescence</li>
+<li>Nid vide</li>
+</ul>
+<p>Minuchin a bien décrit les crises autour des departs des enfants du nid familial.</p>
+<h4 id="cycles-de-vie-place-dans-la-fratrie" tabindex="-1">Cycles de vie: Place dans la fratrie</h4>
+<p>cf. Livre de Haihe (?)</p>
+<ul>
+<li>Ainé? Second ? Benjamin? (Débat autour des stéréotypes sur les places dans la fratrie).</li>
+<li>Influence sur nos places à l'age adulte: couple, famille, professionnel</li>
+<li>Rivalité se base sur la perception que l'enfant a de l'attitude des parents par rapport a lui et par comparison a son frère ou sa soeur</li>
+<li>Maximum de rivalité: écart de 18 a 36 mois (Gayet) et + si de meme sexe (moins de capacité à se différencier)</li>
+</ul>
+<h4 id="cycles-de-vie-adolescence" tabindex="-1">Cycles de vie: Adolescence</h4>
+<p>Comprendre que c'est un besoin développemental pour l'adolescent (besoins de prise d'autonomie vs. sécurité dans le système familial)</p>
+<div class="callout" data-callout="note"><div class="callout-title"><div class="callout-title-inner"> Résumé cycles de vie:</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>symptôme comme indicateur de transition difficile</li>
+<li>les comportements &quot;pathologiques&quot; émergent souvent d'un décalage entre les besoins développementaux de l'enfant.</li>
+<li>...</li>
+</ul>
+<p></p></div></div>
+<h3 id="2-qu-est-ce-qu-une-famille-saine" tabindex="-1">2. Qu'est-ce qu'une famille saine?</h3>
+<ol>
+<li><strong>Système ouvert</strong>
+<ol>
+<li>Frontières souples</li>
+<li>Capacités d'adaptations: la famille va se changer selon les étapes du cycle de vie, va s'adapter.</li>
+<li>Circulation de l'information: surtout, on peut exprimer son désaccord. Dans certaines familles, ce n'est pas possible.</li>
+<li>Echanges avec l'extérieur: des relations avec les écoles, groupes de sports, amis, travail. E.g. Comme une maison avec des portes et des fenêtres, si tout est fermé, étouffement. Si tout est ouvert, confusion, insécurité</li>
+</ol>
+</li>
+<li><strong>Climat émotionnel</strong></li>
+<li><strong>Fonctionnement interne</strong>
+<ol>
+<li>Respect des niveaux générationnels</li>
+<li>Différenciation des rôles</li>
+<li>Clarté des frontières entre sous-systèmes: Exmeple fils agressseur de sa mère. Métaphore ardoise pivotante: Exemple, Tant qu'enfant vécu un désequilibre (beaucoup donné, pas assez reçu) -&gt; au lieu de demander une dette aux parents, on la demande ailleurs, aux enfants (on lui demande qu'il répare la souffrance vécue comme enfant). Ça crée un déséquilibre, confusion des places.</li>
+</ol>
+</li>
+<li><strong>Adaptation</strong>
+<ol>
+<li>Mode de résolution de conflits et de gestion de l'angoisse liés à la croissance psychique et affective</li>
+<li>Remplit les 3 fonctions essentielles</li>
+<li>Le mythe familial peut changer (mythe: ensemble de croyances sur la famille)</li>
+</ol>
+</li>
+</ol>
+<p>(Parenthèse: Approche systémique privilégiée: travailler avec les parents, leur disant &quot;on a besoin de vous, c'est vous qui le connaissez le mieux&quot;, = parents comme partenaires (e.g. Chastre, une institution hôpital de jour/nuit qui travaille avec cette méthode)<br>
+vs les SRJ: pas de travail avec les familles, on soigne l'enfant sans la famille. donc limites thérapeutiques, des que la personne sort, se remet dans le contexte pathogène (lié aussi a limites budgétaires, de moyens...)).</p>
+<h3 id="3-familles-en-difficultes" tabindex="-1">3. Familles en difficultés</h3>
+<h4 id="familles-desengagees-et-enchevetrees-minuchin-1979" tabindex="-1">Familles désengagées et enchevêtrées (Minuchin, 1979)</h4>
+<p>Ces deux termes se rapportent è un style transactionnels (pas à un type pathogène!). Ce n'est pas une différence qualitative entre fonctionnel et dysfonctionnel. Mais risques de pathologie si fonctionnement dans les extremes.</p>
+<ul>
+<li><strong>Familles désengagées:</strong> frontières rigides, distance, on communique peu, solitaire, &quot;on doit se débrouiller seul dans la vie&quot;</li>
+<li><strong>Enchevêtrées</strong>: frontières diffuses, &quot;tout est dans tout&quot;, proximité/fusion, débordement émotionnel (oscillant avec froideur affective), la famille gratifie, donne conseil... donc fléchissement de l'autonomie. Activité narrative en panne (non dits, blancs - p-e liés a vécus traumatiques). E.g. grand mere donne son avis sur le petit enfant, se mele du couple... chaque membre peut ressentir pour l'autre (je sais mieux pour toi, je sais ce qui se passe en toi)</li>
+</ul>
+<h4 id="familles-a-transactions-rigides-et-chaotiques-ausloos-1995" tabindex="-1">Familles à transactions rigides et chaotiques (Ausloos, 1995)</h4>
+<ul>
+<li><strong>Familles à transactions rigides</strong>: le temps est arrêté. pas d'infos nouvelles, on vit avec le passé, les photos, les meubles de la grand-mère maternelle...
+<ul>
+<li>Conséquences thérapeutiques: susciter crise, s'allier au non-changement, définir relation, donner un projet</li>
+</ul>
+</li>
+<li><strong>Familles à transactions chaotiques</strong>: perception du temps évènementielle (pas de mise en mémoire, tout change tout le temps)
+<ul>
+<li>Conséquences thérapeutiques: freiner le temps en introduisant la durée, s'allier à leur tendance à bouleverser ce qui est acquis (&quot;votre compétence, c'est d'introduire du changement&quot; et de proposer de bons changements), préciser le contrat thérapeutique, être ferme</li>
+</ul>
+</li>
+</ul>
+<p>Cf livre sur le travail à domicile: Ivy Daure - <a href="https://www.librairieclub.be/p/quand-le-domicile-se-fait-espace-therapeutique-9782710147114" target="_blank" class="external-link">Quand le domicile se fait espace en thérapie</a></p>
+<p>Extrait du film Family Life (1971).</p>
+<h4 id="enchevetrement-et-fonctionnement-psychotique-minuchin" tabindex="-1">Enchevêtrement et fonctionnement psychotique (Minuchin)</h4>
+<ul>
+<li>Confusion</li>
+<li>Bizarreries (cree sentiment d'isolement pour l'autre, aussi: e.g. enfant qui en se sent pas connecté a son parent au comportement dissocié, étrange, etc.)</li>
+<li>Distorsion de la communication:
+<ul>
+<li>négation des perceptions (&quot;tu exagères&quot;, etc.)</li>
+<li>instrumentalisation de l'autre (&quot;va dire au SPJ que ton père t'as touché&quot;, &quot;si tu ne fais pas ca je serai malheureux&quot;)</li>
+<li>pathologie de la triade</li>
+</ul>
+</li>
+</ul>
+<h2 id="iii-diagnostic-et-competences" tabindex="-1">III. Diagnostic et compétences</h2>
 <p>📅 <strong>6 Mai 2026</strong> - Cours 2 - Mathilde Meriaux</p>
 <p>📅 <strong>13 Mai 2026</strong> - Cours 3 - Mathilde Meriaux</p>
 </main>
@@ -333,6 +516,50 @@ Pratiques cliniques en institution
 </ol>
 </li>
 <li><a href="#3-partie-systemique-mathilde-meriaux">🏷️ 3. Partie Systémique - Mathilde Meriaux</a>
+<ol>
+<li><a href="#i-introduction">I. Introduction</a>
+<ol>
+<li><a href="#travail-travailler-sur-nos-representations">Travail: travailler sur nos représentations</a>
+</li>
+<li><a href="#stigmatisation-de-la-sante-mentale">Stigmatisation de la santé mentale.</a>
+</li>
+<li><a href="#histoire-breve-de-la-therapie-familiale">Histoire breve de la thérapie familiale</a>
+</li>
+</ol>
+</li>
+<li><a href="#ii-la-famille-comme-systeme-complexe">II. La famille comme système complexe</a>
+<ol>
+<li><a href="#qu-est-ce-qu-une-famille">Qu'est-ce qu'une famille?</a>
+</li>
+<li><a href="#un-systeme-avec-une-organisation">Un système avec une organisation</a>
+</li>
+<li><a href="#un-systeme-avec-des-fonctions">Un système avec des fonctions</a>
+</li>
+<li><a href="#un-systeme-en-evolution-cycle-de-vie">Un système en évolution: cycle de vie</a>
+<ol>
+<li><a href="#cycles-de-vie-place-dans-la-fratrie">Cycles de vie: Place dans la fratrie</a>
+</li>
+<li><a href="#cycles-de-vie-adolescence">Cycles de vie: Adolescence</a>
+</li>
+</ol>
+</li>
+<li><a href="#2-qu-est-ce-qu-une-famille-saine">2. Qu'est-ce qu'une famille saine?</a>
+</li>
+<li><a href="#3-familles-en-difficultes">3. Familles en difficultés</a>
+<ol>
+<li><a href="#familles-desengagees-et-enchevetrees-minuchin-1979">Familles désengagées et enchevêtrées (Minuchin, 1979)</a>
+</li>
+<li><a href="#familles-a-transactions-rigides-et-chaotiques-ausloos-1995">Familles à transactions rigides et chaotiques (Ausloos, 1995)</a>
+</li>
+<li><a href="#enchevetrement-et-fonctionnement-psychotique-minuchin">Enchevêtrement et fonctionnement psychotique (Minuchin)</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#iii-diagnostic-et-competences">III. Diagnostic et compétences</a>
+</li>
+</ol>
 </li>
 </ol>
 </nav>
