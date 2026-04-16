@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-13T22:36:42.921+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-15T18:12:49.847+02:00"}
 ---
 
 Cours donné par Laura Périchon cette année (avant appelé *Fondements méthodes et évaluation de l'intervention psychologique*, de Vinciane Despret)
@@ -238,7 +238,7 @@ Cas dans "Médecine de l'âme", article *Le secret pathogène*, de Henri X (psyc
 - Hypnose
 - Discussion:
 	- Personne qui arrive de la compagne, 19ème siècle. Arrive à la Salpétrière à Paris. Pour le patient, être possédé = sa théorie à lui de pourquoi il va pas bien.
-	- Janet(?) ne lui fait pas un exorcisme magique, par contre, il parle d'exorcisme moderne. Il lui propose une autre théorie, et le patient va être "converti" à cette théorie, part en se disant que le problème n'est pas la sorcellerie mais sa culpabilité et regret.
+	- Janet(?) ne lui fait pas un exorcisme magique, par contre, il parle d'exorcisme moderne. Il lui propose une autre théorie, sur sa culpabilité d'avoir trompé malade, une pathologie du secret qui rend malade, et le patient va être "converti" à cette théorie, part en se disant que le problème n'est pas la sorcellerie mais sa culpabilité et regret.
 
 ### 6.3 Une relation de confiance chargée émotionnellement
 
@@ -318,7 +318,20 @@ Absent
 
 📅 Mercredi **15 avril 2026** - Cours 8
 
-Présentation.
+### Conclusion
+
+C'était un cours sur les interventions cliniques, appelées dispositifs thérapeutiques dns ce cours.
+
+Amenés à avoir un regard critique:
+- Pas juste l'expliquer, le décrire
+- Avoir un regard critique que nous apportons par notre réflexion, par des lectures éventuelles, des discussions de groupe, etc.
+
+Idée que la théorie fonctionne:
+- Mais plutôt facteurs communs aux dispositifs thérapeutiques qui sont les ingredients actifs, plutôt que des méthodes spécifiques, outils spécifiques.
+
+Chaque dispositif a besoin d'une théorie qui expliquent le trouble, la maladie, les symptômes ET comment avoir une prise sur ces choses là.
+
+On regarde les théories, ici, pas sur base de leur efficacité, mais pour comprendre ce que ça construit comme vision de l'humain.
 
 
 -----
@@ -356,3 +369,22 @@ Interprétation de l'experience psychédélique
 Efficacité thérapeutique:
 - Se sentent soignés. Même si les symptômes restent là. Mais probablement dû au recadrage narratif: maintenant la personne "sait la cause du sens du mal" (les démons à l'intérieur, etc), et on a des comportements pour lutter (prière, etc). 
 - vs. modèles pharma: ici psychédélique production de sens, cristallisation de sens, nouvelles valeurs, etc, et que ceci est au coeur du changement thérapeutique (question: je me demande s'il a pas trop simplifié modèles pharma/neurophysio au début? les modèles Friston/Carhart-Harris incluent très certainement changement de valeur, épistémique, prise de perspective, etc).
+
+
+----
+- Grand nombre de théories qu'on a et de leviers d'intervention (cibler?)
+	- théories sous-jacentes un peu différentes en fonction de la substance qu'elle utilise, depend de la problématique
+- **par rapport a l'analyse**: partie analyse dispositif frank & frank (quelle theorie, comment elle les utilise, l'explicite et l'implicite) + **regard critique personnel OK**? mettre en tension avec d'autres courants? par exemple que certaines choses pourraient avoir des risques, risque de dependence relationnelle, position de pouvoir...
+- pas de refs pour l'instant
+- théorie dans le travail? seulement pour appuyer aux diferents endroits ou toute une section theorique?
+	- Oui, presenter la theorie et la decrire. (en plus de la critique evidemment)
+
+
+- COMMENT la thérapeute se présente? "Thérapeute psychédélique" ou ...?
+- "thérapie de la dernière chance" (David Dupuis) pour décrire ceux qui ont un long parcours
+- Pq plusieurs substances, comment elle choisit, question des doses, durées des seances, le soir, la nuit...? 
+- Pour la diversité des théories, parler comme on fait la maintenant: puzzles, combinaisons de pièces différentes en fonction de chaque patient (en acceptant qu'on sera pas exhaustif) - composition artistique.
+- Utile d'utiliser un concept utilisé en évaluation de psychothérapies: responsiveness. Checker premier livre des references, de Despland, *Evaluation des psychothérapies* (sur Cairn) et celui de Duncan B (deuxième source du cours)/ Capacité du thérapeute à être flexible et s'adapter à de nouvelles situations et nouveaux moments de la nouvelle situation (capacité a recréer des dispositifs à chaque fois)
+- OK de rajouter d'autres reflexions perso: par exemple: "limites et risque de l'approche" 
+- Trouver des sources scientifiques factuelles
+	- Eventuellement aussi l'article de David Dupuis pour un regard plus anthropologique

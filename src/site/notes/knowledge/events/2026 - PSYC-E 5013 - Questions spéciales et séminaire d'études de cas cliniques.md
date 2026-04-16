@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","title":"Questions spéciales et séminaire d'études de cas cliniques","tags":["psychology","clinical","ulb","intercultural"],"created":"2026-03-04T17:27:33.113+01:00","updated":"2026-04-09T10:30:17.470+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","title":"Questions spéciales et séminaire d'études de cas cliniques","tags":["psychology","clinical","ulb","intercultural"],"created":"2026-03-04T17:27:33.113+01:00","updated":"2026-04-16T10:16:00.174+02:00"}
 ---
 
 
@@ -17,13 +17,15 @@
 > Un recto-verso c'est OK, selon lui, pas besoin de tourner en rond.
 > 
 > Aux environs de Pâques il envoie un portefeuille de lecture qu'on peut utiliser, si l'on veut, pour nos rapports (mais non obligatoire)
+> 
+> Nous suggère d'envoyer le travail aussi a son email, en plus de l'UV, par sécurité
 
 > [!tip] Lectures recommandées
 > * *[Peau noire, masques blancs](https://fr.wikipedia.org/wiki/Peau_noire,_masques_blancs)*. Frantz Fanon. 1952.
 > * [*La race sur le divan*](https://www.anacaona.fr/boutique/la-race-sur-le-divan-psychanalyse-intersectionnelle/). Thamy Ayouch. Anacaona Éditions, Paris, 2024
 
 Contact alternatif: alainvanoet@gmail.com
-S'attend à environ 80% de présence. 1 absence sans certificat est toleré.
+S'attend à environ 80% de présence. 1 absence sans certificat est tolerée.
 ## 🏷️ Introduction
 
 📅 Jeudi **5 Février 2026** (Cours 1)
@@ -296,14 +298,13 @@ Lecture d'une situation.
 - Activisme defense droits des homosexuels, mariage organisé par pere avec une femme (pays ou homosexualite est punie). Jeune a ete lynché par un groupe de jeunes. 
 - Poste d'expert en Suisse et en voyage pour la Suisse arrive en Belgique et decompense sous un mode spectaculaire.
 - N'urine plus de maniere volontaire et ca lui rappelle ses tortures
-	- (Mais "ca colle pas", l'ont vu rouler a velo, etc. Ca sollicite les soignants du cote de la verité)
+	- (Mais "ca colle pas", l'ont vu rouler a velo, etc. Ca sollicite les soignants du cote de la vérité)
 - Implication communautaire (participe au colloque Ullyse preesntant l'importance du soin communautaire pour stress post traumatique)
-	- a incarné le lien entre psychotherapie communataire et accompagnement personnes en exil
+	- a incarné le lien entre psychothérapie communataire et accompagnement personnes en exil
 - 
 
-La verite?
+La vérité?
 - s'appuyer qd meme sur ce que la personne dit. poser de questions sur ce qu'elle dit meme si on sait pas si vrai ou pas.
-
 
 
 📅 Jeudi **26 Mars 2026** (Cours 7 - intervention d'une avocate en droits des étrangers)
@@ -392,3 +393,6 @@ Lecture de texte:
 - L'idéal sédentaire est récent. 
 - Réf: Au commencement était
 - Réf Bruce Chatwin: represente recit de voyage, vertus de nomadisme, valeur d'humanité qui se developpe en voyageant. En Patagonie, Eloge des modes de vie et de pensées des aborigenes australiens. "Etre humain serait mieux s'il ne s'était pas sédentarisé"
+
+📅 Jeudi **16 Avril 2026** (Cours 10)
+

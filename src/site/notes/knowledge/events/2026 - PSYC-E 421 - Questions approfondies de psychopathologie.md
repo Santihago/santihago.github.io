@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-04-13T22:56:47.522+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-04-15T15:50:18.978+02:00"}
 ---
 
 
@@ -268,6 +268,179 @@ Utilisation de la métaphore, des histoires. Si c'était un jardinier, il lui pa
 # 🏷️  3. Partie Systémique - Mathilde Meriaux
 
 📅 **15 Avril 2026** - Cours 1 - Mathilde Meriaux
+
+Idee de complexifier la pensée avec les différents theories, pas se réduire à l'une.
+Examen VF.
+
+Lectures conseillées (non obligaroires):
+- Ka magie de l'enfant dans la therapie familiale (Andolfi)
+- La competence des familles (Guy Ausloos)
+
+Structure du cours
+I. Introduction
+II. La famille comme système complexe
+III. Diagnostic et compétences
+IV. L'enfant comme ressource thérapeutique
+V. L'interêt du travail en famille
+
+## I. Introduction
+
+Idée centrale:
+Enfant comme RESSOURCE pour entrer dans le système familial.
+Au niveau diagnostic et thérapeutique, pour comprendre les familles
+
+Mise en situation:
+enfant de 8 ans, conflit permanent sur les adultes.
+mere épuisée, père absent. souffre surtout après weekends.
+importance du contexte nous fait bouger les lignes du diagnostic: comportements situés dans un contexte.
+
+-> lecture qui integres les relations, contextes...
+
+
+### Travail: travailler sur nos représentations
+- On ne rencontre jamais la personne, mais la représentation que l'on s'en fait. Remettre en question nos certitudes, nos préjugés, nos aprioris... (Meriaux, 2021)
+- On ne rencontre pas la famille, mais des representations de familles, d'ou l'interet de se creer des representations positives.
+
+### Stigmatisation de la santé mentale.
+Extrait video.
+
+
+
+**Accueil**
+- Coeur du métier. Moment décisif. 
+- But: génerer poursuite pour le soin, favoriser sa mise en place
+- Pas de techniques spécifiques, mais aptitudes singulières (?).
+	- Peremière communication: importance du sensoriel pour le patient (gestes, attitudes percues, etc)
+	- Mise en suspension de ses preconceptions, ses representations, ses jugements hatifs...
+	- Une ouverture interne
+	- Ouverture externe
+
+**Curiosité**
+- Mise à mal par recherche de relations linéaire, causalités linéaires
+
+### Histoire breve de la thérapie familiale
+
+- Avant années 50 Ackerman et Whittaker: commencent a rencontrer familles (principalement tradition psychanalytique)
+- Années 50, se développent theories des systèmes von Bertalanffy), cybernétiques (Wiener), information (Shannon), communication (Bateson),
+	- D'abord autour de schizophrénie!
+	- Précurseur, Pas de thérapie familiale en tant que telle dans cette approche.
+	- Systèmes:
+		- principe d'homéostasie: symptômes comme manières de réguler les systèmes.
+- Constructivisme (annes 60): ce qui est perçu est appréhendé en fonction des constructions. mentales préexistantes
+- Ecole de Milan (Selvini et al 1982) (hypothétisation, circularité, neutralité)
+- Approches post-modernes
+
+
+## II. La famille comme système complexe
+
+### Qu'est-ce qu'une famille?
+
+Un système complexe:
+- Principe d'interdépendance
+- Principe de totalité
+- Principe de rétroaction
+- **Principe d'homéostasie**: e.g. crise d'un enfant qui évite une dispute, car ils se concentrent sur l'enfant.
+- **Principe d'équifinalité**: e.g. deux symptomatologies de depression, peuvent avoir des origines différentes (dans un cas parents en processus de divorce, pour l'autre un père qui souffre d'alcohol). Et memes origines peuvent mener a des symptomatologies différentes.
+
+### Un système avec une organisation
+
+Chaque famille fonctionne avec: 
+- des rôles
+- des règles implicites
+- des frontières
+Les dysfonctionnements sont liés à une transgression des frontières séparant les sous-sysèmes (Minuchin, 1979). I.e. systèmes perméables, frontières diffuses: e.g. maman qui partage ses problèmes de couples à l'enfant. La parentification de l'enfant est un exemple-type.
+
+### Un système avec des fonctions
+
+Les 3 fonctions de la famille:
+- Comme contexte d'**apprentissage**
+- Comme matrice de **pensée**
+- Comme système intériorisé de **relations**
+
+Enfants avec relations sécurisantes: relations avec les autres avec confiance. Si climat conflictuel: méfiance et évitement.
+
+### Un système en évolution: cycle de vie
+
+Utile pour comprendre pourquoi certains symptômes apparaissent à un moment plutôt qu'un autre. Passage d'étapes demande beaucoup d'adaptation du système. **Symptôme: difficulté de passer à une étape du cycle**.
+
+Stades classiques:
+- Formation du couple
+- Naissance de l'enfant
+- Constitution fratrie
+- Adolescence
+- Nid vide
+
+Minuchin a bien décrit les crises autour des departs des enfants du nid familial.
+
+#### Cycles de vie: Place dans la fratrie
+
+cf. Livre de Haihe (?)
+- Ainé? Second ? Benjamin? (Débat autour des stéréotypes sur les places dans la fratrie).
+- Influence sur nos places à l'age adulte: couple, famille, professionnel
+- Rivalité se base sur la perception que l'enfant a de l'attitude des parents par rapport a lui et par comparison a son frère ou sa soeur
+- Maximum de rivalité: écart de 18 a 36 mois (Gayet) et + si de meme sexe (moins de capacité à se différencier)
+
+#### Cycles de vie: Adolescence
+
+Comprendre que c'est un besoin développemental pour l'adolescent (besoins de prise d'autonomie vs. sécurité dans le système familial)
+
+
+> [!NOTE] Résumé cycles de vie:
+> - symptôme comme indicateur de transition difficile
+> - les comportements "pathologiques" émergent souvent d'un décalage entre les besoins développementaux de l'enfant.
+> - ...
+
+### 2. Qu'est-ce qu'une famille saine?
+
+1. **Système ouvert**
+	1. Frontières souples
+	2. Capacités d'adaptations: la famille va se changer selon les étapes du cycle de vie, va s'adapter.
+	3. Circulation de l'information: surtout, on peut exprimer son désaccord. Dans certaines familles, ce n'est pas possible.
+	4. Echanges avec l'extérieur: des relations avec les écoles, groupes de sports, amis, travail. E.g. Comme une maison avec des portes et des fenêtres, si tout est fermé, étouffement. Si tout est ouvert, confusion, insécurité
+2. **Climat émotionnel**
+3. **Fonctionnement interne**
+	1. Respect des niveaux générationnels
+	2. Différenciation des rôles
+	3. Clarté des frontières entre sous-systèmes: Exmeple fils agressseur de sa mère. Métaphore ardoise pivotante: Exemple, Tant qu'enfant vécu un désequilibre (beaucoup donné, pas assez reçu) -> au lieu de demander une dette aux parents, on la demande ailleurs, aux enfants (on lui demande qu'il répare la souffrance vécue comme enfant). Ça crée un déséquilibre, confusion des places.
+4. **Adaptation**
+	1. Mode de résolution de conflits et de gestion de l'angoisse liés à la croissance psychique et affective
+	2. Remplit les 3 fonctions essentielles
+	3. Le mythe familial peut changer (mythe: ensemble de croyances sur la famille)
+
+(Parenthèse: Approche systémique privilégiée: travailler avec les parents, leur disant "on a besoin de vous, c'est vous qui le connaissez le mieux", = parents comme partenaires (e.g. Chastre, une institution hôpital de jour/nuit qui travaille avec cette méthode)
+vs les SRJ: pas de travail avec les familles, on soigne l'enfant sans la famille. donc limites thérapeutiques, des que la personne sort, se remet dans le contexte pathogène (lié aussi a limites budgétaires, de moyens...)).
+
+### 3. Familles en difficultés
+
+#### Familles désengagées et enchevêtrées (Minuchin, 1979)
+Ces deux termes se rapportent è un style transactionnels (pas à un type pathogène!). Ce n'est pas une différence qualitative entre fonctionnel et dysfonctionnel. Mais risques de pathologie si fonctionnement dans les extremes.
+
+- **Familles désengagées:** frontières rigides, distance, on communique peu, solitaire, "on doit se débrouiller seul dans la vie"
+- **Enchevêtrées**: frontières diffuses, "tout est dans tout", proximité/fusion, débordement émotionnel (oscillant avec froideur affective), la famille gratifie, donne conseil... donc fléchissement de l'autonomie. Activité narrative en panne (non dits, blancs - p-e liés a vécus traumatiques). E.g. grand mere donne son avis sur le petit enfant, se mele du couple... chaque membre peut ressentir pour l'autre (je sais mieux pour toi, je sais ce qui se passe en toi)
+
+#### Familles à transactions rigides et chaotiques (Ausloos, 1995)
+- **Familles à transactions rigides**: le temps est arrêté. pas d'infos nouvelles, on vit avec le passé, les photos, les meubles de la grand-mère maternelle...
+	- Conséquences thérapeutiques: susciter crise, s'allier au non-changement, définir relation, donner un projet
+- **Familles à transactions chaotiques**: perception du temps évènementielle (pas de mise en mémoire, tout change tout le temps)
+	- Conséquences thérapeutiques: freiner le temps en introduisant la durée, s'allier à leur tendance à bouleverser ce qui est acquis ("votre compétence, c'est d'introduire du changement" et de proposer de bons changements), préciser le contrat thérapeutique, être ferme
+
+Cf livre sur le travail à domicile: Ivy Daure - [Quand le domicile se fait espace en thérapie](https://www.librairieclub.be/p/quand-le-domicile-se-fait-espace-therapeutique-9782710147114)
+
+Extrait du film Family Life (1971).
+
+#### Enchevêtrement et fonctionnement psychotique (Minuchin)
+
+- Confusion
+- Bizarreries (cree sentiment d'isolement pour l'autre, aussi: e.g. enfant qui en se sent pas connecté a son parent au comportement dissocié, étrange, etc.)
+- Distorsion de la communication:
+	- négation des perceptions ("tu exagères", etc.)
+	- instrumentalisation de l'autre ("va dire au SPJ que ton père t'as touché", "si tu ne fais pas ca je serai malheureux")
+	- pathologie de la triade
+
+
+
+
+## III. Diagnostic et compétences
 
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-13T19:59:44.293+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-13T23:11:47.946+02:00"}
 ---
 
 
@@ -626,7 +626,7 @@ Définition:
 
 ### Les différentes vagues
 
-#### 1. Théories comportementales (1è2re vague)
+#### 1. Théories comportementales (1ère vague)
 
 Wolpe, Skinner, Eysenck.
 - Eysenck connu en Psychanalyse lacanienne: écrit contre la psychanalyse et en faveur de l'approche scientifique.
@@ -634,24 +634,24 @@ Wolpe, Skinner, Eysenck.
 
 #### 2. Les thérapies cognitives  (2ème vague)
 
-Entre stimulus et comportement, il manque un truc. C'est la cognition. C'est la maniere dont j'interprete l'evenement qui va avoir un impact emotionnel. 
-Cognitions: Ce sont les schemas, ce sont les croyances
+Entre stimulus et comportement, il manque un truc. C'est la cognition. C'est la manière dont j'interprete l'évènement qui va avoir un impact émotionnel. 
+Cognitions: Ce sont les schémas, ce sont les croyances
 
-Aaron Beck: rpopose differentes therapies cognitives (dans depression, anxiete, nottament)
+Aaron Beck: propose différentes thérapies cognitives (dans depression, anxiete, nottament)
 
 #### 3. La 3ème vague
 
-plus axe sur l'experience emotionnelle.
-plus sur la structuration des pensees.
-surtout sur la RELATION qu'on a a ses pensees. avec l'idee de pouvoir se detacher, accuilir, accepter ces pensees et emotions, mais que nous ne sommes pas obliges de suivre.
+plus axe sur l'experience émotionnelle.
+plus sur la structuration des pensées.
+surtout sur la RELATION qu'on a a ses pensées. avec l'idée de pouvoir se detacher, accueilir, accepter ces pensées et emotions, mais que nous ne sommes pas obliges de suivre.
 
 Kabat-Zinn: pleine conscience.
 
 Hayes: ACT
-- acceptation pas des evenements mais de ce qui nous traverse
+- acceptation pas des évènements mais de ce qui nous traverse
 
-Linehan (DBT) pour BPD nottament.
-- ressenti emotionnel, accueil de ce ressenti, et focalisation sur la necessite de changement de comportement
+Linehan (DBT) pour BPD nottamment.
+- ressenti emotionnel, accueil de ce ressenti, et focalisation sur la nécessite de changement de comportement
 
 ![Screenshot 2026-03-03 at 10.41.37.png](/img/user/__assets/media/Screenshot%202026-03-03%20at%2010.41.37.png)
 Nous sommes maintenant dans une approche plus integrative, non sectionnée. Les différentes vagues ne se remplacent pas.
@@ -782,7 +782,7 @@ Et nom intéressant pour cas difficiles, defficiences intellectuelles: Romina Ri
 > 6. Préparer ensemble les auto-évaluations / exercices à réaliser pour la prochaine séance → Transfert des compétences et autonomisation
 > 7. Prendre un nouveau rendez-vous
 
-- Equilibre optimal entre alliance (affective) et structure
+- Équilibre optimal entre alliance (affective) et structure
 
 #### 4. L'évaluation
 4.1 Les objectifs
@@ -1380,7 +1380,6 @@ Maintenant les meta analysis suggèrent
 	- 25% de rechute
 - Résultats immédiats identiques à la pharmacothérapie, mais supérieur lors du follow-up ; risque de rechute réduit même après fin d’intervention (DeRubeis et al. 2008)
 	→ Voir aussi : https://div12.org/treatment/cognitive-therapy-for-depression/
-
 
 ### 3. 3ème vague
 
