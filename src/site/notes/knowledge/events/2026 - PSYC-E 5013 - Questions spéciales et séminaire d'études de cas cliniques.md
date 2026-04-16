@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","title":"Questions spéciales et séminaire d'études de cas cliniques","tags":["psychology","clinical","ulb","intercultural"],"created":"2026-03-04T17:27:33.113+01:00","updated":"2026-04-16T10:16:00.174+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","title":"Questions spéciales et séminaire d'études de cas cliniques","tags":["psychology","clinical","ulb","intercultural"],"created":"2026-03-04T17:27:33.113+01:00","updated":"2026-04-16T10:22:03.489+02:00"}
 ---
 
 
@@ -396,3 +396,6 @@ Lecture de texte:
 
 📅 Jeudi **16 Avril 2026** (Cours 10)
 
+Séance avec une traductrice.
+Particularité: appelée à agir dans cadre de la thérapie en principe de confidentialité, pas conçu pour l'intervention d'un troisième acteur.
+Ne peut pas dire plus, mettre ses idées, aller plus loin... c'était un cadre qui la protégeait elle.
