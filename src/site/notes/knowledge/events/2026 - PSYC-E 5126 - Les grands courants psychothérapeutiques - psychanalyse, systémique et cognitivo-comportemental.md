@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-13T23:11:47.946+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-16T17:36:41.068+02:00"}
 ---
 
 
@@ -1621,7 +1621,7 @@ Objet petit-a: à voir avec jouissance du corps, au fondement meme de ce que les
 
 La ponctuation ("entendez vous ce que vous dites?", ce cet ordre là).
 
-{Métaphore: l'histoire ne se construit pas par l'expérimentation... mise en tension entre singulier et universel, comme la psychanalyse. L'après coup, logique similaire.}
+{Métaphore: l'Histoire ne se construit pas par l'expérimentation... mise en tension entre singulier et universel, comme la psychanalyse. L'après coup, logique similaire.}
 
 {...}
 
@@ -1632,13 +1632,12 @@ Invités/intervenants:
 - Claudia Balica: **Mastering Intensive Short-term Dynamic Therapy (ISTDP): A Roadmap to the Unconscious**
 
 Claudia Balica:
-
-- Gens qui vont chez un thérapeute TCC: souvent limitée dans le temps. Agissant avec un contrat. Ca peut donner une sécurité au patient.
+- Personnes qui vont chez un thérapeute TCC: souvent limitée dans le temps. Agissant avec un contrat. Ça peut donner une sécurité au patient.
 - Contre-indiqué pour personnes psychotiques.
 
-Développé par psychanaliste canadien d'origine iranienne: Davanloo
+Développé par psychanalyste canadien d'origine iranienne: Davanloo
 - 3h, ensuite 1h30 toutes les 2 semaines.
-- Suzanne: en psycha classique (Freudienne) on fait plus court au 1er aussi pour proteger le patient de sentir qu'il est "trop" qu'il deballe trop, on veut pas affronter les defenses de maniere directe
+- Suzanne: en psychanalyse classique (Freudienne) on fait plus court au 1er aussi pour protéger le patient de sentir qu'il est "trop" qu'il déballe trop, on veut pas affronter les defenses de manière directe
 - "Intensive Short Term Dynamic Psychotherapy, appears to be most useful for certain types of ‘highly-defended’ patients--people with rigid personality styles, who haven’t responded to gentler approaches" https://www.psychologytoday.com/us/blog/heal-your-brain/201707/unlocking-the-unconscious-30-years-later
 - Sessions souvent filmées
 - Davanloo se base sur la presence ou non de :
@@ -1647,14 +1646,53 @@ Développé par psychanaliste canadien d'origine iranienne: Davanloo
 	- character disturbances
 	- high degree of masochistic character traits
 
-Extrait video 20 min: Human-Animal Attachment Yusif Josette ten Have, Tatiana Nassar.
-- questionnement sur passivité, confrontant, actif
-- la psy monologue
-- message: trauma souvent 11+-2 ans avant la visite du psy (hmmm)
-- elles identifient rapidement cause
-- hypotheses bizarres (diarree anxiété, anxieté)
+Extrait video 20 min: "Human-Animal Attachment Yusif Josette ten Have, Tatiana Nassar"
+- Confrontation sur la passivité de la patiente, actif
+- La psy monologue, transmets ses interprétations
+- Message: trauma souvent 11+-2 ans avant la visite du psy (hmmm)
+- Elles identifient rapidement cause
+- Hypotheses bizarres (diarée, anxiété, anxiété)
 
-Q: risque de s'arrêter trop vite sur qqch qui parait la cause de trauma, sans avoir suffisament cherché? Surtout que dans la video c'est pas la patiente qui amene, c'est la psy qui suggere. e.g. le chien. position directive de la psy, suggestive. (et idée du trauma dans la fenêtre 11+-2)
+Q perso: risque de s'arrêter trop vite sur quelque chose qui parait la cause de trauma, sans avoir suffisamment cherché? Surtout que dans la video c'est pas la patiente qui amène, c'est la psy qui suggère. e.g. le chien. Position directive de la psy, suggestive. (et idée du trauma dans la fenêtre 11+-2)
 
 Q Fouchet:
-- comment dire qu'on travaille l'inconscient sans faire un travail avec l'inconscient (lapsus, rêves, etc), et sans se baser sur le transfert, la base de la psychanalyse 
+- comment dire qu'on travaille l'inconscient sans faire un travail avec l'inconscient (lapsus, rêves, etc), et sans se baser sur le transfert, la base de la psychanalyse?
+- Suzanne-Wolff: psychanalyse victime de son succès, du fait que son langage est passé dans le discours courant. Donc ce travail, construction, est moins efficace en thérapie, car les gens y ont déjà été exposés.
+
+📅 Jeudi **16 Avril 2026** - Cours 4
+
+Critique de ce qui a été présenté au cours précédent:
+- Absence de dimension centrale vue en cours: la contingence.
+- "L'envers de la dimension de l'accueil."
+- Pas pour les gens qui vont pas bien, mais on ne sait pas qui ne va pas bien à l'avance.
+
+Logique du savoir psychanalytique ramené à la patiente sous la forme d'interprétations. Traduire dans un vocabulaire, sous des formes, schémas psychanalytiques **déjà là, déjà présents**.
+
+vs. manière de travailler Fouchet/[[knowledge/wiki/Psychanalyse Lacanienne\|Psychanalyse Lacanienne]] : construction commune, lente, savoir non-détenu par le psy (éthique de la psychanalyse dans l'accompagnement des personnes). Le savoir émerge de l'experience psychanalytique. Il n'y pas de mode d'emploi, "je me débrouille comme je peux", est ce qu'est censé apprendre le psychanalyste avec chaque sujet (et non jouer aux experts, apprendre aux gens comment élever/éduquer, etc.)
+
+- cf l'ère du temps: **psycho-éducation**: faut que le patient comprenne ce qu'il a, pourquoi il l'a, ou faire comprendre la famille, les proches... éducation discours-psy (cf [[Foucault\|Foucault]], machine discursive qui saisit les corps pour les mettre aux places attendues pour faire fonctionner la société).
+- on n'y échappe pas, à ce risque: même à vouloir soutenir une dynamique "sujet-suppose-savoir". Nous sommes tous des individus "modernes", on échappe difficilement a que ce qu'on attend c'est qqun qui sait, qui dise quoi faire, et que ça aille mieux le plus vite possible.
+
+Jung: pourquoi pas vu dans ce cours?
+interpretation des reves. 
+	rêve: production singulière. cf machinerie subjective pour ce sujet la. des lordre du déplacement et de la condensation. (?).
+
+
+> [!NOTE] Concepts importants:
+> - **Normativité**:
+> - **Transfert**:
+> - **Sujet-supposé-savoir** (SsS): 
+> - **Contingence**: La contingence chez Lacan, c’est quand quelque chose d’imprévisible surgit et ouvre une possibilité nouvelle dans ta vie, en brisant ce qui se répétait. **Le nécessaire** → ce qui se répète toujours, **l’impossible** → ce qui ne peut pas exister  (par exemple, pour Lacan : une harmonie parfaite entre deux êtres), **le contingent** → ce qui _aurait pu ne pas arriver_, mais arrive quand même. (Chat)
+
+ [No Subject: An encylopedia of Lacanian Psychanalysis](https://nosubject.com/Lacan "Lacan"): utile? 
+
+Recommendations de lecture:
+- Travaux pratiques critiques des neurosciences apd de neuroscientifiques
+- Romans, l'art: qui parlent de la condition humaine.
+
+Question sur les "présentations de malade" (docu A Ciel Ouvert): cf https://www.sciencedirect.com/science/article/pii/S0014385519301768
+- lorsque malade vient parler de son parcours/maladie? comme expert de sa maladie?
+- se fait de moins en mons
+
+La psychanalyse n'set pas possible sans le corps (débat) :
+- car nous sommes que des corps affectés par le langage

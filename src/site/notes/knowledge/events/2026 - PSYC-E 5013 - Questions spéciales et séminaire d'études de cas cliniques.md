@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","title":"Questions spéciales et séminaire d'études de cas cliniques","tags":["psychology","clinical","ulb","intercultural"],"created":"2026-03-04T17:27:33.113+01:00","updated":"2026-04-16T10:22:03.489+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","title":"Questions spéciales et séminaire d'études de cas cliniques","tags":["psychology","clinical","ulb","intercultural"],"created":"2026-03-04T17:27:33.113+01:00","updated":"2026-04-18T09:18:38.909+02:00"}
 ---
 
 
@@ -7,6 +7,9 @@
 > Sans négliger les axes du diagnostic et de l’institution, le séminaire « Questions spéciales et séminaire d’études de cas cliniques » engagera les étudiants dans un processus d'élaboration, de réflexion critique et de construction de cas cliniques, d'une manière qui leur permettent d’approfondir la question de l’accompagnement clinique.
 > 
 >**Séminaire du groupe 14**: Histoire et actualité de la prise en compte de la dimension interculturelle en psychologie clinique. Illustration par l'étude de cas tirés de la pratique clinique du Service de Santé Mentale Ulysse qui reçoit des personnes exilées, dont beaucoup de demandeurs d'asile. L'attention est attirée sur le fait qu'il ne s'agit pas d'un séminaire d'ethnopsychatrie. Cette conception de la clinique interculturelle est analysée parmi d'autre dans le séminaire, mais n'est pas celle privilégiée dans la pratique du centre Ulysse.
+>as
+>
+>Séances spéciales obligatoires: [[Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone\|Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone]]
 
 > [!info] Évaluation
 > Rapport écrit (et présence obligatoire au séminaire pour que l’UE puisse être validée). Trois types de rapport possibles:
@@ -399,3 +402,10 @@ Lecture de texte:
 Séance avec une traductrice.
 Particularité: appelée à agir dans cadre de la thérapie en principe de confidentialité, pas conçu pour l'intervention d'un troisième acteur.
 Ne peut pas dire plus, mettre ses idées, aller plus loin... c'était un cadre qui la protégeait elle.
+
+
+Gain du temps: le temps de l'interprétariat donne plus de temps pour réfléchir, des moments intermédiaires pour se réappropier certaines choses. Induit a un regard différent.
+
+Personnes qui viennent de Gaza: clinique compliquée.
+Démarche individuelle rare (on doit être fort, soudé, unis). Usage de substances fort (antidouleurs).
+Importance de ne pas traiter ces problématiques en solo, psys de premiere ligne (qui sont censées travailler problématiques légères).
