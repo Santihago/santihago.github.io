@@ -1,7 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/seances-speciales-parental-burnout-and-regret-prof-invite-nicola-carone/","title":"Parental burnout and regret","tags":["parenting","burnout"],"created":"2026-04-18T09:14:39.629+02:00","updated":"2026-04-18T15:40:59.342+02:00"}
+{"dg-publish":true,"permalink":"/seances-speciales-parental-burnout-and-regret-prof-invite-nicola-carone/","title":"Parental burnout and regret","tags":["parenting","burnout"],"created":"2026-04-18T09:14:39.629+02:00","updated":"2026-04-18T15:41:57.381+02:00"}
 ---
-
 
 📅 **18 Avril 2026** - Cours 1
 # Psychology and psychopathology of family bonds: Parental burnout
@@ -179,3 +178,8 @@ His case:
 - Emotional distancing: "He will bring me a model train he has assembled. And I will look a it and say the right things. But I am not there. I am running the protocol, not being his father." 
 - Ambiguous loss: "I grieve for him sometimes. I know what a ten-year old boys life could be and his life is not that. And then I feel guilty for grieving. And then I feel guilty for feeling guilty".
 
+Intervention:
+- Legitimize the suffering
+- Psycho-education: but not enough
+
+📅 **9 Mai 2026** - Cours 2

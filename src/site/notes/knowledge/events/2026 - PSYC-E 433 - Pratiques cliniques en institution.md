@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-433-pratiques-cliniques-en-institution/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-04T17:27:33.116+01:00","updated":"2026-04-13T22:17:44.838+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-433-pratiques-cliniques-en-institution/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-04T17:27:33.116+01:00","updated":"2026-04-18T15:47:51.383+02:00"}
 ---
 
 
@@ -10,7 +10,7 @@
 > Examen à questions fermées de type vrai ou faux (en présentiel). Pas de points négatifs. 20 questions, normalement.
 > - But est de départager "qui est venu au cours et qui non" (tous les items auront l'air plausibles, il sera nécessaire de comprendre l'approche critique démontrée en cours).
 > - On se concentrera lors de la dernière rencontre sur la préparation de l'examen, elle amènera des items d'exemple. 
-> - 
+
 
 > [!tip] Lectures recommandées (aucun caractère obligatoire)
 > * 
