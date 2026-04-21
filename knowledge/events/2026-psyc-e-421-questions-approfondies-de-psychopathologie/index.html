@@ -79,37 +79,256 @@
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-04-18T13:52:12.863Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-04-21T10:28:28.896Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
 <main class="content cm-s-obsidian print">
 <header>
 <h1 data-note-icon="">Pratiques cliniques en institution</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-17T01:10:22.503+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-04-15T15:50:18.978+02:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-17T01:10:22.503+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-04-21T12:27:36.599+02:00"></span></div></div></div>
 </header>
-<div class="callout" data-callout="tldr"><div class="callout-title"><div class="callout-title-inner"> Résumé<br></div></div>
-<div class="callout-content">
-<p>
-Il y aura interventions des différentes approches:</p>
-<ul>
-<li>Philippe Fouchet: psychanalyse Lacanienne.</li>
-<li>Ilios Kotsou: approches comportementales.</li>
-<li>Mathilde Meriaux: systémique.</li>
-</ul>
-</div></div>
+<p><strong>Structure</strong>:</p>
+<ol>
+<li>[[#🏷️ Partie I Psychanalyse Lacanienne - P. Fouchet]]</li>
+<li>[[#🏷️ Partie II Thérapies cognitivo-comportementales de 3ème vague - Ilios Kotsou]]</li>
+<li>[[#🏷️ Partie III Systémique - Mathilde Meriaux]]</li>
+</ol>
 <div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Évaluation</div></div>
 <div class="callout-content">
 <p>
 </p><ul>
-<li><strong>Partie Kotsou</strong> (ACT): pas encore définie, ce sera un QCM (4 réponses). Il donnera des exemples.<br>
-Il enverra supports: articles scientifiques. Aussi un examen blanc. Pas de pièges, ce sera facile il dit. Peut être fera QCM avec des cas cliniques (mais sans pièges non plus). Par exemple, dans les réponses, une proposition parle d'évitement, et 1 qui ressemble à de l'acceptation... ce sera très clair. Exemple: psychopathologie fonctionnelle vs catégorielle?</li>
-<li><strong>Partie Meriaux</strong> (systémique): ?</li>
 <li><strong>Partie Fouchet</strong>: VF?</li>
+<li><strong>Partie Kotsou</strong> (ACT): ce sera un QCM (4 réponses possibles). Il donnera des exemples.<br>
+Il enverra supports: articles scientifiques. Aussi un examen blanc. Pas de pièges, ce sera facile, il dit. Peut être fera QCM avec des cas cliniques (mais sans pièges non plus). Par exemple, dans les réponses, une proposition parle d'évitement, et une autre qui ressemble à de l'acceptation... ce sera très clair. Exemple: psychopathologie fonctionnelle vs catégorielle?</li>
+<li><strong>Partie Meriaux</strong> (systémique): ?</li>
 </ul>
 <p></p></div></div>
-<h1 id="1-partie-psychanalyse-p-fouchet" tabindex="-1">🏷️ 1. Partie Psychanalyse - P. Fouchet</h1>
-<p>📅 <strong>18 Mars 2026</strong> - Cours 1</p>
-<p>Absent.</p>
-<h1 id="2-partie-therapies-cognitivo-comportementales-de-3eme-vague-ilios-kotsou" tabindex="-1">🏷️ 2. Partie Thérapies cognitivo-comportementales de 3ème vague - Ilios Kotsou</h1>
+<h1 id="partie-i-psychanalyse-lacanienne-philippe-fouchet" tabindex="-1">🏷️ Partie I: Psychanalyse Lacanienne - Philippe Fouchet</h1>
+<div class="callout" data-callout="note"><div class="callout-title"><div class="callout-title-inner"> Modalités du cours et évaluation</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>Cours magistral: 3 x 4h.</li>
+<li>Psychanalyse d'orientation lacanienne.</li>
+<li>Évaluation: Vrai ou Faux.</li>
+</ul>
+<p></p></div></div>
+<p>📅 Mardi <strong>11 Mars 2026</strong> - Cours 1</p>
+<div class="callout" data-callout="question"><div class="callout-title"><div class="callout-title-inner"> Pré-questions:</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>En quoi la naissance de la psychologie est-elle liée à une &quot;faille&quot; de la neurologie au 18ème siècle ?</li>
+<li>Pourquoi peut-on qualifier la psychologie moderne de &quot;religion sans Dieu&quot; et quels sont les risques de cette position ?</li>
+<li>Comment le discours capitaliste et l'individualisme s'allient-ils pour transformer la souffrance en &quot;échec entrepreneurial&quot; ?</li>
+<li>Si la neutralité totale est impossible, par quel moyen le clinicien peut-il rendre l'espace thérapeutique &quot;respirable&quot; ?</li>
+</ul>
+<p></p></div></div>
+<h2 id="critique-de-la-position-normative" tabindex="-1">Critique de la position normative</h2>
+<p>La normativité, est une question au centre de la clinique psychanalytique, particulièrement avec les apports de Lacan (prônant une clinique qui ne soit pas normative): <strong>l'invention subjective</strong>.</p>
+<p>Invention subjective: réponse a la pensée normative dans laquelle nous nous trouvons en tant que psychologues.</p>
+<p>Années 50 ans, <strong>Georges Canguilhem</strong>, dans &quot;Qu'est-ce que la psychologie?&quot;, argumente que la psychologie est essentiellement une discipline normative. Elle se préoccupe de comment il faut faire, il faut être, comment il faut se comporter, comment faire avec son corps, le corps de l'autre, avec les relations.... Et le fait dans un contexte socioculturel qui lui donne une certaine importance. Métaphore de la rue Saint-Jacques: « Quand on sort de la Sorbonne par la rue Saint-Jacques, on peut monter ou descendre ; si l’on va en montant, on se rapproche du Panthéon qui est le Conservatoire de quelques grands hommes, mais si l’on va en descendant, on se dirige sûrement vers la Préfecture de Police. » Pour Canguilhem, la psychologie a tendance à « descendre la rue » vers le commissariat. Elle devient un outil de contrôle social et de normalisation du comportement plutôt qu'un outil de compréhension de l'esprit.</p>
+<p><strong>Perspective historique et ruptures</strong></p>
+<ul>
+<li>Médecine hippocratique du <strong>4ème siècle av. JC</strong>(première rationalité). La maladie est un <strong>déséquilibre</strong> entre le microcosme (corps) et le macrocosme (nature/divin). Le médecin doit restaurer cet ordre.</li>
+<li>Naissance de la <strong>médecine scientifique</strong> au 18ème siècle, moment de rupture.
+<ul>
+<li>Ce qui surgit d'abord: la <strong>neurologie</strong>. On découvre des maladies qui répondent à la logique neurologique, et d'autres qui n'y répondent pas, répondent plutôt a une logique relationnelle. Donc, sans que ce soit possible d'isoler une cause purement organique.</li>
+<li>C'est là que nait la psychologie, avec deux courants qui coexistent:
+<ol>
+<li>Un courant qui vise à repérer <strong>les causes proprement organiques</strong>, médicales;</li>
+<li>Un courant visant à développer des concepts, des champs théoriques, des méthodologies, des pratiques, pour tenter de saisir la logique de cette <strong>dimension relationnelle, contextuelle, humaine</strong>.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p>La psychanalyse se situerait donc dans cette dernier côté, en complément ou en opposition au courant visant à identifier les causes organiques.</p>
+<p><strong>Discours dominants actuels</strong></p>
+<p>Trois concepts-clé, discours essentiels:</p>
+<ol>
+<li><strong>L'individualisme</strong>: L'individu est vu comme un &quot;entrepreneur de sa propre existence&quot;. Discours qui aujourd'hui en est à son apogée (personne ne doute d'être un être libre, indépendant, autonome...). Ce discours a un effet important sur la manière de se penser, penser les autres, et penser les difficultés humaines.
+<ul>
+<li>&quot;Si ça ne va pas, c'est à cause de nous-mêmes&quot;. Les difficultés ne sont pas pensées comme collectives, mais de manière individuelle. Si ça ne va pas, c'est que &quot;je ne suis pas un bon entrepreneur de ma propre existence&quot;.
+<ul>
+<li>La dépression (mal du siècle, mais qui dure presque déjà deux siècles...)</li>
+<li>Conséquence : Si on échoue, on est seul responsable. La <strong>dépression</strong> est le revers de la médaille de cette responsabilité individuelle totale.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Le discours capitaliste/scientifique</strong>: Union de la science et du marché.<br>
+Discours capitaliste qui va se marier avec le discours de la science. Les réussites de la science, que nous nous approprions &quot;parce que quelqu'un nous vente les mérites d'une découverte scientifique avec un tablier blanc dans un laboratoire&quot;.
+<ul>
+<li>Au service de l'économie de marché.</li>
+<li>Important que chacune et chacun se réalise en achetant le GSM dernier-cri.</li>
+</ul>
+</li>
+<li><strong>Le discours religieux</strong>: discours qui va régler ce qu'on peut faire, ne pas faire, avec qui, dans quelles conditions, quels interdits, avec quelques exceptions... Discours qui a fait tenir des institutions avec l'idée qu'elles ont toujours été là. Par exemple, l'institution du mariage. En déclin, mais toujours structurant.</li>
+</ol>
+<p><strong>Évolution des repères : du religieux au psychologique</strong></p>
+<ul>
+<li>D'une part, le déclin du discours religieux a supprimé les cadres fixes (mariage, interdits stricts). Des possibles qui n'étaient jamais envisagés auparavant ont soudainement trouvé leur place. Ont permis à diverses personnes, de diverses manières, de se construire des trajectoires singulières en dehors des autoroutes présentées comme les seules existantes. Mais, effet secondaire, création d'un vide, d'une angoisse face à l'absence de mode d'emploi de l'existence.</li>
+<li>La psychologie est venue remplir ce vide, devenant une <strong>&quot;religion sans Dieu</strong>&quot;:
+<ul>
+<li>Les discours psychologiques se sont installés comme des discours nous disant comment faire.</li>
+<li>Discours psychologiques ont aujourd'hui une place extrêmement importante. On les mobilise dès qu'il y a des évènements graves dans notre société. Ces discours nous expliquent comment il faut se réaliser, à la fois dans sa vie personnelle, dans sa sexualité, dans les différentes sphères de satisfaction de sa vie... C'est une prescription qui change selon les époques (ex: alternance entre liberté totale et besoin de cadre pour les enfants). &quot;La psychologie devenue une religion sans dieu&quot;, devient référent. Le psychologue est investi d'un pouvoir immense par la société, ce qui renforce la <strong>pente normative</strong> (dire au patient ce qu'il doit faire au lieu de le laisser inventer sa propre solution).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Une clinique non-normative</strong>, est-ce possible?</p>
+<p>Non. Mais ce n'est pas la même chose que de ne pas tenter de le faire.</p>
+<p>Quelque chose de normatif va toujours, d'une certaine manière, imprégner l'orientation de notre travail. Mais on peut bricoler quelques instruments qui permettent de traiter ce penchant normatif, d'ouvrir un espace, ou des espaces, un peu plus respirables.</p>
+<p>D'abord, en tentant de se traiter nous, psychologues et futurs psychologues. En tentant une série de <strong>renversements</strong> (par ex: si j'écoute ce que me dit la personne, je vais pouvoir me forger quelques instruments qui vont me permettre de me traiter moi, de traiter la violence que je constitue envers la personne que je traite, même si je suis habité des meilleurs intentions, ... par ex: on nous dit &quot;d'accueillir sans juger&quot;, chose qui n'est pas possible! Mais on peut essayer de le traiter). Donc ce serait plutôt: <em>traiter</em> son penchant au jugement</p>
+<p>Les notions qui seront explorées:</p>
+<ul>
+<li><strong>Invention subjective</strong></li>
+<li><strong>Accueil</strong>: faire avec l'impossible, pour être moins violents</li>
+<li><strong>Trajectoires de vie singulières</strong>: les trajectoires ne sont pas prévisibles lorsqu'on n'est pas dans la normativité, elles se forgent dans la rencontre. La seule prévision qu'une psychanalyse est capable de faire, ce sont les prévisions après coup.</li>
+</ul>
+<p>Pourquoi <strong>la parole</strong> est-elle si importante, qu'on a besoin de rigueur, de rester attachés à ce que la personne fait/dit?</p>
+<ul>
+<li>Si on parle de catégories, on ne parle plus de la personne, on parle de soi, de son savoir, de ses préjugés, de son propre fantasme...</li>
+<li>Question d'une étudiante: l'existence de structures psychotiques/névrotiques qui prédiraient la trajectoire de la décompensation (métaphore du crystal) ne va pas a l'encontre de ce qui vient d'être dit?
+<ul>
+<li>Réponse de Fouchet: Par rapport à ça, Lacan vient opérer une rupture. L'hypothèse centrale de cette orientation Lacanienne: nous ne disposons pas d'un mode d'emploi commun a tous les membres de l'espèce humaine qui nous dirait comment faire avec les choses centrales de l'existence (le corps, le corps de l'autre). Et que c'est cette place vide qui laisse place au plus grand dérèglement.</li>
+</ul>
+</li>
+</ul>
+<div class="callout" data-callout="done"><div class="callout-title"><div class="callout-title-inner"> Réponses aux pré-questions</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li><strong>En quoi la naissance de la psychologie est-elle liée à une &quot;faille&quot; de la neurologie au 18ème siècle ?</strong> La psychologie naît au moment où la médecine scientifique (et la neurologie naissante) échoue à expliquer certaines pathologies par des causes purement organiques. Cette &quot;faille&quot; révèle l'existence de troubles répondant à une logique relationnelle, historique et humaine, que la neurologie ne peut épuiser.</li>
+<li><strong>Pourquoi peut-on qualifier la psychologie moderne de &quot;religion sans Dieu&quot; et quels sont les risques de cette position ?</strong> Elle occupe la place laissée vide par le discours religieux en dictant des normes de conduite (comment être parent, comment vivre sa sexualité...). Le risque est de transformer le psychologue en prescripteur de normes sociales fluctuantes, au lieu de laisser le sujet trouver sa propre voie.</li>
+<li><strong>Comment le discours capitaliste et l'individualisme s'allient-ils pour transformer la souffrance en &quot;échec entrepreneurial&quot; ?</strong> L'individualisme fait de chacun l'unique artisan de sa vie. Marié au capitalisme, il impose un impératif de performance et de réalisation par la consommation. Dès lors, la souffrance (comme la dépression) n'est plus vue comme un symptôme social, mais comme l'incapacité individuelle à être un &quot;bon entrepreneur de sa propre existence&quot;.</li>
+<li><strong>Si la neutralité totale est impossible, par quel moyen le clinicien peut-il rendre l'espace thérapeutique &quot;respirable&quot; ?</strong> Le clinicien y parvient en tentant de &quot;se traiter&quot; lui-même, c'est-à-dire en identifiant sa propre pente normative et ses préjugés. En acceptant son impossibilité à ne pas juger, il peut &quot;bricoler&quot; une écoute qui laisse place à l'autre sans l'écraser sous ses propres intentions.</li>
+</ul>
+<p></p></div></div>
+<div class="callout" data-callout="note"><div class="callout-title"><div class="callout-title-inner"> Concepts</div></div>
+<div class="callout-content">
+<p>
+<table>
+<thead>
+<tr>
+<th><strong>Concept</strong></th>
+<th><strong>Définition / Enjeu</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Invention subjective</strong></td>
+<td>La réponse unique et artisanale qu'un sujet crée pour rendre son existence possible, comblant l'absence de &quot;mode d'emploi&quot; naturel de l'humain.</td>
+</tr>
+<tr>
+<td><strong>Accueil</strong></td>
+<td>Posture éthique consistant à reconnaître l'impossibilité de la neutralité totale pour mieux limiter la violence de nos propres jugements sur le patient.</td>
+</tr>
+<tr>
+<td><strong>Trajectoires singulières</strong></td>
+<td>Parcours de vie qui s'écartent des normes sociales préétablies (&quot;autoroutes&quot;) et qui ne révèlent leur cohérence qu'après coup, par la parole.</td>
+</tr>
+<tr>
+<td><strong>L'impasse humaine</strong></td>
+<td>Point de départ lacanien : il n'y a pas d'instinct ou de savoir inné pour gérer le corps ou la rencontre sexuelle ; ce &quot;vide&quot; force l'humain à l'invention ou au dérèglement.</td>
+</tr>
+</tbody>
+</table>
+</p></div></div>
+<h2 id="temoignages-illustration-de-mettre-la-parole-au-centre" tabindex="-1">Témoignages: illustration de mettre la parole au centre</h2>
+<div class="callout" data-callout="question"><div class="callout-title"><div class="callout-title-inner"> Pré-questions:</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>Comment Donna Williams utilise-t-elle l'invention pour transformer une &quot;insulte&quot; (le diagnostic) en un &quot;point d'appui&quot; ?</li>
+<li>Pourquoi, dans cette approche, considère-t-on qu'il n'y a &quot;rien d'autre que des réponses&quot; (et jamais de purs problèmes) ?</li>
+<li>Qu'est-ce qui distingue la &quot;responsabilité individuelle&quot; (sociale) de la &quot;responsabilité subjective&quot; (clinique) ?</li>
+</ul>
+<p></p></div></div>
+<p><strong>Témoignage</strong> 1: Lecture d'extrait de &quot;Si on me touche, je n'existe plus&quot; de [Donna Williams](Donna Williams).</p>
+<p>Notre but en lisant est de réfléchir à ce qu'il se passe pour cette personne à partir de ce qu'elle écrit. Commentaires avant la lecture:</p>
+<ul>
+<li>Logique de l'après-coup: c'est écrit à posteriori, inclut des choses dont elle n'aurait pas pu parler sur le moment.</li>
+<li>Usage fréquent de l'ironie.</li>
+<li>Donna Williams a reçu des diagnostiques. Important ici de s'intéresser a <strong>ce qu'elle en fait, de ses diagnostiques</strong>. Dans cette orientation (Lacanienne), on se focalise sur ce qui nous concerne tous, le pari de l'invention quelques soient les troubles dont seraient atteints les patients. On ne s'intéresse pas à la cause du trouble, mais plutôt quelle place ça a dans l'existence du sujet de se considérer comme habitant le trouble. <mark>Non pas &quot;quelle est la cause du trouble&quot;, mais &quot;quelle est la cause du sujet?&quot;</mark> (important!). Donna Williams a reçu plusieurs diagnostics au cours de sa vie, mais ce qui importe ici est la façon dont elle s'en saisit ou, au contraire, dont elle les refuse violemment. Le diagnostic ne doit pas être une étiquette qui fige l'individu, mais un élément que le sujet peut utiliser (ou non) dans son propre bricolage identitaire.</li>
+<li>L'<strong>invention</strong> subjective comme outil de séparation: fonction de <strong>séparation</strong>, coupure, ou des divers équivalents de séparation. La séparation d'avec l'autre, qui va permettre que nos circuits pulsionnels, nos investissements du monde, notre style propre, se déploie dans des espaces marqués par une aliénation fondamentale dont on n'échappe pas. Séparation. Extraction. Ca se passe de manière singulière pour tout sujet - il y a mille et une façons pour cette séparation de s'opérer. Pour Donna Williams, le monde extérieur et la présence de l'autre sont perçus comme une invasion insupportable, une aliénation totale. Ses inventions (comme se perdre dans les motifs du papier peint ou produire une rythmique corporelle hypnotisante) servent à créer une coupure. En transformant la parole de l'autre en simple &quot;bruit&quot; ou en se focalisant sur des détails sensoriels, elle annule les signes de la présence de l'autre pour ne plus être traitée comme un objet à la merci de son entourage. C'est une extraction nécessaire pour que son &quot;style propre&quot; puisse se déployer dans un espace protégé.</li>
+</ul>
+<p>Invention subjective = dégager des logiques. L'invention est la mise en lumière d'une <strong>logique interne</strong> qui permet au sujet de traiter le réel. Le rôle du clinicien est de dégager cette logique pour comprendre comment le sujet &quot;tient&quot; plutôt que de vouloir supprimer le comportement.</p>
+<ul>
+<li>Consommation, passage à l'acte</li>
+<li>Architecture des centres: Cela fait référence à la manière dont les institutions (hôpitaux, centres) sont pensées. Souvent, elles sont conçues pour la surveillance ou la norme. On peut répondre à un passage à l'acte par l'aménagement de l'espace ou de la dynamique plutôt que par la contention. Au lieu de punir l'individu, on modifie l'interaction avec l'objet (comme dans l'exemple du frigo cité plus tôt). L'architecture ou l'organisation d'un lieu devrait être un appui pour l'invention du sujet plutôt qu'un obstacle provoquant le passage à l'acte.</li>
+</ul>
+<p><strong>Psychologue comme objet utilisable</strong></p>
+<ul>
+<li>Donna dit, en quelque sorte: &quot;Pour peu qu'on sache être là comme un objet dont je me sers, ça peut marcher&quot;
+<ul>
+<li>-&gt; dans le travail clinique, se joue la capacité à se prêter comme objet que le sujet peut utiliser (pas se laisser faire, ou dire oui à tout... mais une attention à la manière dont le sujet peut faire usage de ce qu'on va lui proposer). Cela signifie que le psychologue ne doit pas chercher à être un partenaire de dialogue classique ou une figure d'autorité, mais doit &quot;se prêter&quot; à la logique du patient. Pour elle, ça permet une co-présence, une instauration de rituels... quelque chose qui balise, construit le monde pour elle, ainsi que les conditions de praticabilité.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Utiliser la surprise sans heurter</strong><br>
+Invention -&gt; Le personnage de Willy (et l'emballement):</p>
+<ul>
+<li>C'est elle, et ce n'est pas elle. Elle décrit que Willy devint son incarnation extérieure, son &quot;préposé aux affaires étrangères&quot;. Willy agit à sa place, mais ce personnage fini par provoquer un stop de son entourage. Ce stop, on est amené à le formuler dans notre clinique. Mais on ne le fait pas de manière adressée à l'individu, &quot;Donna, faut que t'arrêtes&quot;, c'est adressé à ce qui dans la dynamique s'emballe.
+<ul>
+<li>Exemple: enfant qui court vers le frigo quand la porte s'ouvre. Solution: non pas de dire &quot;non, tu ne peux pas&quot;, c'est de s'adresser au frigo &quot;ça ne va, c'est pas l'heure du repas, tu ne peux pas t'ouvrir, c'est pas l'heure&quot; -&gt; effet de surprise, crée un décalage qui fait surgir au moins un étonnement. Classiquement, dans les institutions, des modalités permettant qu'on s'applique aux choses qu'on formule. Ou un principe général: &quot;il faut qu'on sorte de la piece parce que c'est l'heure de l'activité&quot; au lieu de &quot;tu dois sortir!</li>
+</ul>
+</li>
+</ul>
+<p><strong>Question de responsabilité</strong><br>
+Parenthèse qu'elle fait elle-même. &quot;Mais qui est responsable de tout ca?&quot;</p>
+<ul>
+<li>Une position éthique très claire qu'elle tient: Dans son témoignage, Donna Williams pose cette question pour ne pas se poser en victime passive de sa condition ou de sa biologie. Elle tient une position de <strong>responsabilité subjective</strong>. Elle ne dit pas &quot;c'est ma maladie qui fait ça&quot;, mais elle cherche à s'approprier ses actes et ses inventions. Pour le psychanalyste, l'éthique consiste à considérer le patient comme un sujet responsable de sa propre solution (son invention), même si celle-ci paraît étrange. C'est l'inverse de la victimisation ou de la déresponsabilisation par le diagnostic médical.</li>
+</ul>
+<p><strong>Allier symptôme et métier, le social</strong><br>
+Elle découvre l'univers de l'ordre et du classement (allier symptôme et métier): L'entrée de Donna dans le monde du travail, notamment dans un magasin, illustre comment l'invention subjective peut se combiner au social. Elle utilise son besoin obsessionnel d'ordre, de classement et de séparation des catégories pour exceller dans son métier de rangement. Elle transforme ce qui pourrait être vu comme un symptôme handicapant en une compétence professionnelle. Elle va étudier la linguistique. Prendre le langage comme un objet. Le monter-démonter, saisir les logiques. Travail dans un magasin: satisfaisant, sauf les gens, rayons d'objets a ranger et classer, et le cote vibrant des objets. Le magasin devient un &quot;monde qui accueille son invention&quot;, ses manières de s'engager dans le monde.</p>
+<p><strong>La violence du diagnostic</strong><br>
+La fin de cet extrait montre la rupture brutale provoquée par une psychiatre qui, en prescrivant un médicament, laisse entendre un diagnostic de schizophrénie. Pour Donna, ce n'est pas une aide, mais une <strong>insulte</strong> ou une <strong>assignation</strong>. Elle perçoit cela comme une tentative de viser son être même, de le réduire à une catégorie médicale (&quot;la folle&quot;). Cette nomination fige le sujet là où il essayait de s'inventer.</p>
+<p>Dans cette orientation: il n'y a <strong>rien d'autre que des réponses</strong>. Habituellement, on voit le symptôme (le délire, l'obsession, le retrait social) comme un <strong>problème</strong> qu'il faut éliminer. Dans cette clinique, on considère que le symptôme est déjà une <strong>réponse</strong> (ou une solution) que le sujet a trouvée pour ne pas s'effondrer face à ce qui lui est insupportable.</p>
+<div class="callout" data-callout="done"><div class="callout-title"><div class="callout-title-inner"> Réponses aux pré-questions</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li><strong>Comment Donna Williams utilise-t-elle l'invention pour transformer une &quot;insulte&quot; (le diagnostic) en un &quot;point d'appui&quot; ?</strong> Elle refuse l'assignation (être &quot;la délirante&quot; ou &quot;la schizophrène&quot;) qui réduit son être à un déchet. Elle détourne ses symptômes (le retrait, le classement des objets) pour en faire un mode de vie et un métier. Elle ne subit plus le diagnostic, elle l'utilise comme une pièce de son propre puzzle identitaire.</li>
+<li><strong>Pourquoi, dans cette approche, considère-t-on qu'il n'y a &quot;rien d'autre que des réponses&quot; (et jamais de purs problèmes) ?</strong> Parce que le symptôme n'est pas un dysfonctionnement à supprimer, mais la meilleure solution (la &quot;réponse&quot;) que le sujet a trouvée pour survivre à une réalité insupportable. L'enjeu est de comprendre à quelle difficulté ce symptôme vient répondre.</li>
+<li><strong>Qu'est-ce qui distingue la &quot;responsabilité individuelle&quot; de la &quot;responsabilité subjective&quot; ?</strong> La responsabilité individuelle est sociale et culpabilisante (devoir répondre de ses échecs face à la norme). La responsabilité subjective est clinique : c'est le processus par lequel un sujet reconnaît son symptôme comme sa propre création et consent à l'assumer pour en faire quelque chose de vivable.</li>
+</ul>
+<p></p></div></div>
+<p>📅 <strong>18 Mars 2026</strong> - Cours 2</p>
+<p>(Absent, notes IA sur base de la retranscription)</p>
+<p>Cette leçon s'inscrit dans la continuité directe du cours précédent. Elle s'ouvre d'ailleurs sur un temps d'échange et de questions-réponses concernant le fil rouge de la semaine passée : le témoignage de <strong>Donna Williams</strong>.</p>
+<p>Le lien s'opère autour de la conclusion du cours précédent, à savoir la violence de l'intervention psychiatrique qui pose un diagnostic de schizophrénie sur Donna Williams. À partir de ce moment de rupture où le savoir médical vient écraser l'invention de la patiente, la réflexion glisse vers le thème central de cette nouvelle séance : la logique de l'assignation et ses conséquences.</p>
+<h2 id="les-grands-axes-et-focalisations-du-cours" tabindex="-1">Les grands axes et focalisations du cours</h2>
+<p>Ce cours ne s'est pas tant focalisé sur la pathologie elle-même, mais sur la <strong>posture éthique, sociale et concrète du clinicien</strong>. Trois grands axes ont structuré la réflexion :</p>
+<p><strong>1. De l'assignation à la nomination</strong> L'idée centrale est de comprendre comment un discours extérieur (médical, social) vient enfermer un sujet. Le diagnostic, lorsqu'il est plaqué sans tact, relève de la logique de l'insulte : il fige l'individu et le réduit à un objet ou à un déchet. Toute la clinique consiste alors à repérer comment le sujet peut s'approprier ou détourner cette assignation pour s'inventer sa propre nomination (se nommer soi-même plutôt que d'être nommé par l'autre).</p>
+<p><strong>2. La clinique &quot;hors les murs&quot; et l'implication matérielle</strong> Il y a une critique forte d'une vision trop pure ou idéalisée de la psychologie, où le clinicien se contenterait d'écouter sagement dans son cabinet. Le cours se focalise sur l'importance du &quot;sale boulot&quot; : régler des questions de dettes, chercher un logement, faire appel à des juristes. La réalité matérielle, sociale et légale du patient n'est pas un à-côté du travail thérapeutique, elle en est le cœur. Ne pas s'en occuper, c'est abandonner le sujet.</p>
+<p><strong>3. Le glissement de la responsabilité</strong> Une distinction fondamentale est établie entre deux formes de responsabilités. D'un côté, la responsabilité individuelle, issue du discours néolibéral, qui culpabilise le sujet (&quot;si tu vas mal, c'est de ta faute, tu gères mal ta vie&quot;). De l'autre, la responsabilité subjective, qui est l'objectif clinique : amener le sujet à consentir à ses propres choix et à ses propres inventions pour rendre son monde vivable, sans le juger sur ses performances.</p>
+<h2 id="l-insulte-comme-assignation-et-le-retournement-du-sujet" tabindex="-1">L'insulte comme assignation et le retournement du sujet</h2>
+<p>L'insulte ne doit pas être comprise comme une simple grossièreté, mais comme une tentative de viser l'être même du sujet pour le réduire à l'état de &quot;déchet&quot;. Dans le contexte clinique, l'assignation diagnostique (par exemple appeler quelqu'un &quot;la délirante&quot;) fonctionne souvent comme une insulte car elle fige l'individu dans une catégorie dévalorisante. Cependant, certains sujets font preuve d'une invention remarquable en retournant l'insulte. En adoptant le terme utilisé contre eux (comme certains usagers de drogues s'appropriant le terme de &quot;junkie&quot;), ils transforment un stigmate en un point d'appui identitaire. Ce retournement est une forme d'invention subjective qui permet de reprendre une place de sujet là où on ne voulait voir qu'un déchet.</p>
+<h2 id="la-fonction-de-l-objet-dans-la-pratique-clinique" tabindex="-1">La fonction de l'objet dans la pratique clinique</h2>
+<p>La posture du clinicien dans cette orientation ne consiste pas à être une personne qui conseille ou qui dirige, mais à se prêter comme un &quot;objet&quot; que le sujet peut utiliser. Donna Williams explique très bien que la présence de l'autre n'est supportable que si cet autre accepte de ne pas être une présence envahissante, mais un outil permettant de baliser le monde. Se prêter comme objet demande au clinicien une grande souplesse : il s'agit d'être là sans imposer sa propre subjectivité, ses désirs ou ses jugements, pour permettre au patient de construire ses propres rituels et sa propre &quot;praticabilité&quot; du monde.</p>
+<h2 id="le-traitement-de-l-emballement-s-adresser-a-l-objet" tabindex="-1">Le traitement de l'emballement : s'adresser à l'objet</h2>
+<p>Dans les situations où la dynamique d'un patient s'emballe (passages à l'acte, obsessions), il est essentiel de trouver des interventions qui ne soient pas frontales ou violentes. L'exemple de l'enfant se précipitant vers le réfrigérateur illustre cette technique : au lieu de s'adresser à l'individu par un &quot;non&quot; autoritaire, on s'adresse à l'objet. Dire au réfrigérateur &quot;Tu ne peux pas t'ouvrir maintenant, ce n'est pas l'heure&quot; crée un décalage et une surprise. Cette modalité permet de poser une limite sans viser directement le sujet, offrant ainsi un espace où le dégonflement de la tension peut s'opérer sans conflit de pouvoir.</p>
+<h2 id="la-clinique-hors-les-murs-se-salir-les-mains" tabindex="-1">La clinique hors les murs : se salir les mains</h2>
+<p>La clinique ne s'arrête pas à la porte du cabinet ; elle s'occupe de la dimension sociale et de la réalité concrète du sujet. S'appuyant sur la métaphore des &quot;mains sales&quot; de Sartre, l'idée est que pour aider un sujet, il faut parfois accepter d'entrer dans les détails &quot;impurs&quot; de son existence (ses problèmes de logement, ses dettes, ses conflits juridiques). Ne pas le faire sous prétexte de pureté analytique serait une erreur. La responsabilité du clinicien est de considérer que tout ce qui fait obstacle à la vie du sujet fait partie du champ de la clinique.</p>
+<h2 id="la-dimension-juridique-et-le-travail-en-equipe" tabindex="-1">La dimension juridique et le travail en équipe</h2>
+<p>Le clinicien n'a pas à être omniscient ou à occuper toutes les places. Au contraire, la richesse de la clinique du cas par cas réside dans la capacité à s'appuyer sur d'autres professionnels, comme des juristes ou des assistants sociaux.</p>
+<ul>
+<li><strong>L'appui juridique :</strong> Aider un patient à faire valoir ses droits n'est pas une tâche extra-clinique, c'est une manière de soutenir sa dignité et sa place de citoyen.</li>
+<li><strong>Le travail pluridisciplinaire :</strong> Reconnaître qu'on ne peut pas tout traiter seul permet de ne pas s'enfermer dans une relation duelle imaginaire. Le recours au droit ou au social permet de réintroduire un &quot;tiers&quot; (la loi, l'institution) qui aide à réguler les situations les plus complexes.</li>
+</ul>
+<h2 id="responsabilite-subjective-vs-responsabilite-individuelle" tabindex="-1">Responsabilité subjective vs Responsabilité individuelle</h2>
+<p>Il existe une distinction cruciale entre la responsabilité individuelle (souvent culpabilisante dans le discours néolibéral) et la responsabilité subjective. La responsabilité subjective consiste à reconnaître le sujet comme l'auteur de sa &quot;réponse&quot; au monde, même si cette réponse est un symptôme. L'enjeu clinique est de permettre au sujet de s'approprier sa propre invention plutôt que de la subir comme une fatalité ou une maladie. On ne demande pas au patient d'être &quot;performant&quot;, mais d'être responsable de la manière dont il bricole sa propre existence pour la rendre respirable.</p>
+<hr>
+<h3 id="points-cles-pour-l-examen-vrai-faux" tabindex="-1">Points clés pour l'examen (Vrai/Faux) :</h3>
+<ul>
+<li>L'invention subjective est une réponse au vide laissé par l'absence de &quot;mode d'emploi&quot; de l'espèce humaine.</li>
+<li>L'insulte vise à réduire le sujet à un déchet, mais peut être retournée par le sujet.</li>
+<li>Le clinicien doit se prêter comme objet utilisable et non comme maître.</li>
+<li>L'adresse à l'objet (ex: le frigo) est une alternative non-violente à l'injonction directe.</li>
+<li>La dimension sociale et juridique fait partie intégrante du travail clinique.</li>
+</ul>
+<p>📅 <strong>13 Mai 2026</strong> - Cours 3</p>
+<h1 id="partie-ii-therapies-cognitivo-comportementales-3eme-vague-ilios-kotsou" tabindex="-1">🏷️ Partie II: Thérapies cognitivo-comportementales (3ème vague) - Ilios Kotsou</h1>
 <p>-&gt; Un support écrit sera donné, &quot;pas besoin de prendre note&quot;</p>
 <p>📅 <strong>25 Mars 2026</strong> - Cours 2 - Ilios Kotsou (1)</p>
 <p>Comportement ayant lieu dans le cadre de la thérapie = comportement dans la vie réelle.<br>
@@ -299,7 +518,7 @@ CF Christian Bobin (poésie). Rumi. Tador</p>
 Livres: Ericksson n'en a pas écrit. &quot;Ma voix t'accompagnera&quot; ou &quot;Un thérapeute hors du commun&quot; (les deux élèves de Ericksson).<br>
 Utilisation de la métaphore, des histoires. Si c'était un jardinier, il lui parlait de jardins, pas de processus techniques.</li>
 </ul>
-<h1 id="3-partie-systemique-mathilde-meriaux" tabindex="-1">🏷️ 3. Partie Systémique - Mathilde Meriaux</h1>
+<h1 id="partie-iii-systemique-mathilde-meriaux" tabindex="-1">🏷️ Partie III: Systémique - Mathilde Meriaux</h1>
 <p>📅 <strong>15 Avril 2026</strong> - Cours 1 - Mathilde Meriaux</p>
 <p>Idee de complexifier la pensée avec les différents theories, pas se réduire à l'une.<br>
 Examen VF.</p>
@@ -499,9 +718,33 @@ Pratiques cliniques en institution
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#1-partie-psychanalyse-p-fouchet">🏷️ 1. Partie Psychanalyse - P. Fouchet</a>
+<li><a href="#partie-i-psychanalyse-lacanienne-philippe-fouchet">🏷️ Partie I: Psychanalyse Lacanienne - Philippe Fouchet</a>
+<ol>
+<li><a href="#critique-de-la-position-normative">Critique de la position normative</a>
 </li>
-<li><a href="#2-partie-therapies-cognitivo-comportementales-de-3eme-vague-ilios-kotsou">🏷️ 2. Partie Thérapies cognitivo-comportementales de 3ème vague - Ilios Kotsou</a>
+<li><a href="#temoignages-illustration-de-mettre-la-parole-au-centre">Témoignages: illustration de mettre la parole au centre</a>
+</li>
+<li><a href="#les-grands-axes-et-focalisations-du-cours">Les grands axes et focalisations du cours</a>
+</li>
+<li><a href="#l-insulte-comme-assignation-et-le-retournement-du-sujet">L'insulte comme assignation et le retournement du sujet</a>
+</li>
+<li><a href="#la-fonction-de-l-objet-dans-la-pratique-clinique">La fonction de l'objet dans la pratique clinique</a>
+</li>
+<li><a href="#le-traitement-de-l-emballement-s-adresser-a-l-objet">Le traitement de l'emballement : s'adresser à l'objet</a>
+</li>
+<li><a href="#la-clinique-hors-les-murs-se-salir-les-mains">La clinique hors les murs : se salir les mains</a>
+</li>
+<li><a href="#la-dimension-juridique-et-le-travail-en-equipe">La dimension juridique et le travail en équipe</a>
+</li>
+<li><a href="#responsabilite-subjective-vs-responsabilite-individuelle">Responsabilité subjective vs Responsabilité individuelle</a>
+<ol>
+<li><a href="#points-cles-pour-l-examen-vrai-faux">Points clés pour l'examen (Vrai/Faux) :</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#partie-ii-therapies-cognitivo-comportementales-3eme-vague-ilios-kotsou">🏷️ Partie II: Thérapies cognitivo-comportementales (3ème vague) - Ilios Kotsou</a>
 <ol>
 <li><a href="#intro-3eme-vague-tcc-therapies-contextuelles">Intro: 3ème vague TCC / thérapies contextuelles</a>
 </li>
@@ -515,7 +758,7 @@ Pratiques cliniques en institution
 </li>
 </ol>
 </li>
-<li><a href="#3-partie-systemique-mathilde-meriaux">🏷️ 3. Partie Systémique - Mathilde Meriaux</a>
+<li><a href="#partie-iii-systemique-mathilde-meriaux">🏷️ Partie III: Systémique - Mathilde Meriaux</a>
 <ol>
 <li><a href="#i-introduction">I. Introduction</a>
 <ol>

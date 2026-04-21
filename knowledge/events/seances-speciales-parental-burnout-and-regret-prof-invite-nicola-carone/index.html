@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<title>Home</title>
+<title>Parental burnout and regret</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script type="importmap">
@@ -82,43 +82,241 @@
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-04-21T10:28:28.896Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
 <main class="content cm-s-obsidian print">
 <header>
-<h1>Home</h1>
+<h1 data-note-icon="">Parental burnout and regret</h1>
 <div class="header-meta">
-</div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-04-18T09:14:39.629+02:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-04-18T15:41:57.381+02:00"></span></div></div></div>
 </header>
-<p><strong>Cours obligatoires</strong>:</p>
+<p>📅 <strong>18 Avril 2026</strong> - Cours 1</p>
+<h1 id="psychology-and-psychopathology-of-family-bonds-parental-burnout" tabindex="-1">Psychology and psychopathology of family bonds: Parental burnout</h1>
+<p>Lecture overview:<br>
+- Definitions<br>
+- BR2 framework<br>
+- Assessment tools and cutoff<br>
+- Antecedentes<br>
+- Correlates<br>
+- Evidence<br>
+- Treatment and prevention<br>
+- specific contexts and vulnerable populations (Eco anxiety, same-gender parents, parents of children with disabilities or chronic illness, single parents)</p>
+<h2 id="definitions" tabindex="-1">Definitions</h2>
+<p><em>Parental Burnout: What is it, and why does it matter (Mikolajczak, Gross, Roskam)</em> 2018</p>
+<p>Clinical syndrome.</p>
+<p>Stress chronique. Degré de stress est normal chronique comme condition.<br>
+Existait assomption implicite que le stress occupational (au travail) provoquait le burnout parental. Mais recherche a montre que faible correlation entre les deux.</p>
+<p>Symptoms, core-features:</p>
 <ol>
-<li><a class="internal-link" target="" data-note-icon="" href="/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/">2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental</a> (Duret, Fouchet, Thonon)</li>
-<li><a class="internal-link" target="" data-note-icon="" href="/knowledge/events/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/">2026 - PSYC-E 5013 - Questions spéciales et séminaire d'études de cas cliniques</a> (Alain Vanoeteren)
+<li><strong>Overwhelming exhaustion</strong>: related with the parental role, not general fatigue</li>
+<li><strong>Saturation</strong>: loss of fulfillment in the parental role</li>
+<li><strong>Emotional distancing</strong>: caregiving becomes mechanical (similar with depressed parents)</li>
+<li><strong>Contrast with previous self</strong> (parent I am vs parent I want to be or was)</li>
+</ol>
+<p>Differential diagnosis:</p>
 <ul>
-<li><a class="internal-link" target="" data-note-icon="" href="/knowledge/events/seances-speciales-parental-burnout-and-regret-prof-invite-nicola-carone/">Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone</a></li>
+<li><strong>Parenting stress</strong> (transient, no role abandonment or exhaustion)</li>
+<li><strong>Occupational burnout</strong> (work-specific, does not predict neglect/violence toward children)</li>
+<li><strong>Depression</strong> (pervasive across all life domains)</li>
+<li><strong>Postpartum depression</strong> (time-limited, hormonally linked)</li>
+<li><strong>General exhaustion</strong> (does not include contrast with previous self and emotional distancing)<br>
+No cut-off/set duration of symptoms for diagnosis (not disorder recognized in diagnostic manuals, it's a &quot;parental&quot; disorder. Current tools assess for presence over the last x weeks. Little longitudinal evidence).</li>
+</ul>
+<p>Question du réseau de soutien, implication de famille et grand-parents dans le caregiving:</p>
+<ul>
+<li>some evidence from cross-cultural research that it's more common in individualistic countries: culture can make a difference (the way parenting is defined..)</li>
+<li>social support is one of the protective factors, but it's not the only factor</li>
+<li>Parental burnout is related to past childhood experiences</li>
+<li>Question of feeling legitimate to ask for help, why don't some of us ask for that help? Question du style d'attachment (internal working model as self-sufficient)...</li>
+</ul>
+<p><strong>Why parenting is a burnout-prone activity</strong><br>
+Bornstein 2020.<br>
+Paradox of parenting, ambivalence of being happy of being a parent (joy, positive emotions, meaning...) and feeling that it's too much sometimes.</p>
+<ul>
+<li>Deep meaning to live (ONS-UK, 2012)</li>
+<li>Parenting demands are non-negotiable and continuous (unlike work, one cannot resign from parenthood)</li>
+<li>Parenting involves emotional labor</li>
+<li>...</li>
+</ul>
+<p><strong>History of research</strong><br>
+<em>Contrast with previous self</em> is a dimension added later, identified in interviews. The most theoretically important addition (I'm not proud of who I am as a parent, I'm ashamed of the parent that I've become, I don't think I am a good father...)</p>
+<ul>
+<li>This dimension distinguishes <strong>parents who are exhausted and changed</strong> from <strong>parents who have always been dismissive or disengaged</strong>.</li>
+</ul>
+<p>Any period more taxing than another? Not many longitudinal studies. Some cross-sectional evidence:</p>
+<ul>
+<li>0-6 months: high demands/parental workload and parents still inexperienced, learning to be parents.</li>
+<li>But adolescence crucial period as well.</li>
+</ul>
+<h2 id="the-balance-between-risks-and-resources-br-2-theory" tabindex="-1">The Balance between Risks and resources (BR2) theory</h2>
+<p>BR2 model: Parental burnout develops when parental resources are <strong>chronically</strong> insufficient to meet parenting demands (Mikolajczak &amp; Roskam, 2018).</p>
+<p>Resources --------- Demand/Risks<br>
+▲</p>
+<p>Demands / Risks factors:</p>
+<ul>
+<li>Parental perfectionism</li>
+<li>Low emotional intelligence</li>
+<li>Poor childrearing practices (parenting style, knowing concretely what to do, how to take care of the child... knowledge of parental practices)</li>
+<li>Excessive parental duties and chores</li>
+<li>Lack of co-parent support</li>
+<li>Absence of external support</li>
+<li>High parental standards</li>
+</ul>
+<p>Resources / protection factors:</p>
+<ul>
+<li>Parental self-compassion</li>
+<li>High-emotional intelligence</li>
+<li>Good childrearing practices</li>
+<li>Time fo leisure and rest</li>
+<li>Positive coparenting relationship</li>
+<li>External social support</li>
+<li>Adequate financial resources</li>
+</ul>
+<div class="callout" data-callout="note"><div class="callout-title"><div class="callout-title-inner">Note</div></div>
+<div class="callout-content">
+<p>
+Absence of a risk =/ presence of the equivalent resource</p>
+</div></div>
+<p><strong>The temporal unfolding of parental burnout</strong></p>
+<p>Why does emotional distance predict maintenance of burnout?</p>
+<h2 id="assessment-tools" tabindex="-1">Assessment tools</h2>
+<p>PBI: Parental Burnout Inventory (instrument adapted from occupational burnout)<br>
+ZBI</p>
+<h2 id="elena-s-clinical-case" tabindex="-1">Elena's clinical case</h2>
+<p>&quot;I no longer recognize the mother I have become&quot;<br>
+38 years old high-school teacher, working full time.<br>
+Two children: Ginevra 7 and Samuel 3.<br>
+Goes to GP for general fatigue, insomnia.</p>
+<p>Feels dread in the morning (not fatigue), &quot;I cannot do this again today&quot;.<br>
+Escape ideation (not suicidal here - wants to disappear for a week)</p>
+<p>BR2 analysis:</p>
+<ul>
+<li><strong>Risk contributors</strong> (high parenting standards and perfectionism, absence of perceived partner support, excessive parenting load an time scarcity, expressive emotional suppression, internalized intensive parenting ideology...)</li>
+<li><strong>Resources</strong>: vocational competence, friendship network (available but infrequently activated), cognitive reappraisal capacity (present but underutilized) (these three can be goals of intervention)</li>
+</ul>
+<h2 id="antecedents-etiology-risk-factors-and-vulnerabilities" tabindex="-1">Antecedents: etiology, risk factors, and vulnerabilities</h2>
+<p>Antecedents that are common for job and parental burnout, and specific antecedents to only parental.</p>
+<ul>
+<li>Specific: high parental standards, poor parenting, poor coparenting, disagreements, parental load</li>
+<li><strong>Psychological risk factors</strong>: <strong>neuroticism</strong> (causes being more reactive to parenting stressors and are less able to regulate negative affect), <strong>perfectionism</strong>, <strong>expressive suppression</strong> (attempting to conceal or inhibit expression), <strong>rumination</strong> (abstract, repetititive, abstract thinking about negative states).</li>
+<li>Parenting-specific and family risk factors:
+<ul>
+<li>coparenting disagreement</li>
+<li>family disorganisation: noise, crowding, home disorder (CHAOS scale)</li>
+<li>parental load: high demands, and insufficient time</li>
+<li>child with special needs</li>
+<li>young children (&lt;5yo) in the home</li>
 </ul>
 </li>
-<li><a class="internal-link" target="" data-note-icon="" href="/knowledge/events/2026-psyc-e-421-questions-approfondies-de-psychopathologie/">2026 - PSYC-E 421 - Questions approfondies de psychopathologie</a> (Fouchet, Kotsou, Meriaux)</li>
-</ol>
-<p><strong>Cours à option</strong>:</p>
-<ol>
-<li><a class="internal-link" target="" data-note-icon="" href="/knowledge/events/2026-psyc-e-540-approche-systemique-des-traumatismes/">2026 - PSYC-E 540 - Approche systémique des traumatismes</a> (Duret)
+<li>Sociodemographic risk factors:
 <ul>
-<li><a class="internal-link" target="" data-note-icon="" href="/knowledge/events/2026-chaire-francqui-2026-j-l-brackelaire-faire-histoire-ensemble-comment-recreer-la-socialite-apres-sa-destruction/">2026 - Chaire Francqui 2026 - J.L. Brackelaire - Faire histoire ensemble. Comment recréer la socialité après sa destruction?</a></li>
+<li>Gender (but it's mainly being the primary caregiver, not gender itself)</li>
+<li>Single-parenthood</li>
+<li>Part-time work (!): more time with child and less likely your work is fulfilling</li>
+<li>More children: modest positive association (but some studies show that it can protect)</li>
+<li>Not associated:
+<ul>
+<li>Parent's age (negligeable correlation)</li>
+<li>Educational level</li>
+<li>Single parenthood by choice (same as partnered parents in this case</li>
+<li>Family type (?)</li>
 </ul>
 </li>
-<li><a class="internal-link" target="" data-note-icon="" href="/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/">2026 - PSYC-E 509 - Évaluation critique des interventions cliniques</a> (Périchon)</li>
-<li><a class="internal-link" target="" data-note-icon="" href="/knowledge/events/2026-psyc-e-433-pratiques-cliniques-en-institution/">2026 - PSYC-E 433 - Pratiques cliniques en institution</a> (Glineur)</li>
-</ol>
+</ul>
+</li>
+</ul>
+<p>Other cultures: China: prevalence of model where the mother is the main coparent and grandmother secondary coparent, thus conflict/intergenerational trauma between the two are the most important predictors of parenting burnout there. So important in many cases to observe the larger family system.</p>
+<p><strong>Intensive parenting norms</strong></p>
+<p>Societal risk factors.<br>
+&quot;Cultural ideology&quot; that prescribes child-centered, selfless, emotionally demanding parenting, especially for mothers. Mikolajczak &amp; Roskam 2022 &quot;the cult of the child&quot;.</p>
+<h2 id="consequences" tabindex="-1">Consequences</h2>
+<p>Individually:</p>
+<ul>
+<li>Escape ideation</li>
+<li>Suicidal ideation</li>
+<li>Addictive behaviors</li>
+<li>Sleep disorders</li>
+<li>Health deterioration</li>
+</ul>
+<p>For the couple:</p>
+<ul>
+<li>Couple conflicts</li>
+</ul>
+<p>For the children:</p>
+<ul>
+<li>30% of variance in child behavior problems explained by parental burnout</li>
+</ul>
+<h2 id="cross-cultural-data-prevalence-rates-and-key-studies" tabindex="-1">Cross-cultural data, prevalence rates, and key studies</h2>
+<p>Prevalence: 5-9% parents in Western countries experience parental burnout.</p>
+<p>Bornstein 2020: Parental Burnout: The state of the science</p>
+<ul>
+<li>Strengths and limitations of the research</li>
+</ul>
+<h2 id="marco-s-clinical-case" tabindex="-1">Marco's clinical case</h2>
+<p>Single father by circumstance. 46 yo. 3yo child mild intellectual disability.<br>
+&quot;I used to be many things. Now I am only his father&quot;.<br>
+Refered by neuropsychiatrist. &quot;This is not a mental health issue. That is just a situation&quot;.</p>
+<p>Single fathers: less likely to recognize and seek help for parental burnout.</p>
+<p>His case:</p>
+<ul>
+<li>Separation, isolation, and social attrition.</li>
+<li>45 min per day not allocated to the child or paperwork.</li>
+<li>Contrast with the previous parental self: &quot;I just never have the energy {to bring him to the railway musem}. ANd when I think about going, I feel nothing. No anticipation, just the logistics of it&quot;. &quot;Before all this, I was many things. Now I am only his father. And some days I am not even sure I am that properly&quot;.</li>
+<li>Emotional distancing: &quot;He will bring me a model train he has assembled. And I will look a it and say the right things. But I am not there. I am running the protocol, not being his father.&quot;</li>
+<li>Ambiguous loss: &quot;I grieve for him sometimes. I know what a ten-year old boys life could be and his life is not that. And then I feel guilty for grieving. And then I feel guilty for feeling guilty&quot;.</li>
+</ul>
+<p>Intervention:</p>
+<ul>
+<li>Legitimize the suffering</li>
+<li>Psycho-education: but not enough</li>
+</ul>
+<p>📅 <strong>9 Mai 2026</strong> - Cours 2</p>
 </main>
 <aside>
 <div class="sidebar">
 <div class="sidebar-container">
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+Parental burnout and regret
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#psychology-and-psychopathology-of-family-bonds-parental-burnout">Psychology and psychopathology of family bonds: Parental burnout</a>
+<ol>
+<li><a href="#definitions">Definitions</a>
+</li>
+<li><a href="#the-balance-between-risks-and-resources-br-2-theory">The Balance between Risks and resources (BR2) theory</a>
+</li>
+<li><a href="#assessment-tools">Assessment tools</a>
+</li>
+<li><a href="#elena-s-clinical-case">Elena's clinical case</a>
+</li>
+<li><a href="#antecedents-etiology-risk-factors-and-vulnerabilities">Antecedents: etiology, risk factors, and vulnerabilities</a>
+</li>
+<li><a href="#consequences">Consequences</a>
+</li>
+<li><a href="#cross-cultural-data-prevalence-rates-and-key-studies">Cross-cultural data, prevalence rates, and key studies</a>
+</li>
+<li><a href="#marco-s-clinical-case">Marco's clinical case</a>
+</li>
+</ol>
+</li>
+</ol>
+</nav>
+</div>
+</div>
+<script>!function(){const t=document.querySelectorAll('.toc-container a[href^="#"]');if(!t.length)return;const e=Array.from(t).map((t=>{const e=decodeURIComponent(t.getAttribute("href").slice(1));return{link:t,target:document.getElementById(e)}})).filter((t=>t.target));function n(){let n=e[0];for(const t of e)t.target.getBoundingClientRect().top<=100&&(n=t);t.forEach((t=>t.classList.remove("toc-active"))),n&&n.link.classList.add("toc-active")}window.addEventListener("scroll",n,{passive:!0}),n()}()</script>
 <div class="backlinks">
 <div class="backlink-title">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card">
-<span class="no-backlinks-message">No other pages mentions this page</span>
+<div class="backlink-list"><div class="backlink-card"><i data-lucide="link"></i><a href="/" data-note-icon="" class="backlink">Home</a>
+</div><div class="backlink-card"><i data-lucide="link"></i><a href="/knowledge/events/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/" data-note-icon="" class="backlink">Questions spéciales et séminaire d&#39;études de cas cliniques</a>
 </div></div>
 </div>
 </div>
 </div>
 </aside>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
 <script defer="defer" src="https://unpkg.com/lucide@latest"></script>
 <script defer="defer">document.addEventListener("DOMContentLoaded",(()=>{lucide.createIcons({attrs:{class:["svg-icon"]}})}))</script>
 <script>document.addEventListener("DOMContentLoaded",(function(){document.querySelectorAll(".obsidian-bases-views").forEach((function(e){var t=e.querySelector(".obsidian-bases-active-view"),a=e.querySelector(".obsidian-bases-dropdown"),i=e.querySelectorAll(".obsidian-bases-dropdown-item"),n=e.querySelectorAll(".obsidian-bases-view-panel"),o=e.querySelector(".obsidian-bases-active-view-name"),r=e.querySelector(".obsidian-bases-count-value");t&&a&&(t.addEventListener("click",(function(e){e.stopPropagation();var i="none"!==a.style.display;a.style.display=i?"none":"block",t.setAttribute("aria-expanded",!i)})),document.addEventListener("click",(function(){a.style.display="none",t.setAttribute("aria-expanded","false")})),i.forEach((function(s){s.addEventListener("click",(function(s){s.stopPropagation();var d=this.getAttribute("data-view-index");i.forEach((function(e){e.classList.remove("active")})),this.classList.add("active"),n.forEach((function(e){e.style.display="none"}));var l=e.querySelector('.obsidian-bases-view-panel[data-view-index="'+d+'"]');l&&(l.style.display="block");var c=this.querySelector(".obsidian-bases-view-icon"),u=t.querySelector(".obsidian-bases-view-icon");if(c&&u&&u.replaceWith(c.cloneNode(!0)),o&&(o.textContent=this.textContent.trim()),r&&l){var b=l.querySelectorAll("tbody tr:not(.obsidian-base-group-row), .obsidian-base-card, .obsidian-base-list li");r.textContent=b.length}a.style.display="none",t.setAttribute("aria-expanded","false")}))})))})),document.querySelectorAll(".bases-dynamic-date").forEach((function(e){var t=e.getAttribute("data-type"),a=new Date;if("today"===t){var i=a.getFullYear(),n=String(a.getMonth()+1).padStart(2,"0"),o=String(a.getDate()).padStart(2,"0");e.textContent=i+"-"+n+"-"+o}else if("now"===t){i=a.getFullYear(),n=String(a.getMonth()+1).padStart(2,"0"),o=String(a.getDate()).padStart(2,"0");var r=String(a.getHours()).padStart(2,"0"),s=String(a.getMinutes()).padStart(2,"0");e.textContent=i+"-"+n+"-"+o+" "+r+":"+s}}))}))</script>
