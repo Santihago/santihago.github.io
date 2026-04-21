@@ -1,16 +1,16 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"2026-03-04T17:27:33.190+01:00","updated":"2026-04-18T15:40:53.098+02:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"2026-03-04T17:27:33.190+01:00","updated":"2026-04-18T15:52:23.506+02:00"}
 ---
 
 **Cours obligatoires**:
 1. [[knowledge/events/2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental\|2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental]] (Duret, Fouchet, Thonon)
 2. [[knowledge/events/2026 - PSYC-E 5013 - Questions spéciales et séminaire d'études de cas cliniques\|2026 - PSYC-E 5013 - Questions spéciales et séminaire d'études de cas cliniques]] (Alain Vanoeteren)
-	- [[Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone\|Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone]]
+	- [[knowledge/events/Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone\|Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone]]
 3. [[knowledge/events/2026 - PSYC-E 421 - Questions approfondies de psychopathologie\|2026 - PSYC-E 421 - Questions approfondies de psychopathologie]] (Fouchet, Kotsou, Meriaux)
 
 **Cours à option**:
 1. [[knowledge/events/2026 - PSYC-E 540 - Approche systémique des traumatismes\|2026 - PSYC-E 540 - Approche systémique des traumatismes]] (Duret)
-	- [[Chaire Francqui 2026 - J.L. Brackelaire - Faire histoire ensemble. Comment recréer la socialité après sa destruction?\|Chaire Francqui 2026 - J.L. Brackelaire - Faire histoire ensemble. Comment recréer la socialité après sa destruction?]]
+	- [[knowledge/events/2026 - Chaire Francqui 2026 - J.L. Brackelaire - Faire histoire ensemble. Comment recréer la socialité après sa destruction?\|2026 - Chaire Francqui 2026 - J.L. Brackelaire - Faire histoire ensemble. Comment recréer la socialité après sa destruction?]]
 2. [[knowledge/events/2026 - PSYC-E 509 - Évaluation critique des interventions cliniques\|2026 - PSYC-E 509 - Évaluation critique des interventions cliniques]] (Périchon)
 3. [[knowledge/events/2026 - PSYC-E 433 - Pratiques cliniques en institution\|2026 - PSYC-E 433 - Pratiques cliniques en institution]] (Glineur)
 

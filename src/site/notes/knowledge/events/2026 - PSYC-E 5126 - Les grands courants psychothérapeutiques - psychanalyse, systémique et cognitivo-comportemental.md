@@ -1,27 +1,25 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-16T17:36:41.068+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-20T16:12:20.955+02:00"}
 ---
 
-
-> [!tldr] Résumé
-> * Cognitivo-comportemental : les thérapies de la troisième vague. Prof. Benedicte Thonon
->* Systémique: théories et fondement de l'approche systémique , les différentes écoles et les pratiques qui en découlent. Prof. I. Duret
->* Psychanalyse : théories et fondements de l'approche psychanalytique. Prof. P. Fouchet
+**Structure**:
+1. [[#Partie I Systémique - Prof. Isabelle Duret]] : théories et fondement de l'approche systémique , les différentes écoles et les pratiques qui en découlent. 
+2. [[#Partie II Thérapies Cognitivo-Comportementales - B. Thonon]]: théories cognitivo-comportementales
+3. [[#Partie III Psychanalyse - Fouchet]] : théories et fondements de l'approche psychanalytique.
 
 > [!info] Évaluation
-> L' examen a lieu le même jour pour les 3 parties.
+> L' examen a lieu le 5 juin, le même jour pour les 3 parties.
 >* Pour la partie Psychanalyse (P. Fouchet) et  la partie Systémique (I. Duret) : Examen écrit à réponses fermées comprenant des VF.
->* Pour la partie  Cognitivo-Comportementale (C. Fantini-Hauwel) : examen écrit de type QCM.
+>* Pour la partie cognitivo-Comportementale (B. Thonon) : examen écrit de type QCM.
 >
 >**Construction de la note** (en ce compris, la pondération des notes partielles):
 L'évaluation comprendra 3 parties comptant pour un tiers chacune de la note finale.
 Il s'agit d'une moyenne arithmétique simple à partir des résultats obtenus pour les parties Psychanalyse, Systémique, Cognitivo-comportementale.
 L'étudiant·e devra obtenir une note minimum de 10/20 à l'examen portant sur chaque partie. Toutefois les parties réussies et donc validées, peuvent être reportées à la session suivante.
 
-# Partie Systémique - Prof. Isabelle Duret
+# Partie I: Systémique - Prof. Isabelle Duret
 
-
-> [!info] Évaluation et modalités de cours:
+> [!info] Modalités de cours et évaluation:
 > - Le cours est enregistré
 > - Pas de syllabus, le cours se compose des slides et de quelques articles
 > - **Examen**: 
@@ -587,7 +585,7 @@ Exemples de questions d'examen (Vrai/Faux):
 **Video de 42 min**: thérapie de famille Andolfi ([Closed Doors](https://www.accademiapsico.it/shop/en/product/closed-doors-a-difficult-search-for-father/))
 - Fils en consultation avec mere, et grands-parents maternels, pour: retrait, passe de longues heures seul dans sa chambre a jouer des jeux video. Pere absent en thérapie, loyauté fils envers mere est remise en question.
 
-# Partie Thérapies Cognitivo-Comportementales - B. Thonon
+# Partie II: Thérapies Cognitivo-Comportementales - B. Thonon
 
 Prof: Bénédicte Thonon (en suppléance de Carole Fantini). Nouveau cours.
 
@@ -1501,105 +1499,10 @@ Pour en savoir plus:
 - Mettre en place l’activation comportementale  https://youtu.be/3gNF10Zvyzc
 - Intégration des 3 vagues: https://www.youtube.com/watch?v=q1c2VBA0gHg
 
-# Partie Psychanalyse - Fouchet
+# Partie III: Psychanalyse - Fouchet
 
-Prof:  Fouchet.
 
-Contenu:
-- Cours magistral: 3 x 4h. Démarre à 12:15 pour s'acheter à manger.
-- Psychanalyse d'orientation lacanienne.
-
-> [!NOTE] Evaluation
-> V/F.
-
-📅 Mardi **11 Mars 2026** - Cours 1
-
-## Contre la normativité
-
-Question au centre de la clinique psychanalytique, particulièrement avec les apports de Lacan (pour clinique qui ne soit pas normative): l'invention subjective. 
-
-Invention subjective: réponse a la pensée normative dans laquelle nous nous trouvons en tant que psychologues.
-
-Années 50 ans, **Georges Canguilhem**, dans "Qu'est-ce que la psychologie?", argumente que la psychologie est essentiellement une discipline normative. Elle se préoccupe de comment il faut faire, il faut être, comment il faut se comporter, comment faire avec son corps, le corps de l'autre, avec les relations. Et le fait dans un contexte socioculturel qui lui donne une certaine importance.
-- Noter le moment d'apparition de la psychologie: au 18ème, moment de rupture: la naissance de la **médecine scientifique**. "Il y a un déséquilibre, il faut ramener un équilibre". Ce qui surgit d'abord: la neurologie. 
-- On découvre des maladies qui répondent à la logique neurologique, et d'autres qui n'y répondent pas, répondent plutôt a une logique relationnelle. Donc, sans que ce soit  possible d'isoler une cause purement organique.
-- C'est là que nait la psychologie, avec deux courants qui coexistent: 
-	1. Un courant qui vise à repérer **les causes proprement organiques**, médicales;
-	2. Un courant visant à développer des concepts, des champs théoriques, des méthodologies, des pratiques, pour tenter de saisir la logique de cette **dimension relationnelle, contextuelle, humaine**.
-
-Trois concepts-clé, discours essentiels:
-- **L'individualisme**. Qui aujourd'hui en est à son apogée (personne ne doute d'être un être libre, indépendant, autonome...). Effet important sur la manière de se penser, penser les autres, et penser les difficultés humaines. 
-	- "Si ça ne va pas, c'est à cause de nous". Les difficultés ne sont pas pensées comme collectives, mais de manière individuelle. Si ça ne va pas, c'est que "je ne suis pas un bon entrepreneur de ma propre existence". 
-		- La dépression (mal du siècle, mais qui dure presque déjà deux siècles)
-		- L'autre face: devoir se réaliser comme individu. Social devient un mot d'ordre. Avec impératifs difficiles à supporter, donc on läche.
-- **Le discours capitaliste**: qui va se marier avec le discours de la science. Les réussites de la science, que nous nous  approprions "parce que quelqu'un nous vente les mérites d'une découverte scientifique avec un tablier blanc dans un laboratoire".
-	- Au service de l'économie de marché.
-	- Important que chacune et chacun se réalise en achetant le GSM dernier-cri.
-- **Le discours religieux**: discours qui va régler ce qu'on peut faire, ne pas faire, avec qui, dans quelles conditions, quels interdits, avec quelques exceptions... Discours qui a fait tenir des institutions avec l'idée qu'elles ont toujours été là. Par exemple, l'institution du mariage.
-
-Ont amené changements (?):
-- D'une part des possibles qui n'étaient jamais envisagés auparavant ont soudainement trouvé leur place. Ont permis a diverses personnes, de diverses manières, de se construire des trajectoires singulières en dehors des autoroutes présentées comme les seules existantes.
-- Discours psychologiques se sont installés comme des discours nous disant comment faire.
-- Discours psychologiques ont aujourd'hui une place extrêmement importante. On les mobilise dès qu'il y a des évènements graves dans notre société. Ces discours nous expliquent comment il faut se réaliser, à la fois dans sa vie personnelle, dans sa sexualité, dans les différentes sphères de satisfaction de sa vie... "La psychologie devenue une religion sans dieu", devient référent.
-
-**Une clinique non-normative**, est-ce possible?
-
-Non. Mais ce n'est pas la même chose que de ne pas tenter de le faire.
-
-Quelque chose de normatif va toujours d'une certaine manière imprégner l'orientation de notre travail. Mais on peut bricoler quelques instruments qui permettent de traiter ce penchant normatif, d'ouvrir un espace, des espaces un peu plus respirables.
-
-D'abord, en tentant de se traiter nous, psychologues et futurs psychologues. En tentant une série de renversements (par ex: si j'écoute ce que me dit la personne, je vais pouvoir me forger quelques instruments qui vont me permettre de me traiter moi, de traiter la violence que je constitue envers la personne que je traite, meme si je suis habité des meilleurs intentions, ... par ex: on nous dit "d'accueillir sans juger", chose qui n'est pas possible! Mais on peut essayer de le traiter).
-
-Les notions qui seront explorées:
-- **Invention subjective**
-- **Accueil**: faire avec l'impossible, pour être moins violents
-- **Trajectoires de vie singulières**: les trajectoires ne sont pas prévisibles lorsqu'on n'est pas dans la normativité, elles se forgent dans la rencontre. La seule prévision qu'une psychanalyse est capable de faire, ce sont les previsions après coup.
-
-Pourquoi la parole est-elle si importante, qu'on a besoin de rigueur, rester attachés à ce que la personne fait/dit:
-- ?
-- Si on parle de catégories, on ne parle plus de la personne, on parle de soi, de son savoir, de ses préjugés, de son propre fantasme... 
-	- Question de quelqu'un: l'existence de structures psychotiques/névrotiques qui prédiraient la trajectoire de la décompensation (métaphore du crystal) ne va pas a l'encontre de ce qui vient d'être dit? Fouchet: Par rapport à ça, Lacan vient opérer une rupture. Hypothèse centrale de cette orientation: nous ne disposons pas d'un mode d'emploi commun a tous les membres de l'espèce humaine qui nous dirait comment faire avec les choses centrales de l'existence (le corps, le corps de l'autre). Et que c'est cette place vide qui laisse place au plus grand dérèglement.
-
-## Témoignages: parole au centre
-
-**Témoignage** 1
-- Lecture d'extrait de "Si on me touche, je n'existe plus" de [Donna Williams](Donna Williams).
-- Notre but en lisant est de réfléchir à ce qu'il se passe pour cette personne à partir de ce qu'elle écrit. Commentaires avant la lecture:
-
-- Logique de l'après-coup: c'est écrit a posteriori, inclut des choses dont elle n'aurait pas pu parler sur le moment.
-- Usage fréquent de l'ironie.
-- Donna Williams a reçu des diagnostics. Important ici de s'intéresser a **ce qu'elle en fait, de ses diagnostiques**. Dans cette orientation, on se focalise sur ce qui nous concerne tous, le pari de l'invention quelques soient les troubles dont seraient atteints les patients. On ne s'intéresse pas à la cause du trouble, mais plutôt quelle place ça a dans l'existence du sujet de se considérer comme habitant le trouble. Non pas "quelle est la cause du trouble", mais "quelle est la cause du sujet?" (important!).
-	- L'une des fonctions que porte l'invention subjective: **séparation**, coupure, ou des divers équivalents de separation. La séparation d'avec l'autre, qui va permettre que nos circuits pulsionnels, nos investissements du monde, notre style propre, se déploie dans des espaces marqués par une aliénation fondamentale dont on n'échappe pas. Séparation. Extraction. Ca se passe de maniere singulière pour tout sujet - il y a mille et une façons pour cette séparation de s'opérer.
-- Le texte: (Commentaires autour du texte, pas trop suivi: motifs du papier peint, rythmique produite sur son corps, effet hypnotisant, "Parole devient du bruit, annule les signes de la présence de l'autre", "la place d'objet pour l'autre"). 
-	- A revoir audio ou autres notes.
-
-Invention subjective = dégager des logiques.
-- Consommation
-- Passage a l'acte et architecture des centres.
-
-Personnes autour d'elle comme objets:
-- Elle dit en quelque sorte: "pour peu qu'on sache etre la comme un objet dont je me sers, ca peut marcher" 
-	- -> dans le travail clinique, se joue la capacité a se preter comme objet que le sujet peut utiliser (pas se laisser faire, ou dire oui a tout... mais une attention a la maniere dont le sujet peut faire usage de ce qu'on va lui proposer). Pour elle ca permet une co-presence, une instauration de rituels... quelque chose qui balise, construit le monde pour elle, ainsi que les conditions de pratiquabilité.
-Invention -> Willy: 
-- c'est elle et c'est pas elle. Elle décrit que Willy devint son incarnation extérieure, son "preposé aux affaires étrangères". Qui va amener un stop de son entourage. Ce stop on est amené a le formuler dans notre clinique. Mais on ne le fait pas de maniere adressée a l'individu, "donna faut que t'arrêtes", c'est adressé a ce qui dans la dynamique s'emballe.
-	- Exemple enfant qui court vers le frigo quand la porte s'ouvre. Solution non pas de dire "non tu ne peux pas", c'est de s'adresser au frigo "ca ne va, c'est pas l'heure du repas, tu ne peux pas t'ouvrir c'est pas l'heure" -> effet de surprise, cree un décalage qui fait surgir au moins un étonnement. Classiquement dans les instituions des modalités permettant qu'on s'applique aux choses qu'on formule. Ou un principe general: "il faut qu'on sorte de la piece parce que c'est l'heure de l'activité" au lieu de "tu dois sortir!
-Parenthèse qu'elle fait elle meme. "Mais qui est responsable de tout ca?"
-- Une position éthique tres claire qu'elle tient: (?).
-Elle découvre l'univers de l'ordre et du classement.
-
-Dans cette orientation: il n'y a **rien d'autre que des réponses**.
-
-Elle va étudier la linguistique. Prendre le langage comme un objet. Le monter-démonter, saisir les logiques.
-Travail dans un magasin: cool sauf les gens, rayons d'objets a ranger et classer, et le cote vibrant des objets. Faire de sons symptôme un metier. Les couleurs, tailles, articles à regrouper par catégories. Chaque rayon devait être separé des autres. 
-	-> Un monde qui accueille son invention, ses manieres de s'engager dans le monde.
-	- Mais, les autres.
-
-Acte de prescription de medicament par une psychiatre. De la, la patiente conclut un diagnostic de la schizophrénie. Elle le prend comme une pire offense. Elle coupe tout lien.
-- Nomination, assignation de la part de la psychiatre. Conclusion de Donna: elle pense que je suis schizophrène. La place d'être folle.
-
-{...}
-
-📅 Jeudi **2 Avril 2026** - Cours 2
+📅 Jeudi **2 Avril 2026** - Cours 1!
 
 Cours prochain elle invitera Suzanne Wolff et une autre intervenante (Intensive Short-Term Dynamic Psychotherapy - ISTDP). Démarche différente de celle du prof, il se demande donc pourquoi rester attaché a la psychanalyse si c'est ça le projet (thérapie brève)? Mais répond à une des critiques que l'on fait a la psychanalyse (la longueur, et l'absence de promesse de guérison (seulement un engagement à être là).
 

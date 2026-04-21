@@ -9,7 +9,7 @@
 >**Séminaire du groupe 14**: Histoire et actualité de la prise en compte de la dimension interculturelle en psychologie clinique. Illustration par l'étude de cas tirés de la pratique clinique du Service de Santé Mentale Ulysse qui reçoit des personnes exilées, dont beaucoup de demandeurs d'asile. L'attention est attirée sur le fait qu'il ne s'agit pas d'un séminaire d'ethnopsychatrie. Cette conception de la clinique interculturelle est analysée parmi d'autre dans le séminaire, mais n'est pas celle privilégiée dans la pratique du centre Ulysse.
 >as
 >
->Séances spéciales obligatoires: [[Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone\|Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone]]
+>Séances spéciales obligatoires: [[knowledge/events/Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone\|Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone]]
 
 > [!info] Évaluation
 > Rapport écrit (et présence obligatoire au séminaire pour que l’UE puisse être validée). Trois types de rapport possibles:
