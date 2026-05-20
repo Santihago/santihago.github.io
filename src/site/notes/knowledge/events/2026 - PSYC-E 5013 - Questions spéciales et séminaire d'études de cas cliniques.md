@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","title":"Questions spéciales et séminaire d'études de cas cliniques","tags":["psychology","clinical","ulb","intercultural"],"created":"2026-03-04T17:27:33.113+01:00","updated":"2026-04-18T09:18:38.909+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","title":"Questions spéciales et séminaire d'études de cas cliniques","tags":["psychology","clinical","ulb","intercultural"],"created":"2026-03-04T17:27:33.113+01:00","updated":"2026-05-09T09:46:41.168+02:00"}
 ---
 
 
@@ -9,7 +9,7 @@
 >**Séminaire du groupe 14**: Histoire et actualité de la prise en compte de la dimension interculturelle en psychologie clinique. Illustration par l'étude de cas tirés de la pratique clinique du Service de Santé Mentale Ulysse qui reçoit des personnes exilées, dont beaucoup de demandeurs d'asile. L'attention est attirée sur le fait qu'il ne s'agit pas d'un séminaire d'ethnopsychatrie. Cette conception de la clinique interculturelle est analysée parmi d'autre dans le séminaire, mais n'est pas celle privilégiée dans la pratique du centre Ulysse.
 >as
 >
->Séances spéciales obligatoires: [[knowledge/events/Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone\|Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone]]
+>Séances spéciales obligatoires: [[knowledge/events/2026 - Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone\|2026 - Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone]]
 
 > [!info] Évaluation
 > Rapport écrit (et présence obligatoire au séminaire pour que l’UE puisse être validée). Trois types de rapport possibles:

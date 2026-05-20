@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-20T16:12:20.955+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-04-21T17:24:59.719+02:00"}
 ---
 
 **Structure**:
@@ -1502,7 +1502,13 @@ Pour en savoir plus:
 # Partie III: Psychanalyse - Fouchet
 
 
-📅 Jeudi **2 Avril 2026** - Cours 1!
+📅 Jeudi **13 Mars 2026** - Cours 1 apparemment?
+
+
+📅  Jeudi **20 Mars** 2026 - Cours 2 apparemment?
+
+
+📅 Jeudi **2 Avril 2026** - Cours 3?
 
 Cours prochain elle invitera Suzanne Wolff et une autre intervenante (Intensive Short-Term Dynamic Psychotherapy - ISTDP). Démarche différente de celle du prof, il se demande donc pourquoi rester attaché a la psychanalyse si c'est ça le projet (thérapie brève)? Mais répond à une des critiques que l'on fait a la psychanalyse (la longueur, et l'absence de promesse de guérison (seulement un engagement à être là).
 
@@ -1528,7 +1534,7 @@ La ponctuation ("entendez vous ce que vous dites?", ce cet ordre là).
 
 {...}
 
-📅 Jeudi **9 Avril 2026** - Cours 3
+📅 Jeudi **9 Avril 2026** - Cours 4
 
 Invités/intervenants:
 - Suzanne Wolff
@@ -1562,7 +1568,7 @@ Q Fouchet:
 - comment dire qu'on travaille l'inconscient sans faire un travail avec l'inconscient (lapsus, rêves, etc), et sans se baser sur le transfert, la base de la psychanalyse?
 - Suzanne-Wolff: psychanalyse victime de son succès, du fait que son langage est passé dans le discours courant. Donc ce travail, construction, est moins efficace en thérapie, car les gens y ont déjà été exposés.
 
-📅 Jeudi **16 Avril 2026** - Cours 4
+📅 Jeudi **16 Avril 2026** - Cours 5
 
 Critique de ce qui a été présenté au cours précédent:
 - Absence de dimension centrale vue en cours: la contingence.
@@ -1597,5 +1603,5 @@ Question sur les "présentations de malade" (docu A Ciel Ouvert): cf https://www
 - lorsque malade vient parler de son parcours/maladie? comme expert de sa maladie?
 - se fait de moins en mons
 
-La psychanalyse n'set pas possible sans le corps (débat) :
+La psychanalyse n'est pas possible sans le corps (débat) :
 - car nous sommes que des corps affectés par le langage

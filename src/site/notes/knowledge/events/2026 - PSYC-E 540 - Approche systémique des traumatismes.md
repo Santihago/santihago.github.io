@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-03-04T17:27:33.118+01:00","updated":"2026-04-18T15:40:31.845+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-03-04T17:27:33.118+01:00","updated":"2026-05-17T23:00:14.371+02:00"}
 ---
 
 
@@ -23,7 +23,7 @@ Les deux cours (celui de I. Duret et celui de J-L Brackelaire) seront enregistr�
 > [!tip] Lectures
 >  **Lectures obligatoires:**
 >* DURET, I. (2025) La peur de transmettre: filiation et traumatisme. Eres, Toulouse.
->* NEUBURGER R. (2005) Les familles qui ont la tête à l'envers. Revivre après un traumatisme familial. Odile Jacob. (peut-être pas l'entièreté du livre)
+>* NEUBURGER R. (2005) Les familles qui ont la tête à l'envers. Revivre après un traumatisme familial. Odile Jacob. [[Neuburger - Les familles qui ont la tête à l'envers\|Neuburger - Les familles qui ont la tête à l'envers]]
 >
 > **Lectures recommandées:**
 >* ANDOLFI M. (2018) La thérapie familiale multigénérationnelle. Outils et ressources pour le thérapeute. De Boeck   

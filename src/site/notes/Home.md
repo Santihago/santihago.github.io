@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"2026-03-04T17:27:33.190+01:00","updated":"2026-04-18T15:52:23.506+02:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"created":"2026-03-04T17:27:33.190+01:00","updated":"2026-05-09T09:46:41.156+02:00"}
 ---
 
 **Cours obligatoires**:
 1. [[knowledge/events/2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental\|2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental]] (Duret, Fouchet, Thonon)
 2. [[knowledge/events/2026 - PSYC-E 5013 - Questions spéciales et séminaire d'études de cas cliniques\|2026 - PSYC-E 5013 - Questions spéciales et séminaire d'études de cas cliniques]] (Alain Vanoeteren)
-	- [[knowledge/events/Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone\|Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone]]
+	- [[knowledge/events/2026 - Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone\|2026 - Séances spéciales - Parental burnout and regret - Prof invité Nicola Carone]]
 3. [[knowledge/events/2026 - PSYC-E 421 - Questions approfondies de psychopathologie\|2026 - PSYC-E 421 - Questions approfondies de psychopathologie]] (Fouchet, Kotsou, Meriaux)
 
 **Cours à option**:
