@@ -79,12 +79,12 @@
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-04-21T10:28:58.533Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-05-20T09:14:16.709Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
 <main class="content cm-s-obsidian print">
 <header>
 <h1 data-note-icon="">Pratiques cliniques en institution</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-17T01:10:22.503+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-04-21T12:27:36.599+02:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-17T01:10:22.503+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-05-20T11:13:19.747+02:00"></span></div></div></div>
 </header>
 <p><strong>Structure</strong>:</p>
 <ol>
@@ -96,10 +96,10 @@
 <div class="callout-content">
 <p>
 </p><ul>
-<li><strong>Partie Fouchet</strong>: VF?</li>
+<li><strong>Partie Fouchet</strong>: VF</li>
 <li><strong>Partie Kotsou</strong> (ACT): ce sera un QCM (4 réponses possibles). Il donnera des exemples.<br>
 Il enverra supports: articles scientifiques. Aussi un examen blanc. Pas de pièges, ce sera facile, il dit. Peut être fera QCM avec des cas cliniques (mais sans pièges non plus). Par exemple, dans les réponses, une proposition parle d'évitement, et une autre qui ressemble à de l'acceptation... ce sera très clair. Exemple: psychopathologie fonctionnelle vs catégorielle?</li>
-<li><strong>Partie Meriaux</strong> (systémique): ?</li>
+<li><strong>Partie Meriaux</strong> (systémique): VF</li>
 </ul>
 <p></p></div></div>
 <h1 id="partie-i-psychanalyse-lacanienne-philippe-fouchet" tabindex="-1">🏷️ Partie I: Psychanalyse Lacanienne - Philippe Fouchet</h1>
@@ -124,12 +124,15 @@ Il enverra supports: articles scientifiques. Aussi un examen blanc. Pas de pièg
 </ul>
 <p></p></div></div>
 <h2 id="critique-de-la-position-normative" tabindex="-1">Critique de la position normative</h2>
-<p>La normativité, est une question au centre de la clinique psychanalytique, particulièrement avec les apports de Lacan (prônant une clinique qui ne soit pas normative): <strong>l'invention subjective</strong>.</p>
-<p>Invention subjective: réponse a la pensée normative dans laquelle nous nous trouvons en tant que psychologues.</p>
-<p>Années 50 ans, <strong>Georges Canguilhem</strong>, dans &quot;Qu'est-ce que la psychologie?&quot;, argumente que la psychologie est essentiellement une discipline normative. Elle se préoccupe de comment il faut faire, il faut être, comment il faut se comporter, comment faire avec son corps, le corps de l'autre, avec les relations.... Et le fait dans un contexte socioculturel qui lui donne une certaine importance. Métaphore de la rue Saint-Jacques: « Quand on sort de la Sorbonne par la rue Saint-Jacques, on peut monter ou descendre ; si l’on va en montant, on se rapproche du Panthéon qui est le Conservatoire de quelques grands hommes, mais si l’on va en descendant, on se dirige sûrement vers la Préfecture de Police. » Pour Canguilhem, la psychologie a tendance à « descendre la rue » vers le commissariat. Elle devient un outil de contrôle social et de normalisation du comportement plutôt qu'un outil de compréhension de l'esprit.</p>
+<p>La normativité est une question au centre de la clinique psychanalytique, particulièrement avec les apports de Lacan (prônant une clinique qui ne soit pas normative): <strong>l'invention subjective</strong>.</p>
+<ul>
+<li>Invention subjective: réponse à la pensée normative dans laquelle nous nous trouvons en tant que psychologues.</li>
+</ul>
+<p>Années 50, <strong>Georges Canguilhem</strong>, dans &quot;Qu'est-ce que la psychologie?&quot;, argumente que la psychologie est essentiellement une discipline normative. Elle se préoccupe de comment il faut faire, il faut être, comment il faut se comporter, comment faire avec son corps, le corps de l'autre, avec les relations.... Et le fait dans un contexte socioculturel qui lui donne une certaine importance. Métaphore de la rue Saint-Jacques: « Quand on sort de la Sorbonne par la rue Saint-Jacques, on peut monter ou descendre ; si l’on va en montant, on se rapproche du Panthéon qui est le Conservatoire de quelques grands hommes, mais si l’on va en descendant, on se dirige sûrement vers la Préfecture de Police. » Pour Canguilhem, la psychologie a tendance à « descendre la rue » vers le commissariat. Elle devient un outil de contrôle social et de normalisation du comportement plutôt qu'un outil de compréhension de l'esprit.</p>
+<p>(j'ai du mal à saisir le concret de cette fonction de contrôle, dans ce qui se faisait ou disait concrètement à l'époque)</p>
 <p><strong>Perspective historique et ruptures</strong></p>
 <ul>
-<li>Médecine hippocratique du <strong>4ème siècle av. JC</strong>(première rationalité). La maladie est un <strong>déséquilibre</strong> entre le microcosme (corps) et le macrocosme (nature/divin). Le médecin doit restaurer cet ordre.</li>
+<li>Médecine hippocratique du <strong>4ème siècle av. JC</strong> (première rationalité). La maladie est un <strong>déséquilibre</strong> entre le microcosme (corps) et le macrocosme (nature/divin). Le médecin doit restaurer cet ordre.</li>
 <li>Naissance de la <strong>médecine scientifique</strong> au 18ème siècle, moment de rupture.
 <ul>
 <li>Ce qui surgit d'abord: la <strong>neurologie</strong>. On découvre des maladies qui répondent à la logique neurologique, et d'autres qui n'y répondent pas, répondent plutôt a une logique relationnelle. Donc, sans que ce soit possible d'isoler une cause purement organique.</li>
@@ -294,44 +297,53 @@ La fin de cet extrait montre la rupture brutale provoquée par une psychiatre qu
 </ul>
 <p></p></div></div>
 <p>📅 <strong>18 Mars 2026</strong> - Cours 2</p>
-<p>(Absent, notes IA sur base de la retranscription)</p>
-<p>Cette leçon s'inscrit dans la continuité directe du cours précédent. Elle s'ouvre d'ailleurs sur un temps d'échange et de questions-réponses concernant le fil rouge de la semaine passée : le témoignage de <strong>Donna Williams</strong>.</p>
+<p>(Absent, notes en partie d'IA sur base de la retranscription)</p>
+<p>Cette leçon s'inscrit dans la continuité directe du cours précédent, avec le témoignage de <strong>Donna Williams</strong>.</p>
 <p>Le lien s'opère autour de la conclusion du cours précédent, à savoir la violence de l'intervention psychiatrique qui pose un diagnostic de schizophrénie sur Donna Williams. À partir de ce moment de rupture où le savoir médical vient écraser l'invention de la patiente, la réflexion glisse vers le thème central de cette nouvelle séance : la logique de l'assignation et ses conséquences.</p>
+<p>Pré-questions:</p>
+<ul>
+<li>la violence du diagnostic (assignation, nomination)</li>
+<li>responsabilité (aussi cours precedent))</li>
+<li>clinicien comme objet (aussi cours precedent)</li>
+<li>clinique hors les murs, et dimension juridique</li>
+</ul>
 <h2 id="les-grands-axes-et-focalisations-du-cours" tabindex="-1">Les grands axes et focalisations du cours</h2>
 <p>Ce cours ne s'est pas tant focalisé sur la pathologie elle-même, mais sur la <strong>posture éthique, sociale et concrète du clinicien</strong>. Trois grands axes ont structuré la réflexion :</p>
 <p><strong>1. De l'assignation à la nomination</strong> L'idée centrale est de comprendre comment un discours extérieur (médical, social) vient enfermer un sujet. Le diagnostic, lorsqu'il est plaqué sans tact, relève de la logique de l'insulte : il fige l'individu et le réduit à un objet ou à un déchet. Toute la clinique consiste alors à repérer comment le sujet peut s'approprier ou détourner cette assignation pour s'inventer sa propre nomination (se nommer soi-même plutôt que d'être nommé par l'autre).</p>
 <p><strong>2. La clinique &quot;hors les murs&quot; et l'implication matérielle</strong> Il y a une critique forte d'une vision trop pure ou idéalisée de la psychologie, où le clinicien se contenterait d'écouter sagement dans son cabinet. Le cours se focalise sur l'importance du &quot;sale boulot&quot; : régler des questions de dettes, chercher un logement, faire appel à des juristes. La réalité matérielle, sociale et légale du patient n'est pas un à-côté du travail thérapeutique, elle en est le cœur. Ne pas s'en occuper, c'est abandonner le sujet.</p>
 <p><strong>3. Le glissement de la responsabilité</strong> Une distinction fondamentale est établie entre deux formes de responsabilités. D'un côté, la responsabilité individuelle, issue du discours néolibéral, qui culpabilise le sujet (&quot;si tu vas mal, c'est de ta faute, tu gères mal ta vie&quot;). De l'autre, la responsabilité subjective, qui est l'objectif clinique : amener le sujet à consentir à ses propres choix et à ses propres inventions pour rendre son monde vivable, sans le juger sur ses performances.</p>
-<h2 id="l-insulte-comme-assignation-et-le-retournement-du-sujet" tabindex="-1">L'insulte comme assignation et le retournement du sujet</h2>
+<p>--</p>
+<p><strong>L'insulte comme assignation et le retournement du sujet</strong></p>
 <p>L'insulte ne doit pas être comprise comme une simple grossièreté, mais comme une tentative de viser l'être même du sujet pour le réduire à l'état de &quot;déchet&quot;. Dans le contexte clinique, l'assignation diagnostique (par exemple appeler quelqu'un &quot;la délirante&quot;) fonctionne souvent comme une insulte car elle fige l'individu dans une catégorie dévalorisante. Cependant, certains sujets font preuve d'une invention remarquable en retournant l'insulte. En adoptant le terme utilisé contre eux (comme certains usagers de drogues s'appropriant le terme de &quot;junkie&quot;), ils transforment un stigmate en un point d'appui identitaire. Ce retournement est une forme d'invention subjective qui permet de reprendre une place de sujet là où on ne voulait voir qu'un déchet.</p>
-<h2 id="la-fonction-de-l-objet-dans-la-pratique-clinique" tabindex="-1">La fonction de l'objet dans la pratique clinique</h2>
+<p><strong>La fonction de l'objet dans la pratique clinique</strong></p>
 <p>La posture du clinicien dans cette orientation ne consiste pas à être une personne qui conseille ou qui dirige, mais à se prêter comme un &quot;objet&quot; que le sujet peut utiliser. Donna Williams explique très bien que la présence de l'autre n'est supportable que si cet autre accepte de ne pas être une présence envahissante, mais un outil permettant de baliser le monde. Se prêter comme objet demande au clinicien une grande souplesse : il s'agit d'être là sans imposer sa propre subjectivité, ses désirs ou ses jugements, pour permettre au patient de construire ses propres rituels et sa propre &quot;praticabilité&quot; du monde.</p>
-<h2 id="le-traitement-de-l-emballement-s-adresser-a-l-objet" tabindex="-1">Le traitement de l'emballement : s'adresser à l'objet</h2>
+<p><strong>Le traitement de l'emballement : s'adresser à l'objet</strong></p>
 <p>Dans les situations où la dynamique d'un patient s'emballe (passages à l'acte, obsessions), il est essentiel de trouver des interventions qui ne soient pas frontales ou violentes. L'exemple de l'enfant se précipitant vers le réfrigérateur illustre cette technique : au lieu de s'adresser à l'individu par un &quot;non&quot; autoritaire, on s'adresse à l'objet. Dire au réfrigérateur &quot;Tu ne peux pas t'ouvrir maintenant, ce n'est pas l'heure&quot; crée un décalage et une surprise. Cette modalité permet de poser une limite sans viser directement le sujet, offrant ainsi un espace où le dégonflement de la tension peut s'opérer sans conflit de pouvoir.</p>
-<h2 id="la-clinique-hors-les-murs-se-salir-les-mains" tabindex="-1">La clinique hors les murs : se salir les mains</h2>
+<p><strong>La clinique hors les murs : se salir les mains</strong></p>
 <p>La clinique ne s'arrête pas à la porte du cabinet ; elle s'occupe de la dimension sociale et de la réalité concrète du sujet. S'appuyant sur la métaphore des &quot;mains sales&quot; de Sartre, l'idée est que pour aider un sujet, il faut parfois accepter d'entrer dans les détails &quot;impurs&quot; de son existence (ses problèmes de logement, ses dettes, ses conflits juridiques). Ne pas le faire sous prétexte de pureté analytique serait une erreur. La responsabilité du clinicien est de considérer que tout ce qui fait obstacle à la vie du sujet fait partie du champ de la clinique.</p>
-<h2 id="la-dimension-juridique-et-le-travail-en-equipe" tabindex="-1">La dimension juridique et le travail en équipe</h2>
+<p><strong>La dimension juridique et le travail en équipe</strong></p>
 <p>Le clinicien n'a pas à être omniscient ou à occuper toutes les places. Au contraire, la richesse de la clinique du cas par cas réside dans la capacité à s'appuyer sur d'autres professionnels, comme des juristes ou des assistants sociaux.</p>
 <ul>
 <li><strong>L'appui juridique :</strong> Aider un patient à faire valoir ses droits n'est pas une tâche extra-clinique, c'est une manière de soutenir sa dignité et sa place de citoyen.</li>
 <li><strong>Le travail pluridisciplinaire :</strong> Reconnaître qu'on ne peut pas tout traiter seul permet de ne pas s'enfermer dans une relation duelle imaginaire. Le recours au droit ou au social permet de réintroduire un &quot;tiers&quot; (la loi, l'institution) qui aide à réguler les situations les plus complexes.</li>
 </ul>
-<h2 id="responsabilite-subjective-vs-responsabilite-individuelle" tabindex="-1">Responsabilité subjective vs Responsabilité individuelle</h2>
+<p><strong>Responsabilité subjective vs Responsabilité individuelle</strong></p>
 <p>Il existe une distinction cruciale entre la responsabilité individuelle (souvent culpabilisante dans le discours néolibéral) et la responsabilité subjective. La responsabilité subjective consiste à reconnaître le sujet comme l'auteur de sa &quot;réponse&quot; au monde, même si cette réponse est un symptôme. L'enjeu clinique est de permettre au sujet de s'approprier sa propre invention plutôt que de la subir comme une fatalité ou une maladie. On ne demande pas au patient d'être &quot;performant&quot;, mais d'être responsable de la manière dont il bricole sa propre existence pour la rendre respirable.</p>
-<hr>
-<h3 id="points-cles-pour-l-examen-vrai-faux" tabindex="-1">Points clés pour l'examen (Vrai/Faux) :</h3>
-<ul>
-<li>L'invention subjective est une réponse au vide laissé par l'absence de &quot;mode d'emploi&quot; de l'espèce humaine.</li>
-<li>L'insulte vise à réduire le sujet à un déchet, mais peut être retournée par le sujet.</li>
-<li>Le clinicien doit se prêter comme objet utilisable et non comme maître.</li>
-<li>L'adresse à l'objet (ex: le frigo) est une alternative non-violente à l'injonction directe.</li>
-<li>La dimension sociale et juridique fait partie intégrante du travail clinique.</li>
-</ul>
 <p>📅 <strong>13 Mai 2026</strong> - Cours 3</p>
+<p>Question sur témoignage de Donna Williams:</p>
+<p>voir notes d'Elsa &lt;3 &lt;O</p>
 <h1 id="partie-ii-therapies-cognitivo-comportementales-3eme-vague-ilios-kotsou" tabindex="-1">🏷️ Partie II: Thérapies cognitivo-comportementales (3ème vague) - Ilios Kotsou</h1>
-<p>-&gt; Un support écrit sera donné, &quot;pas besoin de prendre note&quot;</p>
-<p>📅 <strong>25 Mars 2026</strong> - Cours 2 - Ilios Kotsou (1)</p>
-<p>Comportement ayant lieu dans le cadre de la thérapie = comportement dans la vie réelle.<br>
+<div class="callout" data-callout="note"><div class="callout-title"><div class="callout-title-inner"> Modalités du cours et évaluation</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>Cours magistral: 3 x 4h.</li>
+<li>Un support écrit sera donné, &quot;pas besoin de prendre note&quot;</li>
+<li>Évaluation: QCM</li>
+</ul>
+<p></p></div></div>
+<p>📅 <strong>25 Mars 2026</strong> - Ilios Kotsou (Cours 1)</p>
+<p>On part du constat que le comportement ayant lieu dans le cadre de la thérapie = comportement dans la vie réelle.<br>
 Par exemple, si un comportement de séduction a lieu en thérapie, il est probablement lié à un comportement malaisant en dehors de la thérapie. Peut-on exprimer ses sentiments en thérapie? Oui, a condition que ça serve la thérapie.</p>
 <p>Réf. rasoir d'Occam. Parmi plusieurs explications possibles, choisir la plus simple. <a class="internal-link is-unresolved" href="/404" target="">Acceptance and Commitment Therapy (ACT)</a>: modèle &quot;simple et élégant&quot;de la psychopathologie. Vs. modèles plus complexes utilisant un langage que ni le thérapeute ni le patient maitrise (Cf. Lacan). ACT: permet aussi l'intégration d'autres outils parce que le modèle s'intéresse aux processus mentaux.</p>
 <p>ex Victor Hugo Les misérables. Décision du personnage de fuir ce qui est inconfortable vs aller vers ce qui est important et fait que la vie vaut la peine d'être vécue. Dilemme qui illustre l'aspect central de l'ACT.<br>
@@ -403,7 +415,7 @@ Mais souvent, la causalité est dans l'autre sens, la comprehension vient souven
 <li>Tasses de sel et lac: devient vaste comme le lac.</li>
 <li>Eriksson: inconscient comme reservoir de ressources, fond positif! (vs. psychanalyse de l'époque). Parfois avec une intention positive on bloque.</li>
 </ul>
-<p>📅 <strong>1 Avril 2026</strong> - Cours 3 - Ilios Kotsou (2)</p>
+<p>📅 <strong>1 Avril 2026</strong> - Ilios Kotsou (Cours 2)</p>
 <p>Recommandation: Watslawick. <a href="https://www.amazon.fr/Changements-Paradoxes-psychoth%C3%A9rapie-Paul-Watzlawick/dp/2757841890" target="_blank" class="external-link">Changements, paradoxes et psychopathologie</a>. (Palo Alto)</p>
 <p><strong>Processus de réification</strong> (chosification)</p>
 <p>Diagnostic, pourquoi un diagnostic fait du bien? On gagne du contrôle, permet d'agir.<br>
@@ -462,7 +474,7 @@ Mais, recherche: 6000 pensées env., et la plupart sont positives contrairement 
 <ul>
 <li>Approche fonctionnelle: dépend de la fonction, memes pensées &quot;positives&quot; peuvent être au service de l'évitement ou d'aller vers ce qui est important pour la personne.</li>
 </ul>
-<p>📅 <strong>8 Avril 2026</strong> - Cours 4 - Ilios Kotsou (3)</p>
+<p>📅 <strong>8 Avril 2026</strong> - Ilios Kotsou (Cours 3)</p>
 <p><strong>L'attention</strong></p>
 <p><a class="internal-link is-unresolved" href="/404" target="">William James</a> - Capacité à changer l'attention = ressource par excellence = détermine l'action</p>
 <p>L'attention est importante car porte d'entree aux contenus de la conscience<br>
@@ -519,19 +531,21 @@ Livres: Ericksson n'en a pas écrit. &quot;Ma voix t'accompagnera&quot; ou &quot
 Utilisation de la métaphore, des histoires. Si c'était un jardinier, il lui parlait de jardins, pas de processus techniques.</li>
 </ul>
 <h1 id="partie-iii-systemique-mathilde-meriaux" tabindex="-1">🏷️ Partie III: Systémique - Mathilde Meriaux</h1>
-<p>📅 <strong>15 Avril 2026</strong> - Cours 1 - Mathilde Meriaux</p>
-<p>Idee de complexifier la pensée avec les différents theories, pas se réduire à l'une.<br>
-Examen VF.</p>
-<p>Lectures conseillées (non obligaroires):</p>
-<ul>
-<li>Ka magie de l'enfant dans la therapie familiale (Andolfi)</li>
-<li>La competence des familles (Guy Ausloos)</li>
+<div class="callout" data-callout="note"><div class="callout-title"><div class="callout-title-inner"> Modalités du cours et évaluation</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li>Cours magistral: 3 x 4h.</li>
+<li>Examen: VF.</li>
 </ul>
-<p>Structure du cours<br>
-I. Introduction<br>
-II. La famille comme système complexe<br>
-III. Diagnostic et compétences<br>
-IV. L'enfant comme ressource thérapeutique<br>
+<p></p></div></div>
+<p>📅 <strong>15 Avril 2026</strong> - Cours 1 - Mathilde Meriaux</p>
+<p>Idée de complexifier la pensée avec les différents theories, pas se réduire à l'une.</p>
+<p><strong>Structure du cours</strong><br>
+[[#I. Introduction]]<br>
+[[#II. La famille comme système complexe]]<br>
+[[#III. Diagnostic et compétences]]<br>
+[[#IV. L'enfant comme ressource thérapeutique]]<br>
 V. L'interêt du travail en famille</p>
 <h2 id="i-introduction" tabindex="-1">I. Introduction</h2>
 <p>Idée centrale:<br>
@@ -704,7 +718,521 @@ vs les SRJ: pas de travail avec les familles, on soigne l'enfant sans la famille
 </ul>
 <h2 id="iii-diagnostic-et-competences" tabindex="-1">III. Diagnostic et compétences</h2>
 <p>📅 <strong>6 Mai 2026</strong> - Cours 2 - Mathilde Meriaux</p>
-<p>📅 <strong>13 Mai 2026</strong> - Cours 3 - Mathilde Meriaux</p>
+<h3 id="1-aller-au-dela-de-l-etiquette" tabindex="-1">1. Aller au-délà de l'étiquette</h3>
+<p>Le patient désigné: on est essentielment face à des patients dits designé/ Cest celui sur lequel repose le trouble de la famille, a qui on fait porter la symptomatologie. On peut dire que c'est la solution mieux adaptée pour la famille de garder son équilibre. Souvent parents laissent leur enfant avec l'idee: &quot;soignez le, changez le, pas nous nous&quot;, implicitement: &quot;nous on va pas bouger&quot;.<br>
+Symptôme: voyant rouge, montre dysfonctionnement, appel a l'aide... aidez nous mais sans le dire explicitement.</p>
+<p>On dira qu'enfant fait des bêtises, n'écoute pas, a un TDAH... c'est plus facile. Mais souvent, il n'y a pas qu'un seul problème dans un système familial.</p>
+<p>Exemple de fit hospitalisée qui dit: de toute façon dans ma famille, tout le monde a un problème.</p>
+<p>Extrait video: Little Miss Sunshine (scène repas)<br>
+Ce serait surement Dwayne le patient désigné, meme si on voit que chacun des membres a sa particularité.</p>
+<div class="callout" data-callout="important"><div class="callout-title"><div class="callout-title-inner">Important</div></div>
+<div class="callout-content">
+<p>
+Ce n'est pas forcement celui qui va mal, ou celui qui souffre le plus. C'est celui qui le montre, celui qui porte le voyant rouge.</p>
+</div></div>
+<p>Exemple enfant envoyé pour agitation motrice. Sont presents mere, père, soeur au RDV. Ils remarquent vite que l'enfant est patient désigné, mais on se rend compte que mere déprimée.</p>
+<p>Le symptôme: probleme et solution:</p>
+<ul>
+<li>Canalise le conflit (symptôme comme stabilisateur)</li>
+<li>Donne une cohésion</li>
+<li>Évite une crise</li>
+<li>Exprime ce qui ne peut pas être dit, e.g. ce que la famille ne nomme pas<br>
+Le porteur de symptôme devient le porte parle du système familial.</li>
+</ul>
+<p>Illustration de cas:</p>
+<ul>
+<li>Lucas, 6 ans, déscolarisation depuis 2ème jour de la rentrée (a fait une crise en classe)</li>
+<li>Parents, pas de couple, relation seulement sexuelle: se sont mis ensemble car elle est tombée enceinte. Elle a failli mourir a l'accouchement. Est partie de la maison quand enfant avait 2 mois, est ensuite revenue.</li>
+<li>Dynamiques autour du symptôme:</li>
+<li>on découvre que le couple ne va pas bien, ne l'a jamais ete</li>
+<li>Trois dynamiques:
+<ul>
+<li>Stratégie inconsciente de diversion pour le couple</li>
+<li>Cohésion et unité</li>
+<li>Maintenir une distance relationnelle</li>
+</ul>
+</li>
+<li>Madame a un problème avec la distance, ne supporte pas les hommes (hommes=compliqués au niveau de la proximité)</li>
+</ul>
+<p><strong>Processus de sélection/amplification</strong> (Ausloos, 1995)</p>
+<p>Sélection d'un comportement repéré comme &quot;significatif&quot;<br>
+-&gt; Amplification par le système (rétroactions positives, répétitions et renforcement)<br>
+-&gt; Comportement cristallisé en symptôme identifié<br>
+(ne s'applique pas à tous les symptômes, parfois symptôme issue d'une pathologie propre)</p>
+<p>-&gt; Intervenir sur les interactions plutôt que sur le symptôme seul</p>
+<p><strong>Trait - trouble - maladie (Bujold, 2025)</strong></p>
+<p>Cet auteur se base sur l'idée générale qu'on diagnostique trop vite, alors qu'on n'a a faire qu'à des traits ou des troubles.</p>
+<p>Trait: ne (nous) dérange pas<br>
+Trouble: Excès de quelque chose qui est normal, Non permanent (on peut s'en défaire)<br>
+Maladie Inscrit dans la génétique, Permanent</p>
+<p>Ne pas qualifier de malade ce qui est &quot;trouble&quot; (non permanent, on peut s'en défaire)</p>
+<p>Le diagnostic</p>
+<ul>
+<li>Photo de la personne lorsqu'elle est au plus mal</li>
+<li>Sert à décrire un ensemble de symptômes</li>
+<li>Capacités d'adaptations -- demandes de l'environnement</li>
+</ul>
+<p>Yalom: &quot;plus facile de faire un diagnostique au bout d'une rencontre plutôt que 10&quot;</p>
+<p>Neuburger (2022) critique la tendance contemporaine à surdiagnostiquer les enfants. Dérives:</p>
+<ul>
+<li>Le besoin des enseignants d'externaliser les difficultés scolaires</li>
+<li>Le soulagement des parents à trouver une explication qui les déculpabilise</li>
+<li>Le besoin des professionnels de santé à réduire la complexité par le diagnostic</li>
+</ul>
+<h3 id="2-la-fonction-du-symptome" tabindex="-1">2. La fonction du symptôme</h3>
+<p>Faire des hypothèses sur la fonction du symptôme</p>
+<p>Le <strong>symptôme a un <mark>sens</mark> relationnel</strong></p>
+<ul>
+<li>Trouble souvent rattaché au contexte</li>
+<li>Le symptôme dit quelque chose de la relation<br>
+-&gt; Être curieux<br>
+-&gt; Chercher la fonction</li>
+</ul>
+<p><strong>Le symptôme a une <mark>utilité</mark> pour la famille</strong></p>
+<ul>
+<li>Confrontés à une problématique de changement</li>
+<li>En panne de solutions<br>
+-&gt; Faire émerger des capacités créatives (pour qu'ils retrouvent ressources, capacités préalables, dans une phase de cycle de vie antérieure)</li>
+</ul>
+<p><strong>Le symptôme comme <mark>organisateur</mark> familial</strong></p>
+<ul>
+<li>Il distribue les roles</li>
+<li>Il régule les distances (Ex: violence cree retrait, distance, differentiation qui n'est pas possible autrement que via symptôme)</li>
+<li>Il maintient l'équilibre</li>
+<li>Il &quot;parle&quot;à la place du système</li>
+</ul>
+<p><strong>Le symptôme pour protéger l'<mark>équilibre</mark> de la famille</strong></p>
+<ul>
+<li>Les therapies de couple camouflées (Andolfi, 1999: conflit de couple peut etre caché par les symptômes de l'enfant (mais ne pas survinvestir ces hypotheses))</li>
+<li>Protéger l'équilibre grace au déplacement de la tension sur l'enfant</li>
+</ul>
+<p><strong>Attaquer</strong> le symptôme</p>
+<ul>
+<li>Symptôme: problème, mais aussi une solution</li>
+<li>Si on s'y attaque: risque qu'il se déplace/se renforce<br>
+-&gt; Débusquer en quoi ces symptômes sont des solutions</li>
+</ul>
+<p>Ex d'intervention: Prescription paradoxale:</p>
+<ul>
+<li>si on éclaire sur fonction du symptôme, symptôme peut perdre de de son evidence.</li>
+</ul>
+<p>EMDR: symptôme comme plante, feuilles les symptômes, rattachés a évènements de vie défavorable (racines), pas bien digérés (pas forcément trauma: échecs a l'école, regard méchant d'une prof, cumulés). Idée de traiter les racines, plutôt que les feuilles. Avec mouvements bilateraux des yeux pour &quot;désensibiliser&quot;.</p>
+<ul>
+<li>Risque de supprimer le symptôme: déplacement du symptôme. Déplacement sur un frère/soeur (qui montre l'importance du symptôme pour la survie du systeme familial)</li>
+</ul>
+<h4 id="faire-des-hypotheses-sur-la-fonction-du-symptome" tabindex="-1">Faire des hypothèses sur la fonction du symptôme</h4>
+<h5 id="mise-en-situation-lea-12-ans" tabindex="-1">Mise en situation - Léa, 12 ans</h5>
+<ul>
+<li>Ne va plus à l'école, suite à cas ou apparemment garçons lui ont demandé de se déshabiller à l'école</li>
+<li>Léa dort avec la maman, depuis toujours (peur de mort quand nourrison)</li>
+<li>Elle réclame de dormir avec la maman</li>
+<li>La mere a subi un harcèlement, la fille est au courant, inquiète pour la fille, qu'elle subisse une agression surinvesti Léa et ses caprices</li>
+</ul>
+<p><strong>Quels rôles chacun occupe-t-il autour du symptôme?</strong></p>
+<ul>
+<li>Père prend des distances.</li>
+<li>Mère: figure principale de réassurance</li>
+<li>Léa: enfant symptôme, dite dépendante de la mère.<br>
+<strong>Qu'est-ce le symptôme permet dans cette famille?</strong></li>
+<li>Eviter séparation mère-fille<br>
+<strong>Que se passerait-il entre les parents si Léa dormait seule?</strong></li>
+<li>Rapprochement des parents, risques potentiels?<br>
+Si on enlève le symptôme, que risque-t-il de se passer dans la famille?</li>
+<li>Impact sur le couple, ...</li>
+</ul>
+<h5 id="mise-en-situation-2-couple-sarah-et-julien" tabindex="-1">Mise en situation 2 - Couple, Sarah et Julien</h5>
+<ul>
+<li>Julien fume du cannabis: moins de communication, se renferme sur lui</li>
+<li>Sarah: inquietude face a la consommation, tentatives de contrôle, moments de distance (quand il consomme plus) et de rapprochement, quand il est plus abstinent</li>
+</ul>
+<p><strong>Quels rôles chacun occupe-t-il autour du symptôme?</strong></p>
+<ul>
+<li>Julien: porteur du symptôme. Regulation émotionnelle la consommation.</li>
+<li>Sarah: contrôle, vigilance, inquiétude, tente de réguler le comportement de Julien<br>
+<strong>Qu'est-ce le symptôme permet dans cette famille?</strong></li>
+<li>Régule la distance (ajuster la proximité, éviter une relation trop fusionnelle ou trop distante)</li>
+<li>Evitement des conflits, tensions? (déplacer le conflit sur un objet concret)</li>
+<li>Organiser les roles (stabiliser les places et l'identité de chacun)</li>
+<li>Regulation émotionnelle (contenir stress, anxiété, colère)</li>
+<li>Maintien du lien (maintenir une interaction, éviter la rupture)<br>
+<strong>Que se passerait-il si le symptôme disparaissait?</strong></li>
+<li>Proximité trop forte, angoisse, conflits directs</li>
+<li>Conflits latents qui émergent, tensions plus directes</li>
+<li>Perte de repères, désorganisation des roles</li>
+<li>Débordements émotionnels, irritabilité, tensions</li>
+<li>Désengagement, distance, sentiment de vide</li>
+</ul>
+<h4 id="fonctions-du-symptome-et-maintien-des-croyances" tabindex="-1">Fonctions du symptôme et maintien des croyances</h4>
+<p>Double contrainte. Mony Elkaïm. <em>Si tu m'aimes, ne m'aime pas</em> (1988)<br>
+Lorsque deux individus entrent en interaction par la communication, chacun va confronter sa vision du monde avec celle de l'autre</p>
+<ul>
+<li>Programme officiel: langue explicite, consciente (&quot;Je veux être aimé)</li>
+<li>Construction du monde: expériences de vie. Parfois vont a l'inverse du programme officiel (&quot;Je ne suis pas digne d'être aimé)</li>
+</ul>
+<p>Personne A : Mégane<br>
+PO: &quot;Je veux pouvoir compter sur l'autre&quot;<br>
+CM: &quot;Je ne peux compter que sur moi-même&quot;<br>
+-&gt; Cette croyance la protège, lui permet de ne pas s'exposer.</p>
+<p>Personne B : Simon<br>
+PO: &quot;je veux être suffisamment bien&quot;<br>
+CM: &quot;je ne suis pas assez bien&quot;</p>
+<p><strong>Que peuvent faire les partenaires pour sortir du cycle infernal dont ils sont prisonniers?</strong><br>
+(cf &quot;<a href="https://lepharesystemique.com/produit/jeu-des-croyances-croisees/" target="_blank" class="external-link">Le Jeu des Croyances Croisées </a> est un outil thérapeutique sous forme de jeu de cartes permettant de travailler la double contrainte réciproque  au sein du couple.&quot;).</p>
+<ul>
+<li>Accepter que leur passé ne leur dicte pas leur conduite</li>
+<li>S'interroger sur l'utilité de son comportement pour l'autre</li>
+<li>Hypothèse de départ: ma réaction est sculptée par l'autre pour lui permettre de renforcer sa CM<br>
+-&gt; Flexibiliser la carte du monde des partenaires.</li>
+</ul>
+<h3 id="3-miser-sur-les-competence" tabindex="-1">3. Miser sur les compétence</h3>
+<p>Ausloos parle de LA compétence de al famille (Guy Ausloos, La compétence des familles)<br>
+Permet de déculpabiliser.</p>
+<ul>
+<li>
+<p>Brazelton (1982) parlait du bébé compéten</p>
+</li>
+<li>
+<p><strong>Postulat 1</strong> de la compétence: &quot;Un système ne peut se poser que des problèmes qu'il est capable de résoudre&quot;<br>
+--&gt; Nous ne sommes pas responsables des changements, mais plutôt de créer un contexte de confiance, de sécurité et d'espoir pour que puissent survenir l'imprévisible</p>
+</li>
+<li>
+<p><strong>Postulat 2</strong> de l'information pertinente: &quot;l'information pertinent est celle qui ient du système et y retourne pour activer le processus&quot;</p>
+</li>
+<li>
+<p>Mettre du hasard et de l'imprévisibilité dans le système</p>
+</li>
+<li>
+<p>&quot;l'autosolution&quot;: la solution qui convient au système.</p>
+</li>
+</ul>
+<p><strong>Questions circulaires:</strong> poser la question a un membre pour qu'elle soit répondue par un autre membre du système : pourquoi penses tu que ta mere/frère/mari etc pense de xyz ? PLutot que de demander soi meme a la personne.</p>
+<p>Activer des processus</p>
+<h2 id="iv-l-enfant-comme-ressource-therapeutique" tabindex="-1">IV. L'enfant comme ressource thérapeutique</h2>
+<p>Andolfi: inclure l'enfant dans la thérapie, comme ressource diagnostique et curative, pour lui et la famille. Comme si l'enfant avait la clé pour faire bouger les choses.<br>
+N'est pas si simple dans la pratique, on est vite happés par les discours des parents, ils partagent notre langage, participent aux hypothèses, etc.</p>
+<h3 id="les-troubles-de-l-enfant" tabindex="-1">Les troubles de l'enfant</h3>
+<ul>
+<li>Probleme familial</li>
+<li>&quot;La famille comme <strong>ressource diagnostique</strong> et <strong>curative</strong> précieuse&quot;</li>
+<li>Considérer les troubles de l'enfant comme des <strong>signaux relationnels</strong> et comme des compétences pour entrer dans le monde émotionnel de l'enfant</li>
+<li>Statut de problème à celui de <strong>ressource active</strong></li>
+</ul>
+<h3 id="la-trahison-de-l-enfant-par-le-mouvement-de-la-therapie-familiale-andolfi-et-al-2022" tabindex="-1">La trahison de l'enfant par le mouvement de la thérapie familiale (Andolfi, et al, 2022)</h3>
+<p>Chez les pères fondateurs de la TF: où est l'enfant?</p>
+<ul>
+<li>Les pionniers sont majoritairement des psychiatres</li>
+<li>L'enfant, en tant qu'élément significatif prééminent dans la thérapie, totalement absent</li>
+<li>Salvador Minuchin: l'enfant est au centre de son modèle thérapeutique et de son travail clinique</li>
+</ul>
+<p>Ou est la famille?</p>
+<ul>
+<li>La famille, souvent considérée comme la cause ou l'explication des problèmes de l'enfant</li>
+<li>Modèle médical</li>
+<li>Image du &quot;non parent&quot; au détriment du &quot;vrai parent&quot;</li>
+<li>Médicalisation croissante des problèmes de l'enfant</li>
+<li>-&gt; étudier l'histoire développementale pour comprendre la pathologie de l'enfant</li>
+<li>se décentraliser des problèmes pour exploiter les ressourecs</li>
+</ul>
+<p>Le langage de l'enfant: un défi</p>
+<ul>
+<li css-module="."></li>
+</ul>
+<p>Se centrer exclusivement sur les symptômes</p>
+<ul>
+<li>C'est son problème</li>
+<li>Eviter le sentiment de culpabilité</li>
+<li>Fatigue de chercher des éléments relationnels du problèmes</li>
+</ul>
+<h3 id="2-la-demande-en-therapie-familiale" tabindex="-1">2. La demande en thérapie familiale</h3>
+<p>La demande</p>
+<ul>
+<li>Les demandeS -&gt; nécessite une réflexion sur le format du 1er entretien
+<ul>
+<li>La demande d'une personne pour un autre membre de sa famille</li>
+<li>La demande pour une relation définie comme difficile/problématique par le demandeur</li>
+<li>L'absence de demande qui conduit à un mandat coercitif</li>
+<li>La demande individuelle d'une personne pour elle-même</li>
+</ul>
+</li>
+</ul>
+<p><strong>La demande</strong> (Neuburger, 1984)<br>
+4 questions pour l'explorer:</p>
+<ul>
+<li>L'allégation: Qui est le plus préoccupé?</li>
+<li>La souffrance: qui souffre le plus?</li>
+<li>Le symptôme: Qui pose le plus de problèmes?</li>
+</ul>
+<p>📅 <strong>11 Mai 2026</strong> - Cours 3 - Mathilde Meriaux</p>
+<h3 id="3-la-rencontre-avec-l-enfant-et-sa-famille" tabindex="-1">3. La rencontre avec l'enfant et sa famille</h3>
+<ul>
+<li>Familles peuvent être en position de &quot;legitime défense&quot; (terme d'Ausloos), se sentent pointés du doigt ou ont eu d'autres expériences précédentes. Interêt donc de travailler leur compétence.</li>
+<li>Inviter, mobiliser les familles pour passer de la culpabilisation à la responsabilisation: passer du &quot;parce que je pense que cela pourra vous aider&quot;à &quot;j'ai besoin de vous&quot;.</li>
+<li>Si l'enfant refuse, si c'est une figure importante on peut insister, si c'est plus secondaire, faire avec, on peut questionner l'enfant, questionner les risques percus, faire jeu de chaise vide, etc.</li>
+</ul>
+<p>Faire cohabiter deux mondes</p>
+<ul>
+<li>Composer avec des attentes et humeurs de chacun mais aussi avec les capacités d'attention et langages différents.</li>
+</ul>
+<p>Exemple: Un symptôme, plusieurs hypothèses: Un enfant a un problème scolaire...<br>
+Hypothèses?</p>
+<ul>
+<li>Considérer le symptôme comme une possiblilité de changement -&gt; tentative de donner une réponses</li>
+<li>Attention à intervenir uniquement en éliminant le problème, sans aucun changement dans le contexte familial</li>
+<li>Demande d'aide</li>
+<li>Prend de la valeur à travers l'histoire multi-générationnelle du symptôme lui-même</li>
+</ul>
+<p>Cas de Amine, enfant qui devient violent. Pere qui etait violent, Amine témoin, enfant bouclier. Colère pour Amine: tentative de différentiation (créer distance pour ne pas être collé) (symptôme comme régulateur de distance)</p>
+<p>La rencontre avec le symptome</p>
+<ul>
+<li>Symptomes psychosomatiques, troubles du comportement, troubles de l'anxiété ou de l'humeur sont souvent reliés métaphoriquement au noeud problématique familial (De Francisci, Piersanti, 2015)</li>
+</ul>
+<p>Exemples:</p>
+<ul>
+<li>Ne pas avoir été vu petit (que a travers succès académique (sorte de stratégie pour être vu), etc): risque d'épuisement au travail.</li>
+<li>Symptômes physiques (énurésie, important de faire les examens somatiques)</li>
+</ul>
+<h1 id="v-l-interet-du-travail-en-famille" tabindex="-1">V. L'interêt du travail en famille</h1>
+<ul>
+<li>C'est souvent dans les premières rencontres que la famille donne la trame autour de laquelle s'est tissé le problème. Ausloos: la solution est deja dans le problème
+<ul>
+<li>Exemple: mere, père, enfant (Silvio). Silvio était dans un désert scolaire, impossible d'y retourner. Montait sur le bureau du prof. A dit au psychiatre: &quot;de toute façon, le but c'est que je meure&quot;. Photo sur table de salon de Silvio d'un monsieur (du tonton de Silvio, mere dit a la psy a voix basse &quot;il s'est suicidé et jai dit a Silvio que c'était un accident de voiture&quot;). En séance Silvio fait mime de se couper le coup.</li>
+</ul>
+</li>
+<li>Les enfants vont permettre de toucher les zones d'ombre de la famille, si le thérapeute relie le comportement de l'enfant lors dune première consultation avec le symptôme qui pose problème.</li>
+</ul>
+<p><strong>Revisiter l'enfance des parents</strong></p>
+<ul>
+<li>Les parents cherchent à corriger les problèmes de leurs enfants sans réaliser les effets des résonnances</li>
+<li>Refus de dévoiler des éléments de leur histoire</li>
+<li>L'enfant peut capter le drame intérieur du parent (enfant dans son narcissisme primaire peut penser que c'est de sa faute)</li>
+<li>Demander à l'enfant qui de ses parents a connu la même forme d'injustice que lui.</li>
+</ul>
+<p>Aussi inclu pour l'enfant <strong>recevoir de l'information</strong>.</p>
+<p><strong>Les grands-parents</strong></p>
+<ul>
+<li>Personnes ressource, surtout en temps de séparation des parents.</li>
+<li>Modèle tri-générationnel (cf. Andolfi).</li>
+<li>Relier le parent et l'enfant à la troisième génération, permet de trouver des espaces de médiation et d'entente impensables sans cela.</li>
+<li>Rencontrer les parties de l'enfant cachées derrière les parents en détresse/souffrance.</li>
+</ul>
+<p><strong>La fratrie</strong></p>
+<p>Stephanie Haxhe: Frères et soeurs, des liens à soigner<br>
+Incroyable ressource et lieu de grande souffrance.</p>
+<ul>
+<li>Peu d'études consacrées aux liens de fratrie (Haxhe, 2024)</li>
+<li>Laboratoire social, émotionnel: place dans la fratrie aura influence dans la place dans espaces relationnels futurs (e.g. travail, en couple - répétitions de roles, injustices vécues, enfant malade, bouc émissaire, etc.)</li>
+<li>Le lien fraternel influence directement la manière dont les adultes construisent leurs relations horizontales.</li>
+<li>Lieu de solidarité et d'injustices</li>
+<li>Susciter le dialogue, et la confrontation des vécus</li>
+</ul>
+<p>Injustices: celles vécues avec parents/adultes, en particulier.</p>
+<ul>
+<li>Rivalité développementale: normale, pas un warning d'office</li>
+<li>Rivalité exarcebée: conflits fréquents, ça envahit tout le système, comparaison constante, recherche excessive de reconnaissance. -&gt; plus rigide, fréquent, intense. Fonction c'est parfois conflit des parents (hypothèse dans littérature systémique: alliance chacun a un parent, ou manque de différentiation parents vis a vis d'enfants.).
+<ul>
+<li>Légitimité destructrice (approche contextuelle): lésé, vais cherche réparation (pas chez le principal concerné, mais chez qqun d'autre, frère ou soeur). <strong>Injustice vis a vis des aprents reglée avec frères et soeurs</strong>.
+<ul>
+<li>Exemple: fille de 8 ans, avec soeur de 3 ans. madame rejette ses enfants a 3 ans (pour histoire personnelle, sa mere l'a délaissée pour un homme). Mère fait des commentaires de préférence de certains enfants. Mère avec ses commentaires cree les rivalités et hiérarchies (cf double lien de Bateson, double contrainte Elkaïm).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rivalité figée</li>
+</ul>
+<p><strong>La place du père</strong></p>
+<p>Quelle place accorder aux pères?<br>
+Rare qu'un père refuse, répondent présent. Figure éclatée de nos jours (voir aussi 4 axes de filiation de Kinoo, en 4.5 <a class="internal-link" target="" data-note-icon="" href="/knowledge/events/2026-psyc-e-540-approche-systemique-des-traumatismes/">2026 - PSYC-E 540 - Approche systémique des traumatismes</a>):</p>
+<ul>
+<li>Père légal (défini par le droit)</li>
+<li>Père biologique</li>
+<li>Père affectif</li>
+</ul>
+<p>Exemple de situation père qui n'était pas biologique, parents en faisaient tout un secret alors que pour l'enfant c'était peut etre pas le coté biologique qui était si important.</p>
+<p>-&gt; observer la fonction triadique<br>
+-&gt; inviter les pères!</p>
+<p>Exemple, père vu comme surpuissant: travail pour voir père avec ses defauts (permet a l'enfant d'avoir ses défauts aussi).</p>
+<p>Nuance importante:</p>
+<ul>
+<li><strong>Absence de père</strong> -&gt; pas le problème.</li>
+<li><strong>Absence de recherche de père</strong> (recherche: se questionner sur qui il était, qu'est-ce qu'il a vécu...) -&gt; important pour la construction d'identité, construction psychique.</li>
+</ul>
+<p>Créer quelque chose de l'ordre de l'appartenance pour favoriser la différentiation (être capable de dire &quot;je&quot;).</p>
+<h3 id="1-modalites-relationnelles-et-blocage-evolutif" tabindex="-1">1. Modalités relationnelles et blocage évolutif</h3>
+<p><strong>L'enfant chronique</strong> (Andolfi, 2002)</p>
+<p>L'individu n'arrive pas, à l'âge adulte, à acquérir la position du Moi (Bowen, 1984) et reste, face à ses parents, dans une position d'enfant.</p>
+<ul>
+<li>L'extreme dépendance et la peur d'être jugé par ses propres parents sont souvent niées ou justifiées comme étant un service dû, un prix à payer pour garantir l'appartenance à la famille.</li>
+<li>Le couple se dégrade s'il n'arrive pas à se préserver de l'intrusion de la famille d'origine.</li>
+</ul>
+<p><strong>La rupture émotionnelle</strong> (Andolfi, 2002)</p>
+<p>Cas où en l'absence d'une séparation progressive, la relation parents/enfant s'est interrompue brutalement.</p>
+<ul>
+<li>L'adulte construira une image déformée de lui-même qui l'amènera à &quot;remplir des sacs troués&quot;</li>
+<li>-&gt; S'arrêter et renouer à l'endroit où la rupture s'est réalisée</li>
+<li>-&gt; Permettre une prise de conscience des ruptures émotionnelles précoces, à la base de tensions dans la relation de couple et parents/enfant</li>
+</ul>
+<p><strong>Le triangle relationnel - Murray Bowen (1984, 1999)</strong></p>
+<ul>
+<li>La plus petite configuration émotive stable. Il s'agit de la famille &quot;idéale&quot;. Les triangles peuvent résoudre un conflit, mais un triangle pathologique lui va figer.</li>
+<li>Pour Bowen, la relation a deux est fondamentale instable. Quand elle doit faire face à l'angoisse et aux tensions de la vie, elle va aller prendre un troisième élément en recherche de stabilité, pour avoir une plus grande souplesse dans le fonctionnement et réduire l'angoisse.</li>
+<li>Enfant souvent amené a la place du tiers (confident, médiateur, petit ami qui se met comme bouclier, bouc émissaire...)</li>
+<li>La multiplication des tiers comme stratégie pour contenir l'angoisse.</li>
+</ul>
+<p>Fonction du tiers</p>
+<ul>
+<li>Diminuer les tensions entre deux personnes</li>
+<li>Permettre aux relations de se poursuivre dans le temps</li>
+</ul>
+<p>Exemples de tiers:</p>
+<ul>
+<li>Intra familiaux
+<ul>
+<li>êtres humains</li>
+<li>animaux</li>
+</ul>
+</li>
+<li><strong>extra familiaux:</strong>
+<ul>
+<li>un juge</li>
+<li>un médiateur</li>
+<li>un thérapeute</li>
+<li>...</li>
+</ul>
+</li>
+<li>objets:
+<ul>
+<li>un contrat</li>
+<li>une loi</li>
+<li>une sonnerie</li>
+<li>un loisir</li>
+</ul>
+</li>
+</ul>
+<p><strong>Modalités d'actions du tiers</strong></p>
+<ul>
+<li>En créant de nouvelles alliances</li>
+<li>En se retirant... par qui sera-t-il remplacé?</li>
+<li>En se plaçant comme médiateur</li>
+<li>En restant neutre</li>
+<li>En prenant parti</li>
+</ul>
+<p><strong>L'inversion des rôles (Mazzoni, 2021)</strong></p>
+<p>3 catégories (Kerig, 2014):</p>
+<ul>
+<li>
+<p>La <strong>parentification</strong>: obtenir du soutien et de l'aide</p>
+<ul>
+<li>Parentification adaptative et destructive</li>
+<li>Association entre parentification et les troubles psychopatho ou les dysfonctionnements relationnels</li>
+<li><strong><mark>Critère: Non prise en compte du besoin de l'enfant</mark></strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Adultisation</strong>: se comporter comme si l'enfant était son égal.</p>
+<ul>
+<li>Association avec de l'anxiété social ou évitement</li>
+<li>Exemple: maman séparée du papa, l'enfant de 5 ans on peut lui donner 12 pour sa maniere de parler. Peut être satisfaisant, valorisant pour l'enfant.</li>
+</ul>
+</li>
+<li>
+<p><strong>Maritalisation</strong>: se substituer émotionnellement au partenaire pour compenser l'insatisfaction conjugale.</p>
+<ul>
+<li>Association avec des déficits de l'attention, de l'hyperactivité et des difficultés de régulation émotionnelle</li>
+<li>Parents le disent eux-memes, ou ça se voit rapidement.</li>
+</ul>
+</li>
+<li>
+<p>L'enfant joue un role actif dans la gestion des interactions du couple conjugal et parental lorsque celui-ci est dysfonctionnel et que les adultes manquent de coordination</p>
+</li>
+<li>
+<p>Transmission intergénérationnelle de la dynamique d'inversion des rôles</p>
+</li>
+<li>
+<p>Utile de saisir le moment où l'enfant revient à son âge</p>
+</li>
+</ul>
+<p><strong>Repérer la parentification</strong></p>
+<p>{slide passée trop vite}<br>
+! Immense loyauté de l'enfant pour son parent</p>
+<ul>
+<li>Juger le parent serait trahir l'enfant</li>
+<li css-module=""></li>
+</ul>
+<p>Parentification: 3 types de roles (Haxhe, 2013)</p>
+<ul>
+<li><strong>Le rôle de soignant</strong>: décrit l'enfant trop mature qui s'occupera de son (ou ses) parent(s) ou de sa fratrie</li>
+<li><strong>Le role de bouc émissaire</strong> décrit l'enfant qui renonce à son autonomie et adopte un rôle de victime ou de délinquant afin de réunifier sa famille</li>
+<li><strong>Le role neutre</strong> décrit l'enfant qui se montre conforme et ne réclame rien</li>
+</ul>
+<p>Parentification: quelles conséquences?</p>
+<ul>
+<li>Anxiété: La responsabilité relationnelle qui incombe à l'enfant parentifié peut être lourde a porter</li>
+<li>Dépression: confrontation au vide intérieur - sentiments d'auto-dépréciation et de culpabilité</li>
+</ul>
+<h3 id="2-pas-vu" tabindex="-1">2. ? pas vu</h3>
+<h3 css-module="" id="3-traverser-les" tabindex="-1">3. Traverser les </h3>
+<h4 id="enfants-mutants-gaillard-2023" tabindex="-1">Enfants mutants (Gaillard, 2023)</h4>
+<p>Livre: Enfants et adolescents en mutation</p>
+<ul>
+<li>
+<p>Mutation psychosociétale des nouvelles générations</p>
+</li>
+<li>
+<p>Les jeunes ne seraient pas <em>problématiques</em>, mais adaptés a un nouveau contexte social</p>
+</li>
+<li>
+<p>Ces jeunes presente:</p>
+<ul>
+<li>un rapport plus horizontal à l'autorité: apprennent le respect quand eux-mêmes l'ont vécu.</li>
+<li>une autonomie individuelle plus forte</li>
+<li>une pensée collective et connectée plutôt que hiérarchique</li>
+</ul>
+</li>
+<li>
+<p>ConséquencesL</p>
+<ul>
+<li>Les institutions utilisent encore des modeles educatifs anciens</li>
+<li css-module=".">Les comportements des jeunes sont alors souvent interpretes</li>
+</ul>
+</li>
+</ul>
+<h4 id="les-grandes-et-petites-regles-ausloos-2018" tabindex="-1">Les grandes et petites règles (Ausloos, 2018)</h4>
+<ul>
+<li>
+<p>La <strong>grande</strong> règle:</p>
+<ul>
+<li>est nécessaire a la survie</li>
+<li>ne peut être transgresse sous aucun pretexte</li>
+<li>ne nécessite aucune explication et justification</li>
+</ul>
+</li>
+<li>
+<p>La <strong>petite</strong> règle:</p>
+<ul>
+<li>est negociable</li>
+<li>est sujette a exceptions</li>
+<li>demande parfois des explications</li>
+</ul>
+</li>
+<li>
+<p>Familles a transactions rigides</p>
+</li>
+<li>
+<p>Familles a transactions chaotiques:</p>
+<ul>
+<li>Dans certaines familles, les grandes règles n'existent pas, que des petites regles (peut provoquer angoisses, troubles du comportement... ). Adultes prennent pour provocation quelque chose qui est juste de la désorientation.</li>
+</ul>
+</li>
+<li>
+<p>Familles &quot;new age&quot;</p>
+<ul>
+<li>Laisser le choix des regles aux enfants, laisser-faire par peur de produire pattern autoritaire. Ou pour avoir la paix.</li>
+<li>Enfants développent des comportements pathologiques (elle en reçoit beaucoup en<br>
+pédopsychiatrie).</li>
+</ul>
+</li>
+</ul>
+<p>Vidéo: concept de résonnance cf. Mony Elkaïm</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -725,22 +1253,6 @@ Pratiques cliniques en institution
 <li><a href="#temoignages-illustration-de-mettre-la-parole-au-centre">Témoignages: illustration de mettre la parole au centre</a>
 </li>
 <li><a href="#les-grands-axes-et-focalisations-du-cours">Les grands axes et focalisations du cours</a>
-</li>
-<li><a href="#l-insulte-comme-assignation-et-le-retournement-du-sujet">L'insulte comme assignation et le retournement du sujet</a>
-</li>
-<li><a href="#la-fonction-de-l-objet-dans-la-pratique-clinique">La fonction de l'objet dans la pratique clinique</a>
-</li>
-<li><a href="#le-traitement-de-l-emballement-s-adresser-a-l-objet">Le traitement de l'emballement : s'adresser à l'objet</a>
-</li>
-<li><a href="#la-clinique-hors-les-murs-se-salir-les-mains">La clinique hors les murs : se salir les mains</a>
-</li>
-<li><a href="#la-dimension-juridique-et-le-travail-en-equipe">La dimension juridique et le travail en équipe</a>
-</li>
-<li><a href="#responsabilite-subjective-vs-responsabilite-individuelle">Responsabilité subjective vs Responsabilité individuelle</a>
-<ol>
-<li><a href="#points-cles-pour-l-examen-vrai-faux">Points clés pour l'examen (Vrai/Faux) :</a>
-</li>
-</ol>
 </li>
 </ol>
 </li>
@@ -801,6 +1313,54 @@ Pratiques cliniques en institution
 </ol>
 </li>
 <li><a href="#iii-diagnostic-et-competences">III. Diagnostic et compétences</a>
+<ol>
+<li><a href="#1-aller-au-dela-de-l-etiquette">1. Aller au-délà de l'étiquette</a>
+</li>
+<li><a href="#2-la-fonction-du-symptome">2. La fonction du symptôme</a>
+<ol>
+<li><a href="#faire-des-hypotheses-sur-la-fonction-du-symptome">Faire des hypothèses sur la fonction du symptôme</a>
+<ol>
+<li><a href="#mise-en-situation-lea-12-ans">Mise en situation - Léa, 12 ans</a>
+</li>
+<li><a href="#mise-en-situation-2-couple-sarah-et-julien">Mise en situation 2 - Couple, Sarah et Julien</a>
+</li>
+</ol>
+</li>
+<li><a href="#fonctions-du-symptome-et-maintien-des-croyances">Fonctions du symptôme et maintien des croyances</a>
+</li>
+</ol>
+</li>
+<li><a href="#3-miser-sur-les-competence">3. Miser sur les compétence</a>
+</li>
+</ol>
+</li>
+<li><a href="#iv-l-enfant-comme-ressource-therapeutique">IV. L'enfant comme ressource thérapeutique</a>
+<ol>
+<li><a href="#les-troubles-de-l-enfant">Les troubles de l'enfant</a>
+</li>
+<li><a href="#la-trahison-de-l-enfant-par-le-mouvement-de-la-therapie-familiale-andolfi-et-al-2022">La trahison de l'enfant par le mouvement de la thérapie familiale (Andolfi, et al, 2022)</a>
+</li>
+<li><a href="#2-la-demande-en-therapie-familiale">2. La demande en thérapie familiale</a>
+</li>
+<li><a href="#3-la-rencontre-avec-l-enfant-et-sa-famille">3. La rencontre avec l'enfant et sa famille</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#v-l-interet-du-travail-en-famille">V. L'interêt du travail en famille</a>
+<ol>
+<li><a href="#1-modalites-relationnelles-et-blocage-evolutif">1. Modalités relationnelles et blocage évolutif</a>
+</li>
+<li><a href="#2-pas-vu">2. ? pas vu</a>
+</li>
+<li><a href="#3-traverser-les">3. Traverser les</a>
+<ol>
+<li><a href="#enfants-mutants-gaillard-2023">Enfants mutants (Gaillard, 2023)</a>
+</li>
+<li><a href="#les-grandes-et-petites-regles-ausloos-2018">Les grandes et petites règles (Ausloos, 2018)</a>
+</li>
+</ol>
 </li>
 </ol>
 </li>

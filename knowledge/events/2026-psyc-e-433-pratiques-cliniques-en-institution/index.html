@@ -79,12 +79,12 @@
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-04-21T10:28:58.533Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-05-20T09:14:16.709Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
 <main class="content cm-s-obsidian print">
 <header>
 <h1 data-note-icon="">Pratiques cliniques en institution</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.116+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-04-18T15:47:51.383+02:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.116+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-05-19T14:02:56.852+02:00"></span></div></div></div>
 </header>
 <div class="callout" data-callout="tldr"><div class="callout-title"><div class="callout-title-inner"> Résumé<br></div></div>
 <div class="callout-content">
@@ -97,14 +97,18 @@ Ce cours vise à offrir une présentation des différentes approches cliniques q
 Examen à questions fermées de type vrai ou faux (en présentiel). Pas de points négatifs. 20 questions, normalement.</p>
 <ul>
 <li>But est de départager &quot;qui est venu au cours et qui non&quot; (tous les items auront l'air plausibles, il sera nécessaire de comprendre l'approche critique démontrée en cours).</li>
-<li>On se concentrera lors de la dernière rencontre sur la préparation de l'examen, elle amènera des items d'exemple.</li>
+<li>On se concentrera lors de la dernière rencontre sur la préparation de l'examen.</li>
 </ul>
 </div></div>
-<div class="callout" data-callout="tip"><div class="callout-title"><div class="callout-title-inner"> Lectures recommandées (aucun caractère obligatoire)<br></div></div>
-<div class="callout-content">
-<p>
-*</p>
-</div></div>
+<p>Lectures conseillées:</p>
+<ul>
+<li>Emmanuel Venet: Retour chez les fous
+<ul>
+<li>Réponse contemporaine au livre &quot;chez les fous&quot;</li>
+<li>3 chapitres intéressants auxquels elle nous donnera accès</li>
+</ul>
+</li>
+</ul>
 <h2 id="introduction-methode-et-modalites-de-travail-pragmatique-evaluation" tabindex="-1">🏷️ Introduction, méthode et modalités de travail, pragmatique, évaluation</h2>
 <p>📅 <strong>9 Février 2026</strong> - Cours 1</p>
 <p>Calendrier de cours (le 6 avril est annulé, une séance supplémentaire sera peut-être ajoutée):</p>
@@ -138,77 +142,80 @@ Examen à questions fermées de type vrai ou faux (en présentiel). Pas de point
 </ul>
 </li>
 </ul>
-<p>Elle, Cécile Glineur, d'orientation psychanalitque. Remplace Fouchet cette année. Elle travaille au CHU Saint-Pierre, exerce une pratique destinée aux tout venants.<br>
-Ce cours sera d'orientation psychanalytique lacanienne (appliquée), rappel de certaines notions:</p>
+<p>Elle, Cécile Glineur, d'orientation psychanalytique. Remplace Fouchet cette année. Elle travaille au CHU Saint-Pierre, exerce une pratique destinée aux tout-venants.<br>
+Ce cours sera d'orientation psychanalytique Lacanienne (appliquée), rappel de certaines notions:</p>
 <ul>
-<li><strong>Psychanalyse appliquée</strong>, plutôt que &quot;psychanalyse pure&quot; (qui elle considère les gens <em>un par un</em>, se caractérisant parfois par la position allongée, la fréquence soutenue des seances... ou on s'attache a donner une place centrale a sa propre parole, démarche différente des démarches type problème-solution qu'on trouve souvent dans le domaine de psychologie. Fondement méthodologique est l'association libre, mais constat que l'association libre n'est pas <em>libre</em> (<strong>résistances</strong> - embarras, honte -, <strong>transfert</strong>..., et la <strong>chaîne de signifiant n'est pas libre non plus</strong>. ).</li>
-<li>Lacan a poursuivi le travail de Freud, au depart de la psychanalyse pure, mais s'en est distingue sur certains points, formant deux écoles: Ecole post-Freudienne et école Lacanienne. Lacan est venu faire rupture sur certains points:
+<li><strong>Psychanalyse appliquée</strong>, plutôt que &quot;psychanalyse pure&quot; (qui elle considère les gens <em>un par un</em>, se caractérisant parfois par la position allongée, la fréquence soutenue des séances... ou on s'attache à donner une place centrale à sa propre parole, démarche différente des démarches type problème-solution qu'on trouve souvent dans le domaine de la psychologie. Le fondement méthodologique est l'association libre, mais constat que l'association libre n'est pas <em>libre</em> (<strong>résistances</strong> - embarras, honte -, <strong>transfert</strong>..., et la <strong>chaîne de signifiant n'est pas libre non plus</strong>. ).</li>
+<li>Lacan a poursuivi le travail de Freud, au départ de la psychanalyse pure, mais s'en est distingue sur certains points, formant deux écoles: Ecole post-Freudienne et école Lacanienne. Lacan est venu faire rupture sur certains points:
 <ul>
-<li>La durée des séances (post-Freudiens respecte les durées, 45 min a l'origine, parfois 40, mais chez les lacaniens la durée depend de ce qu'il se passe pendant la seance, peuvent être écourtées).</li>
-<li>La formation du psychanalyste: Post freudiens, cure didactique, on est ensuite reconnu psychanalyste par son propre psychanalyste et d'autres. Chez les lacaniens, pas de distinction a l'origine. Analysant estime qu'il est suffisamment satisfait de son analyse, sans souhait de devenir psychanalyste lui-meme. Ou choix de mettre fin a une tranche d'analyse. Procédure de la <a href="https://fr.wikipedia.org/wiki/Passe_(psychanalyse)" target="_blank" class="external-link">passe</a>: consiste pour l'analysant de mettre un terme a son analyse, et pouvoir produire une logification de sa trajectoire analytique, et pouvoir émettre un apport théorico-clinique pour la théorie de la psychanalyse.</li>
-<li>Points clés de la méthode lacaniennes:
+<li>La durée des séances (post-Freudiens respectent les durées, 45 min a l'origine, parfois 40, mais chez les Lacanniens, la durée dépend de ce qu'il se passe pendant la séance, les séances peuvent être écourtées).</li>
+<li>La formation du psychanalyste: Post-freudiens, on traverse une cure didactique, on est ensuite reconnu psychanalyste par son propre psychanalyste et d'autres. Chez les Lacanniens, pas de distinction à l'origine. Analysant estime qu'il est suffisamment satisfait de son analyse, sans souhait de devenir psychanalyste lui-même. Ou choix de mettre fin à une tranche d'analyse. Procédure de la <a href="https://fr.wikipedia.org/wiki/Passe_(psychanalyse)" target="_blank" class="external-link">passe</a>: consiste pour l'analysant de mettre un terme à son analyse, et pouvoir produire une logification de sa trajectoire analytique, et pouvoir émettre un apport théorico-clinique pour la théorie de la psychanalyse.</li>
+<li>Points clés de la méthode Lacanienne:
 <ul>
-<li>Question du désir</li>
-<li>Question du transfert dans la pratique clinique (pas contre transfert, les deux transferts sont consideres de natures similaire)</li>
-<li>Vif souci d'essayer de saisir la logique subjective des patients avec lesquels on est en lien (moins considerer le projet de l'institution, plutôt <em>qui sont les bénéficiaires?</em> (un par un)). La ou beaucoup d'instituions se questionnent sur comment traiter le patient (avec position de connaissance, savoir), on traite sa propre posture, sa propre relation au savoir... pour se faire autant que possible partenaire des personnes dans l'institution.</li>
+<li>La question du <a class="internal-link is-unresolved" href="/404" target="">Désir (Psychanalyse Lacanienne)</a>.</li>
+<li>La question du transfert dans la pratique clinique (pas contre transfert, les deux transferts sont considerés de nature similaire)</li>
+<li>Vif souci d'essayer de saisir la <strong>logique subjective</strong> des patients avec lesquels on est en lien (moins considérer le projet de l'institution, plutôt <em>qui sont les bénéficiaires?</em> (un par un: comprendre la logique de chacun individuellement)). Là où beaucoup d'instituions se questionnent sur comment traiter le patient (avec position de connaissance, savoir...), ici on traite sa propre posture, sa propre relation au savoir... pour se faire autant que possible partenaire des personnes dans l'institution.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Prendre appui sur ce corpus pour pour orienter le travail de terrain (essayant de gommer les nominations de savoir spécifique, ne pas distinguer entre disciplines respectives... par exemple les différents métiers d'une equipe multi-disciplinaire). On se réfère aux &quot;intervenants&quot; généralement, partagent les mêmes tâches, ne sectorisent pas leur pratique... tous rapportent leur clinique en réunion d'équipe au même titre que les autres.</li>
+<li>Prendre appui sur ce corpus pour orienter le travail de terrain (<strong>essayant de gommer les nominations de savoir spécifique</strong>, ne pas distinguer entre disciplines respectives... par exemple les différents métiers d'une équipe multi-disciplinaire). On se réfère aux &quot;intervenants&quot; généralement, partagent les mêmes tâches, ne sectorisant pas leur pratique... tous rapportent leur clinique en réunion d'équipe, au même titre que les autres.</li>
 </ul>
 <p>Interview d'Olivier Challe, sur le travail psychanalytique en institution:</p>
 <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/u2IIm0u61gk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <p>Olivier Challe est responsable clinique au Wops de nuit, un centre thérapeutique de nuit:</p>
 <ul>
-<li>Institution qui répond au malaise de ce que les gens amènent avec eux comme difficultés (sans grille pre établie des difficultés), d'y répondre par un accueil, un accompagnement <strong>au cas-par-cas</strong>. Déceler la vraie difficulté de la personne pour decider au fur et a mesure comment accompagner ces personnes.</li>
+<li>Institution qui répond au malaise de ce que les gens amènent avec eux comme difficultés (sans grille pre-établie des difficultés), d'y répondre par un accueil, un accompagnement <strong>au cas-par-cas</strong>. Déceler la vraie difficulté de la personne pour décider au fur-et-à-mesure comment accompagner ces personnes.</li>
 <li>Pari de &quot;possibilité d'une rencontre&quot;, en étant le plus humble possible:
 <ul>
-<li>&quot;<strong>Le symptôme est un travail du sujet</strong>&quot;: Pari qu'ils sont <strong>déjà en train d'essayer</strong> de traiter ce malaise, qu'ils essayent de trouver une solution, mais que s'ils ont besoin d'une institution, c'est que leurs tentatives ne marchent pas. Donc penser à adapter pour que ce soit plus vivable (par exemple, celui/celle qui ne peut pas sortir de chez soi ou voir ses voisins, ce n'est pas une solution à terme..., tenter d'adapter pour rendre le monde dans lequel vit cette personne moins feroce, ou du moins <em>faire exister</em> ce monde qui semble ne pas exister veritablement pour la personne).</li>
+<li>&quot;<strong>Le symptôme est un travail du sujet</strong>&quot;: Pari qu'ils sont <strong>déjà en train d'essayer</strong> de traiter ce malaise, qu'ils essayent de trouver une solution, mais que s'ils ont besoin d'une institution, c'est que leurs tentatives ne marchent pas. Donc penser à adapter pour que ce soit plus vivable (par exemple, celui/celle qui ne peut pas sortir de chez soi ou voir ses voisins, ce n'est pas une solution à terme..., tenter d'adapter pour rendre le monde dans lequel vit cette personne moins féroce, ou du moins <em>faire exister</em> ce monde qui semble ne pas exister véritablement pour la personne).</li>
 <li><strong>Abord non-déficitaire</strong>: ces personnes qui fréquentent ne sont pas considérées comme déficitaires. La raison que la personne soit là est qu’il ou elle ne peut plus faire autrement. (?).</li>
-<li>Repérer quel est <strong>l'Autre du sujet</strong>: Essayer de le lire à travers de ce que la personne amène. En institution, ceci peut être observé dans différents contextes (sans besoin d'attendre le moment du rendez-vous). <em>Le petit autre</em>: la façon dont le sujet construit son semblable, cliniquement toujours renseignant, écouter comment il construit l'autre, plutôt que deconstruire la veracite de son propos (même syntaxiquement). Moins ce qu'il se passe et plus sa manière de le vivre. <em>Le grand Autre</em>: champ symbolique, qui nous pre-existe. Ce qui caracterise l'humain c'est d'être partiellement attrapé et surdeterminé par le signifiant, le champ symbolique. Plus concrètement, cette determination par le synmbolique qui est très restreignante pour nous tous, même si on la perçoit pas la plupart du temps. Par exemple, le prénom que l'on porte (censé nous représenter, donné par quelqu'un d'autre).
+<li>Repérer quel est <strong>l'Autre du sujet</strong>: Essayer de le lire à travers de ce que la personne amène. Traiter l'Autre du sujet, plutôt que traiter le sujet. En institution, ceci peut être observé dans différents contextes (sans besoin d'attendre le moment du rendez-vous). <em>Le petit autre</em>: la façon dont le sujet construit son semblable, cliniquement toujours renseignant, écouter comment il construit l'autre, plutôt que déconstruire la véracité de son propos (même syntaxiquement). Moins ce qu'il se passe, et plus sa manière de le vivre. <em>Le grand Autre</em>: champ symbolique, qui nous pré-existe. Ce qui caractérise l'humain, c'est d'être partiellement attrapé et surdéterminé par le signifiant, le champ symbolique. Plus concrètement, cette determination par le symbolique qui est très restreignante pour nous tous, même si on la perçoit pas la plupart du temps. Par exemple, le prénom que l'on porte (censé nous représenter, est donné par quelqu'un d'autre).
 <ul>
 <li>Exemple de rapport à l'autre, donné par Olivier Challe: quelqu'un qui est dérangé par le bruit du voisin de chambre, il va s'acheter un casque pour écouter de la musique classique.</li>
-<li>Psychanalyse apploquee c'est Aller retour entre ce que les residents nous enseignent sur leur malaise et la lecture qu'on peut en faire.
+<li>Psychanalyse appliquée: c'est un Aller-retour entre ce que les résidents nous enseignent sur leur malaise, et la lecture qu'on peut en faire.
 <ul>
-<li>par exemple, solution de proposer boules quies, se fache parce qu'on lui propose une solution pour ne pas ecouter plutot que de faire arreter l'autre de renfler. Solutions pleines de bon sens dont il faut parfois s'abastenir.</li>
+<li>par exemple: solution de proposer boules Quies, se fâche parce qu'on lui propose une solution pour ne pas écouter plutôt que de faire arrêter l'autre de renfler. Solutions pleines de bon sens dont il faut parfois s'abstenir.</li>
 </ul>
 </li>
 </ul>
 </li>
+<li>Ce n'est pas un accueil sans conditions, il y a des conditions, car il y a nécessité d'une vie en commun possible. Donc ils vont d'une certaine façon décider par avance de si ils vont pouvoir aider une personne ou non.</li>
 </ul>
 </li>
 </ul>
 <p>📅 <strong>23 Février 2026</strong> - Cours 2</p>
-<div class="callout" data-callout="question"><div class="callout-title"><div class="callout-title-inner"> Questions de retrieval</div></div>
+<div class="callout" data-callout="question"><div class="callout-title"><div class="callout-title-inner"> Pré-questions</div></div>
 <div class="callout-content">
 <p>
 </p><ul>
-<li>Quelles sont definitions de santé mentale?</li>
-<li>Que disent elle de la ethique de soin et de visions sous-jacents de l'humain?</li>
-<li>En quoi se distingue et caracterise la position psychanlytique lacanienne?</li>
+<li>Quelle définition de santé mentale est prévalente de nos jours?</li>
+<li>Que transmettent ces définitions de leur éthique de soin sous-jacente et de visions sous-jacentes de l'humain?</li>
+<li>Quel est le fondement de la position psychanalytique Lacanienne?</li>
+<li>En quoi se distingue-t-elle dans son éthique de soin?</li>
 </ul>
 <p></p></div></div>
-<p>Définition de sante mentale de l'OMS:<br>
+<p><strong>Contre une vision normative et utilitariste de la santé mentale</strong></p>
+<p>Définition de santé mentale de l'OMS:<br>
 &quot;L’Organisation Mondiale de la Santé (OMS) définit la santé mentale comme « <em>un état de bien-être dans lequel une personne peut se réaliser, surmonter les tensions normales de la vie, accomplir un travail productif et contribuer à la vie de sa communauté. Dans ce sens positif, la santé mentale est le fondement du bien-être d’un individu et du bon fonctionnement d’une communauté</em> ».<br>
-&quot;La santé mentale ne se définit pas seulement par l’absence de trouble mental ou de handicap, mais constitute une dimension a part entière {...}&quot;</p>
+&quot;La santé mentale ne se définit pas seulement par l’absence de trouble mental ou de handicap, mais constitue une dimension a part entière {...}&quot;</p>
 <p>Critique de la définition par la prof:</p>
 <ul>
 <li>
 <p>Elle est troublée par la définition. &quot;Un petit côté développement personnel&quot;</p>
 <ul>
-<li>Dimension &quot;extrêment molle de bien être&quot;. Bien être semble être articulé à la capacité de quelqu'un &quot;d'arpenter le stress, réaliser son potentiel&quot;.</li>
-<li>Santé mentale et liée a la capacité a travailler efficacement, apprendre, contribuer a la communauté... -&gt; évaluation fonctionnelle, performance adapative dans cadres sociax donnés.</li>
+<li>Dimension &quot;extrêmement molle de bien être&quot;. Bien-être semble être articulé à la capacité de quelqu'un &quot;d'arpenter le stress, réaliser son potentiel&quot;.</li>
+<li>Santé mentale est liée à la capacité à travailler efficacement, apprendre, contribuer a la communauté... -&gt; évaluation fonctionnelle, performance adaptative dans des cadres sociaux donnés.</li>
 </ul>
 </li>
 <li>
-<p>Definition <strong>introduit une norme implicite</strong> de performance adaptative.</p>
+<p>La définition <strong>introduit une norme implicite</strong> de performance adaptative.</p>
 </li>
 <li>
-<p>S'inscrit dans un horizon economique et social <strong>utilitariste</strong>.</p>
+<p>S'inscrit dans un horizon économique et social <strong>utilitariste</strong>.</p>
 </li>
 <li>
-<p>Selon la prof, vient naturaliser des contraintes sociales: ne donne pas le contexte de ces exigeances posées.</p>
+<p>Selon la prof, elle vient naturaliser des contraintes sociales: ne donne pas le contexte de ces exigences posées.</p>
 </li>
 <li>
 <p>Cela déplace la santé mentale du registre de l'expérience subjective vers celui de l'adaptation au monde social.</p>
@@ -225,87 +232,135 @@ Ce cours sera d'orientation psychanalytique lacanienne (appliquée), rappel de c
 <li>
 <p>La conception de l'OMS repose sur une conception de l'homme <strong>implicitement normative et fonctionnaliste</strong>. Quelles conditions sont sous-jacentes dans cette définition?</p>
 <ol>
-<li>Le sujet y est pensé comme adaptable, optimisable, et utile socialement. Humain comme capital de compétences, a actualiser... Santé mentale permettant cette actualisation, sorte de humanisme managerial. La valeur/santé d'un sujet est ancrée dans son utilité sociale, l'existence est evaluée selon son rendement relationnel et social.</li>
+<li>Le sujet y est pensé comme adaptable, optimisable, et utile socialement. Humain comme capital de compétences, à actualiser... Santé mentale permettant cette actualisation, sorte de humanisme <em>managerial</em>. La valeur/santé d'un sujet est ancrée dans son utilité sociale, l'existence est evaluée selon son rendement relationnel et social.</li>
 <li>La santé mentale devient ainsi une notion opératoire orientée vers la gestion collective des populations. Elle n'implique pas d'élaboration collective des populations. Elle n'implique pas d'élaboration théorique du sujet et de sa souffrance psychique.</li>
 </ol>
 </li>
 </ul>
-<p>Psychanalse: mettre en place une éthique des conséquences.</p>
-<p><strong>Position de Lacan</strong></p>
+<p>Psychanalyse: mettre en place une éthique des conséquences. (?)</p>
+<p><strong>Position de Lacan: Délire comme effet du langage</strong></p>
 <p>Lacan formule &quot;tout le monde est fou, c'est-à-dire délirant&quot; dans <em>Télévision</em> (1973), un entretien avec Jacques-Alain Miller, repris dans <em>Autres écrits</em>.</p>
-<p><strong>Délire comme effet du langage</strong></p>
-<p>Dans les dix dernieres annees de son enseignement, il deplace la quesiton de la folie du registre de la pathologie vers celui de la structure du langage. Si un constitue est constitue par le langage, alors tout rapport au monde est deja une cosntruction, fiction, delire stabilisé. Difference ne tient pas entre fou et non fou, mais entre delires socialement compatibles et delires desorganisants, envahitoires.</p>
-<p>Quelle conditions sont sous-jacentes dans cette définition?</p>
-<p>Humain, etre parlant, n'ont acun acces au reel. Acces par recits et montages symboliques qui donnent consistance au monde. Delire n'est pas accident, anomalie, mais condition meme de la production de sens. Ce par quoi chacun se soutient a l'existence. Folie = quand ca ne tient plus socialement.</p>
+<p>Dans les dix dernières années de son enseignement, il déplace la question de la folie du registre de la pathologie vers celui de <strong>la structure du langage</strong>. Si un sujet est constitué par le langage, et que le langage est fondamentalement impropre à dire le réel, alors tout rapport au monde est déjà une construction, fiction, délire stabilisé. Différence ne tient pas entre fou et non fou, mais entre délires socialement compatibles et delires désorganisants, envahitoires.</p>
+<p><strong>Quelle conditions sont sous-jacentes dans cette définition?</strong></p>
+<p>Humain, être parlant, n'a aucun accès au reel. Accès par récits et montages symboliques qui donnent consistance au monde. Délire n'est pas accident, anomalie, une exception, mais la condition même de la production de sens. Ce par quoi chacun se soutient à l'existence, le rapport au monde. Folie = <strong>quand ça ne tient plus socialement</strong>.</p>
 <p><strong>Repenser la &quot;normalité&quot;</strong></p>
-<p>Dire que &quot;tout le monde est fou&quot; ne revient pas a pathologiser l'ensemble des phenomenes humains, mais a cerner davantage la condition humaine partagee.<br>
-Cela devooile tout normalite comme une construction.</p>
-<p>La folie clinique apparait lorsque cette cosntruction ne parvient plus a soutenir le sujet dans le lien social, a stabiliser son rapport a l'A(a)utre, au corps et au langage</p>
-<p>-&gt; Cette these permet de <strong>resister</strong> a la medicalisation generalisee de l'existence, inflation diagnostique, reductions de la souffrance a des troubles qu'il faudrait corriger. Une <strong>position</strong> qui invite a penser la sante mentale comme un retour a une norme ideale, mais une capacite a se soutenir d'un montage qui soit a peu pres socialement compatible. Elle soutien une ethique du soin centree sur la parole, le sujet, et la pluratié de manieres possibles d'habiter le monde.<br>
--&gt; Pas de departition sains/patients qu'il faut guider vers la lumiere ou ramener a la raison. Seulement une condition humaine, toujours symptomatique.<br>
-Soutien ethique du soin centree sur la parole</p>
-<p><strong>Videos montages</strong></p>
-<p>Nous propose deux videos.</p>
+<p>Dire que &quot;tout le monde est fou&quot; ne revient pas à pathologiser l'ensemble des phénomènes humains, mais à cerner davantage la condition humaine partagée.<br>
+<mark>Cela dévoile tout normalité comme une construction.</mark></p>
+<p>La folie clinique apparaît lorsque cette construction ne parvient plus à soutenir le sujet dans le lien social, à stabiliser son rapport a l'A(a)utre, au corps et au langage.</p>
+<p><strong>L'éthique de soin anti-normative</strong></p>
 <ul>
-<li>Video 1 (<a href="https://drive.google.com/file/d/1FiDMZTKdv6YFvTpD0TR1i9tawJb7xSOy/view?usp=share_link" target="_blank" class="external-link">Drive</a>).Presentation a propos du Réseau 2. Reseau créé a l'occasion du depart a la retraite d'Alfredo Zénoni. Aujourd'hui 40 institutions, non-officiel. Orientation de travail commune : psychanalyse lacanienne. Position de non-savoir: on tente de s'enseigner du patient. Savoir clinique toujours à construire avec le sujet. Non-normé par idéal de réussite. Travail par cycles de 2 ans, avec journées d'études, articulation autour d'un travail d'écriture.</li>
-<li>Video 2 (<a href="https://drive.google.com/file/d/1Zu7GTq7n0E8tBH0LeCKuQqeqN7Jy_4Vy/view" target="_blank" class="external-link">Drive</a>). Montage réalisé dans le cadre de la journee d'etudes precedente du Reseau 2. Extraits de films et extraits de documentaires sur la vie instituionnelle.</li>
+<li>Cette thèse permet de <strong>résister</strong> à la médicalisation généralisée de l'existence, l'inflation diagnostique, aux réductions de la souffrance à des troubles qu'il faudrait corriger. Une <strong>position</strong> qui invite à penser la santé mentale comme un retour à une norme idéale, mais une <strong>capacité a se soutenir d'un montage qui soit à peu près socialement compatible</strong>. Elle soutien une éthique du soin centrée sur la parole, le sujet, et la pluralité de manières possibles d'habiter le monde.</li>
+<li>-&gt; Pas de départition entre sains/patients qu'il faut guider vers la lumière, ou ramener a la raison, et des soignants normaux . Seulement une condition humaine, toujours symptomatique, aux prises avec le langage, le corps, avec la pulsion (?).</li>
+<li>Soutien éthique du soin centrée sur la parole, le sujet et la pluralité des manières d'habiter le monde. En tension avec des logiques gestionnaires du champ de la santé mentale.</li>
+</ul>
+<div class="callout" data-callout="done"><div class="callout-title"><div class="callout-title-inner"> Réponses</div></div>
+<div class="callout-content">
+<p>
+</p><ul>
+<li><strong>Quelle définition de santé mentale est prévalente de nos jours?</strong>
+<ul>
+<li>Fonctionnaliste, utilitariste, manageriale, déficitaire, déviation de la norme, déraison</li>
+</ul>
+</li>
+<li><strong>Que transmettent ces définitions de leur éthique de soin sous-jacente et de visions sous-jacentes de l'humain?</strong>
+<ul>
+<li>La personne est à ramener à la norme, la personne est vue comme ayant un problème si elle ne contribue au travail et à la communauté, on ignore le cadre culturel et normatif, on pathologise des déviations qui sont peut-être compréhensibles dans un système défaillant</li>
+</ul>
+</li>
+<li><strong>Quel est le fondement de la position psychanalytique Lacanienne?</strong>
+<ul>
+<li>Tout le monde est &quot;fou&quot;: comme nous n'avons pas d'accès au reel qu'à travers le langage (signifiant-signifié). La machinerie de production de sens peut-être dite comme un delire en soi, donc le delire est vue comme un mécanisme de base d'accès au reel. Donc, il n'y a pas de distinction conceptuelle entre fou et normal. La normalité est vue d'office comme une construction.</li>
+</ul>
+</li>
+<li><strong>En quoi se distingue-t-elle dans son éthique de soin?</strong>
+<ul>
+<li>On va accepter la pluralité de manières possibles d'habiter le monde, chercher à traiter sa propre posture de thérapeute, sa position de savoir, apprendre du patient, adopter un abord non-déficitaire, cerner davantage la condition humaine partagée, etc.</li>
+</ul>
+</li>
+</ul>
+<p></p></div></div>
+<p>Réflexions perso:</p>
+<ul>
+<li>On entend: &quot;La folie clinique apparaît lorsque cette construction ne parvient plus à soutenir le sujet dans le lien social, à stabiliser son rapport a l'A(a)utre, au corps et au langage.&quot;
+<ul>
+<li>Au final, y a quand meme un vision déficitaire quelque part (soutenir le lien social, soutenir le rapport à l'autre, au corps, au langage).</li>
+</ul>
+</li>
+<li>On passe plus de temps à démonter l'ennemi qu'a proposer quelque chose de concret: &quot;soutenir un montage qui soit à peu près socialement compatible. Elle soutien une éthique du soin centrée sur la parole, le sujet, et la pluralité de manières possibles d'habiter le monde&quot;. Un peu vague, quand même.</li>
+</ul>
+<p><strong>Videos montages</strong></p>
+<p>Nous propose deux videos:</p>
+<ul>
+<li>Video 1 (<a href="https://drive.google.com/file/d/1FiDMZTKdv6YFvTpD0TR1i9tawJb7xSOy/view?usp=share_link" target="_blank" class="external-link">Drive</a>). Présentation à propos du Réseau 2. Réseau créé à l'occasion du départ a la retraite d'Alfredo Zénoni. Aujourd'hui 40 institutions, non-officiel. Orientation de travail commune : psychanalyse lacanienne. Position de non-savoir: on tente de s'enseigner du patient. Savoir clinique toujours à construire avec le sujet. Non-normé par un idéal de réussite. Travail par cycles de 2 ans, avec journées d'études, articulation autour d'un travail d'écriture.</li>
+<li>Video 2 &quot;Lichettes&quot; (<a href="https://drive.google.com/file/d/1Zu7GTq7n0E8tBH0LeCKuQqeqN7Jy_4Vy/view" target="_blank" class="external-link">Drive</a>). Montage réalisé dans le cadre de la journée d'études précédente du Réseau 2. Extraits de films et extraits de documentaires sur la vie institutionnelle. Montre que continuum entre &quot;nos&quot; vies et les trajectoires qui mènent vers les institutions psychiatriques.</li>
 </ul>
 <p>📅 <strong>2 Mars 2026</strong> - Cours 3</p>
+<p>Video sur l'histoire de la folie par Psykoz:</p>
+<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/Te5kWn_gwWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <ul>
-<li>Video sur l'histoire de la folie: <a href="https://drive.google.com/file/d/1OkgQ31M0fWPRxBQ3gIfwNduih-EPJmvt/view" target="_blank" class="external-link">https://drive.google.com/file/d/1OkgQ31M0fWPRxBQ3gIfwNduih-EPJmvt/view</a>
-<ul>
-<li>Selon le prisme que l'on adopte, l'histoire de la folie peut etre compris soit comme un progrès, soit comme une serie de <strong>reconfiguration de normes, pratiques</strong>.</li>
+<li>Selon le prisme que l'on adopte, l'histoire de la folie peut être compris soit comme un progrès, soit comme une serie de <strong>reconfigurations de normes ou de pratiques</strong>.</li>
 <li>Notons que la video est racontée en &quot;nous&quot;, avec l'idée d'une continuité, plutôt que des changements ou ruptures dans des modèles conceptuels.</li>
-<li>Précision par rapport a Hippocrate et Galien: autour de la santé du corps. La maladie somatique ou mentale résulte d'un désequilibre. Donc <strong>conceptualisation physiologique</strong>. Donc la thérapeutique vise a retablir l'équilibre.</li>
-<li>Changement de modèle, <strong>relecture chrétienne</strong>: Folie n'est pas comprise comme une affection corporelle, mais comme le signe d'une épreuve spirituelle, peché, action du malin. Faute morale, epreuve divine, possession demoniaque...
+<li>Précision par rapport à Hippocrate et Galien: autour de la santé du corps. La maladie somatique ou mentale résulte d'un déséquilibre. Donc <strong>conceptualisation physiologique.</strong> Donc la thérapeutique vise a rétablir l'équilibre.</li>
+<li>Changement de modèle, <strong>relecture chrétienne</strong>: la folie n'est pas comprise comme une affection corporelle, mais comme le signe d'une épreuve spirituelle, un pêché, l'action du malin. Faute morale, épreuve divine, possession démoniaque...
 <ul>
-<li><strong>Folie et sorcellerie</strong> peuvent etre pensees sous un meme cadre theorique. manifestations du diable, du malin, mais ne relevent pas du meme statut. Ce qui est caractérise comme folie = atteinte subie, appelle pratiques de soin ou d'exorcisme. Alors que sorcellerie = faute volontaire, implique pacte avec le mal.</li>
+<li><strong>Folie et sorcellerie</strong> peuvent être pensées sous un même cadre théorique. manifestations du diable, du malin, mais ne relèvent pas du même statut. Ce qui est caractérisé comme folie = atteinte subie, appelle pratiques de soin ou d'exorcisme. Alors que sorcellerie = faute volontaire, implique pacte avec le mal.</li>
 </ul>
 </li>
-<li>Ensuite: Représentations religieuses mediévales coexistent avec des approches plus medicales, humaines. Mais sans modele unifié a cette epoque. Folie = définie par rapport a <strong>la raison</strong> comme deviance. Avec politiques d'enfermement regroupant fous, pauvres, populations marginales. Sans enjeu explicitement thérapeutique. Il s'agit avant tout de mantenir l'ordre social, le contrôle, et discipliner des conduites problématiques (et c'est toujours en partie le but, en plus de la visée therapeutique, d'après la prof).</li>
-<li>Pinel: pas seulement contenir, mais aussi soigner. Il est egalement a l'oirigne du traitement moral (paroles, formation du comportement, cadre instituionel structurant). Idee d'une raison alteree, plutot que abolie, par la folie. Amorce de la psychiatrie moderne.</li>
-<li>Premiers soins psychiatriques à Baghdad dans les annees 700:
+<li>Ensuite: Représentations religieuses médiévales coexistent avec des approches plus médicales, humaines. Mais sans modèle unifié à cette époque. Folie = définie par rapport à <strong>la raison</strong> comme déviance. Avec politiques d'enfermement regroupant fous, pauvres, populations marginales. Sans enjeu explicitement thérapeutique. Il s'agit avant tout de maintenir l'ordre social, le contrôle, et discipliner des conduites problématiques (et c'est toujours en partie le but, en plus de la visée thérapeutique, d'après la prof).</li>
+<li>Pinel: pas seulement contenir, mais aussi soigner. Il est également à l'origine du traitement moral (paroles, formation du comportement, cadre institutionnel structurant). Idée <strong>d'une raison altérée</strong>, plutôt que abolie, par la folie. Amorce de la psychiatrie moderne. S'inspire de modèle arabe.</li>
+<li>Premiers soins psychiatriques à Baghdad dans les années 700:
 <ul>
-<li>cadre doctrinal et institionnel differe.</li>
-<li>Dans la pensee islamique classique, le fou n'est chargé d'aucune culpabilité religieuse. pas assimilée au peché ou faute morale. Pensee comme epreuve. Donc ceci a conduit a prises en charges institionalisées plus precoces.</li>
-<li>Judaisme rabbinique: apprehende de maniere pragmatique, juridique.
+<li>cadre doctrinal et institutionnel diffère.</li>
+<li>Dans la pensée islamique classique, le fou n'est chargé d'aucune culpabilité religieuse. Pas assimilée au peché ou faute morale. Pensée comme épreuve. Donc ceci a conduit a prises en charges institutionnalisées plus précoces.</li>
+<li>Judaïsme rabbinique: appréhende de manière pragmatique, juridique.
 <ul>
-<li>talud: incapacite a juger et agir de maniere responsable (pas de culapbnilite). fou est exempte de certaines obligations. Ni pecheur ni possede ni heretique.
+<li>Talud: incapacité à juger et agir de manière responsable (pas de culpabilité). Fou est exempté de certaines obligations. Ni pêcheur ni possédé ni hérétique.</li>
+<li>Fou jamais porteur d'une vérité cachée.</li>
+</ul>
+</li>
+<li>20ème siecle:
 <ul>
-<li>fou jamais porteur d'une verite cachee.</li>
+<li>changement des traitements : électrochocs, douches froides, contentions</li>
+<li>Avancée de la médecine au niveau pharmacologique -&gt; médicalisation</li>
+<li>Après années 50:
+<ul>
+<li>Mouvement anti-psychiatrique
+<ul>
+<li>Hopital psychiatrique considéré comme torture</li>
+</ul>
+</li>
+<li>Psychologie moderne, développement de différentes écoles</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li>20ème siecle:</li>
 </ul>
-</li>
-</ul>
-<p>Quelques mots sur la psychochirurgie:</p>
+<p>Quelques mots sur la psychochirurgie (lobotomie préfrontale):</p>
 <ul>
 <li>Introduite aux USA par Freeman et Wats.</li>
-<li>Lobotomie préfrontale.</li>
-<li>Introduite pour formes séveres de troubles mentaux (schizophrenie, etats melancoliques et troubles obsessionels)</li>
-<li>Operation, chirurgie, visant a modifier circuits pour attenuer symptomes. Conceptio &quot;rudimentaire&quot; du foncitonnement cerebral.</li>
+<li>Introduite pour formes sévères de troubles mentaux (schizophrénie, etats melancoliques et troubles obsessionels)</li>
+<li>Opération, chirurgie, visant a modifier circuits pour attenuer symptomes. Conception &quot;rudimentaire&quot; du fonctionnement cerebral.</li>
 <li>Rayonnement international, nottamment en Europe.</li>
-<li>Suscite des controverses mais aussi veritable interet, surtout pour cas jugés &quot;refractaires&quot;.</li>
+<li>Suscite des controverses mais aussi véritable interet, surtout pour cas jugés &quot;refractaires&quot;.</li>
 <li>Avant la diffusion massive des neuroleptiques.</li>
 <li>Effets secondaires souvent massifs.</li>
-<li je="" comprends="" ici="" que="" point="" de="" vue="" est="" que="" médicaments="">Interventions progressivement abandonnees a partir des annees 60 au profit des traitements médicamenteux. Ce qui est frappant, ce que au delà de son objectif thérapeutique, de façon plus perceptible que pour d'autres modalités de traitement, la dimension de contrôle social est palpable.</li>
-<li>Intervention donc medicalisée, avec utilisation normative, visant à rendre les individus plus dociles et conformes aux normes sociales. Patient.e.s souvent considerés comme hystériques, impulsives, emotionnellement instables... categories medicalisees.</li>
-<li>La prof nous invite a garder à l'esprit ces questions des aspects politiques à propos de toute forme d'accueil et d'accompagnement.</li>
+<li prof="" suggère="" que="" médicaments="">Interventions progressivement abandonnées a partir des années 60 au profit des traitements médicamenteux. Ce qui est frappant, ce que au delà de son objectif thérapeutique, de façon plus perceptible que pour d'autres modalités de traitement, la dimension d<strong>e contrôle social est palpable</strong>.</li>
+<li>Intervention donc médicalisée, avec utilisation normative, visant à rendre les individus plus dociles et conformes aux normes sociales. Patient.e.s souvent considerés comme hystériques, impulsives, émotionnellement instables... catégories medicalisées.</li>
+<li>La prof nous invite à garder à l'esprit les questions des aspects politiques à propos de toute forme d'accueil et d'accompagnement.</li>
 </ul>
-<p>Livre de Michel Claire: tensions qui existent entre les approches, les différents types de savoir, les tentatives de soin et leur conséquences.<br>
-Livre de Jean-Noel Missa: comment la conception physiologique, cerebrale, s'impose face aux modeles precedents, et comment cette evolution redefinit le statut de la maladie mentale.</p>
+<p>Livre de Michel Claire, <em>Soigner les fous</em>: tensions qui existent entre les approches, les différents types de savoir, les tentatives de soin et leur conséquences.<br>
+Livre de Jean-Noel Missa, <em>Naissance de la psychiatrie biologique</em>: comment la conception physiologique, cérébrale, s'impose face aux modeles precedents, et comment cette evolution redefinit le statut de la maladie mentale.<br>
+Livre de Adèle Yon, <em>Mon vrai nom est Elisabeth</em>.</p>
 <p><strong>Littérature asilaire</strong></p>
-<p>Littérature visant à restituer l'expérience vécue dans le cadre de l'asile, l'hôpital psychiatrique et d'autres institutions. Donne accès non seulement à des pratiques de soin, mais aussi à des regimes de sensibilite, de pouvoir et de savoir propres a chaque epoque.</p>
+<p>Littérature visant à restituer l'expérience vécue dans le cadre de l'asile, l'hôpital psychiatrique et d'autres institutions. Donne accès non seulement à des pratiques de soin, mais aussi à des régimes de sensibilité, de pouvoir et de savoir propres à chaque époque.</p>
 <ul>
-<li>Frontieres du normal et du pathologique.</li>
-<li>Ne revient pas a opposer objectivite et subjectivite mais placer la psychiatrie comme situé dans une epoque et culture.</li>
+<li>Frontières du normal et du pathologique.</li>
+<li>Ne revient pas à opposer objectivité et subjectivité mais placer la psychiatrie comme situé dans une époque et culture (subjectivités des patients et de soignants vs données nosographiques).</li>
 </ul>
 <p>Ouvrage: <a href="https://en.wikipedia.org/wiki/Ten_Days_in_a_Mad-House" target="_blank" class="external-link">10 days in a Mad House</a>, de la journaliste d'investigation Nellie Bly (1887).</p>
+<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/0SRDvo_dZCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <ul>
 <li>
 <p>Introduction sur Nellie Bly: (1) <a href="https://drive.google.com/file/d/1yyJrTCOgnu5eqsFaNTot4i-xaI9w79_O/view?usp=sharing" target="_blank" class="external-link">https://drive.google.com/file/d/1yyJrTCOgnu5eqsFaNTot4i-xaI9w79_O/view?usp=sharing</a> (2) <a href="https://drive.google.com/file/d/1yyJrTCOgnu5eqsFaNTot4i-xaI9w79_O/view?usp=sharing" target="_blank" class="external-link">https://drive.google.com/file/d/1yyJrTCOgnu5eqsFaNTot4i-xaI9w79_O/view?usp=sharing</a></p>
@@ -326,7 +381,7 @@ Livre de Jean-Noel Missa: comment la conception physiologique, cerebrale, s'impo
 </ul>
 </li>
 <li>
-<p>-&gt; conclusion, la folie ne peut pas etre pensee en dehors du contexte social dans lequel elle est prise en charge, question centrale encore aujourd'hui</p>
+<p>-&gt; conclusion, la folie ne peut pas être pensée en dehors du contexte social dans lequel elle est prise en charge, question centrale encore aujourd'hui.</p>
 </li>
 </ul>
 <p>Autre livre: Joy Sorman, <em>À la folie</em>, 2021.</p>
@@ -341,59 +396,631 @@ Livre de Jean-Noel Missa: comment la conception physiologique, cerebrale, s'impo
 </li>
 <li>Elle décrit:
 <ul>
-<li>L<strong>e quotidien de la folie</strong>: décrit un univers fait de routines, d'attentes, de gestes répetés. La maladie moins comme rupture radicale, mais comme une manière d'habiter le temps hospitalier.</li>
-<li><strong>La centralité des corps</strong>: corps medicalises, contraints, fatigués. Effets des traitements sedation). Folie montree comme experience incarnee.</li>
+<li>L<strong>e quotidien de la folie</strong>: décrit un univers fait de routines, d'attentes, de gestes répétés. La maladie moins comme rupture radicale, mais comme une manière d'habiter le temps hospitalier.</li>
+<li><strong>La centralité des corps</strong>: corps médicalisés, contraints, fatigués. Effets des traitements sédation). Folie montrée comme expérience incarnée.</li>
 <li><strong>Mise en tension entre soin, contrainte et pouvoir</strong>: hôpital comme lieu ambivalent, espace de protection et dispositif de normalisation. Dimension d'isolement, contention, gestion du risque (dimension qui sera discutée avec Simon Flemal, qui travaille avec les patients placés sous contrainte).</li>
-<li><strong>Enjeux ethiques et cliniques</strong>: parole qui circule difficilement, desqualifiée, reformulée par les intervenants. Regard extérieur de l'auteur: observer sans interpréter. Folie ne se joue pas seulement dans l'individu, mais toujours dans un cadre institutionnel, relationnel, social.</li>
+<li><strong>Enjeux éthiques et cliniques</strong>: parole qui circule difficilement, disqualifiée, reformulée par les intervenants. Regard extérieur de l'auteur: observer sans interpréter. Folie ne se joue pas seulement dans l'individu, mais toujours dans un cadre institutionnel, relationnel, social.</li>
 </ul>
 </li>
 </ul>
 <p>La lecture de ces 2 ouvrages nous montre a quel point il est indispensable de penser la psychiatrie comme pratique de soin comme espace de pouvoir, de discours et de responsabilité éthique.</p>
 <p>Deux autres ouvrages intéressants:</p>
 <ul>
-<li>Albert Londres &quot;Chez les fous&quot; (1925). Aussi investigatif. Se fait passer par fou aussi. Rentre dans plusieurs asiles d'aliénés. Arbitraire administratif, mauvais traitements. Serie d'articles qui provoquent un tollé, decrivant des personnes que la société refuse de voir, denonce forme d'oubliette moderne de ceux qui sont relegués hors de vue, hors de voix.</li>
-<li>Emmanuel Venet &quot;Retour chez les fous&quot; (2013). Psychiatre français contemporain. Démarche en écho a Albert Londres, pour revisiter l'état de la psychiatrie contemporaine. Pratique securitaire et biomédicale. Grand nombre de cliniques privées. Grande quantité de malades laissés a l'abandon, ni assez solvables pour les privés, ni assez graves pour les publiques.</li>
-</ul>
-<p>Malo (?)</p>
+<li>Albert Londres &quot;Chez les fous&quot; (1925). Aussi investigatif. Se fait passer par fou aussi. Rentre dans plusieurs asiles d'aliénés. Arbitraire administratif, mauvais traitements. Serie d'articles qui provoquent un tollé, décrivant des personnes que la société refuse de voir, denonce forme d'oubliette moderne de ceux qui sont relegués hors de vue, hors de voix.</li>
+<li>Emmanuel Venet &quot;Retour chez les fous&quot; (2013). Psychiatre français contemporain. Démarche en écho a Albert Londres, pour revisiter l'état de la psychiatrie contemporaine. Pratique sécuritaire et biomédicale. Grand nombre de cliniques privées. Grande quantité de malades laissés a l'abandon, ni assez solvables pour les privés, ni assez graves pour les publiques.</li>
+<li>Hector Malo - Un beau frère:
 <ul>
-<li>Aliéniste amateur: se fait solliciter son opinion.</li>
-<li>Qui possede le droit de definir la folie?</li>
+<li>Considéré comme le premier auteur aliéniste.</li>
+<li>Se considère comme aliéniste amateur: se fait solliciter son opinion.</li>
+<li>Qui possède le droit de definir la folie?</li>
 <li>Institution n'est pas seulement outil de soin, mais aussi de pouvoir (enjeux sociaux, juridiques, narratifs)</li>
-<li>Folie ne peut pas etre pensee en dehors des cadres qui l'enferment, la decrivent et la traitent.</li>
+<li>Folie ne peut pas être pensée en dehors des cadres qui l'enferment, la décrivent et la traitent.</li>
 </ul>
-<p>Récit de slam de &quot;Treize&quot; (nom d'artiste).</p>
+</li>
+<li>Marc Christin:
 <ul>
-<li>A aprtir de son propre vecu, 10 ans de passage dans le &quot;pays psychiatrique&quot;.</li>
-<li>violences institutionnelles, mèdicalisation, opposition a l'authoritè clinique et mèdicale.</li>
+<li>Suisse francophone</li>
+<li>Écrit de grande portée également
+<ul>
+<li>Immersif aussi, mais sous la contrainte</li>
+</ul>
+</li>
+<li>A écrit de nombreux ouvrages, sous des pseudonymes variés</li>
+<li>C’est un escroc multirécidiviste, dont les talents pour le crime sont médiocres
+<ul>
+<li>Consacre son existence à transgresser la loi et se faire prendre</li>
+<li>Va donc régulièrement en prison</li>
+</ul>
+</li>
+<li>La dimension de répétition de ses crimes et l’incorrigibilité de son comportement vont être saisis comme un symptôme de maladie mentale
+<ul>
+<li>Par un psychiatre qui veut renforcer la psychiatrie légale comme une instance de régulation sociale. Il se sert donc de cette affaire comme d’un marchepied pour sa carrière.</li>
+<li>Il est donc interné en 1902 dans un asile dirigé par ce psychiatre</li>
+<li>En sort 2 fois, y est ramené à chaque fois</li>
+<li>Finira par mourir dans cet asile</li>
+</ul>
+</li>
+<li><strong>« Les évincés »</strong>
+<ul>
+<li>Rédigé pendant sa première période d’internement</li>
+<li>Récit fouillé du quotidien asilaire, des pratiques cliniques, de l’état du savoir psychiatrique à l’époque</li>
+<li>Certaine flatterie envers les psychiatres en place</li>
+<li>Édité avec une préface du psychiatre directeur de l’asile lui-même</li>
+<li>➔ Porte la trace du contrôle de son contenu
+<ul>
+<li>Pdt écriture l’auteur est interné et doit sans cesse faire la preuve de sa santé mentale et de sa guérison</li>
+</ul>
+</li>
+<li>➔ Témoigne d’un nouage entre
+<ul>
+<li>L’expérience de l’enfermement sous contrainte</li>
+<li>Et la tentative de s’en extraire par l’écriture d’un texte qui doit prouver l’autonomie de son auteur</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>« Le règne des psychiatres »</strong>
+<ul>
+<li>Dès sa libération il s’attèle à la rédaction de ce 2e texte</li>
+<li>Jamais achevé</li>
+<li>Radicalement critique à l’égard de « la moins exacte des sciences approximatives », càd la psychiatrie. Invalide donc les appréciations positives de l’ouvrage précédent. Les restitue pour ce que c’était : des <strong>propos sous contrainte.</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Récit de slam de &quot;Treize&quot; (nom d'artiste).
+<ul>
+<li>A partir de son propre vécu, 10 ans de passage dans le &quot;pays psychiatrique&quot;.</li>
+<li>violences institutionnelles, médicalisation, opposition à l'authorité clinique et médicale.</li>
+</ul>
+</li>
 </ul>
 <p>📅 <strong>9 Mars 2026</strong> - Cours 4</p>
-<p>Séance consacrée au visionange du premier des documentaires: <strong>État limite</strong> (<a href="https://www.arte.tv/fr/videos/111769-000-A/etat-limite" target="_blank" class="external-link">ARTE</a>). Nicolas Peduzzi, 2023.</p>
+<p>Séance consacrée au visionnage du premier des documentaires:<br>
+<strong>État limite</strong> (<a href="https://www.arte.tv/fr/videos/111769-000-A/etat-limite" target="_blank" class="external-link">ARTE</a>). Nicolas Peduzzi, 2023.</p>
 <ul>
-<li>On suit un psychiatre exerçant comme psychiatre de liaison de la région parisienne.</li>
-<li>Approche immersive.</li>
+<li>On suit un psychiatre, le Dr Jamal Abdel-Kader, exerçant comme psychiatre de liaison dans un hôpital public de la région parisienne.</li>
+<li>Approche immersive, documentaire observe observe le quotidien du psychiatre sur plusieurs mois.</li>
 <li>Lieu sans service de psychiatrie à proprement parler.</li>
 <li>Plusieurs axes:
 <ul>
-<li>place de la psychiatrie à l'hôpital general (frontiere de problematiques psychique, sociale, physique)</li>
-<li>contraintes du système hospitalier d'aujourd'hui</li>
-<li>dimension politique (difficultés sociales, precarites isolement, vulnerabilite qui depassent le cadre medical)</li>
+<li><strong>place de la psychiatrie à l'hôpital général</strong> (frontière de problématiques psychique, sociale, physique)</li>
+<li>contraintes du système hospitalier d'aujourd'hui, manque de moyens: À travers cette immersion, le film pose une question centrale : comment soigner dans une institution elle-même “en souffrance” ?</li>
+<li>la <strong>relation clinique</strong>: l'importance de la parole, de l'écoute, et de la présence du médecine</li>
+<li><strong>dimension politique</strong> (difficultés sociales, précarités, isolement, vulnerabilités... qui dépassent le cadre médical)</li>
 </ul>
 </li>
-<li>Réflexions perso:
+<li>Eléments à repérer:
 <ul>
-<li>pour lui, tout est la construction de relation de confiance</li>
+<li>La place de la parole dans la rencontre clinique: quel espace de dialogue le psychiatre construit-t-il?</li>
+<li>Les contraintes institutionnelles: effets de la surcharge de travail et l'organisation hospitalière sur la pratique clinique.</li>
+<li>Les figures de la crise: quelles situations amènent les patients à rencontrer le psychiatre (tentatives de suicide, agitation, détresse psychique, etc.)?</li>
+<li>L'hôpital comme institution: tension entre soin, sécurité, gestion du risque et contraintes administratives?</li>
+</ul>
+</li>
+<li>Notes perso:
+<ul>
+<li>pour lui, tout est la construction de relation de confiance et de soin, ne peut pas prévoir le temps que ça prendra de créer un lien, rencontrer la famille, apaiser la personne...</li>
 <li>le dilemme entre la liberté et protection du patient</li>
 <li>environnement urbain nocif (environnement centré autour de la production, mais le fou ne produit rien, ne sert à rien, il est mis dans des institutions)</li>
-<li>il critique que pas d'accent mis sur réinclusion psychosociale (une fois sortis de l'hopital)</li>
+<li>il critique que pas d'accent mis sur la réinclusion psychosociale (une fois sortis de l'hôpital). On peut être l'&quot;idiot du village&quot;, si on est entouré par des personnes qui lui prêtent une attention suffisante.</li>
 </ul>
 </li>
 </ul>
-<p>📅 <strong>16 Mars 2026</strong> - Cours 5</p>
-<p>Discussion avec l'intervenant. J'étais absent.</p>
-<p>📅 <strong>23 Mars 2026</strong> - Cours 6</p>
-<p>Normalement, le film sera montré.</p>
-<p>📅 <strong>13 avril 2026</strong> - Cours x</p>
-<p>Discussion Nef des fous. Absent.</p>
+<p>📅 <strong>16 Mars 2026</strong> - Cours 5 - Absent.<br>
+Discussion avec Simon Flémal.<br>
+Résumé IA.</p>
+<h3 id="1-position-de-simon-flemal" tabindex="-1">1. Position de Simon Flémal</h3>
+<p>Flémal adopte une position très marquée par la psychanalyse et par la clinique institutionnelle. Pour lui, le travail en institution ne consiste pas d’abord à “faire du bien”, ni à appliquer des normes générales, mais à comprendre comment chaque patient peut se servir de l’institution, du soignant ou du cadre pour traiter quelque chose de ce qui lui arrive.</p>
+<p>Il insiste sur l’idée qu’en psychiatrie, <strong>il n’y a pas de norme stable permettant de s’orienter simplement</strong>. La folie ne se réduit pas à une pathologie qu’il faudrait supprimer. <strong>Le symptôme, même lorsqu’il fait souffrir le patient ou l’équipe, a souvent une fonction</strong>. C’est pourquoi il faut être prudent face à l’idée de guérison ou de suppression du symptôme : si un patient cesse brutalement d’entendre des voix dont il se plaignait beaucoup, cela peut être inquiétant, parce que ces voix pouvaient aussi avoir une fonction de stabilisation.</p>
+<p>Flémal souligne aussi la nécessité, pour les soignants, de se rendre responsables de leur propre “point de folie”, de leur propre “point d’horreur” ou “point d’insupportable”. Selon lui, accueillir l’insupportable du patient suppose de ne pas nier ce qui, en soi-même, est également insupportable, haineux, mortifère ou asocial. La psychanalyse ne vise donc pas simplement la bienveillance ou l’empathie : elle invite plutôt à une responsabilité subjective.</p>
+<p>Sur le documentaire, Flémal dit être resté en partie “sur sa faim” concernant l’usage que les patients font de l’institution. Il aurait voulu voir davantage comment les patients s’appuient sur l’hôpital, comment ils y inventent quelque chose, comment une expérience institutionnelle peut éventuellement se prolonger à l’extérieur.</p>
+<p>Enfin, face aux rechutes ou aux retours en institution, Flémal refuse de les lire automatiquement comme des échecs. Un retour peut signifier que le patient a identifié l’institution comme un lieu de recours, un point d’appui face à ce qui est plus fort que lui.</p>
+<h2 id="2-position-de-glineur" tabindex="-1">2. Position de Glineur</h2>
+<p>Glineur développe une réflexion plus directement centrée sur l’institution, ses limites concrètes, ses plaintes et ses conditions socio-politiques. Il insiste sur le fait que les <strong>difficultés cliniques sont indissociables du contexte institutionnel</strong> : manque de moyens, paupérisation de l’hôpital public, disparition de certains gestes d’accueil, surcharge des équipes, délais d’attente, précarité des patients.</p>
+<p>Mais elle refuse une opposition trop simple entre “le système” et “nous”. Selon elle, <strong>la plainte des soignants</strong> existe dans toute institution et doit être interrogée dans sa fonction. Elle peut être une manière de parler de l’impossible du travail : la répétition, les rechutes, les passages à l’acte, l’auto-destruction des patients, l’impression de ne jamais en finir. Il ne s’agit pas d’invalider les plaintes, mais de se demander ce qu’elles produisent, ce qu’elles empêchent, et comment elles orientent ou désorientent le travail clinique.</p>
+<p>Glineur met fortement l’accent sur <strong>la modestie du psychiatre</strong> dans le documentaire. Celui-ci ne se présente pas comme celui qui va sauver ou réparer les patients. Il tente plutôt de ne pas faire “mauvaise rencontre” pour eux : ne pas ajouter une violence institutionnelle à la violence déjà vécue, ne pas aggraver leur situation, maintenir la possibilité d’une interlocution.</p>
+<p>Elle insiste aussi sur la <strong>“prise au sérieux” du patient</strong>, même lorsque sa parole est hors sens, délirante ou non rationnelle. Le patient doit rester un interlocuteur de plein droit. <strong>Pour Glineur, l’enjeu n’est pas de tout comprendre rationnellement, mais de repérer comment le patient se sert du lien, de l’institution, du transfert ou de certains points d’appui.</strong></p>
+<h2 id="3-themes-centraux-de-reflexion" tabindex="-1">3. Thèmes centraux de réflexion</h2>
+<p>Le premier grand thème est celui de l’<strong>institution comme lieu d’accueil</strong>. Le documentaire montre un hôpital traversé par une grande diversité de situations : violence contre soi-même, errance, mélancolie, addiction, isolement, souffrance somatique, urgences psychiatriques. La question centrale est : comment accueillir des sujets aussi différents sans les réduire à des catégories générales ?</p>
+<p>Le deuxième thème est l’<strong>institution comme lieu d’usage</strong>. Les deux intervenants se demandent comment un patient peut se servir de l’institution : comme lieu de pause, de rythme, de protection, de rencontre, de parole, de stabilisation ou de passage. L’institution n’est pas seulement un lieu qui soigne ; elle peut devenir un point d’appui contre ce qui déborde le sujet.</p>
+<p>Le troisième thème est <strong>la clinique sans demande</strong>. Certains patients ne demandent rien, ne parlent presque pas, ou semblent ne pas vouloir la rencontre. Pourtant, le psychiatre peut maintenir une présence, parfois vide de contenu apparent, qui a une fonction. Dire toujours la même chose, rester dans sa chambre ou accepter une visite silencieuse peut déjà constituer une forme de lien ou de stabilisation. Sur la prévention au sens <em>« viser le bien »</em> : <strong>contre-productif</strong> pour certains sujets. Plutôt : accompagner, construire <strong>avec</strong> le patient, puis on voit. Pas optimiste, mais <strong>vouloir le bien est encore pire</strong>.</p>
+<p>Le quatrième thème est la <strong>paupérisation de l’hôpital public</strong>. Glineur insiste sur la manière très concrète dont la baisse des moyens transforme l’accueil : disparition de petits gestes matériels, impossibilité de donner quelques jours de médicaments, manque de places, listes d’attente, fragilité des dispositifs. Cette pauvreté de moyens rend plus palpable l’impossible propre à la santé mentale.</p>
+<p>Le cinquième thème est <strong>la responsabilité du soignant</strong>. Les intervenants rappellent qu’il ne suffit pas d’avoir de bonnes intentions. Il faut lire les situations, les transferts, les fonctions du symptôme, les points d’appui et les points de chute. La confiance envers le patient ne doit pas être une posture abstraite : elle doit être articulée à une lecture clinique.</p>
+<h2 id="4-points-importants-a-retenir" tabindex="-1">4. Points importants à retenir</h2>
+<ul>
+<li>Un symptôme n’est pas seulement un problème à supprimer : il peut aussi être une solution, même coûteuse, trouvée par le sujet pour tenir.</li>
+<li>Le retour en institution n’est pas nécessairement un échec. Il peut indiquer que le patient a trouvé un lieu où il peut revenir quand quelque chose devient trop fort. Pour Flémal, revenir à la <strong>raison d'existence des institutions</strong>, il prend <strong>délibérément une attitude enthousiaste</strong> face au retour.</li>
+<li>L’institution peut être une bonne rencontre ou une mauvaise rencontre. Le psychiatre du documentaire semble surtout attentif à ne pas ajouter de violence, de rejet ou d’humiliation à la situation du patient.</li>
+<li>La clinique ne repose pas uniquement sur la demande explicite du patient. Parfois, c’est le désir du clinicien, sa présence ou son insistance délicate qui permet qu’un usage de la rencontre devienne possible.</li>
+<li>La pauvreté des moyens n’est pas seulement une question administrative : elle transforme directement la qualité de l’accueil et la capacité de l’hôpital à soutenir les patients précaires.</li>
+<li>La plainte institutionnelle doit être entendue, mais aussi analysée. Elle parle souvent de l’insupportable du travail, mais peut aussi enfermer les équipes dans une opposition stérile au “système”.</li>
+</ul>
+<h2 id="5-points-d-opinion-personnelle-ou-de-divergence" tabindex="-1">5. Points d’opinion personnelle ou de divergence</h2>
+<ul>
+<li>Une divergence apparaît autour de l’idée “on a besoin les uns des autres”. Glineur semble plus proche de cette idée de lien, d’interdépendance et de construction collective. Pour Flémal, il faut d’abord s’occuper de ce qu’il y a de pire en soi, de ce qui coupe du lien social, avant de pouvoir accompagner l’autre.</li>
+<li>Flémal exprime aussi une réserve vis-à-vis d’une posture trop générale de confiance envers le patient. Il ne rejette pas la confiance, mais il refuse qu’elle devienne une position automatique. Il rappelle que certains patients peuvent tenir un discours rassurant sans que cela signifie qu’ils vont bien. Son exemple de la patiente qui semble calme puis se pend le lendemain montre la nécessité d’une prudence clinique.</li>
+<li>Glineur préfère parler de “lecture du transfert” plutôt que de confiance. Cela signifie qu’il s’agit moins de croire ou de ne pas croire le patient que de repérer à qui l’on a affaire, à quoi le patient a affaire, et comment il nous situe dans ce qui lui arrive.</li>
+<li>Un autre point d’opinion fort concerne la prévention. Flémal se montre critique envers une prévention pensée comme recherche du “bien” du patient. Dans certains cas, vouloir le bien peut aggraver les passages à l’acte. Il privilégie une position d’accompagnement, de construction avec le patient, sans idéal thérapeutique trop directif.</li>
+</ul>
+<h2 id="6-questions-et-interventions-des-etudiant-e-s" tabindex="-1">6. Questions et interventions des étudiant·e·s</h2>
+<p>Une première étudiante demande si le psychiatre du documentaire n’est pas une sorte d’institution dans l’institution. Elle relève qu’<strong>il semble porter beaucoup seul</strong>, qu’il travaille presque à contre-courant du fonctionnement hospitalier, et demande aux intervenants s’ils ont eux aussi un sentiment de lutte.</p>
+<ul>
+<li>Flémal répond que la lutte existe surtout autour du manque de place dans le soin psychiatrique. Il insiste sur la difficulté de trouver des lieux de relais après une hospitalisation, notamment à cause des listes d’attente. Pour certains patients, quarante jours suffisent à reprendre pied ; pour d’autres, non. La vraie difficulté devient alors de soutenir à l’extérieur l’usage qu’ils ont pu faire de l’institution.</li>
+<li>Glineur répond en déplaçant la question : plutôt que de penser “nous contre le système”, il propose d’interroger la fonction des plaintes. Il reconnaît la réalité de la paupérisation, mais invite à se demander ce que la plainte produit dans le travail institutionnel.</li>
+</ul>
+<p>Une deuxième étudiante, à partir de son expérience pendant le Covid, évoque la nécessité de <strong>faire confiance au patient</strong>. Elle explique que les équipes peuvent se sentir maltraitées par certains patients, alors qu’elles peuvent elles-mêmes devenir maltraitantes. Pour elle, la confiance consiste à se rappeler que le patient est le premier à souffrir de son symptôme.</p>
+<ul>
+<li>Flémal répond qu’il faut faire attention à ne pas transformer la confiance en posture générale. Il faut accueillir le discours du patient, mais toujours avec une lecture clinique. Le psychiatre fait des paris, mais ces paris peuvent être risqués.</li>
+<li>Glineur ajoute qu’il préfère parler de lecture du transfert. Il s’agit de repérer les points d’appui, les points de faille, les points de glissade, et surtout de reconnaître que le patient possède un savoir sur sa propre condition.</li>
+</ul>
+<p>Une troisième question porte sur la <strong>prévention des rechutes</strong>, notamment les addictions et les tentatives de suicide après la sortie. Flémal répond qu’il n’a pas de dispositif préventif spécifique. Son travail consiste plutôt à construire avec l’équipe une lecture du fonctionnement subjectif du patient, à se rendre présent, à penser les conditions de sortie, et à considérer le retour éventuel comme une possibilité de prolonger le travail plutôt que comme un échec.</p>
+<p>📅 <strong>23 Mars 2026</strong> - Cours 6<br>
+Absent.<br>
+A Ciel Ouvert, Mariana Otera, 2013.</p>
+<p>Résumé du documentaire:</p>
+<ul>
+<li>Documentaire franco-belge</li>
+<li>Film en immersion dans une institution pour enfants en grande difficulté psychique, se passe au Courtil.
+<ul>
+<li>Immersion de plusieurs mois.</li>
+<li>Tournage étalé sur environ 2 mois</li>
+<li>Sans voix off explicative</li>
+</ul>
+</li>
+<li>Le documentaire raconte:
+<ul>
+<li>Vie quotidienne: ateliers, repas, diverses interactions</li>
+<li>Réunions d'équipe, supervision d'intervenant</li>
+<li>Quelques enfants en particulier</li>
+<li>Accès à la clinique en jeu, au présent</li>
+</ul>
+</li>
+<li>Publication en parallèle à la sortie du documentaire: <em>Le Courtil, l'invention au quotidien</em>
+<ul>
+<li>Avec : des entretiens avec les professionnels du Courtil, des réflexions théoriques autour de la psychanalyse appliquée et de l’accompagnement d’enfants en difficulté, un retour sur la genèse du film, un éclairage des pratiques : comment les adultes inventent, au cas par cas, des réponses pour chaque enfant</li>
+</ul>
+</li>
+<li><strong>Le Courtil</strong>:
+<ul>
+<li>Institut « médico-pédagogique » situé à Tournai, créé au début des années 80, fondé par Alexandre Stevens, psychanalyste.</li>
+<li>Accueil d’enfants et d’adolescents en grande difficulté psychique
+<ul>
+<li>Autisme</li>
+<li>Psychose infantile</li>
+</ul>
+</li>
+<li>Institution orientée par la <strong>psychanalyse lacanienne/psychanalyse</strong> <strong>appliquée</strong>
+<ul>
+<li>Maintien du principe du travail à plusieurs et de l’élaboration clinique collective</li>
+<li>Offre un cadre institutionnel flexible, centré sur la singularité de chaque enfant</li>
+</ul>
+</li>
+<li>Organisation en plusieurs unités de vie
+<ul>
+<li>Le film prend lieu dans 1 unité : « capi »</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Notes du visionnage:</p>
+<ul>
+<li>Ça parle de &quot;jouissance, point d’arrêt, perte de soi, ca signe la psychose”
+<ul>
+<li>impression d'entendre un langage chelou, inventé.</li>
+</ul>
+</li>
+<li>Cool de voir la supervision, les réunions d’équipe.</li>
+<li>Me dis en voyant ça que je pourrais pas travailler en Belgique... “jouissance collective”</li>
+<li>“des formules qui font repère, qui bordent ce débordement&quot;</li>
+<li>Sa métaphore du météorite et du langage. On dirait un conte de fées. Quelles bases?</li>
+<li>Mes questions d’exploration:
+<ul>
+<li>quelle vérité dans le fait que langage cause certaines choses? relation langage psychopathologie</li>
+</ul>
+</li>
+<li>Vérité des deux profils, névroses (manque qqch) et psychotiques?</li>
+<li>un côté humain que j'aime bien</li>
+</ul>
+<p>📅 <strong>30 Mars 2026</strong> - Cours 7 - Absent.</p>
+<p>Discussion: À Ciel Ouvert. Avec Marie du documentaire et Dimitri, intervenant actuel du Courtil.</p>
+<p>Notes thanks to Chat.</p>
+<h3 id="1-le-documentaire-permet-de-prendre-distance-avec-la-pratique" tabindex="-1">1. Le documentaire permet de prendre distance avec la pratique</h3>
+<ul>
+<li><strong>Le documentaire sert d’outil de décentrement.</strong> Il permet aux intervenants de regarder leur propre travail depuis l’extérieur. Marie explique que le film l’a aidée à se désidentifier de sa fonction et de son institution, c’est-à-dire à ne plus être totalement prise dans la place qu’elle occupait au Courtil.</li>
+<li><strong>Le film donne un regard plus global sur les interventions.</strong> Il permet de voir les effets des gestes quotidiens, des paroles, des ateliers et des rencontres. Ce qui, dans le quotidien institutionnel, peut sembler dispersé ou répétitif apparaît alors comme un ensemble de pratiques orientées.</li>
+<li><strong>Le documentaire rend possible une transmission.</strong> Il donne des outils de travail qui peuvent être réutilisés ailleurs, hors du Courtil. Il ne sert donc pas seulement à montrer une institution, mais aussi à faire circuler une manière de penser la clinique.</li>
+</ul>
+<h3 id="2-l-orientation-centrale-ne-pas-savoir-a-la-place-de-l-enfant" tabindex="-1">2. L’orientation centrale : ne pas savoir à la place de l’enfant</h3>
+<ul>
+<li><strong>L’idée centrale de la discussion est le “savoir ne pas savoir”.</strong> Les intervenants ne partent pas du principe qu’ils savent déjà ce qui est bon pour l’enfant. <strong>Ils suspendent leurs évidences, leurs interprétations rapides et leurs idéaux éducatifs</strong>.</li>
+<li><strong>Cette position de non-savoir est active.</strong> Elle ne veut pas dire ne rien faire. Elle implique d’être présent, d’observer, de supporter ce qui dérange, de se laisser surprendre et de chercher la logique propre de l’enfant.</li>
+<li><strong>L’enfant guide le travail clinique.</strong> Ce sont ses gestes, ses symptômes, ses cris, ses répétitions, ses objets, ses intérêts ou ses inventions qui indiquent la direction du travail. L’intervenant ne plaque pas un sens extérieur : il essaie de lire comment l’enfant se débrouille avec ce qui l’envahit.</li>
+<li><strong>L’objectif n’est pas de normaliser l’enfant.</strong> La discussion refuse une logique qui chercherait seulement à corriger les comportements. Il ne s’agit pas d’obtenir un enfant calme, adapté ou conforme, mais de soutenir les solutions singulières qu’il trouve pour traiter sa souffrance.</li>
+</ul>
+<h3 id="3-l-institution-sert-a-limiter-le-pouvoir-et-le-savoir-de-l-intervenant" tabindex="-1">3. L’institution sert à limiter le pouvoir et le savoir de l’intervenant</h3>
+<ul>
+<li><strong>L’institution réglée n’est pas un cadre rigide.</strong> Elle ne repose pas sur une série de règles prédéfinies à appliquer mécaniquement. Elle est réglée par une orientation commune, qui aide les intervenants à ne pas agir selon leur seul ressenti ou leur seul idéal.</li>
+<li><strong>L’institution fonctionne comme un tiers.</strong> Elle permet à l’intervenant de ne pas incarner seul l’autorité. Il peut dire : “je ne peux pas te laisser faire ça”, non pas au nom de son pouvoir personnel, mais parce qu’il s’appuie sur une règle ou une orientation institutionnelle.</li>
+<li><strong>L’institution permet d’être “décomplété”.</strong> Cela signifie que l’intervenant ne se présente pas comme complet, tout-puissant ou détenteur du savoir. Il accepte de ne pas savoir à l’avance et de construire sa position à partir de ce que l’enfant amène.</li>
+<li><strong>Le Courtil cherche à éviter la fixation des places.</strong> Les unités peuvent être repensées, les groupes réorganisés, les stagiaires apportent un regard neuf. Cette mobilité empêche les intervenants de trop s’identifier à leur fonction ou à leurs habitudes.</li>
+</ul>
+<h3 id="4-le-travail-collectif-empeche-de-rester-seul-avec-son-interpretation" tabindex="-1">4. Le travail collectif empêche de rester seul avec son interprétation</h3>
+<ul>
+<li><strong>Les réunions d’équipe sont centrales.</strong> Chaque intervenant rapporte des vignettes, des observations, des moments vécus avec les enfants. Ces fragments permettent de construire progressivement une lecture du cas.</li>
+<li><strong>La transmission est horizontale.</strong> Chacun peut apporter quelque chose, quel que soit son statut. Le responsable thérapeutique participe aussi aux moments du quotidien. Ce qui compte n’est pas seulement la fonction officielle, mais le désir singulier que chacun met dans le travail.</li>
+<li><strong>L’équipe aide à se décaler de son ego.</strong> Un intervenant peut croire qu’il a une relation particulière avec un enfant ou qu’il a compris quelque chose seul. La réunion permet de vérifier, de nuancer, de compléter ou de déplacer cette impression.</li>
+<li><strong>La supervision sert à décompléter le savoir.</strong> Elle permet de travailler ce qui devient insupportable pour l’intervenant. Par exemple, face à un enfant qui vide des tubes de peinture, on peut rester bloqué sur l’idée de gâchis. La supervision aide à transformer cette réaction en question clinique : qu’est-ce que cet acte produit pour l’enfant ?</li>
+</ul>
+<h3 id="5-le-symptome-est-traite-comme-une-invention-pas-comme-un-simple-trouble" tabindex="-1">5. Le symptôme est traité comme une invention, pas comme un simple trouble</h3>
+<ul>
+<li><strong>Le symptôme est le point de départ du travail.</strong> Un cri, une insulte, une répétition, un comptage, un geste étrange ou un comportement agressif ne sont pas seulement des problèmes à supprimer. Ils peuvent être des solutions trouvées par l’enfant pour traiter quelque chose de trop envahissant.</li>
+<li><strong>Ce qui dérange peut avoir une fonction.</strong> Un comportement insupportable pour l’adulte peut être, pour l’enfant, une manière de faire bord, de mettre une limite ou d’éviter un passage à l’acte plus grave.</li>
+<li><strong>L’intervention vise souvent l’objet en trop plutôt que l’enfant.</strong> Par exemple, dire “je ne peux pas manger à côté d’un cri pareil” permet de viser le cri comme élément envahissant, sans attaquer directement l’enfant comme sujet.</li>
+<li><strong>Le travail part de ce que l’enfant propose.</strong> L’exemple des “kilomètres de larmes” montre comment les intervenants peuvent partir d’une formule de l’enfant pour construire un travail autour du comptage, de la mesure, du dessin ou de l’écriture. Ces médiations peuvent servir de bord à ce qui déborde. (Enfant qui pleurait sans cesse au moment de se coucher, demande « tu crois que j’ai pleuré combien de km de larmes ? » « je pense entre 2 et 3 » « ah non beaucoup plus, car il faut aussi compter tous les soirs où j’ai pleuré ». À partir de là ils ont pu travailler le comptage, à partir de son symptôme ➔ Écriture (comptage, dessin...) qui opere comme bord).</li>
+</ul>
+<h3 id="6-les-ateliers-et-le-semblant-sont-des-mediations-cliniques" tabindex="-1">6. Les ateliers et le semblant sont des médiations cliniques</h3>
+<ul>
+<li><strong>Les ateliers ne sont pas de simples activités éducatives.</strong> Ils ne visent pas nécessairement une production finale, un apprentissage ou une performance. Ils sont des espaces où l’enfant peut faire un usage singulier d’un objet, d’un lieu, d’une scène ou d’un rythme.</li>
+<li><strong>L’atelier peut venir du désir de l’intervenant.</strong> Un intervenant peut proposer la poésie, la cuisine, la céramique ou le théâtre parce que cela l’anime. Mais ce désir doit rester suffisamment souple pour que l’enfant puisse s’y accrocher à sa manière, ou ne pas s’y accrocher.</li>
+<li><strong>L’atelier peut aussi venir de l’invention de l’enfant.</strong> Si un enfant répète une scène, compte, dessine, manipule un objet ou s’intéresse fortement à un univers particulier, l’intervenant peut construire quelque chose à partir de cette trouvaille.</li>
+<li><strong>Le semblant permet de traiter autrement certains comportements.</strong> L’exemple de l’enfant intéressé par les Minions montre qu’un geste agressif peut être repris dans une logique de scène, de personnage, de répétition et de langage. Le comportement n’est pas seulement puni : il est déplacé dans un jeu de semblant qui peut le rendre plus traitable.</li>
+</ul>
+<h3 id="7-le-langage-doit-etre-manie-avec-prudence" tabindex="-1">7. Le langage doit être manié avec prudence</h3>
+<ul>
+<li><strong>Il ne faut pas toujours faire parler l’enfant.</strong> Faire parler peut aider, mais cela peut aussi rendre le symptôme trop présent ou trop persécutant. L’intervention se fait souvent dans l’informel, sans dire directement : “on va parler de ton problème.”</li>
+<li><strong>Parfois, il vaut mieux parler peu.</strong> Certains mots peuvent envahir l’enfant. L’intervenant doit donc savoir se taire, être présent sans trop occuper la scène, et ne pas imposer son propre désir de comprendre.</li>
+<li><strong>Le langage dépasse la parole.</strong> Il peut passer par un objet, une scène, un comptage, une répétition, un atelier ou une distance dans l’adresse. La question du “tu” ou du “vous” montre que l’important est la manière dont on convoque l’enfant comme sujet, sans le réduire à son âge ou à son comportement.</li>
+</ul>
+<p>📅 <strong>6 avril 2026</strong> - Cours 8 - Absent.</p>
+<p>Diffusion documentaire La nef des fous, Éric D’Agostino, &amp; Patrick Lemy, 2014.</p>
+<p>Présentation du documentaire:</p>
+<p>Réalisation du documentaire</p>
+<ul>
+<li>Tourné dans l’annexe psychiatrique de la prison de Forest:</li>
+<li>Immersion dans le quotidien de l’annexe psychiatrique de la prison</li>
+<li>Au croisement du soin, de la contrainte et de l’enfermement</li>
+<li>L'équipe suit le parcours de ces &quot;fous dangereux&quot;, ayant commis des actes graves, délictueux ou criminels, mais jugés irresponsables au moment de leurs actes.</li>
+<li>Observation des interactions entre patients, soignants et institution pénitentiaire</li>
+<li>Accueil de la parole des détenus</li>
+<li>Le film propose un regard brut, sans commentaire explicatif</li>
+</ul>
+<p><strong>Contexte institutionnel</strong></p>
+<ul>
+<li>Annexes psychiatriques en Belgique destinées à accueillir des personnes internées ou détenues avec troubles mentaux</li>
+<li>Entre logique de soin et logique sécuritaire</li>
+<li>Tension structurelle
+<ul>
+<li>Soigner / contenir</li>
+<li>Accompagner / surveiller</li>
+</ul>
+</li>
+<li>Faire le « pari du sujet » dans ce dispositif ?</li>
+<li>Période de tournage marquée par une crise structurelle du système carcéral</li>
+<li>Surpopulation pénitentiaire</li>
+<li>Manque de structures adaptées pour les patients psychiatriques
+<ul>
+<li>= Problème récurrent en Belgique</li>
+</ul>
+</li>
+<li><strong>Confusion</strong> entre enfermement judiciaire et prise en charge thérapeutique</li>
+</ul>
+<p><strong>Procédé narratif</strong></p>
+<ul>
+<li>Choix d’un dispositif immersif
+<ul>
+<li>Caméra proche des sujets</li>
+<li>Absence de voix off explicative</li>
+<li>Peu d’interventions extérieures</li>
+</ul>
+</li>
+<li>Sentiment d’immédiateté
+<ul>
+<li>Position de témoin pour le spectateur</li>
+<li>Responsabilisation du regard</li>
+</ul>
+</li>
+<li>Montage basé sur des scènes du quotidien
+<ul>
+<li>Pas de narration linéaire classique</li>
+<li>Accumulation de situations cliniques</li>
+</ul>
+</li>
+<li>Importance du hors champ
+<ul>
+<li>Ce qui n’est pas dit</li>
+<li>Ce qui échappe à la compréhension immédiate</li>
+</ul>
+</li>
+<li>La question du regard
+<ul>
+<li>Que voit-on ? Un malade, un détenu, un sujet</li>
+</ul>
+</li>
+<li>Risque de réduction
+<ul>
+<li>À un diagnostic</li>
+<li>À un comportement</li>
+<li>À une dangerosité<br>
+-&gt; Enjeu de maintenir une lecture clinique</li>
+</ul>
+</li>
+</ul>
+<p><strong>Les figures de la folie</strong></p>
+<ul>
+<li>Expressions diverses de la souffrance psychique
+<ul>
+<li>Discours délirants</li>
+<li>Retrait</li>
+<li>Agitation</li>
+</ul>
+</li>
+<li>Demandes adressées aux soignants<br>
+-&gt; Comment entendre et lire les phénomènes cliniques, comment accompagner / intervenir ? Qu’est-ce qui fait adresse ?</li>
+</ul>
+<p><strong>Le soin sous contrainte</strong></p>
+<ul>
+<li>Cadre imposé
+<ul>
+<li>Absence de consentement<br>
+-&gt; Peut-on « soigner » sans demande ? S’agit-il de « soigner » ?</li>
+</ul>
+</li>
+<li>Possibilité du transfert dans un cadre carcéral</li>
+<li>Fonctions du psychologue, des soignants… des gardiens</li>
+</ul>
+<p>L’<strong>enfermement</strong></p>
+<ul>
+<li>Fonction de la prison
+<ul>
+<li>« Protection de la société »</li>
+<li>« Gestion de la dangerosité »</li>
+</ul>
+</li>
+<li>Éthique clinique
+<ul>
+<li>Responsabilité du clinicien</li>
+<li>Travailler dans un cadre contraint</li>
+<li>Composer avec les logiques institutionnelles</li>
+</ul>
+</li>
+<li>Qu’est-ce qu’un soin dans ce contexte
+<ul>
+<li>Quelle place pour la subjectivité</li>
+<li>Comment penser la contrainte</li>
+</ul>
+</li>
+<li>Expérience du travail en annexe psychiatrique
+<ul>
+<li>Rapport entre soin et sécurité</li>
+<li>Limites rencontrées dans la pratique</li>
+</ul>
+</li>
+</ul>
+<p>-&gt; Comment soutenir une position clinique dans ce cadre ?<br>
+-&gt; Qu’est-ce qui fait repère pour le praticien ?</p>
+<p>📅 <strong>13 avril 2026</strong> - Cours 9</p>
+<p>Discussion Nef des fous avec Jonathan Leroy.</p>
+<p>Lecture recommandée/obligatoire: J. Leroy, Etes-vous pour ou contre la prison ?<br>
+<a href="https://jonathanleroy.be/2017/06/etes-vous-pour-ou-contre-la-prison/" target="_blank" class="external-link">https://jonathanleroy.be/2017/06/etes-vous-pour-ou-contre-la-prison/</a></p>
+<p>Notes perso:</p>
+<ul>
+<li>J'en ai pas pris.</li>
+</ul>
+<p><strong>Discussion avec Jonathan Leroy</strong></p>
+<ul>
+<li>
+<p>Psychologue et psychanalyste. A travaillé à la Ramée unité 2 depuis 3 ans (ados avec troubles du comportements, plus particulièrement alimentaire). A travaillé 12 ans en milieu carcéral, puis 4 ans en milieu de toxicomanies.</p>
+</li>
+<li>
+<p>En prison, deux types de psy:</p>
+<ul>
+<li>Engagés par la prison: service psycho social de la prison - &gt; Agent de l'ordre social
+<ul>
+<li>Mandatés de faire une expertise</li>
+<li>En vue de la sortie</li>
+</ul>
+</li>
+<li>Psy qui travaille pour associations extérieures à la prison, champ saté mentale ou aide à la personne<br>
+-&gt; Pour qui/pour quoi travaille-t-on, quel mandat, quelles idéologies?</li>
+</ul>
+</li>
+<li>
+<p>Son parcours:</p>
+<ul>
+<li>Aile psychiatrique de la Maison de Forest</li>
+<li>Se rendait à Saint-Gilles, Forest et Berkendael.</li>
+<li>Travaillait pour l'<strong>ASBL &quot;Office de réadaptation sociale</strong>&quot;
+<ul>
+<li>Créé en 19.. pour aider les éclopés de guerre</li>
+<li>Le temps passant, moins d’éclopés, se tourne vers l'aide aux personnes qui ont commis un délit de vagabondage et de mendicité (délit qui n’existe plus aujourd'hui).</li>
+<li>ASBL passée de tous les crimes -&gt; réinsertion -&gt; aide aux personnes, plus que santé mentale
+<ul>
+<li>Réinsertion = logement et travail</li>
+<li>Logique humaniste</li>
+<li>« on va les aider », menant à épuisement des assistants sociaux
+<ul>
+<li>Répondre à la demande, au manque, directement sans réfléchir à ce qu’il se passe pour la personne, peut mener à des catastrophes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Démarche de bienfaisance:
+<ul>
+<li>Mais aussi conception normative de ce qui produit le crime : certaines conditions de vies et de trajectoires -&gt; Idée qu'on va faire disparaitre le crime en restituant des éléments objectivables du droit de la personne (travail et logement : idée normée de la dignité)</li>
+<li>Bien intentionné, mais se heurte régulièrement au caractère inefficace
+<ul>
+<li>parallèle avec gardien qui aimerait que les prisonniers participent à l’atelier, car ça leur ferait du bien...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Détenus formulent projet d’&quot;arrêter les conneries&quot; pour avoir une maison, une femme et des enfants</p>
+<ul>
+<li>➔ Rêve de normalité (et à la fois, c’est peu articulé à leur vie)</li>
+<li>➔ Statut d’image sans que ce soit forcément connecté à quoique ce soit qui la concerne</li>
+<li>parallèle avec maisons dont on garde la façade lors de gros travaux (?)</li>
+<li>Fait écho avec proposition bienfaisante (?)</li>
+</ul>
+</li>
+<li>
+<p>Importance d'être curieux, ne pas essayer de comprendre trop vite</p>
+</li>
+<li>
+<p>Diffusion du docu fut compliquée pour les prisonniers</p>
+<ul>
+<li>Effets négatifs: Ont un peu déclenché après le voisinage
+<ul>
+<li>Qu’est-ce qu’on va faire de mon image?</li>
+<li>Qu’est ce qu’on me fait dire?</li>
+<li>Pourtant, ils ont donné leur consentement pour participer au docu</li>
+<li>parallèle avec les gens qui font des émissions de chant, puis sont éliminés : passent de cp d’attention à plus rien, sans que ce soit travaillé</li>
+</ul>
+</li>
+<li>Mais effets positifs:
+<ul>
+<li>Être écoute a des effets (?)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Présentation de malade:</p>
+<ul>
+<li>Pratique ancienne : entretien unique, rencontre entre un patient et un psychanalyste, devant un public (cliniciens en formation + intervenants)</li>
+<li>Se produit quand l’équipe estime, fait le pari que ça peut produire quelque chose pour le patient</li>
+</ul>
+</li>
+<li>
+<p>Commission tous les 6 mois, sur quoi se basent les juges pour savoir si peut sortir ou pas ? d’autant plus que pas de travail clinique…</p>
+<ul>
+<li>Basé sur comportement, respect du cadre</li>
+<li>Et aussi les propos tenus sur la sortie et les actes commis</li>
+<li>Ça se passe comme un petit procès</li>
+<li>Tout le monde a la parole : avocat défend cas, présente demande, service psycho-social remet expertise, donne son avis, expert psychiatre puis juge discute avec l’interné (position de bon père de famille « monsieur rendez-vous compte, je ne peux pas vous laisser sortir dans ces conditions ») (Santi: très typique en Belgique! comme la cour des miracles de Charleroi, ou Anne Gruwez la juge de Strip-tease)</li>
+</ul>
+</li>
+</ul>
+<p>📅 <strong>11 mai 2026</strong> - Cours 10</p>
+<p>Intervenante: <strong>Céline Danloy</strong>, directrice de l'IHP L'Ancrage<br>
+&quot;Clinique sous contrainte: Comment faire exister une orientation psychanalytique au sein d'une institution&quot;</p>
+<p>-&gt; Elle nous partagera le texte écrit</p>
+<ul>
+<li>
+<p>Politiques publiques contemporaines sous-tendues par objectigs d'évaluation et mesure (idéaux d'autonomie, inclusion, performance - discours gestionnaire, clinique non attentive à la singularité). En IHP on peut accompagner &quot;le temps nécessaire&quot;, même si souvent interpreté comme 2 ans maximum. Mais meme 2 ans limite le nombre de lieux de vie pour certaines personnes.</p>
+</li>
+<li>
+<p>Clinique contre l'exercice gestionnaire, contre un cadre normé (au détriment de la singularité)</p>
+</li>
+<li>
+<p>En inspection (qui arrivent tous les 5 ans): &quot;parlez de vos <em>succes-stories</em>&quot;</p>
+<ul>
+<li>Se réfère a retour à l'emploi, etc</li>
+<li>Mais au quotidien, déplacements discrets, fragiles, légèrement perceptibles, pas de transformations spectaculaires.</li>
+<li>Mouvements modestes dans le champ de la psychose peuvent constituer des déplacements majeurs -&gt; la possibilité pour chacun de mieux habiter son corps, le lien à l'autre ou au monde.</li>
+<li>Risque su soin étant reconduit à une fonction de régulation sociale.</li>
+</ul>
+</li>
+<li>
+<p>&quot;Quand on dit les choses autrement, on les modifie&quot;</p>
+<ul>
+<li>Traduction des termes du mandat officiel pour les rendre compatibles avec une orientation clinique</li>
+<li>Double mouvement: répondre aux attentes des structures subsidiantes, et permettre une dynamique de pensée au sein de l'équipe. &quot;Il faut soigner le maître&quot;</li>
+<li>Pas un refus des contraintes, mais chercher la brèche, l'ouverture dans le cadre.</li>
+<li>Les signifiants maitres en IHP:
+<ul>
+<li>Autonomie par attitudes sociales, occupatrices et relationnelles. (&quot;réinsertion sociale&quot;, et &quot;restauration du lien social&quot;). Le public de l'Ancrage est principalement psychotique, qui se mettent à l'abri de l'Autre. Ils sont peut-être <strong>trop</strong> autonomes. Le but est de créer un peu l'Autre. Zenoni. Miller. Importance de l'éthique.</li>
+<li>Précarité: touche la relation du sujet au langage. Primordial de s'interesser aux conditions qui précédent la désinsertion sociale, pourquoi <strong>l'inscription symbolique est compliquée</strong>. On ne peut pas réinsérer au pied de biche.</li>
+<li>Fonction 5: l'habitat accompagné hors du cadre hospitalier pour personnes souffrant de troubles psychiques (prof majoritairement issus du champ social). Absence de formation clinique appelle la responsabilité de l'institution en termes de formation clinique.
+<ul>
+<li>Le langage institutionnel peut déterminer la politique de l'institution:
+<ul>
+<li>&quot;Il est violent&quot; -&gt; &quot;il passe à l'acte&quot;.</li>
+<li>&quot;Il est manipulateur&quot; -&gt; &quot;échappe a la volonté de l'Autre&quot;.</li>
+<li>Pas seulement de l'ordre du style, mais politique de soin.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Triptique: formation, reunions, supervision.</li>
+</ul>
+</li>
+</ul>
+<p>Intervenante 2 - Catherine - Ateliers du 94 (La Louvière), qui accueille des personnes présentant un handicap mental.</p>
+<ul>
+<li>
+<p>Coordinatrice clinique</p>
+</li>
+<li>
+<p>Faire en sorte que chacun dans l'équipe soit &quot;clinicien&quot;, puisse être à l'écoute</p>
+</li>
+<li>
+<p>Commencer par ne pas comprendre trop vite (Seminaire 3 de Lacan). Deconstruction de ce qu'on sait deja.</p>
+</li>
+<li>
+<p>Aussi besoin de diagnostic en psychanalyse, mais pas le meme but que dans le monde en genereal ou la santé: en psycha, porte d'entrée.</p>
+</li>
+</ul>
+<p>Cecile Glineur:</p>
+<ul>
+<li>Dimension du désir: &quot;on choisit le discours qui nous commande, ca relève d'un choix&quot;</li>
+</ul>
+<p>Apprendre le langage du patient</p>
+<ul>
+<li>Partir du constat qu'on ne comprend pas</li>
+<li>se rendre compte qu'on ne comprend pas (meme quand on partage les mots)</li>
+</ul>
+<p><strong>Matière d'examen</strong></p>
+<p>Powerpoint du plan de cours sur l'UV.<br>
+Questionnaire Vrai ou Faux.<br>
+20 assertions propositions.<br>
+Pas de points négatifs.</p>
+<ul>
+<li>Distinction psychanalyse pure et psychanalyse appliquee en institution</li>
+<li>OMS vs assertion Lacanienne tout le monde est fou:
+<ul>
+<li>deux des lectures sur la slide font partie du cours, a savoir 2 chapitres Zenoni, et aussi le tres court article de Guy Poblome (une pratique éclairée par la psychanalyse)</li>
+</ul>
+</li>
+<li>Folie en occident: avoir lu les 3 petite chapitres d'Emmanuel Venet (PDF sur le site)</li>
+<li>Littérature asilaire:
+<ul>
+<li>Pour les auteurs/autrices: Avoir une notion de ce dont il est question pour l'autrice auteur, quelle a été la démarche, et quelques grands constats que l'écrit a permis d'extraire (ces éléments se retrouvent dans les powerpoint de ces cours là + enregistrements)</li>
+</ul>
+</li>
+<li>Dimension documentaires:
+<ul>
+<li>
+<ol>
+<li>vrai ou faux relativement au contenu du documentaire</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>discussions avec les intervenants, points saillants de chaque modele (sachant que chaque docu réalité institutionnelle très différente)</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Interventions aujourd'hui:
+<ul>
+<li>Celine Danloy: texte sur le site</li>
+<li>Cathy: écouter enregistrement, ensemble de points.</li>
+</ul>
+</li>
+</ul>
+<p>Posture, éthique, maniere de considérer le symptôme, qu'est-ce que travailler en institution... c'est un positionnement</p>
+<p>Questions</p>
+<p>Niveau de détail: ne cherchera pas l'ambiguité, plutot la saisie d'une posture dans le travail.</p>
+<p>Mettent une</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -408,6 +1035,36 @@ Pratiques cliniques en institution
 <nav class="toc">
 <ol>
 <li><a href="#introduction-methode-et-modalites-de-travail-pragmatique-evaluation">🏷️ Introduction, méthode et modalités de travail, pragmatique, évaluation</a>
+<ol>
+<li><a href="#1-position-de-simon-flemal">1. Position de Simon Flémal</a>
+</li>
+</ol>
+</li>
+<li><a href="#2-position-de-glineur">2. Position de Glineur</a>
+</li>
+<li><a href="#3-themes-centraux-de-reflexion">3. Thèmes centraux de réflexion</a>
+</li>
+<li><a href="#4-points-importants-a-retenir">4. Points importants à retenir</a>
+</li>
+<li><a href="#5-points-d-opinion-personnelle-ou-de-divergence">5. Points d’opinion personnelle ou de divergence</a>
+</li>
+<li><a href="#6-questions-et-interventions-des-etudiant-e-s">6. Questions et interventions des étudiant·e·s</a>
+<ol>
+<li><a href="#1-le-documentaire-permet-de-prendre-distance-avec-la-pratique">1. Le documentaire permet de prendre distance avec la pratique</a>
+</li>
+<li><a href="#2-l-orientation-centrale-ne-pas-savoir-a-la-place-de-l-enfant">2. L’orientation centrale : ne pas savoir à la place de l’enfant</a>
+</li>
+<li><a href="#3-l-institution-sert-a-limiter-le-pouvoir-et-le-savoir-de-l-intervenant">3. L’institution sert à limiter le pouvoir et le savoir de l’intervenant</a>
+</li>
+<li><a href="#4-le-travail-collectif-empeche-de-rester-seul-avec-son-interpretation">4. Le travail collectif empêche de rester seul avec son interprétation</a>
+</li>
+<li><a href="#5-le-symptome-est-traite-comme-une-invention-pas-comme-un-simple-trouble">5. Le symptôme est traité comme une invention, pas comme un simple trouble</a>
+</li>
+<li><a href="#6-les-ateliers-et-le-semblant-sont-des-mediations-cliniques">6. Les ateliers et le semblant sont des médiations cliniques</a>
+</li>
+<li><a href="#7-le-langage-doit-etre-manie-avec-prudence">7. Le langage doit être manié avec prudence</a>
+</li>
+</ol>
 </li>
 </ol>
 </nav>
