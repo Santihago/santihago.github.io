@@ -79,12 +79,12 @@
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-05-23T09:58:32.207Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-05-23T12:11:29.710Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
 <main class="content cm-s-obsidian print">
 <header>
 <h1 data-note-icon="">Pratiques cliniques en institution</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-17T01:10:22.503+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-05-23T11:57:50.295+02:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-17T01:10:22.503+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-05-23T14:10:26.349+02:00"></span></div></div></div>
 </header>
 <p><strong>Structure</strong>:</p>
 <ol>
@@ -1136,56 +1136,94 @@ Le frère de Marie appelle (a) - sa sœur est mère d’une fille de 6 ans qui f
 <li>Première étape, incontournable : définit la relation, le cadre, objectifs, limites, et l’articulation des collaborations</li>
 <li>Importance des processus plutôt que les contenus (Tielmans, 1987)
 <ol>
-<li>Qui est l’<strong>ENVOYEUR</strong> et que veut-il ?</li>
-<li>Pourquoi la crise se déclenche <strong>MAINTENANT</strong> ?</li>
-<li>Pourquoi la demande est-elle formulée <strong>ICI</strong> ? (sens &amp; attentes // lieu)</li>
-<li>Comment ont été gérées les crises <strong>ANTECEDENTES</strong> ? (Qu’est-ce qui se répète ou risque de se répéter ?)</li>
-<li>Position de l’<strong>ENTOURAGE FAMILIAL</strong> par rapport au 1er rendez-vous ?</li>
-<li>Quels sont les <strong>ENJEUX</strong> relationnels au 1er RV ?</li>
+<li>Qui est l’<strong>ENVOYEUR</strong> et que veut-il ?
+<ul>
+<li>L’idée est de se différencier de l’envoyeur. C’est important surtout dans le cas où les parent pensent que l’envoyeur les a envoyés pour évaluer leurs capacités à être de bons parents ce qui n’est en fait, pas notre rôle. La différenciation permet de créer un lien avec la famille</li>
+</ul>
+</li>
+<li>Pourquoi la crise se déclenche <strong>MAINTENANT</strong> ?
+<ul>
+<li>Cette question va nous permettre de savoir s’il faut être du côté du <strong>soutien</strong> (qui va induire un accompagnement dans un évènement de vie difficile et donc renforcer les <strong>mécanismes</strong> et les stratégies de défenses du patient) ou de la psychothérapie (qui va induire un changement). Ces deux types d’entretien sont assez différents.</li>
+</ul>
+</li>
+<li>Pourquoi la demande est-elle formulée <strong>ICI</strong> ? (sens &amp; attentes // lieu)
+<ul>
+<li>Elle est prête à parler des problèmes de l’enfant mais pas encore à parler des problèmes de la famille. Le lieu a une importance car ce n’est pas la même chose de consulter un médecin, un pédopsychiatre ou un clinicien systémique et cela nous indique ce que la famille ou le patient sont prêts à travailler. On va aussi se questionner sur le symptôme.</li>
+</ul>
+</li>
+<li>Comment ont été gérées les crises <strong>ANTECEDENTES</strong> ? (Qu’est-ce qui se répète ou risque de se répéter ?)
+<ul>
+<li>On peut essayer de savoir pourquoi la personne change d’intervenants ou de thérapeutes. Ces changements peuvent montrer de l’évitements. L’idée sera de ne pas répéter les mêmes choses. On essaye de voir ce qui a fait obstacles ou défauts pour ne pas le répéter.</li>
+</ul>
+</li>
+<li>Position de l’<strong>ENTOURAGE FAMILIAL</strong> par rapport au 1er rendez-vous ?
+<ul>
+<li>Il faut être attentif à ce qui circule dans la famille concernant les troubles des enfants.</li>
+</ul>
+</li>
+<li>Quels sont les <strong>ENJEUX</strong> relationnels au 1er RV ?
+<ul>
+<li>On questionne les enjeux mais aussi ce qui va, dans le futur, nous indiquer que la famille ou le patient n’ont plus besoin de venir en séances, que le chemin thérapeutique est terminé. Cela permet de déterminer des objectifs thérapeutiques qui sont importants pour garder du sens pour le suivi.</li>
+</ul>
+</li>
 </ol>
 </li>
 </ol>
 <p>📅 <strong>11 Mai 2026</strong> - Cours 3 - Mathilde Meriaux</p>
 <h3 id="3-la-rencontre-avec-l-enfant-et-sa-famille" tabindex="-1">3. La rencontre avec l'enfant et sa famille</h3>
 <ul>
-<li>Familles peuvent être en position de &quot;legitime défense&quot; (terme d'Ausloos), se sentent pointés du doigt ou ont eu d'autres expériences précédentes. Interêt donc de travailler leur compétence.</li>
-<li>Inviter, mobiliser les familles pour passer de la culpabilisation à la responsabilisation: passer du &quot;parce que je pense que cela pourra vous aider&quot;à &quot;j'ai besoin de vous&quot;.</li>
-<li>Si l'enfant refuse, si c'est une figure importante on peut insister, si c'est plus secondaire, faire avec, on peut questionner l'enfant, questionner les risques percus, faire jeu de chaise vide, etc.</li>
+<li>Familles peuvent être en position de &quot;legitime défense&quot; (terme d'Ausloos), se sentent pointés du doigt par d'autres expériences avec intervenants précédents. Interêt donc de travailler leur compétence.</li>
+<li>Inviter, mobiliser les familles pour passer de la culpabilisation à la responsabilisation: passer du &quot;parce que je pense que cela pourra vous aider&quot;à &quot;<strong>j'ai besoin de vous</strong>&quot;.</li>
+<li>Si l'enfant refuse d'avoir quelqu'un de la famille en thérapie, si c'est une figure importante on peut insister, si c'est plus secondaire, faire avec, on peut questionner l'enfant, questionner les risques perçus, faire jeu de chaise vide, etc.</li>
+<li>On peut demander à l'enfant comment on peut l'aider, sa réponse nous donnera aussi des informations sur la direction à prendre.
+<ul>
+<li>La prof dit que pour permettre aux enfants de répondre aux questions elle utilise une fausse baguette magique et pose les questions via cet objet : « tu vois, c’est une baguette magique et elle a des pouvoirs, si elle avait le pouvoir de changer quelque chose dans ta maison, tu demanderais de changer quoi ? ». Ça rend la chose plus ludique et donc, l’enfant va répondre plus facilement.</li>
 </ul>
-<p>Faire cohabiter deux mondes</p>
+</li>
+</ul>
+<h4 id="faire-cohabiter-deux-mondes" tabindex="-1">Faire cohabiter deux mondes</h4>
 <ul>
 <li>Composer avec des attentes et humeurs de chacun mais aussi avec les capacités d'attention et langages différents.</li>
 </ul>
+<p>L’adulte est dans le moment présent ou coincé dans un passé qui le fait souffrir ou dans un futur qui est angoissant. Le langage de l’adulte est insaisissable, indirect, parfois fait de sous-entendus alors que le langage de l’enfant est direct, sans filtre. Parfois, le fait que les enfants soient sans-filtre peut nous bousculer dans notre place de thérapeute. En tant que thérapeute, on s’engage à faire dialogue ces deux mondes. On peut être partagé entre le fait de garder notre costume d’expert et le fait d’aller jouer avec l’enfant pour « travailler » avec lui.</p>
+<h4 id="la-rencontre-avec-le-symptome" tabindex="-1">La rencontre avec le symptôme</h4>
 <p>Exemple: Un symptôme, plusieurs hypothèses: Un enfant a un problème scolaire...<br>
-Hypothèses?</p>
+Hypothèses?<br>
+Si on prend l’exemple d’un <em>petit garçon qui a fiat une grosses crise le jour de la rentrée et qui ne veut plus retourner à l’école + qui a très peur de prendre le taxi pour se rendre à l’hôpital, on va se rendre compte que le problème ce n’est ni l’école ni le taxi mais une peur de séparation. On va donc travailler sur cette peur de séparation plutôt que sur l’école</em>. Le symptôme est le premier aspect sur lequel porter notre attention. C’est sur la spécificité même du problème que l’on va retrouver des éléments qui vont nous guider vers la solution.</p>
 <ul>
-<li>Considérer le symptôme comme une possiblilité de changement -&gt; tentative de donner une réponses</li>
-<li>Attention à intervenir uniquement en éliminant le problème, sans aucun changement dans le contexte familial</li>
+<li>Considérer le symptôme comme une possibilité de changement -&gt; tentative de donner une réponse</li>
+<li>Attention à ne pas intervenir uniquement en éliminant le problème, sans aucun changement dans le contexte familial</li>
 <li>Demande d'aide</li>
 <li>Prend de la valeur à travers l'histoire multi-générationnelle du symptôme lui-même</li>
 </ul>
-<p>Cas de Amine, enfant qui devient violent. Pere qui etait violent, Amine témoin, enfant bouclier. Colère pour Amine: tentative de différentiation (créer distance pour ne pas être collé) (symptôme comme régulateur de distance)</p>
-<p>La rencontre avec le symptome</p>
+<p>Exemple d'Amine, enfant qui devient violent. Pere qui était violent, Amine en était témoin, enfant bouclier. Colère pour Amine: tentative de différentiation (créer distance pour ne pas être collé) (symptôme comme régulateur de distance).</p>
 <ul>
-<li>Symptomes psychosomatiques, troubles du comportement, troubles de l'anxiété ou de l'humeur sont souvent reliés métaphoriquement au noeud problématique familial (De Francisci, Piersanti, 2015)</li>
+<li>Symptômes psychosomatiques, troubles du comportement, troubles de l'anxiété ou de l'humeur sont souvent reliés métaphoriquement au noeud problématique familial (De Francisci, Piersanti, 2015). Ces différents troubles sont difficilement tolérés car ils ont un impact négatif sur le milieu familial.
+<ul>
+<li>Exemple:  La prof nous parle d’un enfant qu’elle suit et qui est atteint d’un TSA. Les parents de ce petit sont toujours ensemble mais on bien dit qu’ils l’étaient juste pour les enfants. Le petit garçon a peur d’absolument tout et les symptômes s’intensifient quand les parents sont en conflit. En ce moment, les symptômes sont plus forts que jamais. On voit que le symptôme a une fonction pour le système familial mais que c’est au détriment d’un développement normal de l’enfant, ce petit est « être » le symptôme.</li>
+</ul>
+</li>
 </ul>
 <p>Exemples:</p>
 <ul>
 <li>Ne pas avoir été vu petit (que a travers succès académique (sorte de stratégie pour être vu), etc): risque d'épuisement au travail.</li>
-<li>Symptômes physiques (énurésie, important de faire les examens somatiques)</li>
+<li>Symptômes physiques (énurésie, important de faire les examens somatiques):  Ils peuvent être psychiques mais ce n’est pas toujours le cas, et il faut s’en assurer.</li>
+<li>Sommeil, alimentaire, psychosomatique, digestif, croissance, tbl du comportement, instrumentaux, d'apprentissage, TS, fugues, délinquance, toxicomanie, anorexie, tbl anxieux, dépressif, cognitif, problématiques relationnelles, épuisement professionnel, ptsd, conduites addictives.</li>
+<li>On peut aussi faire des examens neurologiques dans le cas de troubles du comportement pour s’assurer que ce n’est pas à cause d’un dysfonctionnement dans le cerveau. Il faut toujours se poser pleins de questions avant d’envisager que le symptôme vient d’un problème relationnel.</li>
 </ul>
 <h1 id="v-l-interet-du-travail-en-famille" tabindex="-1">V. L'interêt du travail en famille</h1>
+<p>(le passage au point V vient plus tard dans les slides, mais pour moi ça fait plus de sens déjà ici)</p>
 <ul>
-<li>C'est souvent dans les premières rencontres que la famille donne la trame autour de laquelle s'est tissé le problème. Ausloos: la solution est deja dans le problème
+<li>C'est souvent dans les premières rencontres que la famille donne <strong>la trame</strong> autour de laquelle s'est tissé le problème. Ausloos: la solution est déjà dans le problème.
 <ul>
-<li>Exemple: mere, père, enfant (Silvio). Silvio était dans un désert scolaire, impossible d'y retourner. Montait sur le bureau du prof. A dit au psychiatre: &quot;de toute façon, le but c'est que je meure&quot;. Photo sur table de salon de Silvio d'un monsieur (du tonton de Silvio, mere dit a la psy a voix basse &quot;il s'est suicidé et jai dit a Silvio que c'était un accident de voiture&quot;). En séance Silvio fait mime de se couper le coup.</li>
+<li>Exemple: mère, père, enfant (Silvio). Silvio était dans un désert scolaire, impossible d'y retourner. Montait sur le bureau du prof. A dit au psychiatre: &quot;de toute façon, le but c'est que je meure&quot;. Photo sur table de salon de Silvio d'un monsieur (du tonton de Silvio, mère dit a la psy à voix basse &quot;il s'est suicidé et j'ai dit à Silvio que c'était un accident de voiture&quot;). En séance Silvio fait mime de se couper le cou.</li>
 </ul>
 </li>
-<li>Les enfants vont permettre de toucher les zones d'ombre de la famille, si le thérapeute relie le comportement de l'enfant lors dune première consultation avec le symptôme qui pose problème.</li>
+<li>Les enfants vont permettre de toucher les zones d'ombre de la famille, si le thérapeute relie le comportement de l'enfant lors d'une première consultation avec le symptôme qui pose problème.</li>
 </ul>
 <p><strong>Revisiter l'enfance des parents</strong></p>
 <ul>
-<li>Les parents cherchent à corriger les problèmes de leurs enfants sans réaliser les effets des résonnances</li>
+<li>Les parents cherchent à corriger les problèmes de leurs enfants sans réaliser les effets des résonnances.</li>
 <li>Refus de dévoiler des éléments de leur histoire</li>
 <li>L'enfant peut capter le drame intérieur du parent (enfant dans son narcissisme primaire peut penser que c'est de sa faute)</li>
 <li>Demander à l'enfant qui de ses parents a connu la même forme d'injustice que lui.</li>
@@ -1194,13 +1232,13 @@ Hypothèses?</p>
 <p><strong>Les grands-parents</strong></p>
 <ul>
 <li>Personnes ressource, surtout en temps de séparation des parents.</li>
-<li>Modèle tri-générationnel (cf. Andolfi).</li>
+<li><strong>Modèle tri-générationnel</strong> (cf. Andolfi). Andolfi invitait les grands-parents en séance. Ça peut être intéressant de voir les grands parents s’ils sont une ressource ou qu’ils ont une place essentielle pour l’enfant et son quotidien. On peut aussi ne pas les inviter mais parler d’eux à travers les parents qui sont présents. Demander à un enfant comment il s’imagine la relation entre un de ses parents et un de ses grands pères (<em>le père de son père, par exemple</em>) peut aussi être intéressant pour voir ce qui se répète au niveau relationnel ou les ressources et valeurs qui ont été transmises.</li>
 <li>Relier le parent et l'enfant à la troisième génération, permet de trouver des espaces de médiation et d'entente impensables sans cela.</li>
 <li>Rencontrer les parties de l'enfant cachées derrière les parents en détresse/souffrance.</li>
 </ul>
 <p><strong>La fratrie</strong></p>
-<p>Stephanie Haxhe: Frères et soeurs, des liens à soigner<br>
-Incroyable ressource et lieu de grande souffrance.</p>
+<p>cf. <em>Stéphanie Haxhe: Frères et soeurs, des liens à soigner</em></p>
+<p>La fratrie, incroyable ressource et lieu de grande souffrance.</p>
 <ul>
 <li>Peu d'études consacrées aux liens de fratrie (Haxhe, 2024)</li>
 <li>Laboratoire social, émotionnel: place dans la fratrie aura influence dans la place dans espaces relationnels futurs (e.g. travail, en couple - répétitions de roles, injustices vécues, enfant malade, bouc émissaire, etc.)</li>
@@ -1211,11 +1249,11 @@ Incroyable ressource et lieu de grande souffrance.</p>
 <p>Injustices: celles vécues avec parents/adultes, en particulier.</p>
 <ul>
 <li>Rivalité développementale: normale, pas un warning d'office</li>
-<li>Rivalité exarcebée: conflits fréquents, ça envahit tout le système, comparaison constante, recherche excessive de reconnaissance. -&gt; plus rigide, fréquent, intense. Fonction c'est parfois conflit des parents (hypothèse dans littérature systémique: alliance chacun a un parent, ou manque de différentiation parents vis a vis d'enfants.).
+<li>Rivalité exarcebée: conflits fréquents, ça envahit tout le système, comparaison constante, recherche excessive de reconnaissance. -&gt; plus rigide, fréquent, intense. Fonction c'est parfois conflit des parents (hypothèse dans littérature systémique: alliance chacun à un parent, ou manque de différentiation parents vis à vis d'enfants.).
 <ul>
-<li>Légitimité destructrice (approche contextuelle): lésé, vais cherche réparation (pas chez le principal concerné, mais chez qqun d'autre, frère ou soeur). <strong>Injustice vis a vis des aprents reglée avec frères et soeurs</strong>.
+<li>Légitimité destructrice (approche contextuelle): lésé, vais chercher réparation (pas chez le principal concerné, mais chez qqun d'autre, frère ou soeur). <strong>Injustice vis à vis des parents réglée avec frères et soeurs</strong>.
 <ul>
-<li>Exemple: fille de 8 ans, avec soeur de 3 ans. madame rejette ses enfants a 3 ans (pour histoire personnelle, sa mere l'a délaissée pour un homme). Mère fait des commentaires de préférence de certains enfants. Mère avec ses commentaires cree les rivalités et hiérarchies (cf double lien de Bateson, double contrainte Elkaïm).</li>
+<li>Exemple: fille de 8 ans, avec soeur de 3 ans. Madame rejette ses enfants à 3 ans (pour histoire personnelle, sa mère l'a délaissée pour un homme). Mère fait des commentaires de préférence de certains enfants. Mère avec ses commentaires crée les rivalités et hiérarchies (cf. double lien de Bateson, double contrainte Elkaïm).</li>
 </ul>
 </li>
 </ul>
@@ -1224,49 +1262,62 @@ Incroyable ressource et lieu de grande souffrance.</p>
 </ul>
 <p><strong>La place du père</strong></p>
 <p>Quelle place accorder aux pères?<br>
-Rare qu'un père refuse, répondent présent. Figure éclatée de nos jours (voir aussi 4 axes de filiation de Kinoo, en 4.5 <a class="internal-link" target="" data-note-icon="" href="/knowledge/events/2026-psyc-e-540-approche-systemique-des-traumatismes/">2026 - PSYC-E 540 - Approche systémique des traumatismes</a>):</p>
+Rare qu'un père refuse, répondent généralement présent. Figure éclatée de nos jours (voir aussi 4 axes de filiation de Kinoo, en 4.5 <a class="internal-link" target="" data-note-icon="" href="/knowledge/events/2026-psyc-e-540-approche-systemique-des-traumatismes/">2026 - PSYC-E 540 - Approche systémique des traumatismes</a>):</p>
 <ul>
 <li>Père légal (défini par le droit)</li>
 <li>Père biologique</li>
 <li>Père affectif</li>
 </ul>
-<p>Exemple de situation père qui n'était pas biologique, parents en faisaient tout un secret alors que pour l'enfant c'était peut etre pas le coté biologique qui était si important.</p>
-<p>-&gt; observer la fonction triadique<br>
+<p>Exemple de situation père qui n'était pas biologique, parents en faisaient tout un secret alors que pour l'enfant c'était peut être pas le coté biologique qui était si important.<br>
+-&gt; observer la fonction triadique<br>
 -&gt; inviter les pères!</p>
-<p>Exemple, père vu comme surpuissant: travail pour voir père avec ses defauts (permet a l'enfant d'avoir ses défauts aussi).</p>
+<p>Place du père au niveau psychique: le père réel, le père imaginaire, et le père symbolique<br>
+Exemple: père vu comme surpuissant: travail pour passer le père de l'imaginaire au réel, voir père avec ses défauts (permet à l'enfant d'avoir ses défauts aussi).</p>
 <p>Nuance importante:</p>
 <ul>
 <li><strong>Absence de père</strong> -&gt; pas le problème.</li>
-<li><strong>Absence de recherche de père</strong> (recherche: se questionner sur qui il était, qu'est-ce qu'il a vécu...) -&gt; important pour la construction d'identité, construction psychique.</li>
+<li><mark><strong>Absence de recherche de père</strong></mark> (recherche: se questionner sur qui il était, qu'est-ce qu'il a vécu...) -&gt; important pour la construction d'identité, construction psychique.</li>
 </ul>
-<p>Créer quelque chose de l'ordre de l'appartenance pour favoriser la différentiation (être capable de dire &quot;je&quot;).</p>
+<p><strong>Créer quelque chose de l'ordre de l'appartenance</strong> pour favoriser la différentiation (être capable de dire &quot;je&quot;). Faire remarquer les ressemblances permet aussi de se différencier.</p>
 <h3 id="1-modalites-relationnelles-et-blocage-evolutif" tabindex="-1">1. Modalités relationnelles et blocage évolutif</h3>
-<p><strong>L'enfant chronique</strong> (Andolfi, 2002)</p>
+<p>On va voir dans ce point des notions pour approfondir sur ce qui est de l’ordre des dysfonctionnements relationnels à l’âge adulte mais qui seraient liés à l’enfance.</p>
+<h4 id="l-enfant-chronique-andolfi-2002" tabindex="-1">L'enfant chronique (Andolfi, 2002)</h4>
+<p>Pour devenir adulte, il y a certaines conditions comme la différenciation. Devenir adulte ce n’est pas une question d’âge. Pour devenir adulte, il faut accepter la séparation et redéfinir les relations avec les parents.</p>
 <p>L'individu n'arrive pas, à l'âge adulte, à acquérir la position du Moi (Bowen, 1984) et reste, face à ses parents, dans une position d'enfant.</p>
 <ul>
-<li>L'extreme dépendance et la peur d'être jugé par ses propres parents sont souvent niées ou justifiées comme étant un service dû, un prix à payer pour garantir l'appartenance à la famille.</li>
-<li>Le couple se dégrade s'il n'arrive pas à se préserver de l'intrusion de la famille d'origine.</li>
+<li>L'extrême dépendance et la peur d'être jugé par ses propres parents sont souvent niées ou justifiées comme étant un service dû, un prix à payer pour garantir l'appartenance à la famille.</li>
+<li>Le couple se dégrade s'il n'arrive pas à se préserver de l'intrusion de la famille d'origine. Cette intrusion sera toujours facilitée pas une dépendance excessive de l’enfant à l’égard de ses parents et inversement. <em>Par exemple, la mère de monsieur l’appelle trois fois par jour pour lui raconter ce qu’il se passe dans sa vie, donner des conseils sur l’éducation des enfants et sur ce qu’il doit faire dans son couple, … et monsieur ne sait pas lui dire « stop ». Madame se plaint et monsieur répond « mais enfin, elle est âgée et puis, tu as vu tout ce qu’elle a fait pour nous, je ne vais pas la couper ». Cela va créer des conflits dans le couple autour de la mère qui est envahissante.</em></li>
 </ul>
-<p><strong>La rupture émotionnelle</strong> (Andolfi, 2002)</p>
-<p>Cas où en l'absence d'une séparation progressive, la relation parents/enfant s'est interrompue brutalement.</p>
+<h4 id="la-rupture-emotionnelle-andolfi-2002" tabindex="-1">La rupture émotionnelle (Andolfi, 2002)</h4>
+<p>Cas où en l'absence d'une séparation progressive, la relation parents/enfant s'est interrompue brutalement. Cet adulte sera constamment à la recherche de lien compensatoire dans ses relations amoureuses, dans sa parentalité, … mais il pourra difficilement trouver une relation comme avec ses parents.</p>
 <ul>
-<li>L'adulte construira une image déformée de lui-même qui l'amènera à &quot;remplir des sacs troués&quot;</li>
+<li>L'adulte construira une image déformée de lui-même qui l'amènera à &quot;remplir des sacs troués&quot;<br>
+Objectifs:</li>
 <li>-&gt; S'arrêter et renouer à l'endroit où la rupture s'est réalisée</li>
 <li>-&gt; Permettre une prise de conscience des ruptures émotionnelles précoces, à la base de tensions dans la relation de couple et parents/enfant</li>
 </ul>
-<p><strong>Le triangle relationnel - Murray Bowen (1984, 1999)</strong></p>
+<h4 id="le-triangle-relationnel-murray-bowen-1984-1999" tabindex="-1">Le triangle relationnel - Murray Bowen (1984, 1999)</h4>
 <ul>
 <li>La plus petite configuration émotive stable. Il s'agit de la famille &quot;idéale&quot;. Les triangles peuvent résoudre un conflit, mais un triangle pathologique lui va figer.</li>
 <li>Pour Bowen, la relation a deux est fondamentale instable. Quand elle doit faire face à l'angoisse et aux tensions de la vie, elle va aller prendre un troisième élément en recherche de stabilité, pour avoir une plus grande souplesse dans le fonctionnement et réduire l'angoisse.</li>
+</ul>
+<p>Ce triangle n’est pas pathologique en soi mais il le devient s’il est rigidifié:</p>
+<ul>
 <li>Enfant souvent amené a la place du tiers (confident, médiateur, petit ami qui se met comme bouclier, bouc émissaire...)</li>
 <li>La multiplication des tiers comme stratégie pour contenir l'angoisse.</li>
 </ul>
-<p>Fonction du tiers</p>
+<div class="callout" data-callout="quote"><div class="callout-title"><div class="callout-title-inner"> Bowen<br></div></div>
+<div class="callout-content">
+<p>
+« Quand les tensions sont vraiment très importantes dans les familles et que les différentes possibilités de triangulation y ont été épuisées, le système triangule avec des personnes externes, telles que la police et les institutions sociales »</p>
+</div></div>
+<p><strong>Fonction du tiers</strong></p>
 <ul>
 <li>Diminuer les tensions entre deux personnes</li>
 <li>Permettre aux relations de se poursuivre dans le temps</li>
 </ul>
-<p>Exemples de tiers:</p>
+<p>Donc, le triangle a pour fonction de diminuer les tensions entre deux personnes et de détourner l’attention d’un conflit, de maintenir la cohésion entre deux personnes, d’éviter les ruptures, de pouvoir répartir la charge émotionnelle sur trois personnes plutôt que deux. Le thérapeute va souvent prendre cette place de tiers pour régler le conflit. L’idéal est que le tiers soit neutre mais c’est difficile de ne pas prendre parti. Les familles nous mettent d’office à cette place de tiers qui va venir réguler les tensions du système. L’idée est d’identifier à quelle place la famille nous place.</p>
+<p><strong>Exemples de tiers:</strong></p>
 <ul>
 <li>Intra familiaux
 <ul>
@@ -1299,7 +1350,9 @@ Rare qu'un père refuse, répondent présent. Figure éclatée de nos jours (voi
 <li>En restant neutre</li>
 <li>En prenant parti</li>
 </ul>
-<p><strong>L'inversion des rôles (Mazzoni, 2021)</strong></p>
+<h3 id="2-difficultes-dans-le-lien-parent-enfant" tabindex="-1">2. Difficultés dans le lien parent-enfant</h3>
+<h4 id="l-inversion-des-roles-mazzoni-2021" tabindex="-1">L'inversion des rôles (Mazzoni, 2021)</h4>
+<p>Cette notion est importante car elle a un gros impact sur l’émergence des troubles dans l’enfance. Les symptômes sont causés par des dynamiques relationnelles que les parents ont souvent vécus aussi dans leur famille d’origine et ça se répète.</p>
 <p>3 catégories (Kerig, 2014):</p>
 <ul>
 <li>
@@ -1307,21 +1360,22 @@ Rare qu'un père refuse, répondent présent. Figure éclatée de nos jours (voi
 <ul>
 <li>Parentification adaptative et destructive</li>
 <li>Association entre parentification et les troubles psychopatho ou les dysfonctionnements relationnels</li>
-<li><strong><mark>Critère: Non prise en compte du besoin de l'enfant</mark></strong></li>
+<li><strong><mark>Critère: Non prise en compte du besoin de l'enfant</mark></strong>. La parentification se distingue des deux autres par le critère de prise en compte des besoins de l’enfant. Si ceux-ci ne sont pas comblés, on dans de la parentification.</li>
 </ul>
 </li>
 <li>
 <p><strong>Adultisation</strong>: se comporter comme si l'enfant était son égal.</p>
 <ul>
 <li>Association avec de l'anxiété social ou évitement</li>
-<li>Exemple: maman séparée du papa, l'enfant de 5 ans on peut lui donner 12 pour sa maniere de parler. Peut être satisfaisant, valorisant pour l'enfant.</li>
+<li>faut toujours faire attention parce que les enfants sont souvent « honorés » d’être mis à la même place que l’adulte mais cela va avoir un impact sur sa relation avec ses pairs qui ne le voient pas comme sa mère le voit et ne le mettent pas à cette même place. Cela peut créer de l’anxiété sociale.</li>
+<li>Exemple: maman séparée du papa, l'enfant de 5 ans on peut lui donner 12 pour sa manière de parler. Peut être satisfaisant, valorisant pour l'enfant.</li>
 </ul>
 </li>
 <li>
 <p><strong>Maritalisation</strong>: se substituer émotionnellement au partenaire pour compenser l'insatisfaction conjugale.</p>
 <ul>
 <li>Association avec des déficits de l'attention, de l'hyperactivité et des difficultés de régulation émotionnelle</li>
-<li>Parents le disent eux-memes, ou ça se voit rapidement.</li>
+<li>Parents le disent eux-mêmes, ou ça se voit rapidement.</li>
 </ul>
 </li>
 <li>
@@ -1334,37 +1388,43 @@ Rare qu'un père refuse, répondent présent. Figure éclatée de nos jours (voi
 <p>Utile de saisir le moment où l'enfant revient à son âge</p>
 </li>
 </ul>
-<p><strong>Repérer la parentification</strong></p>
-<p>{slide passée trop vite}<br>
+<div class="callout" data-callout="quote"><div class="callout-title"><div class="callout-title-inner"> Haxhe, 2013<br></div></div>
+<div class="callout-content">
+<p>
+« Le poids de la responsabilité relationnelle confiée à l’enfant, et qui dépasse ses compétences. Afin d’assumer cette responsabilité, l’enfant doit mettre ses propres besoins entre parenthèses pour s’orienter vers ceux de son parent »</p>
+</div></div>
+<p><strong>En thérapie:</strong><br>
 ! Immense loyauté de l'enfant pour son parent</p>
 <ul>
-<li>Juger le parent serait trahir l'enfant</li>
-<li css-module=""></li>
+<li>Juger le parent serait trahir l'enfant. Attention à ne rien dire de négatif sur le parent devant l’enfant.</li>
+<li>Travail avec l'enfant et ses parents. Il y a un intérêt à travailler avec le système.</li>
+<li>Eloignement de l'enfant pour s'en protéger? Parfois, on va séparer les enfants des parents mais pas à n’importe quel prix. La séparation n’est pas thérapeutique et donc, il faut effectuer un travail de lien pendant la séparation sinon ça fait plus de mal que la situation antécédente.</li>
 </ul>
-<p>Parentification: 3 types de roles (Haxhe, 2013)</p>
+<p>Parentification: 3 types de rôles (Haxhe, 2013)</p>
 <ul>
-<li><strong>Le rôle de soignant</strong>: décrit l'enfant trop mature qui s'occupera de son (ou ses) parent(s) ou de sa fratrie</li>
-<li><strong>Le role de bouc émissaire</strong> décrit l'enfant qui renonce à son autonomie et adopte un rôle de victime ou de délinquant afin de réunifier sa famille</li>
-<li><strong>Le role neutre</strong> décrit l'enfant qui se montre conforme et ne réclame rien</li>
+<li><strong>Le rôle de soignant</strong>: décrit l'enfant trop mature qui s'occupera de son (ou ses) parent(s) ou de sa fratrie.</li>
+<li><strong>Le role de bouc émissaire</strong> décrit l'enfant qui renonce à son autonomie et adopte un rôle de victime ou de délinquant afin de réunifier sa famille.</li>
+<li><strong>Le rôle neutre</strong> décrit l'enfant qui se montre conforme et ne réclame rien. Derrière cette façade, l’enfant peut se battre avec des sentiments de vide, tristesse et solitude intense. Ce sont les enfants parfaits qu’on oublie. La quête de perfection les fait beaucoup souffrir.</li>
 </ul>
-<p>Parentification: quelles conséquences?</p>
+<p><strong>Parentification: quelles conséquences?</strong><br>
+Peut avoir de lourdes conséquences.</p>
 <ul>
 <li>Anxiété: La responsabilité relationnelle qui incombe à l'enfant parentifié peut être lourde a porter</li>
 <li>Dépression: confrontation au vide intérieur - sentiments d'auto-dépréciation et de culpabilité</li>
 </ul>
-<h3 id="2-pas-vu" tabindex="-1">2. ? pas vu</h3>
-<h3 css-module="" id="3-traverser-les" tabindex="-1">3. Traverser les </h3>
+<h3 id="3-traverser-les-generations" tabindex="-1">3. Traverser les générations</h3>
 <h4 id="enfants-mutants-gaillard-2023" tabindex="-1">Enfants mutants (Gaillard, 2023)</h4>
-<p>Livre: Enfants et adolescents en mutation</p>
+<p>cf. Livre - Enfants et adolescents en mutation</p>
+<p>L’idée de Gaillard est que l’enfant d’aujourd’hui donc de la nouvelle génération montre un fonctionnement psycho sociétal différent des adultes. Ces différences sont telles que l’ensemble que l’ensemble des programmes éducatifs sont contre-productifs.</p>
 <ul>
 <li>
 <p>Mutation psychosociétale des nouvelles générations</p>
 </li>
 <li>
-<p>Les jeunes ne seraient pas <em>problématiques</em>, mais adaptés a un nouveau contexte social</p>
+<p>Les jeunes ne seraient pas <em>problématiques</em>, mais adaptés à un nouveau contexte social</p>
 </li>
 <li>
-<p>Ces jeunes presente:</p>
+<p>Ces jeunes présentent:</p>
 <ul>
 <li>un rapport plus horizontal à l'autorité: apprennent le respect quand eux-mêmes l'ont vécu.</li>
 <li>une autonomie individuelle plus forte</li>
@@ -1372,10 +1432,14 @@ Rare qu'un père refuse, répondent présent. Figure éclatée de nos jours (voi
 </ul>
 </li>
 <li>
-<p>ConséquencesL</p>
+<p>Conséquences:</p>
 <ul>
-<li>Les institutions utilisent encore des modeles educatifs anciens</li>
-<li css-module=".">Les comportements des jeunes sont alors souvent interpretes</li>
+<li>Les institutions utilisent encore des modèles éducatifs anciens</li>
+<li>Les comportements des jeunes sont alors souvent interprétés comme des troubles ou des déviances.
+<ul>
+<li>➢ Adapter les pratiques éducatives et thérapeutiques à cette mutation générationnelle.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1385,37 +1449,47 @@ Rare qu'un père refuse, répondent présent. Figure éclatée de nos jours (voi
 <p>La <strong>grande</strong> règle:</p>
 <ul>
 <li>est nécessaire a la survie</li>
-<li>ne peut être transgresse sous aucun pretexte</li>
+<li>ne peut être transgressée sous aucun pretexte</li>
 <li>ne nécessite aucune explication et justification</li>
+<li>Exemple de grande règle : <em>tu ne traverses pas sans regarder parce que tu pourrais te faire écraser par une voiture</em> -&gt; la règle comporte un risque en cas de transgression.</li>
 </ul>
 </li>
 <li>
 <p>La <strong>petite</strong> règle:</p>
 <ul>
 <li>est negociable</li>
-<li>est sujette a exceptions</li>
+<li>est sujette à exceptions</li>
 <li>demande parfois des explications</li>
+<li>Exemple de petite règle : tu ne manges pas de chocolats avant le diner -&gt; la règle ne comporte pas de risque en cas de transgression.</li>
+<li>Les petites règles sont nécessaires car elles permettent à l’enfant d’apprendre à négocier et à savoir « ok. en fonction de si papa ou de maman, il y a plus de chances que cette règle saute... ».</li>
 </ul>
 </li>
 <li>
-<p>Familles a transactions rigides</p>
+<p><strong>Familles à transactions rigides:</strong> Dans certaines familles, presque toute les règles sont des grandes règles. L’enfant apprend donc vite que ça ne sert à rien de négocier, que rien ne va bouger, qu’il n’y a pas d’exceptions à la règle, …Le risque c’est l’émergence de secret pour détourner la règle, des non-dits, des mensonges, … Tous ces phénomènes-là sont l’indice de règles trop rigides.</p>
 </li>
 <li>
-<p>Familles a transactions chaotiques:</p>
+<p><strong>Familles à transactions chaotiques</strong>:</p>
 <ul>
-<li>Dans certaines familles, les grandes règles n'existent pas, que des petites regles (peut provoquer angoisses, troubles du comportement... ). Adultes prennent pour provocation quelque chose qui est juste de la désorientation.</li>
+<li>Dans certaines familles, les grandes règles n'existent pas, que des petites règles (peut provoquer angoisses, troubles du comportement... ). Adultes prennent pour provocation quelque chose qui est juste de la désorientation.</li>
 </ul>
 </li>
 <li>
 <p>Familles &quot;new age&quot;</p>
 <ul>
-<li>Laisser le choix des regles aux enfants, laisser-faire par peur de produire pattern autoritaire. Ou pour avoir la paix.</li>
+<li>Laisser le choix des règles aux enfants, laisser-faire par peur de produire pattern autoritaire. Ce sont aussi souvent des parents qui ont vécu une éducation très autoritaire et ne veulent pas le reproduire avec leurs enfants. Ce sont aussi parfois, des parents qui craignent que leurs enfants ne les aiment pas donc ils ne leur mettent pas de règles de peur que dire non, blesse l’enfant et abime la relation.Ou pour avoir la paix.</li>
 <li>Enfants développent des comportements pathologiques (elle en reçoit beaucoup en<br>
 pédopsychiatrie).</li>
 </ul>
 </li>
 </ul>
-<p>Vidéo: concept de résonnance cf. Mony Elkaïm</p>
+<p>Vidéo: <a href="https://www.youtube.com/watch?v=iSE_sTmECJk" target="_blank" class="external-link">concept de résonnance</a> cf. Mony Elkaïm</p>
+<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/iSE_sTmECJk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>J'ai trouvé ça aussi:<br>
+À propos du concept de résonance, <a href="https://shs.cairn.info/publications-de-mony-elkaim--6557?lang=fr" target="_blank" class="external-link">Mony Elkaïm</a>, Pages 171 à 172:</p>
+<ul>
+<li>L’idée centrale est la suivante : ce que ressent le thérapeute pendant la séance n’est pas seulement “personnel” ou “subjectif” ; cela peut aussi être une information sur le fonctionnement du système.</li>
+<li>Le thérapeute n’est pas extérieur au système qu’il observe ; dès qu’il entre en relation avec la famille, il devient lui-même une partie du système thérapeutique. Ses émotions peuvent donc devenir des outils de compréhension clinique.</li>
+</ul>
 </main>
 <aside>
 <div class="sidebar">
@@ -1554,6 +1628,12 @@ Pratiques cliniques en institution
 </ol>
 </li>
 <li><a href="#3-la-rencontre-avec-l-enfant-et-sa-famille">3. La rencontre avec l'enfant et sa famille</a>
+<ol>
+<li><a href="#faire-cohabiter-deux-mondes">Faire cohabiter deux mondes</a>
+</li>
+<li><a href="#la-rencontre-avec-le-symptome">La rencontre avec le symptôme</a>
+</li>
+</ol>
 </li>
 </ol>
 </li>
@@ -1562,10 +1642,22 @@ Pratiques cliniques en institution
 <li><a href="#v-l-interet-du-travail-en-famille">V. L'interêt du travail en famille</a>
 <ol>
 <li><a href="#1-modalites-relationnelles-et-blocage-evolutif">1. Modalités relationnelles et blocage évolutif</a>
+<ol>
+<li><a href="#l-enfant-chronique-andolfi-2002">L'enfant chronique (Andolfi, 2002)</a>
 </li>
-<li><a href="#2-pas-vu">2. ? pas vu</a>
+<li><a href="#la-rupture-emotionnelle-andolfi-2002">La rupture émotionnelle (Andolfi, 2002)</a>
 </li>
-<li><a href="#3-traverser-les">3. Traverser les</a>
+<li><a href="#le-triangle-relationnel-murray-bowen-1984-1999">Le triangle relationnel - Murray Bowen (1984, 1999)</a>
+</li>
+</ol>
+</li>
+<li><a href="#2-difficultes-dans-le-lien-parent-enfant">2. Difficultés dans le lien parent-enfant</a>
+<ol>
+<li><a href="#l-inversion-des-roles-mazzoni-2021">L'inversion des rôles (Mazzoni, 2021)</a>
+</li>
+</ol>
+</li>
+<li><a href="#3-traverser-les-generations">3. Traverser les générations</a>
 <ol>
 <li><a href="#enfants-mutants-gaillard-2023">Enfants mutants (Gaillard, 2023)</a>
 </li>
