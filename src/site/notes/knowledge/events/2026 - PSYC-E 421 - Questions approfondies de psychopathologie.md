@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-05-23T11:57:50.295+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-05-23T14:10:26.349+02:00"}
 ---
 
 **Structure**:
@@ -1021,51 +1021,67 @@ Lorsqu'une demande émerge, se demander ce qui fait **crise**.
 
 1. Première étape, incontournable : définit la relation, le cadre, objectifs, limites, et l’articulation des collaborations
 2. Importance des processus plutôt que les contenus (Tielmans, 1987)
-	1. Qui est l’**ENVOYEUR** et que veut-il ?
+	1. Qui est l’**ENVOYEUR** et que veut-il ? 
+		- L’idée est de se différencier de l’envoyeur. C’est important surtout dans le cas où les parent pensent que l’envoyeur les a envoyés pour évaluer leurs capacités à être de bons parents ce qui n’est en fait, pas notre rôle. La différenciation permet de créer un lien avec la famille
 	2. Pourquoi la crise se déclenche **MAINTENANT** ?
+		- Cette question va nous permettre de savoir s’il faut être du côté du **soutien** (qui va induire un accompagnement dans un évènement de vie difficile et donc renforcer les **mécanismes** et les stratégies de défenses du patient) ou de la psychothérapie (qui va induire un changement). Ces deux types d’entretien sont assez différents.
 	3. Pourquoi la demande est-elle formulée **ICI** ? (sens & attentes // lieu)
+		- Elle est prête à parler des problèmes de l’enfant mais pas encore à parler des problèmes de la famille. Le lieu a une importance car ce n’est pas la même chose de consulter un médecin, un pédopsychiatre ou un clinicien systémique et cela nous indique ce que la famille ou le patient sont prêts à travailler. On va aussi se questionner sur le symptôme.
 	4. Comment ont été gérées les crises **ANTECEDENTES** ? (Qu’est-ce qui se répète ou risque de se répéter ?)
+		- On peut essayer de savoir pourquoi la personne change d’intervenants ou de thérapeutes. Ces changements peuvent montrer de l’évitements. L’idée sera de ne pas répéter les mêmes choses. On essaye de voir ce qui a fait obstacles ou défauts pour ne pas le répéter.
 	5. Position de l’**ENTOURAGE FAMILIAL** par rapport au 1er rendez-vous ?
+		- Il faut être attentif à ce qui circule dans la famille concernant les troubles des enfants.
 	6. Quels sont les **ENJEUX** relationnels au 1er RV ?
+		- On questionne les enjeux mais aussi ce qui va, dans le futur, nous indiquer que la famille ou le patient n’ont plus besoin de venir en séances, que le chemin thérapeutique est terminé. Cela permet de déterminer des objectifs thérapeutiques qui sont importants pour garder du sens pour le suivi.
 
 
 📅 **11 Mai 2026** - Cours 3 - Mathilde Meriaux
 ### 3. La rencontre avec l'enfant et sa famille
 
-- Familles peuvent être en position de "legitime défense" (terme d'Ausloos), se sentent pointés du doigt ou ont eu d'autres expériences précédentes. Interêt donc de travailler leur compétence.
-- Inviter, mobiliser les familles pour passer de la culpabilisation à la responsabilisation: passer du "parce que je pense que cela pourra vous aider"à "j'ai besoin de vous".
-- Si l'enfant refuse, si c'est une figure importante on peut insister, si c'est plus secondaire, faire avec, on peut questionner l'enfant, questionner les risques percus, faire jeu de chaise vide, etc.
+- Familles peuvent être en position de "legitime défense" (terme d'Ausloos), se sentent pointés du doigt par d'autres expériences avec intervenants précédents. Interêt donc de travailler leur compétence.
+- Inviter, mobiliser les familles pour passer de la culpabilisation à la responsabilisation: passer du "parce que je pense que cela pourra vous aider"à "**j'ai besoin de vous**".
+- Si l'enfant refuse d'avoir quelqu'un de la famille en thérapie, si c'est une figure importante on peut insister, si c'est plus secondaire, faire avec, on peut questionner l'enfant, questionner les risques perçus, faire jeu de chaise vide, etc.
+- On peut demander à l'enfant comment on peut l'aider, sa réponse nous donnera aussi des informations sur la direction à prendre.
+	- La prof dit que pour permettre aux enfants de répondre aux questions elle utilise une fausse baguette magique et pose les questions via cet objet : « tu vois, c’est une baguette magique et elle a des pouvoirs, si elle avait le pouvoir de changer quelque chose dans ta maison, tu demanderais de changer quoi ? ». Ça rend la chose plus ludique et donc, l’enfant va répondre plus facilement.
 
-Faire cohabiter deux mondes
+#### Faire cohabiter deux mondes
+
 - Composer avec des attentes et humeurs de chacun mais aussi avec les capacités d'attention et langages différents.
+
+L’adulte est dans le moment présent ou coincé dans un passé qui le fait souffrir ou dans un futur qui est angoissant. Le langage de l’adulte est insaisissable, indirect, parfois fait de sous-entendus alors que le langage de l’enfant est direct, sans filtre. Parfois, le fait que les enfants soient sans-filtre peut nous bousculer dans notre place de thérapeute. En tant que thérapeute, on s’engage à faire dialogue ces deux mondes. On peut être partagé entre le fait de garder notre costume d’expert et le fait d’aller jouer avec l’enfant pour « travailler » avec lui.
+
+#### La rencontre avec le symptôme
 
 Exemple: Un symptôme, plusieurs hypothèses: Un enfant a un problème scolaire...
 Hypothèses?
+Si on prend l’exemple d’un *petit garçon qui a fiat une grosses crise le jour de la rentrée et qui ne veut plus retourner à l’école + qui a très peur de prendre le taxi pour se rendre à l’hôpital, on va se rendre compte que le problème ce n’est ni l’école ni le taxi mais une peur de séparation. On va donc travailler sur cette peur de séparation plutôt que sur l’école*. Le symptôme est le premier aspect sur lequel porter notre attention. C’est sur la spécificité même du problème que l’on va retrouver des éléments qui vont nous guider vers la solution. 
 
-- Considérer le symptôme comme une possiblilité de changement -> tentative de donner une réponses
-- Attention à intervenir uniquement en éliminant le problème, sans aucun changement dans le contexte familial
+- Considérer le symptôme comme une possibilité de changement -> tentative de donner une réponse
+- Attention à ne pas intervenir uniquement en éliminant le problème, sans aucun changement dans le contexte familial
 - Demande d'aide
 - Prend de la valeur à travers l'histoire multi-générationnelle du symptôme lui-même
 
-Cas de Amine, enfant qui devient violent. Pere qui etait violent, Amine témoin, enfant bouclier. Colère pour Amine: tentative de différentiation (créer distance pour ne pas être collé) (symptôme comme régulateur de distance)
+Exemple d'Amine, enfant qui devient violent. Pere qui était violent, Amine en était témoin, enfant bouclier. Colère pour Amine: tentative de différentiation (créer distance pour ne pas être collé) (symptôme comme régulateur de distance).
 
-La rencontre avec le symptome
-
-- Symptomes psychosomatiques, troubles du comportement, troubles de l'anxiété ou de l'humeur sont souvent reliés métaphoriquement au noeud problématique familial (De Francisci, Piersanti, 2015)
+- Symptômes psychosomatiques, troubles du comportement, troubles de l'anxiété ou de l'humeur sont souvent reliés métaphoriquement au noeud problématique familial (De Francisci, Piersanti, 2015).  Ces différents troubles sont difficilement tolérés car ils ont un impact négatif sur le milieu familial.
+	- Exemple:  La prof nous parle d’un enfant qu’elle suit et qui est atteint d’un TSA. Les parents de ce petit sont toujours ensemble mais on bien dit qu’ils l’étaient juste pour les enfants. Le petit garçon a peur d’absolument tout et les symptômes s’intensifient quand les parents sont en conflit. En ce moment, les symptômes sont plus forts que jamais. On voit que le symptôme a une fonction pour le système familial mais que c’est au détriment d’un développement normal de l’enfant, ce petit est « être » le symptôme.
 
 Exemples:
 - Ne pas avoir été vu petit (que a travers succès académique (sorte de stratégie pour être vu), etc): risque d'épuisement au travail.
-- Symptômes physiques (énurésie, important de faire les examens somatiques)
+- Symptômes physiques (énurésie, important de faire les examens somatiques):  Ils peuvent être psychiques mais ce n’est pas toujours le cas, et il faut s’en assurer.
+- Sommeil, alimentaire, psychosomatique, digestif, croissance, tbl du comportement, instrumentaux, d'apprentissage, TS, fugues, délinquance, toxicomanie, anorexie, tbl anxieux, dépressif, cognitif, problématiques relationnelles, épuisement professionnel, ptsd, conduites addictives.
+- On peut aussi faire des examens neurologiques dans le cas de troubles du comportement pour s’assurer que ce n’est pas à cause d’un dysfonctionnement dans le cerveau. Il faut toujours se poser pleins de questions avant d’envisager que le symptôme vient d’un problème relationnel.
 
 # V. L'interêt du travail en famille
+(le passage au point V vient plus tard dans les slides, mais pour moi ça fait plus de sens déjà ici)
 
-- C'est souvent dans les premières rencontres que la famille donne la trame autour de laquelle s'est tissé le problème. Ausloos: la solution est deja dans le problème
-	- Exemple: mere, père, enfant (Silvio). Silvio était dans un désert scolaire, impossible d'y retourner. Montait sur le bureau du prof. A dit au psychiatre: "de toute façon, le but c'est que je meure". Photo sur table de salon de Silvio d'un monsieur (du tonton de Silvio, mere dit a la psy a voix basse "il s'est suicidé et jai dit a Silvio que c'était un accident de voiture"). En séance Silvio fait mime de se couper le coup.
-- Les enfants vont permettre de toucher les zones d'ombre de la famille, si le thérapeute relie le comportement de l'enfant lors dune première consultation avec le symptôme qui pose problème.
+- C'est souvent dans les premières rencontres que la famille donne **la trame** autour de laquelle s'est tissé le problème. Ausloos: la solution est déjà dans le problème.
+	- Exemple: mère, père, enfant (Silvio). Silvio était dans un désert scolaire, impossible d'y retourner. Montait sur le bureau du prof. A dit au psychiatre: "de toute façon, le but c'est que je meure". Photo sur table de salon de Silvio d'un monsieur (du tonton de Silvio, mère dit a la psy à voix basse "il s'est suicidé et j'ai dit à Silvio que c'était un accident de voiture"). En séance Silvio fait mime de se couper le cou.
+- Les enfants vont permettre de toucher les zones d'ombre de la famille, si le thérapeute relie le comportement de l'enfant lors d'une première consultation avec le symptôme qui pose problème.
 
 **Revisiter l'enfance des parents**
 
-- Les parents cherchent à corriger les problèmes de leurs enfants sans réaliser les effets des résonnances
+- Les parents cherchent à corriger les problèmes de leurs enfants sans réaliser les effets des résonnances.
 - Refus de dévoiler des éléments de leur histoire
 - L'enfant peut capter le drame intérieur du parent (enfant dans son narcissisme primaire peut penser que c'est de sa faute)
 - Demander à l'enfant qui de ses parents a connu la même forme d'injustice que lui.
@@ -1075,14 +1091,15 @@ Aussi inclu pour l'enfant **recevoir de l'information**.
 **Les grands-parents**
 
 - Personnes ressource, surtout en temps de séparation des parents.
-- Modèle tri-générationnel (cf. Andolfi).
+- **Modèle tri-générationnel** (cf. Andolfi). Andolfi invitait les grands-parents en séance. Ça peut être intéressant de voir les grands parents s’ils sont une ressource ou qu’ils ont une place essentielle pour l’enfant et son quotidien. On peut aussi ne pas les inviter mais parler d’eux à travers les parents qui sont présents. Demander à un enfant comment il s’imagine la relation entre un de ses parents et un de ses grands pères (*le père de son père, par exemple*) peut aussi être intéressant pour voir ce qui se répète au niveau relationnel ou les ressources et valeurs qui ont été transmises.
 - Relier le parent et l'enfant à la troisième génération, permet de trouver des espaces de médiation et d'entente impensables sans cela.
 - Rencontrer les parties de l'enfant cachées derrière les parents en détresse/souffrance.
 
 **La fratrie**
 
-Stephanie Haxhe: Frères et soeurs, des liens à soigner
-Incroyable ressource et lieu de grande souffrance.
+cf. *Stéphanie Haxhe: Frères et soeurs, des liens à soigner*
+
+La fratrie, incroyable ressource et lieu de grande souffrance.
 
 - Peu d'études consacrées aux liens de fratrie (Haxhe, 2024)
 - Laboratoire social, émotionnel: place dans la fratrie aura influence dans la place dans espaces relationnels futurs (e.g. travail, en couple - répétitions de roles, injustices vécues, enfant malade, bouc émissaire, etc.)
@@ -1092,60 +1109,72 @@ Incroyable ressource et lieu de grande souffrance.
 
 Injustices: celles vécues avec parents/adultes, en particulier.
 - Rivalité développementale: normale, pas un warning d'office
-- Rivalité exarcebée: conflits fréquents, ça envahit tout le système, comparaison constante, recherche excessive de reconnaissance. -> plus rigide, fréquent, intense. Fonction c'est parfois conflit des parents (hypothèse dans littérature systémique: alliance chacun a un parent, ou manque de différentiation parents vis a vis d'enfants.). 
-	- Légitimité destructrice (approche contextuelle): lésé, vais cherche réparation (pas chez le principal concerné, mais chez qqun d'autre, frère ou soeur). **Injustice vis a vis des aprents reglée avec frères et soeurs**.
-		- Exemple: fille de 8 ans, avec soeur de 3 ans. madame rejette ses enfants a 3 ans (pour histoire personnelle, sa mere l'a délaissée pour un homme). Mère fait des commentaires de préférence de certains enfants. Mère avec ses commentaires cree les rivalités et hiérarchies (cf double lien de Bateson, double contrainte Elkaïm).
+- Rivalité exarcebée: conflits fréquents, ça envahit tout le système, comparaison constante, recherche excessive de reconnaissance. -> plus rigide, fréquent, intense. Fonction c'est parfois conflit des parents (hypothèse dans littérature systémique: alliance chacun à un parent, ou manque de différentiation parents vis à vis d'enfants.). 
+	- Légitimité destructrice (approche contextuelle): lésé, vais chercher réparation (pas chez le principal concerné, mais chez qqun d'autre, frère ou soeur). **Injustice vis à vis des parents réglée avec frères et soeurs**.
+		- Exemple: fille de 8 ans, avec soeur de 3 ans. Madame rejette ses enfants à 3 ans (pour histoire personnelle, sa mère l'a délaissée pour un homme). Mère fait des commentaires de préférence de certains enfants. Mère avec ses commentaires crée les rivalités et hiérarchies (cf. double lien de Bateson, double contrainte Elkaïm).
 - Rivalité figée
 
 **La place du père**
 
 Quelle place accorder aux pères?
-Rare qu'un père refuse, répondent présent. Figure éclatée de nos jours (voir aussi 4 axes de filiation de Kinoo, en 4.5 [[knowledge/events/2026 - PSYC-E 540 - Approche systémique des traumatismes\|2026 - PSYC-E 540 - Approche systémique des traumatismes]]):
+Rare qu'un père refuse, répondent généralement présent. Figure éclatée de nos jours (voir aussi 4 axes de filiation de Kinoo, en 4.5 [[knowledge/events/2026 - PSYC-E 540 - Approche systémique des traumatismes\|2026 - PSYC-E 540 - Approche systémique des traumatismes]]):
 - Père légal (défini par le droit)
 - Père biologique
 - Père affectif
 
-Exemple de situation père qui n'était pas biologique, parents en faisaient tout un secret alors que pour l'enfant c'était peut etre pas le coté biologique qui était si important.
-
+Exemple de situation père qui n'était pas biologique, parents en faisaient tout un secret alors que pour l'enfant c'était peut être pas le coté biologique qui était si important.
 -> observer la fonction triadique
 -> inviter les pères!
 
-Exemple, père vu comme surpuissant: travail pour voir père avec ses defauts (permet a l'enfant d'avoir ses défauts aussi).
+Place du père au niveau psychique: le père réel, le père imaginaire, et le père symbolique
+Exemple: père vu comme surpuissant: travail pour passer le père de l'imaginaire au réel, voir père avec ses défauts (permet à l'enfant d'avoir ses défauts aussi).
 
 Nuance importante:
 - **Absence de père** -> pas le problème.
-- **Absence de recherche de père** (recherche: se questionner sur qui il était, qu'est-ce qu'il a vécu...) -> important pour la construction d'identité, construction psychique.
+- ==**Absence de recherche de père**== (recherche: se questionner sur qui il était, qu'est-ce qu'il a vécu...) -> important pour la construction d'identité, construction psychique.
 
-Créer quelque chose de l'ordre de l'appartenance pour favoriser la différentiation (être capable de dire "je").
+**Créer quelque chose de l'ordre de l'appartenance** pour favoriser la différentiation (être capable de dire "je"). Faire remarquer les ressemblances permet aussi de se différencier.
 
 ### 1. Modalités relationnelles et blocage évolutif
 
-**L'enfant chronique** (Andolfi, 2002)
+On va voir dans ce point des notions pour approfondir sur ce qui est de l’ordre des dysfonctionnements relationnels à l’âge adulte mais qui seraient liés à l’enfance.
+
+#### L'enfant chronique (Andolfi, 2002)
+
+Pour devenir adulte, il y a certaines conditions comme la différenciation. Devenir adulte ce n’est pas une question d’âge. Pour devenir adulte, il faut accepter la séparation et redéfinir les relations avec les parents.
 
 L'individu n'arrive pas, à l'âge adulte, à acquérir la position du Moi (Bowen, 1984) et reste, face à ses parents, dans une position d'enfant.
-- L'extreme dépendance et la peur d'être jugé par ses propres parents sont souvent niées ou justifiées comme étant un service dû, un prix à payer pour garantir l'appartenance à la famille.
-- Le couple se dégrade s'il n'arrive pas à se préserver de l'intrusion de la famille d'origine.
+- L'extrême dépendance et la peur d'être jugé par ses propres parents sont souvent niées ou justifiées comme étant un service dû, un prix à payer pour garantir l'appartenance à la famille.
+- Le couple se dégrade s'il n'arrive pas à se préserver de l'intrusion de la famille d'origine. Cette intrusion sera toujours facilitée pas une dépendance excessive de l’enfant à l’égard de ses parents et inversement. *Par exemple, la mère de monsieur l’appelle trois fois par jour pour lui raconter ce qu’il se passe dans sa vie, donner des conseils sur l’éducation des enfants et sur ce qu’il doit faire dans son couple, … et monsieur ne sait pas lui dire « stop ». Madame se plaint et monsieur répond « mais enfin, elle est âgée et puis, tu as vu tout ce qu’elle a fait pour nous, je ne vais pas la couper ». Cela va créer des conflits dans le couple autour de la mère qui est envahissante.*
 
-**La rupture émotionnelle** (Andolfi, 2002)
+#### La rupture émotionnelle (Andolfi, 2002)
 
-Cas où en l'absence d'une séparation progressive, la relation parents/enfant s'est interrompue brutalement.
+Cas où en l'absence d'une séparation progressive, la relation parents/enfant s'est interrompue brutalement. Cet adulte sera constamment à la recherche de lien compensatoire dans ses relations amoureuses, dans sa parentalité, … mais il pourra difficilement trouver une relation comme avec ses parents.
 - L'adulte construira une image déformée de lui-même qui l'amènera à "remplir des sacs troués"
+Objectifs:
 - -> S'arrêter et renouer à l'endroit où la rupture s'est réalisée
 - -> Permettre une prise de conscience des ruptures émotionnelles précoces, à la base de tensions dans la relation de couple et parents/enfant
 
-**Le triangle relationnel - Murray Bowen (1984, 1999)**
+#### Le triangle relationnel - Murray Bowen (1984, 1999)
 
 - La plus petite configuration émotive stable. Il s'agit de la famille "idéale". Les triangles peuvent résoudre un conflit, mais un triangle pathologique lui va figer.
 - Pour Bowen, la relation a deux est fondamentale instable. Quand elle doit faire face à l'angoisse et aux tensions de la vie, elle va aller prendre un troisième élément en recherche de stabilité, pour avoir une plus grande souplesse dans le fonctionnement et réduire l'angoisse.
+
+Ce triangle n’est pas pathologique en soi mais il le devient s’il est rigidifié:
 - Enfant souvent amené a la place du tiers (confident, médiateur, petit ami qui se met comme bouclier, bouc émissaire...)
 - La multiplication des tiers comme stratégie pour contenir l'angoisse.
 
-Fonction du tiers
+> [!QUOTE] Bowen 
+> « Quand les tensions sont vraiment très importantes dans les familles et que les différentes possibilités de triangulation y ont été épuisées, le système triangule avec des personnes externes, telles que la police et les institutions sociales »
+
+ **Fonction du tiers**
 
 - Diminuer les tensions entre deux personnes
 - Permettre aux relations de se poursuivre dans le temps
 
-Exemples de tiers:
+Donc, le triangle a pour fonction de diminuer les tensions entre deux personnes et de détourner l’attention d’un conflit, de maintenir la cohésion entre deux personnes, d’éviter les ruptures, de pouvoir répartir la charge émotionnelle sur trois personnes plutôt que deux. Le thérapeute va souvent prendre cette place de tiers pour régler le conflit. L’idéal est que le tiers soit neutre mais c’est difficile de ne pas prendre parti. Les familles nous mettent d’office à cette place de tiers qui va venir réguler les tensions du système. L’idée est d’identifier à quelle place la famille nous place.
+
+**Exemples de tiers:**
 - Intra familiaux
 	- êtres humains
 	- animaux
@@ -1168,78 +1197,96 @@ Exemples de tiers:
 - En restant neutre
 - En prenant parti
 
-**L'inversion des rôles (Mazzoni, 2021)**
+### 2.  Difficultés dans le lien parent-enfant
+#### L'inversion des rôles (Mazzoni, 2021)
+
+Cette notion est importante car elle a un gros impact sur l’émergence des troubles dans l’enfance. Les symptômes sont causés par des dynamiques relationnelles que les parents ont souvent vécus aussi dans leur famille d’origine et ça se répète.
 
 3 catégories (Kerig, 2014):
 - La **parentification**: obtenir du soutien et de l'aide
 	- Parentification adaptative et destructive
 	- Association entre parentification et les troubles psychopatho ou les dysfonctionnements relationnels
-	- **==Critère: Non prise en compte du besoin de l'enfant==**
+	- **==Critère: Non prise en compte du besoin de l'enfant==**. La parentification se distingue des deux autres par le critère de prise en compte des besoins de l’enfant. Si ceux-ci ne sont pas comblés, on dans de la parentification.
 - **Adultisation**: se comporter comme si l'enfant était son égal.
 	- Association avec de l'anxiété social ou évitement
-	- Exemple: maman séparée du papa, l'enfant de 5 ans on peut lui donner 12 pour sa maniere de parler. Peut être satisfaisant, valorisant pour l'enfant.
+	-  faut toujours faire attention parce que les enfants sont souvent « honorés » d’être mis à la même place que l’adulte mais cela va avoir un impact sur sa relation avec ses pairs qui ne le voient pas comme sa mère le voit et ne le mettent pas à cette même place. Cela peut créer de l’anxiété sociale.
+	- Exemple: maman séparée du papa, l'enfant de 5 ans on peut lui donner 12 pour sa manière de parler. Peut être satisfaisant, valorisant pour l'enfant.
 - **Maritalisation**: se substituer émotionnellement au partenaire pour compenser l'insatisfaction conjugale.
 	- Association avec des déficits de l'attention, de l'hyperactivité et des difficultés de régulation émotionnelle
-	- Parents le disent eux-memes, ou ça se voit rapidement.
+	- Parents le disent eux-mêmes, ou ça se voit rapidement.
+
 
 - L'enfant joue un role actif dans la gestion des interactions du couple conjugal et parental lorsque celui-ci est dysfonctionnel et que les adultes manquent de coordination
 - Transmission intergénérationnelle de la dynamique d'inversion des rôles
 - Utile de saisir le moment où l'enfant revient à son âge
 
-**Repérer la parentification**
 
-{slide passée trop vite}
+> [!QUOTE] Haxhe, 2013
+> « Le poids de la responsabilité relationnelle confiée à l’enfant, et qui dépasse ses compétences. Afin d’assumer cette responsabilité, l’enfant doit mettre ses propres besoins entre parenthèses pour s’orienter vers ceux de son parent »
+
+**En thérapie:**
 ! Immense loyauté de l'enfant pour son parent
-- Juger le parent serait trahir l'enfant
-- {..}
+- Juger le parent serait trahir l'enfant. Attention à ne rien dire de négatif sur le parent devant l’enfant.
+- Travail avec l'enfant et ses parents. Il y a un intérêt à travailler avec le système.
+- Eloignement de l'enfant pour s'en protéger? Parfois, on va séparer les enfants des parents mais pas à n’importe quel prix. La séparation n’est pas thérapeutique et donc, il faut effectuer un travail de lien pendant la séparation sinon ça fait plus de mal que la situation antécédente.
 
-Parentification: 3 types de roles (Haxhe, 2013)
-- **Le rôle de soignant**: décrit l'enfant trop mature qui s'occupera de son (ou ses) parent(s) ou de sa fratrie
-- **Le role de bouc émissaire** décrit l'enfant qui renonce à son autonomie et adopte un rôle de victime ou de délinquant afin de réunifier sa famille
-- **Le role neutre** décrit l'enfant qui se montre conforme et ne réclame rien
+Parentification: 3 types de rôles (Haxhe, 2013)
+- **Le rôle de soignant**: décrit l'enfant trop mature qui s'occupera de son (ou ses) parent(s) ou de sa fratrie.
+- **Le role de bouc émissaire** décrit l'enfant qui renonce à son autonomie et adopte un rôle de victime ou de délinquant afin de réunifier sa famille.
+- **Le rôle neutre** décrit l'enfant qui se montre conforme et ne réclame rien. Derrière cette façade, l’enfant peut se battre avec des sentiments de vide, tristesse et solitude intense. Ce sont les enfants parfaits qu’on oublie. La quête de perfection les fait beaucoup souffrir.
 
-Parentification: quelles conséquences?
+**Parentification: quelles conséquences?**
+Peut avoir de lourdes conséquences.
 - Anxiété: La responsabilité relationnelle qui incombe à l'enfant parentifié peut être lourde a porter
 - Dépression: confrontation au vide intérieur - sentiments d'auto-dépréciation et de culpabilité
 
-### 2.  ? pas vu
-### 3. Traverser les  {..}
+### 3. Traverser les  générations
 
 #### Enfants mutants (Gaillard, 2023)
 
-Livre: Enfants et adolescents en mutation
+cf. Livre - Enfants et adolescents en mutation
+
+L’idée de Gaillard est que l’enfant d’aujourd’hui donc de la nouvelle génération montre un fonctionnement psycho sociétal différent des adultes. Ces différences sont telles que l’ensemble que l’ensemble des programmes éducatifs sont contre-productifs.
 
 - Mutation psychosociétale des nouvelles générations
-- Les jeunes ne seraient pas *problématiques*, mais adaptés a un nouveau contexte social
-- Ces jeunes presente:
+- Les jeunes ne seraient pas *problématiques*, mais adaptés à un nouveau contexte social
+- Ces jeunes présentent:
 	- un rapport plus horizontal à l'autorité: apprennent le respect quand eux-mêmes l'ont vécu.
 	- une autonomie individuelle plus forte
 	- une pensée collective et connectée plutôt que hiérarchique
 
-- ConséquencesL
-	- Les institutions utilisent encore des modeles educatifs anciens
-	- Les comportements des jeunes sont alors souvent interpretes {...}
+- Conséquences:
+	- Les institutions utilisent encore des modèles éducatifs anciens
+	- Les comportements des jeunes sont alors souvent interprétés comme des troubles ou des déviances.
+		- ➢ Adapter les pratiques éducatives et thérapeutiques à cette mutation générationnelle.
 
 #### Les grandes et petites règles (Ausloos, 2018)
 
 - La **grande** règle:
 	- est nécessaire a la survie
-	- ne peut être transgresse sous aucun pretexte
+	- ne peut être transgressée sous aucun pretexte
 	- ne nécessite aucune explication et justification
+	- Exemple de grande règle : *tu ne traverses pas sans regarder parce que tu pourrais te faire écraser par une voiture* -> la règle comporte un risque en cas de transgression.
 - La **petite** règle:
 	- est negociable
-	- est sujette a exceptions
+	- est sujette à exceptions
 	- demande parfois des explications
+	- Exemple de petite règle : tu ne manges pas de chocolats avant le diner -> la règle ne comporte pas de risque en cas de transgression.
+	- Les petites règles sont nécessaires car elles permettent à l’enfant d’apprendre à négocier et à savoir « ok. en fonction de si papa ou de maman, il y a plus de chances que cette règle saute... ».
 
-- Familles a transactions rigides
-- Familles a transactions chaotiques: 
-	- Dans certaines familles, les grandes règles n'existent pas, que des petites regles (peut provoquer angoisses, troubles du comportement... ). Adultes prennent pour provocation quelque chose qui est juste de la désorientation.
+- **Familles à transactions rigides:** Dans certaines familles, presque toute les règles sont des grandes règles. L’enfant apprend donc vite que ça ne sert à rien de négocier, que rien ne va bouger, qu’il n’y a pas d’exceptions à la règle, …Le risque c’est l’émergence de secret pour détourner la règle, des non-dits, des mensonges, … Tous ces phénomènes-là sont l’indice de règles trop rigides.
+- **Familles à transactions chaotiques**: 
+	- Dans certaines familles, les grandes règles n'existent pas, que des petites règles (peut provoquer angoisses, troubles du comportement... ). Adultes prennent pour provocation quelque chose qui est juste de la désorientation.
 - Familles "new age"
-	- Laisser le choix des regles aux enfants, laisser-faire par peur de produire pattern autoritaire. Ou pour avoir la paix.
+	- Laisser le choix des règles aux enfants, laisser-faire par peur de produire pattern autoritaire. Ce sont aussi souvent des parents qui ont vécu une éducation très autoritaire et ne veulent pas le reproduire avec leurs enfants. Ce sont aussi parfois, des parents qui craignent que leurs enfants ne les aiment pas donc ils ne leur mettent pas de règles de peur que dire non, blesse l’enfant et abime la relation.Ou pour avoir la paix.
 	- Enfants développent des comportements pathologiques (elle en reçoit beaucoup en 
 	pédopsychiatrie).
 
-Vidéo: concept de résonnance cf. Mony Elkaïm
+Vidéo: [concept de résonnance](https://www.youtube.com/watch?v=iSE_sTmECJk) cf. Mony Elkaïm
 
+<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/iSE_sTmECJk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-
+J'ai trouvé ça aussi:
+À propos du concept de résonance, [Mony Elkaïm](https://shs.cairn.info/publications-de-mony-elkaim--6557?lang=fr), Pages 171 à 172:
+- L’idée centrale est la suivante : ce que ressent le thérapeute pendant la séance n’est pas seulement “personnel” ou “subjectif” ; cela peut aussi être une information sur le fonctionnement du système.
+- Le thérapeute n’est pas extérieur au système qu’il observe ; dès qu’il entre en relation avec la famille, il devient lui-même une partie du système thérapeutique. Ses émotions peuvent donc devenir des outils de compréhension clinique.
