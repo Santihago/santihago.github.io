@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-04-15T18:12:49.847+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-05-20T17:31:06.477+02:00"}
 ---
 
 Cours donné par Laura Périchon cette année (avant appelé *Fondements méthodes et évaluation de l'intervention psychologique*, de Vinciane Despret)
@@ -303,8 +303,8 @@ Discours de la possession est assez courant. Peut-être parce qu'histoire effica
 Important aussi quand on offre une explication, offrir aussi une solution. Sinon, risque d'effet nocebo.
 
 > **Psychédéliques et thérapie alternative** (David Dupuis)
-> - Théorie thérapeutique local transmise par les conférences, les dispositifs rituels et les groupes de parole. En resumé: les troubles viennent d'une manifestation qui fait suite a des actes problématiques, et il faut se purger, purifier et protéger de diverses manières ET parallèles avec la vie quotidienne
-> - Théorie transmise aussi sur le plan de l'expérience via les psychédéliques (voir/sentir/percevoir les etres invisibles en particulier)
+> - Théorie thérapeutique local transmise par les conférences, les dispositifs rituels et les groupes de parole. En résumé: les troubles viennent d'une manifestation qui fait suite a des actes problématiques, et il faut se purger, purifier et protéger de diverses manières ET parallèles avec la vie quotidienne
+> - Théorie transmise aussi sur le plan de l'expérience via les psychédéliques (voir/sentir/percevoir les êtres invisibles en particulier)
 > - Les perceptions hallucinogènes sont pleinement façonnées par les savoirs, attentes et croyances antérieurs à l'expérience
 > - Effets thérapeutiques du dispositif selon l'auteur:
 > 	- **Reconfiguration de l'identité**: unité du soi, individu imperméable et maître de lui-même VS hétérogénéité du soi, perméabilité du soi, influences extérieures
@@ -376,8 +376,8 @@ Efficacité thérapeutique:
 	- théories sous-jacentes un peu différentes en fonction de la substance qu'elle utilise, depend de la problématique
 - **par rapport a l'analyse**: partie analyse dispositif frank & frank (quelle theorie, comment elle les utilise, l'explicite et l'implicite) + **regard critique personnel OK**? mettre en tension avec d'autres courants? par exemple que certaines choses pourraient avoir des risques, risque de dependence relationnelle, position de pouvoir...
 - pas de refs pour l'instant
-- théorie dans le travail? seulement pour appuyer aux diferents endroits ou toute une section theorique?
-	- Oui, presenter la theorie et la decrire. (en plus de la critique evidemment)
+- théorie dans le travail? seulement pour appuyer aux différents endroits ou toute une section theorique?
+	- Oui, présenter la théorie et la décrire. (en plus de la critique évidemment)
 
 
 - COMMENT la thérapeute se présente? "Thérapeute psychédélique" ou ...?

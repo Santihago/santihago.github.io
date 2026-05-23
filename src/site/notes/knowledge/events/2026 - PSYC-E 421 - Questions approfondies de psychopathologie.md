@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-05-20T11:13:19.747+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/events/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-05-23T11:57:50.295+02:00"}
 ---
 
 **Structure**:
@@ -35,30 +35,32 @@ La normativité est une question au centre de la clinique psychanalytique, parti
 
 Années 50, **Georges Canguilhem**, dans "Qu'est-ce que la psychologie?", argumente que la psychologie est essentiellement une discipline normative. Elle se préoccupe de comment il faut faire, il faut être, comment il faut se comporter, comment faire avec son corps, le corps de l'autre, avec les relations.... Et le fait dans un contexte socioculturel qui lui donne une certaine importance. Métaphore de la rue Saint-Jacques: « Quand on sort de la Sorbonne par la rue Saint-Jacques, on peut monter ou descendre ; si l’on va en montant, on se rapproche du Panthéon qui est le Conservatoire de quelques grands hommes, mais si l’on va en descendant, on se dirige sûrement vers la Préfecture de Police. » Pour Canguilhem, la psychologie a tendance à « descendre la rue » vers le commissariat. Elle devient un outil de contrôle social et de normalisation du comportement plutôt qu'un outil de compréhension de l'esprit.
 
-(j'ai du mal à saisir le concret de cette fonction de contrôle, dans ce qui se faisait ou disait concrètement à l'époque)
-
 **Perspective historique et ruptures**
 
-- Médecine hippocratique du **4ème siècle av. JC** (première rationalité). La maladie est un **déséquilibre** entre le microcosme (corps) et le macrocosme (nature/divin). Le médecin doit restaurer cet ordre. 
+- Médecine hippocratique du **4ème siècle av. JC** (première rationalité). Se positionne contre l'idée que maladie est un **déséquilibre** entre le microcosme (corps) et le macrocosme (nature/divin). La médecine hippocratique cherche à expliquer la maladie par des causes naturelles plutôt que divines. Il y a bien une logique d’équilibre, notamment des humeurs, le médecin doit restaurer cet ordre. 
 - Naissance de la **médecine scientifique** au 18ème siècle, moment de rupture. 
-	- Ce qui surgit d'abord: la **neurologie**. On découvre des maladies qui répondent à la logique neurologique, et d'autres qui n'y répondent pas, répondent plutôt a une logique relationnelle. Donc, sans que ce soit possible d'isoler une cause purement organique.
+	- Ce qui surgit d'abord: la **neurologie**. On découvre des maladies qui répondent à la logique neurologique, et d'autres qui n'y répondent pas, répondent plutôt a une logique relationnelle (sans que ce soit possible d'isoler une cause purement organique).
 	- C'est là que nait la psychologie, avec deux courants qui coexistent: 
 		1. Un courant qui vise à repérer **les causes proprement organiques**, médicales;
 		2. Un courant visant à développer des concepts, des champs théoriques, des méthodologies, des pratiques, pour tenter de saisir la logique de cette **dimension relationnelle, contextuelle, humaine**.
 
-La psychanalyse se situerait donc dans cette dernier côté, en complément ou en opposition au courant visant à identifier les causes organiques.
+La psychanalyse se situerait donc dans cette dernière catégorie, en complément ou en opposition au courant visant à identifier les causes organiques.
+
+(*C'est vrai important de ne pas réduire à la biologie, mais risque de réductionnisme inverse: l'opposition “causes organiques” à la “dimension relationnelle, contextuelle, humaine” est un peu trompeuse... La plupart de phénomènes psychiques sont à la fois biologiques, relationnels, sociaux, historiques... on remplace un réductionnisme biologique par un autre*)
 
 **Discours dominants actuels**
 
 Trois concepts-clé, discours essentiels:
-1. **L'individualisme**: L'individu est vu comme un "entrepreneur de sa propre existence". Discours qui aujourd'hui en est à son apogée (personne ne doute d'être un être libre, indépendant, autonome...). Ce discours a un effet important sur la manière de se penser, penser les autres, et penser les difficultés humaines. 
+1. **L'individualisme**: L'individu est vu comme un "entrepreneur de sa propre existence". Discours qui aujourd'hui en est à son apogée (personne ne doute d'être un être libre, indépendant, autonome...). Ce discours a un effet important sur la manière de se penser, penser les autres, et penser les difficultés humaines.
 	- "Si ça ne va pas, c'est à cause de nous-mêmes". Les difficultés ne sont pas pensées comme collectives, mais de manière individuelle. Si ça ne va pas, c'est que "je ne suis pas un bon entrepreneur de ma propre existence". 
 		- La dépression (mal du siècle, mais qui dure presque déjà deux siècles...)
-		- Conséquence : Si on échoue, on est seul responsable. La **dépression** est le revers de la médaille de cette responsabilité individuelle totale.
+		- Conséquence : Si on échoue, on est seul responsable. La **dépression** est le revers de la médaille de cette responsabilité individuelle totale. 
+		- (*Mouais, sur l'individualisme, beaucoup se sentent déterminés aussi ou plus par leur classe sociale, leur famille, leur travail, leur genre, leur race... et pour la dépression, ça généralise sans nuance, la dépression a des causes multiples... Mais important en effet l'idée de ne pas réduire le mal-être à un échec personnel*)
 2. **Le discours capitaliste/scientifique**: Union de la science et du marché.
 	Discours capitaliste qui va se marier avec le discours de la science. Les réussites de la science, que nous nous approprions "parce que quelqu'un nous vente les mérites d'une découverte scientifique avec un tablier blanc dans un laboratoire".
 	- Au service de l'économie de marché.
 	- Important que chacune et chacun se réalise en achetant le GSM dernier-cri.
+	- (*argument un peu simpliste, la science a une autorité symbolique mais n'est pas seulement instrument de pouvoir, peut aussi servir a générer des outils de soin, de savoir, d'émancipation, des critiques du marché... amalgame entre science et certains usages économiques, institutionnels*)
 3. **Le discours religieux**: discours qui va régler ce qu'on peut faire, ne pas faire, avec qui, dans quelles conditions, quels interdits, avec quelques exceptions... Discours qui a fait tenir des institutions avec l'idée qu'elles ont toujours été là. Par exemple, l'institution du mariage. En déclin, mais toujours structurant.
 
 **Évolution des repères : du religieux au psychologique**
@@ -79,11 +81,13 @@ Les notions qui seront explorées:
 - **Invention subjective**
 - **Accueil**: faire avec l'impossible, pour être moins violents
 - **Trajectoires de vie singulières**: les trajectoires ne sont pas prévisibles lorsqu'on n'est pas dans la normativité, elles se forgent dans la rencontre. La seule prévision qu'une psychanalyse est capable de faire, ce sont les prévisions après coup.
+	- Si on parle de catégories, on ne parle plus de la personne, on parle de soi, de son savoir, de ses préjugés, de son propre fantasme... 
 
-Pourquoi **la parole** est-elle si importante, qu'on a besoin de rigueur, de rester attachés à ce que la personne fait/dit?
-- Si on parle de catégories, on ne parle plus de la personne, on parle de soi, de son savoir, de ses préjugés, de son propre fantasme... 
-- Question d'une étudiante: l'existence de structures psychotiques/névrotiques qui prédiraient la trajectoire de la décompensation (métaphore du crystal) ne va pas a l'encontre de ce qui vient d'être dit? 
-	- Réponse de Fouchet: Par rapport à ça, Lacan vient opérer une rupture. L'hypothèse centrale de cette orientation Lacanienne: nous ne disposons pas d'un mode d'emploi commun a tous les membres de l'espèce humaine qui nous dirait comment faire avec les choses centrales de l'existence (le corps, le corps de l'autre). Et que c'est cette place vide qui laisse place au plus grand dérèglement.
+Question d'une étudiante: l'existence de structures psychotiques/névrotiques qui prédiraient la trajectoire de la décompensation (métaphore du crystal) ne va pas a l'encontre de ce qui vient d'être dit? 
+- Réponse de Fouchet: Par rapport à ça, Lacan vient opérer une rupture. L'hypothèse centrale de cette orientation Lacanienne: **nous ne disposons pas d'un mode d'emploi commun a tous les membres de l'espèce humaine qui nous dirait comment faire avec les choses centrales de l'existence** (le corps, le corps de l'autre) (sorte d'==impasse humaine==). Et que c'est cette place vide force l'humain à l'invention ou au dérèglement. 
+- Ce qu'a de spécifique à l’espèce humaine, c’est **sa prise dans le champ de la parole et du langage**, comme tout à fait centrale
+
+(Comment: *je suis d'accord avec l'importance d'interroger ce que le psy lui-même reproduit comme norme. Mais la psychanalyse elle-même peut être normative : sur la famille, la sexualité, le désir, la différence des sexes, la structure psychique, la place du père, etc. Et historiquement, certains discours psychanalytiques ont aussi pathologisé ou normalisé. Donc il faudrait appliquer à la psychanalyse la même critique qu’aux autres approches. Il parle du besoin de se traiter soi-même, et c'est intéressant, mais sans méthode concrète pour se traiter, le propos ressemble un peu à une belle posture : “je suis non normatif parce que je sais que je suis normatif”.*)
 
 
 > [!DONE] Réponses aux pré-questions
@@ -99,10 +103,10 @@ Pourquoi **la parole** est-elle si importante, qu'on a besoin de rigueur, de res
 > | **Invention subjective**     | La réponse unique et artisanale qu'un sujet crée pour rendre son existence possible, comblant l'absence de "mode d'emploi" naturel de l'humain.                               |
 > | **Accueil**                  | Posture éthique consistant à reconnaître l'impossibilité de la neutralité totale pour mieux limiter la violence de nos propres jugements sur le patient.                      |
 > | **Trajectoires singulières** | Parcours de vie qui s'écartent des normes sociales préétablies ("autoroutes") et qui ne révèlent leur cohérence qu'après coup, par la parole.                                 |
-> | **L'impasse humaine**        | Point de départ lacanien : il n'y a pas d'instinct ou de savoir inné pour gérer le corps ou la rencontre sexuelle ; ce "vide" force l'humain à l'invention ou au dérèglement. |
+> | **L'impasse humaine**        | Point de départ lacanien : il n'y a pas d'instinct ou de savoir inné pour gérer le corps ou la rencontre sexuelle, ce "vide" force l'humain à l'invention ou au dérèglement. |
 > 
 
-## Témoignages: illustration de mettre la parole au centre
+## Témoignages: illustration de la mise de la parole au centre
 
 > [!QUESTION] Pré-questions:
 > - Comment Donna Williams utilise-t-elle l'invention pour transformer une "insulte" (le diagnostic) en un "point d'appui" ?
@@ -114,10 +118,10 @@ Pourquoi **la parole** est-elle si importante, qu'on a besoin de rigueur, de res
 Notre but en lisant est de réfléchir à ce qu'il se passe pour cette personne à partir de ce qu'elle écrit. Commentaires avant la lecture:
 - Logique de l'après-coup: c'est écrit à posteriori, inclut des choses dont elle n'aurait pas pu parler sur le moment.
 - Usage fréquent de l'ironie.
-- Donna Williams a reçu des diagnostiques. Important ici de s'intéresser a **ce qu'elle en fait, de ses diagnostiques**. Dans cette orientation (Lacanienne), on se focalise sur ce qui nous concerne tous, le pari de l'invention quelques soient les troubles dont seraient atteints les patients. On ne s'intéresse pas à la cause du trouble, mais plutôt quelle place ça a dans l'existence du sujet de se considérer comme habitant le trouble. ==Non pas "quelle est la cause du trouble", mais "quelle est la cause du sujet?"== (important!). Donna Williams a reçu plusieurs diagnostics au cours de sa vie, mais ce qui importe ici est la façon dont elle s'en saisit ou, au contraire, dont elle les refuse violemment. Le diagnostic ne doit pas être une étiquette qui fige l'individu, mais un élément que le sujet peut utiliser (ou non) dans son propre bricolage identitaire.
+- Donna Williams a reçu des diagnostiques. Important ici de s'intéresser a **ce qu'elle en fait, de ses diagnostiques**. Dans cette orientation (Lacanienne), on se focalise sur ce qui nous concerne tous, le pari de l'**invention** quelques soient les troubles dont seraient atteints les patients. **On ne s'intéresse pas à la cause du trouble, mais plutôt quelle place ça a dans l'existence du sujet de se considérer comme habitant le trouble**. ==Non pas "quelle est la cause du trouble", mais "quelle est la cause du sujet?"== (important!). Donna Williams a reçu plusieurs diagnostics au cours de sa vie, mais ce qui importe ici est la façon dont elle s'en saisit ou, au contraire, dont elle les refuse violemment. Le diagnostic ne doit pas être une étiquette qui fige l'individu, mais un élément que le sujet peut utiliser (ou non) dans son propre bricolage identitaire.
 - L'**invention** subjective comme outil de séparation: fonction de **séparation**, coupure, ou des divers équivalents de séparation. La séparation d'avec l'autre, qui va permettre que nos circuits pulsionnels, nos investissements du monde, notre style propre, se déploie dans des espaces marqués par une aliénation fondamentale dont on n'échappe pas. Séparation. Extraction. Ca se passe de manière singulière pour tout sujet - il y a mille et une façons pour cette séparation de s'opérer. Pour Donna Williams, le monde extérieur et la présence de l'autre sont perçus comme une invasion insupportable, une aliénation totale. Ses inventions (comme se perdre dans les motifs du papier peint ou produire une rythmique corporelle hypnotisante) servent à créer une coupure. En transformant la parole de l'autre en simple "bruit" ou en se focalisant sur des détails sensoriels, elle annule les signes de la présence de l'autre pour ne plus être traitée comme un objet à la merci de son entourage. C'est une extraction nécessaire pour que son "style propre" puisse se déployer dans un espace protégé.
 
-Invention subjective = dégager des logiques. L'invention est la mise en lumière d'une **logique interne** qui permet au sujet de traiter le réel. Le rôle du clinicien est de dégager cette logique pour comprendre comment le sujet "tient" plutôt que de vouloir supprimer le comportement.
+Invention subjective = dégager des logiques. L'invention est la mise en lumière d'une **logique interne** **qui permet au sujet de traiter le réel**. ==Le rôle du clinicien est de dégager cette logique pour comprendre comment le sujet "tient" plutôt que de vouloir supprimer le comportement==.
 - Consommation, passage à l'acte
 - Architecture des centres: Cela fait référence à la manière dont les institutions (hôpitaux, centres) sont pensées. Souvent, elles sont conçues pour la surveillance ou la norme. On peut répondre à un passage à l'acte par l'aménagement de l'espace ou de la dynamique plutôt que par la contention. Au lieu de punir l'individu, on modifie l'interaction avec l'objet (comme dans l'exemple du frigo cité plus tôt). L'architecture ou l'organisation d'un lieu devrait être un appui pour l'invention du sujet plutôt qu'un obstacle provoquant le passage à l'acte.
 
@@ -128,19 +132,19 @@ Invention subjective = dégager des logiques. L'invention est la mise en lumièr
 **Utiliser la surprise sans heurter**
 Invention -> Le personnage de Willy (et l'emballement): 
 - C'est elle, et ce n'est pas elle. Elle décrit que Willy devint son incarnation extérieure, son "préposé aux affaires étrangères". Willy agit à sa place, mais ce personnage fini par provoquer un stop de son entourage. Ce stop, on est amené à le formuler dans notre clinique. Mais on ne le fait pas de manière adressée à l'individu, "Donna, faut que t'arrêtes", c'est adressé à ce qui dans la dynamique s'emballe.
-	- Exemple: enfant qui court vers le frigo quand la porte s'ouvre. Solution: non pas de dire "non, tu ne peux pas", c'est de s'adresser au frigo "ça ne va, c'est pas l'heure du repas, tu ne peux pas t'ouvrir, c'est pas l'heure" -> effet de surprise, crée un décalage qui fait surgir au moins un étonnement. Classiquement, dans les institutions, des modalités permettant qu'on s'applique aux choses qu'on formule. Ou un principe général: "il faut qu'on sorte de la piece parce que c'est l'heure de l'activité" au lieu de "tu dois sortir!
+	- Exemple: enfant qui court vers le frigo quand la porte s'ouvre. Solution: non pas de dire "non, tu ne peux pas", c'est de s'adresser au frigo "ça ne va, c'est pas l'heure du repas, tu ne peux pas t'ouvrir, c'est pas l'heure" -> effet de surprise, crée un décalage qui fait surgir au moins un étonnement. Classiquement, dans les institutions, des modalités permettant qu'on s'applique aux choses qu'on formule. Ou un principe général: "il faut qu'on sorte de la pièce parce que c'est l'heure de l'activité" au lieu de "tu dois sortir!
 
 **Question de responsabilité**
 Parenthèse qu'elle fait elle-même. "Mais qui est responsable de tout ca?"
-- Une position éthique très claire qu'elle tient: Dans son témoignage, Donna Williams pose cette question pour ne pas se poser en victime passive de sa condition ou de sa biologie. Elle tient une position de **responsabilité subjective**. Elle ne dit pas "c'est ma maladie qui fait ça", mais elle cherche à s'approprier ses actes et ses inventions. Pour le psychanalyste, l'éthique consiste à considérer le patient comme un sujet responsable de sa propre solution (son invention), même si celle-ci paraît étrange. C'est l'inverse de la victimisation ou de la déresponsabilisation par le diagnostic médical.
+- Une position éthique très claire qu'elle tient: Dans son témoignage, Donna Williams pose cette question pour ne pas se poser en victime passive de sa condition ou de sa biologie. Elle tient une position de **responsabilité subjective**. Elle ne dit pas "c'est ma maladie qui fait ça", mais elle cherche à s'approprier ses actes et ses inventions. Pour le psychanalyste, l'éthique consiste à **considérer le patient comme un sujet responsable de sa propre solution (son invention), même si celle-ci paraît étrange**. C'est l'inverse de la victimisation ou de la déresponsabilisation par le diagnostic médical.
 
 **Allier symptôme et métier, le social**
-Elle découvre l'univers de l'ordre et du classement (allier symptôme et métier): L'entrée de Donna dans le monde du travail, notamment dans un magasin, illustre comment l'invention subjective peut se combiner au social. Elle utilise son besoin obsessionnel d'ordre, de classement et de séparation des catégories pour exceller dans son métier de rangement. Elle transforme ce qui pourrait être vu comme un symptôme handicapant en une compétence professionnelle. Elle va étudier la linguistique. Prendre le langage comme un objet. Le monter-démonter, saisir les logiques. Travail dans un magasin: satisfaisant, sauf les gens, rayons d'objets a ranger et classer, et le cote vibrant des objets. Le magasin devient un "monde qui accueille son invention", ses manières de s'engager dans le monde.
+Elle découvre l'univers de l'ordre et du classement (allier symptôme et métier): L'entrée de Donna dans le monde du travail, notamment dans un magasin, illustre comment l'invention subjective peut se combiner au social. Elle utilise son besoin obsessionnel d'ordre, de classement et de séparation des catégories pour exceller dans son métier de rangement. Elle transforme ce qui pourrait être vu comme un symptôme handicapant en une compétence professionnelle. Elle va étudier la linguistique. Prendre le langage comme un objet. Le monter-démonter, saisir les logiques. Travail dans un magasin: satisfaisant, sauf les gens, rayons d'objets à ranger et classer, et le côté vibrant des objets. Le magasin devient un "monde qui accueille son invention", ses manières de s'engager dans le monde.
 
 **La violence du diagnostic**
-La fin de cet extrait montre la rupture brutale provoquée par une psychiatre qui, en prescrivant un médicament, laisse entendre un diagnostic de schizophrénie. Pour Donna, ce n'est pas une aide, mais une **insulte** ou une **assignation**. Elle perçoit cela comme une tentative de viser son être même, de le réduire à une catégorie médicale ("la folle"). Cette nomination fige le sujet là où il essayait de s'inventer. 
+La fin de cet extrait montre la rupture brutale provoquée par une psychiatre qui, en prescrivant un médicament, laisse entendre un diagnostic de schizophrénie. Pour Donna, ce n'est pas une aide, mais une **insulte** ou une **assignation**. Elle perçoit cela comme une tentative de viser son être même, de le réduire à une catégorie médicale ("la folle"). **Cette nomination fige le sujet là où il essayait de s'inventer**. 
 
-Dans cette orientation: il n'y a **rien d'autre que des réponses**. Habituellement, on voit le symptôme (le délire, l'obsession, le retrait social) comme un **problème** qu'il faut éliminer. Dans cette clinique, on considère que le symptôme est déjà une **réponse** (ou une solution) que le sujet a trouvée pour ne pas s'effondrer face à ce qui lui est insupportable.
+Dans cette orientation: il n'y a **rien d'autre que des réponses**. Habituellement, on voit le symptôme (le délire, l'obsession, le retrait social) comme un **problème** qu'il faut éliminer. Dans cette clinique, ==on considère que le symptôme est déjà une **réponse** (ou une solution) que le sujet a trouvée pour ne pas s'effondrer face à ce qui lui est insupportable==.
 
 
 > [!DONE] Réponses aux pré-questions
@@ -153,14 +157,14 @@ Dans cette orientation: il n'y a **rien d'autre que des réponses**. Habituellem
 
 (Absent, notes en partie d'IA sur base de la retranscription)
 
-Cette leçon s'inscrit dans la continuité directe du cours précédent, avec le témoignage de **Donna Williams**.
+Cours dans la continuité directe du cours précédent, avec le témoignage de **Donna Williams**.
 
 Le lien s'opère autour de la conclusion du cours précédent, à savoir la violence de l'intervention psychiatrique qui pose un diagnostic de schizophrénie sur Donna Williams. À partir de ce moment de rupture où le savoir médical vient écraser l'invention de la patiente, la réflexion glisse vers le thème central de cette nouvelle séance : la logique de l'assignation et ses conséquences.
 
 Pré-questions:
 - la violence du diagnostic (assignation, nomination)
-- responsabilité (aussi cours precedent))
-- clinicien comme objet (aussi cours precedent)
+- responsabilité (aussi cours précédent))
+- clinicien comme objet (aussi cours précédent)
 - clinique hors les murs, et dimension juridique
 
 ## Les grands axes et focalisations du cours
@@ -206,15 +210,55 @@ Il existe une distinction cruciale entre la responsabilité individuelle (souven
 
 📅 **13 Mai 2026** - Cours 3
 
+Cas de Donald (L. Kanner)
+Cas de Martin
+
 Question sur témoignage de Donna Williams:
+Cours incompréhensible.
+voir notes d'Elsa <3
 
-voir notes d'Elsa <3 <O
+### Questions d'examen 2025:
 
-
-
-
-
-
+1. Comme en témoigne Donna Williams, la rencontre avec certains objets ouvre la voie à des pratiques sur ces objets (ordonner et classer, par exemple) qui non seulement opèrent diverses formes de traitement de l’Autre, mais qui de surcroît mobilisent le sujet et suscitent son intérêt.  
+		Réponse correcte : Vrai
+2. La dimension schizophrénique de l’existence humaine renvoie à la part de folie créatrice présente en chacun.e de nous et susceptible de nous libérer des carcans normatifs de la société.  
+	    Réponse correcte : Faux
+3. L’orientation lacanienne invite à s’intéresser à ce qui intéresse le sujet, c’est-à-dire à s’engager avec lui vers un abord nécessairement « indirect » de ce à quoi il est confronté.  
+	    Réponse correcte : Vrai
+4. Donna Williams nous montre que l’émergence d’inventions subjectives tout au long d’une trajectoire de vie est affaire de rencontres et de réponses du sujet.  
+	    Réponse correcte : Vrai
+5. À travers l’expression « l’égoïsme ordinaire du premier venu », Donna Williams dégage avec ironie la logique de ce qui la situe potentiellement comme objet de la jouissance de l’Autre dans les élans altruistes des gens qu’elle rencontre.  
+	    Réponse correcte : Vrai
+6. De par le caractère hautement déficitaire d’une symptomatologie présente dès les premières années de la vie, le cas de Donald décrit par L. Kanner illustre le parcours d’un enfant peu sensible aux effets de rencontre et à l’émergence d’inventions subjectives.  
+	    Réponse correcte : Faux
+7. Dans une perspective lacanienne, le délire n’est pas seulement une mauvaise perception ou une mauvaise interprétation de la réalité, il est aussi l’expression d’un désir inconscient qui n’a pas encore pu être symbolisé.  
+	    Réponse correcte : Faux
+8. L’approche psychanalytique permet d’aborder les passages à l’acte, les délires, les symptômes et les divers troubles du sujet comme des formations de l’inconscient, c’est-à-dire des compromis entre le principe de plaisir et le principe de réalité.  
+	    Réponse correcte : Faux
+9. La notion d’invention subjective désigne les mécanismes compensatoires propres aux déficits spécifiques des troubles psychotiques.  
+	    Réponse correcte : Faux
+10. Dans une perspective psychanalytique, les temps logiques d’un accompagnement optimal sont (1) la mise en place d’un accueil adéquat, (2) la création d’une adresse et (3) la recherche d’inventions subjectives adaptées à la problématique du/de la patient.e.  
+	    Réponse correcte : Faux
+11. Des capacités suffisantes d’introspection et de symbolisation, ainsi qu’une volonté de surmonter ses résistances inconscientes, sont des conditions nécessaires pour qu’un sujet puisse bénéficier d’un accompagnement orienté par la psychanalyse.  
+	    Réponse correcte : Faux
+12. Comme l’indique le témoignage de Donna Williams, certains sujets sont confrontés à des déficits majeurs liés à une absence de la dimension de l’Autre dans leur champ d’expérience.  
+	    Réponse correcte : Faux
+13. Le passage à l’acte est porteur d’un message inconscient qu’il s’agit de décrypter pour que le sujet puisse l’adresser par la parole et non plus par des actes.  
+	    Réponse correcte : Faux
+14. Les inventions subjectives contribuent au bien-être et ont pour principales fonctions d’opérer une séparation avec les difficultés du sujet et de permettre une gestion plus adaptée de la dimension relationnelle et affective.  
+	    Réponse correcte : Faux
+15. Ce que semble montrer la clinique, c’est que l’agitation ou la violence d’un sujet peut avoir le statut d’une réponse à la violence ou à l’arbitraire de l’Autre.  
+	    Réponse correcte : Vrai
+16. Un objectif clinique essentiel est celui de prévoir le plus précisément possible les réponses d’un sujet aux offres thérapeutiques qui lui seront faites.  
+	    Réponse correcte : Faux
+17. La dimension autistique de l’existence humaine se caractérise par l’indifférenciation Moi / non-Moi et par la bulle autistique dans laquelle se trouvent les nouveau-nés durant les six premiers mois de la vie.  
+	    Réponse correcte : Faux
+18. Comme semble l’indiquer le témoignage de Donna Williams, le branchement répétitif à certains objets peut avoir comme fonction d’annuler les signes de la présence de l’Autre.  
+	    Réponse correcte : Vrai
+19. La chanson "Le Métèque", reprise par Joey Starr, évoque l’efficacité de la sublimation et d’un travail de symbolisation qui permettent la réconciliation avec l’autre.  
+	    Réponse correcte : Faux
+20. La chanson "Toutes les machines ont un cœur" nous aide à comprendre les effets nocifs des GSM et la nécessité d’inventions pour s’en séparer.  
+	    Réponse correcte : Faux
 
 
 # 🏷️  Partie II:  Thérapies cognitivo-comportementales (3ème vague) - Ilios Kotsou
@@ -484,83 +528,99 @@ V. L'interêt du travail en famille
 
 ## I. Introduction
 
+###. 1. Du trouble à la relation: changement de regard
+
 Idée centrale:
 Enfant comme RESSOURCE pour entrer dans le système familial.
 Au niveau diagnostic et thérapeutique, pour comprendre les familles
 
 Mise en situation:
-enfant de 8 ans, conflit permanent sur les adultes.
-mere épuisée, père absent. souffre surtout après weekends.
-importance du contexte nous fait bouger les lignes du diagnostic: comportements situés dans un contexte.
+- Enfant de 8 ans, en conflit permanent sur les adultes.
+- La mère est épuisée, le père absent. L'enfant souffre surtout après weekends.
+- Importance du contexte nous fait bouger les lignes du diagnostic: comportements situés dans un contexte.
 
--> lecture qui integres les relations, contextes...
-
-
-### Travail: travailler sur nos représentations
-- On ne rencontre jamais la personne, mais la représentation que l'on s'en fait. Remettre en question nos certitudes, nos préjugés, nos aprioris... (Meriaux, 2021)
-- On ne rencontre pas la famille, mais des representations de familles, d'ou l'interet de se creer des representations positives.
-
-### Stigmatisation de la santé mentale.
-Extrait video.
+-> Besoin d'une lecture qui intègre les relations, contextes, les dynamiques
 
 
+### 2. Accueillir la souffrance psychique
 
-**Accueil**
+#### Travail: travailler sur nos représentations
+- On ne rencontre jamais la personne, mais la représentation que l'on s'en fait. Remettre en question nos certitudes, nos préjugés, nos aprioris... afin de s'ouvrir à l'expérience de l'autre, à la rencontre (Meriaux, 2021)
+- On ne rencontre pas la famille, mais des représentations de familles, d'où l'intérêt de se créer des représentations positives.
+
+#### Stigmatisation de la santé mentale
+
+- 1 belge sur 5 touché par un trouble psychique (Sciensano, 2025)
+- 1 enfant ou adolescent sur 7 souffre d'un trouble de la santé mentale en Europe (OMS, 2025)
+- Effets de la stigmatisation: repli sur soi, isolement, rejet, incompréhension, peur, baisse de l'estime de soi... Hone et peur du jugement.
+- Stigmatisation **COURANTE chez les professionnels de la santé** envers les patients atteints de troubles psychiatriques: fait ibstacle à la recherche d'aide, induit une prise en cahrge de moins bonne qualité
+- 
+Extrait video. 
+
+#### Accueil
+
 - Coeur du métier. Moment décisif. 
-- But: génerer poursuite pour le soin, favoriser sa mise en place
+- But: générer la poursuite pour le soin, favoriser sa mise en place
 - Pas de techniques spécifiques, mais aptitudes singulières (?).
-	- Peremière communication: importance du sensoriel pour le patient (gestes, attitudes percues, etc)
-	- Mise en suspension de ses preconceptions, ses representations, ses jugements hatifs...
+	- Première communication: importance du sensoriel pour le patient (gestes, attitudes perçues, etc)
+	- Mise en **suspension de ses préconceptions**, ses représentations, ses jugements hâtifs...
 	- Une ouverture interne
-	- Ouverture externe
+	- Une ouverture externe
 
-**Curiosité**
+#### Curiosité
+
+- Éthique de curiosité (cf Cecchin, 1987): se position comme curieux, comme naïf, non comme expert (JM Robine).
 - Mise à mal par recherche de relations linéaire, causalités linéaires
+- Non pas collecter des hypothèses, mais des donnes pour découvrir d'autres processus (Ausloos, 1995)
 
-### Histoire breve de la thérapie familiale
+### 3. La thérapie familiale d'hier à aujourd'hui
 
-- Avant années 50 Ackerman et Whittaker: commencent a rencontrer familles (principalement tradition psychanalytique)
-- Années 50, se développent theories des systèmes von Bertalanffy), cybernétiques (Wiener), information (Shannon), communication (Bateson),
-	- D'abord autour de schizophrénie!
-	- Précurseur, Pas de thérapie familiale en tant que telle dans cette approche.
+#### Histoire breve de la thérapie familiale
+
+- Avant les années 50: Ackerman et Whittaker: commencent è rencontrer des familles (principalement approche psychanalytique)
+- Années 50, se développent **théories générale des systèmes** (von Bertalanffy), **cybernétiques** (Wiener), **de l'information** (Shannon), **de la communication** (Bateson).
+	- D'abord autour de la schizophrénie!
+	- Précurseurs, Pas de thérapie familiale en tant que telle dans cette approche.
 	- Systèmes:
-		- principe d'homéostasie: symptômes comme manières de réguler les systèmes.
-- Constructivisme (annes 60): ce qui est perçu est appréhendé en fonction des constructions. mentales préexistantes
-- Ecole de Milan (Selvini et al 1982) (hypothétisation, circularité, neutralité)
+		- Principe d'homéostasie: symptômes compris comme manières de réguler les systèmes, de leur permettre de maintenir leur équilibre.
+	- pont ->  Seconde cybernétique: Hoffman (1985), Maturana & Varela (1987): l'observateur est impliqué dans le phénomène
+- Années 80: 
+	- Constructivisme (années 80): ce qui est perçu est appréhendé en fonction des constructions mentales préexistantes.
+	- **Ecole de Milan** (Selvini et al 1982) (hypothétisation, circularité, neutralité)
 - Approches post-modernes
-
 
 ## II. La famille comme système complexe
 
-### Qu'est-ce qu'une famille?
+### 1. Qu'est-ce qu'une famille?
 
 Un système complexe:
 - Principe d'interdépendance
-- Principe de totalité
+- Principe de totalité: le tout es plus que la somme des parties
 - Principe de rétroaction
-- **Principe d'homéostasie**: e.g. crise d'un enfant qui évite une dispute, car ils se concentrent sur l'enfant.
-- **Principe d'équifinalité**: e.g. deux symptomatologies de depression, peuvent avoir des origines différentes (dans un cas parents en processus de divorce, pour l'autre un père qui souffre d'alcohol). Et memes origines peuvent mener a des symptomatologies différentes.
+- **Principe d'homéostasie**: e.g. crise d'un enfant qui permet d'éviter une dispute, car les parents se concentrent sur l'enfant.
+- **Principe d'équifinalité**: deux symptomatologies (e.g. de dépression), peuvent avoir des origines différentes (dans un cas parents en processus de divorce, pour l'autre un père qui souffre d'alcoholisme). Et mêmes origines peuvent mener à des symptomatologies différentes.
 
-### Un système avec une organisation
+#### Un système avec une organisation
 
 Chaque famille fonctionne avec: 
 - des rôles
 - des règles implicites
 - des frontières
-Les dysfonctionnements sont liés à une transgression des frontières séparant les sous-sysèmes (Minuchin, 1979). I.e. systèmes perméables, frontières diffuses: e.g. maman qui partage ses problèmes de couples à l'enfant. La parentification de l'enfant est un exemple-type.
+Les dysfonctionnements sont liés à une transgression des frontières séparant les sous-sysèmes (Minuchin, 1979). 
+	- i.e. systèmes perméables, frontières diffuses: e.g. maman qui partage ses problèmes de couples à l'enfant. La parentification de l'enfant est un exemple-type.
 
-### Un système avec des fonctions
+#### Un système avec des fonctions
 
 Les 3 fonctions de la famille:
 - Comme contexte d'**apprentissage**
 - Comme matrice de **pensée**
-- Comme système intériorisé de **relations**
+- Comme système intériorisé de **relations** (i.e. style d'attachement)
 
 Enfants avec relations sécurisantes: relations avec les autres avec confiance. Si climat conflictuel: méfiance et évitement.
 
-### Un système en évolution: cycle de vie
+#### Un système en évolution: cycle de vie
 
-Utile pour comprendre pourquoi certains symptômes apparaissent à un moment plutôt qu'un autre. Passage d'étapes demande beaucoup d'adaptation du système. **Symptôme: difficulté de passer à une étape du cycle**.
+Les **cycles de vie** sont utiles pour comprendre pourquoi certains symptômes apparaissent à un moment plutôt qu'à un autre. Le passage entre étapes demande beaucoup d'adaptation du système. **Symptôme: difficulté de passer à une étape du cycle**.
 
 Stades classiques:
 - Formation du couple
@@ -569,59 +629,67 @@ Stades classiques:
 - Adolescence
 - Nid vide
 
-Minuchin a bien décrit les crises autour des departs des enfants du nid familial.
+Minuchin a bien décrit les crises autour des départs des enfants du nid familial.
 
 #### Cycles de vie: Place dans la fratrie
 
-cf. Livre de Haihe (?)
-- Ainé? Second ? Benjamin? (Débat autour des stéréotypes sur les places dans la fratrie).
-- Influence sur nos places à l'age adulte: couple, famille, professionnel
-- Rivalité se base sur la perception que l'enfant a de l'attitude des parents par rapport a lui et par comparison a son frère ou sa soeur
-- Maximum de rivalité: écart de 18 a 36 mois (Gayet) et + si de meme sexe (moins de capacité à se différencier)
+cf. Livre de *Stéphanie Haxhe - Frères et soeurs, des liens à soigner* 2024
+- Role de la place: Ainé? Second ? Benjamin? (Débat autour des stéréotypes sur les places dans la fratrie).
+- Influence sur nos places à l'âge adulte: couple, famille, professionnel.
+- Rivalité se base sur la perception que l'enfant a de l'attitude des parents par rapport à lui et par comparaison à son frère ou sa soeur.
+- Maximum de rivalité: écart de 18 a 36 mois (Gayet, 1993) et + si de même sexe (moins de capacité à se différencier).
 
 #### Cycles de vie: Adolescence
 
-Comprendre que c'est un besoin développemental pour l'adolescent (besoins de prise d'autonomie vs. sécurité dans le système familial)
+Comprendre que c'est un besoin développemental pour l'adolescent, et un moment qui peut generer une crise:
+- besoins de prise d'autonomie vs. sécurité dans le système familial
+- dissemblance/ressemblance, différenciation/appartenance
+- recherche identitaire, sexualité
+- deuil des parents tout-puissants
+- tester les limites
+**L'ado s'autonomise en s'appuyant sur la différenciation des parents renforcée par leur solidarité** (Boulet et al., 2006)
 
+cf. Livre - *[La famille adolescente: Conversations thérapeutiques.](https://www.editions-eres.com/ouvrage/1843/la-famille-adolescente)*
 
 > [!NOTE] Résumé cycles de vie:
-> - symptôme comme indicateur de transition difficile
-> - les comportements "pathologiques" émergent souvent d'un décalage entre les besoins développementaux de l'enfant.
-> - ...
+> - Le symptôme comme indicateur de transition difficile
+> - Les comportements "pathologiques" émergent souvent d'un décalage entre les besoins développementaux de l'enfant et les capacités d'adaptation de la famille.
+> - Certains moments du cycle vital sont intrinsèquement instables -> là où les symptômes émergent le plus facilement.
 
-### 2. Qu'est-ce qu'une famille saine?
+### 2. Qu'est-ce qu'une famille "saine"?
 
 1. **Système ouvert**
 	1. Frontières souples
-	2. Capacités d'adaptations: la famille va se changer selon les étapes du cycle de vie, va s'adapter.
+	2. Capacités d'adaptation: la famille va se changer selon les étapes du cycle de vie, va s'adapter.
 	3. Circulation de l'information: surtout, on peut exprimer son désaccord. Dans certaines familles, ce n'est pas possible.
-	4. Echanges avec l'extérieur: des relations avec les écoles, groupes de sports, amis, travail. E.g. Comme une maison avec des portes et des fenêtres, si tout est fermé, étouffement. Si tout est ouvert, confusion, insécurité
-2. **Climat émotionnel**
+	4. Echanges avec l'extérieur: des relations avec les écoles, groupes de sports, amis, travail. Métaphore: Comme une maison avec des portes et des fenêtres: si tout est fermé, c'est l'étouffement; Si tout est ouvert, c'est la confusion, insécurité.
+2. **Climat émotionnel**: empathie, implication, engagement
 3. **Fonctionnement interne**
 	1. Respect des niveaux générationnels
 	2. Différenciation des rôles
-	3. Clarté des frontières entre sous-systèmes: Exmeple fils agressseur de sa mère. Métaphore ardoise pivotante: Exemple, Tant qu'enfant vécu un désequilibre (beaucoup donné, pas assez reçu) -> au lieu de demander une dette aux parents, on la demande ailleurs, aux enfants (on lui demande qu'il répare la souffrance vécue comme enfant). Ça crée un déséquilibre, confusion des places.
+	3. Clarté des frontières entre sous-systèmes: Exemple d'un fils qui agresse sa mère. Métaphore de l'ardoise pivotante (pizarra que pivota): Personne qui en tant qu'enfant a vécu un déséquilibre (e.g. beaucoup donné, pas assez reçu) -> a la prochaine génération, au lieu de demander une dette à ses propres parents, va la demander ailleurs, aux enfants (on leur demande qu'ils réparent la souffrance vécue comme enfant). Ça crée un déséquilibre, une confusion des places.
 4. **Adaptation**
 	1. Mode de résolution de conflits et de gestion de l'angoisse liés à la croissance psychique et affective
 	2. Remplit les 3 fonctions essentielles
 	3. Le mythe familial peut changer (mythe: ensemble de croyances sur la famille)
 
-(Parenthèse: Approche systémique privilégiée: travailler avec les parents, leur disant "on a besoin de vous, c'est vous qui le connaissez le mieux", = parents comme partenaires (e.g. Chastre, une institution hôpital de jour/nuit qui travaille avec cette méthode)
-vs les SRJ: pas de travail avec les familles, on soigne l'enfant sans la famille. donc limites thérapeutiques, des que la personne sort, se remet dans le contexte pathogène (lié aussi a limites budgétaires, de moyens...)).
+(Parenthèse: Approche systémique privilégiée: travailler avec les parents, leur disant "on a besoin de vous, c'est vous qui le connaissez le mieux", = parents comme partenaires (e.g. Chastre, une institution hôpital de jour/nuit qui travaille avec cette méthode), vs les SRJ: où pas de travail avec les familles, on y soigne l'enfant sans la famille... Donc travail thérapeutique limité, dès que la personne sort, elle se remet dans le contexte pathogène (ces problématiques institutionnelles sont aussi liées à des limites budgétaires, de moyens...).
 
 ### 3. Familles en difficultés
 
 #### Familles désengagées et enchevêtrées (Minuchin, 1979)
-Ces deux termes se rapportent è un style transactionnels (pas à un type pathogène!). Ce n'est pas une différence qualitative entre fonctionnel et dysfonctionnel. Mais risques de pathologie si fonctionnement dans les extremes.
 
-- **Familles désengagées:** frontières rigides, distance, on communique peu, solitaire, "on doit se débrouiller seul dans la vie"
-- **Enchevêtrées**: frontières diffuses, "tout est dans tout", proximité/fusion, débordement émotionnel (oscillant avec froideur affective), la famille gratifie, donne conseil... donc fléchissement de l'autonomie. Activité narrative en panne (non dits, blancs - p-e liés a vécus traumatiques). E.g. grand mere donne son avis sur le petit enfant, se mele du couple... chaque membre peut ressentir pour l'autre (je sais mieux pour toi, je sais ce qui se passe en toi)
+Ces deux termes se rapportent à **des styles transactionnels** (pas à un type pathogène!). Ce n'est pas une différence qualitative entre fonctionnel et dysfonctionnel. Mais risques de pathologie si le fonctionnement tend vers les extrêmes.
+
+- **Familles désengagées:** frontières rigides, distance, on communique peu, solitaire, "on doit se débrouiller seul dans la vie".
+- **Enchevêtrées**: frontières diffuses, "tout est dans tout", proximité/fusion, débordement émotionnel (oscillant avec froideur affective), la famille gratifie, donne conseil... donc fléchissement de l'autonomie. Activité narrative en panne (non dits, blancs - peut-être liés a vécus traumatiques). E.g. grand-mère donne son avis sur le petit enfant, se mêle du couple... chaque membre peut ressentir pour l'autre (je sais mieux pour toi, je sais ce qui se passe en toi)
 
 #### Familles à transactions rigides et chaotiques (Ausloos, 1995)
-- **Familles à transactions rigides**: le temps est arrêté. pas d'infos nouvelles, on vit avec le passé, les photos, les meubles de la grand-mère maternelle...
-	- Conséquences thérapeutiques: susciter crise, s'allier au non-changement, définir relation, donner un projet
-- **Familles à transactions chaotiques**: perception du temps évènementielle (pas de mise en mémoire, tout change tout le temps)
-	- Conséquences thérapeutiques: freiner le temps en introduisant la durée, s'allier à leur tendance à bouleverser ce qui est acquis ("votre compétence, c'est d'introduire du changement" et de proposer de bons changements), préciser le contrat thérapeutique, être ferme
+
+- **Familles à transactions rigides**: le temps est arrêté. Pas d'infos nouvelles, on vit avec le passé, les photos, les meubles de la grand-mère maternelle... Au niveau de la thérapie, le thérapeute peut sentir que les séances sont trop longues.
+	- Conséquences thérapeutiques: susciter une crise, s'allier au non-changement, définir relation, donner un projet.
+- **Familles à transactions chaotiques**: perception du temps évènementielle (pas de mise en mémoire, tout change tout le temps). Au niveau de la thérapie, le thérapeute peut se sentir débordé, se laisser embarquer dans des séances chaotiques.
+	- Conséquences thérapeutiques: freiner le temps en introduisant la durée, s'allier à leur tendance à bouleverser ce qui est acquis ("votre compétence, c'est d'introduire du changement" et de proposer de bons changements), préciser le contrat thérapeutique, être ferme.
 
 Cf livre sur le travail à domicile: Ivy Daure - [Quand le domicile se fait espace en thérapie](https://www.librairieclub.be/p/quand-le-domicile-se-fait-espace-therapeutique-9782710147114)
 
@@ -630,58 +698,51 @@ Extrait du film Family Life (1971).
 #### Enchevêtrement et fonctionnement psychotique (Minuchin)
 
 - Confusion
-- Bizarreries (cree sentiment d'isolement pour l'autre, aussi: e.g. enfant qui en se sent pas connecté a son parent au comportement dissocié, étrange, etc.)
+- Bizarreries (crée sentiment d'isolement pour l'autre, aussi: e.g. enfant qui en se sent pas connecté à son parent au comportement dissocié, étrange, etc.)
 - Distorsion de la communication:
 	- négation des perceptions ("tu exagères", etc.)
-	- instrumentalisation de l'autre ("va dire au SPJ que ton père t'as touché", "si tu ne fais pas ca je serai malheureux")
-	- pathologie de la triade
-
-
-
-
-## III. Diagnostic et compétences
-
-
+	- instrumentalisation de l'autre ("va dire au SPJ que ton père t'as touché", "si tu ne fais pas ça, je serai malheureux")
+	- pathologie de la triade: Il y a aussi une pathologie de la triade implicite et rigide. L’enfant est pris à parti dans la relation à trois et il a du mal à trouver sa place. On retrouve ça dans des situations de conflits de couple où l’enfant doit prendre parti pour que le conflit s’arrête.
 
 
 📅 **6 Mai 2026** - Cours 2 - Mathilde Meriaux
 
-
+## III. Diagnostic et compétences
 
 ### 1. Aller au-délà de l'étiquette
 
-Le patient désigné: on est essentielment face à des patients dits designé/ Cest celui sur lequel repose le trouble de la famille, a qui on fait porter la symptomatologie. On peut dire que c'est la solution mieux adaptée pour la famille de garder son équilibre. Souvent parents laissent leur enfant avec l'idee:  "soignez le, changez le, pas nous nous",  implicitement: "nous on va pas bouger".
-Symptôme: voyant rouge, montre dysfonctionnement, appel a l'aide... aidez nous mais sans le dire explicitement.
+Le patient désigné: on est essentiellement face à des **patients dits "designés".** C'est celui sur lequel repose le trouble de la famille, à qui on fait porter la symptomatologie. On peut dire que c'est la solution mieux adaptée pour la famille pour garder son équilibre. Souvent, parents déposent leur enfant avec l'idée: "soignez-le, changez-le, pas nous",  implicitement: "nous, on ne va pas bouger".
 
-On dira qu'enfant fait des bêtises, n'écoute pas, a un TDAH... c'est plus facile. Mais souvent, il n'y a pas qu'un seul problème dans un système familial.
+Symptôme: c'est le voyant rouge, montre dysfonctionnement, un appel à l'aide... un "aidez-nous", mais sans le dire explicitement.
 
-Exemple de fit hospitalisée qui dit: de toute façon dans ma famille, tout le monde a un problème.
+On dira qu'enfant fait des bêtises, n'écoute pas, à un TDAH... c'est plus facile. Mais souvent, il n'y a pas qu'un seul problème dans un système familial.
 
-Extrait video: Little Miss Sunshine (scène repas)
-Ce serait surement Dwayne le patient désigné, meme si on voit que chacun des membres a sa particularité.
+Exemple de fille hospitalisée qui dit: de toute faço,n dans ma famille, tout le monde a un problème.
+
+Extrait video: Little Miss Sunshine (scène du repas): Ce serait surement Dwayne le patient désigné, meme si on voit que chacun des membres à sa particularité.
 
 > [!important]
-> Ce n'est pas forcement celui qui va mal, ou celui qui souffre le plus. C'est celui qui le montre, celui qui porte le voyant rouge.
+> C**e n'est pas forcément celui qui va mal, ou celui qui souffre le plus**. C'est celui qui le montre, celui qui porte le voyant rouge.
 
-Exemple enfant envoyé pour agitation motrice. Sont presents mere, père, soeur au RDV. Ils remarquent vite que l'enfant est patient désigné, mais on se rend compte que mere déprimée.
+Exemple: enfant envoyé pour agitation motrice. Sont présents au RDV mère, père, soeur. Ils remarquent vite que l'enfant est patient désigné, mais on se rend compte que la mère est déprimée.
 
-Le symptôme: probleme et solution:
+Le symptôme: problème et solution:
 - Canalise le conflit (symptôme comme stabilisateur)
-- Donne une cohésion
-- Évite une crise
+- Donne une cohésion, rassemble: La famille va s’organiser autour de ce symptôme via les rendez-vous médicaux, les inquiétudes, les discussions en famille autour du symptôme (tout le monde en parle). D’où le fait que le symptôme est à la fois le problème et la solution pour retrouver de l’équilibre au sein de la famille.
+- Évite une crise: Le symptôme vient détourner l’attention, il empêche l’effondrement du système familial s’il y a des traumatismes, des secrets, …
 - Exprime ce qui ne peut pas être dit, e.g. ce que la famille ne nomme pas
-Le porteur de symptôme devient le porte parle du système familial.
+**Le porteur de symptôme devient le porte-parle du système familial**.
 
 Illustration de cas:
 - Lucas, 6 ans, déscolarisation depuis 2ème jour de la rentrée (a fait une crise en classe)
-- Parents, pas de couple, relation seulement sexuelle: se sont mis ensemble car elle est tombée enceinte. Elle a failli mourir a l'accouchement. Est partie de la maison quand enfant avait 2 mois, est ensuite revenue.
+- Parents: pas de couple, relation seulement sexuelle: se sont mis ensemble car elle est tombée enceinte. Elle a failli mourir à l'accouchement. Est partie de la maison quand l'enfant avait 2 mois, est ensuite revenue.
 - Dynamiques autour du symptôme: 
-- on découvre que le couple ne va pas bien, ne l'a jamais ete
+	- on découvre que le couple ne va pas bien, ne l'a jamais été
 - Trois dynamiques:
 	- Stratégie inconsciente de diversion pour le couple
 	- Cohésion et unité
 	- Maintenir une distance relationnelle
-- Madame a un problème avec la distance, ne supporte pas les hommes (hommes=compliqués au niveau de la proximité)
+- Madame a un problème avec la distance, ne supporte pas les hommes (hommes = compliqué au niveau de la proximité)
 
 **Processus de sélection/amplification** (Ausloos, 1995)
 
@@ -696,16 +757,20 @@ Sélection d'un comportement repéré comme "significatif"
 
 Cet auteur se base sur l'idée générale qu'on diagnostique trop vite, alors qu'on n'a a faire qu'à des traits ou des troubles.
 
-Trait: ne (nous) dérange pas
-Trouble: Excès de quelque chose qui est normal, Non permanent (on peut s'en défaire)
-Maladie Inscrit dans la génétique, Permanent
+ - Trait: ne (nous) dérange pas
+ - Trouble: Excès de quelque chose qui est normal, Non-permanent (on peut s'en défaire). Un trouble est le même trait mais qui est amplifié, rigidifié et qui est hors contexte. Le trouble n’est pas d’une autre nature que le trait, ce n’est pas un déséquilibre. C’est quelque chose de trop fréquent, de trop déséquilibré, de trop rigide, de trop généralisé. Un trait devient un trouble quand il perd sa flexibilité. Dans le trouble et la maladie, il y a une souffrance significative pour celui qui le porte et pour l’entourage. Il y a un impact important sur les membres de la famille. Par exemple si je suis méfiante, c’est juste un trait et j’ai du mal à faire confiance. Par contre, si ça devient un trouble, je vais me méfier de tout le monde et ça va commencer à créer de la souffrance car ça va venir créer de l’isolement. Ça crée aussi de la souffrance chez les membres de la famille car ils pourraient ne pas comprendre pourquoi je me méfie d’eux.
+ - Maladie: Inscrit dans la génétique, Permanent
 
 Ne pas qualifier de malade ce qui est "trouble" (non permanent, on peut s'en défaire)
 
-Le diagnostic
+Le diagnostic:
 - Photo de la personne lorsqu'elle est au plus mal
 - Sert à décrire un ensemble de symptômes
 - Capacités d'adaptations -- demandes de l'environnement
+
+Il est essentiel de ne pas enlever les diagnostics, c’est essentiel d’accepter les personnes avec leurs diagnostics, mais il est important de remettre ces diagnostics à leurs justes place, il ne doit pas prendre toute la place. On peut poser le diagnostic=que sur base du DSM ou alors, sur base de choses plus structurelles.
+
+Les diagnostics nous apprennent peu de choses sur la personne mais ils nous apprennent des choses sur ce que la personne fait quand elle est au plus mal. **Aux urgences, ils ne font jamais de diagnostic car les patients arrivent dans un contexte de crise (moment où ils vont le plus mal)**, et donc le diagnostic ne sera probablement pas correct car la crise accentue les symptômes. (En Colombie, à mon stage, ils faisaient des diagnostics aux entrées en urgences... et c'est vrai qu'en suivant les patients j'avais remarqué que les hypothèses de diagnostic que je faisais tombaient parfois avec l'amélioration du patient)
 
 Yalom: "plus facile de faire un diagnostique au bout d'une rencontre plutôt que 10"
 
@@ -713,7 +778,6 @@ Neuburger (2022) critique la tendance contemporaine à surdiagnostiquer les enfa
 - Le besoin des enseignants d'externaliser les difficultés scolaires
 - Le soulagement des parents à trouver une explication qui les déculpabilise
 - Le besoin des professionnels de santé à réduire la complexité par le diagnostic
-
 
 ### 2. La fonction du symptôme
 
@@ -732,32 +796,32 @@ Le **symptôme a un ==sens== relationnel**
 
 **Le symptôme comme ==organisateur== familial**
 - Il distribue les roles
-- Il régule les distances (Ex: violence cree retrait, distance, differentiation qui n'est pas possible autrement que via symptôme)
+- Il régule les distances (Ex: violence crée retrait, distance, différentiation qui n'est pas possible autrement que via symptôme)
 - Il maintient l'équilibre
-- Il "parle"à la place du système
+- Il "parle" à la place du système
 
 **Le symptôme pour protéger l'==équilibre== de la famille**
-- Les therapies de couple camouflées (Andolfi, 1999: conflit de couple peut etre caché par les symptômes de l'enfant (mais ne pas survinvestir ces hypotheses))
-- Protéger l'équilibre grace au déplacement de la tension sur l'enfant
+- Les therapies de couple camouflées (Andolfi, 1999: conflit de couple peut etre caché par les symptômes de l'enfant... mais ne pas surinvestir ces hypothèses))
+- Protéger l'équilibre grâce au déplacement de la tension sur l'enfant
 
 **Attaquer** le symptôme
 - Symptôme: problème, mais aussi une solution
 - Si on s'y attaque: risque qu'il se déplace/se renforce
 -> Débusquer en quoi ces symptômes sont des solutions
 
-Ex d'intervention: Prescription paradoxale: 
-- si on éclaire sur fonction du symptôme, symptôme peut perdre de de son evidence.
+L’idée des systémiciens va être qu’au lieu de supprimer le symptôme, le thérapeute va le cadrer, le dépasser voire parfois, le prescrire. Ex d'intervention: **Prescription paradoxal**e: 
+- si on éclaire sur fonction du symptôme, symptôme peut perdre de de son évidence.
 
-EMDR: symptôme comme plante, feuilles les symptômes, rattachés a évènements de vie défavorable (racines), pas bien digérés (pas forcément trauma: échecs a l'école, regard méchant d'une prof, cumulés). Idée de traiter les racines, plutôt que les feuilles. Avec mouvements bilateraux des yeux pour "désensibiliser".
-- Risque de supprimer le symptôme: déplacement du symptôme. Déplacement sur un frère/soeur (qui montre l'importance du symptôme pour la survie du systeme familial)
+EMDR: utilise l'image de difficultés comme étant une plante, les feuilles sont les symptômes, rattachés à évènements de vie défavorable (racines), pas bien digérés (pas forcément trauma: échecs à l'école, regard méchant d'une prof, etc., cumulés). Idée de traiter les racines, plutôt que les feuilles. Avec mouvements bilateraux des yeux pour "désensibiliser".
+- Risque de supprimer le symptôme: déplacement du symptôme. Déplacement sur un frère/soeur (ce qui montre l'importance du symptôme pour la survie du système familial)
 
 #### Faire des hypothèses sur la fonction du symptôme
 ##### Mise en situation - Léa, 12 ans
 
-- Ne va plus à l'école, suite à cas ou apparemment garçons lui ont demandé de se déshabiller à l'école
-- Léa dort avec la maman, depuis toujours (peur de mort quand nourrison)
-- Elle réclame de dormir avec la maman
-- La mere a subi un harcèlement, la fille est au courant, inquiète pour la fille, qu'elle subisse une agression surinvesti Léa et ses caprices
+- Ne va plus à l'école, suite à cas où apparemment garçons lui ont demandé de se déshabiller à l'école.
+- Léa dort avec la maman, depuis toujours (peur de mort dès nourrisson)
+- Léa réclame de dormir avec la maman
+- La mère a subi un harcèlement, la fille est au courant, inquiète pour la fille, qu'elle subisse une agression, elle surinvesti Léa et ses caprices
 
 **Quels rôles chacun occupe-t-il autour du symptôme?**
 - Père prend des distances.
@@ -766,40 +830,42 @@ EMDR: symptôme comme plante, feuilles les symptômes, rattachés a évènements
 **Qu'est-ce le symptôme permet dans cette famille?**
 - Eviter séparation mère-fille
 **Que se passerait-il entre les parents si Léa dormait seule?**
-- Rapprochement des parents, risques potentiels?
-Si on enlève le symptôme, que risque-t-il de se passer dans la famille?
+- Rapprochement des parents, risques potentiels pour le couple?
+**Si on enlève le symptôme, que risque-t-il de se passer dans la famille?**
 - Impact sur le couple, ...
 
-##### Mise en situation 2 - Couple, Sarah et Julien
+##### Mise en situation 2 - Couple: Sarah et Julien
 
-- Julien fume du cannabis: moins de communication, se renferme sur lui
-- Sarah: inquietude face a la consommation, tentatives de contrôle, moments de distance (quand il consomme plus) et de rapprochement, quand il est plus abstinent
+- Julien fume du cannabis: moins de communication, se renferme sur lui-même
+- Sarah: inquiétude face a la consommation, tentatives de contrôle, moments de distance (quand il consomme plus) et de rapprochement, quand il est plus abstinent
 
 **Quels rôles chacun occupe-t-il autour du symptôme?**
-- Julien: porteur du symptôme. Regulation émotionnelle la consommation.
+- Julien: porteur du symptôme. Régulation émotionnelle avec la consommation.
 - Sarah: contrôle, vigilance, inquiétude, tente de réguler le comportement de Julien
-**Qu'est-ce le symptôme permet dans cette famille?**
+**Qu'est-ce le symptôme permet dans ce couple?**
 - Régule la distance (ajuster la proximité, éviter une relation trop fusionnelle ou trop distante)
 - Evitement des conflits, tensions? (déplacer le conflit sur un objet concret)
-- Organiser les roles (stabiliser les places et l'identité de chacun)
-- Regulation émotionnelle (contenir stress, anxiété, colère)
+- Organiser les rôles (stabiliser les places et l'identité de chacun)
+- Régulation émotionnelle (contenir stress, anxiété, colère)
 - Maintien du lien (maintenir une interaction, éviter la rupture)
 **Que se passerait-il si le symptôme disparaissait?**
 - Proximité trop forte, angoisse, conflits directs
 - Conflits latents qui émergent, tensions plus directes
-- Perte de repères, désorganisation des roles
+- Perte de repères, désorganisation des rôles
 - Débordements émotionnels, irritabilité, tensions
 - Désengagement, distance, sentiment de vide
 #### Fonctions du symptôme et maintien des croyances
 
-Double contrainte. Mony Elkaïm. *Si tu m'aimes, ne m'aime pas* (1988)
-Lorsque deux individus entrent en interaction par la communication, chacun va confronter sa vision du monde avec celle de l'autre
+**Double contrainte**. cf Livre: Mony Elkaïm - *Si tu m'aimes, ne m'aime pas* (1988)
+Lorsque deux individus entrent en interaction par la communication, chacun va confronter sa vision du monde avec celle de l'autre.
 - Programme officiel: langue explicite, consciente ("Je veux être aimé)
-- Construction du monde: expériences de vie. Parfois vont a l'inverse du programme officiel ("Je ne suis pas digne d'être aimé)
+- Construction du monde: expériences de vie. Parfois vont à l'inverse du programme officiel ("Je ne suis pas digne d'être aimé)
+
+Exemple: 
 
 Personne A : Mégane
-PO: "Je veux pouvoir compter sur l'autre"
-CM: "Je ne peux compter que sur moi-même"
+PO - Programme officiel: "Je veux pouvoir compter sur l'autre"
+CM - Construction du monde: "Je ne peux compter que sur moi-même"
 -> Cette croyance la protège, lui permet de ne pas s'exposer.
 
 Personne B : Simon
@@ -807,81 +873,163 @@ PO: "je veux être suffisamment bien"
 CM: "je ne suis pas assez bien"
 
 **Que peuvent faire les partenaires pour sortir du cycle infernal dont ils sont prisonniers?**
-(cf "[Le Jeu des Croyances Croisées ]( https://lepharesystemique.com/produit/jeu-des-croyances-croisees/) est un outil thérapeutique sous forme de jeu de cartes permettant de travailler la double contrainte réciproque  au sein du couple.").
+(cf "[Le Jeu des Croyances Croisées ]( https://lepharesystemique.com/produit/jeu-des-croyances-croisees/) est un outil thérapeutique sous forme de jeu de cartes permettant de travailler la double contrainte réciproque au sein du couple.").
 - Accepter que leur passé ne leur dicte pas leur conduite
-- S'interroger sur l'utilité de son comportement pour l'autre
-- Hypothèse de départ: ma réaction est sculptée par l'autre pour lui permettre de renforcer sa CM
--> Flexibiliser la carte du monde des partenaires.
+- S'interroger sur l'utilité de leur comportement pour l'autre
+- Hypothèse de départ: ma réaction est sculptée par l'autre pour lui permettre de renforcer sa CM (?).
+-> **Flexibiliser la "carte du monde"** des partenaires.
 
 ### 3. Miser sur les compétence
 
-Ausloos parle de LA compétence de al famille (Guy Ausloos, La compétence des familles)
-Permet de déculpabiliser.
+L‘idée va être de miser sur les compétences et Ausloos parle de **LA** compétence de la famille (Guy Ausloos - La compétence des familles, 1995)
+Permet de déculpabiliser et de responsabiliser les familles.
 
-- Brazelton (1982) parlait du bébé compéten
-- **Postulat 1** de la compétence: "Un système ne peut se poser que des problèmes qu'il est capable de résoudre"
---> Nous ne sommes pas responsables des changements, mais plutôt de créer un contexte de confiance, de sécurité et d'espoir pour que puissent survenir l'imprévisible
+> [!QUOTE] Guy Ausloos (1994)
+> « Les formations reçues par les thérapeutes leur ont appris le plus souvent à définir les problèmes des clients et de leurs familles, à repérer les dysfonctionnements, à reconnaître les pathologies. On leur a fort peu parlé des familles saines et de leur développement, et on leur a encore moins appris à faire confiance à la compétence des familles pour résoudre les problèmes auxquels elles sont confrontées, à considérer que leur mode de fonctionnement est le plus souvent la meilleure solution qu’elles ont pu trouver dans leur contexte, avec les moyens dont elles disposaient ».
 
-- **Postulat 2** de l'information pertinente: "l'information pertinent est celle qui  ient du système et y retourne pour activer le processus"
-- Mettre du hasard et de l'imprévisibilité dans le système
-- "l'autosolution": la solution qui convient au système.
 
-**Questions circulaires:** poser la question a un membre pour qu'elle soit répondue par un autre membre du système : pourquoi penses tu que ta mere/frère/mari etc pense de xyz ? PLutot que de demander soi meme a la personne.
+- Brazelton (1982) parlait du bébé compétent
+- **Postulat 1** de la compétence: "==Un système ne peut se poser que des problèmes qu'il est capable de résoudre=="
+--> Nous ne sommes pas responsables des changements, mais plutôt de créer un contexte de confiance, de sécurité et d'espoir pour que puissent survenir l'imprévisible.
 
-Activer des processus
+- **Postulat 2** de l'information pertinente: "==L'information pertinente est celle qui vient du système et y retourne pour activer le processus=="
+	- On vient chercher l'information qui existe dans la famille mais qui n'est pas révélée.
+	- **Ce que les familles ne savaient pas qu'elles savaient.**
+	- Mettre du hasard et de l'imprévisibilité dans le système.
+	- Favoriser un contexte d'"'autosolution": la solution qui convient au système et qui est adaptée à la famille.
+
+**Questions circulaires:** poser la question à un membre pour qu'elle soit répondue par un autre membre du système : pourquoi penses-tu que ta mère/frère/mari etc. pense de xyz ? Plutôt que de demander soi-même à la personne. Par exemple, au lieu de demander au père comment il vit la situation quand son enfant fait une crise, on va demander à l’enfant comment il pense que son père vit la situation quand il fait une crise.
+
+> [!QUOTE] Ausloos (1994)
+> « Nous sommes les activateurs de cette construction par notre questionnement, qui les amène à dire : « Je n’avais jamais vu ma situation de cette façon ». Notre travail n’est plus de comprendre pour trouver l’hypothèse, mais de poser les bonnes questions. Poser des bonnes questions, c’est aller chercher ce qu’ils savent, mais qu’ils ne savent pas qu’ils savent, et qui va les informer sur ce qu’ils font, sur ce qu’ils vivent, sur la façon dont ils fonctionnent. Ce questionnement circulaire est vraiment une des activités fondamentales du thérapeute » 
 
 ## IV. L'enfant comme ressource thérapeutique
 
-Andolfi: inclure l'enfant dans la thérapie, comme ressource diagnostique et curative, pour lui et la famille. Comme si l'enfant avait la clé pour faire bouger les choses. 
-N'est pas si simple dans la pratique, on est vite happés par les discours des parents, ils partagent notre langage, participent aux hypothèses, etc.
+Ce chapitre a été grandement inspiré par un livre d’Andolfi. Pour Andolfi, il fallait inclure l'enfant dans la thérapie, comme ressource diagnostique et curative, pour lui et la famille. Comme si l'enfant avait la clé pour faire bouger les choses. 
+Ce n'est pas si simple dans la pratique, car on est vite happés par les discours des parents, ils partagent notre langage, participent aux hypothèses, etc.
 ### Les troubles de l'enfant
 
-- Probleme familial
-- "La famille comme **ressource diagnostique** et **curative** précieuse"
-- Considérer les troubles de l'enfant comme des **signaux relationnels** et comme des compétences pour entrer dans le monde émotionnel de l'enfant
-- Statut de problème à celui de **ressource active**
+Problème de l'enfant -------> signal des relations dans la famille
 
-### La trahison de l'enfant par le mouvement de la thérapie familiale (Andolfi, et al, 2022)
+- Problème familial: l'idée est que le trouble de l'enfant est un problème familial. Un enfant ne peut être observé comme une île détachée de ces liens affectifs.
+- "La famille comme **ressource diagnostique** et **curative** précieuse"
+- Considérer les troubles de l'enfant comme des **signaux relationnels** et comme des compétences pour entrer dans le monde émotionnel de l'enfant.
+- Statut de problème à celui de **ressource active**.
+
+#### La trahison de l'enfant par le mouvement de la thérapie familiale (Andolfi, et al, 2022)
 
 Chez les pères fondateurs de la TF: où est l'enfant?
 - Les pionniers sont majoritairement des psychiatres
-- L'enfant, en tant qu'élément significatif prééminent dans la thérapie, totalement absent
-- Salvador Minuchin: l'enfant est au centre de son modèle thérapeutique et de son travail clinique
+- Recherches effectuées sur des adultes. L'enfant, en tant qu'élément significatif prééminent dans la thérapie, totalement absent.
+- Salvador Minuchin: l'enfant est au centre de son modèle thérapeutique et de son travail clinique, c'est l'un des premiers
 
-Ou est la famille?
-- La famille, souvent considérée comme la cause ou l'explication des problèmes de l'enfant
-- Modèle médical
-- Image du "non parent" au détriment du "vrai parent"
-- Médicalisation croissante des problèmes de l'enfant
+Où est la famille?
+- La famille, souvent considérée comme la cause ou l'explication des problèmes de l'enfant (souvent le cas en psychanalyse). Difficile de faire autrement quand on voit la réalité du terrain et les parents qui ont parfois de lourdes problématiques qui influencent les enfants.
+- Modèle médical: modèle asymétrique: le médecin dispose de connaissances.
+- Image du "bon parent" au détriment du "vrai parent": quand le thérapeute devient le bon parent (de par son alliance avec l'enfant) aux yeux des parents.
+- Médicalisation croissante des problèmes de l'enfant, médecins peu formés à la thérapie
 - -> étudier l'histoire développementale pour comprendre la pathologie de l'enfant
-- se décentraliser des problèmes pour exploiter les ressourecs
+- se décentraliser des problèmes pour exploiter les ressources
 
-Le langage de l'enfant: un défi
-- {...}
+**La protection de l'enfant**
+- Autre point de trahison pour l’enfant : sa protection. Elle prévaut visant à ne pas les exposer aux séances en famille en disant qu’on va les épargner : on entend beaucoup qu’ « on ne va pas confronter l’enfant aux dynamiques de la famille, on va le mettre à l’écart et le protéger ». Il faut les protéger, mais parfois cette protection a pris trop de place. **Les décisions sont prises sans consulter** ni alerter les enfants. Parfois, on a tendance à ne pas trop les questionner sur ce qu’ils vivent, pour les protéger. Il est quand même important que ce qu’il se passe en séance n’active pas un climat de guerre à la maison.
+- On constate chez les enfants des signes de détresse et de souffrance qui sont révélateurs d’une société de plus en plus aliénante et violente, et de familles de plus en plus fragiles et désunies. 
+- Protection de soi (ses propres peurs) en tant que thérapeute: L’exclusion de l’enfant est gardée par les problèmes non résolus des thérapeutes, car ça peut être émotionnellement intense de se confronter à la détresse et la douleur de l’enfant. Parfois, on ne les invite pas dans le but de ne pas être confronter à cette souffrance. Il y a une protection à double sens du côté de l’enfant mais aussi du côté du thérapeute. Il faut être au clair avec ce qu’on a vécu, et savoir si on est capable d’être confronté à tout ça en séance.
+	- Comme on l’a déjà vu, il est important d’avoir régler toutes les choses que l’on a vécu par le passé pour que si on est confronté à ces mêmes vécus chez des patients que l’on voit, cela ne vienne pas raviver nos blessures. En plus, le fait d’avoir géré nos vécus permettra d’avoir plus de liberté et de créativité en séance.
 
-Se centrer exclusivement sur les symptômes
-- C'est son problème
+**Le langage de l'enfant: un défi**
+- Dans les formations pour être psychologues, jamais on ne nous apprend à découvrir, à **apprendre la langue de l’enfant**. Nous n’apprenons pas comment on parle à un enfant, les mots à utiliser, … Parfois, c’est illusoire de se dire qu’on pourra parler avec l’enfant toute la séance et donc il faudra **passer par le jeu**. Par le jeu les enfants nous disent pleins de choses et sèment des « petites graines » qu’il faut savoir saisir, identifier puis travailler en séance.
+- Il ne faut pas oublier de vraiment s’adresser à l’enfant et de pouvoir lui poser des questions. Il faut apprendre tous ces éléments car à la base, en tant que thérapeute, notre langue maternelle est la langue que parle les adultes, car nous sommes des adultes. Il faut pratiquer et actualiser son langage d’enfant.
+
+> [!QUOTE] M.-C de St-Georges, 2004
+> « Si le thérapeute en formation peut diminuer le contrôle rationnel pour écouter d’avantage son intuition relationnelle, – boussole dont il s’est déjà servi – il augmentera sa créativité et sa confiance en ses ressources »
+
+**Se centrer exclusivement sur les symptômes** = la plus grande trahison, pour Andolfi
+- C'est son problème, = croire/accepter vision de la famille qui souffre "à cause de l'enfant"
 - Eviter le sentiment de culpabilité
-- Fatigue de chercher des éléments relationnels du problèmes
+- Fatigue en nous, thérapeutes, de chercher des éléments relationnels du problèmes
 
+**Le petit-enfant:**
+- Encore plus grand défi: Souvent, on ignore et on parle avec les parents alors qu’il y a tellement de choses à faire même avec les tout-petits : des grimaces, des **jeux**, **observer les interactions**… dans le but de créer du lien. Les bébés sont une ressource en thérapie, dès leurs présences dans le ventre de la maman. Tout cela exige que le thérapeute enlève « son uniforme » d’expert pour revêtir celui de l’enfant et se mettre à sa hauteur.
+
+#### L'intérêt de l'enfant en thérapie
+
+-  ==**Valoriser** l’enfant en thérapie a comme effet de restituer, indirectement, compétence et responsabilité aux parents.==
+- Enfant = **porte d’entrée** dans le système familial et **régulateur** du processus thérapeutique (Andolfi, et al., 2022)
+
+L’enfant reste la porte d’entrée dans le système familial, mais il ne fait pas que montrer le problème. Il montre aussi comment la thérapie va influencer la dynamique et le mouvement en famille. Par ses réactions, ils nous montre si le système résiste ou pas. L’enfant est le **baromètre** qui nous permet de voir si le système résiste ou s’il bloque. 
 ### 2. La demande en thérapie familiale
 
-La demande
-- Les demandeS -> nécessite une réflexion sur le format du 1er entretien
-	- La demande d'une personne pour un autre membre de sa famille
-	- La demande pour une relation définie comme difficile/problématique par le demandeur
-	- L'absence de demande qui conduit à un mandat coercitif
-	- La demande individuelle d'une personne pour elle-même
+#### La demande
 
+C’est une notion assez essentielle. Merieux explique que dans les supervisions qu’elle a réalisées, beaucoup n’étaient pas bien à cause d’une analyse de la demande qui a été mal faite. C’est pour ça qu’elle insiste sur ce point, car analyser la demande permet de bien comprendre les enjeux de la prise en charge, et que tout part de là.
 
-**La demande** (Neuburger, 1984)
+- **Les** demande**S** -> nécessite une réflexion sur le format du 1er entretien
+
+Souvent, les demandes sont multiples. Dès cette phase-là, on va devoir réfléchir à **qui on va inviter et en fonction de l’invitation, ça exercera une influence sur le suivi**. Il faut avoir conscience que la convocation sera d’office un message pour la famille, que cela aura une portée sur la compréhension que la famille donne au problème et la manière dont nous allons visualiser le problème.
+
+Il existe différents types de demande:
+	- **La demande d'une personne pour un autre membre de sa famille**: 
+		- Par exemple, une maman qui appelle pour son ado de 15 ans. Si on décide de n’inviter que la personne qui appelle, on va se dire que c’est la mère le problème mais elle appelle en fait pour son fils. Soit la personne qui est patient désigné n’est pas motivé ou alors, c’est un enfant/ado et dans ce cas, la responsabilité revient aux parents. Il serait erroné d’inviter la personne qui appelle ou le patient désigné seul : si on dit à la mère de venir seule, ou d’emmener son adolescent seul, ça ne va pas. Il faut aussi toujours s’assurer que l’adolescent qu’on va voir est d'accord de venir chez un psychologue.
+	- **La demande pour une relation définie comme difficile/problématique par le demandeur**: 
+		- C’est souvent lié à une crise de couple ou à des difficultés dans la relation parent-enfant. Il y a absence de pathologie individuelle, c’est la relation qui est mise en avant plan. La négociation du format est assez complexe. Si on invite le demandeur seul, le risque est qu’on crée déjà une alliance thérapeutique avec le demandeur et que cela pose problème avec l’autre personne de la relation, elle pourrait penser qu’il y a une alliance contre lui, par exemple. Il faut faire attention à ce qu’il se passe pendant le premier entretien, car ça va d’office transmettre un message. Convoquer les deux personnes nécessite de demander le consentement des deux personnes, il faut se demander si l’autre personne qui n’est pas le demandeur est d’accord d’être là. Si c’est le cas, alors on y va et on débute la thérapie.
+	- **L'absence de demande qui conduit à un mandat coercitif**:
+		- Ça intervient en général dans le cas de protection des mineurs. La motivation des parents est liée au SAJ et SPJ. Les parents viennent, mais c’est une motivation/une demande de surface. Dans le cas de protection de la jeunesse, ils n’ont pas le choix que de venir suivre la thérapie. Il faut donc **travailler la motivation intrinsèque** de ces parents. Il existe aussi des contraintes plus douces comme l’école qui met la pression pour aller consulter, dans ce cas, les parents ne sont pas toujours d'accord avec ce que pense l’école, mais ils viennent consulter pour montrer qu’ils sont des bons parents et donc éviter que l’école appelle des services comme le SAJ. Dans ce cas-là, pour la demande, il peut être nécessaire d’inviter le demandant et le demandeur, pour permettre de les différencier du demandeur.
+	- **La demande individuelle d'une personne pour elle-même**:
+		- C’est le cas le plus général. Il faut quand même faire attention aux personnes qui viennent sous pression de quelqu’un d’autre comme le cas d’un couple où l’homme insisterait pour que la femme suive une thérapie.
+
+La demande,  récolte d'informations utiles et début de la thérapie
+
+La demande **commence au téléphone**. L’analyse de la demande par téléphone est déjà une étape assez importante. Il y a toutes sortes d’informations à prendre en compte et qui seront vitales pour la suite. Demander les informations va nous permettre de ne pas oublier les informations concernant le patient et les différents membres de la famille. Montrer qu’on sait qui est qui peut déjà permettre un bon début pour la création de l’alliance thérapeutique.
+
+On avait parlé plus haut de comment se passe l’accueil et des différents points importants sur la manière de faire. C’est pareil au téléphone, les patients vont être très attentifs au ton qu’on emploie, **comment on formule choses, comment on instaure le cadre**, … Les appels peuvent durer longtemps, sans forcément que ce soit parce que le patient parle sans cesse. Cette durée sert à **récolter les informations importantes et à une bonne compréhension du problème**.
+
+Dans le cas d’un envoyeur, il est intéressant de demander à notre futur patient en quoi l’envoyeur à jugé utile que le patient nous appelle, et en quoi cette personne pense que l’on peut aider. Pour la question « qui d’autre est au courant », si c’est un parent qui appelle, il faut s’assurer que l’autre parent est d’accord que son enfant vienne consulter.
+
+#### La demande (Neuburger, 1984)
+
 4 questions pour l'explorer:
-- L'allégation: Qui est le plus préoccupé?
-- La souffrance: qui souffre le plus?
-- Le symptôme: Qui pose le plus de problèmes?
+- L'**allégation**: Qui est le plus préoccupé? 
+	- C'est ce qui est mis en avant. C'est la demande d'aide.
+- La **souffrance**: qui souffre le plus?
+	- Au sens d'avoir mal, c'est ce qui fait souffrir. Elle peut être physique ou psychologique.
+- Le **symptôme**: Qui pose le plus de problèmes?
+	- Ce qui apparaît comme une alerte pour l'entourage du patient.
+
+Neuburger dit que si les 3 sont portés par une même personne, on est face à une demande de thérapie individuelle. Si c'est distribué sur différentes personnes, on est face à une demande de thérapie familiale.
+
+- La personne qui adopte une conduite informative (a) n’est pas nécessairement celle qui porte le symptôme (b). 
+- La personne qui porte le symptôme n’est pas nécessairement celle qui souffre (c). La personne qui souffre n’est pas nécessairement celle qui a une attente (d). 
+- La personne qui a une attente est généralement celle qui prend rendez-vous - il se peut qu’elle ne souffre pas ou qu’elle ne porte aucun symptôme ; ça peut être un tiers, par exemple un médecin.
+
+> [!Example] Exemple
+> Le frère de Marie appelle (a) - sa sœur est mère d’une fille de 6 ans qui fait des crises d’opposition (b). Elle a pris son frère comme confident. Elle ne se rend pas compte que son fils de 4 ans souffre (c) en silence du fait qu’il se sent délaissé par sa mère qui se focalise surtout sur sa soeur. Le père (et mari de Marie) est « absent « (il travaille beaucoup = fuite) et la mère cherche un autre homme qui accepte de l’écouter (le psy ?)
+
+**Rupture homéostatique**
+
+Lorsqu'une demande émerge, se demander ce qui fait **crise**.
+- Influence réciproque → les partenaires agissant de même, un équilibre peut s’établir par accord tacite
+- Crise = rupture de l’équilibre relationnel (par exemple, lorsque le partenaire ne « joue plus le jeu »)
+- Demande de consultation → attente implicite = tentative de restaurer l’équilibre
+- Or, ce retour à l’équilibre peut ne pas être souhaitable
+- Que se passe-t-il si le «psy» refuse de « jouer le jeu » ? (càd qu’il reste neutre)
+	☞ Ca (re)déclenche une crise
+	1) le type d’étayage est plus « lisible » dans la situation de crise
+	2) Contraint le système dyadique à **créer un nouvel équilibre**
+
+#### Analyser la demande
+
+1. Première étape, incontournable : définit la relation, le cadre, objectifs, limites, et l’articulation des collaborations
+2. Importance des processus plutôt que les contenus (Tielmans, 1987)
+	1. Qui est l’**ENVOYEUR** et que veut-il ?
+	2. Pourquoi la crise se déclenche **MAINTENANT** ?
+	3. Pourquoi la demande est-elle formulée **ICI** ? (sens & attentes // lieu)
+	4. Comment ont été gérées les crises **ANTECEDENTES** ? (Qu’est-ce qui se répète ou risque de se répéter ?)
+	5. Position de l’**ENTOURAGE FAMILIAL** par rapport au 1er rendez-vous ?
+	6. Quels sont les **ENJEUX** relationnels au 1er RV ?
+
 
 📅 **11 Mai 2026** - Cours 3 - Mathilde Meriaux
-
 ### 3. La rencontre avec l'enfant et sa famille
 
 - Familles peuvent être en position de "legitime défense" (terme d'Ausloos), se sentent pointés du doigt ou ont eu d'autres expériences précédentes. Interêt donc de travailler leur compétence.
