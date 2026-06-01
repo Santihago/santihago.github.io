@@ -79,12 +79,12 @@
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-05-25T14:25:55.027Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-06-01T14:09:03.433Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
 <main class="content cm-s-obsidian print">
 <header>
 <h1 data-note-icon="">Pratiques cliniques en institution</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-17T01:10:22.503+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-05-25T16:24:47.492+02:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-17T01:10:22.503+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-05-25T17:55:26.481+02:00"></span></div></div></div>
 </header>
 <p><strong>Structure</strong>:</p>
 <ol>
@@ -394,32 +394,33 @@ Réponse : Vrai</li>
 <li>Évaluation: QCM</li>
 </ul>
 <p></p></div></div>
+<p>[[#I. Intro 3ème vague TCC / thérapies contextuelles]]</p>
 <p>📅 <strong>25 Mars 2026</strong> - Ilios Kotsou (Cours 1)</p>
 <p>On part du constat que le comportement ayant lieu dans le cadre de la thérapie = comportement dans la vie réelle.<br>
-Par exemple, si un comportement de séduction a lieu en thérapie, il est probablement lié à un comportement malaisant en dehors de la thérapie. Peut-on exprimer ses sentiments en thérapie? Oui, a condition que ça serve la thérapie.</p>
-<p>Réf. rasoir d'Occam. Parmi plusieurs explications possibles, choisir la plus simple. <a class="internal-link is-unresolved" href="/404" target="">Acceptance and Commitment Therapy (ACT)</a>: modèle &quot;simple et élégant&quot;de la psychopathologie. Vs. modèles plus complexes utilisant un langage que ni le thérapeute ni le patient maitrise (Cf. Lacan). ACT: permet aussi l'intégration d'autres outils parce que le modèle s'intéresse aux processus mentaux.</p>
-<p>ex Victor Hugo Les misérables. Décision du personnage de fuir ce qui est inconfortable vs aller vers ce qui est important et fait que la vie vaut la peine d'être vécue. Dilemme qui illustre l'aspect central de l'ACT.<br>
-ex compte de Monte Cristo. Même question. Haine et jalousie qui le dirige.</p>
-<p>Évidemment, contexte (social, neurobiologique, etc) est important aussi, ce n'est pas seulement une question de volonté personnelle. Parfois les conditions de vie sont difficiles et le contexte est averse a ce travail (-&gt; humilité du thérapeute).</p>
-<h2 id="intro-3eme-vague-tcc-therapies-contextuelles" tabindex="-1">Intro: 3ème vague TCC / thérapies contextuelles</h2>
+Par exemple, si un comportement de séduction a lieu en thérapie, il est probablement lié à un comportement malaisant en dehors de la thérapie. Peut-on exprimer ses sentiments en thérapie, en tant que thérapeute? Oui, a condition que ça serve la thérapie.</p>
+<p>Réf. <em>rasoir d'Occam</em>: Parmi plusieurs explications possibles, choisir la plus simple. <a class="internal-link is-unresolved" href="/404" target="">Acceptance and Commitment Therapy (ACT)</a>: modèle &quot;simple et élégant&quot;de la psychopathologie. Vs. modèles plus complexes utilisant un langage que ni le thérapeute ni le patient maitrise (Cf. Lacan). ACT: permet aussi l'intégration d'autres outils parce que le modèle s'intéresse aux processus mentaux.</p>
+<p>ex <em>Victor Hugo - Les misérables</em>. Décision du personnage de fuir ce qui est inconfortable vs. aller vers ce qui est important et fait que la vie vaut la peine d'être vécue. Dilemme qui illustre l'aspect central de l'ACT.<br>
+ex <em>Compte de Monte Cristo</em>. Même question. Haine et jalousie qui le dirige.</p>
+<p>Évidemment, contexte (social, neurobiologique, etc) est important aussi, ce n'est pas seulement une question de volonté personnelle. Parfois les conditions de vie sont difficiles et le contexte est averse à ce travail (-&gt; nécessité d'humilité du thérapeute).</p>
+<h2 id="i-intro-3eme-vague-tcc-therapies-contextuelles" tabindex="-1">I. Intro: 3ème vague TCC / thérapies contextuelles</h2>
 <p>Les 3 vagues.</p>
 <ul>
 <li>Vague 1: la pensée n'est pas directement cible. Mais apport essentiel de la question de l'<strong>apprentissage</strong>.</li>
-<li>Vague 2: revolution cognitive de Beck. Idée de base que cognitions peuvent etre distordues, amènent à souffrir, et on essaye de corriger ça avec le patient.
+<li>Vague 2: révolution cognitive de Beck. Idée de base que cognitions peuvent être distordues, amènent à souffrir, et on essaye de les &quot;corriger&quot; avec le patient.
 <ul>
-<li>Fonctionne mais etudes montrer qu'enlever l'aspect cognitif ne reduit pas les resultats. <strong>Activation comportementale</strong> semble fonctionner tout aussi bien. Fonctionne, mais quels ingredients. Partie cognitive non-nécessaire? Comment et pourquoi elles fonctionnent? Besoin de démantèlement complet.</li>
+<li>Fonctionne, mais études montrent qu'enlever l'aspect cognitif ne réduit pas les résultats. <strong>Láctivation comportementale</strong> semble fonctionner tout aussi bien. Fonctionne, mais quels ingrédients? Partie cognitive est-elle nécessaire? Comment et pourquoi elles fonctionnent? Besoin de démantèlement complet.</li>
 </ul>
 </li>
 <li>Vague 3: Vont réintégrer la question de l'émotion de manière centrale (chez les praticiens). Et surtout, on ne tente pas de changer les cognitions, mais la relation aux cognitions, aux états intérieurs.</li>
 </ul>
-<h2 id="intro-act" tabindex="-1">Intro: ACT</h2>
-<p>Modèle transdiagnostique.<br>
-Avantage de connaître les &quot;ingredients actifs&quot; du modèle: du point de vue pragmatique, les processus peuvent être mobilisés de manière créative, on doit pas se suffire de protocoles déjà créés, mais on peut imaginer de nouveaux protocoles sur base des ingrédients connus. Ex psy interculturelle: on peut se demander: dans cette culture, comment ce processus est mobilisé? Et partir de là pour développer l'approche de manière créative.</p>
+<h2 id="intro-act-fondements" tabindex="-1">Intro: ACT, fondements</h2>
+<p>L'ACT est un modèle transdiagnostique.<br>
+Avantage de connaître les &quot;ingrédients actifs&quot; du modèle: du point de vue pragmatique, les processus peuvent être mobilisés de manière créative, on doit pas se suffire de protocoles déjà créés, mais on peut imaginer de nouveaux protocoles sur base des ingrédients connus. Exemple de la psy interculturelle: on peut se demander: dans cette culture, comment ce processus est mobilisé? Et partir de là pour développer l'approche de manière créative.</p>
 <ul>
-<li>Modèle de &quot;la maladie&quot; de la psychiatrie
+<li>Modèle de &quot;la maladie&quot; issu de la psychiatrie:
 <ul>
-<li>Problème de la <strong>norme</strong>: l'idée que être humains doivent ressembler à une norme, et que les déviations sont à corriger. Thérapies contextuelles, c'est l'inverse: souffrance = norme (lien <a class="internal-link is-unresolved" href="/404" target="">Boudhisme</a>?).</li>
-<li>Catégories: peuvent rassurer, redonnent du contrôle, mais renferment.</li>
+<li>Problème de la <strong>norme</strong>: l'idée que être humains doivent ressembler à une norme, et que les déviations sont à corriger. Thérapies contextuelles, c'est l'inverse: souffrance = norme (cf <a class="internal-link is-unresolved" href="/404" target="">Boudhisme</a>?).</li>
+<li>Catégories: peuvent rassurer, redonnent du contrôle... mais renferment.</li>
 </ul>
 </li>
 </ul>
@@ -431,14 +432,14 @@ Avantage de connaître les &quot;ingredients actifs&quot; du modèle: du point d
 <li>Idée que patient est l'expert de soi-même (nous par questions permettons co-construction).</li>
 <li>! Dans ces thérapies contextuelles, ce qui vaut pour la patient vaut aussi pour la thérapeute. Nous traversons mêmes processus que patients (équivalence). Le thérapeute est cependant garant du cadre, qui offre la sécurité.</li>
 </ul>
-<p>L'importance est mise sur les <strong>processus de changement</strong>. Approche transdiagnostique: mêmes processus expliquent une part de variance importante parmi différentes categories diagnostiques (appuyé par la recherche).</p>
-<p>Cultures: on peut imaginer que les mêmes processus sont engagés, malgré de grandes différences de...</p>
+<p>L'importance est mise sur les <strong>processus de changement</strong>. Approche transdiagnostique: mêmes processus expliquent une part de variance importante parmi différentes catégories diagnostiques (appuyé par la recherche).</p>
+<p>Cultures: on peut imaginer que les mêmes processus sont engagés, malgré de grandes différences d'expression...</p>
 <p><strong>Répertoires flexibles vs symptômes</strong></p>
 <p>Dans certaines formes de thérapies, c'est la disparition du symptôme qui est le but de la thérapie. Ici, le but premier est d'avoir un répertoire flexible. Lorsqu'on va mal, le répertoire comportemental se réduit.<br>
-Par ex., faire disparaitre l'anxiété quand devant quelqu'un, vs augmenter le répertoire comportemental quand la personne est anxieuxe devant d'autres. &quot;Puis-je faire ce qu'il faudrait pour que la vie soit bonne&quot; vs. puis-je arrêter de sentir la peur. On peut continuer à vivre avec la peur, si elle n'empêche pas de vivre bien (parfois meme, on peut avoir quelque chose à gagner avec cette peur, plus de sensibilité, etc.).<br>
+Par ex., faire disparaître l'anxiété quand devant quelqu'un, vs augmenter le répertoire comportemental quand la personne est anxieuxe devant d'autres. &quot;Puis-je faire ce qu'il faudrait pour que la vie soit bonne&quot; vs. puis-je arrêter de sentir la peur. On peut continuer à vivre avec la peur, si elle n'empêche pas de vivre bien (parfois même, on peut avoir quelque chose à gagner avec cette peur, plus de sensibilité, etc.).<br>
 Peut être &quot;reposant&quot;, pas besoin de se battre contre, tout en travaillant la relation avec les pensées (être plus ouvert, plus ...).</p>
 <p>Blague: Patient qui après une psychanalyse: &quot;je ne vais pas mieux, mais maintenant je sais pourquoi&quot; vs. après ACT: &quot;je vais pas mieux, mais je m'en fous&quot;.<br>
-Mais souvent, la causalité est dans l'autre sens, la comprehension vient souvent de l'amélioration de la situation. On ne nie pas que causé cause présent, mais idée que pas nécessaire ni suffisant d'aller dans le passé de memoire. C'set la partie du passé <strong>encore dans le présent</strong> qui intéresse.</p>
+Mais souvent, la causalité est dans l'autre sens, la comprehension vient souvent de l'amélioration de la situation. On ne nie pas que passé cause présent, mais idée que pas nécessaire ni suffisant d'aller dans le passé de mémoire. C'est la partie du passé <strong>encore dans le présent</strong> qui intéresse.</p>
 <blockquote>
 <p><strong>La souffrance</strong></p>
 <ul>
@@ -449,23 +450,22 @@ Mais souvent, la causalité est dans l'autre sens, la comprehension vient souven
 </ul>
 <p>Hayes, S. C., &amp; Hofmann, S. G. (2021). “Third‐wave” cognitive and behavioral therapies and the emergence of a process‐based approach to intervention in psychiatry. <em>World psychiatry</em>, <em>20</em>(3), 363-375.</p>
 </blockquote>
-<p>--</p>
 <p>Question du libre arbitre. Ref <a href="https://en.wikipedia.org/wiki/Determined:_A_Science_of_Life_Without_Free_Will" target="_blank" class="external-link">Determinism</a> by Robert Sapolsky. Une croyance dans un certain degré de libre arbitre est peut-être utile pour croire au changement des patients?</p>
 <p>En 3ème vague, la question n'est pas &quot;Est-ce que la personne se sent bien?&quot;, la question est &quot;Est-ce que la personne vit une vie qui a du sens pour elle?&quot;</p>
 <h2 id="modele-act" tabindex="-1">Modèle ACT</h2>
 <p>Exemple de situation difficile: la mort d'un proche. Quand est-ce un problème? Question du fonctionnement &quot;normal&quot; {mais réf. à norme?}. <strong>Motivation première est souvent de ne pas ressentir la douleur</strong> (éviter). Suivi de mise en place de stratégies pour ne pas ressentir.</p>
-<p>Exemple: automutilations. Deviation d'attention et anesthésie émotionnelle. L'alcool: permet reduction d'anxiété à court terme, renforce le comportement, avec effets délétères au long terme, accentuant les comportements d'évitement... cercle vicieux). Et de plus, on s'empêche de vivre, de vivre une bonne vie.</p>
+<p>Exemple: automutilations. Deviation d'attention et anesthésie émotionnelle. L'alcool: permet réduction d'anxiété à court terme, renforce le comportement, avec effets délétères au long terme, accentuant les comportements d'évitement... cercle vicieux. Et de plus, on s'empêche de vivre, de vivre une bonne vie.</p>
 <p><strong>Évitement expérientiel</strong> (<a class="internal-link is-unresolved" href="/404" target="">Inflexahex (ACT)</a> : <a class="internal-link is-unresolved" href="/404" target="">Experiential Avoidance (ACT)</a>): au coeur de cette psychopathologie transdiagnostique.</p>
 <p>Du déni total (&quot;je n'ai pas d'émotions&quot;) à être complètement dépassé par ses émotions: deux extrêmes de l'évitement.</p>
 <p>Exemples: d'Albert SDF = anxiété, évitement-acceptation crise de panique IRM, ...</p>
-<p>Comment cultive-t-on de l'acception? Ce n'est pas résignation. On parle d'événements internes, non externes. Acceptation est une attitude active, se diriger vers.</p>
+<p>Comment cultive-t-on de l'acception? <mark><strong>Ce n'est pas de la résignation</strong>. On parle d'<strong>événements internes</strong></mark>, non externes. Acceptation est une attitude active, se diriger vers.</p>
 <p>Exemples (métaphores beaucoup utilisées en thérapies 3ème vague)</p>
 <ul>
-<li>Victime de maltraitance, quand on parle qu'elle &quot;accepte trop&quot; : mais ça peut être plutôt un évitement de peur/deuil d'une séparation.</li>
-<li>Personne violente: victimes de violence -&gt; douleur -&gt; comportement de violence (baisse de tension) -&gt; honte et culpabilité</li>
+<li>Victime de maltraitance, on pourrait dire qu'elle &quot;accepte trop&quot; : mais ça peut être plutôt un évitement de peur/deuil d'une séparation.</li>
+<li>Personne violente: victimes de violence -&gt; douleur -&gt; comportement de violence (baisse de tension) -&gt; honte et culpabilité.</li>
 <li>Exercice de pleine conscience: accueillir ce qui fait mal peut soulager, pourquoi? On arrête la lutte.</li>
 <li>Tasses de sel et lac: devient vaste comme le lac.</li>
-<li>Eriksson: inconscient comme reservoir de ressources, fond positif! (vs. psychanalyse de l'époque). Parfois avec une intention positive on bloque.</li>
+<li>Eriksson: inconscient comme réservoir de ressources, fond positif! (vs. psychanalyse de l'époque). Parfois avec une intention positive on bloque.</li>
 </ul>
 <p>📅 <strong>1 Avril 2026</strong> - Ilios Kotsou (Cours 2)</p>
 <p>Recommandation: Watslawick. <a href="https://www.amazon.fr/Changements-Paradoxes-psychoth%C3%A9rapie-Paul-Watzlawick/dp/2757841890" target="_blank" class="external-link">Changements, paradoxes et psychopathologie</a>. (Palo Alto)</p>
@@ -477,23 +477,34 @@ Mais risque d'enfermement: sentiment d'identité, le rester à vie. Exemple de l
 Considérer chaque être comme une chose, non comme un autre.</p>
 <p>L'antidote à la réification est la relation, considérer chaque être comme un autre, non comme un chose.</p>
 <p>Exemple : développement personnel (écartant les pseudosciences, le projet d'utiliser les connaissances de la psycho pour s'épanouir). Mais idée que nous sommes des êtres coupés des autres, à qui on enjoint de devenir la meilleure version de soi-même. Alors que, ce qui explique la réussite de l'individu, sa capacité à faire face à ses difficultés, c'est davantage le contexte . Ne dépend pas de nous dans quelle famille on naît, quel pays, quel environnement, niveau culturel des parents, biologie, la pensée qui apparait en se réveillant...</p>
-<p>Risques des idées du dev personnel (&quot;c'est ton choix d'être déprimé&quot;, se complait dans le mail, jouissance dans la mal, etc.): culpabilisation des personnes. Mais dans la grande majorité des cas, ce n'est pas un choix d'être déprimé/suicidaire. La plupart des personnes choisiraient d'aller mieux.</p>
-<p>Georges Bonanno: résilience. Il dit qu'on a un très mauvais regard sur la résilience, mais, en tant que thérapeutes on voit ceux qui vont tjrs mal. Mais la majorité des personnes s'en remet avec le temps.</p>
-<p>Une meilleure définition de <strong>responsabilité</strong>?</p>
+<p>Risques des idées du développement personnel (&quot;c'est ton choix d'être déprimé&quot;, idée de la personne qui sse complait dans le mail, qui obtient de la jouissance dans la mal, etc.): culpabilisation des personnes. Mais dans la grande majorité des cas, ce n'est pas un choix d'être déprimé/suicidaire. La plupart des personnes choisiraient d'aller mieux.</p>
+<p>Georges Bonanno: résilience. Il dit qu'on a un très mauvais regard sur la résilience, mais, en tant que thérapeutes on voit ceux qui vont toujours mal. Mais la majorité des personnes s'en remettent avec le temps.</p>
+<p>Une meilleure définition de <strong>responsabilité</strong>:</p>
 <ul>
-<li>Habilité a apporter une réponse (sans être coupable de rien, en reconnaissant que j'en suis pour rien...). Trouver leviers, forces, qui feront qu'on puisse trouver une réponse à la solution. (cf recadrage en approche Palo Alto)</li>
+<li>Habilité à apporter une réponse (sans être coupable de rien, en reconnaissant que j'en suis pour rien...). Trouver les leviers, forces, qui feront qu'on puisse trouver une réponse à la solution. (cf recadrage en approche Palo Alto)</li>
 </ul>
 <p>Ce qui nous reste, qui dépend (un petit peu) de nous: nos comportements et nos intentions.</p>
 <p>Processus ACT: Diriger son attention autrement -&gt; Flexibilité -&gt; aller vers ce qui est important pour la personne.</p>
-<h3 id="l-evitement-experientiel" tabindex="-1">L'évitement expérientiel</h3>
+<h2 id="processes-of-inflexibility" tabindex="-1">Processes of inflexibility</h2>
+<p>Psychological inflexibility:</p>
+<ol>
+<li>Weak self-knowledge; dominating concept of the past and feared future (vs. <a class="internal-link is-unresolved" href="/404" target="">Present Moment (ACT)</a>)</li>
+<li>Experiential avoidance (vs. <a class="internal-link is-unresolved" href="/404" target="">Acceptance (ACT)</a>)</li>
+<li>Lack of values clarity; dominance of pliance, avoidant tracking, and problematic augmenting (vs. <a class="internal-link is-unresolved" href="/404" target="">Values (ACT)</a>)</li>
+<li>Cognitive fusion (vs. <a class="internal-link is-unresolved" href="/404" target="">Cognitive Defusion (ACT)</a>)</li>
+<li>Persistent inaction, impulsivity, or avoidance (vs. <a class="internal-link is-unresolved" href="/404" target="">Committed Action (ACT)</a>)</li>
+<li>Attachment to the conceptualized self (vs. <a class="internal-link is-unresolved" href="/404" target="">Self-as-Context (ACT)</a>)</li>
+</ol>
+<p>Conceptualized in ACT as the <a class="internal-link is-unresolved" href="/404" target="">Inflexahex (ACT)</a>:<br>
+<picture src="/img/user/Pasted%20image%2020260401134307.png" alt="Pasted image 20260401134307.png"><source media="(max-width:480px)" srcset="/img/optimized/eSlnzJFyrb-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/eSlnzJFyrb-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/eSlnzJFyrb-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/eSlnzJFyrb-700.jpeg"><img class="" src="/img/user/Pasted%20image%2020260401134307.png" alt="Pasted image 20260401134307.png" width=""></picture></p>
+<p>Steven Hayes: exercice jeu de rôle: prendre un patient, une problématique, et démarrer avec un des 6 concepts de l'ACT au hasard.</p>
+<h3 id="1-l-evitement-experientiel-vs-knowledge-wiki-acceptance-act-acceptance-act" tabindex="-1">1. L'évitement expérientiel (vs. <a class="internal-link is-unresolved" href="/404" target="">Acceptance (ACT)</a>)</h3>
 <p>Image des sables mouvants: on lutte, on s'enfonce.<br>
 Vouloir se débarrasser de l'anxiété: peur de la peur, cree une boucle montante.<br>
 Comment travailler l'acceptation? Images, pleine conscience, dessiner, etc. Important d'utiliser le monde du patient.</p>
 <p>Aspirations: Les gens qui vont mal ne savent pas généralement ce qui est important pour eux.</p>
-<p><a class="internal-link is-unresolved" href="/404" target="">Inflexahex (ACT)</a>:<br>
-<picture src="/img/user/Pasted%20image%2020260401134307.png" alt="Pasted image 20260401134307.png"><source media="(max-width:480px)" srcset="/img/optimized/eSlnzJFyrb-500.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/eSlnzJFyrb-500.jpeg">
-<source media="(max-width:1920px)" srcset="/img/optimized/eSlnzJFyrb-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/eSlnzJFyrb-700.jpeg"><img class="" src="/img/user/Pasted%20image%2020260401134307.png" alt="Pasted image 20260401134307.png" width=""></picture></p>
 <p>On fait un exercice imagination enterrement et on parle de nos valeurs, la personne qu'on était et ce que les autres pensaient de nous (ce qu'on aimerait qu'ils disent de nous) (ressemble à ex 5.6 de <a class="internal-link is-unresolved" href="/404" target="">Book - Sinclair - The Little ACT Workbook (2016)</a>).</p>
 <p><a href="https://en.wikipedia.org/wiki/Viktor_Frankl" target="_blank" class="external-link">Viktor Frankl</a>: Donne un sens à sa vie (A Man's Search for Meaning). Médecin psychiatre a Vienne dans l'avant-guerre. Théorie du vide existentiel, le sens de l'existence. Crée la troisième école de psychothérapie viennoise (logothérapie). Il part du constat d'étudiants atteints de depression à Vienne, dans l'avant-guerre (alors que ce sont des gens favorisés). Est mis dans camp de concentration.</p>
 <ul>
@@ -506,65 +517,68 @@ Histoire: Chaman qui demande: &quot;Entre toi et moi, qui est plus important? La
 Thérapies contextuelles = thérapies relationnelles.</p>
 <p>Difference fondamentale entre théories: celles visant à changer le contenu des expériences vs changer la relation à l'expérience. (Parce que dans ce modèle, tenter de changer: évitement, contrôle).</p>
 <p>Kant, impératif catégorique: Fait toujours en sorte de considerer l'autre tout aussi comme une fin, et non comme un moyen (ne le réifie pas).</p>
-<p><strong>Valeurs</strong> <a class="internal-link is-unresolved" href="/404" target="">Values (ACT)</a></p>
+<h3 id="2-manque-de-clarte-sur-les-valeurs-vs-knowledge-wiki-values-act-values-act" tabindex="-1">2. Manque de (clarté sur les) valeurs (vs. <a class="internal-link is-unresolved" href="/404" target="">Values (ACT)</a>)</h3>
 <p><strong>S'éloigner de &lt;---&gt; Aller vers (aspirations)</strong></p>
 <p>Philosophie grecque: La vie bonne, avec un aspect pragmatique (me rappelle SH). Exercices spirituels: Perre? Hadot.</p>
 <p>Exemple: peur de contredire son architecte, ne dit pas ce qu'il pense, ne veut pas le contrarier, s'écrase. Ensuite</p>
 <p>Différencier Valeurs vs Buts: valeurs = directions</p>
 <p>Une valeur ne s'atteint pas, c'est une <strong>direction</strong>. On peut être cohérent ou incoherent avec ses valeurs. La manière de marcher: émerveillé.</p>
-<p><strong>Moment-présent</strong> <a class="internal-link is-unresolved" href="/404" target="">Present Moment (ACT)</a></p>
-<p>Venir au corps, moins la tête. Les sens.</p>
-<p><strong>Fusion cognitive</strong> <a class="internal-link is-unresolved" href="/404" target="">Cognitive Fusion (ACT)</a></p>
+<h3 id="3-faible-connaissance-de-soi-pensees-dominees-par-passe-futur-vs-knowledge-wiki-present-moment-act-present-moment-act" tabindex="-1">3. Faible connaissance de soi, pensées dominées par passé/futur (vs. <a class="internal-link is-unresolved" href="/404" target="">Present Moment (ACT)</a>)</h3>
+<p>Venir au corps, moins la tête. Les sens.<br>
+Voir attention ci-dessous, également.</p>
+<h3 id="4-fusion-cognitive-knowledge-wiki-cognitive-defusion-act-cognitive-defusion-act" tabindex="-1">4. Fusion cognitive <a class="internal-link is-unresolved" href="/404" target="">Cognitive Defusion (ACT)</a></h3>
 <p>Qu'est-ce qu'une pensée?<br>
 &quot;Parole dans la tête&quot;, contenu privé, automatique.<br>
 Etiquettes qui permettent de décrire une réalité.<br>
 Équivalence interne d'une réalité externe.</p>
 <p>Métaphore du tigre: danger, survie. Permet de communiquer. Propriétés de la chose existante sont transférés au concept. Puis permet d'être transféré d'un concept à un autre (e.g. le Glurps).</p>
 <p>Risque: être prisonnier d'un concept.</p>
-<p>Psychologie positive <strong>naïve</strong>: Les pensées ont un effet sur la vie. (Lois de l'attraction, on attire ce que l'on pense). Prône le contrôle des pensées alors qu'on ne les contrôle pas, ou pas pleinement et pas tout le temps. Idée des &quot;60.000 pensées par jour&quot;, et la plupart negatives.<br>
-Mais, recherche: 6000 pensées env., et la plupart sont positives contrairement à l'idée reçue (biais de négativité, les negatives prennent le dessus, fonction évolutive).</p>
+<p>Psychologie positive <strong>naïve</strong>: Les pensées ont un effet sur la vie. (Lois de l'attraction, on attire ce que l'on pense). Prône le contrôle des pensées alors qu'on ne les contrôle pas, ou pas pleinement et pas tout le temps. Idée des &quot;60.000 pensées par jour&quot;, et la plupart négatives.<br>
+Mais, recherche: 6000 pensées env., et la plupart sont positives contrairement à l'idée reçue (biais de négativité, les négatives prennent le dessus, fonction évolutive).</p>
 <ul>
-<li>Approche fonctionnelle: dépend de la fonction, memes pensées &quot;positives&quot; peuvent être au service de l'évitement ou d'aller vers ce qui est important pour la personne.</li>
+<li>Approche fonctionnelle: dépend de la fonction, mêmes pensées &quot;positives&quot; peuvent être au service de l'évitement ou d'aller vers ce qui est important pour la personne.</li>
 </ul>
 <p>📅 <strong>8 Avril 2026</strong> - Ilios Kotsou (Cours 3)</p>
 <p><strong>L'attention</strong></p>
 <p><a class="internal-link is-unresolved" href="/404" target="">William James</a> - Capacité à changer l'attention = ressource par excellence = détermine l'action</p>
-<p>L'attention est importante car porte d'entree aux contenus de la conscience<br>
-Toute thérapie travaille sur une forme d'attention<br>
-e.g. ramener l'attention au présent.<br>
-Permet d'agir de manière plus adaptée au présent.</p>
+<p>L'attention est importante car porte d'entrée aux contenus de la conscience. Toute thérapie travaille sur une forme d'attention, e.g. ramener l'attention au présent. Permet d'agir de manière plus adaptée au présent.</p>
 <p>-&gt; Rejoint l'idée de la flexibilité attentionnelle.</p>
-<p>Cf hypnose: on part de stimulus pour arriver a un autre état de conscience. Hypnose comme métaphore de ce qu'on fait avec les resistences et la relation thérapeutique. Renverse l'idee que resistance est dans le patient.</p>
+<p>Cf hypnose: on part de stimulus pour arriver à un autre état de conscience. Hypnose comme métaphore de ce qu'on fait avec les résistances et la relation thérapeutique. Renverse l'idée que résistance est dans le patient.</p>
 <p>Matrice: dimension verticale: sensoriel (5 sens) vs mental (ou externe vs interne, qui pour moi est plus clair pour pouvoir inclure comportements dans la partie du-dessus sensorielle)</p>
+<p><picture src="/img/user/Pasted%20image%2020260525175317.png" alt="Pasted image 20260525175317.png"><source media="(max-width:480px)" srcset="/img/optimized/MWxx65c3Xd-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/MWxx65c3Xd-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/MWxx65c3Xd-611.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/MWxx65c3Xd-611.jpeg"><img class="" src="/img/user/Pasted%20image%2020260525175317.png" alt="Pasted image 20260525175317.png" width=""></picture></p>
 <p><strong>Retour à: pensées - fusion cognitive</strong></p>
 <p>Chomsky: le nom n'est pas la chose donnée.<br>
 Quand on va mal, on a tendance à confondre chose et pensée, être obscurci par étiquettes et concepts.</p>
 <p>Défusion: capacité a se séparer de la pensée, la base étant de <strong>voir</strong> la pensée, voir que c'est une pensée.</p>
-<p>Singer, Ricard: état de compassion, antidote la détresse empathique (<a class="internal-link is-unresolved" href="/404" target="">Empathy</a>). &quot;Si je ne fais que de l'empathie affective, ça devient ma souffrance&quot;. Compassion réoriente vers l'autre mais j'accord davantage d'attention a l'idée, que l'autre aille mieux, ma motivation pour cela (si on separe aspect cognitif, émotionnel motivationnel de l'empathie). Souhaiter de toutes ses forces qu'une personne soit sauvee (meme si on n'y peu rien), versus uniquement rester dans le ressenti affective (empathie cognitive).</p>
+<p>Singer, Ricard: état de compassion, antidote la détresse empathique (<a class="internal-link is-unresolved" href="/404" target="">Empathy</a>). &quot;Si je ne fais que de l'empathie affective, ça devient ma souffrance&quot;. Compassion réoriente vers l'autre mais j'accord davantage d'attention à l'idée, que l'autre aille mieux, ma motivation pour cela (si on sépare aspect cognitif, émotionnel et motivationnel de l'empathie). Souhaiter de toutes ses forces qu'une personne soit sauvée (même si on n'y peut rien), versus uniquement rester dans le ressenti affectif (empathie cognitive).</p>
 <ul>
-<li>Empathie cognitive (sans empathie émotionnelle): peu de correlation avec comportements prosociaux (psychopathes peuvent avoir haute empathie cognitive).</li>
+<li>Empathie cognitive (sans empathie émotionnelle): peu de corrélation avec comportements prosociaux (psychopathes peuvent avoir haute empathie cognitive).</li>
 <li>Cf Paul Gilbert (<a class="internal-link is-unresolved" href="/404" target="">Compassion-Focused Therapy (CFT)</a>)</li>
 </ul>
 <p><strong>Outils pour la prise de distance</strong>, défusion</p>
 <ul>
 <li>Noter ses pensées, en laissant une place pour ajouter avant &quot;J'observe une pensée que...&quot;. Parfois certains patients insistent : &quot;Je suis vraiment nul/le&quot;. Et parfois oui, peut-être, certains comportements peuvent contribuer à croyances, etc., mais ça reste par définition une pensée.</li>
 <li>Ecrire la pensée dans le ballon d'helium. Dire la pensée après avoir respiré l'helium.</li>
-<li>Top 5 des pires pensées à mettre sur une feuille.</li>
+<li>Top 5 des pires pensées, à mettre sur une feuille.</li>
 <li>...</li>
 </ul>
-<p>Steven Hayes: exercice jeu de rôle: prendre un patient, une problématique, et démarrer avec un des 6 concepts de l'ACT au hasard.</p>
-<p><strong>Sens de soi</strong></p>
+<h3 id="5-inaction-vs-knowledge-wiki-committed-action-act-committed-action-act" tabindex="-1">5. Inaction (vs. <a class="internal-link is-unresolved" href="/404" target="">Committed Action (ACT)</a>)</h3>
+<h3 id="6-attachement-a-un-concept-de-soi-conceptualise-vs-knowledge-wiki-self-as-context-act-self-as-context-act" tabindex="-1">6. Attachement à un concept de soi conceptualisé (vs. <a class="internal-link is-unresolved" href="/404" target="">Self-as-Context (ACT)</a>)</h3>
 <p>Plus ouvert, plus flexible, plus adapté.<br>
-Proche de la fusion, en partie.</p>
+Concept proche de la fusion, en partie.</p>
 <p>William James: avait distingué le &quot;Moi&quot; et le &quot;Je&quot;.</p>
 <ul>
 <li>Moi: moi narratif, l'histoire.</li>
 <li>Je: sentiment subjectif d'exister.</li>
 </ul>
 <p>Exercice: passage du moi au je, plus difficile pour les personnes si on a pas d'entrainement contemplatif/méditatif (Normam Farb)</p>
-<p>But ici: sens d'identité moins fermé. Question d'observateur.<br>
-Soi-comme-contexte (<a class="internal-link is-unresolved" href="/404" target="">Self-as-Context (ACT)</a>) vs. Soi-comme-objet</p>
+<p>But, ici: sens d'identité moins fermé. Question d'observateur.</p>
+<p>Soi-comme-contexte (<a class="internal-link is-unresolved" href="/404" target="">Self-as-Context (ACT)</a>) vs. Soi-comme-objet</p>
 <p>Rigidité: métaphore variabilité cardiaque: variabilité est un marqueur de bonne santé, un coeur qui bat regulièrement est préoccupant.</p>
+<hr>
+<h2 id="references" tabindex="-1">Références</h2>
 <p>Cf Yrvin Yalom.<br>
 CF Christian Bobin (poésie). Rumi. Tador</p>
 <p><a href="https://en.wikipedia.org/wiki/Milton_H._Erickson" target="_blank" class="external-link">Milton Ericksson</a>, psychiatre-psychothérapeute américain.</p>
@@ -572,13 +586,13 @@ CF Christian Bobin (poésie). Rumi. Tador</p>
 <li>Exemples:
 <ul>
 <li>Personne qui parle en salade de mots. Il lui parle &quot;en salade de mots&quot; aussi.</li>
-<li>Signe du bras nazi,, lui cause des problemes avec d'autres, Ericksson l'imite, modifie le mouvement et le symptôme converti en mouvement de menuiserie.</li>
+<li>Signe du bras nazi, lui cause des problèmes avec d'autres, Ericksson l'imite, modifie le mouvement et le symptôme converti en mouvement de menuiserie.</li>
 <li>Utilise l'environnement (ville, montagne)</li>
 </ul>
 </li>
-<li>-&gt; <strong>Rejoindre pour guider</strong> (différent de donner raison)</li>
-<li>Resistance: pas resistance de la patiente mais symptôme qu'on l'a pas rejoint.</li>
-<li>Si resistance on ne pousse pas. On accueille la résistance, on la comprend, on l'utilise, c'est une information sur la relation entre le personne et son problème, sur la relation entre la personne et le thérapeute... c'est une information.<br>
+<li>-&gt; <mark><strong>Rejoindre pour guider</strong></mark> (différent de donner raison)</li>
+<li>Lorsque résistance: pas résistance de la patiente mais symptôme qu'on l'a pas rejoint.</li>
+<li>Si résistance on ne pousse pas. On accueille la résistance, on la comprend, on l'utilise, c'est une information sur la relation entre le personne et son problème, sur la relation entre la personne et le thérapeute... c'est une information.<br>
 Livres: Ericksson n'en a pas écrit. &quot;Ma voix t'accompagnera&quot; ou &quot;Un thérapeute hors du commun&quot; (les deux élèves de Ericksson).<br>
 Utilisation de la métaphore, des histoires. Si c'était un jardinier, il lui parlait de jardins, pas de processus techniques.</li>
 </ul>
@@ -600,7 +614,7 @@ Utilisation de la métaphore, des histoires. Si c'était un jardinier, il lui pa
 [[#IV. L'enfant comme ressource thérapeutique]]<br>
 [[#V. L'interêt du travail en famille]]</p>
 <h2 id="i-introduction" tabindex="-1">I. Introduction</h2>
-<p>###. 1. Du trouble à la relation: changement de regard</p>
+<h3 id="1-du-trouble-a-la-relation-changement-de-regard" tabindex="-1">1. Du trouble à la relation: changement de regard</h3>
 <p>Idée centrale:<br>
 Enfant comme RESSOURCE pour entrer dans le système familial.<br>
 Au niveau diagnostic et thérapeutique, pour comprendre les familles</p>
@@ -901,7 +915,7 @@ C<strong>e n'est pas forcément celui qui va mal, ou celui qui souffre le plus</
 <li>Si on s'y attaque: risque qu'il se déplace/se renforce<br>
 -&gt; Débusquer en quoi ces symptômes sont des solutions</li>
 </ul>
-<p>L’idée des systémiciens va être qu’au lieu de supprimer le symptôme, le thérapeute va le cadrer, le dépasser <mark>voire parfois, le prescrire</mark>. Ex d'intervention: <strong>Prescription paradoxal</strong>e:</p>
+<p>L’idée des systémiciens va être qu’au lieu de supprimer le symptôme, le thérapeute va le cadrer, le dépasser <mark>voire parfois, le prescrire</mark> (<a class="internal-link is-unresolved" href="/404" target="">Prescription paradoxale du symptôme</a>). Exemple d'intervention: <strong>Prescription paradoxal</strong>e:</p>
 <ul>
 <li>si on éclaire sur fonction du symptôme, symptôme peut perdre de de son évidence.</li>
 </ul>
@@ -1529,15 +1543,29 @@ Pratiques cliniques en institution
 </li>
 <li><a href="#partie-ii-therapies-cognitivo-comportementales-3eme-vague-ilios-kotsou">🏷️ Partie II: Thérapies cognitivo-comportementales (3ème vague) - Ilios Kotsou</a>
 <ol>
-<li><a href="#intro-3eme-vague-tcc-therapies-contextuelles">Intro: 3ème vague TCC / thérapies contextuelles</a>
+<li><a href="#i-intro-3eme-vague-tcc-therapies-contextuelles">I. Intro: 3ème vague TCC / thérapies contextuelles</a>
 </li>
-<li><a href="#intro-act">Intro: ACT</a>
+<li><a href="#intro-act-fondements">Intro: ACT, fondements</a>
 </li>
 <li><a href="#modele-act">Modèle ACT</a>
+</li>
+<li><a href="#processes-of-inflexibility">Processes of inflexibility</a>
 <ol>
-<li><a href="#l-evitement-experientiel">L'évitement expérientiel</a>
+<li><a href="#1-l-evitement-experientiel-vs-knowledge-wiki-acceptance-act-acceptance-act">1. L'évitement expérientiel (vs. Acceptance (ACT))</a>
+</li>
+<li><a href="#2-manque-de-clarte-sur-les-valeurs-vs-knowledge-wiki-values-act-values-act">2. Manque de (clarté sur les) valeurs (vs. Values (ACT))</a>
+</li>
+<li><a href="#3-faible-connaissance-de-soi-pensees-dominees-par-passe-futur-vs-knowledge-wiki-present-moment-act-present-moment-act">3. Faible connaissance de soi, pensées dominées par passé/futur (vs. Present Moment (ACT))</a>
+</li>
+<li><a href="#4-fusion-cognitive-knowledge-wiki-cognitive-defusion-act-cognitive-defusion-act">4. Fusion cognitive Cognitive Defusion (ACT)</a>
+</li>
+<li><a href="#5-inaction-vs-knowledge-wiki-committed-action-act-committed-action-act">5. Inaction (vs. Committed Action (ACT))</a>
+</li>
+<li><a href="#6-attachement-a-un-concept-de-soi-conceptualise-vs-knowledge-wiki-self-as-context-act-self-as-context-act">6. Attachement à un concept de soi conceptualisé (vs. Self-as-Context (ACT))</a>
 </li>
 </ol>
+</li>
+<li><a href="#references">Références</a>
 </li>
 </ol>
 </li>
@@ -1545,6 +1573,8 @@ Pratiques cliniques en institution
 <ol>
 <li><a href="#i-introduction">I. Introduction</a>
 <ol>
+<li><a href="#1-du-trouble-a-la-relation-changement-de-regard">1. Du trouble à la relation: changement de regard</a>
+</li>
 <li><a href="#2-accueillir-la-souffrance-psychique">2. Accueillir la souffrance psychique</a>
 <ol>
 <li><a href="#travail-travailler-sur-nos-representations">Travail: travailler sur nos représentations</a>
