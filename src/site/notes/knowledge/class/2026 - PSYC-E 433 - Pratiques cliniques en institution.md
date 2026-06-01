@@ -1,27 +1,35 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-433-pratiques-cliniques-en-institution/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-04T17:27:33.116+01:00","updated":"2026-05-19T14:02:56.852+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-433-pratiques-cliniques-en-institution/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-04T17:27:33.116+01:00","updated":"2026-05-28T12:45:40.613+02:00"}
 ---
 
 
 > [!tldr] Résumé
 > Ce cours vise à offrir une présentation des différentes approches cliniques qui s’appuient spécifiquement sur le dispositif institutionnel. D’un point de vue historique, il proposera une analyse de l’évolution de ces pratiques depuis la psychothérapie institutionnelle. Du point de vue clinique et théorique, il s’arrêtera sur les principales questions qui permettent d’éclairer ce type de pratique : le cadre et les modalités d’interventions, le type de patients et de pathologies concernés, les modalités d’évaluation de la pratique, le contexte institutionnel élargi (notamment le travail en réseau), etc.
 
-> [!info] Évaluation
+> [!TEST] Évaluation
 > Examen à questions fermées de type vrai ou faux (en présentiel). Pas de points négatifs. 20 questions, normalement.
 > - But est de départager "qui est venu au cours et qui non" (tous les items auront l'air plausibles, il sera nécessaire de comprendre l'approche critique démontrée en cours).
 > - On se concentrera lors de la dernière rencontre sur la préparation de l'examen.
 
-Lectures conseillées:
-- Emmanuel Venet: Retour chez les fous
-	- Réponse contemporaine au livre "chez les fous"
-	- 3 chapitres intéressants auxquels elle nous donnera accès
+> [!INFO] Lectures obligatoires
+> - Emmanuel **Venet** - Retour chez les fous (2015) (Chapitres 1-3-5)
+> 	- Réponse contemporaine au livre "chez les fous"
+> - 2 chapitres de **Zenoni** - L'autre pratique clinique (2009)
+> - Court article de Guy Poblome (Une pratique éclairée par la psychanalyse)
+> - Céline Danloy, le texte de son intervention
+> - Conseillé: Littérature asilaire
+> 
+> - Documentaires à voir:
+> 	- **État limite** ([ARTE](https://www.arte.tv/fr/videos/111769-000-A/etat-limite)) (Nicolas Peduzzi , 2023). Intervant invité: Simon Flemal.
+> 	- **A ciel ouvert** ([Youtube](https://www.youtube.com/watch?v=mpFVxGbX_aI))
+> 	- **La nef des fous** (Éric D’Agostino, & Patrick Lemy, 2014)
 
 ## 🏷️ Introduction, méthode et modalités de travail, pragmatique, évaluation
 
 📅 **9 Février 2026** - Cours 1
 
 Calendrier de cours (le 6 avril est annulé, une séance supplémentaire sera peut-être ajoutée):
-- 9-16-23 Fev / 2-9-16-23-30 mars / 13-20 avril / 11 mai /  1-8 juin
+- 9-16-23 fév / 2-9-16-23-30 mars / 13-20 avril / 11 mai /  1-8 juin
 
 Contenu du cours est sur l'UV, mais aussi sur un site externe:
 - Le site (créé par Cécile Glineur et Danloy) en général permet d'explorer des concepts psychanalytiques.
@@ -40,24 +48,24 @@ Habituellement, Fouchet travaille a partir de documentaire "Urgences". Cette foi
 	- 11 mai: cloture, questions/réponses.
 
 Elle, Cécile Glineur, d'orientation psychanalytique. Remplace Fouchet cette année. Elle travaille au CHU Saint-Pierre, exerce une pratique destinée aux tout-venants. 
-Ce cours sera d'orientation psychanalytique Lacanienne (appliquée), rappel de certaines notions:
-- **Psychanalyse appliquée**, plutôt que "psychanalyse pure" (qui elle considère les gens *un par un*, se caractérisant parfois par la position allongée, la fréquence soutenue des séances... ou on s'attache à donner une place centrale à sa propre parole, démarche différente des démarches type problème-solution qu'on trouve souvent dans le domaine de la psychologie. Le fondement méthodologique est l'association libre, mais constat que l'association libre n'est pas *libre* (**résistances** - embarras, honte -, **transfert**..., et la **chaîne de signifiant n'est pas libre non plus**. ).
-- Lacan a poursuivi le travail de Freud, au départ de la psychanalyse pure, mais s'en est distingue sur certains points, formant deux écoles: Ecole post-Freudienne et école Lacanienne. Lacan est venu faire rupture sur certains points:
-	- La durée des séances (post-Freudiens respectent les durées, 45 min a l'origine, parfois 40, mais chez les Lacanniens, la durée dépend de ce qu'il se passe pendant la séance, les séances peuvent être écourtées).
-	- La formation du psychanalyste: Post-freudiens, on traverse une cure didactique, on est ensuite reconnu psychanalyste par son propre psychanalyste et d'autres. Chez les Lacanniens, pas de distinction à l'origine. Analysant estime qu'il est suffisamment satisfait de son analyse, sans souhait de devenir psychanalyste lui-même. Ou choix de mettre fin à une tranche d'analyse. Procédure de la [passe](https://fr.wikipedia.org/wiki/Passe_(psychanalyse)): consiste pour l'analysant de mettre un terme à son analyse, et pouvoir produire une logification de sa trajectoire analytique, et pouvoir émettre un apport théorico-clinique pour la théorie de la psychanalyse.
-	- Points clés de la méthode Lacanienne:
-		- La question du [[knowledge/wiki/Désir (Psychanalyse Lacanienne)\|Désir (Psychanalyse Lacanienne)]].
-		- La question du transfert dans la pratique clinique (pas contre transfert, les deux transferts sont considerés de nature similaire)
-		- Vif souci d'essayer de saisir la **logique subjective** des patients avec lesquels on est en lien (moins considérer le projet de l'institution, plutôt *qui sont les bénéficiaires?* (un par un: comprendre la logique de chacun individuellement)). Là où beaucoup d'instituions se questionnent sur comment traiter le patient (avec position de connaissance, savoir...), ici on traite sa propre posture, sa propre relation au savoir... pour se faire autant que possible partenaire des personnes dans l'institution. 
+Ce cours sera d'orientation psychanalytique lacanienne (appliquée), rappel de certaines notions:
+- **Psychanalyse appliquée**, plutôt que "psychanalyse pure" (qui elle considère les gens *un par un*, se caractérisant parfois par la position allongée, la fréquence soutenue des séances... ou on s'attache à donner une place centrale à sa propre parole, démarche différente des démarches type problème-solution qu'on trouve souvent dans le domaine de la psychologie. Le fondement méthodologique est l'association libre, mais constat que l'association libre n'est pas *libre* (**résistances** - embarras, honte, **transfert**..., et la **chaîne de signifiant n'est pas libre non plus**. ).
+- Lacan a poursuivi le travail de Freud, au départ de la psychanalyse pure, mais s'en est distingue sur certains points, formant deux écoles: Ecole post-Freudienne et école lacanienne. Lacan est venu faire rupture sur certains points:
+	- La durée des séances (post-Freudiens respectent les durées, 45 min a l'origine, parfois 40, mais chez les lacaniens, la durée dépend de ce qu'il se passe pendant la séance, les séances peuvent être écourtées).
+	- La formation du psychanalyste: Post-freudiens, on traverse une cure didactique, on est ensuite reconnu psychanalyste par son propre psychanalyste et d'autres. Chez les lacaniens, pas de distinction à l'origine. Analysant estime qu'il est suffisamment satisfait de son analyse, sans souhait de devenir psychanalyste lui-même. Ou choix de mettre fin à une tranche d'analyse. Procédure de la [passe](https://fr.wikipedia.org/wiki/Passe_(psychanalyse)): consiste pour l'analysant de mettre un terme à son analyse, et pouvoir produire une logification de sa trajectoire analytique, et pouvoir émettre un apport théorico-clinique pour la théorie de la psychanalyse.
+	- Points clés de la méthode lacanienne:
+		- La question du ==[[knowledge/wiki/Désir (Psychanalyse Lacanienne)\|Désir (Psychanalyse lacanienne)]]==.
+		- La question du **==transfert==** dans la pratique clinique (**pas de contre transfert en tant que tel, les deux transferts sont considérés de nature similaire**)
+		- Vif souci d'essayer de saisir la ==**logique subjective**== des patients avec lesquels on est en lien (moins considérer le projet de l'institution, plutôt ***qui sont les bénéficiaires?*** (un par un: comprendre la logique de chacun individuellement)). Là où beaucoup d'instituions se questionnent sur comment traiter le patient (avec position de connaissance, savoir...), ici **on traite sa propre posture, sa propre relation au savoir...** pour se faire autant que possible partenaire des personnes dans l'institution. 
 - Prendre appui sur ce corpus pour orienter le travail de terrain (**essayant de gommer les nominations de savoir spécifique**, ne pas distinguer entre disciplines respectives... par exemple les différents métiers d'une équipe multi-disciplinaire). On se réfère aux "intervenants" généralement, partagent les mêmes tâches, ne sectorisant pas leur pratique... tous rapportent leur clinique en réunion d'équipe, au même titre que les autres.
 
 Interview d'Olivier Challe, sur le travail psychanalytique en institution:
 <div class="youtube-embed"><iframe src="https://www.youtube.com/embed/u2IIm0u61gk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-Olivier Challe est responsable clinique au Wops de nuit, un centre thérapeutique de nuit:
-- Institution qui répond au malaise de ce que les gens amènent avec eux comme difficultés (sans grille pre-établie des difficultés), d'y répondre par un accueil, un accompagnement **au cas-par-cas**. Déceler la vraie difficulté de la personne pour décider au fur-et-à-mesure comment accompagner ces personnes.
+Olivier Challe est responsable clinique au *Wops de nuit*, un centre thérapeutique de nuit:
+- Institution qui répond au malaise de ce que les gens amènent avec eux comme difficultés (sans grille pré-établie des difficultés), d'y répondre par un accueil, un accompagnement **au cas-par-cas**. Déceler la vraie difficulté de la personne pour décider au fur-et-à-mesure comment accompagner ces personnes.
 - Pari de "possibilité d'une rencontre", en étant le plus humble possible:
-	- "**Le symptôme est un travail du sujet**": Pari qu'ils sont **déjà en train d'essayer** de traiter ce malaise, qu'ils essayent de trouver une solution, mais que s'ils ont besoin d'une institution, c'est que leurs tentatives ne marchent pas. Donc penser à adapter pour que ce soit plus vivable (par exemple, celui/celle qui ne peut pas sortir de chez soi ou voir ses voisins, ce n'est pas une solution à terme..., tenter d'adapter pour rendre le monde dans lequel vit cette personne moins féroce, ou du moins *faire exister* ce monde qui semble ne pas exister véritablement pour la personne).
+	- "**Le symptôme est un travail du sujet**": L'institution fait le pari que les sujets sont **déjà en train d'essayer** de traiter ce malaise, qu'ils essayent de trouver une solution, mais que s'ils ont besoin d'une institution, c'est que leurs tentatives ne marchent pas. Donc penser à adapter pour que ce soit plus vivable (par exemple, celui/celle qui ne peut pas sortir de chez soi ou voir ses voisins, ce n'est pas une solution à terme..., tenter d'adapter pour rendre le monde dans lequel vit cette personne moins féroce, ou du moins *faire exister* ce monde qui semble ne pas exister véritablement pour la personne).
 	- **Abord non-déficitaire**: ces personnes qui fréquentent ne sont pas considérées comme déficitaires. La raison que la personne soit là est qu’il ou elle ne peut plus faire autrement. (?).
 	- Repérer quel est **l'Autre du sujet**: Essayer de le lire à travers de ce que la personne amène. Traiter l'Autre du sujet, plutôt que traiter le sujet. En institution, ceci peut être observé dans différents contextes (sans besoin d'attendre le moment du rendez-vous). *Le petit autre*: la façon dont le sujet construit son semblable, cliniquement toujours renseignant, écouter comment il construit l'autre, plutôt que déconstruire la véracité de son propos (même syntaxiquement). Moins ce qu'il se passe, et plus sa manière de le vivre. *Le grand Autre*: champ symbolique, qui nous pré-existe. Ce qui caractérise l'humain, c'est d'être partiellement attrapé et surdéterminé par le signifiant, le champ symbolique. Plus concrètement, cette determination par le symbolique qui est très restreignante pour nous tous, même si on la perçoit pas la plupart du temps. Par exemple, le prénom que l'on porte (censé nous représenter, est donné par quelqu'un d'autre).
 		- Exemple de rapport à l'autre, donné par Olivier Challe: quelqu'un qui est dérangé par le bruit du voisin de chambre, il va s'acheter un casque pour écouter de la musique classique.
@@ -70,7 +78,7 @@ Olivier Challe est responsable clinique au Wops de nuit, un centre thérapeutiqu
 >[!question] Pré-questions
 >- Quelle définition de santé mentale est prévalente de nos jours?
 >- Que transmettent ces définitions de leur éthique de soin sous-jacente et de visions sous-jacentes de l'humain?
->- Quel est le fondement de la position psychanalytique Lacanienne?
+>- Quel est le fondement de la position psychanalytique lacanienne?
 >- En quoi se distingue-t-elle dans son éthique de soin?
 >
 
@@ -125,7 +133,7 @@ La folie clinique apparaît lorsque cette construction ne parvient plus à soute
 >	- Fonctionnaliste, utilitariste, manageriale, déficitaire, déviation de la norme, déraison
 >- **Que transmettent ces définitions de leur éthique de soin sous-jacente et de visions sous-jacentes de l'humain?**
 >	- La personne est à ramener à la norme, la personne est vue comme ayant un problème si elle ne contribue au travail et à la communauté, on ignore le cadre culturel et normatif, on pathologise des déviations qui sont peut-être compréhensibles dans un système défaillant
->- **Quel est le fondement de la position psychanalytique Lacanienne?**
+>- **Quel est le fondement de la position psychanalytique lacanienne?**
 >	- Tout le monde est "fou": comme nous n'avons pas d'accès au reel qu'à travers le langage (signifiant-signifié). La machinerie de production de sens peut-être dite comme un delire en soi, donc le delire est vue comme un mécanisme de base d'accès au reel. Donc, il n'y a pas de distinction conceptuelle entre fou et normal. La normalité est vue d'office comme une construction.
 >- **En quoi se distingue-t-elle dans son éthique de soin?**
 >	- On va accepter la pluralité de manières possibles d'habiter le monde, chercher à traiter sa propre posture de thérapeute, sa position de savoir, apprendre du patient, adopter un abord non-déficitaire, cerner davantage la condition humaine partagée, etc.
@@ -229,7 +237,7 @@ Deux autres ouvrages intéressants:
 	- Qui possède le droit de definir la folie? 
 	- Institution n'est pas seulement outil de soin, mais aussi de pouvoir (enjeux sociaux, juridiques, narratifs)
 	- Folie ne peut pas être pensée en dehors des cadres qui l'enferment, la décrivent et la traitent.
-- Marc Christin:
+- Marc Christin (1861–1916) est un écrivain et chroniqueur suisse qui a été interné à l'asile de Cery près de Lausanne à partir de 1902. Il est principalement connu pour avoir écrit le livre Les Évincés (1905), un récit pionnier qui décrit de l'intérieur le quotidien et les rouages de la psychiatrie
 	- Suisse francophone
 	- Écrit de grande portée également
 		- Immersif aussi, mais sous la contrainte
@@ -251,7 +259,7 @@ Deux autres ouvrages intéressants:
 			- Pdt écriture l’auteur est interné et doit sans cesse faire la preuve de sa santé mentale et de sa guérison
 		- ➔ Témoigne d’un nouage entre
 			- L’expérience de l’enfermement sous contrainte
-			- Et la tentative de s’en extraire par l’écriture d’un texte qui doit prouver l’autonomie de son auteur
+			- Et la tentative de **s’en extraire par l’écriture d’un texte qui doit prouver l’autonomie** de son auteur
 	- **« Le règne des psychiatres »**
 		- Dès sa libération il s’attèle à la rédaction de ce 2e texte
 		- Jamais achevé
@@ -265,12 +273,12 @@ Deux autres ouvrages intéressants:
 Séance consacrée au visionnage du premier des documentaires: 
 **État limite** ([ARTE](https://www.arte.tv/fr/videos/111769-000-A/etat-limite)). Nicolas Peduzzi, 2023.  
 - On suit un psychiatre, le Dr Jamal Abdel-Kader, exerçant comme psychiatre de liaison dans un hôpital public de la région parisienne.
-- Approche immersive, documentaire observe observe le quotidien du psychiatre sur plusieurs mois.
+- Approche immersive, documentaire observe le quotidien du psychiatre sur plusieurs mois.
 - Lieu sans service de psychiatrie à proprement parler.
 - Plusieurs axes:
 	- **place de la psychiatrie à l'hôpital général** (frontière de problématiques psychique, sociale, physique)
 	- contraintes du système hospitalier d'aujourd'hui, manque de moyens: À travers cette immersion, le film pose une question centrale : comment soigner dans une institution elle-même “en souffrance” ?
-	- la **relation clinique**: l'importance de la parole, de l'écoute, et de la présence du médecine
+	- la **relation clinique**: l'importance de la parole, de l'écoute, et de la présence du médecin
 	- **dimension politique** (difficultés sociales, précarités, isolement, vulnerabilités... qui dépassent le cadre médical)
 - Eléments à repérer:
 	- La place de la parole dans la rencontre clinique: quel espace de dialogue le psychiatre construit-t-il?
@@ -288,21 +296,21 @@ Discussion avec Simon Flémal.
 Résumé IA.
 ### 1. Position de Simon Flémal
 
-Flémal adopte une position très marquée par la psychanalyse et par la clinique institutionnelle. Pour lui, le travail en institution ne consiste pas d’abord à “faire du bien”, ni à appliquer des normes générales, mais à comprendre comment chaque patient peut se servir de l’institution, du soignant ou du cadre pour traiter quelque chose de ce qui lui arrive.
+Pour Flémal, le travail en institution ne consiste pas d’abord à “faire du bien”, ni à appliquer des normes générales, mais à comprendre comment chaque patient peut se servir de l’institution, du soignant ou du cadre pour traiter quelque chose de ce qui lui arrive.
 
-Il insiste sur l’idée qu’en psychiatrie, **il n’y a pas de norme stable permettant de s’orienter simplement**. La folie ne se réduit pas à une pathologie qu’il faudrait supprimer. **Le symptôme, même lorsqu’il fait souffrir le patient ou l’équipe, a souvent une fonction**. C’est pourquoi il faut être prudent face à l’idée de guérison ou de suppression du symptôme : si un patient cesse brutalement d’entendre des voix dont il se plaignait beaucoup, cela peut être inquiétant, parce que ces voix pouvaient aussi avoir une fonction de stabilisation.
+Il insiste sur l’idée qu’en psychiatrie, **il n’y a pas de norme stable permettant de s’orienter simplement**. La folie ne se réduit pas à une pathologie qu’il faudrait supprimer. **Le symptôme, même lorsqu’il fait souffrir le patient ou l’équipe, a souvent une fonction**. C’est pourquoi il faut être prudent face à l’idée de guérison ou de suppression du symptôme : si un patient cesse brutalement d’entendre des voix dont il se plaignait beaucoup, cela peut être inquiétant, parce que ces voix pouvaient aussi avoir une **fonction de stabilisation**.
 
 Flémal souligne aussi la nécessité, pour les soignants, de se rendre responsables de leur propre “point de folie”, de leur propre “point d’horreur” ou “point d’insupportable”. Selon lui, accueillir l’insupportable du patient suppose de ne pas nier ce qui, en soi-même, est également insupportable, haineux, mortifère ou asocial. La psychanalyse ne vise donc pas simplement la bienveillance ou l’empathie : elle invite plutôt à une responsabilité subjective.
 
 Sur le documentaire, Flémal dit être resté en partie “sur sa faim” concernant l’usage que les patients font de l’institution. Il aurait voulu voir davantage comment les patients s’appuient sur l’hôpital, comment ils y inventent quelque chose, comment une expérience institutionnelle peut éventuellement se prolonger à l’extérieur.
 
-Enfin, face aux rechutes ou aux retours en institution, Flémal refuse de les lire automatiquement comme des échecs. Un retour peut signifier que le patient a identifié l’institution comme un lieu de recours, un point d’appui face à ce qui est plus fort que lui.
+Enfin, face aux rechutes ou aux retours en institution, Flémal refuse de les lire automatiquement comme des échecs. Un retour peut signifier que le patient a i**dentifié l’institution comme un lieu de recours**, un point d’appui face à ce qui est plus fort que lui.
 
 ## 2. Position de Glineur
 
-Glineur développe une réflexion plus directement centrée sur l’institution, ses limites concrètes, ses plaintes et ses conditions socio-politiques. Il insiste sur le fait que les **difficultés cliniques sont indissociables du contexte institutionnel** : manque de moyens, paupérisation de l’hôpital public, disparition de certains gestes d’accueil, surcharge des équipes, délais d’attente, précarité des patients.
+Glineur développe une réflexion plus directement centrée sur l’institution, ses limites concrètes, ses plaintes et ses conditions socio-politiques. Elle insiste sur le fait que les **difficultés cliniques sont indissociables du contexte institutionnel** : manque de moyens, paupérisation de l’hôpital public, disparition de certains gestes d’accueil, surcharge des équipes, délais d’attente, précarité des patients.
 
-Mais elle refuse une opposition trop simple entre “le système” et “nous”. Selon elle, **la plainte des soignants** existe dans toute institution et doit être interrogée dans sa fonction. Elle peut être une manière de parler de l’impossible du travail : la répétition, les rechutes, les passages à l’acte, l’auto-destruction des patients, l’impression de ne jamais en finir. Il ne s’agit pas d’invalider les plaintes, mais de se demander ce qu’elles produisent, ce qu’elles empêchent, et comment elles orientent ou désorientent le travail clinique.
+Mais elle refuse une opposition trop simple entre “le système” et “nous”. Selon elle, **la plainte des soignants** existe dans toute institution et doit être interrogée dans sa fonction. Elle **peut être une manière de parler de l’impossible du travail** **: la répétition, les rechutes, les passages à l’acte, l’auto-destruction des patients, l’impression de ne jamais en finir.** Il ne s’agit pas d’invalider les plaintes, mais de se demander ce qu’elles produisent, ce qu’elles empêchent, et comment elles orientent ou désorientent le travail clinique.
 
 Glineur met fortement l’accent sur **la modestie du psychiatre** dans le documentaire. Celui-ci ne se présente pas comme celui qui va sauver ou réparer les patients. Il tente plutôt de ne pas faire “mauvaise rencontre” pour eux : ne pas ajouter une violence institutionnelle à la violence déjà vécue, ne pas aggraver leur situation, maintenir la possibilité d’une interlocution.
 
@@ -344,7 +352,7 @@ Une première étudiante demande si le psychiatre du documentaire n’est pas un
 
 Une deuxième étudiante, à partir de son expérience pendant le Covid, évoque la nécessité de **faire confiance au patient**. Elle explique que les équipes peuvent se sentir maltraitées par certains patients, alors qu’elles peuvent elles-mêmes devenir maltraitantes. Pour elle, la confiance consiste à se rappeler que le patient est le premier à souffrir de son symptôme.
 - Flémal répond qu’il faut faire attention à ne pas transformer la confiance en posture générale. Il faut accueillir le discours du patient, mais toujours avec une lecture clinique. Le psychiatre fait des paris, mais ces paris peuvent être risqués.
-- Glineur ajoute qu’il préfère parler de lecture du transfert. Il s’agit de repérer les points d’appui, les points de faille, les points de glissade, et surtout de reconnaître que le patient possède un savoir sur sa propre condition.
+- Glineur ajoute qu’elle préfère parler de lecture du transfert. Il s’agit de repérer les points d’appui, les points de faille, les points de glissade, et surtout de reconnaître que le patient possède un savoir sur sa propre condition.
 
 Une troisième question porte sur la **prévention des rechutes**, notamment les addictions et les tentatives de suicide après la sortie. Flémal répond qu’il n’a pas de dispositif préventif spécifique. Son travail consiste plutôt à construire avec l’équipe une lecture du fonctionnement subjectif du patient, à se rendre présent, à penser les conditions de sortie, et à considérer le retour éventuel comme une possibilité de prolonger le travail plutôt que comme un échec.
 
@@ -361,7 +369,7 @@ Résumé du documentaire:
 	- Sans voix off explicative
 - Le documentaire raconte:
 	- Vie quotidienne: ateliers, repas, diverses interactions
-	- Réunions d'équipe, supervision d'intervenant
+	- Réunions d'équipe, supervisions d'intervenants
 	- Quelques enfants en particulier
 	- Accès à la clinique en jeu, au présent
 - Publication en parallèle à la sortie du documentaire: *Le Courtil, l'invention au quotidien*
@@ -377,7 +385,7 @@ Résumé du documentaire:
 	- Organisation en plusieurs unités de vie
 		- Le film prend lieu dans 1 unité : « capi »
 
-Notes du visionnage:
+Notes perso du visionnage:
 - Ça parle de "jouissance, point d’arrêt, perte de soi, ca signe la psychose”
 	- impression d'entendre un langage chelou, inventé.
 - Cool de voir la supervision, les réunions d’équipe.
@@ -386,8 +394,8 @@ Notes du visionnage:
 - Sa métaphore du météorite et du langage. On dirait un conte de fées. Quelles bases?
 - Mes questions d’exploration:
 	- quelle vérité dans le fait que langage cause certaines choses? relation langage psychopathologie
-- Vérité des deux profils, névroses (manque qqch) et psychotiques? 
-- un côté humain que j'aime bien
+	- Vérité des deux profils, névroses (manque qqch) et psychotiques? 
+- un côté humain, d'accueil, que j'aime bien
 
 📅 **30 Mars 2026** - Cours 7 - Absent.
 
@@ -426,7 +434,7 @@ Notes thanks to Chat.
 - **Le symptôme est le point de départ du travail.** Un cri, une insulte, une répétition, un comptage, un geste étrange ou un comportement agressif ne sont pas seulement des problèmes à supprimer. Ils peuvent être des solutions trouvées par l’enfant pour traiter quelque chose de trop envahissant.
 - **Ce qui dérange peut avoir une fonction.** Un comportement insupportable pour l’adulte peut être, pour l’enfant, une manière de faire bord, de mettre une limite ou d’éviter un passage à l’acte plus grave.
 - **L’intervention vise souvent l’objet en trop plutôt que l’enfant.** Par exemple, dire “je ne peux pas manger à côté d’un cri pareil” permet de viser le cri comme élément envahissant, sans attaquer directement l’enfant comme sujet.
-- **Le travail part de ce que l’enfant propose.** L’exemple des “kilomètres de larmes” montre comment les intervenants peuvent partir d’une formule de l’enfant pour construire un travail autour du comptage, de la mesure, du dessin ou de l’écriture. Ces médiations peuvent servir de bord à ce qui déborde. (Enfant qui pleurait sans cesse au moment de se coucher,  demande « tu crois que j’ai pleuré combien de km de larmes ? » « je pense entre 2 et 3 » « ah non beaucoup plus, car il faut aussi compter tous les soirs où j’ai pleuré ». À partir de là ils ont pu travailler le comptage, à partir de son symptôme ➔ Écriture (comptage, dessin...) qui opere comme bord).
+- **Le travail part de ce que l’enfant propose.** L’exemple des “kilomètres de larmes” montre comment les intervenants peuvent partir d’une formule de l’enfant pour construire un travail autour du comptage, de la mesure, du dessin ou de l’écriture. Ces médiations peuvent servir de bord à ce qui déborde. (Enfant qui pleurait sans cesse au moment de se coucher,  demande « tu crois que j’ai pleuré combien de km de larmes ? » « je pense entre 2 et 3 » « ah non beaucoup plus, car il faut aussi compter tous les soirs où j’ai pleuré ». À partir de là ils ont pu travailler le comptage, à partir de son symptôme ➔ Écriture (comptage, dessin...) qui opère comme bord).
 
 ### 6. Les ateliers et le semblant sont des médiations cliniques
 
@@ -606,20 +614,20 @@ Intervenante: **Céline Danloy**, directrice de l'IHP L'Ancrage
 	- Pas un refus des contraintes, mais chercher la brèche, l'ouverture dans le cadre.
 	- Les signifiants maitres en IHP:
 		- Autonomie par attitudes sociales, occupatrices et relationnelles. ("réinsertion sociale", et "restauration du lien social"). Le public de l'Ancrage est principalement psychotique, qui se mettent à l'abri de l'Autre. Ils sont peut-être **trop** autonomes. Le but est de créer un peu l'Autre. Zenoni. Miller. Importance de l'éthique.
-		- Précarité: touche la relation du sujet au langage. Primordial de s'interesser aux conditions qui précédent la désinsertion sociale, pourquoi **l'inscription symbolique est compliquée**. On ne peut pas réinsérer au pied de biche.
+		- Précarité: touche la relation du sujet au langage. Primordial de s'interesser aux conditions qui précédent la désinsertion sociale, pourquoi **l'inscription symbolique est compliquée**. *On ne peut pas réinsérer au pied de biche.*
 		- Fonction 5: l'habitat accompagné hors du cadre hospitalier pour personnes souffrant de troubles psychiques (prof majoritairement issus du champ social). Absence de formation clinique appelle la responsabilité de l'institution en termes de formation clinique.
 			- Le langage institutionnel peut déterminer la politique de l'institution:
 				- "Il est violent" -> "il passe à l'acte". 
 				- "Il est manipulateur" -> "échappe a la volonté de l'Autre".
 				- Pas seulement de l'ordre du style, mais politique de soin.
-	- Triptique: formation, reunions, supervision.
+	- Triptique: formation, réunions, supervision.
 
-Intervenante 2 - Catherine - Ateliers du 94 (La Louvière), qui accueille des personnes présentant un handicap mental.
+Intervenante 2 - Kathy X Stevens - Ateliers du 94 (La Louvière), qui accueille des personnes présentant un handicap mental.
 - Coordinatrice clinique
 - Faire en sorte que chacun dans l'équipe soit "clinicien", puisse être à l'écoute
 
-- Commencer par ne pas comprendre trop vite (Seminaire 3 de Lacan). Deconstruction de ce qu'on sait deja.
-- Aussi besoin de diagnostic en psychanalyse, mais pas le meme but que dans le monde en genereal ou la santé: en psycha, porte d'entrée.
+- Commencer par ne pas comprendre trop vite (Séminaire 3 de Lacan). Deconstruction de ce qu'on sait deja.
+- Aussi besoin de diagnostic en psychanalyse, mais pas le meme but que dans le monde en general ou la santé: en psycha, porte d'entrée.
 
 Cecile Glineur:
 - Dimension du désir: "on choisit le discours qui nous commande, ca relève d'un choix"
@@ -636,23 +644,19 @@ Questionnaire Vrai ou Faux.
 Pas de points négatifs.
 
 - Distinction psychanalyse pure et psychanalyse appliquee en institution
-- OMS vs assertion Lacanienne tout le monde est fou: 
+- OMS vs assertion lacanienne tout le monde est fou: 
 	- deux des lectures sur la slide font partie du cours, a savoir 2 chapitres Zenoni, et aussi le tres court article de Guy Poblome (une pratique éclairée par la psychanalyse)
 - Folie en occident: avoir lu les 3 petite chapitres d'Emmanuel Venet (PDF sur le site)
 - Littérature asilaire:
 	- Pour les auteurs/autrices: Avoir une notion de ce dont il est question pour l'autrice auteur, quelle a été la démarche, et quelques grands constats que l'écrit a permis d'extraire (ces éléments se retrouvent dans les powerpoint de ces cours là + enregistrements)
 - Dimension documentaires:
 	- 1. vrai ou faux relativement au contenu du documentaire
-	- 2. discussions avec les intervenants, points saillants de chaque modele (sachant que chaque docu réalité institutionnelle très différente)
+	- 2. discussions avec les intervenants, points saillants de chaque modèle (sachant que chaque docu réalité institutionnelle très différente)
 - Interventions aujourd'hui:
 	- Celine Danloy: texte sur le site
 	- Cathy: écouter enregistrement, ensemble de points.
 
+Posture, éthique, maniere de considérer le symptôme, qu'est-ce que travailler en institution... c'est un positionnement.
 
-Posture, éthique, maniere de considérer le symptôme, qu'est-ce que travailler en institution... c'est un positionnement
-
-Questions
-
-Niveau de détail: ne cherchera pas l'ambiguité, plutot la saisie d'une posture dans le travail.
-
-Mettent une
+Questions:
+- Niveau de détail: ne cherchera pas l'ambiguité, plutôt la saisie d'une posture dans le travail.

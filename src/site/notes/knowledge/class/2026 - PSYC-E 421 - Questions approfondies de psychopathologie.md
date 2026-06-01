@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-05-25T16:24:47.492+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-05-25T17:55:26.481+02:00"}
 ---
 
 **Structure**:
@@ -245,33 +245,36 @@ voir notes d'Elsa <3
 > - Un support écrit sera donné, "pas besoin de prendre note"
 > - Évaluation: QCM
 
+[[#I. Intro 3ème vague TCC / thérapies contextuelles]]
+
+
 📅 **25 Mars 2026** - Ilios Kotsou (Cours 1)
 
 On part du constat que le comportement ayant lieu dans le cadre de la thérapie = comportement dans la vie réelle.
-Par exemple, si un comportement de séduction a lieu en thérapie, il est probablement lié à un comportement malaisant en dehors de la thérapie. Peut-on exprimer ses sentiments en thérapie? Oui, a condition que ça serve la thérapie.
+Par exemple, si un comportement de séduction a lieu en thérapie, il est probablement lié à un comportement malaisant en dehors de la thérapie. Peut-on exprimer ses sentiments en thérapie, en tant que thérapeute? Oui, a condition que ça serve la thérapie.
 
-Réf. rasoir d'Occam. Parmi plusieurs explications possibles, choisir la plus simple. [[knowledge/wiki/Acceptance and Commitment Therapy (ACT)\|Acceptance and Commitment Therapy (ACT)]]: modèle "simple et élégant"de la psychopathologie. Vs. modèles plus complexes utilisant un langage que ni le thérapeute ni le patient maitrise (Cf. Lacan). ACT: permet aussi l'intégration d'autres outils parce que le modèle s'intéresse aux processus mentaux.
+Réf. *rasoir d'Occam*: Parmi plusieurs explications possibles, choisir la plus simple. [[knowledge/wiki/Acceptance and Commitment Therapy (ACT)\|Acceptance and Commitment Therapy (ACT)]]: modèle "simple et élégant"de la psychopathologie. Vs. modèles plus complexes utilisant un langage que ni le thérapeute ni le patient maitrise (Cf. Lacan). ACT: permet aussi l'intégration d'autres outils parce que le modèle s'intéresse aux processus mentaux.
 
-ex Victor Hugo Les misérables. Décision du personnage de fuir ce qui est inconfortable vs aller vers ce qui est important et fait que la vie vaut la peine d'être vécue. Dilemme qui illustre l'aspect central de l'ACT.
-ex compte de Monte Cristo. Même question. Haine et jalousie qui le dirige.
+ex *Victor Hugo - Les misérables*. Décision du personnage de fuir ce qui est inconfortable vs. aller vers ce qui est important et fait que la vie vaut la peine d'être vécue. Dilemme qui illustre l'aspect central de l'ACT.
+ex *Compte de Monte Cristo*. Même question. Haine et jalousie qui le dirige.
 
-Évidemment, contexte (social, neurobiologique, etc) est important aussi, ce n'est pas seulement une question de volonté personnelle. Parfois les conditions de vie sont difficiles et le contexte est averse a ce travail (-> humilité du thérapeute).  
+Évidemment, contexte (social, neurobiologique, etc) est important aussi, ce n'est pas seulement une question de volonté personnelle. Parfois les conditions de vie sont difficiles et le contexte est averse à ce travail (-> nécessité d'humilité du thérapeute).  
 
-## Intro: 3ème vague TCC / thérapies contextuelles
+## I. Intro: 3ème vague TCC / thérapies contextuelles
 
 Les 3 vagues.
 - Vague 1: la pensée n'est pas directement cible. Mais apport essentiel de la question de l'**apprentissage**.
-- Vague 2: revolution cognitive de Beck. Idée de base que cognitions peuvent etre distordues, amènent à souffrir, et on essaye de corriger ça avec le patient.
-	- Fonctionne mais etudes montrer qu'enlever l'aspect cognitif ne reduit pas les resultats. **Activation comportementale** semble fonctionner tout aussi bien. Fonctionne, mais quels ingredients. Partie cognitive non-nécessaire? Comment et pourquoi elles fonctionnent? Besoin de démantèlement complet.
+- Vague 2: révolution cognitive de Beck. Idée de base que cognitions peuvent être distordues, amènent à souffrir, et on essaye de les "corriger" avec le patient.
+	- Fonctionne, mais études montrent qu'enlever l'aspect cognitif ne réduit pas les résultats. **Láctivation comportementale** semble fonctionner tout aussi bien. Fonctionne, mais quels ingrédients? Partie cognitive est-elle nécessaire? Comment et pourquoi elles fonctionnent? Besoin de démantèlement complet.
 - Vague 3: Vont réintégrer la question de l'émotion de manière centrale (chez les praticiens). Et surtout, on ne tente pas de changer les cognitions, mais la relation aux cognitions, aux états intérieurs.
-## Intro: ACT
+## Intro: ACT, fondements
 
-Modèle transdiagnostique.
-Avantage de connaître les "ingredients actifs" du modèle: du point de vue pragmatique, les processus peuvent être mobilisés de manière créative, on doit pas se suffire de protocoles déjà créés, mais on peut imaginer de nouveaux protocoles sur base des ingrédients connus. Ex psy interculturelle: on peut se demander: dans cette culture, comment ce processus est mobilisé? Et partir de là pour développer l'approche de manière créative.
+L'ACT est un modèle transdiagnostique.
+Avantage de connaître les "ingrédients actifs" du modèle: du point de vue pragmatique, les processus peuvent être mobilisés de manière créative, on doit pas se suffire de protocoles déjà créés, mais on peut imaginer de nouveaux protocoles sur base des ingrédients connus. Exemple de la psy interculturelle: on peut se demander: dans cette culture, comment ce processus est mobilisé? Et partir de là pour développer l'approche de manière créative.
 
-- Modèle de "la maladie" de la psychiatrie
-	- Problème de la **norme**: l'idée que être humains doivent ressembler à une norme, et que les déviations sont à corriger. Thérapies contextuelles, c'est l'inverse: souffrance = norme (lien [[Boudhisme\|Boudhisme]]?).
-	- Catégories: peuvent rassurer, redonnent du contrôle, mais renferment.
+- Modèle de "la maladie" issu de la psychiatrie:
+	- Problème de la **norme**: l'idée que être humains doivent ressembler à une norme, et que les déviations sont à corriger. Thérapies contextuelles, c'est l'inverse: souffrance = norme (cf [[Boudhisme\|Boudhisme]]?).
+	- Catégories: peuvent rassurer, redonnent du contrôle... mais renferment.
 
  [Dukhkha](https://en.wikipedia.org/wiki/Duḥkha) "Le monde est insatisfaction". Que Steven Hayes et créateurs de l'ACT reprennent conceptuellement.
 
@@ -282,18 +285,18 @@ Dans une approche contextuelle, le symptôme est jamais un problème en soi en d
 - Idée que patient est l'expert de soi-même (nous par questions permettons co-construction).
 - ! Dans ces thérapies contextuelles, ce qui vaut pour la patient vaut aussi pour la thérapeute. Nous traversons mêmes processus que patients (équivalence). Le thérapeute est cependant garant du cadre, qui offre la sécurité.
 
-L'importance est mise sur les **processus de changement**. Approche transdiagnostique: mêmes processus expliquent une part de variance importante parmi différentes categories diagnostiques (appuyé par la recherche).
+L'importance est mise sur les **processus de changement**. Approche transdiagnostique: mêmes processus expliquent une part de variance importante parmi différentes catégories diagnostiques (appuyé par la recherche).
 
-Cultures: on peut imaginer que les mêmes processus sont engagés, malgré de grandes différences de...
+Cultures: on peut imaginer que les mêmes processus sont engagés, malgré de grandes différences d'expression...
 
 **Répertoires flexibles vs symptômes**
  
 Dans certaines formes de thérapies, c'est la disparition du symptôme qui est le but de la thérapie. Ici, le but premier est d'avoir un répertoire flexible. Lorsqu'on va mal, le répertoire comportemental se réduit.
-Par ex., faire disparaitre l'anxiété quand devant quelqu'un, vs augmenter le répertoire comportemental quand la personne est anxieuxe devant d'autres. "Puis-je faire ce qu'il faudrait pour que la vie soit bonne" vs. puis-je arrêter de sentir la peur. On peut continuer à vivre avec la peur, si elle n'empêche pas de vivre bien (parfois meme, on peut avoir quelque chose à gagner avec cette peur, plus de sensibilité, etc.).
+Par ex., faire disparaître l'anxiété quand devant quelqu'un, vs augmenter le répertoire comportemental quand la personne est anxieuxe devant d'autres. "Puis-je faire ce qu'il faudrait pour que la vie soit bonne" vs. puis-je arrêter de sentir la peur. On peut continuer à vivre avec la peur, si elle n'empêche pas de vivre bien (parfois même, on peut avoir quelque chose à gagner avec cette peur, plus de sensibilité, etc.).
 Peut être "reposant", pas besoin de se battre contre, tout en travaillant la relation avec les pensées (être plus ouvert, plus ...). 
 
 Blague: Patient qui après une psychanalyse: "je ne vais pas mieux, mais maintenant je sais pourquoi" vs. après ACT: "je vais pas mieux, mais je m'en fous".
-Mais souvent, la causalité est dans l'autre sens, la comprehension vient souvent de l'amélioration de la situation. On ne nie pas que causé cause présent, mais idée que pas nécessaire ni suffisant d'aller dans le passé de memoire. C'set la partie du passé **encore dans le présent** qui intéresse.
+Mais souvent, la causalité est dans l'autre sens, la comprehension vient souvent de l'amélioration de la situation. On ne nie pas que passé cause présent, mais idée que pas nécessaire ni suffisant d'aller dans le passé de mémoire. C'est la partie du passé **encore dans le présent** qui intéresse.
 
 > **La souffrance**
 > - Difficultés psychologiques et évitements
@@ -303,8 +306,6 @@ Mais souvent, la causalité est dans l'autre sens, la comprehension vient souven
 > 
 > Hayes, S. C., & Hofmann, S. G. (2021). “Third‐wave” cognitive and behavioral therapies and the emergence of a process‐based approach to intervention in psychiatry. _World psychiatry_, _20_(3), 363-375.
 
---
-
 Question du libre arbitre. Ref [Determinism](https://en.wikipedia.org/wiki/Determined:_A_Science_of_Life_Without_Free_Will) by Robert Sapolsky. Une croyance dans un certain degré de libre arbitre est peut-être utile pour croire au changement des patients?
 
 En 3ème vague, la question n'est pas "Est-ce que la personne se sent bien?", la question est "Est-ce que la personne vit une vie qui a du sens pour elle?"
@@ -313,7 +314,7 @@ En 3ème vague, la question n'est pas "Est-ce que la personne se sent bien?", la
 
 Exemple de situation difficile: la mort d'un proche. Quand est-ce un problème? Question du fonctionnement "normal" {mais réf. à norme?}. **Motivation première est souvent de ne pas ressentir la douleur** (éviter). Suivi de mise en place de stratégies pour ne pas ressentir.
 
-Exemple: automutilations. Deviation d'attention et anesthésie émotionnelle. L'alcool: permet reduction d'anxiété à court terme, renforce le comportement, avec effets délétères au long terme, accentuant les comportements d'évitement... cercle vicieux). Et de plus, on s'empêche de vivre, de vivre une bonne vie.
+Exemple: automutilations. Deviation d'attention et anesthésie émotionnelle. L'alcool: permet réduction d'anxiété à court terme, renforce le comportement, avec effets délétères au long terme, accentuant les comportements d'évitement... cercle vicieux. Et de plus, on s'empêche de vivre, de vivre une bonne vie.
 
 **Évitement expérientiel** ([[knowledge/wiki/Inflexahex (ACT)\|Inflexahex (ACT)]] : [[Experiential Avoidance (ACT)\|Experiential Avoidance (ACT)]]): au coeur de cette psychopathologie transdiagnostique.
 
@@ -321,14 +322,14 @@ Du déni total ("je n'ai pas d'émotions") à être complètement dépassé par 
 
 Exemples: d'Albert SDF = anxiété, évitement-acceptation crise de panique IRM, ...
 
-Comment cultive-t-on de l'acception? Ce n'est pas résignation. On parle d'événements internes, non externes. Acceptation est une attitude active, se diriger vers.
+Comment cultive-t-on de l'acception? ==**Ce n'est pas de la résignation**. On parle d'**événements internes**==, non externes. Acceptation est une attitude active, se diriger vers.
 
 Exemples (métaphores beaucoup utilisées en thérapies 3ème vague)
-- Victime de maltraitance, quand on parle qu'elle "accepte trop" : mais ça peut être plutôt un  évitement de peur/deuil d'une séparation.
-- Personne violente: victimes de violence -> douleur -> comportement de violence (baisse de tension) -> honte et culpabilité 
+- Victime de maltraitance, on pourrait dire qu'elle "accepte trop" : mais ça peut être plutôt un  évitement de peur/deuil d'une séparation.
+- Personne violente: victimes de violence -> douleur -> comportement de violence (baisse de tension) -> honte et culpabilité. 
 - Exercice de pleine conscience: accueillir ce qui fait mal peut soulager, pourquoi? On arrête la lutte.
 - Tasses de sel et lac: devient vaste comme le lac.
-- Eriksson: inconscient comme reservoir de ressources, fond positif! (vs. psychanalyse de l'époque). Parfois avec une intention positive on bloque.
+- Eriksson: inconscient comme réservoir de ressources, fond positif! (vs. psychanalyse de l'époque). Parfois avec une intention positive on bloque.
 
 📅 **1 Avril 2026** - Ilios Kotsou (Cours 2)
 
@@ -348,18 +349,32 @@ L'antidote à la réification est la relation, considérer chaque être comme un
 
 Exemple : développement personnel (écartant les pseudosciences, le projet d'utiliser les connaissances de la psycho pour s'épanouir). Mais idée que nous sommes des êtres coupés des autres, à qui on enjoint de devenir la meilleure version de soi-même. Alors que, ce qui explique la réussite de l'individu, sa capacité à faire face à ses difficultés, c'est davantage le contexte . Ne dépend pas de nous dans quelle famille on naît, quel pays, quel environnement, niveau culturel des parents, biologie, la pensée qui apparait en se réveillant... 
 
-Risques des idées du dev personnel ("c'est ton choix d'être déprimé", se complait dans le mail, jouissance dans la mal, etc.): culpabilisation des personnes. Mais dans la grande majorité des cas, ce n'est pas un choix d'être déprimé/suicidaire. La plupart des personnes choisiraient d'aller mieux.
+Risques des idées du développement personnel ("c'est ton choix d'être déprimé", idée de la personne qui sse complait dans le mail, qui obtient de la jouissance dans la mal, etc.): culpabilisation des personnes. Mais dans la grande majorité des cas, ce n'est pas un choix d'être déprimé/suicidaire. La plupart des personnes choisiraient d'aller mieux.
 
-Georges Bonanno: résilience. Il dit qu'on a un très mauvais regard sur la résilience, mais, en tant que thérapeutes on voit ceux qui vont tjrs mal. Mais la majorité des personnes s'en remet avec le temps.
+Georges Bonanno: résilience. Il dit qu'on a un très mauvais regard sur la résilience, mais, en tant que thérapeutes on voit ceux qui vont toujours mal. Mais la majorité des personnes s'en remettent avec le temps.
 
-Une meilleure définition de **responsabilité**?
-- Habilité a apporter une réponse (sans être coupable de rien, en reconnaissant que j'en suis pour rien...). Trouver leviers, forces, qui feront qu'on puisse trouver une réponse à la solution. (cf recadrage en approche Palo Alto)
+Une meilleure définition de **responsabilité**:
+- Habilité à apporter une réponse (sans être coupable de rien, en reconnaissant que j'en suis pour rien...). Trouver les leviers, forces, qui feront qu'on puisse trouver une réponse à la solution. (cf recadrage en approche Palo Alto)
 
 Ce qui nous reste, qui dépend (un petit peu) de nous: nos comportements et nos intentions.
 
 Processus ACT: Diriger son attention autrement -> Flexibilité -> aller vers ce qui est important pour la personne.
 
-### L'évitement expérientiel
+## Processes of inflexibility
+
+Psychological inflexibility:
+1. Weak self-knowledge; dominating concept of the past and feared future (vs. [[knowledge/wiki/Present Moment (ACT)\|Present Moment (ACT)]])
+2. Experiential avoidance (vs. [[knowledge/wiki/Acceptance (ACT)\|Acceptance (ACT)]])
+3. Lack of values clarity; dominance of pliance, avoidant tracking, and problematic augmenting (vs. [[knowledge/wiki/Values (ACT)\|Values (ACT)]])
+4. Cognitive fusion (vs. [[knowledge/wiki/Cognitive Defusion (ACT)\|Cognitive Defusion (ACT)]])
+5. Persistent inaction, impulsivity, or avoidance (vs. [[knowledge/wiki/Committed Action (ACT)\|Committed Action (ACT)]])
+6. Attachment to the conceptualized self (vs. [[knowledge/wiki/Self-as-Context (ACT)\|Self-as-Context (ACT)]])
+
+Conceptualized in ACT as the [[knowledge/wiki/Inflexahex (ACT)\|Inflexahex (ACT)]]:
+![Pasted image 20260401134307.png](/img/user/Pasted%20image%2020260401134307.png)
+
+Steven Hayes: exercice jeu de rôle: prendre un patient, une problématique, et démarrer avec un des 6 concepts de l'ACT au hasard. 
+### 1. L'évitement expérientiel (vs. [[knowledge/wiki/Acceptance (ACT)\|Acceptance (ACT)]])
 
 Image des sables mouvants: on lutte, on s'enfonce.
 Vouloir se débarrasser de l'anxiété: peur de la peur, cree une boucle montante.
@@ -367,8 +382,6 @@ Comment travailler l'acceptation? Images, pleine conscience, dessiner, etc. Impo
 
 Aspirations: Les gens qui vont mal ne savent pas généralement ce qui est important pour eux.
 
-[[knowledge/wiki/Inflexahex (ACT)\|Inflexahex (ACT)]]:
-![Pasted image 20260401134307.png](/img/user/Pasted%20image%2020260401134307.png)
 
 On fait un exercice imagination enterrement et on parle de nos valeurs, la personne qu'on était et ce que les autres pensaient de nous (ce qu'on aimerait qu'ils disent de nous) (ressemble à ex 5.6 de [[knowledge/sources/Book - Sinclair - The Little ACT Workbook (2016)\|Book - Sinclair - The Little ACT Workbook (2016)]]).
 
@@ -386,7 +399,7 @@ Difference fondamentale entre théories: celles visant à changer le contenu des
 
 Kant, impératif catégorique: Fait toujours en sorte de considerer l'autre tout aussi comme une fin, et non comme un moyen (ne le réifie pas).
 
-**Valeurs** [[knowledge/wiki/Values (ACT)\|Values (ACT)]]
+### 2. Manque de (clarté sur les) valeurs (vs. [[knowledge/wiki/Values (ACT)\|Values (ACT)]])
 
 **S'éloigner de <---> Aller vers (aspirations)**
 
@@ -398,11 +411,12 @@ Différencier Valeurs vs Buts: valeurs = directions
 
 Une valeur ne s'atteint pas, c'est une **direction**. On peut être cohérent ou incoherent avec ses valeurs. La manière de marcher: émerveillé.
 
-**Moment-présent** [[knowledge/wiki/Present Moment (ACT)\|Present Moment (ACT)]]
+### 3. Faible connaissance de soi, pensées dominées par passé/futur (vs. [[knowledge/wiki/Present Moment (ACT)\|Present Moment (ACT)]])
 
 Venir au corps, moins la tête. Les sens.
+Voir attention ci-dessous, également.
 
-**Fusion cognitive** [[knowledge/wiki/Cognitive Fusion (ACT)\|Cognitive Fusion (ACT)]]
+### 4. Fusion cognitive [[knowledge/wiki/Cognitive Defusion (ACT)\|Cognitive Defusion (ACT)]]
 
 Qu'est-ce qu'une pensée?
 	"Parole dans la tête", contenu privé, automatique.
@@ -413,10 +427,10 @@ Métaphore du tigre: danger, survie. Permet de communiquer. Propriétés de la c
 
 Risque: être prisonnier d'un concept.
 
-Psychologie positive **naïve**: Les pensées ont un effet sur la vie. (Lois de l'attraction, on attire ce que l'on pense). Prône le contrôle des pensées alors qu'on ne les contrôle pas, ou pas pleinement et pas tout le temps. Idée des "60.000 pensées par jour", et la plupart negatives.
-Mais, recherche: 6000 pensées env., et la plupart sont positives contrairement à l'idée reçue (biais de négativité, les negatives prennent le dessus, fonction évolutive). 
+Psychologie positive **naïve**: Les pensées ont un effet sur la vie. (Lois de l'attraction, on attire ce que l'on pense). Prône le contrôle des pensées alors qu'on ne les contrôle pas, ou pas pleinement et pas tout le temps. Idée des "60.000 pensées par jour", et la plupart négatives.
+Mais, recherche: 6000 pensées env., et la plupart sont positives contrairement à l'idée reçue (biais de négativité, les négatives prennent le dessus, fonction évolutive). 
 
-- Approche fonctionnelle: dépend de la fonction, memes pensées "positives" peuvent être au service de l'évitement ou d'aller vers ce qui est important pour la personne.
+- Approche fonctionnelle: dépend de la fonction, mêmes pensées "positives" peuvent être au service de l'évitement ou d'aller vers ce qui est important pour la personne.
 
 📅 **8 Avril 2026** - Ilios Kotsou (Cours 3)
 
@@ -424,16 +438,15 @@ Mais, recherche: 6000 pensées env., et la plupart sont positives contrairement 
 
 [[William James\|William James]] - Capacité à changer l'attention =  ressource par excellence = détermine l'action
 
-L'attention est importante car porte d'entree aux contenus de la conscience
-Toute thérapie travaille sur une forme d'attention
-e.g. ramener l'attention au présent.
-Permet d'agir de manière plus adaptée au présent.
+L'attention est importante car porte d'entrée aux contenus de la conscience. Toute thérapie travaille sur une forme d'attention, e.g. ramener l'attention au présent. Permet d'agir de manière plus adaptée au présent.
 
 -> Rejoint l'idée de la flexibilité attentionnelle.
 
-Cf hypnose: on part de stimulus pour arriver a un autre état de conscience. Hypnose comme métaphore de ce qu'on fait avec les resistences et la relation thérapeutique. Renverse l'idee que resistance est dans le patient.
+Cf hypnose: on part de stimulus pour arriver à un autre état de conscience. Hypnose comme métaphore de ce qu'on fait avec les résistances et la relation thérapeutique. Renverse l'idée que résistance est dans le patient.
 
 Matrice: dimension verticale: sensoriel (5 sens) vs mental (ou externe vs interne, qui pour moi est plus clair pour pouvoir inclure comportements dans la partie du-dessus sensorielle)
+
+![Pasted image 20260525175317.png](/img/user/Pasted%20image%2020260525175317.png)
 
 **Retour à: pensées - fusion cognitive**
 
@@ -442,24 +455,24 @@ Quand on va mal, on a tendance à confondre chose et pensée, être obscurci par
 
 Défusion: capacité a se séparer de la pensée, la base étant de **voir** la pensée, voir que c'est une pensée.
 
-Singer, Ricard: état de compassion, antidote la détresse empathique ([[Empathy\|Empathy]]). "Si je ne fais que de l'empathie affective, ça devient ma souffrance". Compassion réoriente vers l'autre mais j'accord davantage d'attention a l'idée, que l'autre aille mieux, ma motivation pour cela (si on separe aspect cognitif, émotionnel motivationnel de l'empathie). Souhaiter de toutes ses forces qu'une personne soit sauvee (meme si on n'y peu rien), versus uniquement rester dans le ressenti affective (empathie cognitive).
+Singer, Ricard: état de compassion, antidote la détresse empathique ([[Empathy\|Empathy]]). "Si je ne fais que de l'empathie affective, ça devient ma souffrance". Compassion réoriente vers l'autre mais j'accord davantage d'attention à l'idée, que l'autre aille mieux, ma motivation pour cela (si on sépare aspect cognitif, émotionnel et motivationnel de l'empathie). Souhaiter de toutes ses forces qu'une personne soit sauvée (même si on n'y peut rien), versus uniquement rester dans le ressenti affectif (empathie cognitive).
 
-- Empathie cognitive (sans empathie émotionnelle): peu de correlation avec comportements prosociaux (psychopathes peuvent avoir haute empathie cognitive).
+- Empathie cognitive (sans empathie émotionnelle): peu de corrélation avec comportements prosociaux (psychopathes peuvent avoir haute empathie cognitive).
 - Cf Paul Gilbert ([[knowledge/wiki/Compassion-Focused Therapy (CFT)\|Compassion-Focused Therapy (CFT)]])
 
 **Outils pour la prise de distance**, défusion
 
 - Noter ses pensées, en laissant une place pour ajouter avant "J'observe une pensée que...". Parfois certains patients insistent : "Je suis vraiment nul/le". Et parfois oui, peut-être, certains comportements peuvent contribuer à croyances, etc., mais ça reste par définition une pensée.
 - Ecrire la pensée dans le ballon d'helium. Dire la pensée après avoir respiré l'helium. 
-- Top 5 des pires pensées à mettre sur une feuille.
+- Top 5 des pires pensées, à mettre sur une feuille.
 - ...
 
-Steven Hayes: exercice jeu de rôle: prendre un patient, une problématique, et démarrer avec un des 6 concepts de l'ACT au hasard. 
+### 5. Inaction (vs. [[knowledge/wiki/Committed Action (ACT)\|Committed Action (ACT)]])
 
-**Sens de soi**
+### 6. Attachement à un concept de soi conceptualisé (vs. [[knowledge/wiki/Self-as-Context (ACT)\|Self-as-Context (ACT)]])
 
 Plus ouvert, plus flexible, plus adapté.
-Proche de la fusion, en partie.
+Concept proche de la fusion, en partie.
 
 William James: avait distingué le "Moi" et le "Je".
 - Moi: moi narratif, l'histoire.
@@ -467,10 +480,14 @@ William James: avait distingué le "Moi" et le "Je".
 
 Exercice: passage du moi au je, plus difficile pour les personnes si on a pas d'entrainement contemplatif/méditatif (Normam Farb)
 
-But ici: sens d'identité moins fermé. Question d'observateur.
+But, ici: sens d'identité moins fermé. Question d'observateur.
+
 Soi-comme-contexte ([[knowledge/wiki/Self-as-Context (ACT)\|Self-as-Context (ACT)]]) vs. Soi-comme-objet
 
 Rigidité: métaphore variabilité cardiaque: variabilité est un marqueur de bonne santé, un coeur qui bat regulièrement est préoccupant.
+
+---
+## Références
 
 Cf Yrvin Yalom.
 CF Christian Bobin (poésie). Rumi. Tador
@@ -478,11 +495,11 @@ CF Christian Bobin (poésie). Rumi. Tador
 [Milton Ericksson](https://en.wikipedia.org/wiki/Milton_H._Erickson), psychiatre-psychothérapeute américain.
 - Exemples: 
 	- Personne qui parle en salade de mots. Il lui parle "en salade de mots" aussi.
-	- Signe du bras nazi,, lui cause des problemes avec d'autres, Ericksson l'imite, modifie le mouvement et le symptôme converti en mouvement de menuiserie.
+	- Signe du bras nazi, lui cause des problèmes avec d'autres, Ericksson l'imite, modifie le mouvement et le symptôme converti en mouvement de menuiserie.
 	- Utilise l'environnement (ville, montagne)
-- -> **Rejoindre pour guider** (différent de donner raison)
-- Resistance: pas resistance de la patiente mais symptôme qu'on l'a pas rejoint.
-- Si resistance on ne pousse pas. On accueille la résistance, on la comprend, on l'utilise, c'est une information sur la relation entre le personne et son problème, sur la relation entre la personne et le thérapeute... c'est une information.
+- -> ==**Rejoindre pour guider**== (différent de donner raison)
+- Lorsque résistance: pas résistance de la patiente mais symptôme qu'on l'a pas rejoint.
+- Si résistance on ne pousse pas. On accueille la résistance, on la comprend, on l'utilise, c'est une information sur la relation entre le personne et son problème, sur la relation entre la personne et le thérapeute... c'est une information.
 Livres: Ericksson n'en a pas écrit. "Ma voix t'accompagnera" ou "Un thérapeute hors du commun" (les deux élèves de Ericksson).
 Utilisation de la métaphore, des histoires. Si c'était un jardinier, il lui parlait de jardins, pas de processus techniques.
 
@@ -505,7 +522,7 @@ Idée de complexifier la pensée avec les différents theories, pas se réduire 
 
 ## I. Introduction
 
-###. 1. Du trouble à la relation: changement de regard
+### 1. Du trouble à la relation: changement de regard
 
 Idée centrale:
 Enfant comme RESSOURCE pour entrer dans le système familial.
@@ -517,7 +534,6 @@ Mise en situation:
 - Importance du contexte nous fait bouger les lignes du diagnostic: comportements situés dans un contexte.
 
 -> Besoin d'une lecture qui intègre les relations, contextes, les dynamiques
-
 
 ### 2. Accueillir la souffrance psychique
 
@@ -786,7 +802,7 @@ Le **symptôme a un ==sens== relationnel**
 - Si on s'y attaque: risque qu'il se déplace/se renforce
 -> Débusquer en quoi ces symptômes sont des solutions
 
-L’idée des systémiciens va être qu’au lieu de supprimer le symptôme, le thérapeute va le cadrer, le dépasser ==voire parfois, le prescrire==. Ex d'intervention: **Prescription paradoxal**e: 
+L’idée des systémiciens va être qu’au lieu de supprimer le symptôme, le thérapeute va le cadrer, le dépasser ==voire parfois, le prescrire== ([[Prescription paradoxale du symptôme\|Prescription paradoxale du symptôme]]). Exemple d'intervention: **Prescription paradoxal**e: 
 - si on éclaire sur fonction du symptôme, symptôme peut perdre de de son évidence.
 
 EMDR: utilise l'image de difficultés comme étant une plante, les feuilles sont les symptômes, rattachés à évènements de vie défavorable (racines), pas bien digérés (pas forcément trauma: échecs à l'école, regard méchant d'une prof, etc., cumulés). Idée de traiter les racines, plutôt que les feuilles. Avec mouvements bilateraux des yeux pour "désensibiliser".
