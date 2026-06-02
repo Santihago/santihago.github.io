@@ -79,12 +79,12 @@
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-06-01T14:09:03.433Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-06-02T15:05:30.462Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
 <main class="content cm-s-obsidian print">
 <header>
 <h1 data-note-icon="">Les grands courants psychothérapeutiques</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.120+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-06-01T16:08:28.799+02:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.120+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-06-02T17:04:52.857+02:00"></span></div></div></div>
 </header>
 <p><strong>Structure</strong>:</p>
 <ol>
@@ -133,8 +133,7 @@ L'étudiant·e devra obtenir une note minimum de 10/20 à l'examen portant sur c
 </ul>
 <p></p></div></div>
 <p>📅 Lundi <strong>2 Février 2026</strong> - Cours 1</p>
-<h2 id="chapitre-1-origines" tabindex="-1">🏷️ Chapitre 1 : Origines</h2>
-<h3 id="1-les-sources-de-l-approche-systemique" tabindex="-1">1. Les sources de l'approche systémique</h3>
+<h2 id="1-les-sources-de-l-approche-systemique" tabindex="-1">1. Les sources de l'approche systémique</h2>
 <p>Pourquoi cette approche est née? Quelles sont les notions inhérentes à ce paradigme, cette philosophie de soins?</p>
 <p>L’approche systémique naît d’un <strong>mouvement de remise en question des modèles explicatifs dominants</strong>, en particulier des modèles individuels, linéaires et intrapsychiques. Elle émerge dans les années 1950, principalement aux États-Unis, mais de manière <strong>simultanée et indépendante dans plusieurs régions du monde</strong>, portée par des cliniciens qui ne se satisfaisaient plus des cadres théoriques existants.</p>
 <p>Ces praticiens observent que leurs interventions auprès d’un individu ont des <strong>effets inattendus sur son entourage</strong>, et inversement. Peu à peu, ils cessent de considérer le symptôme comme une propriété interne d’un sujet pour l’envisager comme <strong>inscrit dans un réseau de relations</strong>. Le regard se déplace de l’individu vers le groupe auquel il appartient, en premier lieu la famille.</p>
@@ -378,7 +377,7 @@ Niveaux logiques differents, niveaux de reflexion differents.</p>
 <li>Ecole Wittezaele à Bruge (thérapie brève)</li>
 <li>Thérapie provocative, aussi moins présente en europe (sauf certains en Italie, Andolfi en debut de carrière, l'a ensuite abandonnée).</li>
 </ul>
-<h3 id="1-5-l-approche-anti-psychiatrie" tabindex="-1">1.5 L'approche anti-psychiatrie</h3>
+<h4 id="1-5-l-approche-anti-psychiatrie" tabindex="-1">1.5 L'approche anti-psychiatrie</h4>
 <p>Dans la &quot;vieille europe&quot;, ce mouvement prend beaucoup d'ampleur, avec une maniere de penser les choses qui a beaucoup influencé les penseurs systémiciens.</p>
 <p>Têtes de file:</p>
 <ul>
@@ -389,7 +388,7 @@ Niveaux logiques differents, niveaux de reflexion differents.</p>
 <p>Répercussions dans notre manière de penser la santé mentale: création de centres de santé avec l'idée de ne pas exclure les personnes malades de la société, et travailler à leur reinsertion.</p>
 <p>A Bruxelles, Paul Sivadon, psychiatre d'origine francaise, création d'un premier centre de santé mentale sectorisé (à Anderlecht, en 63(?)), avec Jean Vermeylen: l'<em>Equipe</em>, à Anderlecht, <em>La Gerbe</em>: deux premiers centres créés pour poursuivre ce projet d'aider les personnes à la marge, pour leur éviter la psychiatrisation. Se questionnent donc sur la société, ou la famille, plutôt que l'individu. &quot;Est-ce la société qui est folle?&quot; &quot;Est-ce la famille qui est folle?&quot; (cf film <a href="https://letterboxd.com/film/family-life-1971-1/" target="_blank" class="external-link">Family Life</a>).</p>
 <p>C'est par le biais de ce mouvement que Palo Alto (et par là les thérapies familiales systémiques), s'est fait connaître en Europe.</p>
-<h3 id="2-rappel-quatre-notions-cle" tabindex="-1">2. Rappel: Quatre notions clé</h3>
+<h2 id="2-rappel-quatre-notions-cle" tabindex="-1">2. Rappel: Quatre notions clé</h2>
 <ul>
 <li><strong>Les patterns transactionnels</strong>:
 <ul>
@@ -436,7 +435,7 @@ Niveaux logiques differents, niveaux de reflexion differents.</p>
 </ul>
 </li>
 </ul>
-<h3 id="3-modelisation-des-therapies-familiales-typologie-de-neuburger" tabindex="-1">3. Modélisation des thérapies familiales (typologie de Neuburger)</h3>
+<h2 id="3-modelisation-des-therapies-familiales-typologie-de-neuburger" tabindex="-1">3. Modélisation des thérapies familiales (typologie de Neuburger)</h2>
 <p>Visions du monde du thérapeute, sa grille de lecture pour aller vers les patients ou les familles qu'il veut traiter. Comment les thérapies familiales ont été modélisées? Déjà une perspective constructiviste: quel est le point de vue du thérapeute?</p>
 <p>Dans les modèles prédictifs, l'effet qu'on veut obtenir est predeterminé, inclus dans le projet thérapeutique. Tandis que dans les non-prédictifs, recherche de <strong>changement</strong> qui permette de solutionner un problème, mais la nature du changement est inconnue au thérapeute. Ici la solution n'est pas contenue dans le projet thérapeutique.</p>
 <h4 id="3-1-les-modeles-predictifs" tabindex="-1">3.1 Les modèles prédictifs</h4>
@@ -521,8 +520,8 @@ Selvini en arrive à se dire que cette méthode ne fonctionne pas aussi bien qu'
 <li>Mots pouvaient nous empêcher de penser (les mots créent des réalités spécifiques)
 <ul>
 <li>Immunité: le terme &quot;défenses&quot; immunitaires est-il correct? Observation que des anticorps se générent même sans &quot;attaques&quot;.</li>
-<li>Métaphores qui font obstacle à la pensée. Dépression n'est pas une bonne métaphore, l'ettiquette enferme plutot qu'ouvre. Allons vers celle qui permet une augmentation des choix possibles. (cf taches aveugles)</li>
-<li>Vont étudier les conditions permettant la survie de la cellule. La vie d'une cellule est la capacité à conserver sa différene. Sinon, danger de mort, se laisse attaquer/mourrir.</li>
+<li>Métaphores qui font obstacle à la pensée. Dépression n'est pas une bonne métaphore, l'étiquette enferme plutot qu'ouvre. Allons vers celle qui permet une augmentation des choix possibles. (cf taches aveugles)</li>
+<li>Vont étudier les conditions permettant la survie de la cellule. La vie d'une cellule est la capacité à conserver sa différence. Sinon, danger de mort, se laisse attaquer/mourrir.</li>
 </ul>
 </li>
 </ul>
@@ -693,7 +692,7 @@ On s'intéresse donc surtout à ce que l'on ne voit pas.</p>
 <li>(Contexte culturel, âge/expérience d'Andolfi, à tenir en compte par rapport à ce modèle has-been). Mais qd même, aspects encore présents, mêmes tâches aveugles, etc (résistance au changement dans les institutions).</li>
 </ul>
 <p>📅 Lundi <strong>13 Avril 2026</strong> - Cours 5</p>
-<h1 id="4-l-approche-structuraliste-de-minuchin" tabindex="-1">4. L'approche structuraliste de Minuchin</h1>
+<h2 id="4-l-approche-structuraliste-de-minuchin" tabindex="-1">4. L'approche structuraliste de Minuchin</h2>
 <p>Exemple de théorie systémique: Salvatore Minuchin (approche structuraliste)</p>
 <p>Voyait des adolescents aller mieux, mais très vite retombaient dans la délinquance et la transgression. Minuchin s'est dit que la meilleure chose à faire était de non pas écarter les parents, mais d'être partenaire des parents, leur permettre de reprendre une place dans laquelle ils se sentiraient respectés, et de construire des cartes familiales, lui permettant de trouver les types de dysfonctionnements dans chaque famille.</p>
 <p>Schéma avec l'idée du système familial idéal (ou pourrions nous dire &quot;fonctionnel&quot;) selon Minuchin (<strong>Minuchin: à catégoriser comme prédictif, il sait où il veut aller</strong> - structure cible).</p>
@@ -818,7 +817,7 @@ Ce sera un QCM:</p>
 <h4 id="2-2-les-therapies-cognitives-2eme-vague" tabindex="-1">2.2 Les thérapies cognitives (2ème vague)</h4>
 <p>Entre stimulus et comportement, il manque un truc. C'est la cognition. C'est la manière dont j'interprète l'évènement qui va avoir un impact émotionnel.<br>
 Cognitions: Ce sont les schémas, ce sont les croyances</p>
-<p>Aaron Beck: propose différentes thérapies cognitives (dans dépression, anxiéte, notamment)</p>
+<p>Aaron Beck: propose différentes thérapies cognitives (dans dépression, anxiété, notamment)</p>
 <h4 id="2-3-la-3eme-vague" tabindex="-1">2.3 La 3ème vague</h4>
 <p>Plus axé sur l'expérience émotionnelle.<br>
 Plus sur la structuration (?) des pensées, surtout sur la RELATION qu'on a a ses pensées. Avec l'idée de pouvoir se détacher, accueilir, accepter ces pensées et émotions, mais que nous ne sommes pas obligés de suivre.</p>
@@ -855,11 +854,11 @@ Nous sommes maintenant dans une approche plus intégrative, non sectionnée. Les
 </ul>
 </li>
 </ul>
-<p>Diagrame <strong>clinical decision-making</strong> (on recevra une lecture sur ça, Spring B 2007).<br>
+<p>Diagramme <strong>clinical decision-making</strong> (on recevra une lecture sur ça, Spring B 2007).<br>
 A mettre en lien avec l'état de la santé mentale en Belgique (gens attendent trop longtemps avant de consulter), et les reformes de santé en Belgique, visant à renforcer l'aide pour les troubles plus légers avant qu'ils ne deviennent plus graves, se chronifient, etc. donc intérêt de trouver des interventions plus efficaces. (8 séances dans la reforme)</p>
 <p>Exemple de patient TCA demandant d'établir un plan alimentaire:</p>
 <ul>
-<li>par notre expérience, on peut déterminer que c'est un signe de besoin de controle, et d'évitement émotionnel</li>
+<li>par notre expérience, on peut déterminer que c'est un signe de besoin de contrôle, et d'évitement émotionnel</li>
 </ul>
 <p>Exemple de patient qui part à l'étranger et demande de continuer par video consultation Whatsapp.</p>
 <ul>
@@ -872,14 +871,14 @@ A mettre en lien avec l'état de la santé mentale en Belgique (gens attendent t
 </ul>
 <h3 id="4-empirisme-collaboratif" tabindex="-1">4. Empirisme collaboratif</h3>
 <ul>
-<li>relation de collaboration avec le patient.</li>
+<li>Relation de collaboration avec le patient.</li>
 <li>Prise de décision est réalisée de manière collaborative, éclairée (on explique nos hypothèses, etc). &quot;Shared Decision-Making&quot;</li>
 <li>Nos hypothèses, idées, visions de la problématique, on va les dire a la personne pour qu'elle devienne encore plus experte de sa situation, puisse généraliser ses connaissances à son quotidien, etc... Pour qu'elle ne soit pas dépendante de nous pour chaque situation problématique qu'elle rencontre. Qu'elle se réapproprie la prise en charge. Qu'elle puisse se passer de nous le plus vite possible. Pour renforcer les ressources de la personne.
 <ul>
 <li>Compréhension commune des difficultés dans l'ici et maintenant (tableau clinique et étiologique)</li>
 <li>Accord sur les objectifs thérapeutiques et des techniques thérapeutiques à mettre en oeuvre (essentiel pour favoriser l'autonomie de la personne). Sans accord, on peut aller très vite vers un échec thérapeutique.
 <ul>
-<li>Fondements de <strong>alliance thérapeutique</strong> (Bordin, 1979), qui, on sait, détermine les resultats thérapeutiques. L'alliance thérapeutique <strong>percue</strong> par le patient est un meilleur prédicteur de la reussite thérapeutique que celle du therapeute.</li>
+<li>Fondements de <strong>alliance thérapeutique</strong> (Bordin, 1979), qui, on sait, détermine les résultats thérapeutiques. L'alliance thérapeutique <strong>percue</strong> par le patient est un meilleur prédicteur de la réussite thérapeutique que celle du thérapeute.</li>
 </ul>
 </li>
 </ul>
@@ -888,7 +887,7 @@ A mettre en lien avec l'état de la santé mentale en Belgique (gens attendent t
 <h2 id="partie-b-le-processus-therapeutique" tabindex="-1">Partie B: Le processus thérapeutique</h2>
 <p>Vignette clinique: Marc, 37 ans.</p>
 <ul>
-<li>envoyé par son médecin generaliste</li>
+<li>envoyé par son médecin généraliste</li>
 <li>se plaint d'une baisse de moral, rapporte se sentir effondré physiquement<br>
 (suivi plus bas)</li>
 </ul>
@@ -900,7 +899,7 @@ Pas linéaire, on va parfois revenir reformuler, modifier certaines choses. Il y
 <ul>
 <li>qu'est-ce qu'on va viser, qu'est-ce qu'on traite.</li>
 <li>quelles sont les techniques/méthodes qu'on va mettre en application?</li>
-<li>comment on évalue le progres par rapport a notre objectif? comment la personne progresse? &quot;les exercices a domicile ca marche, ca ameliore, ca empire..?&quot;</li>
+<li>comment on évalue le progres par rapport a notre objectif? comment la personne progresse? &quot;les exercices a domicile ca marche, ca améliore, ca empire..?&quot;</li>
 <li>Cloture du traitement si objectif atteints, ou la personne peut continuer seule... tout ceci se décide ensemble.</li>
 <li>Le tout ci dessus sur fond d'une <strong>bonne relation thérapeutique</strong>.</li>
 </ul>
@@ -1022,9 +1021,9 @@ Et nom intéressant pour cas difficiles, defficiences intellectuelles: Romina Ri
 <ul>
 <li><em>Quel est le problème ? Quelles sont ses composantes (émotionnelles, cognitives et comportementales) ?</em>
 <ul>
-<li>Exemple d'outil: <strong>le modèle en cinq partie de Pedesky et Mooney</strong> (1990)
+<li>Exemple d'outil: <strong>le modèle en cinq parties de Pedesky et Mooney</strong> (1990)
 <ul>
-<li>Tout ca permet de comprendre ce qui va modérer le problème, ce qui va le maintenir... On pose des questions et au fut et a mesure des auto expériences on affine l'intervention.</li>
+<li>Tout ca permet de comprendre ce qui va modérer le problème, ce qui va le maintenir... On pose des questions et au fur et à mesure des auto expériences on affine l'intervention.</li>
 <li>Exemple avec qqun avec des préoccupations pour son état de santé. Avec le modele en 5 parties, on identifie les Pensées, Emotions, Comportements et réactions physiques, ainsi que l'environnement ou tous ces éléments ont lieu. Basé sur l'auto-observation. Ceci est censé inclure ce qui est problématique pour la personne.</li>
 </ul>
 </li>
@@ -1045,7 +1044,7 @@ Et nom intéressant pour cas difficiles, defficiences intellectuelles: Romina Ri
 <ul>
 <li>Multimodale
 <ul>
-<li>Différentes modalités du comportement-probleme</li>
+<li>Différentes modalités du comportement-problème</li>
 </ul>
 </li>
 <li>Entretiens</li>
@@ -1112,7 +1111,7 @@ But: Apprendre à identifier ses émotions, ses pensées et ses comportements .<
 <p>→ Les interventions psychologiques doivent modifier ces apprentissages ou créer de nouveaux apprentissages.</p>
 </blockquote>
 <h5 id="1-1-1-le-conditionnement-classique-et-l-apprentissage-des-significations" tabindex="-1">1.1.1 Le conditionnement classique et l’apprentissage des significations</h5>
-<p>Une seule experience suffit.<br>
+<p>Une seule expérience suffit.<br>
 Exemple: phobie des chiens et trouble de stress-post-traumatique.<br>
 Lorsque confrontée à SC, attente de quelque chose de désagréable (SI).</p>
 <p><strong>Acquisition d'une nouvelle signification</strong> négative.</p>
@@ -1245,7 +1244,7 @@ Modèle SRC/ABC = forme d’analyse fonctionnelle / analyse des fonctions</p>
 <li>Comportements à priori topographiquement différents, mais même fonction et conséquences comparables</li>
 </ul>
 </blockquote>
-<p>Par exemple, quand on fait défusion, faut être vigilant que ca ne devienne pas quelque chose d'autre, e.g. évitement. La fonction ne serait pas la même. Accepter l'emotion anxiogène mais prendre suffisament de distance.</p>
+<p>Par exemple, quand on fait <em>défusion</em> (<a class="internal-link is-unresolved" href="/404" target="">Cognitive Defusion (ACT)</a>), faut être vigilant que ca ne devienne pas quelque chose d'autre, e.g. évitement. La fonction ne serait pas la même. Accepter l'émotion anxiogène mais prendre suffisamment de distance.</p>
 <p>Evitement souvent présent dans les troubles psychologiques.</p>
 <h6 id="1-1-2-6-les-differentes-voies-d-acquisition" tabindex="-1">1.1.2.6 Les différentes voies d’acquisition</h6>
 <blockquote>
@@ -1333,7 +1332,7 @@ La réaction émotionnelle devient le stimulus discriminatif.</p>
 </ul>
 <h5 id="1-1-4-la-grille-d-analyse-fonctionnelle-sorc" tabindex="-1">1.1.4 La grille d’analyse fonctionnelle SORC</h5>
 <p>Assez pratique, facile à utiliser avec des patients.<br>
-On va explorer avec le patient les situations qui génèrent des reactions émotionnelles et les comportements associés.</p>
+On va explorer avec le patient les situations qui génèrent des réactions émotionnelles et les comportements associés.</p>
 <p>(voir dia 96)</p>
 <h5 id="1-1-5-modeles-comportementaux-de-la-depression" tabindex="-1">1.1.5 Modèles comportementaux de la dépression</h5>
 <p>Vidéo de prévention de la dépression de l’OMS la dépression</p>
@@ -1387,7 +1386,7 @@ Anxiété devient de plus en plus fort, bulle de confort devient de plus en plus
 <source media="(max-width:1920px)" srcset="/img/optimized/Y5umtR_nEr-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/Y5umtR_nEr-700.jpeg"><img class="" src="/img/user/Pasted%20image%2020260317131339.png" alt="Pasted image 20260317131339.png|392" width="392px"></picture></p>
 <p>Années 1950 Joseph Wolpe : <strong>désensibilisation systématique</strong>.</p>
 <h5 id="1-2-3-la-therapie-par-exposition" tabindex="-1">1.2.3 La thérapie par exposition</h5>
-<p>Taille d'effet de modérée a élevée pour divers troubles.</p>
+<p>Taille d'effet de modérée à élevée pour divers troubles.</p>
 <blockquote>
 <ul>
 <li>Indications: troubles anxieux (phobie, trouble panique, trouble d’anxiété sociale, TAG), du TOC et du PTSD.</li>
@@ -1396,14 +1395,14 @@ Anxiété devient de plus en plus fort, bulle de confort devient de plus en plus
 </blockquote>
 <h6 id="1-2-3-1-principe-general-de-l-exposition" tabindex="-1">1.2.3.1 Principe général de l’exposition</h6>
 <blockquote>
-<p>Approche systématique et répétée des stimuli phobogènes [Sd] (e.g., araignée, bus, voiture, sensations physiologiques ou des stimuli qui génèrent du craving (e.g., alcool), sans la présence d’un stimulus inconditionnel aversif ou appétitif [SI], de telle sorte à ce que ces stimuli perdent la capacité à produire une réponse conditionnée [RC].</p>
+<p>Approche systématique et répétée des stimuli phobogènes [Sd] (e.g., araignée, bus, voiture, sensations physiologiques ou des stimuli qui génèrent du craving (e.g., alcool), <strong>sans la présence d’un stimulus inconditionnel aversif ou appétitif</strong> [SI], de telle sorte à ce que ces stimuli perdent la capacité à produire une réponse conditionnée [RC].</p>
 </blockquote>
 <p>Donc, les stimuli perdent leur dimension conditionnée.</p>
 <h6 id="1-2-3-2-mecanismes-sous-jacents" tabindex="-1">1.2.3.2 Mécanismes sous-jacents</h6>
 <ol>
 <li>Habituation</li>
 </ol>
-<p>Mais souvent seulement temporaire: phenomene de recuperation spontanee a l'exposition suivante.</p>
+<p>Mais souvent seulement temporaire: phénomène de récupération spontanée à l'exposition suivante.</p>
 <ol start="2">
 <li>Extinction</li>
 </ol>
@@ -1425,7 +1424,7 @@ MAIS Extinction ≠ Oubli, effacement, désapprentissage<br>
 </ul>
 <p>→ L'objectif de la thérapie : Ce n'est plus de supprimer la peur, mais de rendre la « règle de sécurité » beaucoup plus forte et plus accessible que la « règle de peur »</p>
 </blockquote>
-<p>Souvent, chez les personnes qui ruminent, il va falloir mettre en place de nouveaux comportements qui permettront de ce confronter a ce dont ils ont peur. Mais ce sera a repeter fréquemment pour que ces comportements deviennent automatismes et rentrent en competition avec les comportements originaux.</p>
+<p>Souvent, chez les personnes qui ruminent, il va falloir mettre en place de nouveaux comportements qui permettront de se confronter à ce dont ils ont peur. Mais ce sera à répeter fréquemment pour que ces comportements deviennent automatismes et rentrent en compétition avec les comportements originaux.</p>
 <p>Schéma de la vision classique vs contemporaine (dia 109): objectif c'est de violer les attentes.<br>
 Habituation n'est pas nécessaire (on peut laisser la peur pendant l'expo haute, tant que le patient apprend une nouvelle info).</p>
 <h6 id="1-2-3-3-differents-types-d-exposition" tabindex="-1">1.2.3.3 Différents types d’exposition</h6>
@@ -1486,7 +1485,7 @@ Habituation n'est pas nécessaire (on peut laisser la peur pendant l'expo haute,
 </ul>
 <p>Exemple de grille d’auto-observation pour les exercices d’exposition (dia 122)</p>
 <ul>
-<li>Reevaluation des evaluations automatiques a propos de la tache (restructuration pour pensees plus adaptes): ce n-set pas nécessaire (Craske) - apprentissage est plus fort si pensee originale et absence de la chose craignée (contraste, dopamine, surprise...!). Peut diminuer l'efficacité.</li>
+<li>Reevaluation des évaluations automatiques a propos de la tache (restructuration pour pensées plus adaptes): ce n'est pas nécessaire! (Craske) - <mark>apprentissage est plus fort si pensee originale et absence de la chose craignée</mark> (contraste, dopamine, surprise...!). Restructuration préalable peut diminuer l'efficacité.</li>
 </ul>
 <p>📅 Mardi <strong>31 Mars 2026</strong> - Cours 3</p>
 <h3 id="2-2eme-vague-modeles-theoriques-sous-tendant-la-therapie-cognitive" tabindex="-1">2. 2ème vague: Modèles théoriques sous-tendant la thérapie cognitive</h3>
@@ -1496,8 +1495,8 @@ Habituation n'est pas nécessaire (on peut laisser la peur pendant l'expo haute,
 <p><strong>Axiome central de la thérapie cognitive: Les pensées dysfonctionnelles et croyances irrationnelles.</strong></p>
 <p>Exemple: &quot;Imaginez la situation suivante , vous entrez dans la pièce et les personnes sont en train de rire, que vous dites-vous et que ressentez-vous?&quot; Le but de ces interventions est de modifier ces pensées et croyances qui sont à l'origine des troubles.</p>
 <p>Exemple: TOC phobie des germes sur les portes. Evitement -&gt; apaisement immédiat -&gt; renforcement (cours precedent: absence d'effet négatif, donc renforce).</p>
-<p>Metacognition: si on a des pensées sur nos pensées, e.g. si on pense qu'on doit contrôler ses pensées, qu'on ne doit pas avoir un certain type de pensées. Les pensees et la relation aux pensees peut avoir un grand impact.</p>
-<p>Albert Ellis: à l'origine de laThérapie Relationnelle Émotive (RET): nous souffrons plus de la representation que nous avons de la réalité que de la réalité elle-même. Depuis 1995 Relational Emotive Behavior Therapy.</p>
+<p>Metacognition: si on a des pensées sur nos pensées, e.g. si on pense qu'on doit contrôler ses pensées, qu'on ne doit pas avoir un certain type de pensées. Les pensees et la relation aux pensées peut avoir un grand impact.</p>
+<p>Albert Ellis: à l'origine de la Thérapie Relationnelle Émotive (RET): nous souffrons plus de la représentation que nous avons de la réalité que de la réalité elle-même. Depuis 1995 Relational Emotive Behavior Therapy.</p>
 <p><strong>Modèle ABC</strong> (qui ressemble à la grille d'auto-observation).</p>
 <div class="table-wrapper"><table>
 <thead>
@@ -1547,7 +1546,7 @@ Première publication marquante : Beck, A.T., Rush, A.J., Shaw, B.F., &amp; Emer
 <li>Accessibles à la conscience.</li>
 <li>Crédibilité</li>
 </ul>
-<p>(Pour Beck on peut aussi s'intéresser a l'inconscient si on travaille les schemas et qu'on tient un carnet par ex.)</p>
+<p>(Pour Beck on peut aussi s'intéresser à l'inconscient si on travaille les schémas et qu'on tient un carnet, par ex.)</p>
 <p>Organisés sous forme de <mark>triade</mark> concernant la perception</p>
 <ul>
 <li>de soi-même</li>
@@ -1579,7 +1578,7 @@ Première publication marquante : Beck, A.T., Rush, A.J., Shaw, B.F., &amp; Emer
 </thead>
 <tbody>
 <tr>
-<td>Décrire l’événement précis produisant l’émotion déplaisante<br><br>Ou<br><br>Décrire le fil d’idées, de pensées, de souvenirs,..produisant l’émotion déplaisante</td>
+<td>Décrire l’événement précis produisant l’émotion déplaisante<br><br>Ou<br><br>Décrire le fil d’idées, de pensées, de souvenirs,... produisant l’émotion déplaisante</td>
 <td>1. Spécifier l’émotion: colère, tristesse, angoisse,…<br><br>2. Évaluer l’intensité de l’émotion (de 0 à 10)</td>
 <td>1. Écrire les pensées automatiques qui précèdent, accompagnent ou suivent l’émotion<br><br>2. Évaluer votre degré de croyance dans les pensées automatiques</td>
 </tr>
@@ -1591,7 +1590,7 @@ Première publication marquante : Beck, A.T., Rush, A.J., Shaw, B.F., &amp; Emer
 <ul>
 <li>Dérivé des expériences passées</li>
 <li>Peut être activé par l’activation d’un élément qui le constitue</li>
-<li>N’est pas directement accessible à la conscience</li>
+<li><strong>N’est pas directement accessible à la conscience</strong></li>
 <li>Peut-être inféré à partir des pensées automatiques<br>
 → Observer et analyser les pensées répétitives pour déduire les schémas</li>
 </ul>
@@ -1696,7 +1695,7 @@ F. expérimenter ainsi des émotions plus désirées<br>
 <li>Auto-observations</li>
 <li>Flèche descendante</li>
 <li>Dialogue socratique</li>
-<li>Expérience comportementale qui vise à tester les croyances<br>
+<li><strong>Expérience comportementale qui vise à tester les croyances</strong><br>
 Ex: « je ne relis mon mail que 2 fois avant de l’envoyer pour tester ma croyance que mes collègues vont me critiquer si mon mail n’est pas parfait»</li>
 </ul>
 <h6 id="2-2-2-1-fiche-de-modification-des-pensees-automatiques" tabindex="-1">2.2.2.1 Fiche de modification des pensées automatiques</h6>
@@ -1705,7 +1704,7 @@ Ex: « je ne relis mon mail que 2 fois avant de l’envoyer pour tester ma croya
 <source media="(max-width:1920px)" srcset="/img/optimized/cY4zCQhOPY-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/cY4zCQhOPY-700.jpeg"><img class="" src="/img/user/Screenshot%202026-03-31%20at%2011.55.22.png" alt="Screenshot 2026-03-31 at 11.55.22.png" width=""></picture></p>
 <p>Video Youtube: <a href="https://youtu.be/5eyE20HpaCo" target="_blank" class="external-link">https://youtu.be/5eyE20HpaCo</a> (30 min)</p>
 <h6 id="2-2-2-2-identifier-les-distorsions-cognitives-biais-de-raisonnement-et-les-modifier" tabindex="-1">2.2.2.2 Identifier les distorsions cognitives / biais de raisonnement et les modifier</h6>
-<p>Intéressant de faire un petit peu de temps en temps, si les biais sont recurrents. Mais si on ne fait que ca, ca reste très theorique et on passe son temps a devoir expliquer et definir les biais cognitifs...</p>
+<p>Intéressant de faire un petit peu de temps en temps, si les biais sont récurrents. Mais si on ne fait que ca, ca reste très théorique et on passe son temps a devoir expliquer et definir les biais cognitifs...</p>
 <h6 id="2-2-2-3-faire-prendre-conscience-au-client-du-schema-qui-sous-tend-les-pensees-automatiques-negatives-fleche-descendante-downward-arrow" tabindex="-1">2.2.2.3 Faire prendre conscience au client du schéma qui sous-tend les pensées automatiques negatives : Flèche descendante (downward arrow)</h6>
 <p><a href="https://www.youtube.com/watch?v=W3hMmZQAdhw" target="_blank" class="external-link">https://www.youtube.com/watch?v=W3hMmZQAdhw</a></p>
 <h6 id="2-2-2-4-faire-reconsiderer-de-maniere-plus-realiste-les-pensees-automatiques-experience-comportementale" tabindex="-1">2.2.2.4 Faire reconsidérer de manière plus réaliste les pensées automatiques : Expérience comportementale</h6>
@@ -1721,7 +1720,7 @@ Formats</li>
 <li>Collecte d’informations en provenance d’autres sources</li>
 </ul>
 <p>Pour une illustration d’une séance préparant un exercice d’expérience comportementale (20’15):</p>
-<p><a href="https://youtu.be/wKPPf9YNv5c" target="_blank" class="external-link">https://youtu.be/wKPPf9YNv5c</a> (elle dit que toutes les videos sont a voir, pas optionnelles)</p>
+<p><a href="https://youtu.be/wKPPf9YNv5c" target="_blank" class="external-link">https://youtu.be/wKPPf9YNv5c</a> (elle dit que toutes les videos sont à voir, pas optionnelles)</p>
 <h6 id="2-2-2-5-efficacite-de-la-tc-de-la-depression" tabindex="-1">2.2.2.5 Efficacité de la TC de la dépression</h6>
 <p>Maintenant les meta analysis suggèrent</p>
 <ul>
@@ -1859,7 +1858,7 @@ Impossible si suppression de l’émotion</p>
 <p>Au coeur de la psychanalyse. Et au coeur de toutes les psychothérapies relationnelles.<br>
 Voit la relation comme un outil pour manoeuvrer et atteindre certains objectifs. La psychanalyse sans doute le premier pas dans cette démarche.</p>
 <p>Freud: dimension imaginaire. (Lacaniens: paradoxalement, se sont beaucoup intéressés a Freud, parfois plus que les Freudiens)<br>
-Moteur: transfert est ce qui fait émerger le sujet-supposé-savoir (SsS) (c'est de l'amour qui se fait au savoir). Le moteur de pas mal d'expériences analytiques est la supposition d'un sujet-qui-sait, qui sait qqch de son intimité. Le moteur de l'affaire sera pour l'analyste de soutenir une position qui permettra à ce SsS d'être un moteur sans que l'analyste ne croit savoir d'aucune facon (meme si pas facile, pas possible à réaliser). Enjeu de ne pas occuper la place de SsS, mais de soutenir le mouvement. Cela repose sur un désir.</p>
+Moteur: transfert est ce qui fait émerger le sujet-supposé-savoir (SsS) (c'est de l'amour qui se fait au savoir). Le moteur de pas mal d'expériences analytiques est la supposition d'un sujet-qui-sait, qui sait qqch de son intimité. Le moteur de l'affaire sera pour l'analyste de soutenir une position qui permettra à ce SsS d'être un moteur sans que l'analyste ne croit savoir d'aucune facon (meme si pas facile, pas possible à réaliser). Enjeu de ne pas occuper la place de SsS, mais de soutenir le mouvement. <strong>Cela repose sur un désir.</strong></p>
 <p>Aversion du transfert: mouvement qui part plutôt des intentions de l'analyste vers le sujet, objet de ses intentions. Pas un mouvement qui part d'un questionnement avec comme point de mire l'analyste supposé savoir, mais le sujet lui meme qui incarne le coeur de ces questions.</p>
 <p css-module="."></p>
 <p>Objet petit-a: à voir avec jouissance du corps, au fondement meme de ce que les etres humains peuvent produire (y compris discours).</p>
@@ -1962,8 +1961,6 @@ Les grands courants psychothérapeutiques
 <ol>
 <li><a href="#partie-i-systemique-prof-isabelle-duret">Partie I: Systémique - Prof. Isabelle Duret</a>
 <ol>
-<li><a href="#chapitre-1-origines">🏷️ Chapitre 1 : Origines</a>
-<ol>
 <li><a href="#1-les-sources-de-l-approche-systemique">1. Les sources de l'approche systémique</a>
 <ol>
 <li><a href="#1-1-les-psychanalystes-d-enfants">1.1 Les psychanalystes d'enfants</a>
@@ -1998,9 +1995,9 @@ Les grands courants psychothérapeutiques
 </li>
 </ol>
 </li>
-</ol>
-</li>
 <li><a href="#1-5-l-approche-anti-psychiatrie">1.5 L'approche anti-psychiatrie</a>
+</li>
+</ol>
 </li>
 <li><a href="#2-rappel-quatre-notions-cle">2. Rappel: Quatre notions clé</a>
 </li>
@@ -2042,10 +2039,6 @@ Les grands courants psychothérapeutiques
 </li>
 </ol>
 </li>
-</ol>
-</li>
-</ol>
-</li>
 <li><a href="#4-l-approche-structuraliste-de-minuchin">4. L'approche structuraliste de Minuchin</a>
 <ol>
 <li><a href="#4-1-processus-therapeutique-en-3-etapes">4.1 Processus thérapeutique en 3 étapes</a>
@@ -2053,6 +2046,8 @@ Les grands courants psychothérapeutiques
 <li><a href="#4-2-moyens-therapeutiques">4.2 Moyens thérapeutiques</a>
 </li>
 <li><a href="#4-3-familles-psychosomatiques-et-evitement-du-conflit">4.3 Familles psychosomatiques et évitement du conflit</a>
+</li>
+</ol>
 </li>
 <li><a href="#conclusions-du-cours">Conclusions du cours</a>
 </li>
