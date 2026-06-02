@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-06-01T16:08:28.799+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-06-02T17:04:52.857+02:00"}
 ---
 
 **Structure**:
@@ -35,9 +35,8 @@ L'étudiant·e devra obtenir une note minimum de 10/20 à l'examen portant sur c
 > * Bateson, G. (1977 vol. I, 1980 vol II). Vers une écologie de l'esprit. Seuil.
 
 📅 Lundi **2 Février 2026** - Cours 1
-## 🏷️ Chapitre 1 : Origines
 
-### 1. Les sources de l'approche systémique
+## 1. Les sources de l'approche systémique
 
 Pourquoi cette approche est née? Quelles sont les notions inhérentes à ce paradigme, cette philosophie de soins?
 
@@ -290,7 +289,7 @@ Quelques références:
 - Ecole Wittezaele à Bruge (thérapie brève)
 - Thérapie provocative, aussi moins présente en europe (sauf certains en Italie, Andolfi en debut de carrière, l'a ensuite abandonnée).
 
-### 1.5 L'approche anti-psychiatrie
+#### 1.5 L'approche anti-psychiatrie
 
 Dans la "vieille europe", ce mouvement prend beaucoup d'ampleur, avec une maniere de penser les choses qui a beaucoup influencé les penseurs systémiciens.
 
@@ -306,7 +305,7 @@ A Bruxelles, Paul Sivadon, psychiatre d'origine francaise, création d'un premie
 
 C'est par le biais de ce mouvement que Palo Alto (et par là les thérapies familiales systémiques), s'est fait connaître en Europe.
 
-### 2. Rappel: Quatre notions clé
+## 2. Rappel: Quatre notions clé
 
 - **Les patterns transactionnels**: 
 	- "La famille est structurée en sous groupes définis par leur relations réciproques. Les relations entre différents membres de ces sous-groupes ou entre un sous groupe et un autre sont définis par des patterns relationnels. Une transaction se rapporte à un acte verbal ou non-verbal échangé avec un partenaire et signifie cet échange même. Le pattern renvoie à la séquence de plusieurs transactions selon une configuration donnée répétitive (ex: notes de musique sur une portee = mélodie)" (dia)
@@ -332,7 +331,7 @@ C'est par le biais de ce mouvement que Palo Alto (et par là les thérapies fami
 	- Neuburger, venant de la psychanalyse de base, voulait principalement montrer à ses collègues psychanalystes qu'il pouvait y avoir une demande au delà de la demande individuelle.
 	- Par exemple: les enfants n'expriment souvent pas de volonté de se soigner, d'où la difficulté de les voir en individuel.
 
-### 3. Modélisation des thérapies familiales (typologie de Neuburger)
+## 3. Modélisation des thérapies familiales (typologie de Neuburger)
 
 Visions du monde du thérapeute, sa grille de lecture pour aller vers les patients ou les familles qu'il veut traiter. Comment les thérapies familiales ont été modélisées? Déjà une perspective constructiviste: quel est le point de vue du thérapeute?
 
@@ -439,8 +438,8 @@ Biologistes chiliens: Maturana et Francisco Varela
 - Corps non séparable de l'esprit.
 - Mots pouvaient nous empêcher de penser (les mots créent des réalités spécifiques)
 	- Immunité: le terme "défenses" immunitaires est-il correct? Observation que des anticorps se générent même sans "attaques".
-	- Métaphores qui font obstacle à la pensée. Dépression n'est pas une bonne métaphore, l'ettiquette enferme plutot qu'ouvre. Allons vers celle qui permet une augmentation des choix possibles. (cf taches aveugles)
-	- Vont étudier les conditions permettant la survie de la cellule. La vie d'une cellule est la capacité à conserver sa différene. Sinon, danger de mort, se laisse attaquer/mourrir.
+	- Métaphores qui font obstacle à la pensée. Dépression n'est pas une bonne métaphore, l'étiquette enferme plutot qu'ouvre. Allons vers celle qui permet une augmentation des choix possibles. (cf taches aveugles)
+	- Vont étudier les conditions permettant la survie de la cellule. La vie d'une cellule est la capacité à conserver sa différence. Sinon, danger de mort, se laisse attaquer/mourrir.
 
 ###### 1. Autopoïèse
 
@@ -558,7 +557,7 @@ Video, lecture de Maurizio Andolfi: à propos de la considération des pères da
 
 📅 Lundi **13 Avril 2026** - Cours 5
 
-# 4. L'approche structuraliste de Minuchin
+## 4. L'approche structuraliste de Minuchin
 
 Exemple de théorie systémique: Salvatore Minuchin (approche structuraliste)
 
@@ -674,7 +673,7 @@ Wolpe, Skinner, Eysenck.
 Entre stimulus et comportement, il manque un truc. C'est la cognition. C'est la manière dont j'interprète l'évènement qui va avoir un impact émotionnel. 
 Cognitions: Ce sont les schémas, ce sont les croyances
 
-Aaron Beck: propose différentes thérapies cognitives (dans dépression, anxiéte, notamment)
+Aaron Beck: propose différentes thérapies cognitives (dans dépression, anxiété, notamment)
 
 #### 2.3 La 3ème vague
 
@@ -708,11 +707,11 @@ Nous sommes maintenant dans une approche plus intégrative, non sectionnée. Les
 	- préférences du patients (extrêmement important): ses besoins, valeurs, ressources obstacles... par exemple argent ou temps limité pour le patient.
 ++ Contexte: tout ceci dépend du contexte (institution, etc)
 
-Diagrame **clinical decision-making** (on recevra une lecture sur ça, Spring B 2007).
+Diagramme **clinical decision-making** (on recevra une lecture sur ça, Spring B 2007).
 A mettre en lien avec l'état de la santé mentale en Belgique (gens attendent trop longtemps avant de consulter), et les reformes de santé en Belgique, visant à renforcer l'aide pour les troubles plus légers avant qu'ils ne deviennent plus graves, se chronifient, etc. donc intérêt de trouver des interventions plus efficaces. (8 séances dans la reforme)
 
 Exemple de patient TCA demandant d'établir un plan alimentaire:
-- par notre expérience, on peut déterminer que c'est un signe de besoin de controle, et d'évitement émotionnel
+- par notre expérience, on peut déterminer que c'est un signe de besoin de contrôle, et d'évitement émotionnel
 
 Exemple de patient qui part à l'étranger et demande de continuer par video consultation Whatsapp. 
 - préférences de la personne: Whatsapp. si on fait pas, risque que personne arrête thérapie?
@@ -723,17 +722,17 @@ L'approche *evidence-based* est inscrite dans la loi. Loi coordonnée 2015. Notr
 
 ### 4. Empirisme collaboratif
 
-- relation de collaboration avec le patient. 
+- Relation de collaboration avec le patient. 
 - Prise de décision est réalisée de manière collaborative, éclairée (on explique nos hypothèses, etc). "Shared Decision-Making"
 - Nos hypothèses, idées, visions de la problématique, on va les dire a la personne pour qu'elle devienne encore plus experte de sa situation, puisse généraliser ses connaissances à son quotidien, etc... Pour qu'elle ne soit pas dépendante de nous pour chaque situation problématique qu'elle rencontre. Qu'elle se réapproprie la prise en charge. Qu'elle puisse se passer de nous le plus vite possible. Pour renforcer les ressources de la personne.
 	- Compréhension commune des difficultés dans l'ici et maintenant (tableau clinique et étiologique)
 	- Accord sur les objectifs thérapeutiques et des techniques thérapeutiques à mettre en oeuvre (essentiel pour favoriser l'autonomie de la personne). Sans accord, on peut aller très vite vers un échec thérapeutique.
-		- Fondements de **alliance thérapeutique** (Bordin, 1979), qui, on sait, détermine les resultats thérapeutiques. L'alliance thérapeutique **percue** par le patient est un meilleur prédicteur de la reussite thérapeutique que celle du therapeute.
+		- Fondements de **alliance thérapeutique** (Bordin, 1979), qui, on sait, détermine les résultats thérapeutiques. L'alliance thérapeutique **percue** par le patient est un meilleur prédicteur de la réussite thérapeutique que celle du thérapeute.
 
 ## Partie B: Le processus thérapeutique
 
 Vignette clinique: Marc, 37 ans.
-- envoyé par son médecin generaliste
+- envoyé par son médecin généraliste
 - se plaint d'une baisse de moral, rapporte se sentir effondré physiquement
 (suivi plus bas)
 
@@ -745,7 +744,7 @@ Pas linéaire, on va parfois revenir reformuler, modifier certaines choses. Il y
 Conceptualisation permet de développer un plan de traitement: 
 - qu'est-ce qu'on va viser, qu'est-ce qu'on traite. 
 - quelles sont les techniques/méthodes qu'on va mettre en application?
-- comment on évalue le progres par rapport a notre objectif? comment la personne progresse? "les exercices a domicile ca marche, ca ameliore, ca empire..?"
+- comment on évalue le progres par rapport a notre objectif? comment la personne progresse? "les exercices a domicile ca marche, ca améliore, ca empire..?"
 - Cloture du traitement si objectif atteints, ou la personne peut continuer seule... tout ceci se décide ensemble. 
 - Le tout ci dessus sur fond d'une **bonne relation thérapeutique**.
 
@@ -852,8 +851,8 @@ Objectifs:
 - Processus non-linéaire qui consiste à **décrire des problemes en termes concrets, observables et mesurables** (Hermans et al. 2018, Person et al, 2011).
 - Pour guider la concrétisation: les questions de Brinkmann (1978)
 	- *Quel est le problème ? Quelles sont ses composantes (émotionnelles, cognitives et comportementales) ?*
-		- Exemple d'outil: **le modèle en cinq partie de Pedesky et Mooney** (1990)
-			- Tout ca permet de comprendre ce qui va modérer le problème, ce qui va le maintenir... On pose des questions et au fut et a mesure des auto expériences on affine l'intervention.
+		- Exemple d'outil: **le modèle en cinq parties de Pedesky et Mooney** (1990)
+			- Tout ca permet de comprendre ce qui va modérer le problème, ce qui va le maintenir... On pose des questions et au fur et à mesure des auto expériences on affine l'intervention.
 			- Exemple avec qqun avec des préoccupations pour son état de santé. Avec le modele en 5 parties, on identifie les Pensées, Emotions, Comportements et réactions physiques, ainsi que l'environnement ou tous ces éléments ont lieu. Basé sur l'auto-observation. Ceci est censé inclure ce qui est problématique pour la personne.
 	- *Depuis quand la situation problématique est-elle presente dans la vie du client?* 
 		- Personnes consultent trop tard en Belgique. Parce que gens pensent qu'ils vont y arriver seuls.
@@ -864,7 +863,7 @@ Objectifs:
 #### 3.4 Modalités d'évaluation (Timmermans, 2005)
 
 - Multimodale
-	- Différentes modalités du comportement-probleme
+	- Différentes modalités du comportement-problème
 - Entretiens
 - Hétéro et auto-observations
 	- Auto-observation: la grille "standard" en TCC
@@ -911,7 +910,7 @@ Conseille un site: elicit.com. IA pour des recherches bibliographiques scientifi
 
 ##### 1.1.1 Le conditionnement classique et l’apprentissage des significations
 
-Une seule experience suffit.
+Une seule expérience suffit.
 Exemple: phobie des chiens et trouble de stress-post-traumatique.
 Lorsque confrontée à SC, attente de quelque chose de désagréable (SI).
 
@@ -1016,7 +1015,7 @@ Stimulus
 > - Certains comportements identiques sur un plan topographique (forme), mais différentes conséquences recherchées (fonction)
 > - Comportements à priori topographiquement différents, mais même fonction et conséquences comparables
 
-Par exemple, quand on fait défusion, faut être vigilant que ca ne devienne pas quelque chose d'autre, e.g. évitement. La fonction ne serait pas la même. Accepter l'emotion anxiogène mais prendre suffisament de distance.
+Par exemple, quand on fait *défusion* ([[knowledge/wiki/Cognitive Defusion (ACT)\|Cognitive Defusion (ACT)]]), faut être vigilant que ca ne devienne pas quelque chose d'autre, e.g. évitement. La fonction ne serait pas la même. Accepter l'émotion anxiogène mais prendre suffisamment de distance.
 
 Evitement souvent présent dans les troubles psychologiques.
 ###### 1.1.2.6 Les différentes voies d’acquisition
@@ -1074,7 +1073,7 @@ Exemples:
 ##### 1.1.4 La grille d’analyse fonctionnelle SORC
 
 Assez pratique, facile à utiliser avec des patients. 
-On va explorer avec le patient les situations qui génèrent des reactions émotionnelles et les comportements associés.
+On va explorer avec le patient les situations qui génèrent des réactions émotionnelles et les comportements associés.
 
 (voir dia 96)
 ##### 1.1.5 Modèles comportementaux de la dépression
@@ -1123,20 +1122,20 @@ Années 1920: **[Mary Cover Jones](https://en.wikipedia.org/wiki/Mary_Cover_Jone
 Années 1950 Joseph Wolpe : **désensibilisation systématique**.
 ##### 1.2.3 La thérapie par exposition
 
-Taille d'effet de modérée a élevée pour divers troubles.
+Taille d'effet de modérée à élevée pour divers troubles.
 
 > - Indications: troubles anxieux (phobie, trouble panique, trouble d’anxiété sociale, TAG), du TOC et du PTSD.
 > - Incorporée également dans d’autres troubles (e.g., troubles liés aux substances, troubles des conduites alimentaires…)
 ###### 1.2.3.1 Principe général de l’exposition
 
->  Approche systématique et répétée des stimuli phobogènes [Sd] (e.g., araignée, bus, voiture, sensations physiologiques ou des stimuli qui génèrent du craving (e.g., alcool), sans la présence d’un stimulus inconditionnel aversif ou appétitif [SI], de telle sorte à ce que ces stimuli perdent la capacité à produire une réponse conditionnée [RC].
+>  Approche systématique et répétée des stimuli phobogènes [Sd] (e.g., araignée, bus, voiture, sensations physiologiques ou des stimuli qui génèrent du craving (e.g., alcool), **sans la présence d’un stimulus inconditionnel aversif ou appétitif** [SI], de telle sorte à ce que ces stimuli perdent la capacité à produire une réponse conditionnée [RC].
 
 Donc, les stimuli perdent leur dimension conditionnée.
 ###### 1.2.3.2 Mécanismes sous-jacents
 
 1. Habituation
 
-Mais souvent seulement temporaire: phenomene de recuperation spontanee a l'exposition suivante.
+Mais souvent seulement temporaire: phénomène de récupération spontanée à l'exposition suivante.
 
 2. Extinction
 
@@ -1156,7 +1155,7 @@ Désapprentissiage: on remarque que l'extinction n'efface pas la peur originale,
 > 
 > → L'objectif de la thérapie : Ce n'est plus de supprimer la peur, mais de rendre la « règle de sécurité » beaucoup plus forte et plus accessible que la « règle de peur »
 
-Souvent, chez les personnes qui ruminent, il va falloir mettre en place de nouveaux comportements qui permettront de ce confronter a ce dont ils ont peur. Mais ce sera a repeter fréquemment pour que ces comportements deviennent automatismes et rentrent en competition avec les comportements originaux.
+Souvent, chez les personnes qui ruminent, il va falloir mettre en place de nouveaux comportements qui permettront de se confronter à ce dont ils ont peur. Mais ce sera à répeter fréquemment pour que ces comportements deviennent automatismes et rentrent en compétition avec les comportements originaux.
 
 Schéma de la vision classique vs contemporaine (dia 109): objectif c'est de violer les attentes.
 Habituation n'est pas nécessaire (on peut laisser la peur pendant l'expo haute, tant que le patient apprend une nouvelle info).
@@ -1198,7 +1197,7 @@ Important de bien s'assurer que la personne ne met pas en place des comportement
 	- Préparation avant et débriefing après
 
 Exemple de grille d’auto-observation pour les exercices d’exposition (dia 122)
-- Reevaluation des evaluations automatiques a propos de la tache (restructuration pour pensees plus adaptes): ce n-set pas nécessaire (Craske) - apprentissage est plus fort si pensee originale et absence de la chose craignée (contraste, dopamine, surprise...!). Peut diminuer l'efficacité.
+- Reevaluation des évaluations automatiques a propos de la tache (restructuration pour pensées plus adaptes): ce n'est pas nécessaire! (Craske) - ==apprentissage est plus fort si pensee originale et absence de la chose craignée== (contraste, dopamine, surprise...!). Restructuration préalable peut diminuer l'efficacité.
 
 📅 Mardi **31 Mars 2026** - Cours 3
 ### 2. 2ème vague: Modèles théoriques sous-tendant la thérapie cognitive
@@ -1214,9 +1213,9 @@ Exemple: "Imaginez la situation suivante , vous entrez dans la pièce et les per
 
 Exemple: TOC phobie des germes sur les portes. Evitement -> apaisement immédiat -> renforcement (cours precedent: absence d'effet négatif, donc renforce).
 
-Metacognition: si on a des pensées sur nos pensées, e.g. si on pense qu'on doit contrôler ses pensées, qu'on ne doit pas avoir un certain type de pensées. Les pensees et la relation aux pensees peut avoir un grand impact.
+Metacognition: si on a des pensées sur nos pensées, e.g. si on pense qu'on doit contrôler ses pensées, qu'on ne doit pas avoir un certain type de pensées. Les pensees et la relation aux pensées peut avoir un grand impact.
 
-Albert Ellis: à l'origine de laThérapie Relationnelle Émotive (RET): nous souffrons plus de la representation que nous avons de la réalité que de la réalité elle-même. Depuis 1995 Relational Emotive Behavior Therapy.
+Albert Ellis: à l'origine de la Thérapie Relationnelle Émotive (RET): nous souffrons plus de la représentation que nous avons de la réalité que de la réalité elle-même. Depuis 1995 Relational Emotive Behavior Therapy.
 
 **Modèle ABC** (qui ressemble à la grille d'auto-observation).
 
@@ -1249,7 +1248,7 @@ Première publication marquante : Beck, A.T., Rush, A.J., Shaw, B.F., & Emery, G
 - Accessibles à la conscience.
 - Crédibilité
 
-(Pour Beck on peut aussi s'intéresser a l'inconscient si on travaille les schemas et qu'on tient un carnet par ex.)
+(Pour Beck on peut aussi s'intéresser à l'inconscient si on travaille les schémas et qu'on tient un carnet, par ex.)
 
 Organisés sous forme de ==triade== concernant la perception
 - de soi-même
@@ -1270,9 +1269,9 @@ Exemple de triade anxieuse :
 
 Feuille à 3 colonnes:
 
-| Situation                                                                                                                                                        | Émotions                                                                                                     | Pensées automatiques                                                                                                                                        |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Décrire l’événement précis produisant l’émotion déplaisante<br><br>Ou<br><br>Décrire le fil d’idées, de pensées, de souvenirs,..produisant l’émotion déplaisante | 1. Spécifier l’émotion: colère, tristesse, angoisse,…<br><br>2. Évaluer l’intensité de l’émotion (de 0 à 10) | 1. Écrire les pensées automatiques qui précèdent, accompagnent ou suivent l’émotion<br><br>2. Évaluer votre degré de croyance dans les pensées automatiques |
+| Situation                                                                                                                                                          | Émotions                                                                                                     | Pensées automatiques                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Décrire l’événement précis produisant l’émotion déplaisante<br><br>Ou<br><br>Décrire le fil d’idées, de pensées, de souvenirs,... produisant l’émotion déplaisante | 1. Spécifier l’émotion: colère, tristesse, angoisse,…<br><br>2. Évaluer l’intensité de l’émotion (de 0 à 10) | 1. Écrire les pensées automatiques qui précèdent, accompagnent ou suivent l’émotion<br><br>2. Évaluer votre degré de croyance dans les pensées automatiques |
 
 **2.1.2.1.2 Le schéma cognitif**
 
@@ -1282,10 +1281,9 @@ L'élément "Croyances/Postulats" du schéma au-dessus.
 
 - Dérivé des expériences passées
 - Peut être activé par l’activation d’un élément qui le constitue
-- N’est pas directement accessible à la conscience
+- **N’est pas directement accessible à la conscience**
 - Peut-être inféré à partir des pensées automatiques
 	→ Observer et analyser les pensées répétitives pour déduire les schémas
-
 
 **Schémas inconditionnels (de base)**
 
@@ -1371,7 +1369,7 @@ Différentes techniques pour mettre à jour les pensées, croyances et distorsio
 - Auto-observations
 - Flèche descendante
 - Dialogue socratique
-- Expérience comportementale qui vise à tester les croyances
+- **Expérience comportementale qui vise à tester les croyances**
 	Ex: « je ne relis mon mail que 2 fois avant de l’envoyer pour tester ma croyance que mes collègues vont me critiquer si mon mail n’est pas parfait»
 
 ###### 2.2.2.1 Fiche de modification des pensées automatiques
@@ -1382,7 +1380,7 @@ Video Youtube: https://youtu.be/5eyE20HpaCo (30 min)
 
 ###### 2.2.2.2 Identifier les distorsions cognitives / biais de raisonnement et les modifier
 
-Intéressant de faire un petit peu de temps en temps, si les biais sont recurrents. Mais si on ne fait que ca, ca reste très theorique et on passe son temps a devoir expliquer et definir les biais cognitifs...
+Intéressant de faire un petit peu de temps en temps, si les biais sont récurrents. Mais si on ne fait que ca, ca reste très théorique et on passe son temps a devoir expliquer et definir les biais cognitifs...
 
 ###### 2.2.2.3 Faire prendre conscience au client du schéma qui sous-tend les pensées automatiques negatives : Flèche descendante (downward arrow)
 
@@ -1402,7 +1400,7 @@ Formats
 
 Pour une illustration d’une séance préparant un exercice d’expérience comportementale (20’15):
 
-https://youtu.be/wKPPf9YNv5c (elle dit que toutes les videos sont a voir, pas optionnelles)
+https://youtu.be/wKPPf9YNv5c (elle dit que toutes les videos sont à voir, pas optionnelles)
 
 ###### 2.2.2.5 Efficacité de la TC de la dépression
 
@@ -1557,7 +1555,7 @@ Au coeur de la psychanalyse. Et au coeur de toutes les psychothérapies relation
 Voit la relation comme un outil pour manoeuvrer et atteindre certains objectifs. La psychanalyse sans doute le premier pas dans cette démarche.
 
 Freud: dimension imaginaire. (Lacaniens: paradoxalement, se sont beaucoup intéressés a Freud, parfois plus que les Freudiens)
-Moteur: transfert est ce qui fait émerger le sujet-supposé-savoir (SsS) (c'est de l'amour qui se fait au savoir). Le moteur de pas mal d'expériences analytiques est la supposition d'un sujet-qui-sait, qui sait qqch de son intimité. Le moteur de l'affaire sera pour l'analyste de soutenir une position qui permettra à ce SsS d'être un moteur sans que l'analyste ne croit savoir d'aucune facon (meme si pas facile, pas possible à réaliser). Enjeu de ne pas occuper la place de SsS, mais de soutenir le mouvement. Cela repose sur un désir.
+Moteur: transfert est ce qui fait émerger le sujet-supposé-savoir (SsS) (c'est de l'amour qui se fait au savoir). Le moteur de pas mal d'expériences analytiques est la supposition d'un sujet-qui-sait, qui sait qqch de son intimité. Le moteur de l'affaire sera pour l'analyste de soutenir une position qui permettra à ce SsS d'être un moteur sans que l'analyste ne croit savoir d'aucune facon (meme si pas facile, pas possible à réaliser). Enjeu de ne pas occuper la place de SsS, mais de soutenir le mouvement. **Cela repose sur un désir.**
 
 Aversion du transfert: mouvement qui part plutôt des intentions de l'analyste vers le sujet, objet de ses intentions. Pas un mouvement qui part d'un questionnement avec comme point de mire l'analyste supposé savoir, mais le sujet lui meme qui incarne le coeur de ces questions.
 
