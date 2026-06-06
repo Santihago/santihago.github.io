@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-06T13:14:51.137+02:00","updated":"2026-06-06T13:14:51.137+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-06T13:14:51.137+02:00","updated":"2026-06-06T13:55:42.852+02:00"}
 ---
 
 
@@ -140,13 +140,13 @@ Il est difficile d’identifier son propre mythe familial, car on a tendance à 
 
 ### 2.3 Crises, renouvellement et rigidification du mythe familial
 
-#### 2.2.1 Dénonciation du mythe
+#### 2.3.1 Dénonciation du mythe
 
 Certains membres peuvent **contester** le mythe. Ils dénoncent son caractère idéalisé, voire hypocrite. Cette dénonciation peut être vive, conflictuelle. Pourtant, loin de détruire le groupe, elle peut paradoxalement le renforcer. Par exemple, dans une famille qui valorise fortement l’unité, un membre qui refuse systématiquement de participer aux rassemblements peut devenir la figure de celui « sur qui on ne peut pas compter ». Le reste du groupe peut alors se resserrer autour du mythe fondateur, renforçant ainsi la cohésion.
-#### 2.2.2 Renouvellement du mythe
+#### 2.3.2 Renouvellement du mythe
 
 Le mythe n’est donc pas figé. Il peut **se renouveler** après une crise. Il peut être adapté à une période de la vie familiale et devenir inapproprié plus tard. Par exemple, un mythe d’ultra-unité peut être soutenant lorsque les enfants sont petits, mais devenir contraignant à l’adolescence, quand la différenciation devient nécessaire.
-#### 2.2.3 Rigidification du mythe
+#### 2.3.3 Rigidification du mythe
 
 Lorsque le mythe se rigidifie, qu’il ne se transforme plus, il peut devenir source de souffrance, voire de violence. En clinique, on rencontre souvent des familles où les mythes se sont rigidifiés. C’est cette rigidité, plus que le mythe en lui-même, qui devient problématique.
 
@@ -278,14 +278,14 @@ Dans l'auto-engendrement, le sujet tente de se créer lui-même, niant sa dépen
 
 Ce comportement d'auto-engendrement peut être compris comme une solution pour échapper au traumatisme de la génération des parents.
 
-Réflexion: Que faire aussi de ce qu'on **n'a pas** herité, ce qu'on **ne veut pas** hériter? Que faire de "n'avoir rien reçu", le cas de patients pauvres en appartenance, qui parfois n'ont pas connu leur parents...?
+Réflexion: Que faire aussi de ce qu'on **n'a pas** hérité, ce qu'on **ne veut pas** hériter? Que faire de "n'avoir rien reçu", le cas de patients pauvres en appartenance, qui parfois n'ont pas connu leur parents...?
 
 Définitions:
 - **Engendrer**: se reproduire, passer du statut d'adulte à celui de parents, se mettre dans une perspective de filiation verticale, renier la mort ou la transcender en devenant capable de se projeter dans sa propre descendance.
 - **L'auto-engendrement**: Logique du clonage, qui permet de se reproduire sans passer à un statut de parent, sans qu'il y ait de parents géniteurs. Logique du même et de l'identique, de l'**indifférenciation** ou de la fusion. Filiation horizontale. Négation des différences. Pas d'histoire ni de chaîne des générations. Pas de lien entre présent et passé (métaphore de l'ortensia, mode de reproduction en biologie végétale par la *totipotentialité*).
-	- Une autrice dans la littérature psychanalytique, Elisabeth Bizouard, avait aussi proposé cette idée de l'auto-engendrement dans [Le cinquième fantasme, 1995](https://shs.cairn.info/le-cinquieme-fantasme--9782130470786?lang=fr). Elle le propose comme le 5ème fantasme organisateur du psychique humain. "Engendrer l'inpredictible". Ce serait le fantasme de se produire soi-même, de s’auto-engendrer (soite à l'identique: a. faire des enfants qui me ressemblent en tout point de vue, ou b. faire des enfants qui ne me ressemblent pas mais qui poursuivent ma lignée). C’est une tentative psychique de se dégager de la dépendance originaire et de la passivité d’avoir été créé par d’autres.
+	- Une autrice dans la littérature psychanalytique, Elisabeth Bizouard, avait aussi proposé cette idée de l'auto-engendrement dans [Le cinquième fantasme, 1995](https://shs.cairn.info/le-cinquieme-fantasme--9782130470786?lang=fr). Elle le propose comme le 5ème fantasme organisateur du psychique humain. "Engendrer l'inpredictible". Ce serait le fantasme de se produire soi-même, de s’auto-engendrer (soit à l'identique: a. faire des enfants qui me ressemblent en tout point de vue, ou b. faire des enfants qui ne me ressemblent pas mais qui poursuivent ma lignée). C’est une tentative psychique de se dégager de la dépendance originaire et de la passivité d’avoir été créé par d’autres.
 
->[!info] Les quatre fantasmes originaires de Freud (rappel perso)
+>[!info] Rappel perso: Les quatre fantasmes originaires de Freud
 >Pour Freud, ce sont des scénarios inconscients universels qui structurent la vie psychique ([cf](https://fr-academic.com/dic.nsf/frwiki/616612)):
 >1. **La scène primitive**  
  >   Il s’agit du fantasme d’un rapport sexuel des parents, vu par l’enfant et interprété comme une agression du père envers la mère.
@@ -306,8 +306,8 @@ Exemple: la famille "ortensia", illustrant ce type d'investissement particulier 
 - Totipotentialité: cette caractéristique qui fait que **la différence entre le tout et la partie devient tres compliquée**. 
 - Enfants comme petites boutures., nommées de manière identique. 
 - Tentative de **renforcer l'appartenance familiale**, peut-être dans le but de faire rupture avec le passé? On peut imaginer que pour ces familles ça ne se passait pas comme ca dans les générations précédentes.
-- Occultation de la filiation parentale, aussi: dans cette famille, le nom du père n'est pas donné. Choix intéressant. Pere considere comme geniteur mais enfants pas vraiment inscrit dans sa filiation. Il y avait eu de la maltraitance vécue par les mères (abus sexuel à l'intérieur de leur famille), donc ce choix s'inscrit dans quelque chose qu'elles ne souhaientent pas faire revivre à leurs enfants (hypothèse). A defaut d'avoir pu parler du traumatisme, élaboré, elles agissent de cette manière.
-- (Parenthèse: Cas de fausses allégations d'abus sexuel du père sur l'enfant: raconte son experience personnelle en debut de carriere, rencontrant parfois des fausses allegations. Se sont rendu compte que dans certains cas, s'apparentait a des "Fausses allegations par procuration": de n'avoir pas pu soi meme devoler son propre abus (les mères), elle accusait la personne qui n'avait pas realisé l'abus (telescopage). Peut amener aussi à par exemple accuser son prof de gym alors qu'on a été abusé par son grand père, etc.)
+- Occultation de la filiation parentale, aussi: dans cette famille, le nom du père n'est pas donné. Choix intéressant. Pere considere comme géniteur mais enfants pas vraiment inscrit dans sa filiation. Il y avait eu de la maltraitance vécue par les mères (abus sexuel à l'intérieur de leur famille), donc ce choix s'inscrit dans quelque chose qu'elles ne souhaitent pas faire revivre à leurs enfants (hypothèse). A défaut d'avoir pu parler du traumatisme, élaboré, elles agissent de cette manière.
+- (Parenthèse: Cas de fausses allégations d'abus sexuel du père sur l'enfant: raconte son expérience personnelle en début de carrière, rencontrant parfois des fausses allégations. Se sont rendu compte que dans certains cas, s'apparentait à des "Fausses allégations par procuration": de n'avoir pas pu soi même dévoiler son propre abus (les mères), elle accusait la personne qui n'avait pas réalisé l'abus (telescopage). Peut amener aussi à par exemple accuser son prof de gym alors qu'on a été abusé par son grand père, etc.)
 
 ==Auto-engendrement = tourner le dos aux origines==. 
 #### 4.3.1 Contexte social et culturel de transmission
@@ -341,7 +341,7 @@ Est-ce que ca ne révèle pas quelque chose aussi du mythe social, de l'ambiance
 
 Perspective de nouveau: être le nouveau maillon.
 
-- **Premiere stratégie de survie: l'auto-engendrement pour échapper au destin familial. Considere la sienne non suffisamment frequentable et bien pour lui.**
+- **Première stratégie de survie: l'auto-engendrement pour échapper au destin familial. Considere la sienne non suffisamment frequentable et bien pour lui.**
 
 *Duret I. (2000). L'auto-engendrement: une solution pour échapper au destin familial? Considérations systémiques sur les répercussions transgénérationnelles des traumatismes et les solutions imaginées par les familles pour les contourner, Thérapie familiale, vol. 21, n2, p 129-140, Med & hygiene, Geneve.*
 
@@ -387,28 +387,28 @@ Il y a aussi les parents qui veulent quelque chose de mieux pour les enfants (pa
 
 Explication de leur complicité: ils se sont trouvés pour *faire différemment*, faire quelque chose de réparateur.
 
-Daniel, lui, a besoin de sens pourtant. En tant qu'adolescent, surtout, besoin de s'inscrire dans une histoire pour pouvoir se développer en tant qu'adulte en devenir.
+Daniel, lui, a besoin de sens, pourtant. En tant qu'adolescent, surtout, besoin de s'inscrire dans une histoire pour pouvoir se développer en tant qu'adulte en devenir.
 
-Famille d'accueil: acceptent de l'accueillir, disent avoir réfléchi, l'avoir trouvé touchant. Ne "demandent pas mieux" que de devenir des parents réparateurs. Mais ne se sont pas rendus compte des liens de loyauté invisibles de Daniel, au bout de plusieurs weekends c'est devenu plus compliqué.
+La famille d'accueil: acceptent de l'accueillir, disent avoir réfléchi, l'avoir trouvé touchant. Ne "demandent pas mieux" que de devenir des parents réparateurs. Mais ne se sont pas rendus compte des liens de loyauté invisibles de Daniel, au bout de plusieurs weekends c'est devenu plus compliqué.
 
 ![Screenshot 2026-03-05 at 18.33.29.png](/img/user/__assets/media/Screenshot%202026-03-05%20at%2018.33.29.png)
 
 Possibilités d'interventions ici:
 - **Parentectomie**: conseil de couper les liens avec les parents d'origine.
-- Recadrage (**travail d'élaboration du passé**), si cet auto engendrement était une tentative d'echapper au traumatisme familial... Option suivie ici. Besoin latent des adolescents de compréhension de leur histoire. 
+- Recadrage (**travail d'élaboration du passé**), si cet auto engendrement était une tentative d'échapper au traumatisme familial... Option suivie ici. Besoin latent des adolescents de compréhension de leur histoire. 
 	- Donc travail d'une part avec les parents pour qu'ils voient leur histoire comme autre chose que seulement honteuse, dramatique (il y a aussi de belles choses dans leur histoire). 
 	- Travail pour d'aider Daniel a se repérer dans sa transmission.
-		- Dire à Daniel devant ses parents: ce que les parents ont pu transmettre c'est la competence. Operation: parents ont transmis l'importance de compter sur soi meme pour se construire. Avec ce recadrage, nouvelle prespective: pas une perspective de rupture de lien (cut-off), mais de transmission. Parents vus comme transmettant des choses, usant de leur competences parentales pour proteger les generations suivants.
-		- Sous forme d'entretiens familiales pour parler de l'histoire, mais pas sous forme tragique, dramatique, mais comme histoire de vie les amenant a prendre les decisions qu'ils ont prises. **Re-explorer le passé différemment**.
-			- Heritage plutot qu'optique des "repetitions". Que'setce quils ont reussi a transformer, a faire de ce quils ont recu de douloureux.!
-		- Lui faire comprendre que la perspective de l'auto-engendrement a pu lui etre transmettre. 
+		- Dire à Daniel devant ses parents: ce que les parents ont pu transmettre c'est la compétence. Opération: parents ont transmis l'importance de compter sur soi meme pour se construire. Avec ce recadrage, nouvelle perspective: pas une perspective de rupture de lien (cut-off), mais de transmission. Parents vus comme transmettant des choses, usant de leur compétences parentales pour proteger les générations suivants.
+		- Sous forme d'entretiens familiales pour parler de l'histoire, mais pas sous forme tragique, dramatique, mais comme histoire de vie les amenant a prendre les décisions qu'ils ont prises. **Re-explorer le passé différemment**.
+			- Heritage plutôt qu'optique des "répetitions". Qu'est-ce qu'ils ont réussi a transformer, a faire de ce qu'ils ont reçu de douloureux.!
+		- Lui faire comprendre que la perspective de l'auto-engendrement a pu lui être transmettre. 
 
 📅 Vendredi **27 février 2026** - Cours 4 - I. Duret (absent, notes enregistrement)
 
-Continuation du cas de Daniel et de l'intervention. But avec lui a été de poser un **recadrage**. Lui faire comprendre que la perspective de l'auto-engendrement a pu lui etre transmise. Ici, les parents n'étaient pas dans de mauvaises intentions.
-- Ceci permet de les remettre dans une perspective ou l'on parle de ce que les parents **ont donné** a l'enfant. La transmission. C'est ce qui manque le plus quand on a été victimes de violences. Travailler **la possibliité de donner**. (? donc pas recevoir, mais donner, ici? à d'autres?)
+Continuation du cas de Daniel et de l'intervention. But avec lui a été de poser un **recadrage**. Lui faire comprendre que la perspective de l'auto-engendrement a pu lui être transmise. Ici, les parents n'étaient pas dans de mauvaises intentions.
+- Ceci permet de les remettre dans une perspective où l'on parle de ce que les parents **ont donné** a l'enfant. La transmission. C'est ce qui manque le plus quand on a été victimes de violences. Travailler **la possibilité de donner**. (? donc pas recevoir, mais donner, ici? à d'autres?)
 	- Exemple enfants privés de pouvoir communiquer leur amour à leur parent. Fille rejetée
-- cf à ces professeurs de desespoir (auteurs qu'on a vus, qui refusent la filiation). Alors que eux s'arrogent le droit de donner (par l'écriture), acte qui les porte, mouvement createur à  travers l'art.
+- cf à ces *professeurs de désespoir* (auteurs qu'on a vus, qui refusent la filiation). Alors que eux s'arrogent le droit de donner (par l'écriture), acte qui les porte, mouvement createur à  travers l'art.
 - Expérience pour les parents de l'enfant **ingrat** (souffrance des parents).
 
 - Lien avec JL Brackelaire: l'importance de ne pas rester seul face a des situations dans lesquelles il y a des vecus d'injustices, qui n'ont pas été réparées. Par exemple aveux de paternties face a un viol, etc, qui continuent a les habiter encore maintenant.
@@ -429,47 +429,48 @@ Deuxième stratégie de "survie": le non-engendrement, à travers le récit d'un
 
 Elle ne les a pas rencontré elle-même, mais elle supervisait la thérapeute de couple de ces personnes. Donc elle en a une vision meta.
 
-48 ans, monsieur, et 45 ans, madame. La thérapeute est experimentée qui voit des couples depuis longtemps. Vient chez Isabelle parce qu'elle ne s'en sort pas.
-Ils se sont rencontrés à 18 et 15 ans. Lui est l'ainé de 2 soeurs (Odile et Paloma), elle est enfant unique. Consulte en couple parce qu'ils ont des "mésententes", plus exactement, madame ne supporte plus "les petits manquements" de monsieur. Ces petits manquements, monsieur est tres concis quand il parle, manque de compassion, et elle se sent très seule. Monsieur travaille dans une banque où il est informaticien, elle travaillait comme secretaire et a travaillé il y a 10 ans, a eu un accident de ski, a developpé une fibryomalgie, n'a plus pu travailler.
+48 ans, monsieur, et 45 ans, madame. La thérapeute est expérimentée et voit des couples depuis longtemps. Vient chez Isabelle parce qu'elle ne s'en sort pas.
+Ils se sont rencontrés à 18 et 15 ans. Lui est l'ainé de 2 soeurs (Odile et Paloma), elle est enfant unique. Consultent en couple parce qu'ils ont des "mésententes", plus exactement, madame ne supporte plus "les petits manquements" de monsieur. Ces petits manquements, monsieur est très concis quand il parle, un "manque de compassion", et elle se sent très seule. Monsieur travaille dans une banque en tant qu'informaticien, elle travaillait comme secrétaire et a travaillé il y a 10 ans, a eu un accident de ski, a développé une fibryomalgie, n'a plus pu travailler.
 
-Pourquoi ils viennent, pourquoi maintenant? Madame dit que si le problème persiste, elle va demander le divorce. Donc madame est la plus demandeuse des deux, met le probleme en avant. La therapeute dit qu'elle a beaucoup de mal parce que la madame prend beaucoup de place, ce sont ses paroles.
-Explique quelle voulait une maison et des enfants. Ils n'ont pas eu d'enfant. Pourquoi? Madame répond "pas faute d'en avoir voulu, a cause de la faineantise de mon mari. On s'est dit que tout le boulot allait etre pour moi.". Ils voulaient pas se marier au depart, mais se sont quand meme maries pour les avantages au niveau du pret, un mariage "de raison".
-La thérapeute dit qu'ils sont un peu bizarres, elle parle tout le temps, ne la trouve pas sympathique, crispée, et lui bizarre parce que toujours habillés en sandales, alors que elle s'habille chic, donc impression de couple atypique. Et un coté un peu "reveche" (un abord difficile et déplaisant). La thérapeute est prise de compassion pour ce monsieur, qu'elle a l'air de considérer le pauvre, malmené dans cette situation.
+Pourquoi ils viennent, pourquoi maintenant? Madame dit que si le problème persiste, elle va demander le divorce. Donc madame est la plus demandeuse des deux, elle met le problème en avant. La thérapeute dit qu'elle a beaucoup de difficultés pendant les séances parce que la madame "prend beaucoup de place".
+Explique quelle voulait une maison et des enfants. Mais ils n'ont pas eu d'enfant. Pourquoi? Madame répond "pas faute d'en avoir voulu, a cause de la fainéantise de mon mari. On s'est dit que tout le boulot allait être pour moi.". Ils voulaient pas se marier au départ, mais se sont quand meme mariés pour les avantages au niveau du prêt, un mariage "de raison".
+La thérapeute décrit ses impressions: ils sont un peu bizarres, elle parle tout le temps, elle ne la trouve pas sympathique, crispée, et lui lui paraît bizarre parce que toujours habillés en sandales, alors que elle s'habille chic, donc impression de couple atypique. Et un coté un peu "revêche" (un abord difficile et déplaisant). La thérapeute est prise de compassion pour ce monsieur, qu'elle a l'air de considérer le pauvre, le malmené dans cette situation.
 
-Elle découvre que Monsieur etait attiré par madame qui ressemblait à une actrice, Bo Derek. Et elle aimait qu'il s'interesse aux choses serieuses (philosophie, etc). Selon elle, la valeur fondatrice du couple, était le respect. "Chantaient la meme chanson". Se sont remariés à 20 ans.
+Elle découvre que Monsieur était attiré par madame qui ressemblait à une actrice, Bo Derek. Et elle aimait qu'il s'intéresse aux choses sérieuses (philosophie, etc). Selon elle, la valeur fondatrice du couple, était le respect, ils "chantaient la meme chanson". Se sont remariés à 20 ans.
 
-Attentes précises: pour monsieur, prendre conscience de ce qui ne va pas pour sa femme. Pour elle, voudrait que ça change, qu'ils arrivent à mieux communiquer. Des choses d'il y a 30 ans dont elle veut reparler.
+Attentes précises de la thérapie: pour monsieur, prendre conscience de ce qui ne va pas pour sa femme. Pour elle, voudrait que ça change, qu'ils arrivent à mieux communiquer. Des choses d'il y a 30 ans dont elle veut reparler.
 
-À ce moment, en Belgique, scandales de prêtres et abus sexuels. Elle a recu une confidence de son mari dont elle aimerait parler. Son mari aurait eu une relation sexuelle avec Paloma, 10 ans de moins que lui, et aussi avec 2 autres jeunes filles. Elle précise que Paloma n'est pas vraiment sa soeur, "elle est adoptée". La thérapeute propose d'en parler entre eux. La femme dit qu'il y a des choses qu'elle ne pourra pas dire à la thérapeute, "tu vois ce a quoi je fais allusion" elle dit a son mari. Vinciane Despret dit que les patients savent très vite ce que les thérapeutes peuvent/ne peuvent pas entendre.
+À ce moment, en Belgique, scandales de prêtres et abus sexuels. Madame a reçu une confidence de son mari dont elle aimerait parler. Son mari aurait eu à 18 ans une relation sexuelle avec Paloma, 10 ans de moins que lui, et aussi avec 2 autres jeunes filles. Elle précise que Paloma n'est pas vraiment sa soeur, "elle est adoptée". La thérapeute propose d'en parler entre eux. La femme dit qu'il y a des choses qu'elle ne pourra pas dire à la thérapeute, "tu vois ce a quoi je fais allusion", elle dit a son mari. 
 
-Isabelle demande si elle se rend compte que le mari a eu des relations avec une enfant de 8 ans, la thérapeute s'en étonne. "Elle n'a pas calculé". Elle parle d'autre chose, la mort du père de monsieur à 4 ans. Ensuite adoptent une enfant colombienne, Paloma. Le mari dit que s'il devait caractériser sa famille, "je fais partie d'une famille où on ne parle de rien".
+**Vinciane Despret (philosophe, ancienne prof à ULB) dit que les patients savent très vite ce que les thérapeutes peuvent/ne peuvent pas entendre.** Isabelle demande à la thérapeute si elle se rend compte que le mari a eu des relations avec une enfant de 8 ans, la thérapeute s'en étonne. "Elle n'a pas calculé". Elle parle d'autre chose, la mort du père de monsieur à 4 ans. Après la mort, la famille adopte une enfant colombienne, Paloma. Le mari dit que s'il devait caractériser sa famille, "je fais partie d'une famille où on ne parle de rien".
 
 Intéressant pour Isabelle, la situation d'une thérapeute qui n'entend pas, n'est pas capable d'entendre.
 
 📅 Vendredi **6 mars 2026** - Cours 5 - I. Duret
 
-Suite de l'illustration cllinique. La thérapeute leur avait proposé de parler ensemble, alors que leur problème était un problème de communication. Monsieur vient d'une famille ou le slilence est d'or (cf. mythiques, systèmes de croyances)
-Monsieur sait peu de choses sur son pere biologique. Seuls elements qu'il c'est via sa femme, qui elle s'est montree curieuse et a interroge la famille de monsieur.
+Suite de l'illustration clinique. 
+
+La thérapeute leur avait proposé de parler ensemble, alors que leur problème était un problème de communication. Monsieur vient d'une famille ou le silence est d'or (cf. mythiques, systèmes de croyances). Monsieur sait peu de choses sur son père biologique. Seuls éléments qu'il connait c'est via sa femme, qui, elle, s'est montrée curieuse et a interroge la famille de monsieur.
 
 Madame Fauster a découvert qu'ils avaient quelque chose en commun au niveau de l'histoire familiale, son mari et elle. Elle a découvert en lisant son journal intime.
 
-Dynamique entre thérapeute et superviseuse: La thérapeute dit vouloir "vérifier l'hypothèse". Isabelle est "perplexe" parce qu'il n'y a pas d'hypothèse pour elle, c'est un fait affirmé. "Mais c'est madame qui dit ça, pas monsieur". Il y a malentendu entre elles. Se rejouit du malentendu, le malentendu ou paradoxe permet d'aller au-delà. Pour cette thérapeute, il s'avère que de son histoire familiale, elle tire un respect pour les hommes qui se taisent, (pour protéger le mythe familial). Il y a eu un enfant né d'un enfant illégitime avec un allemand pendant la guerre, important de mettre à l'oubli. Le silence aussi a été d'or dans sa famille d'origine.
+Dynamique entre thérapeute et superviseuse: La thérapeute dit vouloir "vérifier l'hypothèse". Isabelle est "perplexe" parce qu'il n'y a pas d'hypothèse pour elle, c'est un fait affirmé. "Mais c'est madame qui dit ça, pas monsieur". Il y a malentendu entre elles. Se réjouit du malentendu, le malentendu ou paradoxe permet d'aller au-delà. Pour cette thérapeute, il s'avère que de son histoire familiale, **elle tire un respect pour les hommes qui se taisent (pour protéger le mythe familial)**. Il y a eu un enfant né d'un enfant illégitime avec un allemand pendant la guerre, important de mettre à l'oubli. Le silence aussi a été d'or dans sa famille d'origine.
 
-Elle continue, avec ses patients, concernant l'abus: "au moment même je ne l'ai pas entendu". Madame continue qu'elle n'a pas eu d'enfant et qu'elle avait peur qu'il fasse la meme chose avec leur fille s'ils avaient une fille. Madame interpelle la therapeute qu'elle avait pourtant dit 2 fois. Cf. parallèle à quand les victimes essayent de mettre en avant des choses, on entend sans entendre, sans tout a fait vouloir y croire.
+La thérapeute continue, avec ses patients, concernant l'abus: "au moment même je ne l'ai pas entendu". Madame continue qu'elle n'a pas eu d'enfant et qu'elle avait peur qu'il fasse la meme chose avec leur fille s'ils avaient une fille. Madame interpelle la thérapeute qu'elle avait pourtant dit 2 fois. Cf. parallèle à quand les victimes essayent de mettre en avant des choses, on entend sans entendre, sans tout à fait vouloir y croire.
 
-> [!NOTE]
-> Question sur la traumatisation secondaire: oui, on peut parler de retraumatisation secondaire dans certaines situations. Exemple d'enfants abusés, ont pour la plupart essayé d'en parler, et on les a pas entendus. Stade important vers la guérison: être reconnu, par la famille, cru, validé par des gens faisant autorité. Difficile dans familles incestueses: tout est fait pour que les victimes remettent en doute, ou soient coercées.
+> [!info] L'écoute
+> Question sur la traumatisation secondaire: oui, on peut parler de retraumatisation secondaire dans certaines situations. Exemple d'enfants abusés, ont pour la plupart essayé d'en parler, et on ne les a pas entendus. Stade important vers la guérison: être reconnu, par la famille, cru, validé par des gens faisant autorité. Difficile dans familles incestueses: tout est fait pour que les victimes remettent en doute, ou soient coercées.
 
-La thérapeute sent ensuite l'ambiance moins crispée apres avoir raconté. Madame a changé de visage. Madame dit qu'elle était honteuse, se sentait complice de son mari. Il y a 30 ans il lui a fait une confiance aveugle en exprimant cette histoire. Elle s'est demandé comment elle a pu rester avec lui, et s'est dit qu'elle a pu garder ça pour elle par amour. Aujourd'hui elle pense que c'est répugnant, mais c'est l'amour.
+La thérapeute sent ensuite l'ambiance moins crispée après avoir raconté. Madame a changé de visage. Madame dit qu'elle était honteuse, se sentait complice de son mari. Il y a 30 ans il lui a fait une confiance aveugle en exprimant cette histoire. Elle s'est demandé comment elle a pu rester avec lui, et s'est dit qu'elle a pu garder ça pour elle par amour. Aujourd'hui, elle pense que c'est répugnant, mais c'est l'amour.
 
-Le couple va se mettre à parler ensemble, en thérapie, vont aborder des questions autour de leur passé. Et nottament ce que madame a vécu, elle en terme d'abus dans son passé d'enfant-adolescente. A environ 7/8 ans, elle a été victime d'atouchements par un garcon qui avait a l'epoque 17 ans (on remarque les ages similaires), et explique à Monsieur. L'enmenait dans une cabane et la forcait a le masturber, en avait parlé a sa mère qui a été trouver la maman de ce garcon et ca s'est arreté tout de suite. Madame dit je n'y pensais plus, mais avec ces histoires de l'église, a lu son journal intime et est revenue sur cette histoire là. Monsieur dit qu'avec Paloma c'etait similaire, il lui demandait de le masturber.
+Le couple va se mettre à parler, ensemble, en thérapie, vont aborder des questions autour de leur passé. Et notamment ce que madame a vécu, elle, en terme d'abus dans son passé d'enfant-adolescente. **A environ 7/8 ans, elle a été victime d'attouchements par un garçon qui avait a l'époque 17 ans (on remarque les âges similaires)**, et explique au mari. L'enmenait dans une cabane et la forçait à le masturber, en avait parlé à sa mère qui a été trouver la maman de ce garçon et ça s'est arrêté tout de suite. Madame dit "je n'y pensais plus, mais avec ces histoires de l'église...", elle a lu son journal intime et est revenue sur cette histoire là. Monsieur dit qu'avec Paloma c'était similaire, il lui demandait de le masturber.
 
-Fonction du secret: préserver le mythe. Parfois un thérapeute décidera de ne pas sauter immédiatement lorsqu'un secret est perçu, pour ne pas effrayer la famille, car le secret a un rôle de protection. 
+**Fonction du secret: préserver le mythe**. Parfois un thérapeute décidera de ne pas sauter immédiatement lorsqu'un secret est perçu, pour ne pas effrayer la famille, car **le secret a un rôle de protection**. 
 
-Gestion de ses propres emotions, suivi en supervision:
+Gestion de ses propres émotions, suivi en supervision:
 - Ne pas avoir peur de partager avec les patients le point de vue externe du superviseur, aide les patients a ne pas se sentir seuls.
 - **Partialité multidirectionnelle**: tour à tour se mettre à la place des différents membres de la famille.
-- Parent qu'on a en face de moi a aussi une histoire
+- Le parent qu'on a en face de soi a aussi une histoire
 	- cf **légitimité destructive**:
 		- traduit le fait qu'un enfant violenté acquiert le droit de se venger de ce qu'il a reçu et d'infliger à d'autres (ses enfants en particulier) la violence qu'il a lui-même subie, manière de rétablir une balance de justice. Souvent la légitimité destructive laisse apparaître un tableau familial dans lequel les parents ... 
 		- "après tout ce que moi j'ai vécu c'est normal que je..."
@@ -485,7 +486,7 @@ Gestion de ses propres emotions, suivi en supervision:
 > - Quelque chose qui rend difficile **l'autonomie.** Ils sont pressés de quitter leur famille d'origine. Se sont mariés très jeunes. Ca doit attirer notre attention lorsqu'une personne cherche une rupture (autre chose qu'une séparation). Quelque chose au niveau du processus d'autonomisation qui pose problème, ne se fait pas de maniere fluide. Rupture =/ prise d'autonomie.
 > 	- Autonomie: Droit de gouverner par ses propres lois. Etymologie: autos (soi-même) et nomos (loi). C'est se donner soi-même sa propre loi (voir aussi le cours Grands Courants...). Capacité à choisir ses appartenances alors que l'on est pris dans un extraordinaire réseau de dépendances. L'autonomie, ce n'est pas l'indépendance.
 > 	- Plus un système vivant est autonome, plus il dépendant. Plus il s'enrichit en complexité et entretient par la-même des relations multiples avec son environnement, plus il accroit son autonomie en se créant une multiplicité de dépendances.
-> 	- Marika Mooisseeff: à propos de l'adolescence. Est-ce qu'interventions ne viennent pas combler un manque de rituels, de rites de passage? Permet de voir notre rôle plutôt comme celui de médiateur, permettant, favorisant un passage ritualisé. Comment quitter l'enfance tout en restant l'enfant de ses parents? Transformation, continuité, pas une "rupture du cordon"... c'est une suite, on reste appartenant à son groupe. Elle parle de deux types de dépendances: 1) Fonction nourricière, ou *Parenthood*, répond aux besoins primaires: nourriture, amour, protection. 2) Fonction filiative ou *Kinship*: répond au besoin d'être inscrit dans un cadre symbolique: généalogie, filiation, lien... (-> appartenance).
+> 	- Marika Moisseeff: à propos de l'adolescence. Est-ce qu'interventions ne viennent pas combler un manque de rituels, de rites de passage? Permet de voir notre rôle plutôt comme celui de médiateur, permettant, favorisant un passage ritualisé. Comment quitter l'enfance tout en restant l'enfant de ses parents? Transformation, continuité, pas une "rupture du cordon"... c'est une suite, on reste appartenant à son groupe. Elle parle de deux types de dépendances: 1) Fonction nourricière, ou *Parenthood*, répond aux besoins primaires: nourriture, amour, protection. 2) Fonction filiative ou *Kinship*: répond au besoin d'être inscrit dans un cadre symbolique: généalogie, filiation, lien... (-> appartenance).
 > 	- Par exemple, Daniel n'a pas reçu les éléments de son histoire familiale lui permettant son autonomisation. Besoin de **restaurer le composant filiatif.** 
 > 	
 
@@ -494,42 +495,42 @@ Faire le deuil, acter la coupure de loin est parfois la solution (situations d'e
 ### 4.5 La génophobie: la peur de transmettre des gènes de maladie mentale
 
 
-> La **génophobie**: certains parents porteurs d'une maladie mentale dite à transmission génétique se représentent la transmisison comme une forme de contamination. POur empêcher celle-ci d'opérer, ils activent des processus anxieux contagieux qui les inhibent dans leur capacité à transmettre (hypothèse 3)
+> La **génophobie**: certains parents porteurs d'une maladie mentale dite à transmission génétique se représentent la transmission comme une forme de contamination. POur empêcher celle-ci d'opérer, ils activent des processus anxieux contagieux qui les inhibent dans leur capacité à transmettre (hypothèse 3)
 
 **Troisième illustration clinique: Arthur et le poison dans ses tartines, 7 ans** (Duret, 2009)
 
-Arthur, a peur d'etre empoisonné par ses tartines, a aussi des hallucinations (se dit possédé par le diable, et que le diable va lui faire faire des choses graves). La famille arrive à travers le psychiatre de la maman (traitée pour psychose maniaco-dépressive). 
+Arthur, a peur d'être empoisonné par ses tartines, a aussi des hallucinations (se dit possédé par le diable, et que le diable va lui faire faire des choses graves). La famille arrive à travers le psychiatre de la maman (traitée pour psychose maniaco-dépressive). 
 
-La patiente est dans une angoisse par peur d'avoir transmis son probleme psychiatrique à son enfant. Un frère (de la femme) avait une symptomatologie similaire mort par suicide à l'age de 17 ans. Le père de la maman et deux oncles aussi porteurs de la maladie, suggere un bilan diagnostique, pour savoir si Arthur est lui aussi touché par la maniaco-dépression?
+La patiente est dans une angoisse par peur d'avoir transmis son problème psychiatrique à son enfant. Un frère (de la femme) avait une symptomatologie similaire mort par suicide à l'âge de 17 ans. Le père de la maman et deux oncles aussi porteurs de la maladie, suggère un bilan diagnostique, pour savoir si Arthur est lui aussi touché par la maniaco-dépression?
 
 Isabelle voit l'enfant seul d'abord, pour faire des tests projectifs, dessin. Maman demande de la voir seule d'abord, ne veut pas non plus faire venir le reste de la famille (mari, etc), disant qu'ils n'ont rien a voir avec la maladie.
 
-Arthur depuis 15 jours dit etre possédé par le diable, entend des voix qui lui dictent ce qu'il doit faire. Revient avec sa boite à tartines remplie. Sa plus grande angoisse à lui c'est la peur d'être empoisonné, mêmes symptômes que le frère de la maman, dépressif depuis l'enfance, qui avait aussi fait de la restriction alimentaire. Et qu'elle s'est jamais pardonnée de ne pas avoir su le protéger.
+Arthur depuis 15 jours dit être possédé par le diable, entend des voix qui lui dictent ce qu'il doit faire. Revient avec sa boite à tartines remplie. Sa plus grande angoisse à lui c'est la peur d'être empoisonné, mêmes symptômes que le frère de la maman, dépressif depuis l'enfance, qui avait aussi fait de la restriction alimentaire. Et qu'elle s'est jamais pardonnée de ne pas avoir su le protéger.
 
 Ne voulait pas d'enfant, le mari en voulait. A la naissance d'Arthur, frappée par la ressemblance entre Arthur et son frère à elle. Pour Isabelle, intéressant de se demander qui ressemble a qui (physiquement et psychiquement), parce que ça connote les représentations qu'on a de quelqu'un.
 
-Elle raconte que hier, l'enfant jouait et puis est revenu parce qu'il se sentait "possedé". Elle a appelé son mari pour venir l'aider et a donné un crucifix a Arthur pour qu'il se protège, il part jouer sans problème. Elle dit en entretien qu'elle trouve ça tôt à 7 ans de se préoccuper de la mort (Isabelle pense: mort sujet tabou dans cette famille?). Mari banalise les préoccupations de la maman, donc elle est un peu seule face au problème qu'elle perçoit.
+Elle raconte que hier, l'enfant jouait et puis est revenu parce qu'il se sentait "possédé". Elle a appelé son mari pour venir l'aider et a donné un crucifix a Arthur pour qu'il se protège, il part jouer sans problème. Elle dit en entretien qu'elle trouve ça tôt à 7 ans de se préoccuper de la mort (Isabelle pense: mort sujet tabou dans cette famille?). Mari banalise les préoccupations de la maman, donc elle est un peu seule face au problème qu'elle perçoit.
 
-Isabelle se demande si les angoisses de la maman ne sont pas reforcées dans le travail avec le psychiatre qui travaille l'aspect héréditaire. Elle n'ignore cependant pas le cote hereditaire possible dans cette situation.
-Elle se demande si dans un autre contexte ses peurs n'auraient pas pu etre facilement desamorcées, s'il n'y avait pas cette angoisse de la maman? Par exemple la possession est vite desamorcée par la croix, la maman n'en est pas plus préoccupée. Par contre, le cote empoisonnement et restriction, ca la preoccupe fort.
+Isabelle se demande si les angoisses de la maman ne sont pas renforcées dans le travail avec le psychiatre qui travaille l'aspect héréditaire. Elle n'ignore cependant pas le cote héréditaire possible dans cette situation.
+Elle se demande si dans un autre contexte ses peurs n'auraient pas pu être facilement désamorcées, s'il n'y avait pas cette angoisse de la maman? Par exemple la possession est vite désamorcée par la croix, la maman n'en est pas plus préoccupée. Par contre, le cote empoisonnement et restriction, ca la préoccupe fort.
 
-En realisant des tests projectifs Rorschach, il voit des animaux qui font peur. Isabelle ne trouve pas d'éléments clairement psychotiques. Ce qui lui fait peur, il raconte, sont les cours de cathéchisme, où on lui a parlé du diable.
+En réalisant des tests projectifs Rorschach, il voit des animaux qui font peur. Isabelle ne trouve pas d'éléments clairement psychotiques. Ce qui lui fait peur, il raconte, sont les cours de cathéchisme, où on lui a parlé du diable.
 
-Elle voit la famille: le papa, la maman, Arthur et le frère Thomas, ensemble. En salle d'attente, ils regardent une affiche sur le suicide et la mère leur raconte pour la première fois que son frère est mort de suicide. En séance, elle entend que Thomas provoque Arthur en mettant des photos sous son lit. Thomas raconte qu'ils ont vu ensemble pendant les vacances un film qui parle de possession, Exorcisme, ils s'en moquent un peu. On aperçoit: tâche aveugle de la maman: ne met pas en lien les éléments de la vie quotidienne sur le comportement d'Arthur, alors que le mari et le frère le font facilement. La mère est dans une système de représentations différent, influencé par son vecu. Avec nottament une culpabilite à l'égard de son frère, d'abord, d'Arthur, ensuite.
+Elle voit la famille: le papa, la maman, Arthur et le frère Thomas, ensemble. En salle d'attente, ils regardent une affiche sur le suicide et la mère leur raconte pour la première fois que son frère est mort de suicide. En séance, elle entend que Thomas provoque Arthur en mettant des photos sous son lit. Thomas raconte qu'ils ont vu ensemble pendant les vacances un film qui parle de possession, Exorcisme, ils s'en moquent un peu. On aperçoit: tâche aveugle de la maman: ne met pas en lien les éléments de la vie quotidienne sur le comportement d'Arthur, alors que le mari et le frère le font facilement. La mère est dans une système de représentations différent, influencé par son vécu. Avec notamment une culpabilité à l'égard de son frère, d'abord, d'Arthur, ensuite.
 
-Il y a quelque chose dans l'élaboration du symptome qui vient deja dire qqch: Arthur va essayer de comprendre ce qui n'a pas pu être dit. **On peut voir les comportements symptomatiques comme des tentatives d'en savoir plus**.
-- Thisseron: parfois, quand il y a des secrets, à la génération suivante il y a un enfant qui va s'emparer de miettes de symbolisation (parce que tout n'est pas completement occulté). Pour attendre des parents qu'ils aillent plus loin dans ce qui n'a pas été dit.
+Il y a quelque chose dans l'élaboration du symptôme qui vient deja dire qqch: Arthur va essayer de comprendre ce qui n'a pas pu être dit. **On peut voir les comportements symptomatiques comme des tentatives d'en savoir plus**.
+- Thisseron: parfois, quand il y a des secrets, à la génération suivante il y a un enfant qui va s'emparer de miettes de symbolisation (parce que tout n'est pas complètement occulté). Pour attendre des parents qu'ils aillent plus loin dans ce qui n'a pas été dit.
 
 Arthur: intervention rapide a permis un dégagement d'Arthur qui n'est plus libre de se développer dans une identité propre parce qu'il est prisonnier des représentations de sa mère. Intervention: on dépathologise les choses, la mère en est soulagée.
 
-**Processus anxieux contagieux** entre mère, enfant, et peut-etre même le psychiatre. Ce qui hante l'enfant c'est ce qui lui a transmis sa mère en termes de peur, peur de lui avoir transmis un mauvais gène.
+**Processus anxieux contagieux** entre mère, enfant, et peut-être même le psychiatre. Ce qui hante l'enfant c'est ce qui lui a transmis sa mère en termes de peur, peur de lui avoir transmis un mauvais gène.
 > 1) S'il n'est pas facile de faire la part entre ce qui serait de l'ordre d'une hérédité génétique ou d'un héritage psychique, on observe un processus anxieux contagieux (N Georgieff 2008 *L'empathie aujourd'hui: au croisement des neurosciences, de la psychopathologie et de la psychanalyse*) fréquemment en oeuvre dans les familles dont un parent est malade.
-> 2) Ce processus anxieux peut faire courir à l'enfant le risque de se retrouver enfermé dans le déterminisme d'un diagnostic medical à caractère inéluctable.
-> 3) Les familles ont des représentations de leur heritage familial (relevant du mythe familial) qui peuvent entrer en collusion avec les représentations des soignants (le modele medical hereditaire). Ces representations peuvent inclure l'idee d'une transmission d'un trouble psychique ou d'une maladie mentale, au meme titre que des competences ou des dons particuliers.
-> 4) Il est important de pouvoir **dialoguer** et bien **coordonner** nos interventions entre thérapeutes consultés pour les enfants et les équipes thérapeutiques (psychiatres, travailleurs sociaux, médecins traitants, éducateurs, infirmières...) qui soigent leurs parents. Ceci implique qu'il sera préférable de **ne pas travailler avec un cadre pré-établi** mais au contraire d'inventer un dispositif privilégiant les collaborations.
+> 2) Ce processus anxieux peut faire courir à l'enfant le risque de se retrouver enfermé dans le déterminisme d'un diagnostic médical à caractère inéluctable.
+> 3) Les familles ont des représentations de leur héritage familial (relevant du mythe familial) qui peuvent entrer en collusion avec les représentations des soignants (le modèle médical héreditaire). Ces représentations peuvent inclure l'idee d'une transmission d'un trouble psychique ou d'une maladie mentale, au meme titre que des compétences ou des dons particuliers.
+> 4) Il est important de pouvoir **dialoguer** et bien **coordonner** nos interventions entre thérapeutes consultés pour les enfants et les équipes thérapeutiques (psychiatres, travailleurs sociaux, médecins traitants, éducateurs, infirmières...) qui soignent leurs parents. Ceci implique qu'il sera préférable de **ne pas travailler avec un cadre pré-établi** mais au contraire d'inventer un dispositif privilégiant les collaborations.
 
-Sortir d'une lecture univoque du symptome. Cette lecture peut enfermer le symptome, le maintenir.
-> L'ambiance positive de "recherche de sens" autour d'une préoccupation commune a permis de sortir d'une lecture univoque d'un symptôme qui portait aussi en lui "le potentiel resilient" nécessaire pour relance la famille dans sa capacité à transmettre.
+Sortir d'une lecture univoque du symptôme. Cette lecture peut enfermer le symptôme, le maintenir.
+> L'ambiance positive de "recherche de sens" autour d'une préoccupation commune a permis de sortir d'une lecture univoque d'un symptôme qui portait aussi en lui "le potentiel résilient" nécessaire pour relance la famille dans sa capacité à transmettre.
 
 **Conclusions**
 
@@ -538,9 +539,9 @@ Il existe différents mécanismes de survie ou stratégies adaptatives utilisés
 **Pistes thérapeutiques**
 
 Pour ne pas se laisser gagner par le désespoir:
-- **Recardrer** la mise hors filiation ou la frilosité à transmettre comme une compétence qu'ont les parents à **proteger les géne1rations futures**
-- Rester en contact avec l'imprédictibe, repérer les nuances, les dissonances, et les paradoxes.
-- Re-susciter la filiation. Montrer que le symptôme interroge et re-inscrit dejà dans la généalogie, dans l'appartenance verticale.
+- **Recadrer** la mise hors filiation ou la frilosité à transmettre comme une compétence qu'ont les parents à **proteger les générations futures**
+- Rester en contact avec l'imprédictible, repérer les nuances, les dissonances, et les paradoxes.
+- Re-susciter la filiation. Montrer que le symptôme interroge et re-inscrit déjà dans la généalogie, dans l'appartenance verticale.
 - Aider les familles et ses membres a retrouver leur capacité à donner, à transmettre en transformant l'héritage.
 
 Métaphore de la perle: grain de sable provoque bijou.
