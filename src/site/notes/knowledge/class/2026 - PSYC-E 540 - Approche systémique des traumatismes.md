@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-06T13:14:51.137+02:00","updated":"2026-06-06T22:10:12.699+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-06T22:17:27.912+02:00","updated":"2026-06-06T22:17:27.913+02:00"}
 ---
 
 
 
 
-> [!tldr] Résumé
+> [!tldr] Contenu du cours
 > Le cours aborde les questions des liens familiaux et de la transmission intergénérationnelle des traumatismes au sein des groupes et des familles. Elles sont envisagées dans le contexte des couples et familles contemporaines, souvent désignées par les sociologues et les philosophes comme témoignant d'un affaiblissement du lien de filiation et de la capacité à transmettre. Cette caractéristique sera mise en regard du contexte historique et socio-culturel au sein duquel elle émerge. La clinique nous permet de relever des situations où l'organisation même des liens ou de la filiation semble découler de la peur de transmettre. L'impact de cette peur pour le groupe et les individus qui le composent sera analysé à partir de nombreux exemples.   
 > 
 > Il sera ensuite question des enjeux psychiques individuels et groupaux consécutifs aux traumatismes. Les pistes thérapeutiques seront abordées à travers de nombreuses situations cliniques. Ces illustrations  permettent d'une part d'explorer et de comprendre les dynamiques individuelles et relationnelles consécutives aux traumatismes, d'autre part de montrer l'intérêt de l'approche systémique dans la clinique du trauma. La psychothérapie est une rencontre inter-culturelle et sociopolitique qui impose au clinicien d'interroger son positionnement et les représentations qui en découlent.  Différents concepts et outils systémiques ( recadrage, génogrammes, objets flottants, éthique relationnelle, partialité multidirectionnelle...) seront présentés pour permettre d'illustrer ce que l'approche systémique constructiviste peut apporter au psychothérapeute qui souhaite s'engager dans la clinique du trauma en s'utilisant lui-même comme activateur du changement.
@@ -35,12 +35,11 @@ Les deux cours (celui de I. Duret et celui de J-L Brackelaire) seront enregistr�
 >Portera sur le cours, son livre personnel, et le livre de Neuburger (traumatisme groupal et la thérapie aux 3 R)
 >Ne portera **pas** sur la partie de Jean-Luc Brackelaire.
 
-# Partie 1. Cours principal (Isabelle Duret)
 
 📅 Vendredi **6 Février 2026** - Cours magistral I. Duret
 
 L'objectif de ce cours et d'aborder la notion de **transmission** sous l'angle systémique, et la notion de **traumatisme**. Repérer, comprendre, et prendre en charge les dimensions traumatiques.
-## 🏷️ 1. Introduction
+# 🏷️ 1. Introduction
 
 **Parcours professionnel, contexte social**
 
@@ -110,9 +109,9 @@ L’approche systémique, selon elle, n’est pas une école fermée mais une mu
 > - L'approche systémique accueille la multiplicité de modèles (esprit du libre examen). 
 > - Tout ne se transmet pas, la résilience existe.
 
-## 🏷️ 2. La famille
+# 🏷️ 2. La famille
 
-### 2.1 La famille: unité fonctionnelle et relationnelle (Neuburger)
+## 2.1 La famille: unité fonctionnelle et relationnelle (Neuburger)
 
 Comment définit-on, se représent-on la **famille**? On considérera ici le caractère mythique, des croyances autour de l'idée de famille (e.g. mythe fondateur de la Belgique, l'*Union fait la force*).
 
@@ -134,7 +133,7 @@ La famille est aussi un **lieu de stabilité et de pérennité**. Même si le g
 Enfin, elle est un **lieu de construction identitaire**. On s’y construit pour pouvoir un jour s’en séparer partiellement et aller ailleurs : créer d’autres liens, éventuellement fonder une autre famille. La famille est également un espace de **transmission intergénérationnelle**, via la filiation. Cette transmission passe par des liens visibles mais aussi par des loyautés invisibles, parfois complexes ou contraignantes.
 
 Ces différentes dimensions forment le socle de la définition de la famille. Mais, selon Neuburger, l’ensemble est structuré par un « ciment » particulier : le mythe familial.
-### 2.2 Le mythe familial : croyances, récit et identité groupale
+## 2.2 Le mythe familial : croyances, récit et identité groupale
 
 Le mythe familial est ce qui donne au groupe son identité spécifique et le différencie du monde extérieur. Il est composé d’un ensemble de **croyances partagées** concernant ce que la famille pense être, ce qu’elle dit d’elle-même.
 
@@ -154,22 +153,22 @@ Il est difficile d’identifier son propre mythe familial, car on a tendance à 
 >
 >Une autre étudiante décrit une famille où les liens sont moins sacralisés. L’autonomie et la différenciation sont plus valorisées, et il est plus acceptable de s’éloigner. Elle s’interroge sur l’influence de ce mythe sur la tolérance aux ruptures.
 
-### 2.3 Crises, renouvellement et rigidification du mythe familial
+## 2.3 Crises, renouvellement et rigidification du mythe familial
 
-#### 2.3.1 Dénonciation du mythe
+### 2.3.1 Dénonciation du mythe
 
 Certains membres peuvent **contester** le mythe. Ils dénoncent son caractère idéalisé, voire hypocrite. Cette dénonciation peut être vive, conflictuelle. Pourtant, loin de détruire le groupe, elle peut paradoxalement le renforcer. Par exemple, dans une famille qui valorise fortement l’unité, un membre qui refuse systématiquement de participer aux rassemblements peut devenir la figure de celui « sur qui on ne peut pas compter ». Le reste du groupe peut alors se resserrer autour du mythe fondateur, renforçant ainsi la cohésion.
-#### 2.3.2 Renouvellement du mythe
+### 2.3.2 Renouvellement du mythe
 
 Le mythe n’est donc pas figé. Il peut **se renouveler** après une crise. Il peut être adapté à une période de la vie familiale et devenir inapproprié plus tard. Par exemple, un mythe d’ultra-unité peut être soutenant lorsque les enfants sont petits, mais devenir contraignant à l’adolescence, quand la différenciation devient nécessaire.
-#### 2.3.3 Rigidification du mythe
+### 2.3.3 Rigidification du mythe
 
 Lorsque le mythe se rigidifie, qu’il ne se transforme plus, il peut devenir source de souffrance, voire de violence. En clinique, on rencontre souvent des familles où les mythes se sont rigidifiés. C’est cette rigidité, plus que le mythe en lui-même, qui devient problématique.
 
 >[!example] Jusqu'à la violence
 >Exemple: si la devise implicite est « chez nous, on est une famille ultra unie », cela peut devenir très violent pour un adolescent à qui l’on interdit toute autonomie au nom de l’unité. La violence peut alors surgir dans la tentative de faire respecter à tout prix la croyance mythique.
 
-### 2.4 Pluralité et mobilité des mythes
+## 2.4 Pluralité et mobilité des mythes
 
 L’idée centrale est celle de **mobilité**. Le mythe n’est pas un destin figé. Il peut être repris tel quel, transformé, inversé, combiné avec celui d’un partenaire lors de la création d’une nouvelle famille. Il peut soutenir la créativité ou, au contraire, se transformer en contrainte s’il se rigidifie.
 
@@ -187,14 +186,14 @@ Donc, **le mythe familial est à la fois une ressource identitaire, un organisat
 > - C'est la rigidification, pas le mythe lui-même, qui devient source de violence. 
 > - La dénonciation du mythe peut paradoxalement le renforcer.
 
-## 🏷️  3. Le lien de filiation
+# 🏷️  3. Le lien de filiation
 
-### 3.1 Construction psychique
+## 3.1 Construction psychique
 
 Jean Guyotat, psychiatre lyonnais travaillant avec des patients psychotiques, s’est intéressé à la filiation à partir des délires de filiation. Certains patients psychotiques s’inventaient des ascendances prestigieuses et se disaient descendants de grandes figures historiques ou scientifiques. À partir de ces observations, Guyotat (2000) définit la filiation comme ce par quoi un individu se situe et est situé dans le groupe auquel il appartient, par rapport à ses ascendants et à ses descendants, qu’ils soient **réels ou imaginaires.**
 
 C’est lui qui formalise la distinction entre l’axe **institué** (juridique, socialement reconnu) et l’axe **narcissique** (subjectif, imaginaire). Il montre que la filiation ne se réduit pas à l’état civil : elle doit être psychiquement investie. Un lien peut être biologiquement établi et juridiquement reconnu sans être intégré subjectivement. Certains sujets acceptent et investissent fortement leur filiation, d’autres la dénient, la rejettent ou la remanient. Les délires de filiation montrent que lorsque la filiation réelle est fragilisée ou difficilement supportable, une filiation imaginaire peut se construire pour restaurer une cohérence narcissique.
-### 3.2 Verticalité
+## 3.2 Verticalité
 
 Pierre Benghozi approfondit cette perspective en décrivant la filiation comme un axe vertical. Chez lui, l’accent est davantage mis sur la **verticalité transgénérationnelle**. 
 
@@ -204,7 +203,7 @@ La filiation renvoie (P. Benghozi, 1999):
 - et même aux générations futures anticipées.
 
 Elle constitue une sorte de **colonne vertébrale transgénérationnelle**.
-### 3.3 Reconnaissance réciproque et appartenance
+## 3.3 Reconnaissance réciproque et appartenance
 
 Chez **Kaës**, le point fort est la **reconnaissance réciproque et l’appartenance psychique**. Il insiste sur le fait qu’il ne suffit pas d’être biologiquement ou juridiquement rattaché à une famille : il faut encore être reconnu par elle et la reconnaître en retour: donc, considérée par ces auteurs avant tout comme une **construction psychique**. Il ne suffit pas qu’un enfant soit juridiquement rattaché à une famille ; encore faut-il qu’il **se sente** reconnu et qu’il reconnaisse à son tour ceux qui se présentent comme ses parents. René Kaës insiste sur cette idée en affirmant qu’"*il ne suffit pas de naître dans une famille, il faut aussi naître de la famille*". La filiation engage donc un processus d’appartenance psychique.
 
@@ -219,14 +218,14 @@ Kaës (2000):
 >"Par rapport aux situations d'adoption, il ne suffit pas qu'un groupe reconnaisse l'enfant qui est entré dans la famille par adoption. Il faut aussi que l'enfant qui est entré dans la famille par adoption reconnaisse le groupe comme étant ses parents. Cette notion de réciprocité, je vous prends l'exemple de l'adoption, mais c'est vrai dans n'importe quelle famille. Il faut qu'il y ait une reconnaissance réciproque pour que ce lien de filiation puisse être investi.
 >J'ai vu des familles où un enfant était parfaitement considéré comme étant l'enfant de la famille, le deuxième aussi, mais le troisième pas du tout. Il arrive que certains parents n'investissent pas un de leurs enfants. Cet enfant a beau les reconnaître comme étant ses parents, et bien ses parents, les parents en question, peuvent ne pas investir un de leurs enfants, ne pas le reconnaître comme étant issu de leur filiation (par ex, en cas d'inceste)."
 
-### 3.4 Les deux axes de Guyotat
+## 3.4 Les deux axes de Guyotat
 
 Deux axes qui structurent la filiation, d'apres Guyotat (1980):
 1. Un axe **institué** qui est authentifié juridiquement par la société (peu importe si biologique ou non). Lié au nom, aux droits successoraux, à la reconnaissance légale. Il correspond à la dimension **officielle** du lien.
 2. Un axe **"narcissique"** (ou "imaginaire") qui correspond à la manière dont l'individu vit subjectivement sa filiation. Va nous permettre nous, psys, d'explorer comment chacun vit sa filiation, se situe par rapport aux chaînes de filiation, ce qu'on se raconte...  Cet axe renvoie à la **dimension narrative** et au **roman familial** (Freud).
 
 Il existe une **dialectique** entre les deux axes. Des événements réels (incertitudes sur la paternité, secrets, changements de nom, ruptures familiales, suicides, bannissements…) peuvent fragiliser l’axe institué et favoriser le développement d’élaborations imaginaires.
-### 3.5 Les quatre axes de filiation de Kinoo
+## 3.5 Les quatre axes de filiation de Kinoo
 
 De nos jours, image plus complexe des liens de parenté (avec les familles recomposées). Philippe Kinoo, pédopsychiatre bruxellois, travaillant avec des enfants placés, observe que les deux axes de Guyotat ne suffisent pas toujours pour décrire la réalité actuelle. 
 
@@ -270,7 +269,7 @@ Rappel/suite du cours précédent:
 > - Plusieurs figures parentales peuvent être un facteur de résilience.
 
 
-## 🏷️  4. Dispositifs pour éviter la transmission de traumatisme
+# 🏷️  4. Dispositifs pour éviter la transmission de traumatisme
 
 "Ces familles qui n'ont rien à transmettre, et celles qui ne veulent pas transmettre"
 
@@ -281,7 +280,7 @@ Cas de figure de types de stratégies, type de solutions, pour éviter la transm
 1. L'auto-engendrement (refus d'hériter)
 2. Le non-engendrement (refus de transmettre)
 3. La "génophobie" (peur de transmettre certains gênes)
-### 4.1 Transmettre
+## 4.1 Transmettre
 
 Que veut dire transmettre?
 
@@ -294,7 +293,7 @@ Que veut dire transmettre?
 
 Nous, on va questionner les phénomènes de **transmission d'une génération à une autre**, mais les métaphores ci-dessus vont éclairer **les représentations** que les personnes peuvent avoir elles-mêmes de ces questions de transmission (on y reviendra).
 
-### 4.2 Transmission intergenérationnelle et transgénérationnelle
+## 4.2 Transmission intergenérationnelle et transgénérationnelle
 
 Distinction importante pour nous, cliniciens:
 - Transmission **inter**générationnelle: les héritages conscients accessibles, -> mentalisation
@@ -302,7 +301,7 @@ Distinction importante pour nous, cliniciens:
 
 Dans sa clinique, elle a observé des personnes dans une perspective de refus de transmission. 
 Par exemple, des parents disant ne pas vouloir transmettre. Ça lui semblait paradoxal: Faire en enfant mais ne pas vouloir transmettre quelque chose. Ce qui amenait pour elle la question: Comment faire famille sans "rien" transmettre? Potentiel engagement d'aspects cognitifs, de bloquages cognitifs.
-### 4.3 L'auto-engendrement : refus d'hériter
+## 4.3 L'auto-engendrement : refus d'hériter
 
 Attention attirée vers parents se comportant de manière pas habituelle par rapport à l'idée habituelle, classique, de la transmission, se comportent comme s'ils n'avaient eux mêmes rien reçu de leur parents ("je ne reconnais pas ces parents", "ils ne m'ont rien legué", ... pas de reconnaissance d'héritage psychique, non plus, tel que règles, manières de se comporter, etc).
 
@@ -350,7 +349,7 @@ Exemple: la famille "ortensia", illustrant ce type d'investissement particulier 
 - (Parenthèse: Cas de fausses allégations d'abus sexuel du père sur l'enfant: raconte son expérience personnelle en début de carrière, rencontrant parfois des fausses allégations. Les thérapeutes se sont rendu compte que dans certains cas, les cas s'apparentaient à des "Fausses allégations par procuration": de n'avoir pas pu soi-même dévoiler son propre abus (les mères), elles accusaient la personne qui n'avait pas réalisé l'abus (sorte de mécanisme de téléscopage). Cela pouvait amener aussi à, par exemple, accuser son prof de gym alors qu'on a été abusé par son grand père, etc.)
 
 ==Auto-engendrement = tourner le dos aux origines==. 
-#### 4.3.1 Contexte social et culturel de transmission
+### 4.3.1 Contexte social et culturel de transmission
 
 Est-ce que ça ne révèle pas quelque chose aussi du mythe social, de l'ambiance sociétale?
 
@@ -381,7 +380,7 @@ Est-ce que ça ne révèle pas quelque chose aussi du mythe social, de l'ambianc
 
 Perspective de nouveau: être le nouveau maillon.
 
-#### 4.3.2 Cas de Daniel
+### 4.3.2 Cas de Daniel
 
 - **Première stratégie de survie: l'auto-engendrement pour échapper au destin familial. Considere la sienne non suffisamment fréquentable et bien pour lui.**
 
@@ -435,7 +434,7 @@ La famille d'accueil: acceptent de l'accueillir, disent avoir réfléchi, l'avoi
 
 ![Screenshot 2026-03-05 at 18.33.29.png](/img/user/__assets/media/Screenshot%202026-03-05%20at%2018.33.29.png)
 
-#### 4.3.3 Interventions dans le cas de Daniel
+### 4.3.3 Interventions dans le cas de Daniel
 
 Possibilités d'interventions ici:
 - **Parentectomie**: conseil de couper les liens avec les parents d'origine.
@@ -463,13 +462,13 @@ Important pour elle, en tant que psy:
 
 Daniel n'a pas été remis dans se famille immédiatement, plusieurs entretiens ont été nécessaires pour retisser du lien. Il est parti dans insitution pendant 8 mois, puis le retour au domicile a été possible. Pas suivi la piste d'une rupture, approche qui aurait surement été suivie avec une approche plus individuelle (importance de la **recupérabilité du lien**, testée s'utilisant soi en permettant de retravailler ou travailler des liens - reproché, dit-elle, par psychanalystes voyant les systémiciens comme "familialistes". Mais on ne décide par pour les gens, on leur donne des leviers/ressources. cf rencontre entre Cirilo et Berger. Situations irrécuperables sont rares, mais elles existent, et dans ces cas, important de rapidement faire adopter les enfants).
 
-### 4.4 Le non-engendrement : refus de transmettre
+## 4.4 Le non-engendrement : refus de transmettre
 
-#### 4.4.1 Le non-engendrement: refus de transmettre
+### 4.4.1 Le non-engendrement: refus de transmettre
 
 > Le **refus d'engendrer** est une tentative de solution pour échapper au destin familial. On le retrouve chez des individus ou des couples qui ont le sentiment d'être les victimes de jeux sociaux ou familiaux et qui tentent de cette façon de redevenir maîtres de leur destinée (hypothèse 2), en décidant de ne pas faire d'enfants.
 
-#### 4.4.2 Illustration clinique : Monsieur et Madame Apares (Fauster)
+### 4.4.2 Illustration clinique : Monsieur et Madame Apares (Fauster)
 
 Deuxième stratégie de "survie": le non-engendrement, à travers le récit d'une thérapie de couple (Duret, I. 2014)
 
@@ -538,13 +537,13 @@ Gestion de ses propres émotions, suivi en supervision:
 
 Faire le deuil, acter la coupure de loin est parfois la solution (situations d'emprise, de domination, etc). Mais situations rares. Beaucoup de professionnels partent trop vite dans une vision négative de la famille.
 
-### 4.5 La génophobie: la peur de transmettre des gènes de maladie mentale
+## 4.5 La génophobie: la peur de transmettre des gènes de maladie mentale
 
-#### 4.5.1 La génophobie
+### 4.5.1 La génophobie
 
 > La **génophobie**: certains parents porteurs d'une maladie mentale dite à transmission génétique se représentent la transmission comme une forme de contamination. Pour empêcher celle-ci d'opérer, ils activent des processus anxieux contagieux qui les inhibent dans leur capacité à transmettre (hypothèse 3)
 
-#### 4.5.2 Cas d'Arthur
+### 4.5.2 Cas d'Arthur
 
 **Troisième illustration clinique: Arthur et le poison dans ses tartines, 7 ans** (Duret, 2009)
 
@@ -581,11 +580,11 @@ Arthur: intervention rapide a permis un dégagement d'Arthur qui n'est plus libr
 Sortir d'une lecture univoque du symptôme. Cette lecture peut enfermer le symptôme, le maintenir.
 > L'ambiance positive de "recherche de sens" autour d'une préoccupation commune a permis de sortir d'une lecture univoque d'un symptôme qui portait aussi en lui "le potentiel résilient" nécessaire pour relance la famille dans sa capacité à transmettre.
 
-### 4.6 Conclusions
+## 4.6 Conclusions
 
 Il existe différents mécanismes de survie ou stratégies adaptatives utilisés par certains individus ou certains groupes blessés pour échapper aux traumatismes. L'auto-engedrement, le refus d'engendrer et la "génophobie".
 
-#### 4.6.1 Pistes thérapeutiques
+### 4.6.1 Pistes thérapeutiques
 
 Pour ne pas se laisser gagner par le désespoir:
 - **Recadrer** la mise hors filiation ou la frilosité à transmettre comme une compétence qu'ont les parents à **proteger les générations futures**
@@ -614,7 +613,7 @@ Métaphore de la perle: un grain de sable qui génère un bijou.
 > - Le symptôme de l'enfant peut être une tentative de donner sens à ce qui n'a pas été dit.
 > - Autonomie =/ indépendance. Restaurer la dignité et la capacité à transmettre prime sur la rupture du lien, les situations irrécupérables sont rares.
 
-## 🏷️  5. La clinique du lien
+# 🏷️  5. La clinique du lien
 
 L'enjeu essentiel dans cette pratique: **Reconstruire le lien**.
 
@@ -625,7 +624,7 @@ Ne pas sous-estimer l'impact sur l'entourage non plus, au moment du dévoilement
 
 **C'est difficile de se faire entendre**, on se met contre un mécanisme de protection du groupe, contre lequel il faut manifester beaucoup d'énergie. C'est aussi vrai au niveau sociétal.
 
-### 5.1 Effraction, frayeur, figement
+## 5.1 Effraction, frayeur, figement
 
 Effraction psychique = effroi, frayeur (au-delà de la simple peur). Quelque chose qui va nous extraire hors de l'univers, hors du monde (cf extraction chez Jean-Luc Brackelaire). cf Tobie Nathan, deux notions dans la frayeur: 
 - La peur, qui surprend, pétrifie.
@@ -641,7 +640,7 @@ Cette sidération, parfois fatalisme, est important parce que ça peut aussi se 
 
 Jacques Croisin, de l'UCL: parle de *survivance*. Personnes qui ont subi un traumatisme n'est autre chose que de la survivance. cf livre *De la survivance à la vie*.
 
-### 5.2 La reconnaissance et réparation
+## 5.2 La reconnaissance et réparation
 
 Quand on a subi cette déshumanisation: comment va-t-on pouvoir être "défrayé"? Comment sortir de l'effroi? 
 1. D'abord, **une reconnaissance**. 
@@ -663,7 +662,7 @@ Cf. Travail au Rwanda (Duret, Brackelaire,...), avec dyades mère-enfant à prop
 
 Outil d'intervention: **La réinscription généalogique**: Enjeu pour ces femmes au Rwanda: comment reinscrire ces femmes et enfants dans une généalogie qui n'est pas honteuse? Comment mettre à leur disposition quelque chose qui va leur donner une appartenance?
 
-### 5.3 Entraves à l'écoute et la reconnaissance
+## 5.3 Entraves à l'écoute et la reconnaissance
 
 La réaction typique: fermer les oreilles, les yeux, la bouche (elle illustre avec le dessin de trois singes, [symbole asiatique des singes de la sagesse](https://fr.wikipedia.org/wiki/Singes_de_la_sagesse)).
 
@@ -688,7 +687,7 @@ Enjeux cliniques:
 - **Risque pour nous en tant que thérapeutes d'être gelés dans nos sentiments**. Il y a un risque d’être en **isomorphisme** et de reproduire cette absence de reconnaissance, de banalisation.
 - **Attaques du cadre** par les patients: ex: patiente de Duret qui arrête de venir en thérapie, explique par la suite qu'elle s'est sentie maltraitée par des propos tenus par Duret en séance. Duret lui avait dit, par inadvertance: "Vous n'allez quand même pas me dire que..." (banalisation). Cette phrase a eu l'effet de replonger le patient dans un passé insupportable.
 
-### 5.4 Comment vivre *comme après*?
+## 5.4 Comment vivre *comme après*?
 
 *Comment vivre comme après?*
 *Qu'avez-vous fait de ce qui vous est arrivé?*
@@ -700,10 +699,10 @@ En lien avec les "trois R" de Neuburger dans [[knowledge/sources/Neuburger - Les
 2. Re-mythifier
 3. Re-ritualiser
 
-#### 5.4.1 Reconnaître
+### 5.4.1 Reconnaître
 
 **Reconnaître**. Authentification de la perception (terme des praticiens de Palo Alto): *ce que vous me racontez vous est arrivé, et je vous crois*. Sans ça, pas de confiance suffisante.
-#### 5.4.2 Transformer et réchauffer
+### 5.4.2 Transformer et réchauffer
 
 Accueillir les récits pour les **transformer** (i.e. la mémoire traumatique en mémoire thérapeutique) et **réchauffer** (i.e. ce qui a été gelé). 
 
@@ -713,7 +712,7 @@ Expliquer aux patients que c'est normal d'avoir ces moments de **reviviscences**
 
 Exemple 2: même patiente, problèmes de sommeil, elle sent une "boule au ventre" quand elle va dormir, depuis la disparition de sa soeur il y a des années. Duret fait remarquer que quand elle évoque un passé traumatique avec un patient, elle fait **toujours attention à penser à l'ici-et-maintenant, quoi en faire aujourd'hui, en rentrant chez elle**. Duret propose qu'elle trouve une manière de rendre sa soeur présente (e.g. trouver un objet qui serait représentatif, pour "la faire sortir d'elle-même").
 
-#### 5.4.3 Remailler
+### 5.4.3 Remailler
 
 **Remailler**:Prendre soin des liens verticaux et horizontaux. Qu'est-ce qui reste des liens, même de ceux qui ont été rompus? Doit faire l'objet de soin de part de thérapeute. Présence de loyautés invisibles (même chez enfants négliglés par parents négligeants).
 
@@ -740,7 +739,7 @@ Conseils aux psys qui travaillent avec des traumatismes:
 - Ne pas travailler à temps plein, 
 - cf thèse supervisée par Duret sur la souffrance du thérapeute.
 
-##### Posture: présence et tendresse
+#### Posture: présence et tendresse
 
 - cf. livre de Laurent Tygran Tovmasian. *Tendresse et attachement: Au coeur du travail psychanalytique avec le traumatisme*, 2020, Paris.
 	- Empathie vs. **tendresse**: Empathie (suppose une capacité à sentir ou à comprendre l’état de l’autre tout en maintenant une distance différenciée, "je perçois quelque chose de ta souffrance, mais je ne m’y confonds pas") vs. un engagement plus actif qui nous met en contact avec ce qui nous habite, qui soigne le lien (ressentir de la tendresse pour le patient, comme celle qu'on aurait envers un enfant).
@@ -749,7 +748,7 @@ Conseils aux psys qui travaillent avec des traumatismes:
 > [!QUOTE] Christian Bobin, *La lumière du monde* (2001)
 > "L'**empathie** c'est, à la vitesse de l'éclair, sentir ce que l'autre sent, savoir que l'on ne se trompe pas, comme si le coeur bondissait de la poitrine pour se loger dans la poitrine de l'autre (...) on peut prendre soin d'autrui comme il ne prendra jamais soin de lui-même, par une attention tendue comme un rai de lumière, mais il n'y a aucune emprise psychique sur lui (...) c'est l'art double de la plus grande proximité et de la distance sacrée".
 
-##### Relancer la transmission
+#### Relancer la transmission
 
 Important pour elle d'y penser dans toutes ses thérapies. Ce sont des adultes qui vont peut-être devenir parents, ou qui le sont déjà. Donc, comment faire pour que la transmission puisse être assurée, ou redevenir quelque chose qui ne va pas être porteur d'inquiétude ou de peur, ou reliée à un héritage qui risquerait d'être douloureux ou se répéter à l'infini?
 
@@ -773,7 +772,7 @@ Important pour elle d'y penser dans toutes ses thérapies. Ce sont des adultes q
 > - Tendresse plutôt qu'empathie distanciée. Travailler en équipe et ne pas travailler à temps plein.
 
 
-## Exemples de questions d'examen données en cours
+# Exemples de questions d'examen données en cours
 
 1. **Plus un système vivant est autonome, plus il est dépendant; plus il s'enrichit en complexité et entretien par là-même des relations multiples avec son environnement, plus il accroit son autonomie.**
 	**Vrai**. C'est la définition de Edgar Morin de l'autonomie.
