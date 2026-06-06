@@ -79,12 +79,12 @@
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-06-02T15:05:30.462Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-06-06T11:22:17.200Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
 <main class="content cm-s-obsidian print">
 <header>
 <h1 data-note-icon="">Les grands courants psychothérapeutiques</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.120+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-06-02T17:04:52.857+02:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-03-04T17:27:33.120+01:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-06-05T22:02:49.796+02:00"></span></div></div></div>
 </header>
 <p><strong>Structure</strong>:</p>
 <ol>
@@ -274,9 +274,13 @@ Un <strong>système</strong> est un ensemble d’éléments en interaction, orga
 <h6 id="2-lois-des-systemes" tabindex="-1">2. Lois des systèmes</h6>
 <p>Lois des systèmes:</p>
 <ul>
-<li><strong>Totalité</strong>: <em>une perturbation d'un élément du système induit une modification de tous les autres éléments, que la perturbation vienne de l'intérieur ou de l'extérieur</em>.</li>
-<li><strong>Non-sommativité</strong>: &quot;un tout est plus que la somme des parties&quot;. Les caractéristiques constitutives ne peuvent s'expliquer à partir des caractéristiques prises isolément. ON ne peut pas énumérer séparément chaque élément du système. (Implication: voir les patients individuellement pour saisir les problématiques n'est pas assez).</li>
-<li><strong>Homéostasie</strong>: relative stabilité à l'intérieur du système qui est maintenu à l'équilibre par des rétroactions positives ou négatives. Plus un système est complexe, plus l'homéostasie peut être forte. {relation avec besoins changeants de cycles de vie?}. <strong>Bateson</strong> parlait de changements de type 1, et changements de type 2:
+<li><strong>Totalité</strong>:
+<ul>
+<li><strong>Interdépendance</strong>: une perturbation d'un élément du système induit une modification de tous les autres éléments, que la perturbation vienne de l'intérieur ou de l'extérieur.</li>
+<li><strong>Non-sommativité</strong> (découle de la): &quot;un tout est plus que la somme des parties&quot;. Les caractéristiques constitutives ne peuvent s'expliquer à partir des caractéristiques prises isolément. On ne peut pas énumérer séparément chaque élément du système. (Implication: voir les patients individuellement pour saisir les problématiques n'est pas assez!).</li>
+</ul>
+</li>
+<li><strong>Homéostasie</strong> (et <em>rétroaction</em>): relative stabilité à l'intérieur du système qui est maintenu à l'équilibre par des rétroactions positives ou négatives. Plus un système est complexe, plus l'homéostasie peut être forte. <strong>Bateson</strong> parlait de changements de type 1, et changements de type 2:
 <ul>
 <li>Changement de <em>type 1</em>: Un élément est perturbé, le système agit pour annuler le changement (rétroaction négative) dans le but de maintenir le système tel qu'il était (peur du changement, e.g. parents vont augmenter contrôle sur enfant qui veut sortir après l'école. Mais ne rien faire n'est pas bon non plus)</li>
 <li>Changement de <em>type 2</em>: Va au contraire encourager le système à évoluer. Rétroaction qui renforce le changement (rétroaction positive). Par ex,. encourager l'adolescent à évoluer vers un nouveau fonctionnement adapté à ses nouveaux besoins.</li>
@@ -311,13 +315,13 @@ Les systèmes obéissent à plusieurs principes fondamentaux : la totalité (tou
 </ul>
 </li>
 </ul>
-<p>À ce troisième niveau, il devient impossible d’échapper à la relation ou de <strong>métacommuniquer</strong> sur ce qui se passe. Quelle que soit la réponse apportée, elle est disqualifiée : <em>quoi que l’on fasse, c’est mal</em>. L’individu se retrouve alors pris dans un système où il ne peut être que perdant.</p>
+<p>À ce troisième niveau, il devient impossible d’échapper à la relation ou de <strong>métacommuniquer</strong> sur ce qui se passe. Quelle que soit la réponse apportée, elle est disqualifiée : <em>quoi que l’on fasse, c’est mal</em>. L’individu se retrouve alors pris dans un système où il ne peut être que perdant.</p>
 <p>Les chercheurs de Palo Alto découvrent ces mécanismes en filmant les interactions familiales et en analysant la communication à ses différents niveaux, digital (<em>contenu</em>) et analogique (le non-verbal, indicateur de la <em>relation</em>):</p>
 <ul>
 <li>la <strong>dimension digitale</strong>, correspondant au contenu verbal explicite,</li>
 <li>la <strong>dimension analogique</strong>, toute communication non-verbale, qui comprend les expressions faciales, la tonalité de la voix, les mimiques, intonations des mots, les attitudes corporelles et les manifestations physiologiques
 <ul>
-<li><em>Relation</em>, ce que le message dit de la position réciproque: car chez les animaux ce mode de communication définit la nature de la relation. Dans le sens: les signaux analogiques indiquent comment il faut interpréter la relation entre les participants - hostile, amical, demande ou ordre, supérieur ou égal, proche ou distant, sérieux ou ironique... cf Bateson 1955 cité dans <a class="internal-link is-unresolved" href="/404" target="">Book - Watzlawick et al. - 1967 - Pragmatics of Human Communication A Study of Interactional Patterns, Pathologies, and Paradoxes</a> p. 61, e.g. chat qui vient se frotter contre la jambe pour recevoir à manger. Cela indique une approche, dépendance, sollicitation, familiarité. ).</li>
+<li><em>Relation</em>, ce que le message dit de la position réciproque: car chez les animaux ce mode de communication définit la nature de la relation. Dans le sens: les signaux analogiques indiquent comment il faut interpréter la relation entre les participants: hostile, amicale, demande ou ordre, de supérieur ou égal, proche ou distant, sérieux ou ironique... cf Bateson 1955, cité dans <a class="internal-link is-unresolved" href="/404" target="">Book - Watzlawick et al. - 1967 - Pragmatics of Human Communication A Study of Interactional Patterns, Pathologies, and Paradoxes</a> p. 61, e.g. chat qui vient se frotter contre la jambe pour recevoir à manger - cela indique une approche, dépendance, sollicitation, familiarité...).</li>
 </ul>
 </li>
 </ul>
@@ -352,8 +356,8 @@ Ainsi, dans l’exemple d’un enfant qui ne va plus à l’école, le symptôme
 Dans l’approche systémique, le symptôme est une réponse adaptative et fonctionnelle à une situation relationnelle, permettant au système de maintenir son équilibre. Le patient dit « désigné » accepte et participe à ce rôle, car le symptôme présente aussi des avantages relationnels pour lui et pour le groupe dont il fait partie.</p>
 </div></div>
 <p>📅 Lundi <strong>16 Février 2026</strong> - Cours 2</p>
-<p>Rappel du cours précédent: <strong>la fonction du symptome</strong>: en quoi ce symptôme contribue au système tel qu'il est, à son maintien? Qu'est que le comportement symptomatique permet ? Qu'est-ce qu'il empêche? Patient designé: non seulement passif, pour etre designé il faut en partie le propre &quot;accord&quot; de la personne.</p>
-<p>Question essentielle: Qu'est ce qui se passerait si ce problème n'existait plus? (qu'est ce que ça permet, qu'est ce que ça empêche... pour avoir une hypothèse fonctionnelle).</p>
+<p>Rappel du cours précédent: <strong>la fonction du symptôme</strong>: en quoi ce symptôme contribue au système tel qu'il est, à son maintien? Qu'est que le comportement symptomatique permet ? Qu'est-ce qu'il empêche? Patient designé: non seulement passif, pour être designé il faut en partie le propre &quot;accord&quot; de la personne.</p>
+<p>Question essentielle: Qu'est ce qui se passerait si ce problème n'existait plus? (qu'est-ce que ça permet, qu'est ce que ça empêche... pour avoir une hypothèse fonctionnelle).</p>
 <p>D'après ceux de l'école Palo Alto, un problème est ce qui est vécu comme un problème, peu importe ce que pensent les thérapeutes. Le thérapeute ne décide pas ce qui l'est pour la famille. Se garder de venir avec ses propres valeurs et projections, se focaliser sur ce qui pose problème pour la famille: &quot;En quoi est-ce un problème <strong>pour vous</strong>?&quot; (ou les différents membres du système). (Par exemple: famille préocuppée parce que leur enfant n'a pas plus de 14/20 partout).</p>
 <div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Différence entre psychanalyse et systémique<br></div></div>
 <div class="callout-content">
@@ -369,22 +373,22 @@ Niveaux logiques differents, niveaux de reflexion differents.</p>
 </div></div>
 <p>Comment choisir dans quelle orientation adresser un patient (ou encore TCC)? Repérer les spécificités de la situation qui nous font pencher vers l'une ou l'autre approche (ces deux approches mises en avant ici car utilisées dans le livre de Neuburger).</p>
 <p>Visionnage d'une video de Paul Watzlawik: Conférence: <em>Quand la solution est le problème</em>. Stuttgart, 1987 (<a href="https://www.youtube.com/watch?v=3lx3EjE0Trw" target="_blank" class="external-link">YouTube</a>)</p>
-<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/3lx3EjE0Trw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>)
+<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/3lx3EjE0Trw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <p>Ce groupe de Palo Alto a été à l'origine d'une revue, &quot;Family Process&quot;, qui dans les années 60 a été une des premières revues dans le domaine, et qui existe encore.</p>
 <p>Quelques références:</p>
 <ul>
-<li>Milton Erickson, hypnose, invité aussi a Palo Alto</li>
+<li>Milton Erickson, hypnose, invité aussi à Palo Alto</li>
 <li>Ecole Wittezaele à Bruge (thérapie brève)</li>
-<li>Thérapie provocative, aussi moins présente en europe (sauf certains en Italie, Andolfi en debut de carrière, l'a ensuite abandonnée).</li>
+<li>Thérapie provocative, aussi moins présente en Europe (sauf certains en Italie, Andolfi en debut de carrière, l'a ensuite abandonnée).</li>
 </ul>
 <h4 id="1-5-l-approche-anti-psychiatrie" tabindex="-1">1.5 L'approche anti-psychiatrie</h4>
-<p>Dans la &quot;vieille europe&quot;, ce mouvement prend beaucoup d'ampleur, avec une maniere de penser les choses qui a beaucoup influencé les penseurs systémiciens.</p>
+<p>Dans la &quot;vieille europe&quot;, ce mouvement prend beaucoup d'ampleur, avec une manière de penser les choses qui a beaucoup influencé les penseurs systémiciens.</p>
 <p>Têtes de file:</p>
 <ul>
 <li>RD Laing, David Cooper, Franco Basaglia, Castel</li>
 <li>Jean Oury, Félix Guattari, Mony Elkaïm...</li>
 </ul>
-<p>Remise en cause de la psychiatrie traditionnelle (et ses methodes d'enfermement). Foucault: plutôt que de considérer qu'il faut &quot;aider les fous a se reintégrer dans la société&quot;, se demander ce qu'il se passe dans la société pour considérer que certains individus doivent être enfermés. Basaglia en tête de file de mouvement amenant a la fermeture d'hôpitaux (cf. loi actée en Italie).</p>
+<p>Remise en cause de la psychiatrie traditionnelle (et ses méthodes d'enfermement). Foucault: plutôt que de considérer qu'il faut &quot;aider les fous à se reintégrer dans la société&quot;, se demander ce qu'il se passe dans la société pour considérer que certains individus doivent être enfermés. Basaglia en tête de file de mouvement amenant a la fermeture d'hôpitaux (cf. loi actée en Italie).</p>
 <p>Répercussions dans notre manière de penser la santé mentale: création de centres de santé avec l'idée de ne pas exclure les personnes malades de la société, et travailler à leur reinsertion.</p>
 <p>A Bruxelles, Paul Sivadon, psychiatre d'origine francaise, création d'un premier centre de santé mentale sectorisé (à Anderlecht, en 63(?)), avec Jean Vermeylen: l'<em>Equipe</em>, à Anderlecht, <em>La Gerbe</em>: deux premiers centres créés pour poursuivre ce projet d'aider les personnes à la marge, pour leur éviter la psychiatrisation. Se questionnent donc sur la société, ou la famille, plutôt que l'individu. &quot;Est-ce la société qui est folle?&quot; &quot;Est-ce la famille qui est folle?&quot; (cf film <a href="https://letterboxd.com/film/family-life-1971-1/" target="_blank" class="external-link">Family Life</a>).</p>
 <p>C'est par le biais de ce mouvement que Palo Alto (et par là les thérapies familiales systémiques), s'est fait connaître en Europe.</p>
@@ -400,7 +404,7 @@ Niveaux logiques differents, niveaux de reflexion differents.</p>
 <li>Ex 3: famille où tout le monde tournait en dérision ce que disait l'étranger à la famille.</li>
 </ul>
 </li>
-<li>Thérapeute devra voir ce qui se joue dans ces groupes, afin de décoder le comportement du groupe <strong>pour pouvoir interagir avec eux lui aussi</strong> (encore métaphore de l'ethnologue qui doit se faire accepter par la tribu qu'il étudie)</li>
+<li>Thérapeute devra voir ce qui se joue dans ces groupes, afin de décoder le comportement du groupe <strong>pour pouvoir interagir avec eux, lui aussi</strong> (encore métaphore de l'ethnologue qui doit se faire accepter par la tribu qu'il étudie)</li>
 </ul>
 </li>
 <li><strong>La position directive du thérapeute</strong>:
@@ -410,7 +414,7 @@ Niveaux logiques differents, niveaux de reflexion differents.</p>
 </li>
 <li><strong>Les stades de l'évolution ou cycle de vie</strong> de l'individu et de la famille:
 <ul>
-<li>Important d'avoir en tête ces concepts: nécessité de renégocier les relations à chaque passage à une nouvelle étape (par ex. la mise en couple, naissance du premier enfant, adolescence, premier travail, etc). Processus d'autonomisation, en particulier, qui implique que toutes les relations se re negocient (pas seulement la famille). Ne s'arrête pas à l'adolescence, quand l'enfant devient adulte persiste tout au long de la vie (se mettre en couple et vivre à l'extérieur, etc).</li>
+<li>Important d'avoir en tête ces concepts: nécessité de renégocier les relations à chaque passage à une nouvelle étape (par ex. la mise en couple, naissance du premier enfant, adolescence, premier travail, etc). Processus d'autonomisation, en particulier, qui implique que toutes les relations se re-négocient (pas seulement la famille). Ne s'arrête pas à l'adolescence, quand l'enfant devient adulte persiste tout au long de la vie (se mettre en couple et vivre à l'extérieur, etc.).</li>
 <li>Défi marqué pour le groupe de se réorganiser après une crise: le moment de la crise est essentiel - sans crise, pas d'évolution.</li>
 </ul>
 </li>
@@ -419,7 +423,7 @@ Niveaux logiques differents, niveaux de reflexion differents.</p>
 <li>R. Neuburger: s'appuyer sur les éléments constitutifs d'une demande (détaillé dans son livre de 1984, <em>L'autre demande</em>)
 <ul>
 <li>Un symptôme</li>
-<li>Une souffrace</li>
+<li>Une souffrance</li>
 <li>Une allégation (une mise en avant, invocation du problème)</li>
 </ul>
 </li>
@@ -439,7 +443,7 @@ Niveaux logiques differents, niveaux de reflexion differents.</p>
 <p>Visions du monde du thérapeute, sa grille de lecture pour aller vers les patients ou les familles qu'il veut traiter. Comment les thérapies familiales ont été modélisées? Déjà une perspective constructiviste: quel est le point de vue du thérapeute?</p>
 <p>Dans les modèles prédictifs, l'effet qu'on veut obtenir est predeterminé, inclus dans le projet thérapeutique. Tandis que dans les non-prédictifs, recherche de <strong>changement</strong> qui permette de solutionner un problème, mais la nature du changement est inconnue au thérapeute. Ici la solution n'est pas contenue dans le projet thérapeutique.</p>
 <h4 id="3-1-les-modeles-predictifs" tabindex="-1">3.1 Les modèles prédictifs</h4>
-<p>Influencés par les écrits de <a href="https://en.wikipedia.org/wiki/Heinz_von_Foerster" target="_blank" class="external-link">Von Foerster</a> : &quot;participe au développement de la théorie de l'information. 1940: n'avons pas accès a la réalité du monde .... &quot; (citation dans dia). Rôle de nos présupposés. Réalité codée, &quot;une réalité parmi d'autres possibles&quot;.</p>
+<p>Influencés par les écrits de <a href="https://en.wikipedia.org/wiki/Heinz_von_Foerster" target="_blank" class="external-link">Von Foerster</a> : &quot;participe au développement de la théorie de l'information. 1940: n'avons pas accès a la réalité du monde .... &quot; (citation dans dia, se retrouve dans des questions d'examen). Rôle de nos présupposés. Réalité codée, &quot;une réalité parmi d'autres possibles&quot;.</p>
 <h5 id="3-1-1-le-modele-causal-lineaire" tabindex="-1">3.1.1 Le modèle causal linéaire</h5>
 <p>Le thérapeute prend son objet d'étude <strong>pour un objet</strong>. Le patient a une existence objective qui est séparée du thérapeute. Observable sans être modifié par l'observation. Ici, on regarderait la famille en étant &quot;objectif&quot;.</p>
 <p>Exemple: Patiente anorexique à cause de comportements inadéquat des parents envers elle.<br>
@@ -447,7 +451,7 @@ Exemple 2: Dépression d'un époux pour comportements rabaissants de sa femme.</
 <p>Si on enlève A, on solutionne B. On a une prédiction de la solution.</p>
 <p>Par exemple: que la patiente anorexique s'éloigne des parents.</p>
 <p>Modèle particulier parce qu'il <strong>ignore le temps</strong>: état du patient est considéré <strong>reversible</strong> si on traite la cause.</p>
-<p>Type de pensée rappelant la pensée scientifique, ou médicale. Pas à bannir ou laisser tomber, mais important pour nous d'avoir en tête que ce modèle peut ne pas être suffisant pour aider certaines familles. Parfois ces solutions en fonctionnent pas.</p>
+<p>Type de pensée rappelant la pensée scientifique, ou médicale. Pas à bannir ou laisser tomber, mais important pour nous d'avoir en tête que ce modèle peut ne pas être suffisant pour aider certaines familles. Parfois ces solutions ne fonctionnent pas.</p>
 <h5 id="3-1-2-le-modele-causal-circulaire-changement-de-paradigme" tabindex="-1">3.1.2 Le modèle causal circulaire: changement de paradigme</h5>
 <p>Première révolution épistémologique. Ce mode de pensée est pourtant plus courant dans les modes de pensée orientaux. Chez nous, nous sommes plus habitués à chercher les causes.</p>
 <p>On peut penser causalité mais dans une optique circulaire: A et B sont mutuellement renforcés. E.g. modèles en boucle de retroaction (feedback) en ingenieurie. <mark>Dans cette modélisation, on ne peut plus déterminer lequel est la cause (si A ou si B)</mark>.</p>
@@ -466,7 +470,7 @@ L'idée devient, dans ce changement de paradigme: comment arrêter la boucle? Pl
 </li>
 <li>En réalité, les comportements des membres de la famille s’inscrivent dans une <strong>circularité</strong> : l’inquiétude maternelle renforce la proximité mère-fille, cette proximité contribue à la mise à distance du père, l’absence du père accroît l’inquiétude de la mère, et ainsi de suite. <strong>Le travail thérapeutique vise alors à identifier et à modifier ce cercle vicieux plutôt qu’à rechercher une cause unique</strong>.</li>
 </ul>
-<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Ponctuation arbitraire<br></div></div>
+<div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Ponctuation arbitraire (ou la ponctuation de la séquence des faits)<br></div></div>
 <div class="callout-content">
 <p>
 La ponctuation arbitraire désigne la manière dont une personne découpe subjectivement une interaction continue en “causes” et “conséquences”. Autrement dit, dans une relation, chacun choisit souvent un point de départ différent pour expliquer le problème : “je fais cela parce que l’autre fait ceci”. Cette ponctuation est dite arbitraire parce que, dans une boucle interactionnelle, il n’y a pas toujours un début objectif évident.<br>
@@ -487,24 +491,23 @@ Il désigne une manière de <strong>reformuler positivement un comportement ou u
 <h5 id="3-2-1-le-modele-systemique-issu-de-la-1ere-cybernetique-premier-ordre-crise-et-changement" tabindex="-1">3.2.1 Le modèle systémique issu de la 1ère cybernétique (premier ordre) (crise et changement)</h5>
 <p>&quot;Crise et changement&quot;</p>
 <p>Modèle développé en Europe. Mara Selvini, thérapeute psychiatre milanaise, chef de file de l'&quot;école de Milan&quot;. Ici, autre révolution épistémologique, avec une autre métaphore: celle de la <strong>crise et du changement</strong>.</p>
-<p>On va s'intéresser à la notion même de crise. Métaphore de la dynamique des gaz en physique: lorsque chauffées, les cellules se réorganisent dans un mode impredictible. On peut déclencher quelque chose qui fait crise, sachant qu'il y aura un changement, mais sans anticiper la suite. Crise utilisé ici sans connotation négative (comme dans la théorie marxiste).</p>
+<p>On va s'intéresser à la notion même de crise. Métaphore de la dynamique des gaz en physique: lorsque chauffées, les cellules se réorganisent dans un mode imprédictible. On peut déclencher quelque chose qui fait crise, sachant qu'il y aura un changement, mais sans anticiper la suite. Crise utilisé ici sans connotation négative (comme dans la théorie marxiste).</p>
 <p>Problème lié à un blocage qui empêche la famille d'évoluer.</p>
 <p>Exemples: l'arrivée d'un enfant. La mort. Le nid vide. Ou des moments moins prévisibles, qui nécessitent aussi d'une réorganisation: un accident, un membre de la famille malade, un déménagement imprévu...</p>
 <ul>
 <li>Réorganisations non-seulement matérielles, mais au niveau des <strong>patterns transactionnels</strong>, des règles qui président comment on interagit les uns avec les autres, ...</li>
 </ul>
-<p>Mara Selvini: vont mettre en place un dispositif pour provoquer ce qui est redouté par la famille (idée est que la famille s'empêche de se réorganiser parce qu'elle a peur du changement). Exemple pour la personne anorexique: souvent, dans ce trouble, il y quelque chose qui vient annuler les besoins d'autonomisation à l'adolescence. Par exemple, la fille ne reçoit pas argent de poche parce qu'elle ne sort pas, elle se focalise sur les résultats scolaires... On fonctionne comme s'il n'y avait pas d'adolescente en besoin de s'autonomiser. Chez un ado &quot;normal&quot;, les jeunes adoptent des comportements d'autonomisation, par exemple demandent de l'argent pour sortir en soirée, vont mettre un certain temps à mettre de nouvelles regles de fonctionnement (? par sûr de l'exemple), ou adoptent des comportement transgressistes parfois, par lesquels les ados accélerent ces changements</p>
-<p>Trouver ajustements nuancés pour laisser grandir sans être trop permissif.</p>
+<p>Mara Selvini: vont mettre en place un dispositif pour provoquer ce qui est redouté par la famille (idée est que la famille s'empêche de se réorganiser parce qu'elle a peur du changement). Exemple pour la personne anorexique: souvent, dans ce trouble, il y quelque chose qui vient annuler les besoins d'autonomisation à l'adolescence. Par exemple, la fille ne reçoit pas argent de poche parce qu'elle ne sort pas, elle se focalise sur les résultats scolaires... On fonctionne comme s'il n'y avait pas d'adolescente en besoin de s'autonomiser. Chez un ado &quot;normal&quot;, les jeunes adoptent des comportements d'autonomisation, par exemple demandent de l'argent pour sortir en soirée, vont mettre un certain temps à mettre de nouvelles regles de fonctionnement (? par sûr de l'exemple), ou adoptent des comportement transgressistes parfois, par lesquels les ados accélerent ces changements. -&gt; Trouver ajustements nuancés pour laisser grandir, sans être trop permissif.</p>
 <p>Souvent, discours paradoxal des parents: par exemple, tu iras a la piscine quand tu sauras bien nager. Je t'acheterai des roller quand tu sauras patiner. <strong>Pas double bind, mais single bind</strong>: rend le jeune créatif de devoir prouver qu'il sait nager. Permet au jeune de se devoir d'être créatif. (Ces paradoxes ne sont pas toujours à voir de maniere négative, peuvent permettre de grandir). Lorsqu'ils ne sont pas doubles.</p>
-<p><strong>Dans le modèle de Mara, le patient (designé) a pour fonction d'empêcher la crise.</strong> Et du coup on pathologise celui qui risque de créer la crise. &quot;Si notre fille ne faisait plus ces épisodes avec la nourriture, tout irait parfaitement bien dans notre famille&quot;. La famille demande de soigner le patient designé (la fille), mais sans toucher à la famille. Mara Selvini invente le modèle thérapeutique <strong>Prescription contre-paradoxale</strong>. &quot;ne changez rien, changez là elle&quot;</p>
-<p>Exemple: fille avec petit-ami, détesté (qui?) par la grand-mère maternelle. Jeune fille a rompu avec garçon. Ensuite, la fille a durcit son régime, et basculé dans l'anorexie mentale. Selvini fera comme prescription adressée a la famille: &quot;la meilleure solution, continue à ne surtout pas manger, sinon tu aurais des seins et des formes, et ton petit-ami s'intéresserait à toi. Tes parents ne pourraient pas te supporter de te voir grandir, et ta grand mère en mourrait de honte.&quot; Symptôme pour préserver le changement.</p>
+<p><strong>Dans le modèle de Mara Selvini, le patient (designé) a pour fonction d'empêcher la crise.</strong> Et du coup on pathologise celui qui risque de créer la crise. &quot;Si notre fille ne faisait plus ces épisodes avec la nourriture, tout irait parfaitement bien dans notre famille&quot;. La famille demande de soigner le patient designé (la fille), mais sans toucher à la famille. Mara Selvini invente le modèle thérapeutique <strong>Prescription contre-paradoxale</strong>. &quot;ne changez rien, changez là elle&quot;</p>
+<p>Exemple: fille avec petit-ami, détesté (qui?) par la grand-mère maternelle. Jeune fille a rompu avec garçon. Ensuite, la fille a durcit son régime, et basculé dans l'anorexie mentale. Selvini fera comme prescription adressée à la famille: &quot;la meilleure solution, continue à ne surtout pas manger, sinon tu aurais des seins et des formes, et ton petit-ami s'intéresserait à toi. Tes parents ne pourraient pas te supporter de te voir grandir, et ta grand mère en mourrait de honte.&quot; Symptôme pour préserver le changement.</p>
 <p>Livre: <a href="https://shs.cairn.info/paradoxe-et-contreparadoxe--9782710144250?lang=fr" target="_blank" class="external-link">Paradoxe et contre-paradoxe</a>, Mara Selvini &amp; co (francais, 2021)</p>
 <div class="callout" data-callout="warning"><div class="callout-title"><div class="callout-title-inner"> Remise en question<br></div></div>
 <div class="callout-content">
 <p>
 Selvini en arrive à se dire que cette méthode ne fonctionne pas aussi bien qu'elle l'aurait cru initialement, et va finir par abandonner ce modèle. (Se demandait si c'était parce que son livre était devenu très connu, et les familles savaient dès lors comment elle allait travailler.)</p>
 </div></div>
-<p>L'art du thérapeute consistera à rejoindre la famille dans son envie de résoudre le problème, tout en soutenant l'idée/besoin de non changement (soutenir la part de la famille qui a besoin d'être sécurisée dans son besoin de non changement, de peur du changement). <strong>Cette sécurité peut paradoxalement faciliter le changement et l'évolution</strong>.</p>
+<p>L'art du thérapeute consistera à rejoindre la famille dans son envie de résoudre le problème, tout en soutenant l'idée/besoin de non changement (<strong>soutenir la part de la famille qui a besoin d'être sécurisée</strong> dans son besoin de non-changement, de peur du changement). <strong>Cette sécurité peut paradoxalement faciliter le changement et l'évolution</strong>.</p>
 <p>**Pas de prescription de symptôme, mais prescription de sa fonction:</p>
 <ul>
 <li>À la place, un thérapeute peut prescrire <strong>la fonction que le symptôme remplissait</strong> dans le système familial. Autrement dit, il se demande : <strong>à quoi servait ce symptôme dans l’équilibre familial ?</strong> Puis il propose une autre manière, souvent plus explicite ou moins coûteuse, de remplir cette même fonction.</li>
@@ -520,7 +523,7 @@ Selvini en arrive à se dire que cette méthode ne fonctionne pas aussi bien qu'
 <li>Mots pouvaient nous empêcher de penser (les mots créent des réalités spécifiques)
 <ul>
 <li>Immunité: le terme &quot;défenses&quot; immunitaires est-il correct? Observation que des anticorps se générent même sans &quot;attaques&quot;.</li>
-<li>Métaphores qui font obstacle à la pensée. Dépression n'est pas une bonne métaphore, l'étiquette enferme plutot qu'ouvre. Allons vers celle qui permet une augmentation des choix possibles. (cf taches aveugles)</li>
+<li>Métaphores qui font obstacle à la pensée. Dépression n'est pas une bonne métaphore, l'étiquette enferme plutot qu'ouvre. Allons vers celle qui permet une augmentation des choix possibles. (cf tâches aveugles)</li>
 <li>Vont étudier les conditions permettant la survie de la cellule. La vie d'une cellule est la capacité à conserver sa différence. Sinon, danger de mort, se laisse attaquer/mourrir.</li>
 </ul>
 </li>
@@ -549,12 +552,12 @@ Famille, comme dit Neuburger, c'est l'<strong>idée</strong> qu'on a de la famil
 <li><strong>C'est donc un processus de sélection de ce qu'il sera bon par les ascendants de transmettre</strong>, afin d'assurer, selon eux la transmission, un lignage conforme à leur attente. Il s'agit d'une transmission d'un contenu mais aussi, sinon plus, <strong>une gestion adéquate de l'oubli, de <mark>ce qu'il convient d'oublier</mark></strong> (à retenir!) pour assurer cette continuité familiale malgré le saut des générations, malgré la rupture générationnelle. La mémoire familiale est essentiellement un processus de sélection de ce qu'il faut oublier pour soutenir, maintenir, transmettre le mythe familial&quot; (p.31-32, <em>Le mythe familial</em>, Neuburger).</li>
 </ul>
 <h6 id="3-autonomie-et-pluridependance-edgar-morin" tabindex="-1">3. Autonomie et pluridépendance (Edgar Morin)</h6>
-<p>Edgar Moran. <strong>Autonomie</strong> (sociologue systémicien): est fait d'un tissu de dépendances. <strong>Plus on est autonomes, plus on l'est par un tissu de dépendances. Richesse de dépendances = autonomie. Pluridépendance = autonomie.</strong><br>
-Ex: adolescent: ancré dans sa famille d'origine mais aussi ayant creé des liens a l'extérieur, camarades de classe, sport, etc.<br>
+<p>Edgar Morin. <strong>Autonomie</strong> (sociologue systémicien): est fait d'un tissu de dépendances. <strong>Plus on est autonomes, plus on l'est par un tissu de dépendances. Richesse de dépendances = autonomie. Pluridépendance = autonomie.</strong><br>
+Ex: adolescent: ancré dans sa famille d'origine mais aussi ayant creé des liens à l'extérieur, camarades de classe, sport, etc.<br>
 <mark>Ne pas avoir de dépendances: aliénation. Pas de choix à faire entre différentes appartenances, pas d'autonomie, si on est pauvres en appartenances</mark> (à retenir).</p>
 <p>Selon Neuburger:</p>
 <ul>
-<li>Pathologie: tentative du groupe pour préserver son identité. Par exemple secrets, non-dits,... qui risqueraient d'affaiblir le mythe, ou de l'attaquer.
+<li>Pathologie: tentative du groupe pour préserver son identité. Par exemple: secrets, non-dits,... qui risqueraient d'affaiblir le mythe, ou de l'attaquer.
 <ul>
 <li>Par exemple: irrégularités dans la filiation - un enfant né d'une relation extraconjugale, ou né par adoption... Suicide à la génération des parents... Il y a donc un oubli de certains particularismes parce que ces particularismes pourraient attaquer le pôle mythique. Par exemple, Daniel dans l'autre cours (PSYCE-540).</li>
 </ul>
@@ -587,7 +590,7 @@ Ex: adolescent: ancré dans sa famille d'origine mais aussi ayant creé des lien
 <p><strong>Constructivisme 1</strong> ou l'aliénation du thérapeute dans une lecture univoque de la réalité. Le thérapeute est aveugle s'il croit à ce qu'il voit.<br>
 Heinz Von Foerster: &quot;Je suis aveugle si je ne vois pas que je suis aveugle. Si je m'aperçois que je suis aveugle, alors je vois&quot;.</p>
 </blockquote>
-<p>Idée que la réalité n'existe pas comme quelque chose en soi. (Lien avec <a class="internal-link is-unresolved" href="/404" target="">There is no reality</a>)<br>
+<p>Idée que la réalité n'existe pas comme quelque chose en soi. (cf <a class="internal-link is-unresolved" href="/404" target="">There is no reality</a>)<br>
 On amène la notion de co-construction: information n'as pas un caractère objectif et neutre mais comme une mise en forme du réel.</p>
 <p>On a tous des points d'aveuglement, qui sont en lien avec la manière dont on a été depuis l'enfance baignés dans des représentations du monde (celles qu'on nous a communiquées, apprises). Création d'une grille de lecture, &quot;carte du monde&quot;, nous permettant d'apercevoir certaines choses et ne pas en apercevoir d'autres.<br>
 On s'intéresse donc surtout à ce que l'on ne voit pas.</p>
@@ -610,7 +613,7 @@ On s'intéresse donc surtout à ce que l'on ne voit pas.</p>
 <li>être enfermé dans une définition causale-linéaire (resolvez le pb de mon ado qui fume)</li>
 <li>être enfermé dans une définition causale-circulaire (e.g. problèmes de mauvaise communication, sensation de boucle repétitive)</li>
 <li>être enfermé dans une définition constructiviste 1: e.g. ne voient pas leur fille comme adolescente mais seulement comme pré-adolescente (incapacité à affronter un changement - intervention se solde par la tentative d'introduire la crise)</li>
-<li>être enfermé dans une définition constructiviste 2: normalité c'est de proteger l'identité de groupe avant toute chose. Exemple patiente (mere, épouse, fille de ses parents) pour burnout severe. Famille s'en occupe comme si c'était un membre qui avait besoin d'être choyé et prise en charge, cree une sorte de dependance. Soignants pensent que la famille incentive ce manque d'autonomie. Famille tente de montrer solidarité.</li>
+<li>être enfermé dans une définition constructiviste 2: normalité c'est de proteger l'identité de groupe avant toute chose. Exemple patiente (mère, épouse, fille de ses parents) pour burnout sevère. Famille s'en occupe comme si c'était un membre qui avait besoin d'être choyé et prise en charge, crée une sorte de dépendance. Soignants pensent que la famille incentive ce manque d'autonomie. Famille tente de montrer solidarité.</li>
 </ul>
 <p>D'après <em>Le mythe familial</em>, de Neuburger, p.27: &quot;Modèles thérapeutiques&quot;</p>
 <div class="table-wrapper"><table>
@@ -682,7 +685,7 @@ On s'intéresse donc surtout à ce que l'on ne voit pas.</p>
 </tr>
 </tbody>
 </table></div>
-<p>On remet la famille dans une éthique de choix, elle aussi, pour qu'elle ne soit pas prisonnière de la lecture univoque, une vision enfermante. Ce n'est pas l'idée qu'il y a un niveau plus fonctionnel qu'un autre:! mais qu'il y a des lectures plus enfermantes si elles deviennent exclusives et si le système manque d'accès à d'autres lecture. Donc, le thérapeute amène la famille à un autre niveau de lecture. Neuburger: &quot;un bon thérapeute doit faire ses gammes&quot;.</p>
+<p>On remet la famille dans une <strong>éthique de choix</strong>, elle aussi, pour qu'elle ne soit pas prisonnière de la lecture univoque, une vision enfermante. Ce n'est pas l'idée qu'il y a un niveau plus fonctionnel qu'un autre:! mais qu'il y a des lectures plus enfermantes si elles deviennent exclusives et si le système manque d'accès à d'autres lecture. Donc, le thérapeute amène la famille à un autre niveau de lecture. Neuburger: &quot;un bon thérapeute doit faire ses gammes&quot;.</p>
 <p>(Discussion autour d'un exemple)</p>
 <p><strong>Important de permettre aux familles d'utiliser <em>un langage</em> qu'ils n'utilisaient plus. <em>Un sens</em> qu'ils n'utilisaient plus.</strong></p>
 <p>Video, lecture de Maurizio Andolfi: à propos de la considération des pères dans les dispositifs thérapeutiques. &quot;<a href="https://www.accademiapsico.it/shop/en/product/fathers-a-missing-and-neglected-resource-in-family-and-in-therapy/" target="_blank" class="external-link">Fathers: a missing and neglected resource in family and in therapy</a>&quot;</p>
@@ -702,7 +705,7 @@ On s'intéresse donc surtout à ce que l'on ne voit pas.</p>
 <ol>
 <li><strong>Affiliation ou joining</strong></li>
 <li><strong>Découvrir et décrire la structure familiale</strong><br>
-Il va être à la recherche de quelle carte il va dessiner à propos de cette famille, va voir comment se comportent les membres les uns avec les autres, les frontières sont elles claires ou diffuses entre personnes et sous-systèmes? présence de bons degrés de différentiation?</li>
+Il va être à la recherche de quelle carte il va dessiner à propos de cette famille, va voir comment se comportent les membres les uns avec les autres, les frontières sont elles claires ou diffuses entre personnes et sous-systèmes? Présence de bons degrés de différentiation?</li>
 <li><strong>Créer des conditions pour permettre la transformation</strong></li>
 </ol>
 <h4 id="4-2-moyens-therapeutiques" tabindex="-1">4.2 Moyens thérapeutiques</h4>
@@ -714,7 +717,7 @@ Il va être à la recherche de quelle carte il va dessiner à propos de cette fa
 </ul>
 </li>
 <li><strong>Délimitation des frontières</strong></li>
-<li><strong>Prescription de taches thérapeutiques</strong>
+<li><strong>Prescription de tâches thérapeutiques</strong>
 <ul>
 <li>par ex: se protéger dans la famille nucléaire dans intrusions de la famille élargie, ou inverse, les inviter à être plus proches de cousins/familles pour une famille très rigide et fermée dans leur noyau</li>
 <li>Pour leur redonner vite leur compétences, pour que la famille ne dépende pas du thérapeute. Et pour qu'ils expérimentent aussi des choses entre les séances, pas seulement pendant les séances.</li>
@@ -729,7 +732,7 @@ Il va être à la recherche de quelle carte il va dessiner à propos de cette fa
 </li>
 </ul>
 <h4 id="4-3-familles-psychosomatiques-et-evitement-du-conflit" tabindex="-1">4.3 Familles psychosomatiques et évitement du conflit</h4>
-<p>Familles psychosomatiques (<em>Psychosomatic Families: Anorexia Nervosa in Context</em>, 1978)</p>
+<p>Familles <strong>psychosomatiques</strong> (<em>Psychosomatic Families: Anorexia Nervosa in Context</em>, 1978)</p>
 <ol>
 <li>Enchêvetrement</li>
 <li>Surprotection</li>
@@ -761,6 +764,29 @@ Faux. On ne sait pas ce que ca va donner, on mise sur activation des ressources 
 <ul>
 <li>Fils en consultation avec sa mère, et grands-parents maternels, pour: retrait, passe de longues heures seul dans sa chambre à jouer des jeux video. Père absent en thérapie, loyauté fils envers mère est remise en question.</li>
 </ul>
+<h2 id="examen-juin-2026" tabindex="-1">Examen juin 2026</h2>
+<ol>
+<li>Pour double contrainte, il faut... injection 1, injection 2, injection 3 (impossibilité de communiquer). Vrai. ✅❌? (techniquement vraie, même s'il manquait relation affective, mais c'est pas dit &quot;il suffit de&quot;.... )</li>
+<li>Watzlawick considérait que c'est souvent la solution proposée pour résoudre un problème qui rend celui ci insoluble. <strong>Vrai</strong> ✅</li>
+<li>Walzlawick objectif le changement. <strong>Vrai</strong>. ✅</li>
+<li>Les systémiciens appellent le patient désigné celui qui souffre le plus. <strong>Faux</strong>. ✅</li>
+<li>Modèle circulaire est non-prédictif... <strong>Faux</strong>. ✅</li>
+<li>La Child Guidance, aussi nommée guidance parentale, vise à soutenir les parents dans leur rôle éducatif. Elle a inspiré et préparé le terrain pour les fondateurs de l'approche systémique familiale. <strong>Vrai</strong> ✅</li>
+<li>Selon Minuchin, les trois étapes de la thérapie sont l'affiliation, le recadrage et la création de conditions permettant la transformation de son fonctionnement. <strong>Faux</strong> (pas recadrage) ✅</li>
+<li>Selon Neuburger, pour déterminer la pertinence thérapie familiale... allégation, souffrance et symptôme chez la même personne. <strong>Faux</strong>. ✅ (a priori sauf si ultra piège)</li>
+<li>Objectif du thérapeute est de « réparer » les dysfonctionnements de la famille. Faux. ✅ (permettre auto-solution)</li>
+<li>Pour explorer la fonction du symptôme, le thérapeute se pose les questions suivantes : que permet-il ou empêche-t-il (...) économie psychique (...)(?? me souviens pas, j'ai mis <strong>Vrai</strong> je pense) ❌ ✅</li>
+<li>Question sur antipsychiatrie et thérapies de groupe qui ont inspiré les mouvements systémiques. <strong>Vrai</strong>. ✅</li>
+<li>L'école de Palo Alto a introduit le concept de système en s'inspirant des travaux de G. Bateson. Pour ce dernier le système est un ensemble d'éléments en interaction qui possèdent des propriétés qu'on observe dans tous les groupes vivants. <strong>Faux</strong> ✅ (c'est Von Bertalanffy) ✅</li>
+<li>Principe d’homéostasie qui supposait une stabilité interne avec des rétroactions positives et négatives. Vrai. ✅</li>
+<li>Système a tendance à homéostasie et stabilité. Faux. ✅</li>
+<li>Question sur auto-poïetique hétérogène. Vrai. ✅</li>
+<li>Principe de non-sommativité, on peut pas comprendre le système en prenant individuellement les membres de la famille en thérapie. <strong>Vrai</strong>. ✅</li>
+<li>la prise de conscience n'est pas d'une grande aide. <strong>Vrai</strong>. ✅</li>
+<li>Question des rituels qui créent l’intime d’une famille. <strong>Vrai</strong> (apparemment faux, ce sont les mythes ❌)</li>
+<li>Systémique seconde ordre identité de groupe. <strong>Vrai</strong>. ✅</li>
+<li>?</li>
+</ol>
 <h1 id="partie-ii-therapies-cognitivo-comportementales-b-thonon" tabindex="-1">Partie II: Thérapies Cognitivo-Comportementales - B. Thonon</h1>
 <p>Prof: Bénédicte Thonon (en suppléance de Carole Fantini). Nouveau cours.</p>
 <p>Contenu:</p>
@@ -1848,9 +1874,58 @@ Impossible si suppression de l’émotion</p>
 <li>Mettre en place l’activation comportementale <a href="https://youtu.be/3gNF10Zvyzc" target="_blank" class="external-link">https://youtu.be/3gNF10Zvyzc</a></li>
 <li>Intégration des 3 vagues: <a href="https://www.youtube.com/watch?v=q1c2VBA0gHg" target="_blank" class="external-link">https://www.youtube.com/watch?v=q1c2VBA0gHg</a></li>
 </ul>
+<h3 id="examen-juin-2026-1" tabindex="-1">Examen juin 2026</h3>
+<p>Q1. <strong>Quels éléments pour assurer une prise en charge fondée sur les données probantes dans cette situation?</strong><br>
+<strong>A) 1. Intervention la plus soutenue par la recherche pour le type de trouble anxieux identifié 2. Votre expertise clinique en tant que psychologue 3. Les préférences de sylvie en matière de traitement</strong> ✅<br>
+B) 1. Diagnostique clinique qui précise le type de trouble anxieux 2. intervention la plus soutenue par la recherche pour le type de trouble anxieux identifié 3. votre expertise clinique en tant que psychologue<br>
+C) 1. Intervention la plus soutenue par la recherche pour le type de trouble anxieux identifié 2. Votre expertise clinique en tant que psychologue 3. Alliance thérapeutique<br>
+D) 1. diagnostique clinique qui précise le type de trouble anxieux 2. votre expertise clinique en tant que psychologue 3. Les préférences de sylvie en matière de traitement<br>
+E) 1. alliance thérapeutique 2. diagnostique clinique qui précise le type de trouble anxieux 3.Intervention la plus soutenue par la recherche pour le type de trouble anxieux identifié</p>
+<p>Q2. <strong>Sam, 22 ans, consulte à la suite d'un arrêt maladie provoqué par un burnout. Lors de la prise en charge, il explique entre autres que, lorsqu'il doit parler en public ou participer à des réunions, il ressent une forte tension, des mains moites et des tremblements visibles. En entretien, il dit souvent : &lt;&lt; Je ne vais pas y arriver, je perds le contrôle de mes émotions &gt;&gt;, &lt;&lt; Tout le monde va remarquer que je tremble et va se moquer de moi », « Je n'ai aucun contrôle sur ce monde ». Quelle notion théorique décrit le mieux le pattern de pensées présenté par Sam ?</strong><br>
+A - L'évitement expérientiel de Barlow<br>
+B - L'inférence arbitraire, couplée à la lecture de pensée<br>
+C - La spirale dépressive de Mowrer<br>
+<strong>D - La triade anxieuse de Beck.</strong> ✅<br>
+E - Les distorsions cognitives en tant schéma cognitif inconditionnel</p>
+<p>Q3. <strong>Quelle affirmation décrit le mieux le rôle et les caractéristiques de l'évaluation dans le processus thérapeutique ?</strong><br>
+A - L'évaluation est uniquement réalisée en début et fin de prise en charge, avec comme objectif de mesurer l'efficacité du traitement.<br>
+B - L'évaluation est uniquement utilisée comme aide potentielle, lorsque le psychologue éprouve des difficultés à récolter certaines informations en entretien.<br>
+C - L'évaluation est uniquement réalisée en début de prise en charge, avec comme objectif de définir la cible thérapeutique.<br>
+<strong>D - L'évaluation est présente à chaque étape de la prise en charge, avec comme objectif de faciliter l'empirisme collaboratif.</strong> ✅<br>
+E - L'évaluation est utilisée lorsque le traitement débute (après la conceptualisation), pour contrer les éventuels biais que peut avoir le bénéficiaire tout au long de la prise en charge (tels que sous-estimer son évolution).</p>
+<p><strong>Q4. Dans un contexte de conditionnement classique, quel exemple illustre le mieux un schéma ou un stimulus inconditionnel provoque par association une réponse conditionnée?:</strong><br>
+A - Marie et les attaques de panique<br>
+B - Olivier Bac 2 évite les cours à cause de 3 échecs<br>
+C - Benoit nuit anxiogène attaque de panique imagine en boucle les pires scénarios<br>
+D - <strong>Louis peur des hôpitaux à cause d’une douleur lors d’injections</strong>. ✅<br>
+E - Michael 8 ans peur des araignées depuis toujours</p>
+<p>Q5. <strong>Considérant la théorie du conditionnement opérant dans la chaîne &lt;&lt; Stimulus - Comportement Conséquence », laquelle de ces affirmations est vraie?:</strong><br>
+A - <strong>Le comportement est influencé par des stimuli internes et/ou externes subtils, et non pas par ses conséquences. Les stimuli doivent donc être identifiés pour construire le plan de traitement.</strong> ❌<br>
+B - Le conditionnement opérant est toujours appris au travers de l'observation (// Théorie de Bandura), et nécessite donc de comprendre les influences de l'environnement pour optimiser l'efficacité de la prise en charge.<br>
+C - Les conséquences du comportement sont toujours non-intentionnelles, mais elles visent à satisfaire des besoins de base (qu'ils soient individuels ou interpersonnels).<br>
+D - Le comportement est maintenu ou augmenté parce qu'il qu'il sert ser une une fonction de renforcement négatif. ✅<br>
+E - Tous les comportements ayant une forme similaire ont la même fonction, que le psychologue doit identifier comme cible thérapeutique prioritaire (notamment avec les auto-observations).</p>
+<p><strong>Q6. Dans le cadre de la thérapie cognitive développée par Aaron Beck, quelle approche illustre le mieux la modification des pensées et croyances dysfonctionnelles à l'origine des troubles psychologiques ?</strong><br>
+A - Tenter de créer un nouveau narratif avec les expériences passées du bénéficiaire, pour modifier les schémas (in) conditionnels qui en découlent.<br>
+B - L'utilisation de techniques psychocorporelles (telles que la pleine conscience ou la relaxation), pour réduire l'anxiété tout en investissant le moment présent plutôt que le monde cognitif.<br>
+C - Réaliser des expériences comportementales ou d'observation pour tester les croyances, ainsi que construire et tester de nouvelles perspectives. ✅<br>
+D - <strong>Modifier subtilement les pensées ou croyances dysfonctionnelles, en se basant sur la qualité de l'alliance thérapeutique, le modeling et le dialogue socratique.</strong> ❌<br>
+E - Se confronter aux situations craintes / anticipées, afin que le bénéficiaire puisse constater qu'il a les ressources internes et / ou externes pour faire face à celles-ci.</p>
+<p><strong>Q7. Selon l'approche de la première vague -(comportementale), quelle est l'origine principale du trouble psychologique et quel est l'objectif du traitement ?</strong><br>
+A - Une désactivation comportementale grandissante comme origine, avec pour objectif de favoriser des expériences comportementales en lien avec les buts et les valeurs de l'individu.<br>
+B - Un déficit de conditionnement opérant comme origine, avec pour objectif de faciliter de nouvelles expériences comportementales.<br>
+<strong>C - Des apprentissages dysfonctionnels comme origine, avec pour objectif de les modifier et de les remplacer par de nouveaux apprentissages.</strong> ✅<br>
+D - Des évitements expérientiels dysfonctionnels comme origine, avec pour objectif de développer des répertoires comportementaux plus larges et flexibles.<br>
+E - Des distorsions du traitement de l'information comme origine, avec pour objectif de les restructure en vue de faciliter l'activation comportementale.</p>
+<p><strong>Q8. Quel énoncé décrit le mieux l'objectif commun des thérapies cognitivo-comportementales de troisième vague?</strong></p>
+<p>A - Identifier et modifier les distorsions cognitives (c.-à-d. la 2ème vague, cognitive) dans un premier temps, pour ensuite améliorer la qualité des expositions aux situations émotionnelles habituellement évitées (c.-à-d., la 1ère vague, comportementale).<br>
+B - Encourager le bénéficiaire à supprimer (ou, en tout cas, diminuer) les émotions négatives susceptibles de provoquer de l'anxiété ou de la détresse.<br>
+C - Favoriser une attitude dite &quot;positive&quot;, en veillant à identifier les aspects positifs de toute expérience vécue (à la fois sur le plan cognitif et comportemental).<br>
+D - Modifier les pensées et comportements dysfonctionnels pour réduire les symptômes psychologiques, en favorisant l'inclusion de l'individu dans son monde social.<br>
+<strong>E - Aider le bénéficiaire à accepter tous les aspects de son expérience (pensées, sentiments, souvenirs, sensations physiques), qu'ils soient jugés négatifs ou positifs.</strong> ✅</p>
 <h1 id="partie-iii-psychanalyse-fouchet" tabindex="-1">Partie III: Psychanalyse - Fouchet</h1>
-<p>📅 Jeudi <strong>13 Mars 2026</strong> - Cours 1 apparemment?</p>
-<p>📅 Jeudi <strong>20 Mars</strong> 2026 - Cours 2 apparemment?</p>
+<p>📅 Jeudi <strong>13 Mars 2026</strong> - Cours 1</p>
+<p>📅 Jeudi <strong>20 Mars</strong> 2026 - Cours 2</p>
 <p>📅 Jeudi <strong>2 Avril 2026</strong> - Cours 3?</p>
 <p>Cours prochain elle invitera Suzanne Wolff et une autre intervenante (Intensive Short-Term Dynamic Psychotherapy - ISTDP). Démarche différente de celle du prof, il se demande donc pourquoi rester attaché a la psychanalyse si c'est ça le projet (thérapie brève)? Mais répond à une des critiques que l'on fait a la psychanalyse (la longueur, et l'absence de promesse de guérison (seulement un engagement à être là).</p>
 <p>Psychanalyse: temps logiques, non chronologiques.</p>
@@ -1940,7 +2015,7 @@ rêve: production singulière. cf machinerie subjective pour ce sujet la. des lo
 <p>Question sur les &quot;présentations de malade&quot; (docu A Ciel Ouvert): cf <a href="https://www.sciencedirect.com/science/article/pii/S0014385519301768" target="_blank" class="external-link">https://www.sciencedirect.com/science/article/pii/S0014385519301768</a></p>
 <ul>
 <li>lorsque malade vient parler de son parcours/maladie? comme expert de sa maladie?</li>
-<li>se fait de moins en mons</li>
+<li>se fait de moins en moins</li>
 </ul>
 <p>La psychanalyse n'est pas possible sans le corps (débat) :</p>
 <ul>
@@ -2050,6 +2125,8 @@ Les grands courants psychothérapeutiques
 </ol>
 </li>
 <li><a href="#conclusions-du-cours">Conclusions du cours</a>
+</li>
+<li><a href="#examen-juin-2026">Examen juin 2026</a>
 </li>
 </ol>
 </li>
@@ -2242,6 +2319,8 @@ Les grands courants psychothérapeutiques
 </ol>
 </li>
 </ol>
+</li>
+<li><a href="#examen-juin-2026-1">Examen juin 2026</a>
 </li>
 </ol>
 </li>
