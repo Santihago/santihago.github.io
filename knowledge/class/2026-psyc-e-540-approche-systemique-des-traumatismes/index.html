@@ -79,14 +79,14 @@
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-06-06T20:11:23.202Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1);const previewCache=new Map;window.toggleSearch=function(){const e=document.getElementById("globalsearch");e.classList.contains("active")?e.classList.remove("active"):(e.classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){const t=e.textContent;t&&(document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <div style="display: flex; justify-content: center; padding: 40px;">\n        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">\n            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="6" stroke-opacity="0">\n                    <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite" />\n                    <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n                <circle cx="22" cy="22" r="8">\n                    <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite" />\n                </circle>\n            </g>\n        </svg>\n    </div>';function debounce(e,t,n){var r;return function(){var i=this,a=arguments,s=n&&!r;clearTimeout(r),r=setTimeout((function(){r=null,n||e.apply(i,a)}),t),s&&e.apply(i,a)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="<code>⌘</code>&nbsp;+&nbsp;<code>K</code>"))}function tokenizeSearchTerms(e){const t=[],n=/"([^"]+)"|(\S+)/g;let r;for(;null!==(r=n.exec(e));){const e=(r[1]||r[2]).toLowerCase();e.length>1&&t.push(e)}return t.sort(((e,t)=>t.length-e.length))}function highlightTerms(e,t){if(!t||0===t.length||!e)return e;let n=e;return t.forEach((e=>{const t=e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),r=new RegExp(`(${t})`,"gi");n=n.replace(r,'<span class="search-highlight">$1</span>')})),n}function getContextualExcerpt(e,t,n=150){if(!e)return"";const r=e.replace(/<[^>]*>/g,"");if(!t||0===t.length)return truncateText(r,n);let i=r.length;if(t.forEach((e=>{const t=r.toLowerCase().indexOf(e.toLowerCase());-1!==t&&t<i&&(i=t)})),i===r.length)return truncateText(r,n);const a=Math.max(0,i-50),s=Math.min(r.length,a+n);let o=r.substring(a,s);return a>0&&(o="..."+o),s<r.length&&(o+="..."),o}function truncateText(e,t){return e?(e=e.replace(/<[^>]*>/g,"")).length<=t?e:e.substring(0,t-3)+"...":""}async function fetchPreviewContent(e){if(previewCache.has(e))return previewCache.get(e);try{const t=await fetch(e),n=await t.text(),r=new DOMParser,i=r.parseFromString(n,"text/html").querySelector(".content, .cm-s-obsidian, article, main"),a=i?i.innerHTML:"";return previewCache.set(e,a),a}catch(e){return console.error("Failed to fetch preview:",e),""}}function highlightTextNodes(e,t){if(!t||0===t.length)return;const n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT,null,!1),r=[];for(;n.nextNode();)r.push(n.currentNode);r.forEach((e=>{const n=e.textContent;let r=!1;if(t.forEach((e=>{n.toLowerCase().includes(e.toLowerCase())&&(r=!0)})),r){const r=document.createElement("span");r.innerHTML=highlightTerms(n,t),e.parentNode.replaceChild(r,e)}}))}async function showPreview(e){const t=window.searchResults;if(!t||!t[e])return;const n=t[e],r=document.getElementById("search-preview"),i=document.getElementById("preview-content"),a=r.querySelector(".preview-placeholder");if(!r||!i)return;document.querySelectorAll(".searchresult").forEach((e=>e.classList.remove("active")));const s=document.querySelector(`.searchresult[data-index="${e}"]`);s&&s.classList.add("active"),i.innerHTML=loadingSvg,i.classList.add("has-content"),a.style.display="none";const o=await fetchPreviewContent(n.url),c=n.tags&&n.tags.length>0?`<div class="preview-tags">${n.tags.map((e=>`<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${e}</a>`)).join("")}</div>`:"";i.innerHTML=`\n            <div class="preview-title">${highlightTerms(n.title,window.searchTerms)}</div>\n            ${c}\n            <div class="preview-body">${o}</div>\n        `;const l=i.querySelector(".preview-body");l&&window.searchTerms&&highlightTextNodes(l,window.searchTerms),window.currentPreviewIndex=e}function hidePreview(){const e=document.getElementById("search-preview"),t=document.getElementById("preview-content"),n=e?.querySelector(".preview-placeholder");n&&(n.style.display="flex"),t&&(t.classList.remove("has-content"),t.innerHTML=""),window.currentPreviewIndex=-1}function createIndex(e){const t=e=>(e=>e.toLowerCase().normalize("NFD").replace(/n\u0303/g,"ñ").replace(/[\u0300-\u036f]/g,"").normalize("NFC"))(e).split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){const e=await fetch("/searchIndex.json?v=2026-06-06T20:18:10.784Z").then((e=>e.json())),t=createIndex(e);function n(e){const t=document.querySelectorAll(".searchresult");if(0===t.length)return;let n,r=-1;t.forEach(((e,t)=>{e.classList.contains("active")&&(r=t)})),-1===r?n=e>0?0:t.length-1:(n=r+e,n<0&&(n=t.length-1),n>=t.length&&(n=0)),t.forEach((e=>e.classList.remove("active"))),t[n].classList.add("active"),t[n].scrollIntoView({behavior:"smooth",block:"nearest"}),showPreview(parseInt(t[n].dataset.index))}window.docs=e,window.index=t,document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),n(1)),"ArrowUp"===e.key&&(e.preventDefault(),n(-1)),"Enter"===e.key)){e.preventDefault();const t=document.querySelector(".searchresult.active");if(t){const e=t.dataset.url;e&&(window.location.href=e)}}}));const r=debounce(search,200,!1);window.field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&"Enter"!==e.key&&r()})),window.resultsDiv=document.querySelector("#search-results");const i=new URL(location.href).searchParams;i.get("q")&&(field.setAttribute("value",i.get("q")),toggleSearch(),search())}async function search(){const e=field.value.trim(),t=document.getElementById("search-layout");if(!e)return resultsDiv.innerHTML="<span><i>Enter your search text in the box above</i></span>",hidePreview(),void(t&&t.classList.add("no-preview"));window.lastSearch=e,window.searchTerms=tokenizeSearchTerms(e),resultsDiv.innerHTML=loadingSvg,hidePreview();const n=offlineSearch(e);if(window.searchResults=n,!n.length)return t&&t.classList.add("no-preview"),void(resultsDiv.innerHTML=`\n                <div class="no-results">\n                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n                        <circle cx="11" cy="11" r="8"></circle>\n                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>\n                        <line x1="8" y1="11" x2="14" y2="11"></line>\n                    </svg>\n                    <p>No results for "${e}"</p>\n                </div>\n            `);t&&t.classList.remove("no-preview");let r="";n.forEach(((e,t)=>{const n=highlightTerms(getContextualExcerpt(e.content,window.searchTerms,120),window.searchTerms),i=highlightTerms(e.title,window.searchTerms),a=e.tags&&e.tags.length>0?`<div class="result-tags">${e.tags.map((e=>`<span class="tag">#${e}</span>`)).join("")}</div>`:"";r+=`\n                <div class="searchresult${0===t?" active":""}"\n                     data-index="${t}"\n                     data-url="${e.url}"\n                     onmouseenter="showPreview(${t})"\n                     onclick="window.location.href='${e.url}'">\n                    <span class="result-title">${i}</span>\n                    ${a}\n                    <div class="result-excerpt">${n}</div>\n                </div>\n            `})),resultsDiv.innerHTML=r,n.length>0&&showPreview(0),"undefined"!=typeof lucide&&lucide.createIcons()}function offlineSearch(e){const t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",limit:10}]),r=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...r("title"),...r("content"),...r("tags")])].map((e=>{const n={...t[e]};return n.tags=n.tags.filter((e=>"gardenEntry"!==e&&"note"!==e)),n}))}window.lastSearch="",window.searchResults=[],window.searchTerms=[],window.currentPreviewIndex=-1,window.search=search</script>
 <main class="content cm-s-obsidian print">
 <header>
 <h1 data-note-icon="">Approche systémique des traumatismes</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-06-06T13:14:51.137+02:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-06-06T22:10:12.699+02:00"></span></div></div></div>
+<div class="timestamps"><div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="2026-06-06T22:17:27.912+02:00"></span></div><div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="2026-06-06T22:17:27.913+02:00"></span></div></div></div>
 </header>
-<div class="callout" data-callout="tldr"><div class="callout-title"><div class="callout-title-inner"> Résumé<br></div></div>
+<div class="callout" data-callout="tldr"><div class="callout-title"><div class="callout-title-inner"> Contenu du cours<br></div></div>
 <div class="callout-content">
 <p>
 Le cours aborde les questions des liens familiaux et de la transmission intergénérationnelle des traumatismes au sein des groupes et des familles. Elles sont envisagées dans le contexte des couples et familles contemporaines, souvent désignées par les sociologues et les philosophes comme témoignant d'un affaiblissement du lien de filiation et de la capacité à transmettre. Cette caractéristique sera mise en regard du contexte historique et socio-culturel au sein duquel elle émerge. La clinique nous permet de relever des situations où l'organisation même des liens ou de la filiation semble découler de la peur de transmettre. L'impact de cette peur pour le groupe et les individus qui le composent sera analysé à partir de nombreux exemples.</p>
@@ -120,10 +120,9 @@ Sur 20 (15 VF + 5 QRM et/ou QCM).<br>
 Portera sur le cours, son livre personnel, et le livre de Neuburger (traumatisme groupal et la thérapie aux 3 R)<br>
 Ne portera <strong>pas</strong> sur la partie de Jean-Luc Brackelaire.</p>
 </div></div>
-<h1 id="partie-1-cours-principal-isabelle-duret" tabindex="-1">Partie 1. Cours principal (Isabelle Duret)</h1>
 <p>📅 Vendredi <strong>6 Février 2026</strong> - Cours magistral I. Duret</p>
 <p>L'objectif de ce cours et d'aborder la notion de <strong>transmission</strong> sous l'angle systémique, et la notion de <strong>traumatisme</strong>. Repérer, comprendre, et prendre en charge les dimensions traumatiques.</p>
-<h2 id="1-introduction" tabindex="-1">🏷️ 1. Introduction</h2>
+<h1 id="1-introduction" tabindex="-1">🏷️ 1. Introduction</h1>
 <p><strong>Parcours professionnel, contexte social</strong></p>
 <p>À la sortie de l’université, elle enchaîne les stages sans emploi rémunéré. Elle est ensuite engagée comme seule psychologue dans le service de pédiatrie d’un hôpital général à Charleroi. On est dans les années 80, au moment de la fermeture des mines et du déclin industriel. La région est frappée par une précarité massive. Elle travaille avec des familles en grande détresse sociale et économique, souvent avant même que la détresse psychologique n’apparaisse comme telle.</p>
 <p>Beaucoup de situations sont dramatiques : logements insalubres, absence d’eau ou de chauffage, négligence, violences intrafamiliales, addictions, conduites à risque. Elle parle de « violence sociale » qui se répercute à l’intérieur des familles. À ce moment-là, elle est en formation en thérapie familiale systémique et voit les enfants mais aussi leurs familles. Selon elle la précarité augmente aujourd’hui encore, et que les étudiants seront probablement confrontés à ce type de situations.</p>
@@ -176,8 +175,8 @@ Sur les raisons de l'abandon de sa théorie: Les raisons que Freud donne ne se r
 <li>Tout ne se transmet pas, la résilience existe.</li>
 </ul>
 </div></div>
-<h2 id="2-la-famille" tabindex="-1">🏷️ 2. La famille</h2>
-<h3 id="2-1-la-famille-unite-fonctionnelle-et-relationnelle-neuburger" tabindex="-1">2.1 La famille: unité fonctionnelle et relationnelle (Neuburger)</h3>
+<h1 id="2-la-famille" tabindex="-1">🏷️ 2. La famille</h1>
+<h2 id="2-1-la-famille-unite-fonctionnelle-et-relationnelle-neuburger" tabindex="-1">2.1 La famille: unité fonctionnelle et relationnelle (Neuburger)</h2>
 <p>Comment définit-on, se représent-on la <strong>famille</strong>? On considérera ici le caractère mythique, des croyances autour de l'idée de famille (e.g. mythe fondateur de la Belgique, l'<em>Union fait la force</em>).</p>
 <p>Pour introduire la notion de famille, la professeure s’appuie sur Robert Neuburger, notamment sur son ouvrage <em>Le mythe familial</em>. Il propose une définition structurée autour de plusieurs fonctions essentielles.</p>
 <div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> La famille<br></div></div>
@@ -196,7 +195,7 @@ D'après R. Neuburger, 1995, <em>Le mythe familial</em>.</p>
 <p>La famille est aussi un <strong>lieu de stabilité et de pérennité</strong>. Même si le groupe évolue, se transforme, traverse des crises, il demeure en principe un point d’ancrage. Cette continuité contribue au sentiment de sécurité.</p>
 <p>Enfin, elle est un <strong>lieu de construction identitaire</strong>. On s’y construit pour pouvoir un jour s’en séparer partiellement et aller ailleurs : créer d’autres liens, éventuellement fonder une autre famille. La famille est également un espace de <strong>transmission intergénérationnelle</strong>, via la filiation. Cette transmission passe par des liens visibles mais aussi par des loyautés invisibles, parfois complexes ou contraignantes.</p>
 <p>Ces différentes dimensions forment le socle de la définition de la famille. Mais, selon Neuburger, l’ensemble est structuré par un « ciment » particulier : le mythe familial.</p>
-<h3 id="2-2-le-mythe-familial-croyances-recit-et-identite-groupale" tabindex="-1">2.2 Le mythe familial : croyances, récit et identité groupale</h3>
+<h2 id="2-2-le-mythe-familial-croyances-recit-et-identite-groupale" tabindex="-1">2.2 Le mythe familial : croyances, récit et identité groupale</h2>
 <p>Le mythe familial est ce qui donne au groupe son identité spécifique et le différencie du monde extérieur. Il est composé d’un ensemble de <strong>croyances partagées</strong> concernant ce que la famille pense être, ce qu’elle dit d’elle-même.</p>
 <p>On est ici dans le registre du récit et de la narrativité : la manière dont une famille se raconte. Ces croyances touchent tous les niveaux de la réalité familiale. Elles constituent en quelque sorte la « personnalité » du groupe.</p>
 <p>Chacun y adhère « sans y croire tout à fait », mais avec une certaine complaisance. Autrement dit, le mythe comporte une dimension d’idéalisation. Il n’est pas totalement pris pour une vérité factuelle, mais il est investi affectivement. Certains l'idéalisent, d'autres, au contraire, tentent de dénoncer le caractère mythique de certaines croyances et des pratiques (rites) derivées de ces croyances&quot; (ce qui renforce parfois le mythe!).</p>
@@ -212,19 +211,19 @@ Quelqu'un évoque la phrase répétée par sa mère : « À la vie, à la mort, 
 <p>Un autre étudiante cite : « Le pain partagé ne fait de mal à personne » et précise que, paradoxalement, sa famille se dit « pas très famille » au sens des liens de sang, mais valorise fortement la générosité et l’ouverture, notamment envers les amis. Ici, le mythe articule la générosité et le primat de la « famille de cœur » sur la famille biologique.</p>
 <p>Une autre étudiante décrit une famille où les liens sont moins sacralisés. L’autonomie et la différenciation sont plus valorisées, et il est plus acceptable de s’éloigner. Elle s’interroge sur l’influence de ce mythe sur la tolérance aux ruptures.</p>
 </div></div>
-<h3 id="2-3-crises-renouvellement-et-rigidification-du-mythe-familial" tabindex="-1">2.3 Crises, renouvellement et rigidification du mythe familial</h3>
-<h4 id="2-3-1-denonciation-du-mythe" tabindex="-1">2.3.1 Dénonciation du mythe</h4>
+<h2 id="2-3-crises-renouvellement-et-rigidification-du-mythe-familial" tabindex="-1">2.3 Crises, renouvellement et rigidification du mythe familial</h2>
+<h3 id="2-3-1-denonciation-du-mythe" tabindex="-1">2.3.1 Dénonciation du mythe</h3>
 <p>Certains membres peuvent <strong>contester</strong> le mythe. Ils dénoncent son caractère idéalisé, voire hypocrite. Cette dénonciation peut être vive, conflictuelle. Pourtant, loin de détruire le groupe, elle peut paradoxalement le renforcer. Par exemple, dans une famille qui valorise fortement l’unité, un membre qui refuse systématiquement de participer aux rassemblements peut devenir la figure de celui « sur qui on ne peut pas compter ». Le reste du groupe peut alors se resserrer autour du mythe fondateur, renforçant ainsi la cohésion.</p>
-<h4 id="2-3-2-renouvellement-du-mythe" tabindex="-1">2.3.2 Renouvellement du mythe</h4>
+<h3 id="2-3-2-renouvellement-du-mythe" tabindex="-1">2.3.2 Renouvellement du mythe</h3>
 <p>Le mythe n’est donc pas figé. Il peut <strong>se renouveler</strong> après une crise. Il peut être adapté à une période de la vie familiale et devenir inapproprié plus tard. Par exemple, un mythe d’ultra-unité peut être soutenant lorsque les enfants sont petits, mais devenir contraignant à l’adolescence, quand la différenciation devient nécessaire.</p>
-<h4 id="2-3-3-rigidification-du-mythe" tabindex="-1">2.3.3 Rigidification du mythe</h4>
+<h3 id="2-3-3-rigidification-du-mythe" tabindex="-1">2.3.3 Rigidification du mythe</h3>
 <p>Lorsque le mythe se rigidifie, qu’il ne se transforme plus, il peut devenir source de souffrance, voire de violence. En clinique, on rencontre souvent des familles où les mythes se sont rigidifiés. C’est cette rigidité, plus que le mythe en lui-même, qui devient problématique.</p>
 <div class="callout" data-callout="example"><div class="callout-title"><div class="callout-title-inner"> Jusqu'à la violence<br></div></div>
 <div class="callout-content">
 <p>
 Exemple: si la devise implicite est « chez nous, on est une famille ultra unie », cela peut devenir très violent pour un adolescent à qui l’on interdit toute autonomie au nom de l’unité. La violence peut alors surgir dans la tentative de faire respecter à tout prix la croyance mythique.</p>
 </div></div>
-<h3 id="2-4-pluralite-et-mobilite-des-mythes" tabindex="-1">2.4 Pluralité et mobilité des mythes</h3>
+<h2 id="2-4-pluralite-et-mobilite-des-mythes" tabindex="-1">2.4 Pluralité et mobilité des mythes</h2>
 <p>L’idée centrale est celle de <strong>mobilité</strong>. Le mythe n’est pas un destin figé. Il peut être repris tel quel, transformé, inversé, combiné avec celui d’un partenaire lors de la création d’une nouvelle famille. Il peut soutenir la créativité ou, au contraire, se transformer en contrainte s’il se rigidifie.</p>
 <p>Les mythes peuvent coexister, notamment dans les familles séparées ou recomposées. Un individu peut être traversé par plusieurs univers mythiques issus de différentes branches familiales. Cela complexifie la construction identitaire. Dans une famille « classique », on peut chercher un mythe fondateur dominant, mais en réalité, plusieurs éléments mythiques coexistent et peuvent évoluer selon les périodes de la vie familiale.</p>
 <p>Donc, <strong>le mythe familial est à la fois une ressource identitaire, un organisateur symbolique du groupe et, potentiellement, un lieu de tension lorsque son idéalisation empêche l’évolution</strong>.</p>
@@ -243,11 +242,11 @@ Exemple: si la devise implicite est « chez nous, on est une famille ultra unie 
 <li>La dénonciation du mythe peut paradoxalement le renforcer.</li>
 </ul>
 </div></div>
-<h2 id="3-le-lien-de-filiation" tabindex="-1">🏷️ 3. Le lien de filiation</h2>
-<h3 id="3-1-construction-psychique" tabindex="-1">3.1 Construction psychique</h3>
+<h1 id="3-le-lien-de-filiation" tabindex="-1">🏷️ 3. Le lien de filiation</h1>
+<h2 id="3-1-construction-psychique" tabindex="-1">3.1 Construction psychique</h2>
 <p>Jean Guyotat, psychiatre lyonnais travaillant avec des patients psychotiques, s’est intéressé à la filiation à partir des délires de filiation. Certains patients psychotiques s’inventaient des ascendances prestigieuses et se disaient descendants de grandes figures historiques ou scientifiques. À partir de ces observations, Guyotat (2000) définit la filiation comme ce par quoi un individu se situe et est situé dans le groupe auquel il appartient, par rapport à ses ascendants et à ses descendants, qu’ils soient <strong>réels ou imaginaires.</strong></p>
 <p>C’est lui qui formalise la distinction entre l’axe <strong>institué</strong> (juridique, socialement reconnu) et l’axe <strong>narcissique</strong> (subjectif, imaginaire). Il montre que la filiation ne se réduit pas à l’état civil : elle doit être psychiquement investie. Un lien peut être biologiquement établi et juridiquement reconnu sans être intégré subjectivement. Certains sujets acceptent et investissent fortement leur filiation, d’autres la dénient, la rejettent ou la remanient. Les délires de filiation montrent que lorsque la filiation réelle est fragilisée ou difficilement supportable, une filiation imaginaire peut se construire pour restaurer une cohérence narcissique.</p>
-<h3 id="3-2-verticalite" tabindex="-1">3.2 Verticalité</h3>
+<h2 id="3-2-verticalite" tabindex="-1">3.2 Verticalité</h2>
 <p>Pierre Benghozi approfondit cette perspective en décrivant la filiation comme un axe vertical. Chez lui, l’accent est davantage mis sur la <strong>verticalité transgénérationnelle</strong>.</p>
 <p>La filiation renvoie (P. Benghozi, 1999):</p>
 <ul>
@@ -256,7 +255,7 @@ Exemple: si la devise implicite est « chez nous, on est une famille ultra unie 
 <li>et même aux générations futures anticipées.</li>
 </ul>
 <p>Elle constitue une sorte de <strong>colonne vertébrale transgénérationnelle</strong>.</p>
-<h3 id="3-3-reconnaissance-reciproque-et-appartenance" tabindex="-1">3.3 Reconnaissance réciproque et appartenance</h3>
+<h2 id="3-3-reconnaissance-reciproque-et-appartenance" tabindex="-1">3.3 Reconnaissance réciproque et appartenance</h2>
 <p>Chez <strong>Kaës</strong>, le point fort est la <strong>reconnaissance réciproque et l’appartenance psychique</strong>. Il insiste sur le fait qu’il ne suffit pas d’être biologiquement ou juridiquement rattaché à une famille : il faut encore être reconnu par elle et la reconnaître en retour: donc, considérée par ces auteurs avant tout comme une <strong>construction psychique</strong>. Il ne suffit pas qu’un enfant soit juridiquement rattaché à une famille ; encore faut-il qu’il <strong>se sente</strong> reconnu et qu’il reconnaisse à son tour ceux qui se présentent comme ses parents. René Kaës insiste sur cette idée en affirmant qu’&quot;<em>il ne suffit pas de naître dans une famille, il faut aussi naître de la famille</em>&quot;. La filiation engage donc un processus d’appartenance psychique.</p>
 <p>Kaës (2000):</p>
 <ul>
@@ -272,14 +271,14 @@ Kaës (2000):</li>
 &quot;Par rapport aux situations d'adoption, il ne suffit pas qu'un groupe reconnaisse l'enfant qui est entré dans la famille par adoption. Il faut aussi que l'enfant qui est entré dans la famille par adoption reconnaisse le groupe comme étant ses parents. Cette notion de réciprocité, je vous prends l'exemple de l'adoption, mais c'est vrai dans n'importe quelle famille. Il faut qu'il y ait une reconnaissance réciproque pour que ce lien de filiation puisse être investi.<br>
 J'ai vu des familles où un enfant était parfaitement considéré comme étant l'enfant de la famille, le deuxième aussi, mais le troisième pas du tout. Il arrive que certains parents n'investissent pas un de leurs enfants. Cet enfant a beau les reconnaître comme étant ses parents, et bien ses parents, les parents en question, peuvent ne pas investir un de leurs enfants, ne pas le reconnaître comme étant issu de leur filiation (par ex, en cas d'inceste).&quot;</p>
 </div></div>
-<h3 id="3-4-les-deux-axes-de-guyotat" tabindex="-1">3.4 Les deux axes de Guyotat</h3>
+<h2 id="3-4-les-deux-axes-de-guyotat" tabindex="-1">3.4 Les deux axes de Guyotat</h2>
 <p>Deux axes qui structurent la filiation, d'apres Guyotat (1980):</p>
 <ol>
 <li>Un axe <strong>institué</strong> qui est authentifié juridiquement par la société (peu importe si biologique ou non). Lié au nom, aux droits successoraux, à la reconnaissance légale. Il correspond à la dimension <strong>officielle</strong> du lien.</li>
 <li>Un axe <strong>&quot;narcissique&quot;</strong> (ou &quot;imaginaire&quot;) qui correspond à la manière dont l'individu vit subjectivement sa filiation. Va nous permettre nous, psys, d'explorer comment chacun vit sa filiation, se situe par rapport aux chaînes de filiation, ce qu'on se raconte... Cet axe renvoie à la <strong>dimension narrative</strong> et au <strong>roman familial</strong> (Freud).</li>
 </ol>
 <p>Il existe une <strong>dialectique</strong> entre les deux axes. Des événements réels (incertitudes sur la paternité, secrets, changements de nom, ruptures familiales, suicides, bannissements…) peuvent fragiliser l’axe institué et favoriser le développement d’élaborations imaginaires.</p>
-<h3 id="3-5-les-quatre-axes-de-filiation-de-kinoo" tabindex="-1">3.5 Les quatre axes de filiation de Kinoo</h3>
+<h2 id="3-5-les-quatre-axes-de-filiation-de-kinoo" tabindex="-1">3.5 Les quatre axes de filiation de Kinoo</h2>
 <p>De nos jours, image plus complexe des liens de parenté (avec les familles recomposées). Philippe Kinoo, pédopsychiatre bruxellois, travaillant avec des enfants placés, observe que les deux axes de Guyotat ne suffisent pas toujours pour décrire la réalité actuelle.</p>
 <p>Kinoo (2002) propose 4 axes de filiation basés sur sa clinique pedopsychiatrique (l'article de Kinoo sera partagé):</p>
 <ol>
@@ -328,7 +327,7 @@ J'ai vu des familles où un enfant était parfaitement considéré comme étant 
 <li>Plusieurs figures parentales peuvent être un facteur de résilience.</li>
 </ul>
 </div></div>
-<h2 id="4-dispositifs-pour-eviter-la-transmission-de-traumatisme" tabindex="-1">🏷️ 4. Dispositifs pour éviter la transmission de traumatisme</h2>
+<h1 id="4-dispositifs-pour-eviter-la-transmission-de-traumatisme" tabindex="-1">🏷️ 4. Dispositifs pour éviter la transmission de traumatisme</h1>
 <p>&quot;Ces familles qui n'ont rien à transmettre, et celles qui ne veulent pas transmettre&quot;</p>
 <p>On parlera maintenant de situations d'extraction de la civilité, avec perte de la dignité humaine. Quelles formes de tentatives de solutions sont mises en places par ces familles, individus, frappées par ces situations traumatiques?<br>
 Nous explorerons ici des pistes de dispositifs mis en place pour travailler avec eux.</p>
@@ -338,7 +337,7 @@ Nous explorerons ici des pistes de dispositifs mis en place pour travailler avec
 <li>Le non-engendrement (refus de transmettre)</li>
 <li>La &quot;génophobie&quot; (peur de transmettre certains gênes)</li>
 </ol>
-<h3 id="4-1-transmettre" tabindex="-1">4.1 Transmettre</h3>
+<h2 id="4-1-transmettre" tabindex="-1">4.1 Transmettre</h2>
 <p>Que veut dire transmettre?</p>
 <div class="callout" data-callout="info"><div class="callout-title"><div class="callout-title-inner"> Transmettre<br></div></div>
 <div class="callout-content">
@@ -352,7 +351,7 @@ Définitions possibles</p>
 </ol>
 </div></div>
 <p>Nous, on va questionner les phénomènes de <strong>transmission d'une génération à une autre</strong>, mais les métaphores ci-dessus vont éclairer <strong>les représentations</strong> que les personnes peuvent avoir elles-mêmes de ces questions de transmission (on y reviendra).</p>
-<h3 id="4-2-transmission-intergenerationnelle-et-transgenerationnelle" tabindex="-1">4.2 Transmission intergenérationnelle et transgénérationnelle</h3>
+<h2 id="4-2-transmission-intergenerationnelle-et-transgenerationnelle" tabindex="-1">4.2 Transmission intergenérationnelle et transgénérationnelle</h2>
 <p>Distinction importante pour nous, cliniciens:</p>
 <ul>
 <li>Transmission <strong>inter</strong>générationnelle: les héritages conscients accessibles, -&gt; mentalisation</li>
@@ -360,7 +359,7 @@ Définitions possibles</p>
 </ul>
 <p>Dans sa clinique, elle a observé des personnes dans une perspective de refus de transmission.<br>
 Par exemple, des parents disant ne pas vouloir transmettre. Ça lui semblait paradoxal: Faire en enfant mais ne pas vouloir transmettre quelque chose. Ce qui amenait pour elle la question: Comment faire famille sans &quot;rien&quot; transmettre? Potentiel engagement d'aspects cognitifs, de bloquages cognitifs.</p>
-<h3 id="4-3-l-auto-engendrement-refus-d-heriter" tabindex="-1">4.3 L'auto-engendrement : refus d'hériter</h3>
+<h2 id="4-3-l-auto-engendrement-refus-d-heriter" tabindex="-1">4.3 L'auto-engendrement : refus d'hériter</h2>
 <p>Attention attirée vers parents se comportant de manière pas habituelle par rapport à l'idée habituelle, classique, de la transmission, se comportent comme s'ils n'avaient eux mêmes rien reçu de leur parents (&quot;je ne reconnais pas ces parents&quot;, &quot;ils ne m'ont rien legué&quot;, ... pas de reconnaissance d'héritage psychique, non plus, tel que règles, manières de se comporter, etc).</p>
 <p>Dans l'auto-engendrement, le sujet tente de se créer lui-même, niant sa dépendance aux origines parentales.</p>
 <div class="callout" data-callout="example"><div class="callout-title"><div class="callout-title-inner"> Daniel et sa demande d'une nouvelle famille<br></div></div>
@@ -412,7 +411,7 @@ Il exprime le désir de retour à un état fusionnel, protégé, antérieur aux 
 <li>(Parenthèse: Cas de fausses allégations d'abus sexuel du père sur l'enfant: raconte son expérience personnelle en début de carrière, rencontrant parfois des fausses allégations. Les thérapeutes se sont rendu compte que dans certains cas, les cas s'apparentaient à des &quot;Fausses allégations par procuration&quot;: de n'avoir pas pu soi-même dévoiler son propre abus (les mères), elles accusaient la personne qui n'avait pas réalisé l'abus (sorte de mécanisme de téléscopage). Cela pouvait amener aussi à, par exemple, accuser son prof de gym alors qu'on a été abusé par son grand père, etc.)</li>
 </ul>
 <p><mark>Auto-engendrement = tourner le dos aux origines</mark>.</p>
-<h4 id="4-3-1-contexte-social-et-culturel-de-transmission" tabindex="-1">4.3.1 Contexte social et culturel de transmission</h4>
+<h3 id="4-3-1-contexte-social-et-culturel-de-transmission" tabindex="-1">4.3.1 Contexte social et culturel de transmission</h3>
 <p>Est-ce que ça ne révèle pas quelque chose aussi du mythe social, de l'ambiance sociétale?</p>
 <ol>
 <li>
@@ -462,7 +461,7 @@ Il exprime le désir de retour à un état fusionnel, protégé, antérieur aux 
 </ol>
 <p></p></div></div>
 <p>Perspective de nouveau: être le nouveau maillon.</p>
-<h4 id="4-3-2-cas-de-daniel" tabindex="-1">4.3.2 Cas de Daniel</h4>
+<h3 id="4-3-2-cas-de-daniel" tabindex="-1">4.3.2 Cas de Daniel</h3>
 <ul>
 <li><strong>Première stratégie de survie: l'auto-engendrement pour échapper au destin familial. Considere la sienne non suffisamment fréquentable et bien pour lui.</strong></li>
 </ul>
@@ -504,7 +503,7 @@ Il exprime le désir de retour à un état fusionnel, protégé, antérieur aux 
 <p><picture src="/img/user/__assets/media/Screenshot%202026-03-05%20at%2018.33.29.png" alt="Screenshot 2026-03-05 at 18.33.29.png"><source media="(max-width:480px)" srcset="/img/optimized/fFLDpvlB6V-500.webp" type="image/webp">
 <source media="(max-width:480px)" srcset="/img/optimized/fFLDpvlB6V-500.jpeg">
 <source media="(max-width:1920px)" srcset="/img/optimized/fFLDpvlB6V-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/fFLDpvlB6V-700.jpeg"><img class="" src="/img/user/__assets/media/Screenshot%202026-03-05%20at%2018.33.29.png" alt="Screenshot 2026-03-05 at 18.33.29.png" width=""></picture></p>
-<h4 id="4-3-3-interventions-dans-le-cas-de-daniel" tabindex="-1">4.3.3 Interventions dans le cas de Daniel</h4>
+<h3 id="4-3-3-interventions-dans-le-cas-de-daniel" tabindex="-1">4.3.3 Interventions dans le cas de Daniel</h3>
 <p>Possibilités d'interventions ici:</p>
 <ul>
 <li><strong>Parentectomie</strong>: conseil de couper les liens avec les parents d'origine.</li>
@@ -550,12 +549,12 @@ Il exprime le désir de retour à un état fusionnel, protégé, antérieur aux 
 <li>Rajouter quelque chose qui remette du liant. Quelque chose qui permet de retrouver, rendre une certaine <strong>dignité</strong> (dans l'appartenance, principalement). Que tout n'est pas a jeter, qu'ils ont en peut-être fait quelque chose qui, quelque part, est beau.</li>
 </ul>
 <p>Daniel n'a pas été remis dans se famille immédiatement, plusieurs entretiens ont été nécessaires pour retisser du lien. Il est parti dans insitution pendant 8 mois, puis le retour au domicile a été possible. Pas suivi la piste d'une rupture, approche qui aurait surement été suivie avec une approche plus individuelle (importance de la <strong>recupérabilité du lien</strong>, testée s'utilisant soi en permettant de retravailler ou travailler des liens - reproché, dit-elle, par psychanalystes voyant les systémiciens comme &quot;familialistes&quot;. Mais on ne décide par pour les gens, on leur donne des leviers/ressources. cf rencontre entre Cirilo et Berger. Situations irrécuperables sont rares, mais elles existent, et dans ces cas, important de rapidement faire adopter les enfants).</p>
-<h3 id="4-4-le-non-engendrement-refus-de-transmettre" tabindex="-1">4.4 Le non-engendrement : refus de transmettre</h3>
-<h4 id="4-4-1-le-non-engendrement-refus-de-transmettre" tabindex="-1">4.4.1 Le non-engendrement: refus de transmettre</h4>
+<h2 id="4-4-le-non-engendrement-refus-de-transmettre" tabindex="-1">4.4 Le non-engendrement : refus de transmettre</h2>
+<h3 id="4-4-1-le-non-engendrement-refus-de-transmettre" tabindex="-1">4.4.1 Le non-engendrement: refus de transmettre</h3>
 <blockquote>
 <p>Le <strong>refus d'engendrer</strong> est une tentative de solution pour échapper au destin familial. On le retrouve chez des individus ou des couples qui ont le sentiment d'être les victimes de jeux sociaux ou familiaux et qui tentent de cette façon de redevenir maîtres de leur destinée (hypothèse 2), en décidant de ne pas faire d'enfants.</p>
 </blockquote>
-<h4 id="4-4-2-illustration-clinique-monsieur-et-madame-apares-fauster" tabindex="-1">4.4.2 Illustration clinique : Monsieur et Madame Apares (Fauster)</h4>
+<h3 id="4-4-2-illustration-clinique-monsieur-et-madame-apares-fauster" tabindex="-1">4.4.2 Illustration clinique : Monsieur et Madame Apares (Fauster)</h3>
 <p>Deuxième stratégie de &quot;survie&quot;: le non-engendrement, à travers le récit d'une thérapie de couple (Duret, I. 2014)</p>
 <p>Elle ne les a pas rencontré elle-même, mais elle supervisait la thérapeute de couple de ces personnes. Donc elle en a une vision meta.</p>
 <p>48 ans, monsieur, et 45 ans, madame. La thérapeute est expérimentée et voit des couples depuis longtemps. Vient chez Isabelle parce qu'elle ne s'en sort pas.<br>
@@ -621,12 +620,12 @@ Question sur la traumatisation secondaire: oui, on peut parler de retraumatisati
 </ul>
 <p></p></div></div>
 <p>Faire le deuil, acter la coupure de loin est parfois la solution (situations d'emprise, de domination, etc). Mais situations rares. Beaucoup de professionnels partent trop vite dans une vision négative de la famille.</p>
-<h3 id="4-5-la-genophobie-la-peur-de-transmettre-des-genes-de-maladie-mentale" tabindex="-1">4.5 La génophobie: la peur de transmettre des gènes de maladie mentale</h3>
-<h4 id="4-5-1-la-genophobie" tabindex="-1">4.5.1 La génophobie</h4>
+<h2 id="4-5-la-genophobie-la-peur-de-transmettre-des-genes-de-maladie-mentale" tabindex="-1">4.5 La génophobie: la peur de transmettre des gènes de maladie mentale</h2>
+<h3 id="4-5-1-la-genophobie" tabindex="-1">4.5.1 La génophobie</h3>
 <blockquote>
 <p>La <strong>génophobie</strong>: certains parents porteurs d'une maladie mentale dite à transmission génétique se représentent la transmission comme une forme de contamination. Pour empêcher celle-ci d'opérer, ils activent des processus anxieux contagieux qui les inhibent dans leur capacité à transmettre (hypothèse 3)</p>
 </blockquote>
-<h4 id="4-5-2-cas-d-arthur" tabindex="-1">4.5.2 Cas d'Arthur</h4>
+<h3 id="4-5-2-cas-d-arthur" tabindex="-1">4.5.2 Cas d'Arthur</h3>
 <p><strong>Troisième illustration clinique: Arthur et le poison dans ses tartines, 7 ans</strong> (Duret, 2009)</p>
 <p>Arthur, a peur d'être empoisonné par ses tartines, a aussi des hallucinations (se dit possédé par le diable, et que le diable va lui faire faire des choses graves). La famille arrive à travers le psychiatre de la maman (traitée pour psychose maniaco-dépressive).</p>
 <p>La patiente est dans une angoisse par peur d'avoir transmis son problème psychiatrique à son enfant. Un frère (de la femme) avait une symptomatologie similaire mort par suicide à l'âge de 17 ans. Le père de la maman et deux oncles aussi porteurs de la maladie, suggère un bilan diagnostique, pour savoir si Arthur est lui aussi touché par la maniaco-dépression?</p>
@@ -656,9 +655,9 @@ Elle se demande si dans un autre contexte ses peurs n'auraient pas pu être faci
 <blockquote>
 <p>L'ambiance positive de &quot;recherche de sens&quot; autour d'une préoccupation commune a permis de sortir d'une lecture univoque d'un symptôme qui portait aussi en lui &quot;le potentiel résilient&quot; nécessaire pour relance la famille dans sa capacité à transmettre.</p>
 </blockquote>
-<h3 id="4-6-conclusions" tabindex="-1">4.6 Conclusions</h3>
+<h2 id="4-6-conclusions" tabindex="-1">4.6 Conclusions</h2>
 <p>Il existe différents mécanismes de survie ou stratégies adaptatives utilisés par certains individus ou certains groupes blessés pour échapper aux traumatismes. L'auto-engedrement, le refus d'engendrer et la &quot;génophobie&quot;.</p>
-<h4 id="4-6-1-pistes-therapeutiques" tabindex="-1">4.6.1 Pistes thérapeutiques</h4>
+<h3 id="4-6-1-pistes-therapeutiques" tabindex="-1">4.6.1 Pistes thérapeutiques</h3>
 <p>Pour ne pas se laisser gagner par le désespoir:</p>
 <ul>
 <li><strong>Recadrer</strong> la mise hors filiation ou la frilosité à transmettre comme une compétence qu'ont les parents à <strong>proteger les générations futures</strong></li>
@@ -689,13 +688,13 @@ Elle se demande si dans un autre contexte ses peurs n'auraient pas pu être faci
 <li>Autonomie =/ indépendance. Restaurer la dignité et la capacité à transmettre prime sur la rupture du lien, les situations irrécupérables sont rares.</li>
 </ul>
 </div></div>
-<h2 id="5-la-clinique-du-lien" tabindex="-1">🏷️ 5. La clinique du lien</h2>
+<h1 id="5-la-clinique-du-lien" tabindex="-1">🏷️ 5. La clinique du lien</h1>
 <p>L'enjeu essentiel dans cette pratique: <strong>Reconstruire le lien</strong>.</p>
 <p>Car il y a effectivement quelque chose de défracté, cassé, après ces traumatismes.<br>
 Comment aider ces personnes, non pas à vivre comme avant, mais <em>à vivre comme après</em> (citation de Ausloos)? Ne pas sous-estimer le courage, la force et l'énergie nécessaire pour se relever d'un trauma, sortir de l'état de sidération et résignation.</p>
 <p>Ne pas sous-estimer l'impact sur l'entourage non plus, au moment du dévoilement, au moment où la personne se fait entendre, ou cherche à se faire entendre.</p>
 <p><strong>C'est difficile de se faire entendre</strong>, on se met contre un mécanisme de protection du groupe, contre lequel il faut manifester beaucoup d'énergie. C'est aussi vrai au niveau sociétal.</p>
-<h3 id="5-1-effraction-frayeur-figement" tabindex="-1">5.1 Effraction, frayeur, figement</h3>
+<h2 id="5-1-effraction-frayeur-figement" tabindex="-1">5.1 Effraction, frayeur, figement</h2>
 <p>Effraction psychique = effroi, frayeur (au-delà de la simple peur). Quelque chose qui va nous extraire hors de l'univers, hors du monde (cf extraction chez Jean-Luc Brackelaire). cf Tobie Nathan, deux notions dans la frayeur:</p>
 <ul>
 <li>La peur, qui surprend, pétrifie.</li>
@@ -706,7 +705,7 @@ Comment aider ces personnes, non pas à vivre comme avant, mais <em>à vivre com
 <p>La parole est souvent écartée, balayée. On retrouve en clinique des parents qui peuvent se rappeler 15, 20 ans plus tard, se souviennent de ne pas avoir pris au sérieux, de l'avoir interprété comme des histoires d'enfants qui découvrent leur sexualité. Pour les victimes, les processus de résilience doivent donc se mettre en route avec un entourage qui n'est pas prêt à les écouter.</p>
 <p>Cette sidération, parfois fatalisme, est important parce que ça peut aussi se transmettre au clinicien ou thérapeute. C'est important d'y être attentif, car on peut être envahi d'impuissance dans certaines rencontres. Parfois c'est de l'ordre de l'infra-perceptif, des impressions légères désagréables qu'on a, qui nous enlèvent de la mobilité ou mouvement. Or, ce mouvement est essentiel pour la récupération et nous devons le mettre en route chez le patient.</p>
 <p>Jacques Croisin, de l'UCL: parle de <em>survivance</em>. Personnes qui ont subi un traumatisme n'est autre chose que de la survivance. cf livre <em>De la survivance à la vie</em>.</p>
-<h3 id="5-2-la-reconnaissance-et-reparation" tabindex="-1">5.2 La reconnaissance et réparation</h3>
+<h2 id="5-2-la-reconnaissance-et-reparation" tabindex="-1">5.2 La reconnaissance et réparation</h2>
 <p>Quand on a subi cette déshumanisation: comment va-t-on pouvoir être &quot;défrayé&quot;? Comment sortir de l'effroi?</p>
 <ol>
 <li>D'abord, <strong>une reconnaissance</strong>.</li>
@@ -723,7 +722,7 @@ Comment aider ces personnes, non pas à vivre comme avant, mais <em>à vivre com
 <li>Assumpta Muhayisa et al. (2018). Héritage traumatique chez les enfants nés du viol pendant le génocide perpétré contre les Tutsis au Rwanda en 1994, 19-2*(197-207).</li>
 </ul>
 <p>Outil d'intervention: <strong>La réinscription généalogique</strong>: Enjeu pour ces femmes au Rwanda: comment reinscrire ces femmes et enfants dans une généalogie qui n'est pas honteuse? Comment mettre à leur disposition quelque chose qui va leur donner une appartenance?</p>
-<h3 id="5-3-entraves-a-l-ecoute-et-la-reconnaissance" tabindex="-1">5.3 Entraves à l'écoute et la reconnaissance</h3>
+<h2 id="5-3-entraves-a-l-ecoute-et-la-reconnaissance" tabindex="-1">5.3 Entraves à l'écoute et la reconnaissance</h2>
 <p>La réaction typique: fermer les oreilles, les yeux, la bouche (elle illustre avec le dessin de trois singes, <a href="https://fr.wikipedia.org/wiki/Singes_de_la_sagesse" target="_blank" class="external-link">symbole asiatique des singes de la sagesse</a>).</p>
 <p><picture src="/img/user/__assets/monkeys.png" alt="monkeys.png"><source media="(max-width:480px)" srcset="/img/optimized/oHZwngqFfk-500.webp" type="image/webp">
 <source media="(max-width:480px)" srcset="/img/optimized/oHZwngqFfk-500.jpeg">
@@ -747,7 +746,7 @@ Comment aider ces personnes, non pas à vivre comme avant, mais <em>à vivre com
 <li><strong>Risque pour nous en tant que thérapeutes d'être gelés dans nos sentiments</strong>. Il y a un risque d’être en <strong>isomorphisme</strong> et de reproduire cette absence de reconnaissance, de banalisation.</li>
 <li><strong>Attaques du cadre</strong> par les patients: ex: patiente de Duret qui arrête de venir en thérapie, explique par la suite qu'elle s'est sentie maltraitée par des propos tenus par Duret en séance. Duret lui avait dit, par inadvertance: &quot;Vous n'allez quand même pas me dire que...&quot; (banalisation). Cette phrase a eu l'effet de replonger le patient dans un passé insupportable.</li>
 </ul>
-<h3 id="5-4-comment-vivre-em-comme-apres-em" tabindex="-1">5.4 Comment vivre <em>comme après</em>?</h3>
+<h2 id="5-4-comment-vivre-em-comme-apres-em" tabindex="-1">5.4 Comment vivre <em>comme après</em>?</h2>
 <p><em>Comment vivre comme après?</em><br>
 <em>Qu'avez-vous fait de ce qui vous est arrivé?</em></p>
 <p>cf. Dachet, Bonte, Duret. (2010). Le blason familial: un voyage dans le temps des familles pour transformer la mémoire traumatique en mémoire thérapeutique. <em>Cahiers de psychologie clinique, 53</em>(113-138).</p>
@@ -757,14 +756,14 @@ Comment aider ces personnes, non pas à vivre comme avant, mais <em>à vivre com
 <li>Re-mythifier</li>
 <li>Re-ritualiser</li>
 </ol>
-<h4 id="5-4-1-reconnaitre" tabindex="-1">5.4.1 Reconnaître</h4>
+<h3 id="5-4-1-reconnaitre" tabindex="-1">5.4.1 Reconnaître</h3>
 <p><strong>Reconnaître</strong>. Authentification de la perception (terme des praticiens de Palo Alto): <em>ce que vous me racontez vous est arrivé, et je vous crois</em>. Sans ça, pas de confiance suffisante.</p>
-<h4 id="5-4-2-transformer-et-rechauffer" tabindex="-1">5.4.2 Transformer et réchauffer</h4>
+<h3 id="5-4-2-transformer-et-rechauffer" tabindex="-1">5.4.2 Transformer et réchauffer</h3>
 <p>Accueillir les récits pour les <strong>transformer</strong> (i.e. la mémoire traumatique en mémoire thérapeutique) et <strong>réchauffer</strong> (i.e. ce qui a été gelé).</p>
 <p>Exemple: patiente qui s'est fait virer de chez sa mère, enfant, de manière définitive. Elle ne supporte pas de sonner au cabinet de consultation et devoir attendre dehors, après avoir sonné, ni d'attendre dans la salle d'attente. Elle n'arrive pas à rester en salle d'attente non plus. Elle accepte d'être plus réactive pour ouvrir, et elle trouve un moyen de la faire attendre dans une autre salle intermédiaire (qui lui octroyait d'un statut particulier par rapport aux autres patients). But: trouver quelque chose dans l'ici-et-maintenant, dans la relation avec la thérapeute, pour transformer la mémoire traumatique.</p>
 <p>Expliquer aux patients que c'est normal d'avoir ces moments de <strong>reviviscences</strong> et que c'est justement utile de les partager en thérapie pour pouvoir les transformer dans l'ici-et-maintenant.</p>
 <p>Exemple 2: même patiente, problèmes de sommeil, elle sent une &quot;boule au ventre&quot; quand elle va dormir, depuis la disparition de sa soeur il y a des années. Duret fait remarquer que quand elle évoque un passé traumatique avec un patient, elle fait <strong>toujours attention à penser à l'ici-et-maintenant, quoi en faire aujourd'hui, en rentrant chez elle</strong>. Duret propose qu'elle trouve une manière de rendre sa soeur présente (e.g. trouver un objet qui serait représentatif, pour &quot;la faire sortir d'elle-même&quot;).</p>
-<h4 id="5-4-3-remailler" tabindex="-1">5.4.3 Remailler</h4>
+<h3 id="5-4-3-remailler" tabindex="-1">5.4.3 Remailler</h3>
 <p><strong>Remailler</strong>:Prendre soin des liens verticaux et horizontaux. Qu'est-ce qui reste des liens, même de ceux qui ont été rompus? Doit faire l'objet de soin de part de thérapeute. Présence de loyautés invisibles (même chez enfants négliglés par parents négligeants).</p>
 <p><strong>Démaillage généalogique</strong> (cf. Pierre Benghozi, commun dans groupes subissant l'inceste). Travail du thérapeute de retisser les mailles horizontales (les liens affiliatifs) et verticales (les liens de filiation).</p>
 <ul>
@@ -796,7 +795,7 @@ Comment aider ces personnes, non pas à vivre comme avant, mais <em>à vivre com
 <li>Ne pas travailler à temps plein,</li>
 <li>cf thèse supervisée par Duret sur la souffrance du thérapeute.</li>
 </ul>
-<h5 id="posture-presence-et-tendresse" tabindex="-1">Posture: présence et tendresse</h5>
+<h4 id="posture-presence-et-tendresse" tabindex="-1">Posture: présence et tendresse</h4>
 <ul>
 <li>cf. livre de Laurent Tygran Tovmasian. <em>Tendresse et attachement: Au coeur du travail psychanalytique avec le traumatisme</em>, 2020, Paris.
 <ul>
@@ -810,7 +809,7 @@ Comment aider ces personnes, non pas à vivre comme avant, mais <em>à vivre com
 <p>
 &quot;L'<strong>empathie</strong> c'est, à la vitesse de l'éclair, sentir ce que l'autre sent, savoir que l'on ne se trompe pas, comme si le coeur bondissait de la poitrine pour se loger dans la poitrine de l'autre (...) on peut prendre soin d'autrui comme il ne prendra jamais soin de lui-même, par une attention tendue comme un rai de lumière, mais il n'y a aucune emprise psychique sur lui (...) c'est l'art double de la plus grande proximité et de la distance sacrée&quot;.</p>
 </div></div>
-<h5 id="relancer-la-transmission" tabindex="-1">Relancer la transmission</h5>
+<h4 id="relancer-la-transmission" tabindex="-1">Relancer la transmission</h4>
 <p>Important pour elle d'y penser dans toutes ses thérapies. Ce sont des adultes qui vont peut-être devenir parents, ou qui le sont déjà. Donc, comment faire pour que la transmission puisse être assurée, ou redevenir quelque chose qui ne va pas être porteur d'inquiétude ou de peur, ou reliée à un héritage qui risquerait d'être douloureux ou se répéter à l'infini?</p>
 <div class="callout" data-callout="abstract"><div class="callout-title"><div class="callout-title-inner"> Résumé 5. La clinique du lien<br></div></div>
 <div class="callout-content">
@@ -838,7 +837,7 @@ Comment aider ces personnes, non pas à vivre comme avant, mais <em>à vivre com
 <li>Tendresse plutôt qu'empathie distanciée. Travailler en équipe et ne pas travailler à temps plein.</li>
 </ul>
 </div></div>
-<h2 id="exemples-de-questions-d-examen-donnees-en-cours" tabindex="-1">Exemples de questions d'examen données en cours</h2>
+<h1 id="exemples-de-questions-d-examen-donnees-en-cours" tabindex="-1">Exemples de questions d'examen données en cours</h1>
 <ol>
 <li>
 <p><strong>Plus un système vivant est autonome, plus il est dépendant; plus il s'enrichit en complexité et entretien par là-même des relations multiples avec son environnement, plus il accroit son autonomie.</strong><br>
@@ -865,8 +864,6 @@ Approche systémique des traumatismes
 </div>
 <div class="toc-container">
 <nav class="toc">
-<ol>
-<li><a href="#partie-1-cours-principal-isabelle-duret">Partie 1. Cours principal (Isabelle Duret)</a>
 <ol>
 <li><a href="#1-introduction">🏷️ 1. Introduction</a>
 </li>
@@ -971,8 +968,6 @@ Approche systémique des traumatismes
 </ol>
 </li>
 <li><a href="#exemples-de-questions-d-examen-donnees-en-cours">Exemples de questions d'examen données en cours</a>
-</li>
-</ol>
 </li>
 </ol>
 </nav>
