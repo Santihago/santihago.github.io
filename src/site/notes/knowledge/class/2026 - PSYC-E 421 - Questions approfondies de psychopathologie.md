@@ -371,7 +371,7 @@ Psychological inflexibility:
 6. Attachment to the conceptualized self (vs. [[knowledge/wiki/Self-as-Context (ACT)\|Self-as-Context (ACT)]])
 
 Conceptualized in ACT as the [[knowledge/wiki/Inflexahex (ACT)\|Inflexahex (ACT)]]:
-![Pasted image 20260401134307.png](/img/user/Pasted%20image%2020260401134307.png)
+![Pasted image 20260401134307.png](/img/user/__assets/Pasted%20image%2020260401134307.png)
 
 Steven Hayes: exercice jeu de rôle: prendre un patient, une problématique, et démarrer avec un des 6 concepts de l'ACT au hasard. 
 ### 1. L'évitement expérientiel (vs. [[knowledge/wiki/Acceptance (ACT)\|Acceptance (ACT)]])
@@ -436,7 +436,7 @@ Mais, recherche: 6000 pensées env., et la plupart sont positives contrairement 
 
 **L'attention**
 
-[[William James\|William James]] - Capacité à changer l'attention =  ressource par excellence = détermine l'action
+[[knowledge/wiki/William James\|William James]] - Capacité à changer l'attention =  ressource par excellence = détermine l'action
 
 L'attention est importante car porte d'entrée aux contenus de la conscience. Toute thérapie travaille sur une forme d'attention, e.g. ramener l'attention au présent. Permet d'agir de manière plus adaptée au présent.
 
@@ -446,7 +446,7 @@ Cf hypnose: on part de stimulus pour arriver à un autre état de conscience. Hy
 
 Matrice: dimension verticale: sensoriel (5 sens) vs mental (ou externe vs interne, qui pour moi est plus clair pour pouvoir inclure comportements dans la partie du-dessus sensorielle)
 
-![Pasted image 20260525175317.png](/img/user/Pasted%20image%2020260525175317.png)
+![Pasted image 20260525175317.png](/img/user/__assets/Pasted%20image%2020260525175317.png)
 
 **Retour à: pensées - fusion cognitive**
 
@@ -455,7 +455,7 @@ Quand on va mal, on a tendance à confondre chose et pensée, être obscurci par
 
 Défusion: capacité a se séparer de la pensée, la base étant de **voir** la pensée, voir que c'est une pensée.
 
-Singer, Ricard: état de compassion, antidote la détresse empathique ([[Empathy\|Empathy]]). "Si je ne fais que de l'empathie affective, ça devient ma souffrance". Compassion réoriente vers l'autre mais j'accord davantage d'attention à l'idée, que l'autre aille mieux, ma motivation pour cela (si on sépare aspect cognitif, émotionnel et motivationnel de l'empathie). Souhaiter de toutes ses forces qu'une personne soit sauvée (même si on n'y peut rien), versus uniquement rester dans le ressenti affectif (empathie cognitive).
+Singer, Ricard: état de compassion, antidote la détresse empathique ([[knowledge/wiki/Empathy\|Empathy]]). "Si je ne fais que de l'empathie affective, ça devient ma souffrance". Compassion réoriente vers l'autre mais j'accord davantage d'attention à l'idée, que l'autre aille mieux, ma motivation pour cela (si on sépare aspect cognitif, émotionnel et motivationnel de l'empathie). Souhaiter de toutes ses forces qu'une personne soit sauvée (même si on n'y peut rien), versus uniquement rester dans le ressenti affectif (empathie cognitive).
 
 - Empathie cognitive (sans empathie émotionnelle): peu de corrélation avec comportements prosociaux (psychopathes peuvent avoir haute empathie cognitive).
 - Cf Paul Gilbert ([[knowledge/wiki/Compassion-Focused Therapy (CFT)\|Compassion-Focused Therapy (CFT)]])
@@ -802,7 +802,7 @@ Le **symptôme a un ==sens== relationnel**
 - Si on s'y attaque: risque qu'il se déplace/se renforce
 -> Débusquer en quoi ces symptômes sont des solutions
 
-L’idée des systémiciens va être qu’au lieu de supprimer le symptôme, le thérapeute va le cadrer, le dépasser ==voire parfois, le prescrire== ([[Prescription paradoxale du symptôme\|Prescription paradoxale du symptôme]]). Exemple d'intervention: **Prescription paradoxal**e: 
+L’idée des systémiciens va être qu’au lieu de supprimer le symptôme, le thérapeute va le cadrer, le dépasser ==voire parfois, le prescrire== ([[knowledge/wiki/Prescription paradoxale du symptôme\|Prescription paradoxale du symptôme]]). Exemple d'intervention: **Prescription paradoxal**e: 
 - si on éclaire sur fonction du symptôme, symptôme peut perdre de de son évidence.
 
 EMDR: utilise l'image de difficultés comme étant une plante, les feuilles sont les symptômes, rattachés à évènements de vie défavorable (racines), pas bien digérés (pas forcément trauma: échecs à l'école, regard méchant d'une prof, etc., cumulés). Idée de traiter les racines, plutôt que les feuilles. Avec mouvements bilateraux des yeux pour "désensibiliser".

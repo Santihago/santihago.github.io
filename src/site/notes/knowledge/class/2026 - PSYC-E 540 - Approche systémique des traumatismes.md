@@ -1,6 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-06T13:14:51.137+02:00","updated":"2026-06-06T13:55:42.852+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-06T13:14:51.137+02:00","updated":"2026-06-06T22:10:12.699+02:00"}
 ---
+
+
 
 
 > [!tldr] Résumé
@@ -13,18 +15,11 @@
 
 Les deux cours (celui de I. Duret et celui de J-L Brackelaire) seront enregistrés.
 
-> [!info] Évaluation
->Sur 20 (15 VF + 5 QRM ou QCM).
->Ne portera **pas** sur la partie de Jean-Luc Brackelaire.
-
-
-# Partie 1. Cours principal (Isabelle Duret)
-
 
 > [!tip] Lectures
 >  **Lectures obligatoires:**
 >* DURET, I. (2025) La peur de transmettre: filiation et traumatisme. Eres, Toulouse.
->* NEUBURGER R. (2005) Les familles qui ont la tête à l'envers. Revivre après un traumatisme familial. Odile Jacob. [[Neuburger - Les familles qui ont la tête à l'envers\|Neuburger - Les familles qui ont la tête à l'envers]]
+>* NEUBURGER R. (2005) Les familles qui ont la tête à l'envers. Revivre après un traumatisme familial. Odile Jacob. [[knowledge/sources/Neuburger - Les familles qui ont la tête à l'envers\|Neuburger - Les familles qui ont la tête à l'envers]]
 >
 > **Lectures recommandées:**
 >* ANDOLFI M. (2018) La thérapie familiale multigénérationnelle. Outils et ressources pour le thérapeute. De Boeck   
@@ -34,6 +29,13 @@ Les deux cours (celui de I. Duret et celui de J-L Brackelaire) seront enregistr�
 >* HUSTON N. (2004) Professeurs de désespoir. Actes Sud.  
 >* HUSTON N. (2012) Reflets dans un oeil d'homme. Actes Sud.  
 >* OLLIE-DRESSAYRE J. MERIGOT D. (2017) Le génogramme imaginaire. Entre lien de sang et liens de coeur. ESF
+
+> [!info] Évaluation
+>Sur 20 (15 VF + 5 QRM et/ou QCM).
+>Portera sur le cours, son livre personnel, et le livre de Neuburger (traumatisme groupal et la thérapie aux 3 R)
+>Ne portera **pas** sur la partie de Jean-Luc Brackelaire.
+
+# Partie 1. Cours principal (Isabelle Duret)
 
 📅 Vendredi **6 Février 2026** - Cours magistral I. Duret
 
@@ -48,45 +50,45 @@ Beaucoup de situations sont dramatiques : logements insalubres, absence d’eau 
 
 **L’émergence de la question des violences intrafamiliales**
 
-Elle commence à travailler au moment où les violences intrafamiliales entrent réellement dans le champ de la santé mentale. Avant cela, ces questions étaient considérées comme privées. On “lavait son linge sale en famille”.
+Elle commence à travailler au moment où les violences intrafamiliales entrent dans le champ de la santé mentale. Avant cela, ces questions étaient considérées comme privées. On “lavait son linge sale en famille”.
 
-Elle participe à la création des premières équipes SOS Enfants en Belgique. À Charleroi, une collaboration étroite se met en place entre l’hôpital, la justice et les services spécialisés. Il faut inventer des dispositifs thérapeutiques, réfléchir aux signalements judiciaires, articuler les interventions. C’est une période de levée du silence. On commence à parler de maltraitance, de violence conjugale, puis progressivement d’abus sexuels et d’inceste. Au début, les signalements concernent surtout la négligence et la violence physique, plus visibles. Puis, en quelques années, les révélations d’abus sexuels augmentent de manière impressionnante.
+Elle participe à la création des premières équipes SOS Enfants en Belgique. À Charleroi, une collaboration se met en place entre l’hôpital, la justice et les services spécialisés. Il faut inventer des dispositifs thérapeutiques, réfléchir aux signalements judiciaires, articuler les interventions. C’est une période de levée du silence. On commence à parler de maltraitance, de violence conjugale, puis progressivement d’abus sexuels et d’inceste. Au début, les signalements concernent surtout la négligence et la violence physique, plus facilement visibles. Puis, en quelques années, les révélations d’abus sexuels augmentent de manière impressionnante.
 
-La société n’était pas prête à entendre ces réalités. Il faut du temps pour voir, entendre et croire. Elle fait un parallèle avec des mouvements plus récents comme MeToo : les faits existaient déjà, mais deviennent soudain visibles. Elle souligne combien les théories sont liées à leur époque. 
+**Mais la société n’était pas prête à entendre ces réalités**. Il faut du temps pour voir, entendre et croire. Elle fait un parallèle avec des mouvements plus récents comme MeToo : les faits existaient déjà, mais deviennent soudain visibles. Elle souligne combien les théories sont liées à leur époque. 
 
 **Les défis cliniques et institutionnels**
 
-Identifier une maltraitance ne signifie pas que les parents reconnaissent les faits. Ils sont souvent dans le déni, sur la défensive. Les signalements judiciaires compliquent la relation de confiance : les professionnels sont perçus comme une “antichambre de la justice”.
+Identifier une maltraitance ne signifie pas que les parents reconnaissent les faits. Ils sont souvent dans le déni, sur la défensive. Les signalements judiciaires compliquent la relation de confiance, car les professionnels sont perçus comme une “antichambre de la justice”.
 
-Elle se forme à la thérapie familiale avec le souci de ne pas réduire les parents à des “mauvais parents”, mais de **réfléchir à ce qui peut être sauvé, aux liens d’attachement possibles, aux compétences parentales à restaurer**. Certaines situations sont sans issue, mais elles sont rares. La plupart nécessitent un travail complexe et nuancé. C’est dans ce contexte qu’on lui propose un poste d’assistante-chercheuse avec doctorat. Elle choisit de travailler sur l’inceste, en lien direct avec sa pratique clinique. C’est le point de départ de son intérêt pour la transmission intergénérationnelle des traumatismes.
+Elle se forme à la thérapie familiale avec le souci de ne pas réduire les parents à des “mauvais parents”, mais de **réfléchir à ce qui peut être sauvé, aux liens d’attachement possibles, aux compétences parentales à restaurer**. Certaines situations sont sans issue, mais pour elle, elles sont rares. La plupart nécessitent un travail complexe et nuancé. C’est dans ce contexte qu’on lui propose un poste d’assistante-chercheuse avec doctorat. Elle choisit de travailler sur l’inceste, en lien direct avec sa pratique clinique. C’est le point de départ de son intérêt pour la transmission intergénérationnelle des traumatismes.
 
 **Freud, le trauma et le poids d’une époque**
 
 Quand les cas d’inceste apparaissent, l’équipe se sent particulièrement démunie. Il n’y a pas de modèles théoriques solides. Les représentations dominantes sont encore marquées par les **théories psychanalytiques du fantasme** (Oedipe, fantasmes, filles qui séduisent leur pères... manquant de référants solides permettant de travailler la question).
 
-Au départ, Freud élabore la “théorie de la séduction” : il croit ses patientes qui parlent d’abus sexuels subis dans l’enfance et relie leurs symptômes à ces traumatismes réels ([théorie de la séduction](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_s%C3%A9duction), névrose comme étant la conséquence d'un traumatisme infantil), mais cette théorie est mal accueillie par ses pairs intialement. Face à la pression du milieu médical bourgeois, il fait marche arrière, et par là construit la psychanalyse (évènements traumatiques transformés en fantasmes, avec donc une dimension insconsciente). Cette volte-face ouvre la voie à la psychanalyse et à la théorie de l’inconscient.
+Au départ, Freud élabore la “théorie de la séduction” pour expliquer des névroses, et en particulier les hystéries: il croit ses patientes qui parlent d’abus sexuels subis dans l’enfance et relie leurs symptômes à ces traumatismes réels ([théorie de la séduction](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_s%C3%A9duction), névrose comme étant la conséquence d'un véritable traumatisme infantil), mais cette théorie est mal accueillie par ses pairs initialement. Face à la pression du milieu médical bourgeois (mais voir parenthèse), il fait marche arrière, et par là construit la psychanalyse: les symptômes seraient liés à des évènements traumatiques transformés en fantasmes (fantasmes, refoulements, Oedipe, et la dimension inconsciente...), ouvrant la voie à la psychanalyse et à la théorie de l’inconscient.
 
->[!info]
->A faire: encadré sur ces théories, pour moi-même comprendre...?
+Duret évoque aussi Farenzi, qui, lui, n’a jamais abandonné l’idée du traumatisme réel. Ces débats ont marqué durablement les représentations cliniques, par exemple autour de l’hystérie, terme encore utilisé de manière péjorative par certains médecins.
 
-Elle évoque aussi Farenzi, qui, lui, n’a jamais abandonné l’idée du traumatisme réel. Ces débats ont marqué durablement les représentations cliniques, par exemple autour de l’hystérie, terme encore utilisé de manière péjorative par certains médecins.
+>[!info] Parenthèse sur Freud et sa théorie de la séduction
+>Sur les raisons de l'abandon de sa théorie: Les raisons que Freud donne ne se réduisent pas à la pression du milieu médical : il mentionne aussi l’absence de succès thérapeutiques complets, le fait qu’il faudrait accuser trop largement les pères, y compris le sien, et l’idée que l’inconscient ne permet pas de distinguer clairement réalité et fiction affectivement.
 
 **Croire les victimes : un enjeu psychologique et éthique**
 
-Croire une victime n’est pas simple. Cela implique de partager quelque chose de la déchirure traumatique. Face a un récit de trauma, le mécanisme de déni (ne pas y croire) permet une auto-protection (mécanismes qu'on explorera). Le déni est plus confortable, il protège. S’identifier à l’agresseur peut être psychiquement moins angoissant que s’identifier à la victime.
+Croire une victime n’est pas simple. Cela implique de partager quelque chose de la blessure traumatique. Face a un récit de trauma, **le mécanisme de déni (ne pas y croire) permet une auto-protection** (mécanismes qu'on explorera). Le déni est plus confortable, il protège. S’identifier à l’agresseur peut être psychiquement moins angoissant que s’identifier à la victime.
 
 Elle insiste sur la responsabilité des professionnels. Même quand la société “décide” de rompre le silence, les mécanismes de défense restent puissants. Il est plus facile de ne pas croire.
 
 **Transmission et traumatismes**
 
-Sa thèse sur l’inceste l’amène à travailler plus largement sur la transmission intergénérationnelle : comment les traumatismes se transmettent (ou ne se transmettent pas) d’une génération à l’autre. Elle élargit ensuite ses recherches aux tentatives de suicide à l’adolescence, aux troubles alimentaires, aux violences de masse, aux génocides (Shoah, Rwanda, Burundi). Elle s’intéresse à la manière dont les groupes se réorganisent après un traumatisme.
+Sa thèse sur l’inceste l’amène à travailler sur la transmission intergénérationnelle : comment les traumatismes se transmettent (ou ne se transmettent pas) d’une génération à l’autre. Elle élargit ensuite ses recherches aux tentatives de suicide à l’adolescence, aux troubles alimentaires, aux violences de masse, aux génocides (Shoah, Rwanda, Burundi). Elle s’intéresse à la manière dont les groupes se réorganisent après un traumatisme.
 
-Elle rappelle toutefois un point essentiel : **tout ne se transmet pas**. Beaucoup de personnes sont résilientes. En pratique psychopathologique, on voit surtout les situations les plus graves, mais il ne faut pas généraliser à l’ensemble de la population.
+Elle rappelle un point important : ==**tout ne se transmet pas**. Beaucoup de personnes sont résilientes.== En pratique psychopathologique, on voit surtout les situations les plus graves, mais il ne faut pas généraliser à l’ensemble de la population.
 
 **Ses influences personnelles**
 
 Elle cite deux grandes figures qui l’ont marquée:
-- G. Bateson (1904 - 1980): anthopologue américain, qui a beaucoup contribué à influencer l'approche systémique. A fait beaucoup de terrain, avec humains et animaux. Vision ethnologique, qui inspire la prof dans sa rencontre avec les familles (observations sans jugement). 
+- **G. Bateson** (1904 - 1980): anthopologue américain, qui a beaucoup contribué à influencer l'approche systémique. A fait beaucoup de terrain, avec humains et animaux. Vision ethnologique, qui inspire la prof dans sa rencontre avec les familles (observations sans jugement). 
 - [Siegi Hirsh](https://europeanfamilytherapy.eu/siegi-hirsch/) (1924): bruxellois d'origine allemande juive, thérapeute familial systémicien. A peu écrit, transmettait et formait oralement. Avait ouvert un *home* à l'après-guerre qu'il a lui même dirigé, où il s'ccoupait d'enfants orphelins, avec un dispositif propre et très proche de l'approche systémique. A également accompagné beaucoup d'autres survivants de la Shoah et pas que, et d'autres survivants. A travaillé sur le processus de désignation (semblable au concept du *patient designé*, au niveau du groupe).
 
 Ces deux auteurs ont toujours refusé de "faire école", ne voulant pas s'enfermer dans ce que les autres pouvaient avoir comme lecture de soi-même (raison pour laquelle Bateson a quitté Palo Alto). Multiplicité de visions en systémique (ouverture maximale qui permet aux systémiciens de recourir à différents modèles sans que ce soit perçu comme une trahison).
@@ -94,6 +96,19 @@ Ces deux auteurs ont toujours refusé de "faire école", ne voulant pas s'enferm
 **L’approche systémique et le libre examen**
 
 L’approche systémique, selon elle, n’est pas une école fermée mais une multiplicité de styles. On peut naviguer entre différents modèles (biologiques, sociologiques, anthropologiques, philosophiques) sans trahir une doctrine. Elle rattache cela à l’esprit du libre examen : ne se soumettre ni à un dogme, ni à une autorité, mais aux faits. Garder un esprit critique. Ne pas figer les idées. Elle insiste enfin sur l’humilité nécessaire dans la pratique clinique et scientifique. Ce que l’on tient pour vrai peut être remis en question. Les mentalités évoluent lentement. Il faut rester vigilant.
+
+> [!abstract] Résumé 1. Introduction
+> **Auteurs**:
+> - Freud (théorie de la séduction)
+> - Ferenczi (maintien du traumatisme réel)
+> - Bateson (vision ethnologique, observation sans jugement)
+> - Hirsch (thérapie familiale, processus de désignation groupale)
+>
+> **Principes**:
+> - Le déni face à un récit de trauma est un mécanisme d'autoprotection : croire les victimes engage un coût psychique. 
+> - Les théories sont historiquement situées. 
+> - L'approche systémique accueille la multiplicité de modèles (esprit du libre examen). 
+> - Tout ne se transmet pas, la résilience existe.
 
 ## 🏷️ 2. La famille
 
@@ -125,18 +140,19 @@ Le mythe familial est ce qui donne au groupe son identité spécifique et le dif
 
 On est ici dans le registre du récit et de la narrativité : la manière dont une famille se raconte. Ces croyances touchent tous les niveaux de la réalité familiale. Elles constituent en quelque sorte la « personnalité » du groupe.
 
-Un point important : chacun y adhère « sans y croire tout à fait », mais avec une certaine complaisance. Autrement dit, le mythe comporte une dimension d’idéalisation. Il n’est pas totalement pris pour une vérité factuelle, mais il est investi affectivement. Certains l'idéalisent, d'autres, au contraire, tentent de dénoncer le caractère mythique de certaines croyances et des pratiques (rites) derivées de ces croyances" (ce qui renforce parfois le mythe). 
+Chacun y adhère « sans y croire tout à fait », mais avec une certaine complaisance. Autrement dit, le mythe comporte une dimension d’idéalisation. Il n’est pas totalement pris pour une vérité factuelle, mais il est investi affectivement. Certains l'idéalisent, d'autres, au contraire, tentent de dénoncer le caractère mythique de certaines croyances et des pratiques (rites) derivées de ces croyances" (ce qui renforce parfois le mythe!). 
 
 Les pratiques qui découlent de ces croyances sont appelées des **rites**. Par exemple, si une famille se définit par la devise « l’union fait la force », elle pourra organiser des réunions fréquentes, valoriser la solidarité, mettre en scène le rassemblement comme preuve de cette unité.
 
-Il est difficile d’identifier son propre mythe familial, car on a tendance à considérer ses croyances comme normales ou universelles. Un outil proposé consiste à chercher une **devise familiale**, comme un blason symbolique qui résumerait l’identité du groupe.
+Il est difficile d’identifier son propre mythe familial, car on a tendance à considérer ses croyances comme normales ou universelles.
+- Outil proposé: chercher une **devise familiale**, comme un blason symbolique qui résumerait l’identité du groupe.
 
 >[!example] Exemples
 >Quelqu'un évoque la phrase répétée par sa mère : « À la vie, à la mort, on se bat et on s’en sort. » Cette devise renvoie à un mythe de solidarité face à l’adversité. Elle a été soutenante, mais en grandissant, l’étudiante s’interroge : était-ce entièrement vrai ? Cela montre que l’adhésion au mythe évolue avec le temps.
 >
->Un autre étudiante cite : « Le pain partagé ne fait de mal à personne. » et précise que, paradoxalement, sa famille se dit « pas très famille » au sens des liens de sang, mais valorise fortement la générosité et l’ouverture, notamment envers les amis. Ici, le mythe articule générosité et primat de la « famille de cœur » sur la famille biologique.
+>Un autre étudiante cite : « Le pain partagé ne fait de mal à personne » et précise que, paradoxalement, sa famille se dit « pas très famille » au sens des liens de sang, mais valorise fortement la générosité et l’ouverture, notamment envers les amis. Ici, le mythe articule la générosité et le primat de la « famille de cœur » sur la famille biologique.
 >
->À l’inverse, une étudiante décrit une famille où les liens sont moins sacralisés. L’autonomie et la différenciation sont plus valorisées, et il est plus acceptable de s’éloigner. Elle s’interroge sur l’influence de ce mythe sur la tolérance aux ruptures.
+>Une autre étudiante décrit une famille où les liens sont moins sacralisés. L’autonomie et la différenciation sont plus valorisées, et il est plus acceptable de s’éloigner. Elle s’interroge sur l’influence de ce mythe sur la tolérance aux ruptures.
 
 ### 2.3 Crises, renouvellement et rigidification du mythe familial
 
@@ -150,8 +166,8 @@ Le mythe n’est donc pas figé. Il peut **se renouveler** après une crise. Il 
 
 Lorsque le mythe se rigidifie, qu’il ne se transforme plus, il peut devenir source de souffrance, voire de violence. En clinique, on rencontre souvent des familles où les mythes se sont rigidifiés. C’est cette rigidité, plus que le mythe en lui-même, qui devient problématique.
 
->[!example] Violence
->Un exemple est donné : si la devise implicite est « chez nous, on est une famille ultra unie », cela peut devenir très violent pour un adolescent à qui l’on interdit toute autonomie au nom de l’unité. La violence peut alors surgir dans la tentative de faire respecter à tout prix la croyance mythique.
+>[!example] Jusqu'à la violence
+>Exemple: si la devise implicite est « chez nous, on est une famille ultra unie », cela peut devenir très violent pour un adolescent à qui l’on interdit toute autonomie au nom de l’unité. La violence peut alors surgir dans la tentative de faire respecter à tout prix la croyance mythique.
 
 ### 2.4 Pluralité et mobilité des mythes
 
@@ -159,7 +175,17 @@ L’idée centrale est celle de **mobilité**. Le mythe n’est pas un destin f
 
 Les mythes peuvent coexister, notamment dans les familles séparées ou recomposées. Un individu peut être traversé par plusieurs univers mythiques issus de différentes branches familiales. Cela complexifie la construction identitaire. Dans une famille « classique », on peut chercher un mythe fondateur dominant, mais en réalité, plusieurs éléments mythiques coexistent et peuvent évoluer selon les périodes de la vie familiale.
 
-Ainsi, le mythe familial est à la fois une ressource identitaire, un organisateur symbolique du groupe et, potentiellement, un lieu de tension lorsque son idéalisation empêche l’évolution.
+Donc, **le mythe familial est à la fois une ressource identitaire, un organisateur symbolique du groupe et, potentiellement, un lieu de tension lorsque son idéalisation empêche l’évolution**.
+
+> [!abstract] Résumé 2. La famille
+> **Auteurs**:
+> - Neuburger (mythe familial : croyances partagées, devise, rites / fonctions de la famille)
+>
+> **Principes**:
+> - La famille est à la fois unité fonctionnelle, matrice relationnelle, espace de stabilité et lieu de construction identitaire. 
+> - Le mythe familial est mobile : il peut se renouveler ou se rigidifier. 
+> - C'est la rigidification, pas le mythe lui-même, qui devient source de violence. 
+> - La dénonciation du mythe peut paradoxalement le renforcer.
 
 ## 🏷️  3. Le lien de filiation
 
@@ -167,12 +193,12 @@ Ainsi, le mythe familial est à la fois une ressource identitaire, un organisate
 
 Jean Guyotat, psychiatre lyonnais travaillant avec des patients psychotiques, s’est intéressé à la filiation à partir des délires de filiation. Certains patients psychotiques s’inventaient des ascendances prestigieuses et se disaient descendants de grandes figures historiques ou scientifiques. À partir de ces observations, Guyotat (2000) définit la filiation comme ce par quoi un individu se situe et est situé dans le groupe auquel il appartient, par rapport à ses ascendants et à ses descendants, qu’ils soient **réels ou imaginaires.**
 
-C’est lui qui formalise le plus nettement la distinction entre l’axe institué (juridique, socialement reconnu) et l’axe narcissique (subjectif, imaginaire). Il montre que la filiation ne se réduit pas à l’état civil : elle doit être psychiquement investie. Un lien peut être biologiquement établi et juridiquement reconnu sans être intégré subjectivement. Certains sujets acceptent et investissent fortement leur filiation ; d’autres la dénient, la rejettent ou la remanient. Les délires de filiation montrent bien que lorsque la filiation réelle est fragilisée ou difficilement supportable, une filiation imaginaire peut se construire pour restaurer une cohérence narcissique.
+C’est lui qui formalise la distinction entre l’axe **institué** (juridique, socialement reconnu) et l’axe **narcissique** (subjectif, imaginaire). Il montre que la filiation ne se réduit pas à l’état civil : elle doit être psychiquement investie. Un lien peut être biologiquement établi et juridiquement reconnu sans être intégré subjectivement. Certains sujets acceptent et investissent fortement leur filiation, d’autres la dénient, la rejettent ou la remanient. Les délires de filiation montrent que lorsque la filiation réelle est fragilisée ou difficilement supportable, une filiation imaginaire peut se construire pour restaurer une cohérence narcissique.
 ### 3.2 Verticalité
 
 Pierre Benghozi approfondit cette perspective en décrivant la filiation comme un axe vertical. Chez lui, l’accent est davantage mis sur la **verticalité transgénérationnelle**. 
 
-La filiation renvoie (P. Benghozi,1999):
+La filiation renvoie (P. Benghozi, 1999):
 - aux ascendants (parents, grands-parents…),
 - aux descendants (enfants, petits-enfants…),
 - et même aux générations futures anticipées.
@@ -230,6 +256,20 @@ Rappel/suite du cours précédent:
 - Important de se défaire de la notion de "vrai" parent, il n'y en a pas de faux. (cf exemple donné au cours précédent: des gens qui se permettent de reprendre des enfants quand un enfant dit papa à son père d'accueil, "Tu l'appelles papa mais c'est quand même pas ton papa, c'est pas ton vrai papa." Il y a des professionnels qui se permettent de décider à la place de l'enfant qui est le parent affectif. - il y a des professionnels qui ne pensent pas que le parent socio-éducatif peut ne pas être le parent biologique ou le parent légal. Typiquement dans les écoles, s'il y a un problème, ils ne vont jamais convoqur le beau-père ou la belle-mère qui passent toute son après-midi à essayer de tenir à flot le petit par rapport à ses devoirs, ils vont inviter des gens qui n'ont peut-être rien à voir avec l'aspect socio-éducatif.).
 - N. Galus (2009). *Le rôle de la vérité socio-affective et de la volonté en droit belge de la filiation*, Larcier, Bruxelles. On reconnaît en droit belge le désir de l'enfant.
 
+> [!abstract] Résumé 3. Le lien de filiation
+> **Auteurs**:
+> - Guyotat (axe institué vs narcissique, filiation comme construction psychique)
+> - Benghozi (verticalité transgénérationnelle)
+> - Kaës (reconnaissance réciproque, "naître de la famille")
+> - Kinoo (4 axes : légal, biologique, socio-éducatif, affectif)
+>
+> **Principes**:
+> - La filiation n'est ni purement biologique ni purement juridique : elle doit être psychiquement investie. 
+> - Elle suppose une reconnaissance réciproque entre l'individu et le groupe. 
+> - Les 4 axes de Kinoo sont souvent dissociés: les cliniciens tendent à avoir une vision normative plus restreinte que les enfants eux-mêmes. 
+> - Plusieurs figures parentales peuvent être un facteur de résilience.
+
+
 ## 🏷️  4. Dispositifs pour éviter la transmission de traumatisme
 
 "Ces familles qui n'ont rien à transmettre, et celles qui ne veulent pas transmettre"
@@ -264,7 +304,7 @@ Dans sa clinique, elle a observé des personnes dans une perspective de refus de
 Par exemple, des parents disant ne pas vouloir transmettre. Ça lui semblait paradoxal: Faire en enfant mais ne pas vouloir transmettre quelque chose. Ce qui amenait pour elle la question: Comment faire famille sans "rien" transmettre? Potentiel engagement d'aspects cognitifs, de bloquages cognitifs.
 ### 4.3 L'auto-engendrement : refus d'hériter
 
-Attention attirée vers parents se comportant de manière pas habituelle par rapport à l'idée habituelle, classique, de la transmission, se comportent comme s'ils n'avaient eux mêmes rien reçu de leur parents ("je ne reconnais pas ces parents", "ils ne m'ont rien legué", pas de reconnaissance d'héritage psychique non plus, tel que règles, manières de se comporter, etc).
+Attention attirée vers parents se comportant de manière pas habituelle par rapport à l'idée habituelle, classique, de la transmission, se comportent comme s'ils n'avaient eux mêmes rien reçu de leur parents ("je ne reconnais pas ces parents", "ils ne m'ont rien legué", ... pas de reconnaissance d'héritage psychique, non plus, tel que règles, manières de se comporter, etc).
 
 Dans l'auto-engendrement, le sujet tente de se créer lui-même, niant sa dépendance aux origines parentales.
 
@@ -272,9 +312,9 @@ Dans l'auto-engendrement, le sujet tente de se créer lui-même, niant sa dépen
 >Garçon de 14 ans, se comportait comme si sa famille n'avait rien à voir avec lui. Il demandait à ce qu'on lui trouve une "vraie" famille, avec des personnes qui seraient dignes pour lui d'être des modèles identificatoires. Il avait été voir une juge pour demander une bonne famille, il a cependant vite déchanté, voyant qu'aucun interlocuteur ne prenait sa demande suffisament au serieux. Sa démarche contraste avec d'autres enfants faisant tout le possible pour ne pas laisser leur famille, pour maintenir le lien, coûte que coûte, dans des situations compliquées. Dans ce cas précis, les parents n'étaient pas indignés par cette position de leur fils ("s'il veut partir, qu'il parte").
 
 >[!example] Oscar et sa maman autonome
->Oscar était un garçon décrit comme éteint, complètement déprimé. Il vivait tout seul dans un studio avec son frère de 11 ans dans lequel sa mère les avait installés. La mère ne comprenait pas pourquoi elle devait être là, venir avec son fils à l'entretien... et elle soulignait le fait qu'elle s'était "faite toute seule", ne devait rien à personne, s'attendait à la meme chose de la part de ses fils, afin qu'ils puissent s'autonomiser, se "faire tout seuls". Elle déclare n'avoir rien en commun avec son fils, posture apparaissant comme non-negotiable (telle une représentation particulière de ce qu'est la transmission pour une personne). Oscar se disait livré a lui-même, voulait qu'on lui explique le bien, le mal... mais sa mère était dans le refus, disait que ce n'était pas son job à elle. Le père, lui, habitait au fin-fond des Ardennes, mais a pu être vu en séance plus tard.
+>Oscar était un garçon décrit comme éteint, complètement déprimé. Il vivait tout seul dans un studio avec son frère de 11 ans dans lequel sa mère les avait installés. La mère ne comprenait pas pourquoi elle devait être là, venir avec son fils à l'entretien... et elle soulignait le fait qu'elle s'était "faite toute seule", ne devait rien à personne, s'attendait à la même chose de la part de ses fils, afin qu'ils puissent s'autonomiser, se "faire tout seuls". Elle déclare n'avoir rien en commun avec son fils, posture apparaissant comme non-négotiable (telle une représentation particulière de ce qu'est la transmission pour une personne). Oscar se disait livré à lui-même, voulait qu'on lui explique le bien, le mal... mais sa mère était dans le refus, disait que ce n'était pas son job à elle. Le père, lui, habitait au fin-fond des Ardennes, mais a pu être vu en séance plus tard.
 >
->(Cet exemple n'est pas plutôt un cas de non-engendrement de la part de la mère?)
+>(Cet exemple n'est-il pas plutôt un cas de non-engendrement de la part de la mère?)
 
 Ce comportement d'auto-engendrement peut être compris comme une solution pour échapper au traumatisme de la génération des parents.
 
@@ -283,7 +323,7 @@ Réflexion: Que faire aussi de ce qu'on **n'a pas** hérité, ce qu'on **ne veut
 Définitions:
 - **Engendrer**: se reproduire, passer du statut d'adulte à celui de parents, se mettre dans une perspective de filiation verticale, renier la mort ou la transcender en devenant capable de se projeter dans sa propre descendance.
 - **L'auto-engendrement**: Logique du clonage, qui permet de se reproduire sans passer à un statut de parent, sans qu'il y ait de parents géniteurs. Logique du même et de l'identique, de l'**indifférenciation** ou de la fusion. Filiation horizontale. Négation des différences. Pas d'histoire ni de chaîne des générations. Pas de lien entre présent et passé (métaphore de l'ortensia, mode de reproduction en biologie végétale par la *totipotentialité*).
-	- Une autrice dans la littérature psychanalytique, Elisabeth Bizouard, avait aussi proposé cette idée de l'auto-engendrement dans [Le cinquième fantasme, 1995](https://shs.cairn.info/le-cinquieme-fantasme--9782130470786?lang=fr). Elle le propose comme le 5ème fantasme organisateur du psychique humain. "Engendrer l'inpredictible". Ce serait le fantasme de se produire soi-même, de s’auto-engendrer (soit à l'identique: a. faire des enfants qui me ressemblent en tout point de vue, ou b. faire des enfants qui ne me ressemblent pas mais qui poursuivent ma lignée). C’est une tentative psychique de se dégager de la dépendance originaire et de la passivité d’avoir été créé par d’autres.
+	- Une autrice dans la littérature psychanalytique, Elisabeth Bizouard, avait aussi proposé cette idée de l'auto-engendrement dans [Le cinquième fantasme, 1995](https://shs.cairn.info/le-cinquieme-fantasme--9782130470786?lang=fr). Elle le propose comme le 5ème fantasme organisateur du psychique humain. "Engendrer l'inpredictible". Ce serait le fantasme de se produire soi-même, de s’auto-engendrer (soit à l'identique: a) faire des enfants qui me ressemblent en tout point de vue, ou b) faire des enfants qui ne me ressemblent pas mais qui poursuivent ma lignée). C’est une tentative psychique de se dégager de la dépendance originaire et de la passivité d’avoir été créé par d’autres.
 
 >[!info] Rappel perso: Les quatre fantasmes originaires de Freud
 >Pour Freud, ce sont des scénarios inconscients universels qui structurent la vie psychique ([cf](https://fr-academic.com/dic.nsf/frwiki/616612)):
@@ -301,53 +341,55 @@ Définitions:
 
 *Dans la suite de auto-engendrement*
 
-Exemple: la famille "ortensia", illustrant ce type d'investissement particulier de la filiation, de l'autoengendrement.
+Exemple: la famille "ortensia", illustrant ce type d'investissement particulier de la filiation, de l'auto-engendrement.
 - Famille composée de 3 parents: 2 mamans, 1 père, et 11 enfants, vivant sous le même toit. Respectivement 5 et 6 enfants avec le même père géniteur. Ces enfants étaient tous appelés pareillement, Marcel (ou Marcèle, pour les filles). Le nom de famille les distingue, celui de la mère. Utilisation aussi de surnoms (The King, Kiddy, etc)
 - Totipotentialité: cette caractéristique qui fait que **la différence entre le tout et la partie devient tres compliquée**. 
 - Enfants comme petites boutures., nommées de manière identique. 
-- Tentative de **renforcer l'appartenance familiale**, peut-être dans le but de faire rupture avec le passé? On peut imaginer que pour ces familles ça ne se passait pas comme ca dans les générations précédentes.
-- Occultation de la filiation parentale, aussi: dans cette famille, le nom du père n'est pas donné. Choix intéressant. Pere considere comme géniteur mais enfants pas vraiment inscrit dans sa filiation. Il y avait eu de la maltraitance vécue par les mères (abus sexuel à l'intérieur de leur famille), donc ce choix s'inscrit dans quelque chose qu'elles ne souhaitent pas faire revivre à leurs enfants (hypothèse). A défaut d'avoir pu parler du traumatisme, élaboré, elles agissent de cette manière.
-- (Parenthèse: Cas de fausses allégations d'abus sexuel du père sur l'enfant: raconte son expérience personnelle en début de carrière, rencontrant parfois des fausses allégations. Se sont rendu compte que dans certains cas, s'apparentait à des "Fausses allégations par procuration": de n'avoir pas pu soi même dévoiler son propre abus (les mères), elle accusait la personne qui n'avait pas réalisé l'abus (telescopage). Peut amener aussi à par exemple accuser son prof de gym alors qu'on a été abusé par son grand père, etc.)
+- Tentative de **renforcer l'appartenance familiale**, peut-être dans le but de faire rupture avec le passé? On peut imaginer que pour ces familles, ça ne se passait pas comme ça dans les générations précédentes.
+- Occultation de la filiation parentale, aussi: dans cette famille, le nom du père n'est pas donné. Choix intéressant. Père considéré comme géniteur, mais les enfants ne sont pas vraiment inscrits dans sa filiation. Il y avait eu de la maltraitance vécue par les mères (abus sexuel à l'intérieur de leur famille), donc ce choix s'inscrit dans quelque chose qu'elles ne souhaitent pas faire revivre à leurs enfants (hypothèse). A défaut d'avoir pu parler du traumatisme, élaboré, elles agissent de cette manière.
+- (Parenthèse: Cas de fausses allégations d'abus sexuel du père sur l'enfant: raconte son expérience personnelle en début de carrière, rencontrant parfois des fausses allégations. Les thérapeutes se sont rendu compte que dans certains cas, les cas s'apparentaient à des "Fausses allégations par procuration": de n'avoir pas pu soi-même dévoiler son propre abus (les mères), elles accusaient la personne qui n'avait pas réalisé l'abus (sorte de mécanisme de téléscopage). Cela pouvait amener aussi à, par exemple, accuser son prof de gym alors qu'on a été abusé par son grand père, etc.)
 
 ==Auto-engendrement = tourner le dos aux origines==. 
 #### 4.3.1 Contexte social et culturel de transmission
 
-Est-ce que ca ne révèle pas quelque chose aussi du mythe social, de l'ambiance sociétale?
+Est-ce que ça ne révèle pas quelque chose aussi du mythe social, de l'ambiance sociétale?
 
-1. Elle constate dans cette société un **affaiblissment** de la perception du lien de filiation, de l'axe vertical. Processus débute avec la révolution industrielle et siècle des lumières. Se réclamant de l'innovation et progrès, moins d'identification absolue aux générations précédentes. Beaucoup de choses se sont horizontalisées dnas les perspectives de vivre et d'appréhender le monde, e.g. choix des métiers, progrès de la procréation assistée, représentation plus ouverte de la famille (recomposées)... Cette horizontalisation qu'un psychiatre bruxellois, Fouret, met en lien à l'abandon de l'authoritarisme. Cet affaiblissement (pas disparition), peut etre cause l'affaiblissement au niveau individuel de du lien de filiation.
+1. Elle constate dans cette société un **affaiblissement** de la perception du lien de filiation, de l'axe vertical. Processus débute avec la révolution industrielle et siècle des lumières. Se réclamant de l'innovation et progrès, moins d'identification absolue aux générations précédentes. Beaucoup de choses se sont horizontalisées dans les perspectives de vivre et d'appréhender le monde, e.g. choix des métiers, progrès de la procréation assistée, représentation plus ouverte de la famille (recomposées)... Cette horizontalisation qu'un psychiatre bruxellois, Fouret, met en lien à l'abandon de l'authoritarisme. Cet affaiblissement (pas disparition), peut être cause l'affaiblissement au niveau individuel de du lien de filiation.
 
-2. **Dramatisation**: elle trouve que très souvent on a évoqué les risques de répétition, comme existant une sorte de déterminisme dans certaines familles, où tout serait voué à se répeter d'une génération à une autre. Énormement de travaux ont eclairé ce type de répétitions, mais peut-être mettant trop l'accent sur ces répétitions là. Nous sommes sortis de là par l'avenant du concept de la **résilience**, idées venant des EEUU, arrivant chez nous par [Cyrulnik](https://fr.wikipedia.org/wiki/Boris_Cyrulnik). Comme l'ont montré Reynaldo Perrone ou Stefano Cirilo, ce n'est pas vrai que tous les enfants maltraités deviennent des enfants maltraitants: oui, ils peuvent avoir peur d'avoir des enfants pour cette raison là, mais ce déterminisme ne se confirme pas. Parents qui n'ont pas envie de se montrer comme exemple, ne veulent pas être une figure identificatoire. Sorte aussi de grande prudence: "Ne pas vouloir induire l'enfant", comme si c'était dangereux de donner trop de règles, trop de repères. E.g. cas d'Oscar ci-dessus. 
+2. **Dramatisation**: elle trouve que très souvent on a évoqué les risques de répétition, comme existant une sorte de déterminisme dans certaines familles, où tout serait voué à se répeter d'une génération à une autre. Énormément de travaux ont éclairé ce type de répétitions, mais peut-être mettant trop l'accent sur ces répétitions là. Nous sommes sortis de là par l'avenant du concept de la **résilience**, idées venant des EEUU, arrivant chez nous par [Cyrulnik](https://fr.wikipedia.org/wiki/Boris_Cyrulnik). Comme l'ont montré Reynaldo Perrone ou Stefano Cirilo, ce n'est pas vrai que tous les enfants maltraités deviennent des enfants maltraitants: oui, ils peuvent avoir peur d'avoir des enfants pour cette raison là, mais ce déterminisme ne se confirme pas. Parents qui n'ont pas envie de se montrer comme exemple, ne veulent pas être une figure identificatoire. Sorte aussi de grande prudence: "Ne pas vouloir induire l'enfant", comme si c'était dangereux de donner trop de règles, trop de repères. E.g. cas d'Oscar ci-dessus. 
 
 3. Fascination moderne pour **messages anti-engendrement**, et anti-gratitude.
-	-  [Professeurs de désespoir](https://fr.wikipedia.org/wiki/Professeurs_de_désespoir), de Nancy Huston, 2004: cette écrivaine examine les messages pronant l'anti-transmission dans notre littérature et culture. Elle, d'origine canadienne, est venue en France à Paris à l'âge de 20 ans. À 40 ans elle s'interroge sur ce qu'elle a transmis à sa fille, constate qu'elle a transmis un message plutôt nihiliste, néantiste, "noir", et se demande comment certaines influences européennes avaient pu l'influencer, qu'elle développe dans son essai examinant de nombreux auteurs: Arthur Schopenhauer, Samuel Beckett, Emil Cioran, Jean Améry, Charlotte Delbo, Imre Kertész, Thomas Bernhard, Milan Kundera, Elfriede Jelinek, Michel Houellebecq, Sarah Kane, Christine Angot, et Linda Lê. 
+	-  [Professeurs de désespoir](https://fr.wikipedia.org/wiki/Professeurs_de_désespoir), de Nancy Huston, 2004: cette écrivaine examine les messages prônant l'anti-transmission dans notre littérature et culture. Elle, d'origine canadienne, est venue en France à Paris à l'âge de 20 ans. À 40 ans elle s'interroge sur ce qu'elle a transmis à sa fille, constate qu'elle a transmis un message plutôt nihiliste, néantiste, "noir", et se demande comment certaines influences européennes avaient pu l'influencer, qu'elle développe dans son essai examinant de nombreux auteurs: Arthur Schopenhauer, Samuel Beckett, Emil Cioran, Jean Améry, Charlotte Delbo, Imre Kertész, Thomas Bernhard, Milan Kundera, Elfriede Jelinek, Michel Houellebecq, Sarah Kane, Christine Angot, et Linda Lê. 
 	- Selon elle, 3 facteurs associés a cette ambiance d'anti-transmission:
-		- Un nouveau rapport au temps lié au postmodernisme caractérisé par l'**effacement des origines** (accélération, immédiateté). Pas de projet ancré sur le passé, le passé n'intéresse plus. Nous sommes dans un présent qui "se justifie par lui-meme", où l'autorité des anciens s'est dissoute. Parce que les anciens ont été défaillants (e.g. colonialisme, destructrion écologique, guerres, génocides...). Instauration progressive du modèle de l'homme libre, autonome, non determiné par un passé, un dieu... 
+		- Un nouveau rapport au temps lié au postmodernisme caractérisé par l'**effacement des origines** (accélération, immédiateté). Pas de projet ancré sur le passé, le passé n'intéresse plus. Nous sommes dans un présent qui "se justifie par lui-meme", où l'autorité des anciens s'est dissoute. Parce que les anciens ont été défaillants (e.g. colonialisme, destruction écologique, guerres, génocides...). Instauration progressive du modèle de l'homme libre, autonome, non determiné par un passé, un dieu... 
 			- Concept du "Self-made man" américain (dias avec photos d'Obama, Steve Jobs), et photos de Michael Jackson et ses opérations, illustrant l'effacement des propres origines.
 		- La **mysoginie** liée à l'émancipation des femmes et au mythe de l'égalité induisant le déni des différences:
-			- Selon, elle sacralisation du néantisme. Ce néantisme traduirait un sursaut de virilisme. "Si les hommes ont dominé les femmes dans les sociétés et religions, c'est parce qu'elles portent leurs enfants". Un homme ne peut pas porter son enfant, ce qui crée un désequilibre majeur, qu'ils n'arrivent pas à pouvoir surmonter. Mythe d'égalité, "on est les mêmes": on aurait l'impression qu'en niant les différences, on aura accès aux mêmes droits. Mais ceci pourrait créer des animosités à d'autres niveaux. Réflexion sur l'utérus artificiel, condition selon une autrice à l'atteinte d'une veritable égalité.
+			- Selon elle, sacralisation du néantisme. Ce néantisme traduirait un sursaut de virilisme. "Si les hommes ont dominé les femmes dans les sociétés et religions, c'est parce qu'elles portent leurs enfants". Un homme ne peut pas porter son enfant, ce qui crée un déséquilibre majeur, qu'ils n'arrivent pas à pouvoir surmonter. Mythe d'égalité, "on est les mêmes": on aurait l'impression qu'en niant les différences, on aura accès aux mêmes droits. Mais ceci pourrait créer des animosités à d'autres niveaux. Réflexion sur l'utérus artificiel, condition selon une autrice à l'atteinte d'une véritable égalité.
 		- Les traumatismes de la deuxième guerre mondiale et de l'histoire du XXème siècle.
-	- Pourquoi cette fascination, selon elle? Peut-être le cote déculpabilisateur. Dire que l'homme est un monstre permet de ne pas trop se sentir avec le poids d'une responsabilité. Soulage ce public de pouvoir etre au contact de cette vision néantiste. 
-	- Elle se penche sur la biographie de ces auteurs anti-transmission (elle n'est pas psychologue mais):
+	- Pourquoi cette fascination, selon elle? Peut-être le cote déculpabilisateur. Dire que l'homme est un monstre permet de ne pas trop se sentir avec le poids d'une responsabilité. Soulage ce public de pouvoir être au contact de cette vision néantiste. 
+	- Elle se penche sur la biographie de ces auteurs anti-transmission (elle n'est pas psychologue, mais):
 		- Etre né dans un pays humilié comme l'Allemagne ou un pays continental traumatisé par les horreurs auxquelles il a participé (honte de l'appartenance groupale).
 		- Avoir passé son enfance dans un carcan idéologique ou religieux.
 		- Avoir cumulé des malheurs familiaux (abandons, deuils précoces, ou répétés, violences parentales, abus sexuels, ...).
 		- Mais surtout, trait fondamental, **la peur d'engendrer**.
 
 
-> [!info] Contexte social et culturel
+> [!info] Résumé: contexte social et culturel
 > 1. **Affaiblissement** du lien de filiation
 > 2. **Dramatisation** de la répétition trans générationnel des traumatismes et de la maltraitance.
 > 3. **Fascination** pour les messages allant à l'encontre de la transmission et de l'engendrement. repérable dans la culture et en particuler dans la litterature europeenne contemporaine.
 
 Perspective de nouveau: être le nouveau maillon.
 
-- **Première stratégie de survie: l'auto-engendrement pour échapper au destin familial. Considere la sienne non suffisamment frequentable et bien pour lui.**
+#### 4.3.2 Cas de Daniel
+
+- **Première stratégie de survie: l'auto-engendrement pour échapper au destin familial. Considere la sienne non suffisamment fréquentable et bien pour lui.**
 
 *Duret I. (2000). L'auto-engendrement: une solution pour échapper au destin familial? Considérations systémiques sur les répercussions transgénérationnelles des traumatismes et les solutions imaginées par les familles pour les contourner, Thérapie familiale, vol. 21, n2, p 129-140, Med & hygiene, Geneve.*
 
 *Duret I. Lefebvre A. (1997). "Cherche vraie famille a tout prix" Histoire d'une filiation honteuse, Cahier de Psychologie clinique, 9, p.55-69, de Boeck.*
 
-Histoire de Daniel, deja evoquee dessus: Daniel et sa "vraie" famille. Enquete sociale démontre que famille offrait ce que l'enfant avait besoin de recevoir, parents ne sont pas les monstres qu'il decirt. Decrit pere comme alcolique, mere feme facile prostitué qui a des relations avec pleins d'hommes. Il va errer, quitter souvent le domicile paternel et maternel, demande à être hébergé dans hopitaux et institutions dans lesquels il passe quelques jours.
+Histoire de Daniel, deja evoquée dessus: Daniel et sa "vraie" famille. Enquête sociale démontre que famille offrait ce que l'enfant avait besoin de recevoir, parents ne sont pas les monstres qu'il décrit. Décrit père comme alcoolique, mère femme facile prostituée qui a des relations avec pleins d'hommes. Il va errer, quitter souvent le domicile paternel et maternel, demande à être hébergé dans hôpitaux et institutions dans lesquels il passe quelques jours.
 
 Il arrive dans le service d'hôpital où elle travaillait. Est pas dans un tres bon état, est délirant. Dit que sa belle-mère est sorcière, et qu'elle a déjà tué plein de gens de sa famille, et qu'elle a jeté des sorts sur lui. Il entend des voix qui l'en avertissent. Fait des crises de catatonie, dans lequelles il reste immobilisé, dit etre possedé par la belle mere.
 
@@ -376,14 +418,14 @@ Daniel n'a jamais eu de réponses à ses questions. C'est devenu obsessif pour l
 L'histoire, a laquelle Daniel n'a pas accès initialement:
 - Les parents sont bien les parents biologiques des deux frères. Luc (frère de Daniel) est présenté comme le fils du beau-père M. Lebrun, alors qu'il ressemble fort physiquement au père biologique, Durand. Ceci accentue pour Daniel le non-sens, l'aburdité.
 - Il y a une perception propre de ces parents comme honteux.
-- Le papa est issu d'une fratrie avec un grand nombre d'enfants morts à la naissance, presqu'une alternance d'un enfant mort sur deux (sauf lui, qui vient "briser la règle"). Ce père se présente comme "celui qui n'aurait pas dû exister". Il y a chez cet homme la sensation d'avoir transgressé les lois familiales, dit par lui-même. Il a en effet toujours eu un doute sur la paternité de son père: était-il son fils, ou était-il issu d'une relation extra-conjugale de sa mère? Le doute planait, il n'a jamais pu le clarifier. Il avait vécu son père comme rejettant, l'avait traité comme un batard. Il aura deux fils, Daniel et Luc, mais n'assumera la paternité que d'un sur les deux. Lors de la grossesse du deuxième enfant, la mère avait eu une relation passagère avec un autre homme, et s'est donc dit que son enfant ne devait pas être de son mari: elle a pris la décision qu'il n'allait pas etre le père, lui a accepté, ne voulant pas répeter ce que lui avait vécu en tant que fils. Mais à la naissance, ils se rendent compte qu'il lui ressemble et qu'il est bien son pere, mais ne font jamais marche arrière.
-- La mère, issue de relation "adultérine" (terme qu'on n'utilise plus). La maman avait demandé à son mari de faire un desaveu légal pour la fille qui va naitre, mais Dupont refuse de faire ce desaveux qu'elle lui supplie de faire. Mais ces deux parents biologiques meurent dans un accident de voiture quand elle est adolescente, donc elle reste avec son pere légal (Dupont). Il va abuser sexuellement d'elle pendant deux années. **On comprend pourquoi elle essaye de ne pas faire vivre a son deuxième enfant quelque chose de similaire**. 
+- Le papa est issu d'une fratrie avec un grand nombre d'enfants morts à la naissance, presqu'une alternance d'un enfant mort sur deux (sauf lui, qui vient "briser la règle"). Ce père se présente comme "celui qui n'aurait pas dû exister". Il y a chez cet homme la sensation d'avoir transgressé les lois familiales, dit par lui-même. Il a en effet toujours eu un doute sur la paternité de son père: était-il son fils, ou était-il issu d'une relation extra-conjugale de sa mère? Le doute planait, il n'a jamais pu le clarifier. Il avait vécu son père comme rejettant, l'avait traité comme un bâtard. Il aura deux fils, Daniel et Luc, mais n'assumera la paternité que d'un sur les deux. Lors de la grossesse du deuxième enfant, la mère avait eu une relation passagère avec un autre homme, et s'est donc dit que son enfant ne devait pas être de son mari: elle a pris la décision qu'il n'allait pas etre le père, lui a accepté, ne voulant pas répeter ce que lui avait vécu en tant que fils. Mais à la naissance, ils se rendent compte qu'il lui ressemble et qu'il est bien son père, mais ne font jamais marche arrière.
+- La mère, issue de relation "adultérine" (terme qu'on n'utilise plus). La maman avait demandé à son mari de faire un désaveu légal pour la fille qui va naitre, mais Dupont refuse de faire ce désaveux qu'elle lui supplie de faire. Mais ces deux parents biologiques meurent dans un accident de voiture quand elle est adolescente, donc elle reste avec son père légal (Dupont). Il va abuser sexuellement d'elle pendant deux années. **On comprend pourquoi elle essaye de ne pas faire vivre à son deuxième enfant quelque chose de similaire**. 
 
-On constate un mécanisme de part la tendance à vouloir réparer, sorte de téléscopage de ce que l'on essaye de reparer (les paternités erronées, qui etaient lourdes de consequences pour les deux parents), ce qu'on a pas pu elaborer soi-meme. Mécanisme qui explique comment ils ont pu agir.
+On constate un mécanisme de part la tendance à vouloir réparer, sorte de téléscopage de ce que l'on essaye de réparer (les paternités erronées, qui étaient lourdes de conséquences pour les deux parents), ce qu'on a pas pu élaborer soi-même. Mécanisme qui explique comment ils ont pu agir.
 
 Elle apprend aussi que Daniel n'adresse plus la parole à son père (furieux de son comportement envers Luc).
 
-Il y a aussi les parents qui veulent quelque chose de mieux pour les enfants (par la protection). Parents ne veulent pas exclure, punir... veulent juste quelque chose d'autre, de méilleur, que ce qu'ils ont eu pour eux-mêmes. 
+Il y a aussi les parents qui veulent quelque chose de mieux pour les enfants (par la protection). Parents ne veulent pas exclure, punir... veulent juste quelque chose d'autre, de meilleur, que ce qu'ils ont eu pour eux-mêmes. 
 
 Explication de leur complicité: ils se sont trouvés pour *faire différemment*, faire quelque chose de réparateur.
 
@@ -392,6 +434,8 @@ Daniel, lui, a besoin de sens, pourtant. En tant qu'adolescent, surtout, besoin 
 La famille d'accueil: acceptent de l'accueillir, disent avoir réfléchi, l'avoir trouvé touchant. Ne "demandent pas mieux" que de devenir des parents réparateurs. Mais ne se sont pas rendus compte des liens de loyauté invisibles de Daniel, au bout de plusieurs weekends c'est devenu plus compliqué.
 
 ![Screenshot 2026-03-05 at 18.33.29.png](/img/user/__assets/media/Screenshot%202026-03-05%20at%2018.33.29.png)
+
+#### 4.3.3 Interventions dans le cas de Daniel
 
 Possibilités d'interventions ici:
 - **Parentectomie**: conseil de couper les liens avec les parents d'origine.
@@ -421,11 +465,13 @@ Daniel n'a pas été remis dans se famille immédiatement, plusieurs entretiens 
 
 ### 4.4 Le non-engendrement : refus de transmettre
 
-#### 4.4.1 Illustration clinique : Monsieur et Madame Apares (Fauster)
-
-Deuxième stratégie de "survie": le non-engendrement, à travers le récit d'une thérapie de couple (Duret, I. 2014)
+#### 4.4.1 Le non-engendrement: refus de transmettre
 
 > Le **refus d'engendrer** est une tentative de solution pour échapper au destin familial. On le retrouve chez des individus ou des couples qui ont le sentiment d'être les victimes de jeux sociaux ou familiaux et qui tentent de cette façon de redevenir maîtres de leur destinée (hypothèse 2), en décidant de ne pas faire d'enfants.
+
+#### 4.4.2 Illustration clinique : Monsieur et Madame Apares (Fauster)
+
+Deuxième stratégie de "survie": le non-engendrement, à travers le récit d'une thérapie de couple (Duret, I. 2014)
 
 Elle ne les a pas rencontré elle-même, mais elle supervisait la thérapeute de couple de ces personnes. Donc elle en a une vision meta.
 
@@ -448,7 +494,7 @@ Intéressant pour Isabelle, la situation d'une thérapeute qui n'entend pas, n'e
 
 📅 Vendredi **6 mars 2026** - Cours 5 - I. Duret
 
-Suite de l'illustration clinique. 
+*Suite de l'illustration clinique.* 
 
 La thérapeute leur avait proposé de parler ensemble, alors que leur problème était un problème de communication. Monsieur vient d'une famille ou le silence est d'or (cf. mythiques, systèmes de croyances). Monsieur sait peu de choses sur son père biologique. Seuls éléments qu'il connait c'est via sa femme, qui, elle, s'est montrée curieuse et a interroge la famille de monsieur.
 
@@ -458,7 +504,7 @@ Dynamique entre thérapeute et superviseuse: La thérapeute dit vouloir "vérifi
 
 La thérapeute continue, avec ses patients, concernant l'abus: "au moment même je ne l'ai pas entendu". Madame continue qu'elle n'a pas eu d'enfant et qu'elle avait peur qu'il fasse la meme chose avec leur fille s'ils avaient une fille. Madame interpelle la thérapeute qu'elle avait pourtant dit 2 fois. Cf. parallèle à quand les victimes essayent de mettre en avant des choses, on entend sans entendre, sans tout à fait vouloir y croire.
 
-> [!info] L'écoute
+> [!question] Question sur l'écoute et traumatisation secondaire
 > Question sur la traumatisation secondaire: oui, on peut parler de retraumatisation secondaire dans certaines situations. Exemple d'enfants abusés, ont pour la plupart essayé d'en parler, et on ne les a pas entendus. Stade important vers la guérison: être reconnu, par la famille, cru, validé par des gens faisant autorité. Difficile dans familles incestueses: tout est fait pour que les victimes remettent en doute, ou soient coercées.
 
 La thérapeute sent ensuite l'ambiance moins crispée après avoir raconté. Madame a changé de visage. Madame dit qu'elle était honteuse, se sentait complice de son mari. Il y a 30 ans il lui a fait une confiance aveugle en exprimant cette histoire. Elle s'est demandé comment elle a pu rester avec lui, et s'est dit qu'elle a pu garder ça pour elle par amour. Aujourd'hui, elle pense que c'est répugnant, mais c'est l'amour.
@@ -494,8 +540,11 @@ Faire le deuil, acter la coupure de loin est parfois la solution (situations d'e
 
 ### 4.5 La génophobie: la peur de transmettre des gènes de maladie mentale
 
+#### 4.5.1 La génophobie
 
-> La **génophobie**: certains parents porteurs d'une maladie mentale dite à transmission génétique se représentent la transmission comme une forme de contamination. POur empêcher celle-ci d'opérer, ils activent des processus anxieux contagieux qui les inhibent dans leur capacité à transmettre (hypothèse 3)
+> La **génophobie**: certains parents porteurs d'une maladie mentale dite à transmission génétique se représentent la transmission comme une forme de contamination. Pour empêcher celle-ci d'opérer, ils activent des processus anxieux contagieux qui les inhibent dans leur capacité à transmettre (hypothèse 3)
+
+#### 4.5.2 Cas d'Arthur
 
 **Troisième illustration clinique: Arthur et le poison dans ses tartines, 7 ans** (Duret, 2009)
 
@@ -518,8 +567,8 @@ En réalisant des tests projectifs Rorschach, il voit des animaux qui font peur.
 
 Elle voit la famille: le papa, la maman, Arthur et le frère Thomas, ensemble. En salle d'attente, ils regardent une affiche sur le suicide et la mère leur raconte pour la première fois que son frère est mort de suicide. En séance, elle entend que Thomas provoque Arthur en mettant des photos sous son lit. Thomas raconte qu'ils ont vu ensemble pendant les vacances un film qui parle de possession, Exorcisme, ils s'en moquent un peu. On aperçoit: tâche aveugle de la maman: ne met pas en lien les éléments de la vie quotidienne sur le comportement d'Arthur, alors que le mari et le frère le font facilement. La mère est dans une système de représentations différent, influencé par son vécu. Avec notamment une culpabilité à l'égard de son frère, d'abord, d'Arthur, ensuite.
 
-Il y a quelque chose dans l'élaboration du symptôme qui vient deja dire qqch: Arthur va essayer de comprendre ce qui n'a pas pu être dit. **On peut voir les comportements symptomatiques comme des tentatives d'en savoir plus**.
-- Thisseron: parfois, quand il y a des secrets, à la génération suivante il y a un enfant qui va s'emparer de miettes de symbolisation (parce que tout n'est pas complètement occulté). Pour attendre des parents qu'ils aillent plus loin dans ce qui n'a pas été dit.
+Il y a quelque chose dans l'élaboration du symptôme qui vient deja dire quelque chose: Arthur va essayer de comprendre ce qui n'a pas pu être dit. **On peut voir les comportements symptomatiques comme des tentatives d'en savoir plus**.
+- Serge Tisseron: parfois, quand il y a des secrets, à la génération suivante il y a un enfant qui va s'emparer de miettes de symbolisation (parce que tout n'est pas complètement occulté). Pour attendre des parents qu'ils aillent plus loin dans ce qui n'a pas été dit.
 
 Arthur: intervention rapide a permis un dégagement d'Arthur qui n'est plus libre de se développer dans une identité propre parce qu'il est prisonnier des représentations de sa mère. Intervention: on dépathologise les choses, la mère en est soulagée.
 
@@ -532,11 +581,11 @@ Arthur: intervention rapide a permis un dégagement d'Arthur qui n'est plus libr
 Sortir d'une lecture univoque du symptôme. Cette lecture peut enfermer le symptôme, le maintenir.
 > L'ambiance positive de "recherche de sens" autour d'une préoccupation commune a permis de sortir d'une lecture univoque d'un symptôme qui portait aussi en lui "le potentiel résilient" nécessaire pour relance la famille dans sa capacité à transmettre.
 
-**Conclusions**
+### 4.6 Conclusions
 
 Il existe différents mécanismes de survie ou stratégies adaptatives utilisés par certains individus ou certains groupes blessés pour échapper aux traumatismes. L'auto-engedrement, le refus d'engendrer et la "génophobie".
 
-**Pistes thérapeutiques**
+#### 4.6.1 Pistes thérapeutiques
 
 Pour ne pas se laisser gagner par le désespoir:
 - **Recadrer** la mise hors filiation ou la frilosité à transmettre comme une compétence qu'ont les parents à **proteger les générations futures**
@@ -544,11 +593,193 @@ Pour ne pas se laisser gagner par le désespoir:
 - Re-susciter la filiation. Montrer que le symptôme interroge et re-inscrit déjà dans la généalogie, dans l'appartenance verticale.
 - Aider les familles et ses membres a retrouver leur capacité à donner, à transmettre en transformant l'héritage.
 
-Métaphore de la perle: grain de sable provoque bijou.
+Métaphore de la perle: un grain de sable qui génère un bijou.
+
 
 📅 Vendredi **17 avril 2026** - Cours 6 - I. Duret
 
+> [!abstract] Résumé 4. Dispositifs
+> **Auteurs**:
+> - Elisabeth Bizouard (5ème fantasme : s'auto-engendrer)
+> - Nancy Huston (messages anti-transmission dans la littérature contemporaine)
+> - Ivan Boszormenyi-Nagy (loyautés invisibles, légitimité destructive)
+> - Boris Cyrulnik (résilience)
+> - N Georgieff (processus anxieux contagieux)
+> - Serge Tisseron (l'enfant s'empare de miettes de symbolisation)
+> - Marika Moisseeff (Parenthood vs Kinship, rites de passage)
+>
+> **Principes**:
+> - Les 3 stratégies sont des tentatives d'échapper au destin familial, pas des marques de malveillance. 
+> - Le recadrage consiste à relire la mise hors filiation comme une compétence protectrice. 
+> - Le symptôme de l'enfant peut être une tentative de donner sens à ce qui n'a pas été dit.
+> - Autonomie =/ indépendance. Restaurer la dignité et la capacité à transmettre prime sur la rupture du lien, les situations irrécupérables sont rares.
+
+## 🏷️  5. La clinique du lien
+
+L'enjeu essentiel dans cette pratique: **Reconstruire le lien**.
+
+Car il y a effectivement quelque chose de défracté, cassé, après ces traumatismes.
+Comment aider ces personnes, non pas à vivre comme avant, mais *à vivre comme après* (citation de Ausloos)? Ne pas sous-estimer le courage, la force et l'énergie nécessaire pour se relever d'un trauma, sortir de l'état de sidération et résignation.
+
+Ne pas sous-estimer l'impact sur l'entourage non plus, au moment du dévoilement, au moment où la personne se fait entendre, ou cherche à se faire entendre.
+
+**C'est difficile de se faire entendre**, on se met contre un mécanisme de protection du groupe, contre lequel il faut manifester beaucoup d'énergie. C'est aussi vrai au niveau sociétal.
+
+### 5.1 Effraction, frayeur, figement
+
+Effraction psychique = effroi, frayeur (au-delà de la simple peur). Quelque chose qui va nous extraire hors de l'univers, hors du monde (cf extraction chez Jean-Luc Brackelaire). cf Tobie Nathan, deux notions dans la frayeur: 
+- La peur, qui surprend, pétrifie.
+- Extraction hors de l'univers, hors du monde. On perd toutes ses références habituelles. Les proches ne reconnaissent pas leurs parents, partenaires,... qui ont subi le trauma. La personne n'est plus la même. **Important de tenir compte de cette sensation d'étrangeté pour aider à rassurer parents, enfants...**  qui ne reconnaissent pas leur papa, soeur, etc. Ca va prendre du temps.
+
+**Aspect physiologique**
+
+Le fait que beaucoup d'animaux font "le mort" après une frayeur est illustratif. C'est un mécanisme purement physiologique, et il est important de se rappeler que ce n'est pas seulement psychologique, c'est un figement à tous les niveaux (émotionnel, somatique, etc). Ce qu'on appelle les PTSD incluent encore des restes de ce figement.
+
+La parole est souvent écartée, balayée. On retrouve en clinique des parents qui peuvent se rappeler 15, 20 ans plus tard,  se souviennent de ne pas avoir pris au sérieux, de l'avoir interprété comme des histoires d'enfants qui découvrent leur sexualité. Pour les victimes, les processus de résilience doivent donc se mettre en route avec un entourage qui n'est pas prêt à les écouter.
+
+Cette sidération, parfois fatalisme, est important parce que ça peut aussi se transmettre au clinicien ou thérapeute. C'est important d'y être attentif, car on peut être envahi d'impuissance dans certaines rencontres. Parfois c'est de l'ordre de l'infra-perceptif, des impressions légères désagréables qu'on a, qui nous enlèvent de la mobilité ou mouvement. Or, ce mouvement est essentiel pour la récupération et nous devons le mettre en route chez le patient.
+
+Jacques Croisin, de l'UCL: parle de *survivance*. Personnes qui ont subi un traumatisme n'est autre chose que de la survivance. cf livre *De la survivance à la vie*.
+
+### 5.2 La reconnaissance et réparation
+
+Quand on a subi cette déshumanisation: comment va-t-on pouvoir être "défrayé"? Comment sortir de l'effroi? 
+1. D'abord, **une reconnaissance**. 
+2. Qui permet ensuite **une réparation**.
+
+Donc, la question est une question d'**aider à résister**, en activant les ingrédients nécessaires pour soigner l'*après*. Un après. La reconnaissance du thérapeute peut ne pas être suffisante s'il n'y a pas eu de reconnaissance de leur entourage, de la société. 
+
+Question: quid quand pas de reconnaissance du patient de son traumatisme? Effectivement, parfois l'auto-reconnaissance ou souvenir n'arrive que très tard. La prof donne un exemple de quelqu'un (Frédéric Pommier) qui en fait la "découverte" à 34 ans, malgré une enfance et adolescence malheureuse, sans en comprendre la cause. cf. *L'onde de chocs traumatiques*: un traumatisme peut en cacher un autre. Une première reconnaissance d'un traumatisme récent peut en faire ressortir d'autres plus anciens.
+
+Question: doit-on forcer une reconnaissance? Duret: on ne doit rien forcer. Un évènement peut ne pas faire trauma. Mais une personne qui va mal envoie par "différents canaux" des signaux du fait qu'elle ne va mal. Exemple d'une étudiante qui ne veut pas lire un livre du cours qui parle d'abus sexuel, elle justifie qu'elle avait été en parler à une psy qui ne l'avait pas crue, Duret lui a conseillé de retourner chez la psy pour en parler. Attention en tant que thérapeute de ne pas passer à côté de ces signaux, d'entendre, croire (surtout qu'on a à faire avec des enfants). Ne pas croire = souvent mécanisme de protection du thérapeute.
+
+Question: patient victime d'inceste au sourire figé dont le vécu avait été balayé par le juge (même l'avocat.e ne la croyait pas). cf. similaire à la situation de réfugiés et processus de vérification de leur témoignages (cours de Alain Vanoeteren - [[knowledge/class/2026 - PSYC-E 5013 - Questions spéciales et séminaire d'études de cas cliniques\|2026 - PSYC-E 5013 - Questions spéciales et séminaire d'études de cas cliniques]]). 
+
+Prof donne l'exemple de quelqu'un qui est arrivée chez elle à 49 ans. Femme aristocrate, avait pu s'épanouir en travaillant avec enfants placés parce qu'elle aurait aimé elle-même être prise en charge. Isolée de par l'absence de reconnaissance de parents et familles. A du sortir de son amnésie post-traumatique. A écrit un livre pour faire quelque chose de l'histoire. Parents ont trouvé l'ouvrage et le fait retirer de la vente. Elle n'a pas obtenu de reconnaissance sociétale des faits. A filé dans un délire total.  Duret: a observé toujours des symptômes d'allure psychotique, jamais névrotique. **Et important de se rappeler que les symptômes post-traumatiques peuvent avoir l'allure de symptômes psychotiques**.
+
+Cf. Travail au Rwanda (Duret, Brackelaire,...), avec dyades mère-enfant à propos de grossesses issues de viols (dans le cadre des conséquences du génocide au Rwanda). Femmes qui se sont retrouvées malades, avec sida pour un grand nombre, ont été bannies de la société entière (au lieu d'être considérée victimes!). Les enfants (adolescents au moment du travail), étaient vus comme porteurs du mal (enfants des génocidaires). Ces femmes n'ont pas été prises en compte par le FARG (The Genocide Survivors Assistance Fund), donc ces femmes n'ont pas été défrayées, pas de reconnaissance sociétale! Ces femmes ont essayé de se faire entendre, mais n'ont pas été entendues, crues, écoutées.
+- Assumpta Muhayisa et al. (2016). Que deviennent les enfants nés du viol et leur mère vingt ans après le génocide au Rwanda, *Thérapie familiale, 37*(161-170).
+- Assumpta Muhayisa et al. (2018). Héritage traumatique chez les enfants nés du viol pendant le génocide perpétré contre les Tutsis au Rwanda en 1994, 19-2*(197-207).
+
+Outil d'intervention: **La réinscription généalogique**: Enjeu pour ces femmes au Rwanda: comment reinscrire ces femmes et enfants dans une généalogie qui n'est pas honteuse? Comment mettre à leur disposition quelque chose qui va leur donner une appartenance?
+
+### 5.3 Entraves à l'écoute et la reconnaissance
+
+La réaction typique: fermer les oreilles, les yeux, la bouche (elle illustre avec le dessin de trois singes, [symbole asiatique des singes de la sagesse](https://fr.wikipedia.org/wiki/Singes_de_la_sagesse)).
+
+![monkeys.png](/img/user/__assets/monkeys.png)
+
+cf. suite au cas de Marc Dutroux en Belgique (1996): financement d'état sera débloqué pour former des professionnels dans le monde médical et judiciaire, avec par exemple des dispositifs pour filmer le premier témoignage et ne pas forcer la victime à re-témoigner.
+
+Mais!:
+- Attention aux "modes", idées reçues, que l'on peut parfois adopter. Elle changera son avis lors d'une formation avec une collaboratrice de Mara Selvini: cette personne raconte que là-bas, avant d'amener enfant à témoigner sur son inceste en justice, il fallait d'abord un accompagnement psychologique d'au moins 1 an, pour constituer le récit, lever l'amnésie post-traumatique... (l'inverse en Belgique, le premier témoignage se fait au commissariat!). Importance donc de travailler avec des gens du terrain, voir ce qui se fait ailleurs.
+
+**Bouc-émissarisation**: mécanisme utile dans les sociétés fragilisées (plus c'est le chaos, plus c'est utile, pour s'*unifier contre*... on n'est jamais aussi unis que *contre* quelqu'un ou un groupe). Il y a donc un intérêt pour la société à les désigner comme folles, menteuses, inadaptées, folles, malades, etc. Glissement: Ce ne sont plus des victimes, elles deviennent des porteuses du mal. Deviennent le *porte-la-honte* du groupe (expression de Pierre Benghozi), expression s'appliquant par exemple aux victimes d'incestes, qu'on pointe du doigt car elles "souillent" la famille. 
+
+Selon Duret, on fait peu d'état sur certains concepts:
+- **Identification à l'agresseur**: exemple du cas de Marc Dutroux, première réaction: culpabilisation de la non prise en charge des pédophiles en Belgique. Et lien à la fascination qu'il y a en nous par rapport aux "forces du mal". cf personnes, femmes en particulier, qui  écrivaient à Marc Dutroux des lettres d'admiration et d'amour (Duret parle de pulsions et attirance envers figures autoritaires comme mécanismes de survie potentiellement universels, donc à surveiller en nous-mêmes).
+- La banalisation.
+- **Responsabilisation des victimes**: Renversement où les victimes deviennent coupables. Mécanisme commun et confortable. Rend plus facile de gérer l'innommable. (Marc Dutroux: Par la suite, on a été dire que le père de Melissa était un parent négligeant...). Elle illustre aussi par son travail avec des policiers: présence de mécanismes de défense pour eux aussi, dans leur tendance malheureuse à responsabiliser les victimes.
+
+==Ceci affecte les personnes, mais aussi les organisations, institutions, familles, systèmes==. Il faut parfois du temps pour pouvoir écouter et pouvoir parler. Elle donne un exemples sur l'après dse camps de concentration. Temps = pas de solutions immédiates.
+
+Enjeux cliniques:
+- Risque de tâche aveugle, de "passer à côté".
+- **Risque pour nous en tant que thérapeutes d'être gelés dans nos sentiments**. Il y a un risque d’être en **isomorphisme** et de reproduire cette absence de reconnaissance, de banalisation.
+- **Attaques du cadre** par les patients: ex: patiente de Duret qui arrête de venir en thérapie, explique par la suite qu'elle s'est sentie maltraitée par des propos tenus par Duret en séance. Duret lui avait dit, par inadvertance: "Vous n'allez quand même pas me dire que..." (banalisation). Cette phrase a eu l'effet de replonger le patient dans un passé insupportable.
+
+### 5.4 Comment vivre *comme après*?
+
+*Comment vivre comme après?*
+*Qu'avez-vous fait de ce qui vous est arrivé?*
+
+cf. Dachet, Bonte, Duret. (2010). Le blason familial: un voyage dans le temps des familles pour transformer la mémoire traumatique en mémoire thérapeutique. *Cahiers de psychologie clinique, 53*(113-138).
+
+En lien avec les "trois R" de Neuburger dans [[knowledge/sources/Neuburger - Les familles qui ont la tête à l'envers\|Neuburger - Les familles qui ont la tête à l'envers]]
+1. Reconnaître
+2. Re-mythifier
+3. Re-ritualiser
+
+#### 5.4.1 Reconnaître
+
+**Reconnaître**. Authentification de la perception (terme des praticiens de Palo Alto): *ce que vous me racontez vous est arrivé, et je vous crois*. Sans ça, pas de confiance suffisante.
+#### 5.4.2 Transformer et réchauffer
+
+Accueillir les récits pour les **transformer** (i.e. la mémoire traumatique en mémoire thérapeutique) et **réchauffer** (i.e. ce qui a été gelé). 
+
+Exemple: patiente qui s'est fait virer de chez sa mère, enfant, de manière définitive. Elle ne supporte pas de sonner au cabinet de consultation et devoir attendre dehors, après avoir sonné, ni d'attendre dans la salle d'attente. Elle n'arrive pas à rester en salle d'attente non plus. Elle accepte d'être plus réactive pour ouvrir, et elle trouve un moyen de la faire attendre dans une autre salle intermédiaire (qui lui octroyait d'un statut particulier par rapport aux autres patients). But: trouver quelque chose dans l'ici-et-maintenant, dans la relation avec la thérapeute, pour transformer la mémoire traumatique. 
+
+Expliquer aux patients que c'est normal d'avoir ces moments de **reviviscences** et que c'est justement utile de les partager en thérapie pour pouvoir les transformer dans l'ici-et-maintenant.
+
+Exemple 2: même patiente, problèmes de sommeil, elle sent une "boule au ventre" quand elle va dormir, depuis la disparition de sa soeur il y a des années. Duret fait remarquer que quand elle évoque un passé traumatique avec un patient, elle fait **toujours attention à penser à l'ici-et-maintenant, quoi en faire aujourd'hui, en rentrant chez elle**. Duret propose qu'elle trouve une manière de rendre sa soeur présente (e.g. trouver un objet qui serait représentatif, pour "la faire sortir d'elle-même").
+
+#### 5.4.3 Remailler
+
+**Remailler**:Prendre soin des liens verticaux et horizontaux. Qu'est-ce qui reste des liens, même de ceux qui ont été rompus? Doit faire l'objet de soin de part de thérapeute. Présence de loyautés invisibles (même chez enfants négliglés par parents négligeants).
+
+**Démaillage généalogique** (cf. Pierre Benghozi, commun dans groupes subissant l'inceste). Travail du thérapeute de retisser les mailles horizontales (les liens affiliatifs) et verticales (les liens de filiation).
+- Besoin donc de recoudre ce qui est distendu, troué.
+
+Outils thérapeutiques pour le remaillage:
+- Narration (commun en thérapie narrative, de White et Epston): donner un sens nouveau, réarranger les faits par un nouveau récit, par le réel et l'imaginaire. Une inscription qui soit narcissisante.
+- Récits alternatifs: les aider à avoir un récit de ce qui leur est arrivé qui est moins douloureux, qui met l'accent sur ce qu'ils en pu en faire.
+
+Retour sur l'exemple des femmes au Rwanda:
+- Femmes avec douleur visible sur le visage et le corps.
+- Ces femmes vivaient seules, recluses, avec leur enfant avec qui elles avaient un contact limité (pas apaisés). Plus difficile encore quand c'était un garçon.
+- Demande de ces femmes, lorsque sollicitées: "occupez-vous de nos enfants, parce qu'ils ne vont pas bien". Illustre aussi qu'elles ne se soucient pas de leur propre trauma.
+- **Les réponses sont venues des enfants eux-mêmes**, lors de groupes de paroles (qui recevaient enfants et meres séparément).
+	- ***Génogrammes libres***: la famille telle que vue maintenant.
+	- ***Génogrammes imaginaires***: prendre les 10 personnes plus importantes et les placer librement et choisir les rôles.
+	- ***Dessins libres***: dessiner la famille en animaux (favorise représentation métaphorique de la famille). En y ajoutant la devise.
+	- Ensuite, les enfants présentent leurs créations à leurs mères. Les mères sont parfois stupéfaites de constater dans les dessins des liens montrant l'inscription de leur place dans l'imaginaire de leur enfant, elles qui pensaient être incapables d'être mères. Et constat aussi que les enfants peuvent donner (sentiment d')enracinement aux mères. **Générateur de fierté d'appartenance** (cf ==**Re-mythification**==!). 
+	- Constat surprenant: **les enfants peuvent parfois être plus confiants dans leurs liens filiatifs que les parents**. On le constate dans les familles adoptives, *cf. étude réalisée par Duret avec aussi génogrammes imaginaires: Les adolescents de l'étude montraient aussi une vision de leur inscription généalogique mélangeant le biologique et l'adoptif. Alors que les parents refusaient plus souvent de représenter les filiations biologiques, comme si ça allait les déposséder, et étaient rassurés quand ils voyaient que leurs enfants les inscrivaient (peur du lien de sang étant plus fort)*. Rejoint peur de mamans d'enfants adoptés, surtout dans le contexte de disputes adolescentaires (interprétation de "il me rejette parce que je ne suis pas sa vraie mère").
+
+Conseils aux psys qui travaillent avec des traumatismes:
+- Travailler en équipe, réseau d'entre-aide, avoir une "enveloppe groupale"(Brackelaire)
+- Ne pas travailler à temps plein, 
+- cf thèse supervisée par Duret sur la souffrance du thérapeute.
+
+##### Posture: présence et tendresse
+
+- cf. livre de Laurent Tygran Tovmasian. *Tendresse et attachement: Au coeur du travail psychanalytique avec le traumatisme*, 2020, Paris.
+	- Empathie vs. **tendresse**: Empathie (suppose une capacité à sentir ou à comprendre l’état de l’autre tout en maintenant une distance différenciée, "je perçois quelque chose de ta souffrance, mais je ne m’y confonds pas") vs. un engagement plus actif qui nous met en contact avec ce qui nous habite, qui soigne le lien (ressentir de la tendresse pour le patient, comme celle qu'on aurait envers un enfant).
+	- similaire à sympathie, vs. empathie. Contraire à ce que l'on aurait pu entendre dans d'autres cours. Dans cette clinique, 
+
+> [!QUOTE] Christian Bobin, *La lumière du monde* (2001)
+> "L'**empathie** c'est, à la vitesse de l'éclair, sentir ce que l'autre sent, savoir que l'on ne se trompe pas, comme si le coeur bondissait de la poitrine pour se loger dans la poitrine de l'autre (...) on peut prendre soin d'autrui comme il ne prendra jamais soin de lui-même, par une attention tendue comme un rai de lumière, mais il n'y a aucune emprise psychique sur lui (...) c'est l'art double de la plus grande proximité et de la distance sacrée".
+
+##### Relancer la transmission
+
+Important pour elle d'y penser dans toutes ses thérapies. Ce sont des adultes qui vont peut-être devenir parents, ou qui le sont déjà. Donc, comment faire pour que la transmission puisse être assurée, ou redevenir quelque chose qui ne va pas être porteur d'inquiétude ou de peur, ou reliée à un héritage qui risquerait d'être douloureux ou se répéter à l'infini?
 
 
+> [!abstract] Résumé 5. La clinique du lien
+> **Auteurs**:
+> - Tobie Nathan (effraction psychique, extraction hors du monde)
+> - Jacques Croisin (survivance)
+> - Pierre Benghozi (démaillage généalogique, porte-la-honte)
+> - Robert Neuburger (trois R : reconnaître, re-mythifier, re-ritualiser)
+> - Michael White & David Epston (thérapie narrative, récits alternatifs)
+> - Laurent Tygran Tovmasian (tendresse vs empathie dans la clinique du trauma)
+>
+> **Principes**:
+> - Reconnaissance : condition préalable.
+>   - Transformer et réchauffer 
+> - Remailler les liens verticaux (filiation) et horizontaux (affiliation). 
+> - Les symptômes post-traumatiques peuvent avoir l'allure de symptômes psychotiques.
+> - Risque d'isomorphisme : le thérapeute peut reproduire la banalisation ou la non-reconnaissance. 
+> - Les enfants sont souvent plus confiants dans leurs liens filiatifs que leurs parents. 
+> - Tendresse plutôt qu'empathie distanciée. Travailler en équipe et ne pas travailler à temps plein.
 
 
+## Exemples de questions d'examen données en cours
+
+1. **Plus un système vivant est autonome, plus il est dépendant; plus il s'enrichit en complexité et entretien par là-même des relations multiples avec son environnement, plus il accroit son autonomie.**
+	**Vrai**. C'est la définition de Edgar Morin de l'autonomie.
+
+2. **Pour certains couples, le refus d'engendrer semble être une manière de contourner ou d'échapper l'héritage traumatique, ceci leur permet par ailleurs d'exalter l'axe narcissique et imaginaire de leur filiation.**
+	**Faux**. La fin est fausse (cf Guyotat). Elle nous prévient que parfois une partie sera vraie, mais une autre fausse, donc besoin de faire attention!
+
+3. **Dans une supervision, comme en thérapie, ce qui initie le changement n'est pas la mise en lumière des aveuglements, mais bien plus l'accueil bienveillant des dissonances, des inattendus, il en résulte un échange d'histoire multiples qui permet de s'accorder sur des malentendus partagés.**
+	**Vrai**. L'accueil des dissonances qui va permettre de ne plus être dans l'aveuglement, cf. La famille Fauster.

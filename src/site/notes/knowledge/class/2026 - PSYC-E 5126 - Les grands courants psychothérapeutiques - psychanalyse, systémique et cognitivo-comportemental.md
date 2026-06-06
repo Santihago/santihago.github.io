@@ -1026,7 +1026,7 @@ Stimulus
 > - Conséquences du comportement intentionnelles ou non
 ###### 1.1.2.3 Les (stimuli) conséquences: Sr
 
-![Tableau dia 84.png](/img/user/Tableau%20dia%2084.png)
+![Tableau dia 84.png](/img/user/__assets/Tableau%20dia%2084.png)
 ###### 1.1.2.4 Comportements opérants maintenus ou augmentés par des renforçateurs
 
 > - Comportement d’**approche**: vise à obtenir un ou des renforçateurs positifs +S+
@@ -1111,7 +1111,7 @@ Vidéo de prévention de la dépression de l’OMS la dépression
 > 	- → Rétrécissement du répertoire comportemental
 > 	- → Diminution de l’engagement dans des activités plaisantes sources de renforcements positifs
 
-![Screenshot 2026-03-17 at 12.34.53.png](/img/user/Screenshot%202026-03-17%20at%2012.34.53.png)
+![Screenshot 2026-03-17 at 12.34.53.png](/img/user/__assets/Screenshot%202026-03-17%20at%2012.34.53.png)
 
 
 On sait aujourd'hui (c'est pas dans ce modèle) qu'il faut augmenter choses agréables (pas seulement diminuer le désagréable). Les expériences positives permettent de développer résilience envers les situations désagréables.
@@ -1120,9 +1120,9 @@ On sait aujourd'hui (c'est pas dans ce modèle) qu'il faut augmenter choses agr�
 - Diminution des renforcements positifs contingents aux réponses
 - → augmente **auto-focalisation** (**rumination**) et retrait des contacts sociaux
 
-![Screenshot 2026-03-17 at 12.36.20.png](/img/user/Screenshot%202026-03-17%20at%2012.36.20.png)
+![Screenshot 2026-03-17 at 12.36.20.png](/img/user/__assets/Screenshot%202026-03-17%20at%2012.36.20.png)
 Exemple:
-![Screenshot 2026-03-17 at 12.36.42.png](/img/user/Screenshot%202026-03-17%20at%2012.36.42.png)
+![Screenshot 2026-03-17 at 12.36.42.png](/img/user/__assets/Screenshot%202026-03-17%20at%2012.36.42.png)
 Anxiété devient de plus en plus fort, bulle de confort devient de plus en plus petite.
 
 #### 1.2 Les interventions comportementales
@@ -1139,7 +1139,7 @@ Anxiété devient de plus en plus fort, bulle de confort devient de plus en plus
 
 Années 1920: **[Mary Cover Jones](https://en.wikipedia.org/wiki/Mary_Cover_Jones)** : traitement pour la phobie des lapins du petit Peter: va prouver non seulement qu'on peut creer des phobies, mais en guérir. 
 
-![Pasted image 20260317131339.png|392](/img/user/Pasted%20image%2020260317131339.png)
+![Pasted image 20260317131339.png|392](/img/user/__assets/Pasted%20image%2020260317131339.png)
 
 Années 1950 Joseph Wolpe : **désensibilisation systématique**.
 ##### 1.2.3 La thérapie par exposition
@@ -1256,7 +1256,7 @@ Initialement dans le cadre de la dépression. Ensuite, généralisé à d’autr
 Première publication marquante : Beck, A.T., Rush, A.J., Shaw, B.F., & Emery, G.D. (1979). Cognitive therapy of depression: A treatment manual. New York: Guilford.
 ###### 2.1.2.1 Modèle de traitement de l’information
 
-![Screenshot 2026-03-31 at 10.33.06.png|536](/img/user/Screenshot%202026-03-31%20at%2010.33.06.png)
+![Screenshot 2026-03-31 at 10.33.06.png|536](/img/user/__assets/Screenshot%202026-03-31%20at%2010.33.06.png)
 
 
 **2.1.2.1.1 Les événements cognitifs**
@@ -1323,7 +1323,7 @@ L'élément "Croyances/Postulats" du schéma au-dessus.
 → Éviter que le schéma de base ne s’active
 	= Coût psychologique important
 
-![Screenshot 2026-03-31 at 10.50.42.png](/img/user/Screenshot%202026-03-31%20at%2010.50.42.png)
+![Screenshot 2026-03-31 at 10.50.42.png](/img/user/__assets/Screenshot%202026-03-31%20at%2010.50.42.png)
 
 **2.1.2.1.3 Le processus cognitif**
 
@@ -1396,7 +1396,7 @@ Différentes techniques pour mettre à jour les pensées, croyances et distorsio
 
 ###### 2.2.2.1 Fiche de modification des pensées automatiques
 
-![Screenshot 2026-03-31 at 11.55.22.png](/img/user/Screenshot%202026-03-31%20at%2011.55.22.png)
+![Screenshot 2026-03-31 at 11.55.22.png](/img/user/__assets/Screenshot%202026-03-31%20at%2011.55.22.png)
 
 Video Youtube: https://youtu.be/5eyE20HpaCo (30 min)
 
@@ -1467,7 +1467,7 @@ Quand on cesse de resister, on n'est plus dans l'évitement.
 L'idée d'éviter l'évitement est basé sur ce modele de Barlow:
 
 
-![Screenshot 2026-03-31 at 13.21.30.png](/img/user/Screenshot%202026-03-31%20at%2013.21.30.png)
+![Screenshot 2026-03-31 at 13.21.30.png](/img/user/__assets/Screenshot%202026-03-31%20at%2013.21.30.png)
 
 On constate que la tentative de suppression de la detresse emotionnelle echoue, et maintient la détresse.
 
@@ -1630,7 +1630,7 @@ Cours prochain elle invitera Suzanne Wolff et une autre intervenante (Intensive 
 
 Psychanalyse: temps logiques, non chronologiques.
 
-### Le transfert ([[Transference (Psychanalysis)\|Transference (Psychanalysis)]])
+### Le transfert ([[knowledge/wiki/Transference (Psychanalysis)\|Transference (Psychanalysis)]])
 
 Au coeur de la psychanalyse. Et au coeur de toutes les psychothérapies relationnelles.
 Voit la relation comme un outil pour manoeuvrer et atteindre certains objectifs. La psychanalyse sans doute le premier pas dans cette démarche.
@@ -1695,7 +1695,7 @@ Logique du savoir psychanalytique ramené à la patiente sous la forme d'interpr
 
 vs. manière de travailler Fouchet/[[knowledge/wiki/Psychanalyse Lacanienne\|Psychanalyse Lacanienne]] : construction commune, lente, savoir non-détenu par le psy (éthique de la psychanalyse dans l'accompagnement des personnes). Le savoir émerge de l'experience psychanalytique. Il n'y pas de mode d'emploi, "je me débrouille comme je peux", est ce qu'est censé apprendre le psychanalyste avec chaque sujet (et non jouer aux experts, apprendre aux gens comment élever/éduquer, etc.)
 
-- cf l'ère du temps: **psycho-éducation**: faut que le patient comprenne ce qu'il a, pourquoi il l'a, ou faire comprendre la famille, les proches... éducation discours-psy (cf [[Foucault\|Foucault]], machine discursive qui saisit les corps pour les mettre aux places attendues pour faire fonctionner la société).
+- cf l'ère du temps: **psycho-éducation**: faut que le patient comprenne ce qu'il a, pourquoi il l'a, ou faire comprendre la famille, les proches... éducation discours-psy (cf [[knowledge/wiki/Foucault\|Foucault]], machine discursive qui saisit les corps pour les mettre aux places attendues pour faire fonctionner la société).
 - on n'y échappe pas, à ce risque: même à vouloir soutenir une dynamique "sujet-suppose-savoir". Nous sommes tous des individus "modernes", on échappe difficilement a que ce qu'on attend c'est qqun qui sait, qui dise quoi faire, et que ça aille mieux le plus vite possible.
 
 Jung: pourquoi pas vu dans ce cours?
