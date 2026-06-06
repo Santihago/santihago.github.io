@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-06-02T17:04:52.857+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-06-05T22:02:49.796+02:00"}
 ---
 
 **Structure**:
@@ -194,9 +194,10 @@ Définition de **système** (Von Bertalanffy: *La Théorie Générale des Systè
 ###### 2. Lois des systèmes
 
 Lois des systèmes:
-- **Totalité**:  *une perturbation d'un élément du système induit une modification de tous les autres éléments, que la perturbation vienne de l'intérieur ou de l'extérieur*.
-- **Non-sommativité**: "un tout est plus que la somme des parties".  Les caractéristiques constitutives ne peuvent s'expliquer à partir des caractéristiques prises isolément. ON ne peut pas énumérer séparément chaque élément du système. (Implication: voir les patients individuellement pour saisir les problématiques n'est pas assez).
-- **Homéostasie**: relative stabilité à l'intérieur du système qui est maintenu à l'équilibre par des rétroactions positives ou négatives. Plus un système est complexe, plus l'homéostasie peut être forte. {relation avec besoins changeants de cycles de vie?}. **Bateson** parlait de changements de type 1, et changements de type 2:
+- **Totalité**:  
+	- **Interdépendance**: une perturbation d'un élément du système induit une modification de tous les autres éléments, que la perturbation vienne de l'intérieur ou de l'extérieur.
+	- **Non-sommativité** (découle de la): "un tout est plus que la somme des parties".  Les caractéristiques constitutives ne peuvent s'expliquer à partir des caractéristiques prises isolément. On ne peut pas énumérer séparément chaque élément du système. (Implication: voir les patients individuellement pour saisir les problématiques n'est pas assez!).
+- **Homéostasie** (et *rétroaction*): relative stabilité à l'intérieur du système qui est maintenu à l'équilibre par des rétroactions positives ou négatives. Plus un système est complexe, plus l'homéostasie peut être forte. **Bateson** parlait de changements de type 1, et changements de type 2:
 	- Changement de *type 1*: Un élément est perturbé, le système agit pour annuler le changement (rétroaction négative) dans le but de maintenir le système tel qu'il était (peur du changement, e.g. parents vont augmenter contrôle sur enfant qui veut sortir après l'école. Mais ne rien faire n'est pas bon non plus)
 	- Changement de *type 2*: Va au contraire encourager le système à évoluer. Rétroaction qui renforce le changement (rétroaction positive). Par ex,. encourager l'adolescent à évoluer vers un nouveau fonctionnement adapté à ses nouveaux besoins.
 - **Equifinalité**: les objectifs d'un système peuvent être réalisés par différents chemins.
@@ -218,12 +219,12 @@ Pour la double contrainte, ces éléments doivent être réunis:
 - Quoique fasse l'individu, il ne peut être que perdant.
 	- Exemple: si le fils se détourne, la mère sera désespérée et le critique, au contraire si le fils avait forcé, elle l’aurait rejeté encore plus, donc il ne peut être que perdant. La deuxième ne doit pas être verbale. Difficile pour un enfant de méta communiquer sur le paradoxe auquel il est soumis.
 
-À ce troisième niveau, il devient impossible d’échapper à la relation ou de **métacommuniquer** sur ce qui se passe. Quelle que soit la réponse apportée, elle est disqualifiée : _quoi que l’on fasse, c’est mal_. L’individu se retrouve alors pris dans un système où il ne peut être que perdant.
+À ce troisième niveau, il devient impossible d’échapper à la relation ou de **métacommuniquer** sur ce qui se passe. Quelle que soit la réponse apportée, elle est disqualifiée : _quoi que l’on fasse, c’est mal_. L’individu se retrouve alors pris dans un système où il ne peut être que perdant.
 
 Les chercheurs de Palo Alto découvrent ces mécanismes en filmant les interactions familiales et en analysant la communication à ses différents niveaux, digital (*contenu*) et analogique (le non-verbal, indicateur de la *relation*):
 - la **dimension digitale**, correspondant au contenu verbal explicite,
 - la **dimension analogique**, toute communication non-verbale, qui comprend les expressions faciales, la tonalité de la voix, les mimiques, intonations des mots, les attitudes corporelles et les manifestations physiologiques
-	- *Relation*, ce que le message dit de la position réciproque: car chez les animaux ce mode de communication définit la nature de la relation. Dans le sens: les signaux analogiques indiquent comment il faut interpréter la relation entre les participants - hostile, amical, demande ou ordre, supérieur ou égal, proche ou distant, sérieux ou ironique... cf Bateson 1955 cité dans [[__templates/Book - Watzlawick et al. - 1967 - Pragmatics of Human Communication A Study of Interactional Patterns, Pathologies, and Paradoxes\|Book - Watzlawick et al. - 1967 - Pragmatics of Human Communication A Study of Interactional Patterns, Pathologies, and Paradoxes]] p. 61, e.g. chat qui vient se frotter contre la jambe pour recevoir à manger. Cela indique une approche, dépendance, sollicitation, familiarité. ).
+	- *Relation*, ce que le message dit de la position réciproque: car chez les animaux ce mode de communication définit la nature de la relation. Dans le sens: les signaux analogiques indiquent comment il faut interpréter la relation entre les participants: hostile, amicale, demande ou ordre, de supérieur ou égal, proche ou distant, sérieux ou ironique... cf Bateson 1955, cité dans [[__templates/Book - Watzlawick et al. - 1967 - Pragmatics of Human Communication A Study of Interactional Patterns, Pathologies, and Paradoxes\|Book - Watzlawick et al. - 1967 - Pragmatics of Human Communication A Study of Interactional Patterns, Pathologies, and Paradoxes]] p. 61, e.g. chat qui vient se frotter contre la jambe pour recevoir à manger - cela indique une approche, dépendance, sollicitation, familiarité...).
 
 Très souvent, la double contrainte repose sur une **contradiction entre ces deux dimensions**, mais elle peut aussi résulter de contradictions à d’autres niveaux du message.
 
@@ -259,9 +260,9 @@ Dans cette optique, le comportement jugé « étrange », « inadapté » ou « 
 
 📅 Lundi **16 Février 2026** - Cours 2
 
-Rappel du cours précédent: **la fonction du symptome**: en quoi ce symptôme contribue au système tel qu'il est, à son maintien? Qu'est que le comportement symptomatique permet ? Qu'est-ce qu'il empêche? Patient designé: non seulement passif, pour etre designé il faut en partie le propre "accord" de la personne.
+Rappel du cours précédent: **la fonction du symptôme**: en quoi ce symptôme contribue au système tel qu'il est, à son maintien? Qu'est que le comportement symptomatique permet ? Qu'est-ce qu'il empêche? Patient designé: non seulement passif, pour être designé il faut en partie le propre "accord" de la personne.
 
-Question essentielle: Qu'est ce qui se passerait si ce problème n'existait plus?  (qu'est ce que ça permet, qu'est ce que ça empêche... pour avoir une hypothèse fonctionnelle).
+Question essentielle: Qu'est ce qui se passerait si ce problème n'existait plus?  (qu'est-ce que ça permet, qu'est ce que ça empêche... pour avoir une hypothèse fonctionnelle).
 
 D'après ceux de l'école Palo Alto, un problème est ce qui est vécu comme un problème, peu importe ce que pensent les thérapeutes. Le thérapeute ne décide pas ce qui l'est pour la famille. Se garder de venir avec ses propres valeurs et projections, se focaliser sur ce qui pose problème pour la famille: "En quoi est-ce un problème **pour vous**?" (ou les différents membres du système). (Par exemple: famille préocuppée parce que leur enfant n'a pas plus de 14/20 partout).
 
@@ -280,24 +281,24 @@ D'après ceux de l'école Palo Alto, un problème est ce qui est vécu comme un 
 Comment choisir dans quelle orientation adresser un patient (ou encore TCC)? Repérer les spécificités de la situation qui nous font pencher vers l'une ou l'autre approche (ces deux approches mises en avant ici car utilisées dans le livre de Neuburger).
 
 Visionnage d'une video de Paul Watzlawik: Conférence: *Quand la solution est le problème*. Stuttgart, 1987 ([YouTube](https://www.youtube.com/watch?v=3lx3EjE0Trw))
-<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/3lx3EjE0Trw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>)
+<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/3lx3EjE0Trw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 Ce groupe de Palo Alto a été à l'origine d'une revue, "Family Process", qui dans les années 60 a été une des premières revues dans le domaine, et qui existe encore.
 
 Quelques références:
-- Milton Erickson, hypnose, invité aussi a Palo Alto
+- Milton Erickson, hypnose, invité aussi à Palo Alto
 - Ecole Wittezaele à Bruge (thérapie brève)
-- Thérapie provocative, aussi moins présente en europe (sauf certains en Italie, Andolfi en debut de carrière, l'a ensuite abandonnée).
+- Thérapie provocative, aussi moins présente en Europe (sauf certains en Italie, Andolfi en debut de carrière, l'a ensuite abandonnée).
 
 #### 1.5 L'approche anti-psychiatrie
 
-Dans la "vieille europe", ce mouvement prend beaucoup d'ampleur, avec une maniere de penser les choses qui a beaucoup influencé les penseurs systémiciens.
+Dans la "vieille europe", ce mouvement prend beaucoup d'ampleur, avec une manière de penser les choses qui a beaucoup influencé les penseurs systémiciens.
 
 Têtes de file:
 - RD Laing, David Cooper, Franco Basaglia, Castel
 - Jean Oury, Félix Guattari, Mony Elkaïm...
 
-Remise en cause de la psychiatrie traditionnelle (et ses methodes d'enfermement). Foucault: plutôt que de considérer qu'il faut "aider les fous a se reintégrer dans la société", se demander ce qu'il se passe dans la société pour considérer que certains individus doivent être enfermés. Basaglia en tête de file de mouvement amenant a la fermeture d'hôpitaux (cf. loi actée en Italie).
+Remise en cause de la psychiatrie traditionnelle (et ses méthodes d'enfermement). Foucault: plutôt que de considérer qu'il faut "aider les fous à se reintégrer dans la société", se demander ce qu'il se passe dans la société pour considérer que certains individus doivent être enfermés. Basaglia en tête de file de mouvement amenant a la fermeture d'hôpitaux (cf. loi actée en Italie).
 
 Répercussions dans notre manière de penser la santé mentale: création de centres de santé avec l'idée de ne pas exclure les personnes malades de la société, et travailler à leur reinsertion.
 
@@ -313,16 +314,16 @@ C'est par le biais de ce mouvement que Palo Alto (et par là les thérapies fami
 		- Par exemple, chaque fois que père fait une remarque, un fils l'imite d'une grosse voix, les autres enfants rient, la mère intervient pour dire "vous arrêtez de rire?! Personne le prend jamais au sérieux!"
 		- Exemple 2: dès que le couple parental est en tension, si un partenaire fait un reproche à l'autre, un des enfants fait une bêtise de manière à ce que l'un des parents doive intervenir.
 		- Ex 3: famille où tout le monde tournait en dérision ce que disait l'étranger à la famille.
-	- Thérapeute devra voir ce qui se joue dans ces groupes, afin de décoder le comportement du groupe **pour pouvoir interagir avec eux lui aussi** (encore métaphore de l'ethnologue qui doit se faire accepter par la tribu qu'il étudie) 
+	- Thérapeute devra voir ce qui se joue dans ces groupes, afin de décoder le comportement du groupe **pour pouvoir interagir avec eux, lui aussi** (encore métaphore de l'ethnologue qui doit se faire accepter par la tribu qu'il étudie) 
 - **La position directive du thérapeute**:
 	- Pas détaillé en cours.
 - **Les stades de l'évolution ou cycle de vie** de l'individu et de la famille:
-	- Important d'avoir en tête ces concepts: nécessité de renégocier les relations à chaque passage à une nouvelle étape (par ex. la mise en couple, naissance du premier enfant, adolescence, premier travail, etc). Processus d'autonomisation, en particulier, qui implique que toutes les relations se re negocient (pas seulement la famille). Ne s'arrête pas à l'adolescence, quand l'enfant devient adulte persiste tout au long de la vie (se mettre en couple et vivre à l'extérieur, etc). 
+	- Important d'avoir en tête ces concepts: nécessité de renégocier les relations à chaque passage à une nouvelle étape (par ex. la mise en couple, naissance du premier enfant, adolescence, premier travail, etc). Processus d'autonomisation, en particulier, qui implique que toutes les relations se re-négocient (pas seulement la famille). Ne s'arrête pas à l'adolescence, quand l'enfant devient adulte persiste tout au long de la vie (se mettre en couple et vivre à l'extérieur, etc.). 
 	- Défi marqué pour le groupe de se réorganiser après une crise: le moment de la crise est essentiel - sans crise, pas d'évolution.
 - **L'analyse de la demande**. L'indication d'une thérapie familiale passe par l'analyse de la demande. Lorsque le sujet ne peut formuler une demande et que les éléments de la demande sont réparties dans le groupe familial (cf R. Neuburger). Quand faire appel à un thérapeute?
 	-  R. Neuburger: s'appuyer sur les éléments constitutifs d'une demande (détaillé dans son livre de 1984, *L'autre demande*)
 		- Un symptôme
-		- Une souffrace
+		- Une souffrance
 		- Une allégation (une mise en avant, invocation du problème)
 	- Si ceux-ci sont répartis sur un seule et même personne, ou pas? 
 		- Rassemblés au sein d'une même personne? Psychothérapie individuelle.
@@ -339,7 +340,7 @@ Dans les modèles prédictifs, l'effet qu'on veut obtenir est predeterminé, inc
 
 #### 3.1 Les modèles prédictifs
 
-Influencés par les écrits de [Von Foerster](https://en.wikipedia.org/wiki/Heinz_von_Foerster) : "participe au développement de la théorie de l'information. 1940: n'avons pas accès a la réalité du monde .... " (citation dans dia). Rôle de nos présupposés. Réalité codée, "une réalité parmi d'autres possibles".
+Influencés par les écrits de [Von Foerster](https://en.wikipedia.org/wiki/Heinz_von_Foerster) : "participe au développement de la théorie de l'information. 1940: n'avons pas accès a la réalité du monde .... " (citation dans dia, se retrouve dans des questions d'examen). Rôle de nos présupposés. Réalité codée, "une réalité parmi d'autres possibles".
 
 ##### 3.1.1 Le modèle causal linéaire
 
@@ -354,7 +355,7 @@ Par exemple: que la patiente anorexique s'éloigne des parents.
 
 Modèle particulier parce qu'il **ignore le temps**: état du patient est considéré **reversible** si on traite la cause.
 
-Type de pensée rappelant la pensée scientifique, ou médicale. Pas à bannir ou laisser tomber, mais important pour nous d'avoir en tête que ce modèle peut ne pas être suffisant pour aider certaines familles. Parfois ces solutions en fonctionnent pas. 
+Type de pensée rappelant la pensée scientifique, ou médicale. Pas à bannir ou laisser tomber, mais important pour nous d'avoir en tête que ce modèle peut ne pas être suffisant pour aider certaines familles. Parfois ces solutions ne fonctionnent pas. 
 ##### 3.1.2 Le modèle causal circulaire: changement de paradigme
 
 Première révolution épistémologique. Ce mode de pensée est pourtant plus courant dans les modes de pensée orientaux. Chez nous, nous sommes plus habitués à chercher les causes.
@@ -370,7 +371,7 @@ En élargissant le contexte, on peut tenir compte aussi de l'**autre parent**:
 	- Dans une lecture linéaire, on pourrait dire : “l’absence du père provoque les crises de la fille et le rapprochement mère-fille.” Mais cette interprétation correspond à une **ponctuation arbitraire** : elle choisit un point de départ dans une séquence relationnelle circulaire, comme si un seul élément était la cause des autres.
 - En réalité, les comportements des membres de la famille s’inscrivent dans une **circularité** : l’inquiétude maternelle renforce la proximité mère-fille, cette proximité contribue à la mise à distance du père, l’absence du père accroît l’inquiétude de la mère, et ainsi de suite. **Le travail thérapeutique vise alors à identifier et à modifier ce cercle vicieux plutôt qu’à rechercher une cause unique**.
 
->[!info] Ponctuation arbitraire
+>[!info] Ponctuation arbitraire (ou la ponctuation de la séquence des faits)
 >La ponctuation arbitraire désigne la manière dont une personne découpe subjectivement une interaction continue en “causes” et “conséquences”. Autrement dit, dans une relation, chacun choisit souvent un point de départ différent pour expliquer le problème : “je fais cela parce que l’autre fait ceci”. Cette ponctuation est dite arbitraire parce que, dans une boucle interactionnelle, il n’y a pas toujours un début objectif évident.
 >cf. p. 52 *La ponctuation de la séquence des faits*, Paul Watzlawick  [[__templates/Book - Watzlawick et al. - 1967 - Pragmatics of Human Communication A Study of Interactional Patterns, Pathologies, and Paradoxes\|Book - Watzlawick et al. - 1967 - Pragmatics of Human Communication A Study of Interactional Patterns, Pathologies, and Paradoxes]]
 
@@ -398,29 +399,27 @@ Ici, le thérapeute ne sait pas ce qu'il va se produire à l'issue de l'interven
 
 Modèle développé en Europe. Mara Selvini, thérapeute psychiatre milanaise, chef de file de l'"école de Milan". Ici, autre révolution épistémologique, avec une autre métaphore: celle de la **crise et du changement**. 
 
-On va s'intéresser à la notion même de crise. Métaphore de la dynamique des gaz en physique: lorsque chauffées, les cellules se réorganisent dans un mode impredictible. On peut déclencher quelque chose qui fait crise, sachant qu'il y aura un changement, mais sans anticiper la suite. Crise utilisé ici sans connotation négative (comme dans la théorie marxiste).
+On va s'intéresser à la notion même de crise. Métaphore de la dynamique des gaz en physique: lorsque chauffées, les cellules se réorganisent dans un mode imprédictible. On peut déclencher quelque chose qui fait crise, sachant qu'il y aura un changement, mais sans anticiper la suite. Crise utilisé ici sans connotation négative (comme dans la théorie marxiste).
 
 Problème lié à un blocage qui empêche la famille d'évoluer.
 
 Exemples: l'arrivée d'un enfant. La mort. Le nid vide. Ou des moments moins prévisibles, qui nécessitent aussi d'une réorganisation: un accident, un membre de la famille malade, un déménagement imprévu... 
 - Réorganisations non-seulement matérielles, mais au niveau des **patterns transactionnels**, des règles qui président comment on interagit les uns avec les autres, ...
 
-Mara Selvini: vont mettre en place un dispositif pour provoquer ce qui est redouté par la famille (idée est que la famille s'empêche de se réorganiser parce qu'elle a peur du changement). Exemple pour la personne anorexique: souvent, dans ce trouble, il y quelque chose qui vient annuler les besoins d'autonomisation à l'adolescence. Par exemple, la fille ne reçoit pas argent de poche parce qu'elle ne sort pas, elle se focalise sur les résultats scolaires... On fonctionne comme s'il n'y avait pas d'adolescente en besoin de s'autonomiser. Chez un ado "normal", les jeunes adoptent des comportements d'autonomisation, par exemple demandent de l'argent pour sortir en soirée, vont mettre un certain temps à mettre de nouvelles regles de fonctionnement (? par sûr de l'exemple), ou adoptent des comportement transgressistes parfois, par lesquels les ados accélerent ces changements
-
-Trouver ajustements nuancés pour laisser grandir sans être trop permissif.
+Mara Selvini: vont mettre en place un dispositif pour provoquer ce qui est redouté par la famille (idée est que la famille s'empêche de se réorganiser parce qu'elle a peur du changement). Exemple pour la personne anorexique: souvent, dans ce trouble, il y quelque chose qui vient annuler les besoins d'autonomisation à l'adolescence. Par exemple, la fille ne reçoit pas argent de poche parce qu'elle ne sort pas, elle se focalise sur les résultats scolaires... On fonctionne comme s'il n'y avait pas d'adolescente en besoin de s'autonomiser. Chez un ado "normal", les jeunes adoptent des comportements d'autonomisation, par exemple demandent de l'argent pour sortir en soirée, vont mettre un certain temps à mettre de nouvelles regles de fonctionnement (? par sûr de l'exemple), ou adoptent des comportement transgressistes parfois, par lesquels les ados accélerent ces changements. -> Trouver ajustements nuancés pour laisser grandir, sans être trop permissif.
 
 Souvent, discours paradoxal des parents: par exemple, tu iras a la piscine quand tu sauras bien nager. Je t'acheterai des roller quand tu sauras patiner. **Pas double bind, mais single bind**: rend le jeune créatif de devoir prouver qu'il sait nager. Permet au jeune de se devoir d'être créatif. (Ces paradoxes ne sont pas toujours à voir de maniere négative, peuvent permettre de grandir). Lorsqu'ils ne sont pas doubles.
 
-**Dans le modèle de Mara, le patient (designé) a pour fonction d'empêcher la crise.** Et du coup on pathologise celui qui risque de créer la crise. "Si notre fille ne faisait plus ces épisodes avec la nourriture, tout irait parfaitement bien dans notre famille". La famille demande de soigner le patient designé (la fille), mais sans toucher à la famille. Mara Selvini invente le modèle thérapeutique **Prescription contre-paradoxale**. "ne changez rien, changez là elle"
+**Dans le modèle de Mara Selvini, le patient (designé) a pour fonction d'empêcher la crise.** Et du coup on pathologise celui qui risque de créer la crise. "Si notre fille ne faisait plus ces épisodes avec la nourriture, tout irait parfaitement bien dans notre famille". La famille demande de soigner le patient designé (la fille), mais sans toucher à la famille. Mara Selvini invente le modèle thérapeutique **Prescription contre-paradoxale**. "ne changez rien, changez là elle"
 
-Exemple: fille avec petit-ami, détesté (qui?) par la grand-mère maternelle. Jeune fille a rompu avec garçon. Ensuite, la fille a durcit son régime, et basculé dans l'anorexie mentale. Selvini fera comme prescription adressée a la famille: "la meilleure solution, continue à ne surtout pas manger, sinon tu aurais des seins et des formes, et ton petit-ami s'intéresserait à toi. Tes parents ne pourraient pas te supporter de te voir grandir, et ta grand mère en mourrait de honte." Symptôme pour préserver le changement.
+Exemple: fille avec petit-ami, détesté (qui?) par la grand-mère maternelle. Jeune fille a rompu avec garçon. Ensuite, la fille a durcit son régime, et basculé dans l'anorexie mentale. Selvini fera comme prescription adressée à la famille: "la meilleure solution, continue à ne surtout pas manger, sinon tu aurais des seins et des formes, et ton petit-ami s'intéresserait à toi. Tes parents ne pourraient pas te supporter de te voir grandir, et ta grand mère en mourrait de honte." Symptôme pour préserver le changement.
 
 Livre: [Paradoxe et contre-paradoxe](https://shs.cairn.info/paradoxe-et-contreparadoxe--9782710144250?lang=fr), Mara Selvini & co (francais, 2021)
 
 >[!warning] Remise en question
 >Selvini en arrive à se dire que cette méthode ne fonctionne pas aussi bien qu'elle l'aurait cru initialement, et va finir par abandonner ce modèle. (Se demandait si c'était parce que son livre était devenu très connu, et les familles savaient dès lors comment elle allait travailler.)
 
-L'art du thérapeute consistera à rejoindre la famille dans son envie de résoudre le problème, tout en soutenant l'idée/besoin de non changement (soutenir la part de la famille qui a besoin d'être sécurisée dans son besoin de non changement, de peur du changement). **Cette sécurité peut paradoxalement faciliter le changement et l'évolution**.
+L'art du thérapeute consistera à rejoindre la famille dans son envie de résoudre le problème, tout en soutenant l'idée/besoin de non changement (**soutenir la part de la famille qui a besoin d'être sécurisée** dans son besoin de non-changement, de peur du changement). **Cette sécurité peut paradoxalement faciliter le changement et l'évolution**.
 
 **Pas de prescription de symptôme, mais prescription de sa fonction:
 - À la place, un thérapeute peut prescrire **la fonction que le symptôme remplissait** dans le système familial. Autrement dit, il se demande : **à quoi servait ce symptôme dans l’équilibre familial ?** Puis il propose une autre manière, souvent plus explicite ou moins coûteuse, de remplir cette même fonction.
@@ -438,7 +437,7 @@ Biologistes chiliens: Maturana et Francisco Varela
 - Corps non séparable de l'esprit.
 - Mots pouvaient nous empêcher de penser (les mots créent des réalités spécifiques)
 	- Immunité: le terme "défenses" immunitaires est-il correct? Observation que des anticorps se générent même sans "attaques".
-	- Métaphores qui font obstacle à la pensée. Dépression n'est pas une bonne métaphore, l'étiquette enferme plutot qu'ouvre. Allons vers celle qui permet une augmentation des choix possibles. (cf taches aveugles)
+	- Métaphores qui font obstacle à la pensée. Dépression n'est pas une bonne métaphore, l'étiquette enferme plutot qu'ouvre. Allons vers celle qui permet une augmentation des choix possibles. (cf tâches aveugles)
 	- Vont étudier les conditions permettant la survie de la cellule. La vie d'une cellule est la capacité à conserver sa différence. Sinon, danger de mort, se laisse attaquer/mourrir.
 
 ###### 1. Autopoïèse
@@ -463,12 +462,12 @@ On peut repérer dans certains groupes des "pannes mythiques": des difficultés 
 
 ###### 3. Autonomie et pluridépendance (Edgar Morin)
 
-Edgar Moran. **Autonomie** (sociologue systémicien): est fait d'un tissu de dépendances. **Plus on est autonomes, plus on l'est par un tissu de dépendances. Richesse de dépendances = autonomie. Pluridépendance = autonomie.** 
-	Ex: adolescent: ancré dans sa famille d'origine mais aussi ayant creé des liens a l'extérieur, camarades de classe, sport, etc. 
+Edgar Morin. **Autonomie** (sociologue systémicien): est fait d'un tissu de dépendances. **Plus on est autonomes, plus on l'est par un tissu de dépendances. Richesse de dépendances = autonomie. Pluridépendance = autonomie.** 
+	Ex: adolescent: ancré dans sa famille d'origine mais aussi ayant creé des liens à l'extérieur, camarades de classe, sport, etc. 
 ==Ne pas avoir de dépendances: aliénation. Pas de choix à faire entre différentes appartenances, pas d'autonomie, si on est pauvres en appartenances== (à retenir).
 
 Selon Neuburger: 
-- Pathologie: tentative du groupe pour préserver son identité. Par exemple secrets, non-dits,... qui risqueraient d'affaiblir le mythe, ou de l'attaquer. 
+- Pathologie: tentative du groupe pour préserver son identité. Par exemple: secrets, non-dits,... qui risqueraient d'affaiblir le mythe, ou de l'attaquer. 
 	- Par exemple: irrégularités dans la filiation - un enfant né d'une relation extraconjugale, ou né par adoption... Suicide à la génération des parents... Il y a donc un oubli de certains particularismes parce que ces particularismes pourraient attaquer le pôle mythique. Par exemple, Daniel dans l'autre cours (PSYCE-540). 
 - Excès de banalisations: trop de conformisme social dans une famille va empêcher de préserver les différences. Equilibre entre particularismes et banalismes.
 ###### 4. Prescription de rituels
@@ -500,7 +499,7 @@ Les modèles constructivistes interrogent la lecture même à partir de laquelle
 > **Constructivisme 1** ou l'aliénation du thérapeute dans une lecture univoque de la réalité. Le thérapeute est aveugle s'il croit à ce qu'il voit.
 > Heinz Von Foerster:  "Je suis aveugle si je ne vois pas que je suis aveugle. Si je m'aperçois que je suis aveugle, alors je vois".
 
-Idée que la réalité n'existe pas comme quelque chose en soi. (Lien avec [[knowledge/wiki/There is no reality\|There is no reality]])
+Idée que la réalité n'existe pas comme quelque chose en soi. (cf [[knowledge/wiki/There is no reality\|There is no reality]])
 On amène la notion de co-construction: information n'as pas un caractère objectif et neutre mais comme une mise en forme du réel.
 
 On a tous des points d'aveuglement, qui sont en lien avec la manière dont on a été depuis l'enfance baignés dans des représentations du monde (celles qu'on nous a communiquées, apprises). Création d'une grille de lecture, "carte du monde", nous permettant d'apercevoir certaines choses et ne pas en apercevoir d'autres.
@@ -528,7 +527,7 @@ Pour Neuburger, pour chaque famille on peut retrouver dans quelle lecture univoq
 - être enfermé dans une définition causale-linéaire (resolvez le pb de mon ado qui fume)
 - être enfermé dans une définition causale-circulaire (e.g. problèmes de mauvaise communication, sensation de boucle repétitive)
 - être enfermé dans une définition constructiviste 1: e.g. ne voient pas leur fille comme adolescente mais seulement comme pré-adolescente (incapacité à affronter un changement - intervention se solde par la tentative d'introduire la crise)
-- être enfermé dans une définition constructiviste 2: normalité c'est de proteger l'identité de groupe avant toute chose. Exemple patiente (mere, épouse, fille de ses parents) pour burnout severe. Famille s'en occupe comme si c'était un membre qui avait besoin d'être choyé et prise en charge, cree une sorte de dependance. Soignants pensent que la famille incentive ce manque d'autonomie. Famille tente de montrer solidarité.
+- être enfermé dans une définition constructiviste 2: normalité c'est de proteger l'identité de groupe avant toute chose. Exemple patiente (mère, épouse, fille de ses parents) pour burnout sevère. Famille s'en occupe comme si c'était un membre qui avait besoin d'être choyé et prise en charge, crée une sorte de dépendance. Soignants pensent que la famille incentive ce manque d'autonomie. Famille tente de montrer solidarité.
 
 D'après *Le mythe familial*, de Neuburger, p.27: "Modèles thérapeutiques"
 
@@ -543,7 +542,7 @@ D'après *Le mythe familial*, de Neuburger, p.27: "Modèles thérapeutiques"
 | **Modèles constructivistes** | Constructivisme I                               | Aveuglement de l’observateur par un modèle de lecture unique          | Permettre au thérapeute de choisir son « outil »                                                                   | Adéquation d’un modèle thérapeutique à une situation spécifique                         |
 |                              | Constructivisme II                              | Aveuglement de la famille par un modèle de lecture unique             | Éclairer les choix des familles en proposant des lectures « oubliées », ou méconnues ou interdites de leur réalité | Restitution des possibilités de choix                                                   |
 
-On remet la famille dans une éthique de choix, elle aussi, pour qu'elle ne soit pas prisonnière de la lecture univoque, une vision enfermante. Ce n'est pas l'idée qu'il y a un niveau plus fonctionnel qu'un autre:! mais qu'il y a des lectures plus enfermantes si elles deviennent exclusives et si le système manque d'accès à d'autres lecture. Donc, le thérapeute amène la famille à un autre niveau de lecture. Neuburger: "un bon thérapeute doit faire ses gammes".
+On remet la famille dans une **éthique de choix**, elle aussi, pour qu'elle ne soit pas prisonnière de la lecture univoque, une vision enfermante. Ce n'est pas l'idée qu'il y a un niveau plus fonctionnel qu'un autre:! mais qu'il y a des lectures plus enfermantes si elles deviennent exclusives et si le système manque d'accès à d'autres lecture. Donc, le thérapeute amène la famille à un autre niveau de lecture. Neuburger: "un bon thérapeute doit faire ses gammes".
 
 (Discussion autour d'un exemple)
 
@@ -573,7 +572,7 @@ Exemple: Enfant parentifié: enfant pas "à sa place" dans la structure.
 
 1. **Affiliation ou joining**
 2. **Découvrir et décrire la structure familiale**
-		Il va être à la recherche de quelle carte il va dessiner à propos de cette famille, va voir comment se comportent les membres les uns avec les autres, les frontières sont elles claires ou diffuses entre personnes et sous-systèmes? présence de bons degrés de différentiation?
+		Il va être à la recherche de quelle carte il va dessiner à propos de cette famille, va voir comment se comportent les membres les uns avec les autres, les frontières sont elles claires ou diffuses entre personnes et sous-systèmes? Présence de bons degrés de différentiation?
 3. **Créer des conditions pour permettre la transformation**
 
 #### 4.2 Moyens thérapeutiques
@@ -582,7 +581,7 @@ Exemple: Enfant parentifié: enfant pas "à sa place" dans la structure.
 - **Réorganisation spatiale**
 	- par ex: demander à l'enfant de venir s'asseoir a coté de lui, séparé de ses parents... jouant sur l'espace pour provoquer des changements dans cette carte/territoire, sur ces frontières. Et que le thérapeute n'ait pas une place prédéterminée, places flexibles, chaises vides, etc.
 - **Délimitation des frontières**
-- **Prescription de taches thérapeutiques** 
+- **Prescription de tâches thérapeutiques** 
 	- par ex: se protéger dans la famille nucléaire dans intrusions de la famille élargie, ou inverse, les inviter à être plus proches de cousins/familles pour une famille très rigide et fermée dans leur noyau
 	- Pour leur redonner vite leur compétences, pour que la famille ne dépende pas du thérapeute. Et pour qu'ils expérimentent aussi des choses entre les séances, pas seulement pendant les séances.
 	- Autres thérapeutes font aussi: Mara Salvini: renforcer les frontières, ou e.g. prescrire aux parents de disparaître.
@@ -592,7 +591,7 @@ Exemple: Enfant parentifié: enfant pas "à sa place" dans la structure.
 
 #### 4.3 Familles psychosomatiques et évitement du conflit
 
-Familles psychosomatiques (_Psychosomatic Families: Anorexia Nervosa in Context_, 1978)
+Familles **psychosomatiques** (_Psychosomatic Families: Anorexia Nervosa in Context_, 1978)
 1. Enchêvetrement
 2. Surprotection
 3. Absence de résolution des conflits (évitement)
@@ -620,6 +619,29 @@ Exemples de questions d'examen (Vrai/Faux):
 	
 **Video de 42 min**: thérapie de famille Andolfi ([Closed Doors](https://www.accademiapsico.it/shop/en/product/closed-doors-a-difficult-search-for-father/))
 - Fils en consultation avec sa mère, et grands-parents maternels, pour: retrait, passe de longues heures seul dans sa chambre à jouer des jeux video. Père absent en thérapie, loyauté fils envers mère est remise en question.
+
+## Examen juin 2026
+
+1. Pour double contrainte, il faut... injection 1, injection 2, injection 3 (impossibilité de communiquer). Vrai.  ✅❌? (techniquement vraie, même s'il manquait relation affective, mais c'est pas dit "il suffit de".... )
+2. Watzlawick considérait que c'est souvent la solution proposée pour résoudre un problème qui rend celui ci insoluble. **Vrai** ✅
+3. Walzlawick objectif le changement. **Vrai**. ✅
+4. Les systémiciens appellent le patient désigné celui qui souffre le plus. **Faux**. ✅
+5. Modèle circulaire est non-prédictif... **Faux**. ✅
+6. La Child Guidance, aussi nommée guidance parentale, vise à soutenir les parents dans leur rôle éducatif. Elle a inspiré et préparé le terrain pour les fondateurs de l'approche systémique familiale.  **Vrai** ✅
+7. Selon Minuchin, les trois étapes de la thérapie sont l'affiliation, le recadrage et la création de conditions permettant la transformation de son fonctionnement. **Faux** (pas recadrage) ✅
+8. Selon Neuburger, pour déterminer la pertinence thérapie familiale... allégation, souffrance et symptôme chez la même personne. **Faux**. ✅ (a priori sauf si ultra piège)
+9. Objectif du thérapeute est de « réparer » les dysfonctionnements de la famille. Faux. ✅ (permettre auto-solution)
+10. Pour explorer la fonction du symptôme, le thérapeute se pose les questions suivantes : que permet-il ou empêche-t-il (...) économie psychique (...)(?? me souviens pas, j'ai mis **Vrai** je pense) ❌ ✅
+11. Question sur antipsychiatrie et thérapies de groupe qui ont inspiré les mouvements systémiques. **Vrai**. ✅
+12. L'école de Palo Alto a introduit le concept de système en s'inspirant des travaux de G. Bateson. Pour ce dernier le système est un ensemble d'éléments en interaction qui possèdent des propriétés qu'on observe dans tous les groupes vivants. **Faux** ✅ (c'est Von Bertalanffy) ✅
+13. Principe d’homéostasie qui supposait une stabilité interne avec des rétroactions positives et négatives. Vrai. ✅
+14. Système a tendance à homéostasie et stabilité. Faux. ✅
+15. Question sur auto-poïetique hétérogène. Vrai. ✅
+16. Principe de non-sommativité, on peut pas comprendre le système en prenant individuellement les membres de la famille en thérapie. **Vrai**. ✅
+17. la prise de conscience n'est pas d'une grande aide. **Vrai**. ✅
+18. Question des rituels qui créent l’intime d’une famille. **Vrai** (apparemment faux, ce sont les mythes ❌)
+19. Systémique seconde ordre identité de groupe. **Vrai**. ✅
+20. ?
 
 # Partie II: Thérapies Cognitivo-Comportementales - B. Thonon
 
@@ -1534,13 +1556,72 @@ Pour en savoir plus:
 - Mettre en place l’activation comportementale  https://youtu.be/3gNF10Zvyzc
 - Intégration des 3 vagues: https://www.youtube.com/watch?v=q1c2VBA0gHg
 
+### Examen juin 2026
+
+Q1. **Quels éléments pour assurer une prise en charge fondée sur les données probantes dans cette situation?**
+**A) 1. Intervention la plus soutenue par la recherche pour le type de trouble anxieux identifié 2. Votre expertise clinique en tant que psychologue 3. Les préférences de sylvie en matière de traitement**  ✅
+B) 1. Diagnostique clinique qui précise le type de trouble anxieux 2. intervention la plus soutenue par la recherche pour le type de trouble anxieux identifié 3. votre expertise clinique en tant que psychologue
+C) 1. Intervention la plus soutenue par la recherche pour le type de trouble anxieux identifié 2. Votre expertise clinique en tant que psychologue 3. Alliance thérapeutique
+D) 1. diagnostique clinique qui précise le type de trouble anxieux 2. votre expertise clinique en tant que psychologue 3. Les préférences de sylvie en matière de traitement 
+E) 1. alliance thérapeutique 2. diagnostique clinique qui précise le type de trouble anxieux 3.Intervention la plus soutenue par la recherche pour le type de trouble anxieux identifié
+
+Q2. **Sam, 22 ans, consulte à la suite d'un arrêt maladie provoqué par un burnout. Lors de la prise en charge, il explique entre autres que, lorsqu'il doit parler en public ou participer à des réunions, il ressent une forte tension, des mains moites et des tremblements visibles. En entretien, il dit souvent : << Je ne vais pas y arriver, je perds le contrôle de mes émotions >>, << Tout le monde va remarquer que je tremble et va se moquer de moi », « Je n'ai aucun contrôle sur ce monde ». Quelle notion théorique décrit le mieux le pattern de pensées présenté par Sam ?**
+A - L'évitement expérientiel de Barlow
+B - L'inférence arbitraire, couplée à la lecture de pensée
+C - La spirale dépressive de Mowrer
+**D - La triade anxieuse de Beck.** ✅
+E - Les distorsions cognitives en tant schéma cognitif inconditionnel
+
+Q3. **Quelle affirmation décrit le mieux le rôle et les caractéristiques de l'évaluation dans le processus thérapeutique ?**
+A - L'évaluation est uniquement réalisée en début et fin de prise en charge, avec comme objectif de mesurer l'efficacité du traitement.
+B - L'évaluation est uniquement utilisée comme aide potentielle, lorsque le psychologue éprouve des difficultés à récolter certaines informations en entretien.
+C - L'évaluation est uniquement réalisée en début de prise en charge, avec comme objectif de définir la cible thérapeutique.
+**D - L'évaluation est présente à chaque étape de la prise en charge, avec comme objectif de faciliter l'empirisme collaboratif.**  ✅
+E - L'évaluation est utilisée lorsque le traitement débute (après la conceptualisation), pour contrer les éventuels biais que peut avoir le bénéficiaire tout au long de la prise en charge (tels que sous-estimer son évolution). 
+
+**Q4. Dans un contexte de conditionnement classique, quel exemple illustre le mieux un schéma ou un stimulus inconditionnel provoque par association une réponse conditionnée?:** 
+A - Marie et les attaques de panique 
+B - Olivier Bac 2 évite les cours à cause de 3 échecs 
+C - Benoit nuit anxiogène attaque de panique imagine en boucle les pires scénarios 
+D - **Louis peur des hôpitaux à cause d’une douleur lors d’injections**. ✅
+E - Michael 8 ans peur des araignées depuis toujours
+
+Q5. **Considérant la théorie du conditionnement opérant dans la chaîne << Stimulus - Comportement Conséquence », laquelle de ces affirmations est vraie?:**
+A - **Le comportement est influencé par des stimuli internes et/ou externes subtils, et non pas par ses conséquences. Les stimuli doivent donc être identifiés pour construire le plan de traitement.** ❌
+B - Le conditionnement opérant est toujours appris au travers de l'observation (// Théorie de Bandura), et nécessite donc de comprendre les influences de l'environnement pour optimiser l'efficacité de la prise en charge.
+C - Les conséquences du comportement sont toujours non-intentionnelles, mais elles visent à satisfaire des besoins de base (qu'ils soient individuels ou interpersonnels).
+D - Le comportement est maintenu ou augmenté parce qu'il qu'il sert ser une une fonction de renforcement négatif. ✅
+E - Tous les comportements ayant une forme similaire ont la même fonction, que le psychologue doit identifier comme cible thérapeutique prioritaire (notamment avec les auto-observations).
+
+**Q6. Dans le cadre de la thérapie cognitive développée par Aaron Beck, quelle approche illustre le mieux la modification des pensées et croyances dysfonctionnelles à l'origine des troubles psychologiques ?**
+A - Tenter de créer un nouveau narratif avec les expériences passées du bénéficiaire, pour modifier les schémas (in) conditionnels qui en découlent.
+B - L'utilisation de techniques psychocorporelles (telles que la pleine conscience ou la relaxation), pour réduire l'anxiété tout en investissant le moment présent plutôt que le monde cognitif.
+C - Réaliser des expériences comportementales ou d'observation pour tester les croyances, ainsi que construire et tester de nouvelles perspectives. ✅
+D - **Modifier subtilement les pensées ou croyances dysfonctionnelles, en se basant sur la qualité de l'alliance thérapeutique, le modeling et le dialogue socratique.** ❌
+E - Se confronter aux situations craintes / anticipées, afin que le bénéficiaire puisse constater qu'il a les ressources internes et / ou externes pour faire face à celles-ci.
+
+**Q7. Selon l'approche de la première vague -(comportementale), quelle est l'origine principale du trouble psychologique et quel est l'objectif du traitement ?**
+A - Une désactivation comportementale grandissante comme origine, avec pour objectif de favoriser des expériences comportementales en lien avec les buts et les valeurs de l'individu.
+B - Un déficit de conditionnement opérant comme origine, avec pour objectif de faciliter de nouvelles expériences comportementales.
+**C - Des apprentissages dysfonctionnels comme origine, avec pour objectif de les modifier et de les remplacer par de nouveaux apprentissages.** ✅
+D - Des évitements expérientiels dysfonctionnels comme origine, avec pour objectif de développer des répertoires comportementaux plus larges et flexibles.
+E - Des distorsions du traitement de l'information comme origine, avec pour objectif de les restructure en vue de faciliter l'activation comportementale.
+
+**Q8. Quel énoncé décrit le mieux l'objectif commun des thérapies cognitivo-comportementales de troisième vague?**
+
+A - Identifier et modifier les distorsions cognitives (c.-à-d. la 2ème vague, cognitive) dans un premier temps, pour ensuite améliorer la qualité des expositions aux situations émotionnelles habituellement évitées (c.-à-d., la 1ère vague, comportementale).
+B - Encourager le bénéficiaire à supprimer (ou, en tout cas, diminuer) les émotions négatives susceptibles de provoquer de l'anxiété ou de la détresse.
+C - Favoriser une attitude dite "positive", en veillant à identifier les aspects positifs de toute expérience vécue (à la fois sur le plan cognitif et comportemental).
+D - Modifier les pensées et comportements dysfonctionnels pour réduire les symptômes psychologiques, en favorisant l'inclusion de l'individu dans son monde social.
+**E - Aider le bénéficiaire à accepter tous les aspects de son expérience (pensées, sentiments, souvenirs, sensations physiques), qu'ils soient jugés négatifs ou positifs.**  ✅
+
 # Partie III: Psychanalyse - Fouchet
 
 
-📅 Jeudi **13 Mars 2026** - Cours 1 apparemment?
+📅 Jeudi **13 Mars 2026** - Cours 1
 
 
-📅  Jeudi **20 Mars** 2026 - Cours 2 apparemment?
+📅  Jeudi **20 Mars** 2026 - Cours 2
 
 
 📅 Jeudi **2 Avril 2026** - Cours 3?
@@ -1636,7 +1717,7 @@ Recommendations de lecture:
 
 Question sur les "présentations de malade" (docu A Ciel Ouvert): cf https://www.sciencedirect.com/science/article/pii/S0014385519301768
 - lorsque malade vient parler de son parcours/maladie? comme expert de sa maladie?
-- se fait de moins en mons
+- se fait de moins en moins
 
 La psychanalyse n'est pas possible sans le corps (débat) :
 - car nous sommes que des corps affectés par le langage

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-03-04T17:27:33.118+01:00","updated":"2026-05-17T23:00:14.371+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-06T13:14:51.137+02:00","updated":"2026-06-06T13:14:51.137+02:00"}
 ---
 
 
@@ -14,7 +14,8 @@
 Les deux cours (celui de I. Duret et celui de J-L Brackelaire) seront enregistrés.
 
 > [!info] Évaluation
->Sur 20 (15 VF + 5 QRM ou QCM)
+>Sur 20 (15 VF + 5 QRM ou QCM).
+>Ne portera **pas** sur la partie de Jean-Luc Brackelaire.
 
 
 # Partie 1. Cours principal (Isabelle Duret)
@@ -137,7 +138,7 @@ Il est difficile d’identifier son propre mythe familial, car on a tendance à 
 >
 >À l’inverse, une étudiante décrit une famille où les liens sont moins sacralisés. L’autonomie et la différenciation sont plus valorisées, et il est plus acceptable de s’éloigner. Elle s’interroge sur l’influence de ce mythe sur la tolérance aux ruptures.
 
-### 2.2 Crises, renouvellement et rigidification du mythe familial
+### 2.3 Crises, renouvellement et rigidification du mythe familial
 
 #### 2.2.1 Dénonciation du mythe
 
@@ -152,7 +153,7 @@ Lorsque le mythe se rigidifie, qu’il ne se transforme plus, il peut devenir so
 >[!example] Violence
 >Un exemple est donné : si la devise implicite est « chez nous, on est une famille ultra unie », cela peut devenir très violent pour un adolescent à qui l’on interdit toute autonomie au nom de l’unité. La violence peut alors surgir dans la tentative de faire respecter à tout prix la croyance mythique.
 
-### 2.3 Pluralité et mobilité des mythes
+### 2.4 Pluralité et mobilité des mythes
 
 L’idée centrale est celle de **mobilité**. Le mythe n’est pas un destin figé. Il peut être repris tel quel, transformé, inversé, combiné avec celui d’un partenaire lors de la création d’une nouvelle famille. Il peut soutenir la créativité ou, au contraire, se transformer en contrainte s’il se rigidifie.
 
@@ -177,7 +178,7 @@ La filiation renvoie (P. Benghozi,1999):
 - et même aux générations futures anticipées.
 
 Elle constitue une sorte de **colonne vertébrale transgénérationnelle**.
-### 3.3 Reconnaisance réciproque et appartenance
+### 3.3 Reconnaissance réciproque et appartenance
 
 Chez **Kaës**, le point fort est la **reconnaissance réciproque et l’appartenance psychique**. Il insiste sur le fait qu’il ne suffit pas d’être biologiquement ou juridiquement rattaché à une famille : il faut encore être reconnu par elle et la reconnaître en retour: donc, considérée par ces auteurs avant tout comme une **construction psychique**. Il ne suffit pas qu’un enfant soit juridiquement rattaché à une famille ; encore faut-il qu’il **se sente** reconnu et qu’il reconnaisse à son tour ceux qui se présentent comme ses parents. René Kaës insiste sur cette idée en affirmant qu’"*il ne suffit pas de naître dans une famille, il faut aussi naître de la famille*". La filiation engage donc un processus d’appartenance psychique.
 
@@ -199,7 +200,7 @@ Deux axes qui structurent la filiation, d'apres Guyotat (1980):
 2. Un axe **"narcissique"** (ou "imaginaire") qui correspond à la manière dont l'individu vit subjectivement sa filiation. Va nous permettre nous, psys, d'explorer comment chacun vit sa filiation, se situe par rapport aux chaînes de filiation, ce qu'on se raconte...  Cet axe renvoie à la **dimension narrative** et au **roman familial** (Freud).
 
 Il existe une **dialectique** entre les deux axes. Des événements réels (incertitudes sur la paternité, secrets, changements de nom, ruptures familiales, suicides, bannissements…) peuvent fragiliser l’axe institué et favoriser le développement d’élaborations imaginaires.
-### 4.5 Les quatre axes de filiation de Kinoo
+### 3.5 Les quatre axes de filiation de Kinoo
 
 De nos jours, image plus complexe des liens de parenté (avec les familles recomposées). Philippe Kinoo, pédopsychiatre bruxellois, travaillant avec des enfants placés, observe que les deux axes de Guyotat ne suffisent pas toujours pour décrire la réalité actuelle. 
 
@@ -309,7 +310,7 @@ Exemple: la famille "ortensia", illustrant ce type d'investissement particulier 
 - (Parenthèse: Cas de fausses allégations d'abus sexuel du père sur l'enfant: raconte son experience personnelle en debut de carriere, rencontrant parfois des fausses allegations. Se sont rendu compte que dans certains cas, s'apparentait a des "Fausses allegations par procuration": de n'avoir pas pu soi meme devoler son propre abus (les mères), elle accusait la personne qui n'avait pas realisé l'abus (telescopage). Peut amener aussi à par exemple accuser son prof de gym alors qu'on a été abusé par son grand père, etc.)
 
 ==Auto-engendrement = tourner le dos aux origines==. 
-#### Contexte social et culturel de transmission
+#### 4.3.1 Contexte social et culturel de transmission
 
 Est-ce que ca ne révèle pas quelque chose aussi du mythe social, de l'ambiance sociétale?
 
@@ -420,7 +421,7 @@ Daniel n'a pas été remis dans se famille immédiatement, plusieurs entretiens 
 
 ### 4.4 Le non-engendrement : refus de transmettre
 
-#### 2ème illustration clinique : Monsieur et Madame Apares (Fauster)
+#### 4.4.1 Illustration clinique : Monsieur et Madame Apares (Fauster)
 
 Deuxième stratégie de "survie": le non-engendrement, à travers le récit d'une thérapie de couple (Duret, I. 2014)
 
