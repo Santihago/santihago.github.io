@@ -1,20 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-06T22:17:27.912+02:00","updated":"2026-06-06T22:17:27.913+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-07T11:41:54.230+02:00","updated":"2026-06-07T22:03:15.012+02:00"}
 ---
 
 
 
-
 > [!tldr] Contenu du cours
-> Le cours aborde les questions des liens familiaux et de la transmission intergénérationnelle des traumatismes au sein des groupes et des familles. Elles sont envisagées dans le contexte des couples et familles contemporaines, souvent désignées par les sociologues et les philosophes comme témoignant d'un affaiblissement du lien de filiation et de la capacité à transmettre. Cette caractéristique sera mise en regard du contexte historique et socio-culturel au sein duquel elle émerge. La clinique nous permet de relever des situations où l'organisation même des liens ou de la filiation semble découler de la peur de transmettre. L'impact de cette peur pour le groupe et les individus qui le composent sera analysé à partir de nombreux exemples.   
-> 
-> Il sera ensuite question des enjeux psychiques individuels et groupaux consécutifs aux traumatismes. Les pistes thérapeutiques seront abordées à travers de nombreuses situations cliniques. Ces illustrations  permettent d'une part d'explorer et de comprendre les dynamiques individuelles et relationnelles consécutives aux traumatismes, d'autre part de montrer l'intérêt de l'approche systémique dans la clinique du trauma. La psychothérapie est une rencontre inter-culturelle et sociopolitique qui impose au clinicien d'interroger son positionnement et les représentations qui en découlent.  Différents concepts et outils systémiques ( recadrage, génogrammes, objets flottants, éthique relationnelle, partialité multidirectionnelle...) seront présentés pour permettre d'illustrer ce que l'approche systémique constructiviste peut apporter au psychothérapeute qui souhaite s'engager dans la clinique du trauma en s'utilisant lui-même comme activateur du changement.
+> Le cours aborde les questions des liens familiaux et de la transmission intergénérationnelle des traumatismes au sein des groupes et des familles. Elles sont envisagées dans le contexte des couples et familles contemporaines, souvent désignées par les sociologues et les philosophes comme témoignant d'un affaiblissement du lien de filiation et de la capacité à transmettre. Différents concepts et outils systémiques (recadrage, génogrammes, objets flottants, éthique relationnelle, partialité multidirectionnelle...) seront présentés pour permettre d'illustrer ce que l'approche systémique constructiviste peut apporter au psychothérapeute qui souhaite s'engager dans la clinique du trauma en s'utilisant lui-même comme activateur du changement.
 > 
 > Cette année, la Faculté met à l’honneur **Jean-Luc Brackelaire**, Professeur de psychologie clinique et d’anthropologie culturelle et sociale à l’UCLouvain et à L’UNamur, dans le cadre de la **Chaire Francqui au titre belge 2025**. Les étudiant.es inscrit·es au cours **Approche systémique des traumatismes (PSYC-E-540)** de la Professeure Isabelle Duret sont convié·es à suivre l’intégralité de ses leçons.
 
-
 Les deux cours (celui de I. Duret et celui de J-L Brackelaire) seront enregistrés.
-
 
 > [!tip] Lectures
 >  **Lectures obligatoires:**
@@ -32,9 +27,40 @@ Les deux cours (celui de I. Duret et celui de J-L Brackelaire) seront enregistr�
 
 > [!info] Évaluation
 >Sur 20 (15 VF + 5 QRM et/ou QCM).
->Portera sur le cours, son livre personnel, et le livre de Neuburger (traumatisme groupal et la thérapie aux 3 R)
+>Portera sur le cours, son livre personnel, et le livre de Neuburger (la dernière partie sur le traumatisme groupal et la thérapie aux 3 R)
 >Ne portera **pas** sur la partie de Jean-Luc Brackelaire.
 
+---
+
+**Table des matières**
+
+- [[#🏷️ 1. Introduction|1. Introduction]]
+- [[#🏷️ 2. La famille|2. La famille]]
+    - [[#2.1 La famille: unité fonctionnelle et relationnelle (Neuburger)|2.1 La famille (Neuburger)]]
+    - [[#2.2 Le mythe familial : croyances, récit et identité groupale|2.2 Le mythe familial]]
+    - [[#2.3 Crises, renouvellement et rigidification du mythe familial|2.3 Crises et rigidification du mythe]]
+    - [[#2.4 Pluralité et mobilité des mythes|2.4 Pluralité et mobilité]]
+- [[#🏷️  3. Le lien de filiation|3. Le lien de filiation]]
+    - [[#3.1 Construction psychique|3.1 Construction psychique]]
+    - [[#3.2 Verticalité|3.2 Verticalité]]
+    - [[#3.3 Reconnaissance réciproque et appartenance|3.3 Reconnaissance réciproque]]
+    - [[#3.4 Les deux axes de Guyotat|3.4 Les deux axes de Guyotat]]
+    - [[#3.5 Les quatre axes de filiation de Kinoo|3.5 Les quatre axes de Kinoo]]
+- [[#🏷️  4. Dispositifs pour éviter la transmission de traumatisme|4. Dispositifs pour éviter la transmission]]
+    - [[#4.1 Transmettre|4.1 Transmettre]]
+    - [[#4.2 Transmission intergenérationnelle et transgénérationnelle|4.2 Transmission inter- et transgénérationnelle]]
+    - [[#4.3 L'auto-engendrement : refus d'hériter|4.3 L'auto-engendrement]]
+    - [[#4.4 Le non-engendrement : refus de transmettre|4.4 Le non-engendrement]]
+    - [[#4.5 La génophobie: la peur de transmettre des gènes de maladie mentale|4.5 La génophobie]]
+    - [[#4.6 Conclusions|4.6 Conclusions]]
+- [[#🏷️  5. La clinique du lien|5. La clinique du lien]]
+    - [[#5.1 Effraction, frayeur, figement|5.1 Effraction, frayeur, figement]]
+    - [[#5.2 La reconnaissance et réparation|5.2 La reconnaissance et réparation]]
+    - [[#5.3 Entraves à l'écoute et la reconnaissance|5.3 Entraves à l'écoute]]
+    - [[#5.4 Comment vivre *comme après*?|5.4 Comment vivre comme après ?]]
+- [[#Exemples de questions d'examen données en cours|Questions d'examen]]
+
+---
 
 📅 Vendredi **6 Février 2026** - Cours magistral I. Duret
 
@@ -67,10 +93,7 @@ Quand les cas d’inceste apparaissent, l’équipe se sent particulièrement d�
 
 Au départ, Freud élabore la “théorie de la séduction” pour expliquer des névroses, et en particulier les hystéries: il croit ses patientes qui parlent d’abus sexuels subis dans l’enfance et relie leurs symptômes à ces traumatismes réels ([théorie de la séduction](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_s%C3%A9duction), névrose comme étant la conséquence d'un véritable traumatisme infantil), mais cette théorie est mal accueillie par ses pairs initialement. Face à la pression du milieu médical bourgeois (mais voir parenthèse), il fait marche arrière, et par là construit la psychanalyse: les symptômes seraient liés à des évènements traumatiques transformés en fantasmes (fantasmes, refoulements, Oedipe, et la dimension inconsciente...), ouvrant la voie à la psychanalyse et à la théorie de l’inconscient.
 
-Duret évoque aussi Farenzi, qui, lui, n’a jamais abandonné l’idée du traumatisme réel. Ces débats ont marqué durablement les représentations cliniques, par exemple autour de l’hystérie, terme encore utilisé de manière péjorative par certains médecins.
-
->[!info] Parenthèse sur Freud et sa théorie de la séduction
->Sur les raisons de l'abandon de sa théorie: Les raisons que Freud donne ne se réduisent pas à la pression du milieu médical : il mentionne aussi l’absence de succès thérapeutiques complets, le fait qu’il faudrait accuser trop largement les pères, y compris le sien, et l’idée que l’inconscient ne permet pas de distinguer clairement réalité et fiction affectivement.
+Duret évoque aussi Farenczi, qui, lui, n’a jamais abandonné l’idée du traumatisme réel. Ces débats ont marqué durablement les représentations cliniques, par exemple autour de l’hystérie, terme encore utilisé de manière péjorative par certains médecins.
 
 **Croire les victimes : un enjeu psychologique et éthique**
 
@@ -87,8 +110,8 @@ Elle rappelle un point important : ==**tout ne se transmet pas**. Beaucoup de pe
 **Ses influences personnelles**
 
 Elle cite deux grandes figures qui l’ont marquée:
-- **G. Bateson** (1904 - 1980): anthopologue américain, qui a beaucoup contribué à influencer l'approche systémique. A fait beaucoup de terrain, avec humains et animaux. Vision ethnologique, qui inspire la prof dans sa rencontre avec les familles (observations sans jugement). 
-- [Siegi Hirsh](https://europeanfamilytherapy.eu/siegi-hirsch/) (1924): bruxellois d'origine allemande juive, thérapeute familial systémicien. A peu écrit, transmettait et formait oralement. Avait ouvert un *home* à l'après-guerre qu'il a lui même dirigé, où il s'ccoupait d'enfants orphelins, avec un dispositif propre et très proche de l'approche systémique. A également accompagné beaucoup d'autres survivants de la Shoah et pas que, et d'autres survivants. A travaillé sur le processus de désignation (semblable au concept du *patient designé*, au niveau du groupe).
+- **Gregory Bateson** (1904 - 1980): anthopologue américain, qui a beaucoup contribué à influencer l'approche systémique. A fait beaucoup de terrain, avec humains et animaux. Vision ethnologique, qui inspire la prof dans sa rencontre avec les familles (observations sans jugement). 
+- [Siegi Hirsh](https://europeanfamilytherapy.eu/siegi-hirsch/) (1924): bruxellois d'origine allemande juive, thérapeute familial systémicien. A peu écrit, transmettait et formait oralement. Avait ouvert un *home* à l'après-guerre qu'il a lui même dirigé, où il s'ccoupait d'enfants orphelins, avec un dispositif propre et très proche de l'approche systémique. A également accompagné beaucoup d'autres survivants de la Shoah et pas que, d'autres survivants aussi. A travaillé sur le processus de désignation (semblable au concept du *patient designé*, au niveau du groupe).
 
 Ces deux auteurs ont toujours refusé de "faire école", ne voulant pas s'enfermer dans ce que les autres pouvaient avoir comme lecture de soi-même (raison pour laquelle Bateson a quitté Palo Alto). Multiplicité de visions en systémique (ouverture maximale qui permet aux systémiciens de recourir à différents modèles sans que ce soit perçu comme une trahison).
 
@@ -99,15 +122,16 @@ L’approche systémique, selon elle, n’est pas une école fermée mais une mu
 > [!abstract] Résumé 1. Introduction
 > **Auteurs**:
 > - Freud (théorie de la séduction)
-> - Ferenczi (maintien du traumatisme réel)
-> - Bateson (vision ethnologique, observation sans jugement)
-> - Hirsch (thérapie familiale, processus de désignation groupale)
+> - Sándor Ferenczi (traumatisme réel)
+> - Gregory Bateson (vision ethnologique, observation sans jugement)
+> - Siegi Hirsch (thérapie familiale à Bruxelles, processus de désignation groupale)
 >
 > **Principes**:
-> - Le déni face à un récit de trauma est un mécanisme d'autoprotection : croire les victimes engage un coût psychique. 
+> - Le déni face à un récit de trauma est un mécanisme d'autoprotection, croire les victimes engage un coût psychique. 
 > - Les théories sont historiquement situées. 
+> - Ne pas réduire les parents à des “mauvais parents”, mais de réfléchir à ce qui peut être sauvé, aux liens d’attachement possibles, aux compétences parentales à restaurer.
 > - L'approche systémique accueille la multiplicité de modèles (esprit du libre examen). 
-> - Tout ne se transmet pas, la résilience existe.
+> - La résilience existe, tout ne se transmet pas.
 
 # 🏷️ 2. La famille
 
@@ -124,7 +148,7 @@ Pour introduire la notion de famille, la professeure s’appuie sur Robert Neubu
 > - **Lieu de stabilité**, **de pérennité**, malgré ou grâce aux changements que le groupe peut opérer.
 > - **Lieu de constitution de l'identité individuelle et de transmission intergénérationnelle**: la filiation. (On se construit l'identité non pas pour rester dans la famille, mais pour en construire une autre)
 
-D’abord, la famille est une **unité fonctionnelle**. Avant toute dimension psychologique, elle constitue un espace matériel : un toit, un lieu où l’on reçoit les soins primaires, où l’on bénéficie de confort et d’hygiène. Plusieurs étudiants avaient évoqué cette idée d’espace sécurisant, de base concrète d’existence.
+D’abord, la famille est une **unité fonctionnelle**. Avant toute dimension psychologique, elle constitue un espace matériel : un toit, un lieu où l’on reçoit les soins primaires, où l’on bénéficie de confort, sécurité et d’hygiène.
 
 Ensuite, la famille est un **lieu de communication**, une _matrice relationnelle_ pour l’individu. C’est là que l’on apprend à parler, à interagir, à décoder les règles implicites de la relation. On y apprend les manières d’être et de faire avec autrui. D’une famille à l’autre, les styles interactionnels varient énormément : le niveau sonore, l’expression des émotions, la place du conflit, la distance ou la proximité. On est souvent plus frappé par ces différences lorsqu’on entre dans une autre famille que la sienne.
 
@@ -137,9 +161,11 @@ Ces différentes dimensions forment le socle de la définition de la famille. Ma
 
 Le mythe familial est ce qui donne au groupe son identité spécifique et le différencie du monde extérieur. Il est composé d’un ensemble de **croyances partagées** concernant ce que la famille pense être, ce qu’elle dit d’elle-même.
 
+> Ces croyances concernent tous les niveaux de réalité de la famille. L’ensemble de ces croyances constitue la personnalité d’une famille, son mythe. Chacun, sans y croire tout à fait, y adhère avec une certaine complaisance. D’autres, au contraire, tentent de dénoncer le caractère mythique de certaines croyances et des pratiques (rites) dérivées de ces croyances. Ceux-là le font avec violence parfois, mais cette passion a souvent comme effet un renforcement du groupe après une crise salutaire; on observe alors parfois un renouvellement des croyances tout aussi mythique que les précédentes.
+
 On est ici dans le registre du récit et de la narrativité : la manière dont une famille se raconte. Ces croyances touchent tous les niveaux de la réalité familiale. Elles constituent en quelque sorte la « personnalité » du groupe.
 
-Chacun y adhère « sans y croire tout à fait », mais avec une certaine complaisance. Autrement dit, le mythe comporte une dimension d’idéalisation. Il n’est pas totalement pris pour une vérité factuelle, mais il est investi affectivement. Certains l'idéalisent, d'autres, au contraire, tentent de dénoncer le caractère mythique de certaines croyances et des pratiques (rites) derivées de ces croyances" (ce qui renforce parfois le mythe!). 
+Chacun y adhère « sans y croire tout à fait », mais avec une certaine complaisance. Autrement dit, le mythe comporte une dimension d’idéalisation. Il n’est pas totalement pris pour une vérité factuelle, mais il est investi affectivement. Certains l'idéalisent, d'autres, au contraire, tentent de dénoncer le caractère mythique de certaines croyances et des pratiques (rites) dérivées de ces croyances (ce qui renforce parfois le mythe!). 
 
 Les pratiques qui découlent de ces croyances sont appelées des **rites**. Par exemple, si une famille se définit par la devise « l’union fait la force », elle pourra organiser des réunions fréquentes, valoriser la solidarité, mettre en scène le rassemblement comme preuve de cette unité.
 
@@ -147,7 +173,7 @@ Il est difficile d’identifier son propre mythe familial, car on a tendance à 
 - Outil proposé: chercher une **devise familiale**, comme un blason symbolique qui résumerait l’identité du groupe.
 
 >[!example] Exemples
->Quelqu'un évoque la phrase répétée par sa mère : « À la vie, à la mort, on se bat et on s’en sort. » Cette devise renvoie à un mythe de solidarité face à l’adversité. Elle a été soutenante, mais en grandissant, l’étudiante s’interroge : était-ce entièrement vrai ? Cela montre que l’adhésion au mythe évolue avec le temps.
+>Quelqu'un évoque la phrase répétée par sa mère : « À la vie, à la mort, on se bat et on s’en sort. » Cette devise renvoie à un mythe de solidarité face à l’adversité. En grandissant elle s’interroge si c'était entièrement vrai ? Cela montre que l’adhésion au mythe évolue avec le temps.
 >
 >Un autre étudiante cite : « Le pain partagé ne fait de mal à personne » et précise que, paradoxalement, sa famille se dit « pas très famille » au sens des liens de sang, mais valorise fortement la générosité et l’ouverture, notamment envers les amis. Ici, le mythe articule la générosité et le primat de la « famille de cœur » sur la famille biologique.
 >
@@ -205,11 +231,17 @@ La filiation renvoie (P. Benghozi, 1999):
 Elle constitue une sorte de **colonne vertébrale transgénérationnelle**.
 ## 3.3 Reconnaissance réciproque et appartenance
 
-Chez **Kaës**, le point fort est la **reconnaissance réciproque et l’appartenance psychique**. Il insiste sur le fait qu’il ne suffit pas d’être biologiquement ou juridiquement rattaché à une famille : il faut encore être reconnu par elle et la reconnaître en retour: donc, considérée par ces auteurs avant tout comme une **construction psychique**. Il ne suffit pas qu’un enfant soit juridiquement rattaché à une famille ; encore faut-il qu’il **se sente** reconnu et qu’il reconnaisse à son tour ceux qui se présentent comme ses parents. René Kaës insiste sur cette idée en affirmant qu’"*il ne suffit pas de naître dans une famille, il faut aussi naître de la famille*". La filiation engage donc un processus d’appartenance psychique.
+Chez Guyotat comme chez Kaës, la filiation ne se réduit pas à un rattachement biologique ou juridique : elle suppose une construction psychique et une reconnaissance réciproque entre le sujet et le groupe familial. Il ne suffit pas qu’un enfant soit inscrit dans une famille par la naissance, le droit ou la biologie, **il faut également qu’il soit psychiquement reconnu comme membre de cette famille, et qu’il puisse lui-même reconnaître ceux qui se présentent comme ses parents, ses ascendants ou ses descendants**.
 
-Kaës (2000): 
-- Lien de filiation implique le rapport d'au moins trois générations successives reconnues comme telles et la référence commune à un mythe originant. 
-Guyotat (2000):
+Chez Guyotat, cette reconnaissance permet au sujet de se situer et d’être situé dans le groupe auquel il appartient. Chez Kaës, cette appartenance s’inscrit plus largement dans une chaîne générationnelle : **la filiation implique le rapport à plusieurs générations reconnues comme telles** et la référence à une origine commune, ou à un mythe originant. La filiation engage donc un processus d’appartenance psychique, par lequel le sujet peut se reconnaître comme issu d’une histoire familiale et comme maillon d’une transmission.
+
+J. Guyotat (2000) : 
+- “Ce par quoi un individu se situe et est situé dans le groupe auquel il appartient, par rapport à ses ascendants etc descendants réels et imaginaires”. 
+Benghozi (1999) : 
+- “au niveau vertical, les liens aux ascendants: parents, (...) grands- parents, ... et aux descendants: enfants, petits-enfants, voire les enfants non encore nés mais déjà investis dans le présent des anticipations familiales”.
+Kaës (1985/2000): 
+- Le lien de filiation implique le rapport d’au moins trois générations successives reconnues comme telles, et la référence commune à un mythe originant.
+Guyotat (2000): (pas Kaes?)
 - Notion de réciprocité: "le lien de filiation se structure à partir d'une **reconnaissance réciproque** entre un groupe et un individu. Il se construit progressivement depuis les **interactions précoces**, tout au long de la vie". 
 Kaës (2000):
 - De nouveau, notion de reconnaissance réciproque, être reconnu comme membre à part entière.
@@ -237,13 +269,7 @@ Kinoo (2002) propose 4 axes de filiation basés sur sa clinique pedopsychiatriqu
 
 Les enfants se repèrent souvent bien dans ces différences, les adultes (incluant les cliniciens) peuvent avoir des visions plus normatives et restreintes. Cette cartographie en 4 axes est particulièrement utile pour comprendre les familles recomposées, les adoptions, les placements, les familles homoparentales, les PMA et GPA, et les situations de monoparentalité.
 
->[!done] Points clés (à refaire)
->- La filiation comporte une dimension réelle et imaginaire (Guyotat)
->- Elle est une construction psychique (Guyotat)
->- Elle n’est pas seulement biologique ni seulement juridique (Guyotat)
->- Elle est un lien vertical structurant (Benghozi).
->- Elle suppose une reconnaissance réciproque (Guyotat, Kaës)
->- Aujourd’hui, elle peut s’organiser selon quatre axes distincts (Kinoo)
+Supports théoriques fondateurs: M. Bowen, J. Haley, Y. Boszormenyi-Nagy, O. Masson, M. Selvini-Palazzoli, H. Stierlin, P. Benghozi, M. Andolfi, S. Hirsh, R. Neuburger.
 
 ----
 
@@ -252,19 +278,20 @@ Les enfants se repèrent souvent bien dans ces différences, les adultes (inclua
 Rappel/suite du cours précédent:
 - Les 4 axes de Kinoo
 - Avoir plusieurs parents est à tenir compte comme mécanisme favorisant la résilience.
-- Important de se défaire de la notion de "vrai" parent, il n'y en a pas de faux. (cf exemple donné au cours précédent: des gens qui se permettent de reprendre des enfants quand un enfant dit papa à son père d'accueil, "Tu l'appelles papa mais c'est quand même pas ton papa, c'est pas ton vrai papa." Il y a des professionnels qui se permettent de décider à la place de l'enfant qui est le parent affectif. - il y a des professionnels qui ne pensent pas que le parent socio-éducatif peut ne pas être le parent biologique ou le parent légal. Typiquement dans les écoles, s'il y a un problème, ils ne vont jamais convoqur le beau-père ou la belle-mère qui passent toute son après-midi à essayer de tenir à flot le petit par rapport à ses devoirs, ils vont inviter des gens qui n'ont peut-être rien à voir avec l'aspect socio-éducatif.).
+- **Important de se défaire de la notion de "vrai" parent, il n'y en a pas de faux.** (cf exemple donné au cours précédent: des gens qui se permettent de reprendre des enfants quand un enfant dit papa à son père d'accueil, "Tu l'appelles papa mais c'est quand même pas ton papa, c'est pas ton vrai papa." Il y a des professionnels qui se permettent de décider à la place de l'enfant qui est le parent affectif, et il y a des professionnels qui ne pensent pas que le parent socio-éducatif peut ne pas être le parent biologique ou le parent légal. Typiquement dans les écoles, s'il y a un problème, ils ne vont jamais convoquer le beau-père ou la belle-mère qui passent toute son après-midi à essayer de tenir à flot le petit par rapport à ses devoirs, ils vont inviter des gens qui n'ont peut-être rien à voir avec l'aspect socio-éducatif.).
 - N. Galus (2009). *Le rôle de la vérité socio-affective et de la volonté en droit belge de la filiation*, Larcier, Bruxelles. On reconnaît en droit belge le désir de l'enfant.
 
 > [!abstract] Résumé 3. Le lien de filiation
 > **Auteurs**:
-> - Guyotat (axe institué vs narcissique, filiation comme construction psychique)
+> - Guyotat (délires de filiation, axe institué vs narcissique, filiation comme construction psychique, reconnaissance réciproque)
 > - Benghozi (verticalité transgénérationnelle)
 > - Kaës (reconnaissance réciproque, "naître de la famille")
 > - Kinoo (4 axes : légal, biologique, socio-éducatif, affectif)
 >
 > **Principes**:
-> - La filiation n'est ni purement biologique ni purement juridique : elle doit être psychiquement investie. 
-> - Elle suppose une reconnaissance réciproque entre l'individu et le groupe. 
+> - La filiation n'est ni purement biologique ni purement juridique : elle doit être psychiquement investie (Guyotat).
+> - Elle suppose une reconnaissance réciproque entre l'individu et le groupe (Guyotat, Kaes) 
+> - Elle comporte un lien vertical structurant (Benghozi).
 > - Les 4 axes de Kinoo sont souvent dissociés: les cliniciens tendent à avoir une vision normative plus restreinte que les enfants eux-mêmes. 
 > - Plusieurs figures parentales peuvent être un facteur de résilience.
 
@@ -321,7 +348,7 @@ Réflexion: Que faire aussi de ce qu'on **n'a pas** hérité, ce qu'on **ne veut
 
 Définitions:
 - **Engendrer**: se reproduire, passer du statut d'adulte à celui de parents, se mettre dans une perspective de filiation verticale, renier la mort ou la transcender en devenant capable de se projeter dans sa propre descendance.
-- **L'auto-engendrement**: Logique du clonage, qui permet de se reproduire sans passer à un statut de parent, sans qu'il y ait de parents géniteurs. Logique du même et de l'identique, de l'**indifférenciation** ou de la fusion. Filiation horizontale. Négation des différences. Pas d'histoire ni de chaîne des générations. Pas de lien entre présent et passé (métaphore de l'ortensia, mode de reproduction en biologie végétale par la *totipotentialité*).
+- **L'auto-engendrement**: Logique du clonage, qui permet de se reproduire sans passer à un statut de parent, sans qu'il y ait de parents géniteurs. Logique du même et de l'identique, de l'**indifférenciation** ou de la fusion. Filiation horizontale. Négation des différences. Pas d'histoire ni de chaîne des générations. Pas de lien entre présent et passé (métaphore de l'hortensia, mode de reproduction en biologie végétale par la *totipotentialité*).
 	- Une autrice dans la littérature psychanalytique, Elisabeth Bizouard, avait aussi proposé cette idée de l'auto-engendrement dans [Le cinquième fantasme, 1995](https://shs.cairn.info/le-cinquieme-fantasme--9782130470786?lang=fr). Elle le propose comme le 5ème fantasme organisateur du psychique humain. "Engendrer l'inpredictible". Ce serait le fantasme de se produire soi-même, de s’auto-engendrer (soit à l'identique: a) faire des enfants qui me ressemblent en tout point de vue, ou b) faire des enfants qui ne me ressemblent pas mais qui poursuivent ma lignée). C’est une tentative psychique de se dégager de la dépendance originaire et de la passivité d’avoir été créé par d’autres.
 
 >[!info] Rappel perso: Les quatre fantasmes originaires de Freud
@@ -338,17 +365,25 @@ Définitions:
 
 📅 Vendredi **20 Février 2026** - Cours 3 - I. Duret
 
-*Dans la suite de auto-engendrement*
+*Dans la suite de l'auto-engendrement*
 
-Exemple: la famille "ortensia", illustrant ce type d'investissement particulier de la filiation, de l'auto-engendrement.
-- Famille composée de 3 parents: 2 mamans, 1 père, et 11 enfants, vivant sous le même toit. Respectivement 5 et 6 enfants avec le même père géniteur. Ces enfants étaient tous appelés pareillement, Marcel (ou Marcèle, pour les filles). Le nom de famille les distingue, celui de la mère. Utilisation aussi de surnoms (The King, Kiddy, etc)
+Exemple: la famille "Hortensia", illustrant ce type d'investissement particulier de la filiation, de l'auto-engendrement (livre [[Book - Duret - La peur de transmettre\|Book - Duret - La peur de transmettre]] p. 29)
+- Famille composée de 3 parents: 2 mamans, 1 père, et 11 enfants, vivant sous le même toit. Respectivement 5 et 6 enfants avec le même père géniteur. Ces enfants étaient tous appelés pareillement, Marcel (ou Marcèle, pour les filles). Le nom de famille les distingue, celui de la mère. Utilisation aussi de surnoms (Kiss me, The King, Kiddy, Star, etc) pour se différencier.
+	- Les parents ne sont pas dans un rapport de filiation mais de possession et de production.
 - Totipotentialité: cette caractéristique qui fait que **la différence entre le tout et la partie devient tres compliquée**. 
-- Enfants comme petites boutures., nommées de manière identique. 
+- Enfants comme petites boutures, nommées de manière identique. 
 - Tentative de **renforcer l'appartenance familiale**, peut-être dans le but de faire rupture avec le passé? On peut imaginer que pour ces familles, ça ne se passait pas comme ça dans les générations précédentes.
 - Occultation de la filiation parentale, aussi: dans cette famille, le nom du père n'est pas donné. Choix intéressant. Père considéré comme géniteur, mais les enfants ne sont pas vraiment inscrits dans sa filiation. Il y avait eu de la maltraitance vécue par les mères (abus sexuel à l'intérieur de leur famille), donc ce choix s'inscrit dans quelque chose qu'elles ne souhaitent pas faire revivre à leurs enfants (hypothèse). A défaut d'avoir pu parler du traumatisme, élaboré, elles agissent de cette manière.
 - (Parenthèse: Cas de fausses allégations d'abus sexuel du père sur l'enfant: raconte son expérience personnelle en début de carrière, rencontrant parfois des fausses allégations. Les thérapeutes se sont rendu compte que dans certains cas, les cas s'apparentaient à des "Fausses allégations par procuration": de n'avoir pas pu soi-même dévoiler son propre abus (les mères), elles accusaient la personne qui n'avait pas réalisé l'abus (sorte de mécanisme de téléscopage). Cela pouvait amener aussi à, par exemple, accuser son prof de gym alors qu'on a été abusé par son grand père, etc.)
 
 ==Auto-engendrement = tourner le dos aux origines==. 
+
+> [!WARNING] ?
+> Je suis un peu confus avec les exemples ci-dessus. J'ai l'impression qu'on mélange de cas de logique différente qui ne rentrent pas dans simplement non-engendrement:
+> - refus d'hériter: Daniel
+> - refus de transmettre (ce n'est pas plutôt le non-engendrement, vu après?)
+> - clonage de soi: tous appelés Marcel, etc, faire des copies de soi-même (cf totipotentialité)
+
 ### 4.3.1 Contexte social et culturel de transmission
 
 Est-ce que ça ne révèle pas quelque chose aussi du mythe social, de l'ambiance sociétale?
@@ -382,7 +417,7 @@ Perspective de nouveau: être le nouveau maillon.
 
 ### 4.3.2 Cas de Daniel
 
-- **Première stratégie de survie: l'auto-engendrement pour échapper au destin familial. Considere la sienne non suffisamment fréquentable et bien pour lui.**
+- **Première stratégie de survie: l'auto-engendrement pour échapper au destin familial. Considère la sienne non suffisamment fréquentable et bien pour lui.**
 
 *Duret I. (2000). L'auto-engendrement: une solution pour échapper au destin familial? Considérations systémiques sur les répercussions transgénérationnelles des traumatismes et les solutions imaginées par les familles pour les contourner, Thérapie familiale, vol. 21, n2, p 129-140, Med & hygiene, Geneve.*
 
