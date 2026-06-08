@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-06-05T22:02:49.796+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-5126-les-grands-courants-psychotherapeutiques-psychanalyse-systemique-et-cognitivo-comportemental/","title":"Les grands courants psychothérapeutiques","tags":["psychology","psychotherapy","ulb"],"created":"2026-03-04T17:27:33.120+01:00","updated":"2026-06-05T22:02:49.796+02:00","dg-note-properties":{"type":"course","title":"Les grands courants psychothérapeutiques","institution":"Université Libre de Bruxelles","degree":"MA-PSYC — Finalité Psychologie clinique et psychopathologie (Bloc 2)","course_code":"PSYC-E 5126","speaker":"Isabelle Duret; Philippe Fouchet; Bénédicte Thonon","date_start":"2026-02-02","url":"https://www.ulb.be/fr/programme/psyc-e5126","tags":["psychology","psychotherapy","ulb"]}}
 ---
 
 **Structure**:
-1. [[#Partie I Systémique - Prof. Isabelle Duret]] : théories et fondement de l'approche systémique , les différentes écoles et les pratiques qui en découlent. 
-2. [[#Partie II Thérapies Cognitivo-Comportementales - B. Thonon]]: théories cognitivo-comportementales
-3. [[#Partie III Psychanalyse - Fouchet]] : théories et fondements de l'approche psychanalytique.
+1. [[knowledge/class/2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental#Partie I Systémique - Prof. Isabelle Duret\|#Partie I Systémique - Prof. Isabelle Duret]] : théories et fondement de l'approche systémique , les différentes écoles et les pratiques qui en découlent. 
+2. [[knowledge/class/2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental#Partie II Thérapies Cognitivo-Comportementales - B. Thonon\|#Partie II Thérapies Cognitivo-Comportementales - B. Thonon]]: théories cognitivo-comportementales
+3. [[knowledge/class/2026 - PSYC-E 5126 - Les grands courants psychothérapeutiques - psychanalyse, systémique et cognitivo-comportemental#Partie III Psychanalyse - Fouchet\|#Partie III Psychanalyse - Fouchet]] : théories et fondements de l'approche psychanalytique.
 
 > [!info] Évaluation
 > L' examen a lieu le 5 juin, le même jour pour les 3 parties.
@@ -1139,7 +1139,7 @@ Anxiété devient de plus en plus fort, bulle de confort devient de plus en plus
 
 Années 1920: **[Mary Cover Jones](https://en.wikipedia.org/wiki/Mary_Cover_Jones)** : traitement pour la phobie des lapins du petit Peter: va prouver non seulement qu'on peut creer des phobies, mais en guérir. 
 
-![Pasted image 20260317131339.png|392](/img/user/__assets/Pasted%20image%2020260317131339.png)
+![Pasted image 20260317131339.png\|392](/img/user/__assets/Pasted%20image%2020260317131339.png)
 
 Années 1950 Joseph Wolpe : **désensibilisation systématique**.
 ##### 1.2.3 La thérapie par exposition
@@ -1256,7 +1256,7 @@ Initialement dans le cadre de la dépression. Ensuite, généralisé à d’autr
 Première publication marquante : Beck, A.T., Rush, A.J., Shaw, B.F., & Emery, G.D. (1979). Cognitive therapy of depression: A treatment manual. New York: Guilford.
 ###### 2.1.2.1 Modèle de traitement de l’information
 
-![Screenshot 2026-03-31 at 10.33.06.png|536](/img/user/__assets/Screenshot%202026-03-31%20at%2010.33.06.png)
+![Screenshot 2026-03-31 at 10.33.06.png\|536](/img/user/__assets/Screenshot%202026-03-31%20at%2010.33.06.png)
 
 
 **2.1.2.1.1 Les événements cognitifs**

@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-05-25T17:55:26.481+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-421-questions-approfondies-de-psychopathologie/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-17T01:10:22.503+01:00","updated":"2026-05-25T17:55:26.481+02:00","dg-note-properties":{"type":"course","title":"Pratiques cliniques en institution","institution":"Université Libre de Bruxelles","degree":"MA-PSYC — Finalité Psychologie clinique et psychopathologie (Bloc 2)","course_code":"PSYC-E 421","speaker":null,"location":null,"date_start":"2026-03-02","schedule":null,"url":"https://www.ulb.be/fr/programme/psyc-e433","tags":["psychology","clinical","ulb"]}}
 ---
 
 **Structure**:
-1. [[#🏷️ Partie I Psychanalyse Lacanienne - P. Fouchet]]
-2. [[#🏷️ Partie II Thérapies cognitivo-comportementales de 3ème vague - Ilios Kotsou]]
-3. [[#🏷️ Partie III Systémique - Mathilde Meriaux]]
+1. [[knowledge/class/2026 - PSYC-E 421 - Questions approfondies de psychopathologie#🏷️ Partie I Psychanalyse Lacanienne - P. Fouchet\|#🏷️ Partie I Psychanalyse Lacanienne - P. Fouchet]]
+2. [[knowledge/class/2026 - PSYC-E 421 - Questions approfondies de psychopathologie#🏷️ Partie II Thérapies cognitivo-comportementales de 3ème vague - Ilios Kotsou\|#🏷️ Partie II Thérapies cognitivo-comportementales de 3ème vague - Ilios Kotsou]]
+3. [[knowledge/class/2026 - PSYC-E 421 - Questions approfondies de psychopathologie#🏷️ Partie III Systémique - Mathilde Meriaux\|#🏷️ Partie III Systémique - Mathilde Meriaux]]
 
 > [!info] Évaluation
 > - **Partie Fouchet**: VF
@@ -245,7 +245,7 @@ voir notes d'Elsa <3
 > - Un support écrit sera donné, "pas besoin de prendre note"
 > - Évaluation: QCM
 
-[[#I. Intro 3ème vague TCC / thérapies contextuelles]]
+[[knowledge/class/2026 - PSYC-E 421 - Questions approfondies de psychopathologie#I. Intro 3ème vague TCC / thérapies contextuelles\|#I. Intro 3ème vague TCC / thérapies contextuelles]]
 
 
 📅 **25 Mars 2026** - Ilios Kotsou (Cours 1)
@@ -514,11 +514,11 @@ Utilisation de la métaphore, des histoires. Si c'était un jardinier, il lui pa
 Idée de complexifier la pensée avec les différents theories, pas se réduire à l'une.
 
 **Structure du cours**
-[[#I. Introduction]]
-[[#II. La famille comme système complexe]]
-[[#III. Diagnostic et compétences]]
-[[#IV. L'enfant comme ressource thérapeutique]]
-[[#V. L'interêt du travail en famille]]
+[[knowledge/class/2026 - PSYC-E 421 - Questions approfondies de psychopathologie#I. Introduction\|#I. Introduction]]
+[[knowledge/class/2026 - PSYC-E 421 - Questions approfondies de psychopathologie#II. La famille comme système complexe\|#II. La famille comme système complexe]]
+[[knowledge/class/2026 - PSYC-E 421 - Questions approfondies de psychopathologie#III. Diagnostic et compétences\|#III. Diagnostic et compétences]]
+[[knowledge/class/2026 - PSYC-E 421 - Questions approfondies de psychopathologie#IV. L'enfant comme ressource thérapeutique\|#IV. L'enfant comme ressource thérapeutique]]
+[[knowledge/class/2026 - PSYC-E 421 - Questions approfondies de psychopathologie#V. L'interêt du travail en famille\|#V. L'interêt du travail en famille]]
 
 ## I. Introduction
 

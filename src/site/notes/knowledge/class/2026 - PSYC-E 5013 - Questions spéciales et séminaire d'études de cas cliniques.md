@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","title":"Questions spéciales et séminaire d'études de cas cliniques","tags":["psychology","clinical","ulb","intercultural"],"created":"2026-03-04T17:27:33.113+01:00","updated":"2026-05-09T09:46:41.168+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-5013-questions-speciales-et-seminaire-d-etudes-de-cas-cliniques/","title":"Questions spéciales et séminaire d'études de cas cliniques","tags":["psychology","clinical","ulb","intercultural"],"created":"2026-03-04T17:27:33.113+01:00","updated":"2026-05-09T09:46:41.168+02:00","dg-note-properties":{"type":"course","title":"Questions spéciales et séminaire d'études de cas cliniques","institution":"Université Libre de Bruxelles","degree":"MA-PSYC — Finalité Psychologie clinique et psychopathologie (Bloc 2)","course_code":"PSYC-E 5013","speaker":"Alain Vanoeteren","location":"S.K.4.401","date_start":"2026-02-05","schedule":"Jeudi 10:00 - 12:00","url":"https://www.ulb.be/fr/programme/psyc-e5013","tags":["psychology","clinical","ulb","intercultural"]}}
 ---
 
 

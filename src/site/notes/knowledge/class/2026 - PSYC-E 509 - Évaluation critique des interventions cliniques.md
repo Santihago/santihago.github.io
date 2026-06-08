@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-05-20T17:31:06.477+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-509-evaluation-critique-des-interventions-cliniques/","title":"Évaluation critique des interventions cliniques","tags":["psychology","research-methods","ulb"],"created":"2026-03-04T17:27:33.115+01:00","updated":"2026-05-20T17:31:06.477+02:00","dg-note-properties":{"type":"course","title":"Évaluation critique des interventions cliniques","institution":"Université Libre de Bruxelles","degree":"MA-PSYC — Finalité Psychologie clinique et psychopathologie (Bloc 2)","course_code":"PSYC-E 509","speaker":"Laura Périchon","date_start":"2026-02-12","schedule":"Mercredi 16:00 - 20:00","url":"https://www.ulb.be/fr/programme/psyc-e509","tags":["psychology","research-methods","ulb"]}}
 ---
 
 Cours donné par Laura Périchon cette année (avant appelé *Fondements méthodes et évaluation de l'intervention psychologique*, de Vinciane Despret)

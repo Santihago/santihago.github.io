@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-433-pratiques-cliniques-en-institution/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-04T17:27:33.116+01:00","updated":"2026-05-28T12:45:40.613+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-433-pratiques-cliniques-en-institution/","title":"Pratiques cliniques en institution","tags":["psychology","clinical","ulb"],"created":"2026-03-04T17:27:33.116+01:00","updated":"2026-05-28T12:45:40.613+02:00","dg-note-properties":{"type":"course","title":"Pratiques cliniques en institution","institution":"Université Libre de Bruxelles","degree":"MA-PSYC — Finalité Psychologie clinique et psychopathologie (Bloc 2)","course_code":"PSYC-E 433","speaker":"Cécile Glineur","location":"S.H1302 — Auditoire DEPAGE","date_start":"2026-02-02","schedule":"Lundi 10:15 - 12:00","url":"https://www.ulb.be/fr/programme/psyc-e433","tags":["psychology","clinical","ulb"]}}
 ---
 
 

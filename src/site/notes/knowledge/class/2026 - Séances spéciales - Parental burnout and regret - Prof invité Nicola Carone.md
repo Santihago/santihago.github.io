@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-seances-speciales-parental-burnout-and-regret-prof-invite-nicola-carone/","title":"Parental burnout and regret","tags":["parenting","burnout"],"created":"2026-04-18T09:14:39.629+02:00","updated":"2026-05-09T15:23:02.963+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-seances-speciales-parental-burnout-and-regret-prof-invite-nicola-carone/","title":"Parental burnout and regret","tags":["parenting","burnout"],"created":"2026-04-18T09:14:39.629+02:00","updated":"2026-05-09T15:23:02.963+02:00","dg-note-properties":{"type":"lecture","title":"Parental burnout and regret","date":"2026-04-18","speaker":"Nicola Carone","institution":"University of Rome Tor Vergata, Rome","location":null,"tags":["parenting","burnout"]}}
 ---
 
 📅 **18 Avril 2026** - Cours 1

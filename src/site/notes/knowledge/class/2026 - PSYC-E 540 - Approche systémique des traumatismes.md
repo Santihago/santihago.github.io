@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-07T11:41:54.230+02:00","updated":"2026-06-07T22:03:15.012+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-07T11:41:54.230+02:00","updated":"2026-06-08T18:19:00.069+02:00","dg-note-properties":{"type":"course","title":"Approche systémique des traumatismes","institution":"Université Libre de Bruxelles","degree":"MA-PSYC — Finalité Psychologie clinique et psychopathologie (Bloc 2)","course_code":"PSYC-E 540","speaker":"Isabelle Duret","location":null,"date_start":"2026-02-06","schedule":"Vendredi 10:00 - 14:00","url":"https://www.ulb.be/fr/programme/psyc-e540","tags":["psychology","trauma","ulb"]}}
 ---
 
 
@@ -34,31 +34,31 @@ Les deux cours (celui de I. Duret et celui de J-L Brackelaire) seront enregistr�
 
 **Table des matières**
 
-- [[#🏷️ 1. Introduction|1. Introduction]]
-- [[#🏷️ 2. La famille|2. La famille]]
-    - [[#2.1 La famille: unité fonctionnelle et relationnelle (Neuburger)|2.1 La famille (Neuburger)]]
-    - [[#2.2 Le mythe familial : croyances, récit et identité groupale|2.2 Le mythe familial]]
-    - [[#2.3 Crises, renouvellement et rigidification du mythe familial|2.3 Crises et rigidification du mythe]]
-    - [[#2.4 Pluralité et mobilité des mythes|2.4 Pluralité et mobilité]]
-- [[#🏷️  3. Le lien de filiation|3. Le lien de filiation]]
-    - [[#3.1 Construction psychique|3.1 Construction psychique]]
-    - [[#3.2 Verticalité|3.2 Verticalité]]
-    - [[#3.3 Reconnaissance réciproque et appartenance|3.3 Reconnaissance réciproque]]
-    - [[#3.4 Les deux axes de Guyotat|3.4 Les deux axes de Guyotat]]
-    - [[#3.5 Les quatre axes de filiation de Kinoo|3.5 Les quatre axes de Kinoo]]
-- [[#🏷️  4. Dispositifs pour éviter la transmission de traumatisme|4. Dispositifs pour éviter la transmission]]
-    - [[#4.1 Transmettre|4.1 Transmettre]]
-    - [[#4.2 Transmission intergenérationnelle et transgénérationnelle|4.2 Transmission inter- et transgénérationnelle]]
-    - [[#4.3 L'auto-engendrement : refus d'hériter|4.3 L'auto-engendrement]]
-    - [[#4.4 Le non-engendrement : refus de transmettre|4.4 Le non-engendrement]]
-    - [[#4.5 La génophobie: la peur de transmettre des gènes de maladie mentale|4.5 La génophobie]]
-    - [[#4.6 Conclusions|4.6 Conclusions]]
-- [[#🏷️  5. La clinique du lien|5. La clinique du lien]]
-    - [[#5.1 Effraction, frayeur, figement|5.1 Effraction, frayeur, figement]]
-    - [[#5.2 La reconnaissance et réparation|5.2 La reconnaissance et réparation]]
-    - [[#5.3 Entraves à l'écoute et la reconnaissance|5.3 Entraves à l'écoute]]
-    - [[#5.4 Comment vivre *comme après*?|5.4 Comment vivre comme après ?]]
-- [[#Exemples de questions d'examen données en cours|Questions d'examen]]
+- [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#🏷️ 1. Introduction\|1. Introduction]]
+- [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#🏷️ 2. La famille\|2. La famille]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#2.1 La famille: unité fonctionnelle et relationnelle (Neuburger)\|2.1 La famille (Neuburger)]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#2.2 Le mythe familial : croyances, récit et identité groupale\|2.2 Le mythe familial]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#2.3 Crises, renouvellement et rigidification du mythe familial\|2.3 Crises et rigidification du mythe]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#2.4 Pluralité et mobilité des mythes\|2.4 Pluralité et mobilité]]
+- [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#🏷️  3. Le lien de filiation\|3. Le lien de filiation]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#3.1 Construction psychique\|3.1 Construction psychique]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#3.2 Verticalité\|3.2 Verticalité]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#3.3 Reconnaissance réciproque et appartenance\|3.3 Reconnaissance réciproque]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#3.4 Les deux axes de Guyotat\|3.4 Les deux axes de Guyotat]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#3.5 Les quatre axes de filiation de Kinoo\|3.5 Les quatre axes de Kinoo]]
+- [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#🏷️  4. Dispositifs pour éviter la transmission de traumatisme\|4. Dispositifs pour éviter la transmission]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#4.1 Transmettre\|4.1 Transmettre]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#4.2 Transmission intergenérationnelle et transgénérationnelle\|4.2 Transmission inter- et transgénérationnelle]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#4.3 L'auto-engendrement : refus d'hériter\|4.3 L'auto-engendrement]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#4.4 Le non-engendrement : refus de transmettre\|4.4 Le non-engendrement]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#4.5 La génophobie: la peur de transmettre des gènes de maladie mentale\|4.5 La génophobie]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#4.6 Conclusions\|4.6 Conclusions]]
+- [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#🏷️  5. La clinique du lien\|5. La clinique du lien]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#5.1 Effraction, frayeur, figement\|5.1 Effraction, frayeur, figement]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#5.2 La reconnaissance et réparation\|5.2 La reconnaissance et réparation]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#5.3 Entraves à l'écoute et la reconnaissance\|5.3 Entraves à l'écoute]]
+    - [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#5.4 Comment vivre *comme après*?\|5.4 Comment vivre comme après ?]]
+- [[knowledge/class/2026 - PSYC-E 540 - Approche systémique des traumatismes#Exemples de questions d'examen données en cours\|Questions d'examen]]
 
 ---
 
@@ -367,7 +367,7 @@ Définitions:
 
 *Dans la suite de l'auto-engendrement*
 
-Exemple: la famille "Hortensia", illustrant ce type d'investissement particulier de la filiation, de l'auto-engendrement (livre [[Book - Duret - La peur de transmettre\|Book - Duret - La peur de transmettre]] p. 29)
+Exemple: la famille "Hortensia", illustrant ce type d'investissement particulier de la filiation, de l'auto-engendrement (livre [[knowledge/sources/Book - Duret - La peur de transmettre\|Book - Duret - La peur de transmettre]] p. 29)
 - Famille composée de 3 parents: 2 mamans, 1 père, et 11 enfants, vivant sous le même toit. Respectivement 5 et 6 enfants avec le même père géniteur. Ces enfants étaient tous appelés pareillement, Marcel (ou Marcèle, pour les filles). Le nom de famille les distingue, celui de la mère. Utilisation aussi de surnoms (Kiss me, The King, Kiddy, Star, etc) pour se différencier.
 	- Les parents ne sont pas dans un rapport de filiation mais de possession et de production.
 - Totipotentialité: cette caractéristique qui fait que **la différence entre le tout et la partie devient tres compliquée**. 
@@ -423,15 +423,18 @@ Perspective de nouveau: être le nouveau maillon.
 
 *Duret I. Lefebvre A. (1997). "Cherche vraie famille a tout prix" Histoire d'une filiation honteuse, Cahier de Psychologie clinique, 9, p.55-69, de Boeck.*
 
-Histoire de Daniel, deja evoquée dessus: Daniel et sa "vraie" famille. Enquête sociale démontre que famille offrait ce que l'enfant avait besoin de recevoir, parents ne sont pas les monstres qu'il décrit. Décrit père comme alcoolique, mère femme facile prostituée qui a des relations avec pleins d'hommes. Il va errer, quitter souvent le domicile paternel et maternel, demande à être hébergé dans hôpitaux et institutions dans lesquels il passe quelques jours.
+Histoire de Daniel, deja évoquée dessus: Daniel et sa "vraie" famille. Enquête sociale démontre que famille offrait ce que l'enfant avait besoin de recevoir, parents ne sont pas les monstres qu'il décrit. Décrit père comme alcoolique, mère femme facile prostituée qui a des relations avec pleins d'hommes. Il va errer, quitter souvent le domicile paternel et maternel, demande à être hébergé dans hôpitaux et institutions dans lesquels il passe quelques jours.
 
-Il arrive dans le service d'hôpital où elle travaillait. Est pas dans un tres bon état, est délirant. Dit que sa belle-mère est sorcière, et qu'elle a déjà tué plein de gens de sa famille, et qu'elle a jeté des sorts sur lui. Il entend des voix qui l'en avertissent. Fait des crises de catatonie, dans lequelles il reste immobilisé, dit etre possedé par la belle mere.
+Il arrive dans le service d'hôpital où elle travaillait. Est pas dans un tres bon état, est délirant. Dit que sa belle-mère est sorcière, et qu'elle a déjà tué plein de gens de sa famille, et qu'elle a jeté des sorts sur lui. Il entend des voix qui l'en avertissent. Fait des crises de catatonie, lors lesquelles il reste immobilisé, dit être possédé par la belle-mère.
 
-Les décrit comme des étrangers, des êtres amoraux, avec qui il n'a rien en commun, pourrait etre contaminé par ces mauvaises personnes. Dit qu'il a trouvé une vraie famille, chez qui il a été plusieurs fois, qui lui a été presentée par un curé d'un village. C'est une famille avec laquelle il dit se sentir bien.
+Les décrit comme des étrangers, des êtres amoraux, avec qui il n'a rien en commun, pourrait être contaminé par ces mauvaises personnes. Dit qu'il a trouvé une vraie famille, chez qui il a été plusieurs fois, qui lui a été présentée par un curé d'un village. C'est une famille avec laquelle il dit se sentir bien.
 
-Elle appelle les parents (mère et tome sur la belle-mère) qui refusent de venir le voir, disent en avoir vu de toutes les couleurs avec lui. Elle contacte la "nouvelle" famille, qui eux sont d'accord de venir le voir.
+Elle appelle les parents (père et tombe sur la belle-mère) qui refusent de venir le voir, disent en avoir vu de toutes les couleurs avec lui. Elle contacte la "nouvelle" famille, qui eux sont d'accord de venir le voir.
 
 **Chez Daniel, ce qui frappe est sa volonté de s'exclure (auto et hétéro-exclusion) de sa filiation réelle pour en trouver une de substitution, qui n'est pas imaginaire: il les a rencontrés, les reconnait comme vrais parents et famille potentielle.**
+
+> [!QUOTE] La peur de transmettre, p. 62
+> "Comment ne pas penser à la mise en acte d'un fantasme d'autoengendrement, qui consiste à se trouver lui-même les parents qui symboliquement l'auraient engendré?"
 
 La belle-mère ne comprend pas comment il en arrive à les traiter de cette façon là, dit s'en être beaucoup occupé. Plutôt fachée, dans une perspective de "maintenant il est chez vous, démerdez-vous".
 
@@ -472,14 +475,22 @@ La famille d'accueil: acceptent de l'accueillir, disent avoir réfléchi, l'avoi
 ### 4.3.3 Interventions dans le cas de Daniel
 
 Possibilités d'interventions ici:
-- **Parentectomie**: conseil de couper les liens avec les parents d'origine.
+- **Parentectomie** (terme de Siegi Hirsch): conseil de couper les liens avec les parents d'origine.
 - Recadrage (**travail d'élaboration du passé**), si cet auto engendrement était une tentative d'échapper au traumatisme familial... Option suivie ici. Besoin latent des adolescents de compréhension de leur histoire. 
 	- Donc travail d'une part avec les parents pour qu'ils voient leur histoire comme autre chose que seulement honteuse, dramatique (il y a aussi de belles choses dans leur histoire). 
-	- Travail pour d'aider Daniel a se repérer dans sa transmission.
-		- Dire à Daniel devant ses parents: ce que les parents ont pu transmettre c'est la compétence. Opération: parents ont transmis l'importance de compter sur soi meme pour se construire. Avec ce recadrage, nouvelle perspective: pas une perspective de rupture de lien (cut-off), mais de transmission. Parents vus comme transmettant des choses, usant de leur compétences parentales pour proteger les générations suivants.
-		- Sous forme d'entretiens familiales pour parler de l'histoire, mais pas sous forme tragique, dramatique, mais comme histoire de vie les amenant a prendre les décisions qu'ils ont prises. **Re-explorer le passé différemment**.
-			- Heritage plutôt qu'optique des "répetitions". Qu'est-ce qu'ils ont réussi a transformer, a faire de ce qu'ils ont reçu de douloureux.!
-		- Lui faire comprendre que la perspective de l'auto-engendrement a pu lui être transmettre. 
+	- Et travail de **recadrage** pour aider Daniel a se repérer dans sa transmission.
+
+> [!DONE] Recadrage pour Daniel
+> - Dire à Daniel devant ses parents: « Ce que tes parents ont pu transmettre c'est la compétence qu'ils ont pu développer à travers les malheurs qu'ils ont traversés, à se construire tout seuls ». Opération: parents ont transmis l'importance de compter sur soi meme pour se construire. Avec ce recadrage, **nouvelle perspective: pas une perspective de rupture de lien (cut-off), mais de transmission**. Parents vus comme transmettant des choses, usant de leur compétences parentales pour protéger les générations suivants.
+
+- Sous forme d'entretiens familiales pour parler de l'histoire, mais pas sous forme tragique, dramatique, mais comme histoire de vie les amenant a prendre les décisions qu'ils ont prises. **Re-explorer le passé différemment**.
+	- Heritage plutôt qu'optique des "répétitions". Qu'est-ce qu'ils ont réussi a transformer, à faire de ce qu'ils ont reçu de douloureux?
+- Lui faire comprendre que la perspective de l'auto-engendrement a pu lui être transmettre. 
+- Concrètement, il faut organiser des entretiens familiaux où on reconnaît les traumatismes subis en présence d'au moins deux générations et où on réexplore le passé en mettant l'accent sur la transformation des héritages.
+
+> [!warning] Renforcer le mythe de l'autoengendrement
+> Énoncer que celui-ci peut être vu comme un héritage.
+> Permet de mobiliser, au sein de la famille, ressources et créativité.
 
 📅 Vendredi **27 février 2026** - Cours 4 - I. Duret (absent, notes enregistrement)
 
@@ -495,7 +506,7 @@ Important pour elle, en tant que psy:
 - Comprendre la dynamique familiale (au moins perspective tri-générationnelle)
 - Rajouter quelque chose qui remette du liant. Quelque chose qui permet de retrouver, rendre une certaine **dignité** (dans l'appartenance, principalement). Que tout n'est pas a jeter, qu'ils ont en peut-être fait quelque chose qui, quelque part, est beau.
 
-Daniel n'a pas été remis dans se famille immédiatement, plusieurs entretiens ont été nécessaires pour retisser du lien. Il est parti dans insitution pendant 8 mois, puis le retour au domicile a été possible. Pas suivi la piste d'une rupture, approche qui aurait surement été suivie avec une approche plus individuelle (importance de la **recupérabilité du lien**, testée s'utilisant soi en permettant de retravailler ou travailler des liens - reproché, dit-elle, par psychanalystes voyant les systémiciens comme "familialistes". Mais on ne décide par pour les gens, on leur donne des leviers/ressources. cf rencontre entre Cirilo et Berger. Situations irrécuperables sont rares, mais elles existent, et dans ces cas, important de rapidement faire adopter les enfants).
+Daniel n'a pas été remis dans se famille immédiatement, plusieurs entretiens ont été nécessaires pour retisser du lien. Il est parti dans insitution pendant 8 mois, puis le retour au domicile a été possible. Pas suivi la piste d'une rupture, approche qui aurait sûrement été suivie avec une approche plus individuelle (importance de la **recupérabilité du lien**, testée s'utilisant soi en permettant de retravailler ou travailler des liens - reproché, dit-elle, par psychanalystes voyant les systémiciens comme "familialistes". Mais on ne décide par pour les gens, on leur donne des leviers/ressources. cf rencontre entre Cirilo et Berger. Situations irrécuperables sont rares, mais elles existent, et dans ces cas, important de rapidement faire adopter les enfants).
 
 ## 4.4 Le non-engendrement : refus de transmettre
 
@@ -503,7 +514,7 @@ Daniel n'a pas été remis dans se famille immédiatement, plusieurs entretiens 
 
 > Le **refus d'engendrer** est une tentative de solution pour échapper au destin familial. On le retrouve chez des individus ou des couples qui ont le sentiment d'être les victimes de jeux sociaux ou familiaux et qui tentent de cette façon de redevenir maîtres de leur destinée (hypothèse 2), en décidant de ne pas faire d'enfants.
 
-### 4.4.2 Illustration clinique : Monsieur et Madame Apares (Fauster)
+### 4.4.2 Illustration clinique : Monsieur et Madame Apares (Famille Fauster)
 
 Deuxième stratégie de "survie": le non-engendrement, à travers le récit d'une thérapie de couple (Duret, I. 2014)
 
@@ -643,10 +654,14 @@ Métaphore de la perle: un grain de sable qui génère un bijou.
 > - Marika Moisseeff (Parenthood vs Kinship, rites de passage)
 >
 > **Principes**:
-> - Les 3 stratégies sont des tentatives d'échapper au destin familial, pas des marques de malveillance. 
-> - Le recadrage consiste à relire la mise hors filiation comme une compétence protectrice. 
-> - Le symptôme de l'enfant peut être une tentative de donner sens à ce qui n'a pas été dit.
+> - Les 3 stratégies sont des tentatives d'échapper au destin familial.
+> - Le recadrage consiste à relire la mise hors filiation comme une compétence protectrice. Permet aussi de voir son histoire comme autre chose que seulement honteuse, dramatique.
+> - Le symptôme de l'enfant comme une tentative de donner sens à ce qui n'a pas été dit, ou comme une tentative d'en savoir davantage, de commencer à élaborer.
+> - Renforcer le mythe d'autoengendrement (sa transmission) peut paradoxalement mobiliser ressources et compétences au sein de la famille.
+> - Importance de la **recupérabilité du lien**: pas de « familiarisme », mais donner leviers/ressources pour laisser le choix aux familles (vs. parentectomie comme premier recours).
 > - Autonomie =/ indépendance. Restaurer la dignité et la capacité à transmettre prime sur la rupture du lien, les situations irrécupérables sont rares.
+> - Légitimité destructrice.
+> - Dans la génophobie, on peut retrouver la mise en oeuvre d'un processus contagieux anxieux qui s'installe entre un enfant et son ou ses parents; le risque pour l'enfant d'être enfermé dans el déterminisme du diagnostic médical, avec ce qui ressemble à une prophétie autoréalisatrice. 
 
 # 🏷️  5. La clinique du lien
 
@@ -721,7 +736,8 @@ Enjeux cliniques:
 - Risque de tâche aveugle, de "passer à côté".
 - **Risque pour nous en tant que thérapeutes d'être gelés dans nos sentiments**. Il y a un risque d’être en **isomorphisme** et de reproduire cette absence de reconnaissance, de banalisation.
 - **Attaques du cadre** par les patients: ex: patiente de Duret qui arrête de venir en thérapie, explique par la suite qu'elle s'est sentie maltraitée par des propos tenus par Duret en séance. Duret lui avait dit, par inadvertance: "Vous n'allez quand même pas me dire que..." (banalisation). Cette phrase a eu l'effet de replonger le patient dans un passé insupportable.
-
+	- La notion disqualifie le patient ou le système, et risque de démobiliser le thérapeute, mieux penser en termes de "résidus traumatiques" pour préserver le lien et favoriser le processus de "déprise" (>< emprise). Pareil pour les soi-disant "résistances" du patient.
+ 
 ## 5.4 Comment vivre *comme après*?
 
 *Comment vivre comme après?*

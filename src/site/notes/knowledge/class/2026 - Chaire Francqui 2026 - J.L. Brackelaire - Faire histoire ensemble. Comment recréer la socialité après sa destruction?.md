@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-chaire-francqui-2026-j-l-brackelaire-faire-histoire-ensemble-comment-recreer-la-socialite-apres-sa-destruction/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-04-18T15:37:27.832+02:00","updated":"2026-04-18T15:40:14.483+02:00"}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-chaire-francqui-2026-j-l-brackelaire-faire-histoire-ensemble-comment-recreer-la-socialite-apres-sa-destruction/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-04-18T15:37:27.832+02:00","updated":"2026-04-18T15:40:14.483+02:00","dg-note-properties":{"type":"course","title":"Approche systémique des traumatismes","institution":"Université Libre de Bruxelles","degree":"MA-PSYC — Finalité Psychologie clinique et psychopathologie (Bloc 2)","course_code":"PSYC-E 540","speaker":"Jean-Luc Brackelaire","location":null,"date_start":"2026-02-06","schedule":null,"url":null,"tags":["psychology","trauma","ulb"]}}
 ---
 
 # Invité spécial Chaire Francqui (Jean-Luc Brackelaire) 
