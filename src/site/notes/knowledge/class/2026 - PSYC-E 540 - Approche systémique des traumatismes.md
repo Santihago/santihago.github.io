@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-07T11:41:54.230+02:00","updated":"2026-06-08T18:19:00.069+02:00","dg-note-properties":{"type":"course","title":"Approche systémique des traumatismes","institution":"Université Libre de Bruxelles","degree":"MA-PSYC — Finalité Psychologie clinique et psychopathologie (Bloc 2)","course_code":"PSYC-E 540","speaker":"Isabelle Duret","location":null,"date_start":"2026-02-06","schedule":"Vendredi 10:00 - 14:00","url":"https://www.ulb.be/fr/programme/psyc-e540","tags":["psychology","trauma","ulb"]}}
+{"dg-publish":true,"permalink":"/knowledge/class/2026-psyc-e-540-approche-systemique-des-traumatismes/","title":"Approche systémique des traumatismes","tags":["psychology","trauma","ulb"],"created":"2026-06-07T11:41:54.230+02:00","updated":"2026-06-09T01:02:37.299+02:00","dg-note-properties":{"type":"course","title":"Approche systémique des traumatismes","institution":"Université Libre de Bruxelles","degree":"MA-PSYC — Finalité Psychologie clinique et psychopathologie (Bloc 2)","course_code":"PSYC-E 540","speaker":"Isabelle Duret","location":null,"date_start":"2026-02-06","schedule":"Vendredi 10:00 - 14:00","url":"https://www.ulb.be/fr/programme/psyc-e540","tags":["psychology","trauma","ulb"]}}
 ---
 
 
@@ -303,9 +303,9 @@ Rappel/suite du cours précédent:
 On parlera maintenant de situations d'extraction de la civilité, avec perte de la dignité humaine. Quelles formes de tentatives de solutions sont mises en places par ces familles, individus, frappées par ces situations traumatiques?
 Nous explorerons ici des pistes de dispositifs mis en place pour travailler avec eux.
 
-Cas de figure de types de stratégies, type de solutions, pour éviter la transmisison de traumatisme (non-exaustif):
-1. L'auto-engendrement (refus d'hériter)
-2. Le non-engendrement (refus de transmettre)
+Cas de figure de types de stratégies, type de solutions, pour éviter la transmission de traumatisme (non-exhaustif):
+1. L'auto-engendrement (refus d'hériter et de transmettre)
+2. Le non-engendrement (refus d'engendrer)
 3. La "génophobie" (peur de transmettre certains gênes)
 ## 4.1 Transmettre
 
@@ -328,7 +328,7 @@ Distinction importante pour nous, cliniciens:
 
 Dans sa clinique, elle a observé des personnes dans une perspective de refus de transmission. 
 Par exemple, des parents disant ne pas vouloir transmettre. Ça lui semblait paradoxal: Faire en enfant mais ne pas vouloir transmettre quelque chose. Ce qui amenait pour elle la question: Comment faire famille sans "rien" transmettre? Potentiel engagement d'aspects cognitifs, de bloquages cognitifs.
-## 4.3 L'auto-engendrement : refus d'hériter
+## 4.3 L'auto-engendrement : refus de transmettre et d'hériter
 
 Attention attirée vers parents se comportant de manière pas habituelle par rapport à l'idée habituelle, classique, de la transmission, se comportent comme s'ils n'avaient eux mêmes rien reçu de leur parents ("je ne reconnais pas ces parents", "ils ne m'ont rien legué", ... pas de reconnaissance d'héritage psychique, non plus, tel que règles, manières de se comporter, etc).
 
@@ -377,12 +377,6 @@ Exemple: la famille "Hortensia", illustrant ce type d'investissement particulier
 - (Parenthèse: Cas de fausses allégations d'abus sexuel du père sur l'enfant: raconte son expérience personnelle en début de carrière, rencontrant parfois des fausses allégations. Les thérapeutes se sont rendu compte que dans certains cas, les cas s'apparentaient à des "Fausses allégations par procuration": de n'avoir pas pu soi-même dévoiler son propre abus (les mères), elles accusaient la personne qui n'avait pas réalisé l'abus (sorte de mécanisme de téléscopage). Cela pouvait amener aussi à, par exemple, accuser son prof de gym alors qu'on a été abusé par son grand père, etc.)
 
 ==Auto-engendrement = tourner le dos aux origines==. 
-
-> [!WARNING] ?
-> Je suis un peu confus avec les exemples ci-dessus. J'ai l'impression qu'on mélange de cas de logique différente qui ne rentrent pas dans simplement non-engendrement:
-> - refus d'hériter: Daniel
-> - refus de transmettre (ce n'est pas plutôt le non-engendrement, vu après?)
-> - clonage de soi: tous appelés Marcel, etc, faire des copies de soi-même (cf totipotentialité)
 
 ### 4.3.1 Contexte social et culturel de transmission
 
